@@ -86,13 +86,12 @@ def auto_import_existing_csv(state):
                     
                     if email and "@" in email and email not in state["leads"]:
                         clean_title = title.split(" - ")[0].split(" – ")[0].split(" | ")[0].split(":")[0].strip()
-                        # Impostiamo la data a ieri per calcolare correttamente i 4 giorni per il follow-up
                         yesterday = (datetime.utcnow() - timedelta(days=1)).isoformat()
                         
                         state["leads"][email] = {
                             "app_name": clean_title,
                             "package": app_id,
-                            "status": "FIRST_SENT",  # Già contattati ieri
+                            "status": "FIRST_SENT",
                             "first_sent_at": yesterday,
                             "followup_sent_at": None
                         }
@@ -159,10 +158,8 @@ def auto_scrape_new_leads(state, needed_amount):
             print(f"    [!] Errore ricerca: {e}")
 
 def get_run_batch_size(state):
-    """Calcola la quota residua giornaliera e restituisce il numero di email per questo run."""
     now_str = datetime.utcnow().strftime("%Y-%m-%d")
     
-    # Reset del contatore giornaliero al cambio di data
     if state["config"].get("last_run_date") != now_str:
         state["config"]["last_run_date"] = now_str
         state["config"]["sent_today"] = 0
@@ -178,13 +175,11 @@ def get_run_batch_size(state):
         print(f"[*] Quota giornaliera completata ({sent_today}/{total_daily_limit}). Nessun invio in questo slot.")
         return 0
         
-    # Micro-scaglioni da 3 a 8 email per run per simulare comportamento umano
     batch_size = min(remaining_today, random.randint(3, 8))
     print(f"[*] Quota odierna: {sent_today}/{total_daily_limit}. Invio batch programmato per questa run: {batch_size} email.")
     return batch_size
 
 def has_replied(target_email):
-    """Verifica via IMAP se l'utente ha risposto nella nostra casella."""
     try:
         mail = imaplib.IMAP4_SSL(IMAP_SERVER)
         mail.login(EMAIL_ACCOUNT, APP_PASSWORD)
@@ -254,23 +249,37 @@ def main():
     now = datetime.utcnow()
     cutoff_date = now - timedelta(days=DAYS_BEFORE_FOLLOWUP)
     
-    # 1. Candidati per Follow-up (priorità assoluta)
-    followup_queue = []
+    # 1. Raccolta di tutti i possibili candidati per Follow-up
+    all_followup_candidates = []
     for email, data in state["leads"].items():
         if data["status"] == "FIRST_SENT" and data.get("first_sent_at"):
             if datetime.fromisoformat(data["first_sent_at"]) <= cutoff_date:
-                followup_queue.append((email, data["app_name"]))
+                all_followup_candidates.append((email, data["app_name"]))
                 
-    # 2. Reperimento nuovi contatti se la coda scarseggia
-    pending_count = sum(1 for d in state["leads"].values() if d["status"] == "PENDING")
-    needed_new = batch_size - len(followup_queue)
-    if pending_count < max(10, needed_new):
-        auto_scrape_new_leads(state, max(15, needed_new))
+    # 2. Bilanciamento quote: max 40% follow-up, almeno 60% nuove email
+    max_followups = max(1, int(batch_size * 0.4)) if all_followup_candidates else 0
+    selected_followups = all_followup_candidates[:max_followups]
     
-    # 3. Assemblaggio coda di invio
-    new_queue = [(e, d["app_name"]) for e, d in state["leads"].items() if d["status"] == "PENDING"]
-    tasks = [(item, "FOLLOWUP") for item in followup_queue] + [(item, "FIRST") for item in new_queue]
-    tasks_to_run = tasks[:batch_size]
+    # Gli slot rimanenti vanno obbligatoriamente a nuove email
+    needed_new = batch_size - len(selected_followups)
+    
+    # 3. Controllo lead PENDING e auto-scraping se insufficienti
+    pending_leads = [(e, d["app_name"]) for e, d in state["leads"].items() if d["status"] == "PENDING"]
+    if len(pending_leads) < needed_new:
+        auto_scrape_new_leads(state, (needed_new - len(pending_leads)) + 15)
+        # Ricarica la lista aggiornata dopo lo scraping
+        pending_leads = [(e, d["app_name"]) for e, d in state["leads"].items() if d["status"] == "PENDING"]
+        
+    selected_new = pending_leads[:needed_new]
+    
+    # Se mancano nuove email nonostante lo scraping, colma con i follow-up avanzati
+    if len(selected_new) < needed_new:
+        remaining_slots = needed_new - len(selected_new)
+        extra_followups = all_followup_candidates[max_followups:max_followups + remaining_slots]
+        selected_followups.extend(extra_followups)
+
+    # 4. Assemblaggio finale della coda
+    tasks_to_run = [(item, "FOLLOWUP") for item in selected_followups] + [(item, "FIRST") for item in selected_new]
 
     if not tasks_to_run:
         print("[*] Nessuna email pronta da inviare per questa sessione.")
@@ -279,10 +288,9 @@ def main():
 
     server = smtplib.SMTP_SSL(SMTP_SERVER, PORT)
     server.login(EMAIL_ACCOUNT, APP_PASSWORD)
-    print(f"\n[*] Connesso al server SMTP. Esecuzione batch di {len(tasks_to_run)} email...")
+    print(f"\n[*] Connesso al server SMTP. Esecuzione batch di {len(tasks_to_run)} email ({len(selected_followups)} Follow-up, {len(selected_new)} Nuove)...")
 
     for (email, app_name), task_type in tasks_to_run:
-        # Se deve inviare il follow-up, controlla che non abbiano risposto
         if task_type == "FOLLOWUP" and has_replied(email):
             print(f"    [SKIP] {email} ha già risposto via email. Escluso definitivamente.")
             state["leads"][email]["status"] = "REPLIED"
@@ -299,7 +307,6 @@ def main():
         try:
             server.sendmail(EMAIL_ACCOUNT, email, msg.as_string())
             
-            # Aggiornamento stato
             if task_type == "FIRST":
                 state["leads"][email]["status"] = "FIRST_SENT"
                 state["leads"][email]["first_sent_at"] = now.isoformat()
@@ -311,7 +318,6 @@ def main():
             print(f"    [OK - {task_type}] -> {email} ({app_name})")
             save_state(state)
 
-            # Ritardo casuale per rompere la cadenza da bot
             time.sleep(random.uniform(45, 95))
         except Exception as e:
             print(f"    [!] Errore nell'invio a {email}: {e}")
