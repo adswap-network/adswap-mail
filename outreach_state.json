@@ -1,41 +1,43 @@
 {
     "config": {
-        "start_date": "2026-09-13"
+        "start_date": "2026-09-12",
+        "last_run_date": "2026-09-13",
+        "sent_today": 5
     },
     "leads": {
         "funnyghostgames@gmail.com": {
             "app_name": "The Fall 2",
             "package": "com.funnyghost.TheFallZero",
             "status": "FIRST_SENT",
-            "first_sent_at": "2026-09-13T14:07:08.757452",
+            "first_sent_at": "2026-09-12T14:07:08.757452",
             "followup_sent_at": null
         },
         "sycamorehillstudios@outlook.com": {
             "app_name": "Idle Orbit",
             "package": "com.idleorbit",
             "status": "FIRST_SENT",
-            "first_sent_at": "2026-09-13T14:07:08.757452",
+            "first_sent_at": "2026-09-12T14:07:08.757452",
             "followup_sent_at": null
         },
         "andrejjkoroljov25@gmail.com": {
             "app_name": "I am Rock Star idle clicker",
             "package": "com.VerityGamesStudio.IamRockStaridleclicker",
             "status": "FIRST_SENT",
-            "first_sent_at": "2026-09-13T14:07:08.757452",
+            "first_sent_at": "2026-09-12T14:07:08.757452",
             "followup_sent_at": null
         },
         "magikongames@gmail.com": {
             "app_name": "Crystalia Idle Clicker",
             "package": "com.magikongames.crystaliaidleclicker",
             "status": "FIRST_SENT",
-            "first_sent_at": "2026-09-13T14:07:08.757452",
+            "first_sent_at": "2026-09-12T14:07:08.757452",
             "followup_sent_at": null
         },
         "support@themachinegg.com": {
             "app_name": "The MachinEGG Idle Clicker",
             "package": "com.jc.themachinegg",
             "status": "FIRST_SENT",
-            "first_sent_at": "2026-09-13T14:07:08.757452",
+            "first_sent_at": "2026-09-12T14:07:08.757452",
             "followup_sent_at": null
         },
         "rostislav56@gmail.com": {
