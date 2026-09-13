@@ -2,12 +2,12 @@ name: AdSwap Autonomous Outreach
 
 on:
   schedule:
-    # 5 esecuzioni al giorno distribuite (orari UTC)
-    - cron: '15 8 * * *'   # 08:15 UTC (~10:15 CET)
-    - cron: '45 11 * * *'  # 11:45 UTC (~13:45 CET)
-    - cron: '20 14 * * *'  # 14:20 UTC (~16:20 CET)
-    - cron: '50 16 * * *'  # 16:50 UTC (~18:50 CET)
-    - cron: '10 19 * * *'  # 19:10 UTC (~21:10 CET)
+    # 5 scaglioni distribuiti lungo tutta la giornata (Orari UTC)
+    - cron: '15 8 * * *'   # ~10:15 CET (Mattina)
+    - cron: '45 11 * * *'  # ~13:45 CET (Pranzo)
+    - cron: '20 14 * * *'  # ~16:20 CET (Pomeriggio)
+    - cron: '50 16 * * *'  # ~18:50 CET (Tardo pomeriggio)
+    - cron: '10 19 * * *'  # ~21:10 CET (Sera)
   workflow_dispatch:
 
 permissions:
@@ -29,7 +29,7 @@ jobs:
         run: |
           pip install google-play-scraper requests
 
-      - name: Execute Autonomous Engine
+      - name: Execute Outreach Engine
         env:
           GMAIL_ADDRESS: ${{ secrets.GMAIL_ADDRESS }}
           GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
@@ -37,7 +37,7 @@ jobs:
         run: |
           python -u outreach_engine.py
 
-      - name: Commit Updated JSON State
+      - name: Commit Updated State
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
