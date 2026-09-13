@@ -2,7 +2,7 @@
     "config": {
         "start_date": "2026-09-12",
         "last_run_date": "2026-09-13",
-        "sent_today": 5
+        "sent_today": 9
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -43,29 +43,29 @@
         "rostislav56@gmail.com": {
             "app_name": "Tap Hunter",
             "package": "ua.com.rogames.taphunter",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-13T18:59:10.507340",
             "followup_sent_at": null
         },
         "vinztechnologies@gmail.com": {
             "app_name": "Expense Tracker App",
             "package": "app.vinztech.budgetit",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-13T18:59:10.507340",
             "followup_sent_at": null
         },
         "contactnightowldev@gmail.com": {
             "app_name": "Budget Planner",
             "package": "com.nightowl.spendsmart",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-13T18:59:10.507340",
             "followup_sent_at": null
         },
         "support@changenow.io": {
             "app_name": "Crypto Portfolio",
             "package": "io.changenow.nowtracker",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-13T18:59:10.507340",
             "followup_sent_at": null
         },
         "crypto.widget.developer@gmail.com": {
