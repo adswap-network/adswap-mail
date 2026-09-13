@@ -10,6 +10,9 @@ from datetime import datetime, timedelta
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 from google_play_scraper import app as play_scraper_app
+import functools
+# Forza ogni print() a svuotare il buffer immediatamente
+print = functools.partial(print, flush=True)
 
 # --- CONFIGURAZIONE ---
 STATE_FILE = "outreach_state.json"
@@ -27,6 +30,18 @@ WARMUP_SCHEDULE = [5, 10, 15, 25, 35, 50]
 
 # --- KEYWORD ADSWAP ---
 ADSWAP_KEYWORDS = [
+    # Categorie dirette e semplici
+    "finance", "health", "productivity", "social", "dating", 
+    "ecommerce", "entertainment", "travel", "news", "education",
+    "action games", "casual games", "rpg games", "casino games",
+    
+    # Sotto-categorie ampie e termini generici
+    "money", "fitness", "diet", "to do list", "calendar", 
+    "shopping", "movies", "flights", "local news", "study",
+    "budget", "crypto", "investing", "meditation", "workout", 
+    "notes", "chat", "meet", "buy and sell", "music",
+    
+    # Coda lunga (fondamentali per pescare gli sviluppatori indie nella fascia 500-25k)
     "action offline game indie", "zombie survival game 2d", "retro platformer action",
     "match 3 puzzle free offline", "color sort puzzle hard", "idle clicker simulator",
     "expense tracker minimalist", "budget planner offline", "crypto portfolio widget",
@@ -138,14 +153,14 @@ I came across {app_name} on Google Play while looking for standout indie project
 
 As a fellow independent developer, I know firsthand that building the app is only half the battle. Affording the massive User Acquisition (UA) costs to get it noticed is the real hurdle, and competing with big studios on traditional networks is a losing game.
 
-To solve this, I built AdSwap (https://adswap.netlify.app). 
+To solve this, I built AdSwap (adswap.netlify.app). 
 
 It is a completely free, transparent cross-promotion network. You integrate a lightweight SDK, show native ads for other indie apps to earn Credits, and spend those exact Credits to get {app_name} promoted across the network. 
 
 Zero fiat money required, zero financial risk. The absolute worst-case scenario is that your campaigns don't get enough traction, but you lose absolutely nothing. (I cover the server and infrastructure costs myself to help bootstrap the ecosystem).
 
 It takes just a few minutes to generate your SDK snippet. You can check out the dashboard here:
-👉 https://adswap.netlify.app
+👉 adswap.netlify.app
 
 Let’s stop paying for traffic and start exchanging it.
 
@@ -162,7 +177,7 @@ Knowing how chaotic dev life gets, I just wanted to float this to the top of you
 
 Several independent developers have already started swapping traffic through AdSwap to cut their UA budgets to zero. Since there is no credit card required and no financial risk, it's essentially pure organic growth for {app_name}.
 
-No worries at all if you're fully focused on other channels right now, but the console is ready for you whenever you want to test it out: https://adswap.netlify.app
+No worries at all if you're fully focused on other channels right now, but the console is ready for you whenever you want to test it out: adswap.netlify.app
 
 Keep up the great work with the app!
 
