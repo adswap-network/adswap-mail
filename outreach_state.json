@@ -2,7 +2,7 @@
     "config": {
         "start_date": "2026-09-12",
         "last_run_date": "2026-09-13",
-        "sent_today": 9
+        "sent_today": 10
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -71,8 +71,8 @@
         "crypto.widget.developer@gmail.com": {
             "app_name": "Crypto Widget",
             "package": "com.crypto.widget",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-13T21:25:00.165955",
             "followup_sent_at": null
         },
         "support@paybis.com": {
