@@ -2,7 +2,7 @@
     "config": {
         "start_date": "2026-09-12",
         "last_run_date": "2026-09-14",
-        "sent_today": 9
+        "sent_today": 15
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -141,43 +141,43 @@
         "info@eshoppr.nl": {
             "app_name": "United Travel",
             "package": "com.eshoppr.unitedtravel",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-14T17:02:58.881404",
             "followup_sent_at": null
         },
         "info@travelcompany.nl": {
             "app_name": "The Travel Company",
             "package": "com.eshoppr.thetravelcompany",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-14T17:02:58.881404",
             "followup_sent_at": null
         },
         "rings.fitness.app@gmail.com": {
             "app_name": "Rings",
             "package": "com.whyyao.rings",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-14T17:02:58.881404",
             "followup_sent_at": null
         },
         "hello@air.diet": {
             "app_name": "Air Diet",
             "package": "com.tallfive.airdiet",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-14T17:02:58.881404",
             "followup_sent_at": null
         },
         "hello@last.diet": {
             "app_name": "Last Diet",
             "package": "com.tallfive.lastdiet",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-14T17:02:58.881404",
             "followup_sent_at": null
         },
         "hello@glp.diet": {
             "app_name": "GLP Diet",
             "package": "com.tallfive.glpdiet",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-14T17:02:58.881404",
             "followup_sent_at": null
         },
         "smallquest.studio@gmail.com": {
