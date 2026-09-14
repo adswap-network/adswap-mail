@@ -1,8 +1,8 @@
 {
     "config": {
         "start_date": "2026-09-12",
-        "last_run_date": "2026-09-13",
-        "sent_today": 10
+        "last_run_date": "2026-09-14",
+        "sent_today": 3
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -78,22 +78,22 @@
         "support@paybis.com": {
             "app_name": "BTC, ETH Crypto Tracker Widget",
             "package": "com.paybis.androidsatellitewidget",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-14T14:23:42.569892",
             "followup_sent_at": null
         },
         "support@cryptocoinwidget.com": {
             "app_name": "Crypto Price Widget",
             "package": "com.maksdev.cryptocoinwidget",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-14T14:23:42.569892",
             "followup_sent_at": null
         },
         "innokenty.longway@gmail.com": {
             "app_name": "Crypto Portfolio Widget",
             "package": "co.ssoul.CryptoC",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-14T14:23:42.569892",
             "followup_sent_at": null
         },
         "app@statmetrics.org": {
