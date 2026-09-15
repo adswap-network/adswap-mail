@@ -13,7 +13,6 @@ from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 from google_play_scraper import app as play_scraper_app
 
-# Forza la stampa immediata a video su GitHub Actions
 print = functools.partial(print, flush=True)
 
 # --- CONFIGURAZIONE ---
@@ -30,7 +29,6 @@ DAYS_BEFORE_FOLLOWUP = 4
 MAX_CAPACITY = 50
 WARMUP_SCHEDULE = [5, 10, 15, 25, 35, 50]
 
-# --- KEYWORD ADSWAP ---
 ADSWAP_KEYWORDS = [
     "finance", "health", "productivity", "social", "dating", 
     "ecommerce", "entertainment", "travel", "news", "education",
@@ -69,10 +67,6 @@ def save_state(state):
         json.dump(state, f, indent=4)
 
 def auto_import_existing_csv(state):
-    """
-    Importa vecchi file CSV retrocompatibili.
-    Se hai già inviato la prima email a queste liste, le registra come FIRST_SENT.
-    """
     possible_files = ["adswap_target_developers.csv", "adswap_leads.csv"]
     for csv_file in possible_files:
         if os.path.exists(csv_file):
@@ -98,36 +92,29 @@ def auto_import_existing_csv(state):
                         if app_id and app_id not in state["scanned_apps"]:
                             state["scanned_apps"].append(app_id)
             save_state(state)
-            print(f"[✓] CSV sincronizzato. Database aggiornato con i contatti pregressi.")
+            print(f"[✓] CSV sincronizzato.")
 
 def auto_scrape_new_leads(state, needed_amount):
     print(f"[*] Coda in esaurimento. Avvio scraping automatico per {needed_amount} nuovi dev...")
     added = 0
     available_kws = [kw for kw in ADSWAP_KEYWORDS if kw not in state["used_keywords"]]
     if not available_kws:
-        print("[!] Tutte le keyword esaurite! Resetto l'elenco keyword.")
         state["used_keywords"] = []
         available_kws = ADSWAP_KEYWORDS
 
-    headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"}
+    headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"}
     
     for kw in available_kws:
-        if added >= needed_amount:
-            break
-            
-        print(f"    -> Esploro keyword: '{kw}'")
+        if added >= needed_amount: break
         state["used_keywords"].append(kw)
-        
         try:
             url = f"https://play.google.com/store/search?q={kw}&c=apps"
             response = requests.get(url, headers=headers, timeout=10)
             app_ids = list(dict.fromkeys(re.findall(r'href="/store/apps/details\?id=([a-zA-Z0-9._]+)"', response.text)))
             
             for app_id in app_ids:
-                if app_id in state["scanned_apps"]:
-                    continue
+                if app_id in state["scanned_apps"]: continue
                 state["scanned_apps"].append(app_id)
-                
                 try:
                     details = play_scraper_app(app_id, lang='en', country='us')
                     min_installs = details.get('minInstalls', 0)
@@ -147,10 +134,9 @@ def auto_scrape_new_leads(state, needed_amount):
                                 "followup_sent_at": None
                             }
                             added += 1
-                            print(f"       [+] Trovato: {clean_title} ({min_installs} DL) | {clean_email}")
+                            print(f"       [+] Trovato: {clean_title} ({min_installs} DL)")
                             save_state(state)
-                            if added >= needed_amount:
-                                break
+                            if added >= needed_amount: break
                 except:
                     pass
                 time.sleep(0.5)
@@ -158,34 +144,39 @@ def auto_scrape_new_leads(state, needed_amount):
             print(f"    [!] Errore ricerca: {e}")
 
 def get_run_batch_size(state):
-    now_str = datetime.utcnow().strftime("%Y-%m-%d")
+    now_utc = datetime.utcnow()
+    now_str = now_utc.strftime("%Y-%m-%d")
     
     if state["config"].get("last_run_date") != now_str:
         state["config"]["last_run_date"] = now_str
         state["config"]["sent_today"] = 0
         
     start_date = datetime.strptime(state["config"].get("start_date", now_str), "%Y-%m-%d")
-    days_passed = (datetime.utcnow() - start_date).days
+    days_passed = (now_utc - start_date).days
     total_daily_limit = WARMUP_SCHEDULE[days_passed] if days_passed < len(WARMUP_SCHEDULE) else MAX_CAPACITY
     
     sent_today = state["config"].get("sent_today", 0)
     remaining_today = max(0, total_daily_limit - sent_today)
     
     if remaining_today == 0:
-        print(f"[*] Quota giornaliera completata ({sent_today}/{total_daily_limit}). Nessun invio in questo slot.")
+        print(f"[*] Quota giornaliera completata ({sent_today}/{total_daily_limit}). Chiusura immediata.")
         return 0
         
-    batch_size = min(remaining_today, random.randint(3, 8))
-    print(f"[*] Quota odierna: {sent_today}/{total_daily_limit}. Invio batch programmato per questa run: {batch_size} email.")
+    hours_left = 24 - now_utc.hour
+    if hours_left <= 6 and remaining_today > 0:
+        batch_size = min(remaining_today, random.randint(8, 15))
+        print(f"[!] Fascia di recupero: mancano poche ore. Batch aumentato a {batch_size}.")
+    else:
+        batch_size = min(remaining_today, random.randint(2, 5))
+        print(f"[*] Quota odierna: {sent_today}/{total_daily_limit}. Batch assegnato: {batch_size} email.")
+        
     return batch_size
 
-def has_replied(target_email):
+def has_replied(mail_client, target_email):
+    if not mail_client: return False
     try:
-        mail = imaplib.IMAP4_SSL(IMAP_SERVER)
-        mail.login(EMAIL_ACCOUNT, APP_PASSWORD)
-        mail.select("inbox")
-        status, response = mail.search(None, f'(FROM "{target_email}")')
-        mail.logout()
+        mail_client.select("inbox")
+        status, response = mail_client.search(None, f'(FROM "{target_email}")')
         return status == "OK" and bool(response[0])
     except:
         return False
@@ -249,36 +240,28 @@ def main():
     now = datetime.utcnow()
     cutoff_date = now - timedelta(days=DAYS_BEFORE_FOLLOWUP)
     
-    # 1. Raccolta di tutti i possibili candidati per Follow-up
     all_followup_candidates = []
     for email, data in state["leads"].items():
         if data["status"] == "FIRST_SENT" and data.get("first_sent_at"):
             if datetime.fromisoformat(data["first_sent_at"]) <= cutoff_date:
                 all_followup_candidates.append((email, data["app_name"]))
                 
-    # 2. Bilanciamento quote: max 40% follow-up, almeno 60% nuove email
     max_followups = max(1, int(batch_size * 0.4)) if all_followup_candidates else 0
     selected_followups = all_followup_candidates[:max_followups]
-    
-    # Gli slot rimanenti vanno obbligatoriamente a nuove email
     needed_new = batch_size - len(selected_followups)
     
-    # 3. Controllo lead PENDING e auto-scraping se insufficienti
     pending_leads = [(e, d["app_name"]) for e, d in state["leads"].items() if d["status"] == "PENDING"]
     if len(pending_leads) < needed_new:
         auto_scrape_new_leads(state, (needed_new - len(pending_leads)) + 15)
-        # Ricarica la lista aggiornata dopo lo scraping
         pending_leads = [(e, d["app_name"]) for e, d in state["leads"].items() if d["status"] == "PENDING"]
         
     selected_new = pending_leads[:needed_new]
     
-    # Se mancano nuove email nonostante lo scraping, colma con i follow-up avanzati
     if len(selected_new) < needed_new:
         remaining_slots = needed_new - len(selected_new)
         extra_followups = all_followup_candidates[max_followups:max_followups + remaining_slots]
         selected_followups.extend(extra_followups)
 
-    # 4. Assemblaggio finale della coda
     tasks_to_run = [(item, "FOLLOWUP") for item in selected_followups] + [(item, "FIRST") for item in selected_new]
 
     if not tasks_to_run:
@@ -286,12 +269,20 @@ def main():
         save_state(state)
         return
 
+    # Inizializza IMAP una sola volta per le performance
+    imap_client = None
+    try:
+        imap_client = imaplib.IMAP4_SSL(IMAP_SERVER)
+        imap_client.login(EMAIL_ACCOUNT, APP_PASSWORD)
+    except Exception as e:
+        print(f"[!] Impossibile connettersi a IMAP (controllo risposte saltato): {e}")
+
     server = smtplib.SMTP_SSL(SMTP_SERVER, PORT)
     server.login(EMAIL_ACCOUNT, APP_PASSWORD)
-    print(f"\n[*] Connesso al server SMTP. Esecuzione batch di {len(tasks_to_run)} email ({len(selected_followups)} Follow-up, {len(selected_new)} Nuove)...")
+    print(f"\n[*] Esecuzione batch di {len(tasks_to_run)} email ({len(selected_followups)} Follow-up, {len(selected_new)} Nuove)...")
 
     for (email, app_name), task_type in tasks_to_run:
-        if task_type == "FOLLOWUP" and has_replied(email):
+        if task_type == "FOLLOWUP" and has_replied(imap_client, email):
             print(f"    [SKIP] {email} ha già risposto via email. Escluso definitivamente.")
             state["leads"][email]["status"] = "REPLIED"
             save_state(state)
@@ -323,6 +314,10 @@ def main():
             print(f"    [!] Errore nell'invio a {email}: {e}")
 
     server.quit()
+    if imap_client:
+        try: imap_client.logout()
+        except: pass
+
     save_state(state)
     print("\n[*] Esecuzione batch completata con successo.")
 
