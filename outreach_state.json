@@ -1,8 +1,8 @@
 {
     "config": {
         "start_date": "2026-09-12",
-        "last_run_date": "2026-09-14",
-        "sent_today": 15
+        "last_run_date": "2026-09-15",
+        "sent_today": 5
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -183,36 +183,36 @@
         "smallquest.studio@gmail.com": {
             "app_name": "Habit Tracker & ToDo",
             "package": "com.junhwank.habitjar",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-15T13:29:38.327254",
             "followup_sent_at": null
         },
         "info@naokiotsu.com": {
             "app_name": "Plan Calendar -Make a Schedule",
             "package": "app.web.thetabcal",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-15T13:29:38.327254",
             "followup_sent_at": null
         },
         "service@readnews.live": {
             "app_name": "Local News",
             "package": "local.news.app",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-15T13:29:38.327254",
             "followup_sent_at": null
         },
         "androidappfeedback@newson.us": {
             "app_name": "NewsON",
             "package": "com.newson.vinsonandroidtv",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-15T13:29:38.327254",
             "followup_sent_at": null
         },
         "support@trendrad.com": {
             "app_name": "News Today",
             "package": "com.breaking.android.newstoday",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-15T13:29:38.327254",
             "followup_sent_at": null
         },
         "info@scienceshorts.net": {
