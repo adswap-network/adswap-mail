@@ -2,7 +2,7 @@
     "config": {
         "start_date": "2026-09-12",
         "last_run_date": "2026-09-15",
-        "sent_today": 5
+        "sent_today": 9
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -218,29 +218,29 @@
         "info@scienceshorts.net": {
             "app_name": "Study Shorts GCSE & A-Level",
             "package": "com.maderesponsively.scienceshorts",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-15T15:41:16.131424",
             "followup_sent_at": null
         },
         "support@feynmanai.net": {
             "app_name": "Feynman AI",
             "package": "com.learning.feynmanai",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-15T15:41:16.131424",
             "followup_sent_at": null
         },
         "support@study.com": {
             "app_name": "Study.com",
             "package": "com.study.cx2",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-15T15:41:16.131424",
             "followup_sent_at": null
         },
         "support@flowtaskapp.com": {
             "app_name": "PomoPals",
             "package": "com.keedev.flowtask",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-15T15:41:16.131424",
             "followup_sent_at": null
         }
     },
