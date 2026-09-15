@@ -2,7 +2,7 @@
     "config": {
         "start_date": "2026-09-12",
         "last_run_date": "2026-09-15",
-        "sent_today": 12
+        "sent_today": 25
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -267,92 +267,92 @@
         "apps@univerge.blue": {
             "app_name": "UNIVERGE BLUE\u2122 MEET",
             "package": "com.necam.mobilemeetings",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-15T19:35:56.221439",
             "followup_sent_at": null
         },
         "ancientsflip@gmail.com": {
             "app_name": "Ancient Meet",
             "package": "com.ancient.meet",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-15T19:35:56.221439",
             "followup_sent_at": null
         },
         "tech@meetlive.my": {
             "app_name": "Meet Live",
             "package": "com.meetlive.my",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-15T19:35:56.221439",
             "followup_sent_at": null
         },
         "support@meetoffscreen.com": {
             "app_name": "Meet OffScreen",
             "package": "com.meetoffscreen",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-15T19:35:56.221439",
             "followup_sent_at": null
         },
         "hello@flipgoo.com": {
             "app_name": "Flipgoo- Buy & Sell",
             "package": "com.flipgoo_app",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-15T19:35:56.221439",
             "followup_sent_at": null
         },
         "support@ezead.com": {
             "app_name": "EzeAd",
             "package": "com.ezead.app",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-15T19:35:56.221439",
             "followup_sent_at": null
         },
         "arcplayer.feedback@gmail.com": {
             "app_name": "Music Player",
             "package": "com.musicplayer.arcmusic",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-15T19:35:56.221439",
             "followup_sent_at": null
         },
         "indieappslab@gmail.com": {
             "app_name": "Pomodoro \u2014 Pomodoro Timer",
             "package": "io.github.indieappslab.pomodoro",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-15T19:35:56.221439",
             "followup_sent_at": null
         },
         "bobiforge@gmail.com": {
             "app_name": "Pomodoro Timer",
             "package": "com.bobiforge.bobiforge_pomodoro",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-15T19:35:56.221439",
             "followup_sent_at": null
         },
         "contact@focus-now.app": {
             "app_name": "Focus Now",
             "package": "com.ferdinandobermeier.focusmate",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-15T19:35:56.221439",
             "followup_sent_at": null
         },
         "wesley@zetabitapps.com": {
             "app_name": "Pomodoro Timer",
             "package": "com.zetabitapps.pomodoro",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-15T19:35:56.221439",
             "followup_sent_at": null
         },
         "silcongeni@gmail.com": {
             "app_name": "Pomodoro TV",
             "package": "com.vista.frametvweather",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-15T19:35:56.221439",
             "followup_sent_at": null
         },
         "inovasell.app@gmail.com": {
             "app_name": "Pomodoro",
             "package": "com.inovasell.pomodoro",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-15T19:35:56.221439",
             "followup_sent_at": null
         },
         "mwangistanley746@gmail.com": {
