@@ -159,16 +159,26 @@ def get_run_batch_size(state):
     remaining_today = max(0, total_daily_limit - sent_today)
     
     if remaining_today == 0:
-        print(f"[*] Quota giornaliera completata ({sent_today}/{total_daily_limit}). Chiusura immediata.")
+        print(f"[*] Quota giornaliera completata ({sent_today}/{total_daily_limit}). Nessun invio in questo slot.")
         return 0
         
-    hours_left = 24 - now_utc.hour
-    if hours_left <= 6 and remaining_today > 0:
-        batch_size = min(remaining_today, random.randint(8, 15))
-        print(f"[!] Fascia di recupero: mancano poche ore. Batch aumentato a {batch_size}.")
+    hours_left = max(1, 24 - now_utc.hour)
+    
+    # Se mancano poche ore a mezzanotte, forza la chiusura della quota
+    if hours_left <= 3:
+        batch_size = remaining_today
+        print(f"[!] Ultime ore del giorno. Recupero finale: {batch_size} email.")
     else:
-        batch_size = min(remaining_today, random.randint(2, 5))
-        print(f"[*] Quota odierna: {sent_today}/{total_daily_limit}. Batch assegnato: {batch_size} email.")
+        # Calcolo dinamico: spalma in modo perfettamente bilanciato sulle ore rimanenti
+        base_rate = remaining_today / hours_left
+        
+        # Aggiunge un tocco di casualità umana (es. se la base è 2, invia tra 2 e 4)
+        batch_size = min(remaining_today, random.randint(int(base_rate), int(base_rate) + 2))
+        
+        # Garantisce che il cron non giri a vuoto se c'è ancora quota
+        batch_size = max(1, batch_size) if remaining_today > 0 else 0
+        
+        print(f"[*] Quota: {sent_today}/{total_daily_limit}. Ore a mezzanotte UTC: {hours_left}. Batch assegnato: {batch_size} email.")
         
     return batch_size
 
