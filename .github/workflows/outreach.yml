@@ -2,12 +2,7 @@ name: AdSwap Autonomous Outreach
 
 on:
   schedule:
-    # 5 scaglioni distribuiti lungo tutta la giornata (Orari UTC)
-    - cron: '15 8 * * *'   # ~10:15 CET (Mattina)
-    - cron: '45 11 * * *'  # ~13:45 CET (Pranzo)
-    - cron: '20 14 * * *'  # ~16:20 CET (Pomeriggio)
-    - cron: '50 16 * * *'  # ~18:50 CET (Tardo pomeriggio)
-    - cron: '10 19 * * *'  # ~21:10 CET (Sera)
+    - cron: '15 * * * *' # Esegue ogni singola ora
   workflow_dispatch:
 
 permissions:
