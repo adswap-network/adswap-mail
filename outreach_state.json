@@ -2,7 +2,7 @@
     "config": {
         "start_date": "2026-09-12",
         "last_run_date": "2026-09-16",
-        "sent_today": 2
+        "sent_today": 3
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -367,6 +367,118 @@
             "package": "com.just4fun.pomodoro",
             "status": "FIRST_SENT",
             "first_sent_at": "2026-09-16T01:27:08.776243",
+            "followup_sent_at": null
+        },
+        "habithook.app@gmail.com": {
+            "app_name": "Habit Tracker App",
+            "package": "com.metaserve.habithook",
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-16T07:42:32.783083",
+            "followup_sent_at": null
+        },
+        "dev@edvarderos.com": {
+            "app_name": "Habit Tracker",
+            "package": "edvarderos.habitgrid",
+            "status": "PENDING",
+            "first_sent_at": null,
+            "followup_sent_at": null
+        },
+        "developer.nativeapps@gmail.com": {
+            "app_name": "Habit Tracker",
+            "package": "com.ksp.habittracker",
+            "status": "PENDING",
+            "first_sent_at": null,
+            "followup_sent_at": null
+        },
+        "disonstudio@gmail.com": {
+            "app_name": "Habit Tracker Kit",
+            "package": "com.dison.HabitDone",
+            "status": "PENDING",
+            "first_sent_at": null,
+            "followup_sent_at": null
+        },
+        "info@simplyhabits.io": {
+            "app_name": "Simple Habit Tracker",
+            "package": "com.jlabs.habittracker",
+            "status": "PENDING",
+            "first_sent_at": null,
+            "followup_sent_at": null
+        },
+        "vanquyetc2vc@gmail.com": {
+            "app_name": "Kanban",
+            "package": "com.quyetsama.tnotes",
+            "status": "PENDING",
+            "first_sent_at": null,
+            "followup_sent_at": null
+        },
+        "dev_vlad@outlook.com": {
+            "app_name": "Kanban Boards",
+            "package": "com.sdr_labs.KanbanBoards",
+            "status": "PENDING",
+            "first_sent_at": null,
+            "followup_sent_at": null
+        },
+        "admin@kanbana.com": {
+            "app_name": "Kanbana",
+            "package": "dk.AgileBrains.Kanbana",
+            "status": "PENDING",
+            "first_sent_at": null,
+            "followup_sent_at": null
+        },
+        "stoneclark28@gmail.com": {
+            "app_name": "KanbanFlow",
+            "package": "com.kanbanflow.offline",
+            "status": "PENDING",
+            "first_sent_at": null,
+            "followup_sent_at": null
+        },
+        "buenhijogames@gmail.com": {
+            "app_name": "Libre Kanban",
+            "package": "com.buenhijogames.mikanban",
+            "status": "PENDING",
+            "first_sent_at": null,
+            "followup_sent_at": null
+        },
+        "team@kanbanchi.com": {
+            "app_name": "Kanbanchi",
+            "package": "com.kanbanchi.app.twa",
+            "status": "PENDING",
+            "first_sent_at": null,
+            "followup_sent_at": null
+        },
+        "support@syedshahbazhussain.com": {
+            "app_name": "HydroFast",
+            "package": "com.shahbaz.hydrofastfastinghydrationtracker",
+            "status": "PENDING",
+            "first_sent_at": null,
+            "followup_sent_at": null
+        },
+        "xiaoruo1224@gmail.com": {
+            "app_name": "Water Tracker",
+            "package": "com.xiaoruo.watertracker",
+            "status": "PENDING",
+            "first_sent_at": null,
+            "followup_sent_at": null
+        },
+        "system@techkhedut.com": {
+            "app_name": "Drink Water Tracker & Reminder",
+            "package": "com.h2glow.drinkwater.reminder.daily.tracker",
+            "status": "PENDING",
+            "first_sent_at": null,
+            "followup_sent_at": null
+        },
+        "info@oriax.io": {
+            "app_name": "Hydro",
+            "package": "io.oriax.hydro",
+            "status": "PENDING",
+            "first_sent_at": null,
+            "followup_sent_at": null
+        },
+        "info@artmvstd.com": {
+            "app_name": "Fasting Timer & Water Tracker",
+            "package": "com.artmvstd.fastingTracker",
+            "status": "PENDING",
+            "first_sent_at": null,
             "followup_sent_at": null
         }
     },
@@ -1321,7 +1433,71 @@
         "com.inovasell.pomodoro",
         "com.shikudo.focus.study.forest.pomodoro.productivity.hero.rpg.android",
         "com.stanley.focusflow",
-        "com.just4fun.pomodoro"
+        "com.just4fun.pomodoro",
+        "com.roehl.habitkit",
+        "org.isoron.uhabits",
+        "com.habitnow",
+        "com.alt.goodmorning",
+        "com.habitgenius.habit.tracker",
+        "com.gohary.habitradar",
+        "app.disciplined.productive.structured.habit.tracker",
+        "com.oristats.habitbull",
+        "app.vinztech.tickit",
+        "com.aweydev.ezhabit",
+        "com.studio.hellohabit",
+        "com.metaserve.habithook",
+        "com.executionhelper.habittick",
+        "com.habits.todolist.plan.wish",
+        "xyz.thefor.habits.habits",
+        "com.free_simple_apps.habits",
+        "edvarderos.habitgrid",
+        "com.ksp.habittracker",
+        "dev.voksu.hizo",
+        "com.motivated.app",
+        "co.unstatic.habitify",
+        "com.apalon.to.do.list",
+        "com.maapps.habittracker",
+        "com.dison.HabitDone",
+        "com.habit.habstick",
+        "com.habitpixel.app",
+        "com.vanniktech.habittracker.android",
+        "habittracker.todolist.tickit.daily.planner",
+        "com.jlabs.habittracker",
+        "com.quyetsama.tnotes",
+        "com.luckyhan.studio.kanbanboard",
+        "com.kanban.taskboard",
+        "app.web.kanbantodos",
+        "com.sdr_labs.KanbanBoards",
+        "dk.AgileBrains.Kanbana",
+        "com.majksquare.mytaskboardapp",
+        "com.kanbanflow.offline",
+        "com.kanbantool",
+        "com.kanbantab.app",
+        "com.buenhijogames.mikanban",
+        "com.kanbanchi.app.twa",
+        "com.water.tracker.remind",
+        "com.remind.drink.water.hourly",
+        "watertracker.waterreminder.watertrackerapp.drinkwater",
+        "ascendik.drinkwaterreminder.hydration.watertracker.drinkwater",
+        "com.uploss.health.fasting",
+        "com.shahbaz.hydrofastfastinghydrationtracker",
+        "net.uploss.water_app",
+        "com.water.reminder.tracker",
+        "hydration.watertracker.waterreminder.drinkwaterreminder",
+        "com.northpark.drinkwater",
+        "com.xiaoruo.watertracker",
+        "waterreminder.hydration.trackwater",
+        "com.drink.water.reminder.alarm.tracker",
+        "com.vgfit.waterbalance",
+        "com.easyfastapp.app",
+        "com.mobilecreatures.drinkwater",
+        "waterdrinkingreminder.watertracker.waterreminder.drinkwaterapp",
+        "water.drink.reminder.tracker",
+        "com.funnmedia.waterminder",
+        "com.h2glow.drinkwater.reminder.daily.tracker",
+        "com.wachanga.watertrackerpro",
+        "io.oriax.hydro",
+        "com.artmvstd.fastingTracker"
     ],
     "used_keywords": [
         "action offline game indie",
@@ -1367,6 +1543,9 @@
         "meet",
         "buy and sell",
         "music",
-        "pomodoro timer aesthetic"
+        "pomodoro timer aesthetic",
+        "habit tracker offline",
+        "kanban board personal",
+        "water reminder fasting"
     ]
 }
