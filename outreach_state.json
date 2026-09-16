@@ -2,7 +2,7 @@
     "config": {
         "start_date": "2026-09-12",
         "last_run_date": "2026-09-16",
-        "sent_today": 10
+        "sent_today": 35
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -22,23 +22,23 @@
         "andrejjkoroljov25@gmail.com": {
             "app_name": "I am Rock Star idle clicker",
             "package": "com.VerityGamesStudio.IamRockStaridleclicker",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-12T14:07:08.757452",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-09-16T21:22:03.519340"
         },
         "magikongames@gmail.com": {
             "app_name": "Crystalia Idle Clicker",
             "package": "com.magikongames.crystaliaidleclicker",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-12T14:07:08.757452",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-09-16T21:22:03.519340"
         },
         "support@themachinegg.com": {
             "app_name": "The MachinEGG Idle Clicker",
             "package": "com.jc.themachinegg",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-12T14:07:08.757452",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-09-16T21:22:03.519340"
         },
         "rostislav56@gmail.com": {
             "app_name": "Tap Hunter",
@@ -414,69 +414,258 @@
         "dev_vlad@outlook.com": {
             "app_name": "Kanban Boards",
             "package": "com.sdr_labs.KanbanBoards",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-16T21:22:03.519340",
             "followup_sent_at": null
         },
         "admin@kanbana.com": {
             "app_name": "Kanbana",
             "package": "dk.AgileBrains.Kanbana",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-16T21:22:03.519340",
             "followup_sent_at": null
         },
         "stoneclark28@gmail.com": {
             "app_name": "KanbanFlow",
             "package": "com.kanbanflow.offline",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-16T21:22:03.519340",
             "followup_sent_at": null
         },
         "buenhijogames@gmail.com": {
             "app_name": "Libre Kanban",
             "package": "com.buenhijogames.mikanban",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-16T21:22:03.519340",
             "followup_sent_at": null
         },
         "team@kanbanchi.com": {
             "app_name": "Kanbanchi",
             "package": "com.kanbanchi.app.twa",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-16T21:22:03.519340",
             "followup_sent_at": null
         },
         "support@syedshahbazhussain.com": {
             "app_name": "HydroFast",
             "package": "com.shahbaz.hydrofastfastinghydrationtracker",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-16T21:22:03.519340",
             "followup_sent_at": null
         },
         "xiaoruo1224@gmail.com": {
             "app_name": "Water Tracker",
             "package": "com.xiaoruo.watertracker",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-16T21:22:03.519340",
             "followup_sent_at": null
         },
         "system@techkhedut.com": {
             "app_name": "Drink Water Tracker & Reminder",
             "package": "com.h2glow.drinkwater.reminder.daily.tracker",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-16T21:22:03.519340",
             "followup_sent_at": null
         },
         "info@oriax.io": {
             "app_name": "Hydro",
             "package": "io.oriax.hydro",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-16T21:22:03.519340",
             "followup_sent_at": null
         },
         "info@artmvstd.com": {
             "app_name": "Fasting Timer & Water Tracker",
             "package": "com.artmvstd.fastingTracker",
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-16T21:22:03.519340",
+            "followup_sent_at": null
+        },
+        "kjm.application@gmail.com": {
+            "app_name": "Simple Step Counter",
+            "package": "com.kjm.stepcounter",
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-16T21:22:03.519340",
+            "followup_sent_at": null
+        },
+        "support@fitattack.com": {
+            "app_name": "Home Workout",
+            "package": "home.boxing.workouts",
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-16T21:22:03.519340",
+            "followup_sent_at": null
+        },
+        "premiumqualityapps.com@gmail.com": {
+            "app_name": "Home Workout",
+            "package": "com.premium.qualityhealth",
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-16T21:22:03.519340",
+            "followup_sent_at": null
+        },
+        "projects@appthena.io": {
+            "app_name": "Vanish",
+            "package": "appthena.io.vanish",
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-16T21:22:03.519340",
+            "followup_sent_at": null
+        },
+        "nymmate@gmail.com": {
+            "app_name": "Anonymous Chat Rooms, Dating",
+            "package": "com.anonymate.anonymous",
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-16T21:22:03.519340",
+            "followup_sent_at": null
+        },
+        "info@anonapp.co": {
+            "app_name": "Anon",
+            "package": "co.anonapp.chat",
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-16T21:22:03.519340",
+            "followup_sent_at": null
+        },
+        "cbyrm9@gmail.com": {
+            "app_name": "Anonymous Chat",
+            "package": "com.chatalya.app",
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-16T21:22:03.519340",
+            "followup_sent_at": null
+        },
+        "jacomosconi@gmail.com": {
+            "app_name": "Anony",
+            "package": "ai.semora.anony",
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-16T21:22:03.519340",
+            "followup_sent_at": null
+        },
+        "iperkinz97@gmail.com": {
+            "app_name": "Stranger anonymous chat",
+            "package": "com.nexora.whispr",
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-16T21:22:03.519340",
+            "followup_sent_at": null
+        },
+        "multicritmedia@gmail.com": {
+            "app_name": "Anonymous Random Stranger Chat",
+            "package": "com.multicrit.anonymousrandomstrangerchat",
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-16T21:22:03.519340",
+            "followup_sent_at": null
+        },
+        "incoapp1@gmail.com": {
+            "app_name": "P2P Messenger",
+            "package": "com.navaneethsaj.p2pmessenger",
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-16T21:22:03.519340",
+            "followup_sent_at": null
+        },
+        "support@myvael.app": {
+            "app_name": "Vael",
+            "package": "com.foundry26.vael",
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-16T21:22:03.519340",
+            "followup_sent_at": null
+        },
+        "techpek.contact@gmail.com": {
+            "app_name": "Anom",
+            "package": "com.techpek.anom",
+            "status": "PENDING",
+            "first_sent_at": null,
+            "followup_sent_at": null
+        },
+        "gaurav.scorpion.developer@gmail.com": {
+            "app_name": "Strings",
+            "package": "com.strings.app",
+            "status": "PENDING",
+            "first_sent_at": null,
+            "followup_sent_at": null
+        },
+        "meetq.app@gmail.com": {
+            "app_name": "MeetQ",
+            "package": "com.meetbot_app.meetbot_app",
+            "status": "PENDING",
+            "first_sent_at": null,
+            "followup_sent_at": null
+        },
+        "sharmaga440@gmail.com": {
+            "app_name": "Couples Questions Game",
+            "package": "com.couplesgames.couplesgames",
+            "status": "PENDING",
+            "first_sent_at": null,
+            "followup_sent_at": null
+        },
+        "support@fundeasy.in": {
+            "app_name": "Would You Rather? Icebreaker",
+            "package": "com.happyverse.wouldyourather",
+            "status": "PENDING",
+            "first_sent_at": null,
+            "followup_sent_at": null
+        },
+        "knowmebetterapp@gmail.com": {
+            "app_name": "KnowMeBetter",
+            "package": "com.jadegoescoding.knowmebetter",
+            "status": "PENDING",
+            "first_sent_at": null,
+            "followup_sent_at": null
+        },
+        "waldigames79@gmail.com": {
+            "app_name": "100 Questions",
+            "package": "com.Lumicore.hundredquestions",
+            "status": "PENDING",
+            "first_sent_at": null,
+            "followup_sent_at": null
+        },
+        "greenseedapps@gmail.com": {
+            "app_name": "Would You Rather Question Game",
+            "package": "com.gtm.wouldyourather",
+            "status": "PENDING",
+            "first_sent_at": null,
+            "followup_sent_at": null
+        },
+        "admin@neuregiasolutions.com": {
+            "app_name": "Icebreaker-AI",
+            "package": "app.ns.icebreakerai",
+            "status": "PENDING",
+            "first_sent_at": null,
+            "followup_sent_at": null
+        },
+        "stathiskarahisaridis444@gmail.com": {
+            "app_name": "Get to Know Each Other",
+            "package": "com.mycompany.toknoweachother",
+            "status": "PENDING",
+            "first_sent_at": null,
+            "followup_sent_at": null
+        },
+        "balalev14@gmail.com": {
+            "app_name": "Connect",
+            "package": "com.balalev.connectgame",
+            "status": "PENDING",
+            "first_sent_at": null,
+            "followup_sent_at": null
+        },
+        "contact@invitocards.com": {
+            "app_name": "spill cards",
+            "package": "net.spill.cards",
+            "status": "PENDING",
+            "first_sent_at": null,
+            "followup_sent_at": null
+        },
+        "mail@funcouplegames.com": {
+            "app_name": "Couples Trivia & Questions",
+            "package": "com.questiongamesforcouples.couplequiz",
+            "status": "PENDING",
+            "first_sent_at": null,
+            "followup_sent_at": null
+        },
+        "contact@savuko.com": {
+            "app_name": "Dirty Questions & Dares Game",
+            "package": "com.refined.questionsgame",
+            "status": "PENDING",
+            "first_sent_at": null,
+            "followup_sent_at": null
+        },
+        "info@deathofsmalltalk.com": {
+            "app_name": "Conversation starters that hit",
+            "package": "com.deathofsmalltalk.deathofsmalltalk",
             "status": "PENDING",
             "first_sent_at": null,
             "followup_sent_at": null
@@ -1497,7 +1686,83 @@
         "com.h2glow.drinkwater.reminder.daily.tracker",
         "com.wachanga.watertrackerpro",
         "io.oriax.hydro",
-        "com.artmvstd.fastingTracker"
+        "com.artmvstd.fastingTracker",
+        "steptracker.healthandfitness.walkingtracker.pedometer",
+        "pedometer.stepcounter.calorieburner.pedometerforwalking",
+        "com.tayu.tau.pedometer",
+        "stepcounter.pedometer.stepstracker",
+        "com.stepsappgmbh.stepsapp",
+        "stepcounter.steptracker.pedometer.calorie",
+        "cc.pacer.androidapp",
+        "com.kjm.stepcounter",
+        "home.boxing.workouts",
+        "com.fitifyworkouts.bodyweight.workoutapp",
+        "fitness.workouts.home.workoutspro",
+        "com.taka.homeworkout",
+        "com.lifebuddy.homeworkout",
+        "pilatesworkout.yogaworkout.loseweight.workoutapps",
+        "pilatesworkouts.loseweight.dailyyoga",
+        "com.popularapp.sevenmins",
+        "com.premium.qualityhealth",
+        "com.shvagerfm.bestronger",
+        "com.tv.lifebuddy",
+        "com.freeletics.lite",
+        "com.axiommobile.sportsman",
+        "com.abad.thenics",
+        "com.fiton.android",
+        "io.anonchat",
+        "com.antiland",
+        "ru.dwerty.android.anonymouschat",
+        "appthena.io.vanish",
+        "com.anonymate.anonymous",
+        "com.twiq.app",
+        "com.anonimchat",
+        "chat.anti",
+        "co.anonapp.chat",
+        "com.chatalya.app",
+        "com.spoolboxchat",
+        "ai.semora.anony",
+        "com.nexora.whispr",
+        "codes.stable.apps.messenger",
+        "com.multicrit.anonymousrandomstrangerchat",
+        "com.strangers.chat_developers.strangerschatapp",
+        "com.randosnap.randosnap",
+        "com.navaneethsaj.p2pmessenger",
+        "com.random.chat.stranger",
+        "in.noxchat",
+        "de.tellonym.app",
+        "com.foundry26.vael",
+        "com.techpek.anom",
+        "kik.android",
+        "com.strings.app",
+        "com.rsin.strangerchat",
+        "com.zigzag.zigzagchat",
+        "com.sociatools.strangerchatapp",
+        "com.chatnmatch.modoo",
+        "com.questions21app.questions21",
+        "com.woles.icebreakerquestionsspinner",
+        "com.meetbot_app.meetbot_app",
+        "com.couplesgames.couplesgames",
+        "com.twentyonequestions",
+        "app.camelus.dev.otso",
+        "com.app.godeep",
+        "com.abozsgroup.questionable",
+        "com.bigtalk.app",
+        "com.happyverse.wouldyourather",
+        "com.jadegoescoding.knowmebetter",
+        "com.Lumicore.hundredquestions",
+        "com.gtm.wouldyourather",
+        "app.ns.icebreakerai",
+        "com.gtm.wouldyourather2",
+        "com.mycompany.toknoweachother",
+        "com.balalev.connectgame",
+        "net.spill.cards",
+        "com.cohenapps.deeptalkscouplequestions",
+        "com.partyqs",
+        "com.questiongamesforcouples.couplequiz",
+        "com.refined.questionsgame",
+        "com.itclimb.truesoulcards",
+        "com.deathofsmalltalk.deathofsmalltalk"
     ],
     "used_keywords": [
         "action offline game indie",
@@ -1546,6 +1811,10 @@
         "pomodoro timer aesthetic",
         "habit tracker offline",
         "kanban board personal",
-        "water reminder fasting"
+        "water reminder fasting",
+        "step counter offline pedometer",
+        "home workout no equipment",
+        "anonymous chat local",
+        "icebreaker questions app"
     ]
 }
