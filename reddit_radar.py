@@ -37,7 +37,6 @@ USER_AGENTS = [
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:120.0) Gecko/20100101 Firefox/120.0"
 ]
 
-# PROMPT 1: L'Analista.
 PROMPT_ANALISI = """
 Sei un analista di mercato. Devi leggere il titolo e il contenuto di un post di Reddit.
 Il nostro target sono: sviluppatori indie, creatori di app o giochi che si lamentano di avere pochi download, zero visibilità, oppure costi di marketing/Google Ads troppo alti.
@@ -45,7 +44,6 @@ Se il post parla di problemi di codice, bug, cerco lavoro, o argomenti generici,
 Rispondi SOLO con la parola "SI" se è un target perfetto, oppure "NO" in tutti gli altri casi. Non aggiungere altre parole.
 """
 
-# PROMPT 2: Il Copywriter.
 PROMPT_GANCIO = """
 Sei uno sviluppatore mobile indie. Rispondi in inglese (informale, stile Reddit) a questo utente che fatica a trovare download o spendere in Ads.
 Mostra empatia (ci sei passato anche tu con le tue app).
@@ -62,28 +60,41 @@ def setup_db():
 
 def valuta_post(client, titolo, testo):
     contesto = f"TITOLO: {titolo}\nTESTO: {testo[:1000]}"
-    try:
-        # Passaggio all'API Chat raccomandata per evitare il warning AFC
-        chat = client.chats.create(model='gemini-3.6-flash')
-        response = chat.send_message(f"{PROMPT_ANALISI}\n\nPOST:\n{contesto}")
-        return "SI" in response.text.strip().upper()
-    except Exception as e:
-        print(f"      [!] Errore Gemini Analisi: {e}")
-        return False
+    
+    # Sistema di Retry per gestire il limite di 5 richieste/minuto
+    for tentativo in range(3):
+        try:
+            chat = client.chats.create(model='gemini-3.6-flash')
+            response = chat.send_message(f"{PROMPT_ANALISI}\n\nPOST:\n{contesto}")
+            return "SI" in response.text.strip().upper()
+        except Exception as e:
+            if '429' in str(e) or 'RESOURCE_EXHAUSTED' in str(e):
+                print(f"      [!] Quota Gemini in esaurimento (Tentativo {tentativo+1}/3). Pausa di 25 secondi...")
+                time.sleep(25)
+            else:
+                print(f"      [!] Errore Gemini Analisi: {e}")
+                return False
+    return False
 
 def genera_gancio(client, titolo, testo):
     contesto = f"TITOLO: {titolo}\nTESTO: {testo[:1000]}"
-    try:
-        # Passaggio all'API Chat raccomandata
-        chat = client.chats.create(model='gemini-3.6-flash')
-        response = chat.send_message(f"{PROMPT_GANCIO}\n\nPOST DELL'UTENTE:\n{contesto}")
-        return response.text.strip()
-    except Exception as e:
-        return f"[!] Errore generazione: {e}"
+    
+    for tentativo in range(3):
+        try:
+            chat = client.chats.create(model='gemini-3.6-flash')
+            response = chat.send_message(f"{PROMPT_GANCIO}\n\nPOST DELL'UTENTE:\n{contesto}")
+            return response.text.strip()
+        except Exception as e:
+            if '429' in str(e) or 'RESOURCE_EXHAUSTED' in str(e):
+                print(f"      [!] Quota Gemini in esaurimento durante stesura gancio. Pausa 25s...")
+                time.sleep(25)
+            else:
+                return f"[!] Errore generazione: {e}"
+    return "[!] Impossibile generare il gancio dopo 3 tentativi per limiti API."
 
 def main():
     print("==================================================")
-    print("🌍 AVVIO REDDIT RADAR AI - RICERCA GLOBALE (Chat API)")
+    print("🌍 AVVIO REDDIT RADAR AI - RICERCA GLOBALE (Chat API + Freno a mano)")
     print("==================================================\n")
     
     if not GEMINI_API_KEY:
@@ -133,12 +144,16 @@ def main():
                     c.execute("INSERT INTO scanned_posts (id) VALUES (?)", (post_id,))
                     conn.commit()
 
-                    # Valutazione semantica con Gemini Chat API
+                    # Valutazione semantica con Gemini Chat API (ora blindata contro i limiti)
                     if valuta_post(client, titolo, testo_pulito):
                         print("\n" + "="*60)
                         print(f"🎯 TARGET FRESCO INTERCETTATO:")
                         print(f"🔗 Link: {post.link}")
                         print(f"📌 Titolo: {titolo}")
+                        
+                        # Freno a mano: aspettiamo 15s prima di chiedere il testo del commento
+                        # per assicurarci di non fare due chiamate nello stesso istante.
+                        time.sleep(15) 
                         
                         bozza = genera_gancio(client, titolo, testo_pulito)
                         
@@ -146,11 +161,15 @@ def main():
                         print("="*60 + "\n")
                         trovati += 1
                         
+                    # Freno a mano: aspettiamo 12s tra un post e l'altro 
+                    # per non superare mai le 5 richieste gratuite al minuto
+                    time.sleep(12) 
+                        
         except Exception as e:
             print(f"    [!] Errore durante la ricerca '{query}': {e}")
             
         attesa = random.randint(45, 75)
-        print(f"    [zZz] Pausa anti-ban di {attesa} secondi...")
+        print(f"    [zZz] Pausa anti-ban Reddit di {attesa} secondi...")
         time.sleep(attesa)
 
     print(f"\n[*] Scansione terminata. Generati {trovati} ganci strategici.")
