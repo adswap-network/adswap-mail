@@ -1,8 +1,8 @@
 {
     "config": {
         "start_date": "2026-09-12",
-        "last_run_date": "2026-09-15",
-        "sent_today": 25
+        "last_run_date": "2026-09-16",
+        "sent_today": 2
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -358,15 +358,15 @@
         "mwangistanley746@gmail.com": {
             "app_name": "FocusFlow Pomodoro Study Timer",
             "package": "com.stanley.focusflow",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-16T01:27:08.776243",
             "followup_sent_at": null
         },
         "tap4love@gmail.com": {
             "app_name": "Cute Pomodoro",
             "package": "com.just4fun.pomodoro",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-16T01:27:08.776243",
             "followup_sent_at": null
         }
     },
