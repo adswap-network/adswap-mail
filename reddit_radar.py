@@ -8,11 +8,10 @@ import re
 import urllib.parse
 import random
 import logging
-import warnings
 from google import genai
+from google.genai import types
 
-# Silenzia i warning di sistema
-warnings.filterwarnings("ignore")
+# Silenzia i log di sistema
 logging.getLogger("google").setLevel(logging.ERROR)
 os.environ["GRPC_VERBOSITY"] = "ERROR"
 os.environ["GLOG_minloglevel"] = "2"
@@ -20,9 +19,6 @@ os.environ["GLOG_minloglevel"] = "2"
 print = functools.partial(print, flush=True)
 
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
-
-# IL NOSTRO MODELLO DA BATTAGLIA (Leggero, veloce, sempre disponibile)
-MODEL_ID = 'gemini-1.5-flash-8b'
 
 QUERIE_GLOBALI = [
     '"0 downloads" app',
@@ -41,17 +37,17 @@ USER_AGENTS = [
 ]
 
 PROMPT_ANALISI = """
-Sei un analista di mercato. Devi leggere il titolo e il contenuto di un post di Reddit.
-Il nostro target sono: sviluppatori indie, creatori di app o giochi che si lamentano di avere pochi download, zero visibilità, oppure costi di marketing/Google Ads troppo alti.
-Se il post parla di problemi di codice, bug, cerco lavoro, o argomenti generici, NON è il nostro target.
-Rispondi SOLO con la parola "SI" se è un target perfetto, oppure "NO" in tutti gli altri casi. Non aggiungere altre parole.
+Agisci come un analista di mercato. Leggi il titolo e il contenuto di questo post di Reddit.
+Il nostro target: sviluppatori indie, creatori di app/giochi che si lamentano di pochi download, zero visibilità o costi Google Ads troppo alti.
+Se il post parla di problemi di codice, bug, cerco lavoro o argomenti non legati al marketing/downloads, NON è il nostro target.
+Rispondi SOLO con "SI" se è un target perfetto, oppure "NO". Non aggiungere altro.
 """
 
 PROMPT_GANCIO = """
 Sei uno sviluppatore mobile indie. Rispondi in inglese (informale, stile Reddit) a questo utente che fatica a trovare download o spendere in Ads.
-Mostra empatia (ci sei passato anche tu con le tue app).
+Mostra empatia (ci sei passato anche tu).
 Chiedigli come sta cercando di farsi notare al momento o se ha provato alternative.
-REGOLA D'ORO: NON MENZIONARE MAI AdSwap, non inserire alcun link, non vendere nulla. Sii solo un utente umano che chiacchiera. Massimo 2-3 frasi brevi.
+REGOLA D'ORO: NON MENZIONARE MAI AdSwap, non inserire alcun link, non vendere nulla. Sii solo un utente che chiacchiera. Massimo 2-3 frasi brevi.
 """
 
 def setup_db():
@@ -61,45 +57,37 @@ def setup_db():
     conn.commit()
     return conn
 
-def valuta_post(client, titolo, testo):
-    contesto = f"TITOLO: {titolo}\nTESTO: {testo[:1000]}"
-    
-    # Sistema di Retry anti-503 e anti-429
-    for tentativo in range(3):
+def generate_with_retry(client, system_prompt, post_content, max_retries=4, initial_delay=10):
+    """Motore di generazione corazzato ispirato al tuo snippet funzionante."""
+    delay = initial_delay
+    for attempt in range(max_retries):
         try:
-            chat = client.chats.create(model=MODEL_ID)
-            response = chat.send_message(f"{PROMPT_ANALISI}\n\nPOST:\n{contesto}")
-            return "SI" in response.text.strip().upper()
-        except Exception as e:
-            error_str = str(e).upper()
-            if '429' in error_str or 'RESOURCE_EXHAUSTED' in error_str or '503' in error_str or 'UNAVAILABLE' in error_str:
-                print(f"      [!] Server Google carico (Tentativo {tentativo+1}/3). Pausa 20 secondi...")
-                time.sleep(20)
-            else:
-                print(f"      [!] Errore Gemini Analisi: {e}")
-                return False
-    return False
-
-def genera_gancio(client, titolo, testo):
-    contesto = f"TITOLO: {titolo}\nTESTO: {testo[:1000]}"
-    
-    for tentativo in range(3):
-        try:
-            chat = client.chats.create(model=MODEL_ID)
-            response = chat.send_message(f"{PROMPT_GANCIO}\n\nPOST DELL'UTENTE:\n{contesto}")
+            response = client.models.generate_content(
+                model='gemini-2.5-flash',
+                contents=f"{system_prompt}\n\nTESTO DEL POST:\n{post_content}",
+                config=types.GenerateContentConfig(
+                    temperature=0.5,
+                )
+            )
+            if not response or not response.text:
+                raise ValueError("Risposta vuota dal modello")
             return response.text.strip()
+            
         except Exception as e:
-            error_str = str(e).upper()
-            if '429' in error_str or 'RESOURCE_EXHAUSTED' in error_str or '503' in error_str or 'UNAVAILABLE' in error_str:
-                print(f"      [!] Server Google carico (Tentativo {tentativo+1}/3). Pausa 20 secondi...")
-                time.sleep(20)
-            else:
-                return f"[!] Errore generazione: {e}"
-    return "[!] Impossibile generare il gancio dopo 3 tentativi per limiti API."
+            err_msg = str(e).upper()
+            if any(x in err_msg for x in ["503", "429", "404", "UNAVAILABLE", "EXHAUSTED", "INTERNAL"]):
+                if attempt < max_retries - 1:
+                    print(f"      🕒 Server carico ({err_msg[:30]}...). Riprovo in {delay}s...")
+                    time.sleep(delay)
+                    delay *= 2  # Exponential backoff
+                    continue
+            # Se è un altro errore o abbiamo finito i tentativi, ritorna errore
+            print(f"      [!] Errore irreversibile Gemini: {e}")
+            return "ERRORE"
 
 def main():
     print("==================================================")
-    print(f"🌍 AVVIO REDDIT RADAR AI - MODELLO {MODEL_ID.upper()}")
+    print("🌍 AVVIO REDDIT RADAR AI (Motore Gemini 2.5-Flash + Retry)")
     print("==================================================\n")
     
     if not GEMINI_API_KEY:
@@ -122,8 +110,8 @@ def main():
             req = requests.get(url, headers=headers, timeout=15)
             
             if req.status_code == 429:
-                print(f"    [!] Reddit ha fiutato il bot (429). Metto in pausa forzata per 60 secondi...")
-                time.sleep(60)
+                print(f"    [!] Reddit ha fiutato le richieste (429). Pausa di 45 secondi...")
+                time.sleep(45)
                 continue
             elif req.status_code != 200:
                 print(f"    [!] Errore HTTP {req.status_code}. Salto...")
@@ -133,15 +121,16 @@ def main():
             feed = feedparser.parse(req.content)
             
             if not feed.entries:
-                print(f"    [-] Nessun nuovo post rilevante trovato.")
+                print(f"    [-] Nessun post fresco trovato.")
             else:
-                for post in feed.entries[:8]:
+                for post in feed.entries[:6]: # Leggiamo solo i primissimi risultati
                     post_id = post.id
                     titolo = post.title
                     
                     testo_sporco = post.summary
                     testo_pulito = re.sub('<[^<]+?>', '', testo_sporco)
                     
+                    # Salta se già visto
                     c.execute("SELECT id FROM scanned_posts WHERE id=?", (post_id,))
                     if c.fetchone():
                         continue
@@ -149,32 +138,40 @@ def main():
                     c.execute("INSERT INTO scanned_posts (id) VALUES (?)", (post_id,))
                     conn.commit()
 
-                    if valuta_post(client, titolo, testo_pulito):
+                    # 1. Analisi (SI/NO) con Retry
+                    contesto_troncato = f"TITOLO: {titolo}\nTESTO: {testo_pulito[:1000]}"
+                    risultato_analisi = generate_with_retry(client, PROMPT_ANALISI, contesto_troncato)
+                    
+                    if "SI" in risultato_analisi.upper():
                         print("\n" + "="*60)
-                        print(f"🎯 TARGET FRESCO INTERCETTATO:")
+                        print(f"🎯 BERSAGLIO INTERCETTATO:")
                         print(f"🔗 Link: {post.link}")
                         print(f"📌 Titolo: {titolo}")
                         
-                        time.sleep(5) 
+                        time.sleep(5) # Piccola pausa per far rifiatare le API di Google
                         
-                        bozza = genera_gancio(client, titolo, testo_pulito)
+                        # 2. Generazione Gancio con Retry
+                        bozza = generate_with_retry(client, PROMPT_GANCIO, contesto_troncato)
                         
-                        print(f"\n🤖 GEMINI HA PREPARATO IL GANCIO:\n> {bozza}\n")
+                        print(f"\n🤖 IL GANCIO:\n> {bozza}\n")
                         print("="*60 + "\n")
                         trovati += 1
                         
-                    # Freno a mano ridotto a 5 secondi (il modello 8b è molto meno restrittivo)
-                    time.sleep(5) 
+                    time.sleep(8) # Pausa tra l'analisi di un post e l'altro
                         
         except Exception as e:
-            print(f"    [!] Errore durante la ricerca '{query}': {e}")
+            print(f"    [!] Errore ricerca '{query}': {e}")
             
-        attesa = random.randint(40, 60)
+        # Pausa lunga prima della prossima query su Reddit per non prendere il 429
+        attesa = random.randint(30, 50)
         print(f"    [zZz] Pausa anti-ban Reddit di {attesa} secondi...")
         time.sleep(attesa)
 
-    print(f"\n[*] Scansione terminata. Generati {trovati} ganci strategici.")
+    print(f"\n[*] Scansione terminata. Generati {trovati} ganci.")
+    
+    # Spegnimento d'emergenza (preso dal tuo script) per chiudere pulito su GitHub Actions
     conn.close()
+    os._exit(0)
 
 if __name__ == "__main__":
     main()
