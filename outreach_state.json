@@ -2,7 +2,7 @@
     "config": {
         "start_date": "2026-09-12",
         "last_run_date": "2026-09-16",
-        "sent_today": 3
+        "sent_today": 5
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -379,15 +379,15 @@
         "dev@edvarderos.com": {
             "app_name": "Habit Tracker",
             "package": "edvarderos.habitgrid",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-16T13:31:19.426758",
             "followup_sent_at": null
         },
         "developer.nativeapps@gmail.com": {
             "app_name": "Habit Tracker",
             "package": "com.ksp.habittracker",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-16T13:31:19.426758",
             "followup_sent_at": null
         },
         "disonstudio@gmail.com": {
