@@ -4,11 +4,13 @@ import sqlite3
 import functools
 import random
 import logging
+import warnings
 from duckduckgo_search import DDGS
 from google import genai
 from google.genai import types
 
-# Silenzia i log di sistema
+# Silenzia i log di sistema per avere un terminale pulito
+warnings.filterwarnings("ignore")
 logging.getLogger("google").setLevel(logging.ERROR)
 os.environ["GRPC_VERBOSITY"] = "ERROR"
 os.environ["GLOG_minloglevel"] = "2"
@@ -17,7 +19,7 @@ print = functools.partial(print, flush=True)
 
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 
-# QUERIES STEALTH: Ora usiamo gli operatori di ricerca di DuckDuckGo (site:reddit.com)
+# QUERIES STEALTH: DuckDuckGo fa il lavoro sporco senza farsi bloccare da Reddit
 QUERIE_GLOBALI = [
     'site:reddit.com "0 downloads" app',
     'site:reddit.com "no downloads" indie dev',
@@ -52,8 +54,9 @@ def generate_with_retry(client, system_prompt, post_content, max_retries=3, init
     delay = initial_delay
     for attempt in range(max_retries):
         try:
+            # === LA CORREZIONE È QUI: 3.6-flash ===
             response = client.models.generate_content(
-                model='gemini-2.5-flash',
+                model='gemini-3.6-flash', 
                 contents=f"{system_prompt}\n\nTESTO DEL POST:\n{post_content}",
                 config=types.GenerateContentConfig(temperature=0.5)
             )
@@ -74,7 +77,7 @@ def generate_with_retry(client, system_prompt, post_content, max_retries=3, init
 
 def main():
     print("==================================================")
-    print("🥷 AVVIO REDDIT RADAR AI - MODALITÀ STEALTH (DDGS)")
+    print("🥷 AVVIO REDDIT RADAR AI - MODALITÀ STEALTH")
     print("==================================================\n")
     
     if not GEMINI_API_KEY:
@@ -116,6 +119,8 @@ def main():
                 conn.commit()
 
                 contesto_troncato = f"TITOLO: {titolo}\nTESTO SINTETICO: {testo_snippet}"
+                
+                # Analisi AI
                 risultato_analisi = generate_with_retry(client, PROMPT_ANALISI, contesto_troncato)
                 
                 if "SI" in risultato_analisi.upper():
@@ -124,25 +129,28 @@ def main():
                     print(f"🔗 Link: {link}")
                     print(f"📌 Titolo: {titolo}")
                     
-                    time.sleep(5)
+                    time.sleep(3)
                     
+                    # Generazione Gancio AI
                     bozza = generate_with_retry(client, PROMPT_GANCIO, contesto_troncato)
                     
                     print(f"\n🤖 IL GANCIO:\n> {bozza}\n")
                     print("="*60 + "\n")
                     trovati += 1
                     
-                time.sleep(4) # Pausa tra l'analisi di un post e l'altro
+                time.sleep(3) # Pausa tra l'analisi di un post e l'altro
                 
         except Exception as e:
             print(f"    [!] Errore durante la ricerca '{query}': {e}")
             
-        # Pausa molto più breve tra le ricerche: DuckDuckGo è molto più permissivo
+        # Pausa molto più breve tra le ricerche: DuckDuckGo è permissivo
         attesa = random.randint(5, 10)
         time.sleep(attesa)
 
     print(f"\n[*] Scansione terminata. Generati {trovati} ganci.")
     conn.close()
+    
+    # Spegnimento pulito (ispirato al tuo workflow)
     os._exit(0)
 
 if __name__ == "__main__":
