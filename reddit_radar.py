@@ -6,10 +6,13 @@ import requests
 import feedparser
 import re
 import urllib.parse
-from google import genai
+import random
 import logging
+import warnings
+from google import genai
 
-# Disabilita i noiosi warning di sistema di Google nei log
+# Silenzia completamente tutti i warning inutili di sistema e di Google
+warnings.filterwarnings("ignore")
 logging.getLogger("google").setLevel(logging.ERROR)
 os.environ["GRPC_VERBOSITY"] = "ERROR"
 os.environ["GLOG_minloglevel"] = "2"
@@ -18,10 +21,6 @@ print = functools.partial(print, flush=True)
 
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 
-# ==========================================
-# CACCIA GLOBALE: Cerchiamo in TUTTO Reddit
-# ==========================================
-# Invece di subreddit specifici, cerchiamo conversazioni ovunque basandoci sui problemi reali.
 QUERIE_GLOBALI = [
     '"0 downloads" app',
     '"no downloads" app',
@@ -29,6 +28,14 @@ QUERIE_GLOBALI = [
     '"user acquisition" indie game',
     'app marketing "too expensive"',
     'how to promote app "zero budget"'
+]
+
+# Maschere multiple per ingannare Reddit a ogni nuovo ciclo
+USER_AGENTS = [
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",
+    "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36",
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:120.0) Gecko/20100101 Firefox/120.0"
 ]
 
 # PROMPT 1: L'Analista.
@@ -57,8 +64,9 @@ def setup_db():
 def valuta_post(client, titolo, testo):
     contesto = f"TITOLO: {titolo}\nTESTO: {testo[:1000]}"
     try:
+        # AGGIORNATO AL MODELLO ATTIVO 2.5 FLASH PER RISOLVERE IL 404
         response = client.models.generate_content(
-            model='gemini-1.5-flash',
+            model='gemini-2.5-flash',
             contents=f"{PROMPT_ANALISI}\n\nPOST:\n{contesto}"
         )
         return "SI" in response.text.strip().upper()
@@ -70,7 +78,7 @@ def genera_gancio(client, titolo, testo):
     contesto = f"TITOLO: {titolo}\nTESTO: {testo[:1000]}"
     try:
         response = client.models.generate_content(
-            model='gemini-1.5-flash',
+            model='gemini-2.5-flash',
             contents=f"{PROMPT_GANCIO}\n\nPOST DELL'UTENTE:\n{contesto}"
         )
         return response.text.strip()
@@ -79,7 +87,7 @@ def genera_gancio(client, titolo, testo):
 
 def main():
     print("==================================================")
-    print("🌍 AVVIO REDDIT RADAR AI - RICERCA GLOBALE")
+    print("🌍 AVVIO REDDIT RADAR AI - RICERCA GLOBALE 2.0")
     print("==================================================\n")
     
     if not GEMINI_API_KEY:
@@ -91,36 +99,33 @@ def main():
     c = conn.cursor()
     trovati = 0
 
-    # User-Agent vario per ingannare i filtri
-    headers = {
-        "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36"
-    }
-
     for query in QUERIE_GLOBALI:
         print(f"[*] Cerca su tutto Reddit: {query}")
         
-        # Codifica la query per l'URL (es. gli spazi diventano %20)
         safe_query = urllib.parse.quote(query)
         url = f"https://www.reddit.com/search.rss?q={safe_query}&sort=new&t=week"
+        
+        # Scelta di un browser finto casuale per aggirare il firewall
+        headers = {"User-Agent": random.choice(USER_AGENTS)}
         
         try:
             req = requests.get(url, headers=headers, timeout=15)
             
             if req.status_code == 429:
-                print(f"    [!] Limite superato (429). Metto in pausa per 30 secondi per far raffreddare l'IP...")
-                time.sleep(30)
+                print(f"    [!] Reddit ha fiutato il bot (429). Metto in pausa forzata per 60 secondi...")
+                time.sleep(60)
                 continue
             elif req.status_code != 200:
                 print(f"    [!] Errore {req.status_code}. Salto...")
-                time.sleep(15)
+                time.sleep(10)
                 continue
             
             feed = feedparser.parse(req.content)
             
             if not feed.entries:
-                print(f"    [-] Nessun nuovo post rilevante per questa ricerca.")
+                print(f"    [-] Nessun nuovo post rilevante trovato.")
             else:
-                for post in feed.entries[:8]: # Controlla i primi 8 risultati freschi
+                for post in feed.entries[:8]:
                     post_id = post.id
                     titolo = post.title
                     
@@ -134,7 +139,6 @@ def main():
                     c.execute("INSERT INTO scanned_posts (id) VALUES (?)", (post_id,))
                     conn.commit()
 
-                    # L'IA entra in azione
                     if valuta_post(client, titolo, testo_pulito):
                         print("\n" + "="*60)
                         print(f"🎯 TARGET FRESCO INTERCETTATO:")
@@ -150,9 +154,10 @@ def main():
         except Exception as e:
             print(f"    [!] Errore durante la ricerca '{query}': {e}")
             
-        # PAUSA TATTICA LUNGA: fondamentale per non farsi bloccare di nuovo l'IP
-        print("    [zZz] Pausa anti-ban di 17 secondi...")
-        time.sleep(17)
+        # PAUSA MASSICCIA: Questa è la chiave vitale per evitare il 429 su GitHub Actions.
+        attesa = random.randint(45, 75)
+        print(f"    [zZz] Pausa anti-ban di {attesa} secondi...")
+        time.sleep(attesa)
 
     print(f"\n[*] Scansione terminata. Generati {trovati} ganci strategici.")
     conn.close()
