@@ -23,7 +23,7 @@ jobs:
 
       - name: Install Dependencies
         run: |
-          pip install duckduckgo-search google-genai
+          pip install ddgs google-genai
 
       - name: Execute Reddit Radar
         env:
