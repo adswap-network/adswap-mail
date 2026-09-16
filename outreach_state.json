@@ -2,22 +2,22 @@
     "config": {
         "start_date": "2026-09-12",
         "last_run_date": "2026-09-16",
-        "sent_today": 5
+        "sent_today": 10
     },
     "leads": {
         "funnyghostgames@gmail.com": {
             "app_name": "The Fall 2",
             "package": "com.funnyghost.TheFallZero",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-12T14:07:08.757452",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-09-16T18:12:25.983399"
         },
         "sycamorehillstudios@outlook.com": {
             "app_name": "Idle Orbit",
             "package": "com.idleorbit",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-12T14:07:08.757452",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-09-16T18:12:25.983399"
         },
         "andrejjkoroljov25@gmail.com": {
             "app_name": "I am Rock Star idle clicker",
@@ -393,22 +393,22 @@
         "disonstudio@gmail.com": {
             "app_name": "Habit Tracker Kit",
             "package": "com.dison.HabitDone",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-16T18:12:25.983399",
             "followup_sent_at": null
         },
         "info@simplyhabits.io": {
             "app_name": "Simple Habit Tracker",
             "package": "com.jlabs.habittracker",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-16T18:12:25.983399",
             "followup_sent_at": null
         },
         "vanquyetc2vc@gmail.com": {
             "app_name": "Kanban",
             "package": "com.quyetsama.tnotes",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-16T18:12:25.983399",
             "followup_sent_at": null
         },
         "dev_vlad@outlook.com": {
