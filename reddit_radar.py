@@ -11,7 +11,7 @@ import logging
 import warnings
 from google import genai
 
-# Silenzia completamente tutti i warning inutili di sistema e di Google
+# Silenzia i warning di sistema
 warnings.filterwarnings("ignore")
 logging.getLogger("google").setLevel(logging.ERROR)
 os.environ["GRPC_VERBOSITY"] = "ERROR"
@@ -30,7 +30,6 @@ QUERIE_GLOBALI = [
     'how to promote app "zero budget"'
 ]
 
-# Maschere multiple per ingannare Reddit a ogni nuovo ciclo
 USER_AGENTS = [
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
     "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",
@@ -64,11 +63,9 @@ def setup_db():
 def valuta_post(client, titolo, testo):
     contesto = f"TITOLO: {titolo}\nTESTO: {testo[:1000]}"
     try:
-        # AGGIORNATO AL MODELLO ATTIVO 2.5 FLASH PER RISOLVERE IL 404
-        response = client.models.generate_content(
-            model='gemini-2.5-flash',
-            contents=f"{PROMPT_ANALISI}\n\nPOST:\n{contesto}"
-        )
+        # Passaggio all'API Chat raccomandata per evitare il warning AFC
+        chat = client.chats.create(model='gemini-3.6-flash')
+        response = chat.send_message(f"{PROMPT_ANALISI}\n\nPOST:\n{contesto}")
         return "SI" in response.text.strip().upper()
     except Exception as e:
         print(f"      [!] Errore Gemini Analisi: {e}")
@@ -77,17 +74,16 @@ def valuta_post(client, titolo, testo):
 def genera_gancio(client, titolo, testo):
     contesto = f"TITOLO: {titolo}\nTESTO: {testo[:1000]}"
     try:
-        response = client.models.generate_content(
-            model='gemini-2.5-flash',
-            contents=f"{PROMPT_GANCIO}\n\nPOST DELL'UTENTE:\n{contesto}"
-        )
+        # Passaggio all'API Chat raccomandata
+        chat = client.chats.create(model='gemini-3.6-flash')
+        response = chat.send_message(f"{PROMPT_GANCIO}\n\nPOST DELL'UTENTE:\n{contesto}")
         return response.text.strip()
     except Exception as e:
         return f"[!] Errore generazione: {e}"
 
 def main():
     print("==================================================")
-    print("🌍 AVVIO REDDIT RADAR AI - RICERCA GLOBALE 2.0")
+    print("🌍 AVVIO REDDIT RADAR AI - RICERCA GLOBALE (Chat API)")
     print("==================================================\n")
     
     if not GEMINI_API_KEY:
@@ -104,8 +100,6 @@ def main():
         
         safe_query = urllib.parse.quote(query)
         url = f"https://www.reddit.com/search.rss?q={safe_query}&sort=new&t=week"
-        
-        # Scelta di un browser finto casuale per aggirare il firewall
         headers = {"User-Agent": random.choice(USER_AGENTS)}
         
         try:
@@ -116,7 +110,7 @@ def main():
                 time.sleep(60)
                 continue
             elif req.status_code != 200:
-                print(f"    [!] Errore {req.status_code}. Salto...")
+                print(f"    [!] Errore HTTP {req.status_code}. Salto...")
                 time.sleep(10)
                 continue
             
@@ -139,6 +133,7 @@ def main():
                     c.execute("INSERT INTO scanned_posts (id) VALUES (?)", (post_id,))
                     conn.commit()
 
+                    # Valutazione semantica con Gemini Chat API
                     if valuta_post(client, titolo, testo_pulito):
                         print("\n" + "="*60)
                         print(f"🎯 TARGET FRESCO INTERCETTATO:")
@@ -154,7 +149,6 @@ def main():
         except Exception as e:
             print(f"    [!] Errore durante la ricerca '{query}': {e}")
             
-        # PAUSA MASSICCIA: Questa è la chiave vitale per evitare il 429 su GitHub Actions.
         attesa = random.randint(45, 75)
         print(f"    [zZz] Pausa anti-ban di {attesa} secondi...")
         time.sleep(attesa)
