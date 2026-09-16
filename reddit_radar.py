@@ -21,6 +21,9 @@ print = functools.partial(print, flush=True)
 
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 
+# IL NOSTRO MODELLO DA BATTAGLIA (Leggero, veloce, sempre disponibile)
+MODEL_ID = 'gemini-1.5-flash-8b'
+
 QUERIE_GLOBALI = [
     '"0 downloads" app',
     '"no downloads" app',
@@ -61,16 +64,17 @@ def setup_db():
 def valuta_post(client, titolo, testo):
     contesto = f"TITOLO: {titolo}\nTESTO: {testo[:1000]}"
     
-    # Sistema di Retry per gestire il limite di 5 richieste/minuto
+    # Sistema di Retry anti-503 e anti-429
     for tentativo in range(3):
         try:
-            chat = client.chats.create(model='gemini-3.6-flash')
+            chat = client.chats.create(model=MODEL_ID)
             response = chat.send_message(f"{PROMPT_ANALISI}\n\nPOST:\n{contesto}")
             return "SI" in response.text.strip().upper()
         except Exception as e:
-            if '429' in str(e) or 'RESOURCE_EXHAUSTED' in str(e):
-                print(f"      [!] Quota Gemini in esaurimento (Tentativo {tentativo+1}/3). Pausa di 25 secondi...")
-                time.sleep(25)
+            error_str = str(e).upper()
+            if '429' in error_str or 'RESOURCE_EXHAUSTED' in error_str or '503' in error_str or 'UNAVAILABLE' in error_str:
+                print(f"      [!] Server Google carico (Tentativo {tentativo+1}/3). Pausa 20 secondi...")
+                time.sleep(20)
             else:
                 print(f"      [!] Errore Gemini Analisi: {e}")
                 return False
@@ -81,20 +85,21 @@ def genera_gancio(client, titolo, testo):
     
     for tentativo in range(3):
         try:
-            chat = client.chats.create(model='gemini-3.6-flash')
+            chat = client.chats.create(model=MODEL_ID)
             response = chat.send_message(f"{PROMPT_GANCIO}\n\nPOST DELL'UTENTE:\n{contesto}")
             return response.text.strip()
         except Exception as e:
-            if '429' in str(e) or 'RESOURCE_EXHAUSTED' in str(e):
-                print(f"      [!] Quota Gemini in esaurimento durante stesura gancio. Pausa 25s...")
-                time.sleep(25)
+            error_str = str(e).upper()
+            if '429' in error_str or 'RESOURCE_EXHAUSTED' in error_str or '503' in error_str or 'UNAVAILABLE' in error_str:
+                print(f"      [!] Server Google carico (Tentativo {tentativo+1}/3). Pausa 20 secondi...")
+                time.sleep(20)
             else:
                 return f"[!] Errore generazione: {e}"
     return "[!] Impossibile generare il gancio dopo 3 tentativi per limiti API."
 
 def main():
     print("==================================================")
-    print("🌍 AVVIO REDDIT RADAR AI - RICERCA GLOBALE (Chat API + Freno a mano)")
+    print(f"🌍 AVVIO REDDIT RADAR AI - MODELLO {MODEL_ID.upper()}")
     print("==================================================\n")
     
     if not GEMINI_API_KEY:
@@ -144,16 +149,13 @@ def main():
                     c.execute("INSERT INTO scanned_posts (id) VALUES (?)", (post_id,))
                     conn.commit()
 
-                    # Valutazione semantica con Gemini Chat API (ora blindata contro i limiti)
                     if valuta_post(client, titolo, testo_pulito):
                         print("\n" + "="*60)
                         print(f"🎯 TARGET FRESCO INTERCETTATO:")
                         print(f"🔗 Link: {post.link}")
                         print(f"📌 Titolo: {titolo}")
                         
-                        # Freno a mano: aspettiamo 15s prima di chiedere il testo del commento
-                        # per assicurarci di non fare due chiamate nello stesso istante.
-                        time.sleep(15) 
+                        time.sleep(5) 
                         
                         bozza = genera_gancio(client, titolo, testo_pulito)
                         
@@ -161,14 +163,13 @@ def main():
                         print("="*60 + "\n")
                         trovati += 1
                         
-                    # Freno a mano: aspettiamo 12s tra un post e l'altro 
-                    # per non superare mai le 5 richieste gratuite al minuto
-                    time.sleep(12) 
+                    # Freno a mano ridotto a 5 secondi (il modello 8b è molto meno restrittivo)
+                    time.sleep(5) 
                         
         except Exception as e:
             print(f"    [!] Errore durante la ricerca '{query}': {e}")
             
-        attesa = random.randint(45, 75)
+        attesa = random.randint(40, 60)
         print(f"    [zZz] Pausa anti-ban Reddit di {attesa} secondi...")
         time.sleep(attesa)
 
