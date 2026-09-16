@@ -5,11 +5,11 @@ import functools
 import random
 import logging
 import warnings
-from duckduckgo_search import DDGS
+import re
+from ddgs import DDGS
 from google import genai
 from google.genai import types
 
-# Silenzia i log di sistema per avere un terminale pulito
 warnings.filterwarnings("ignore")
 logging.getLogger("google").setLevel(logging.ERROR)
 os.environ["GRPC_VERBOSITY"] = "ERROR"
@@ -19,15 +19,15 @@ print = functools.partial(print, flush=True)
 
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 
-# QUERIES STEALTH: DuckDuckGo fa il lavoro sporco senza farsi bloccare da Reddit
-QUERIE_GLOBALI = [
-    'site:reddit.com "0 downloads" app',
-    'site:reddit.com "no downloads" indie dev',
-    'site:reddit.com "expensive ads" app marketing',
-    'site:reddit.com "user acquisition" indie game',
-    'site:reddit.com app marketing "too expensive"',
-    'site:reddit.com how to promote app "zero budget"'
-]
+# PROMPT 0: Gemini genera le query di ricerca!
+PROMPT_GENERAZIONE_QUERY = """
+Sei un growth hacker per app mobile. Devi generare 4 query di ricerca per trovare post recenti su Reddit di sviluppatori indie disperati perché non hanno download, o perché i costi di Google Ads/marketing sono insostenibili.
+REGOLA 1: Aggiungi sempre 'site:reddit.com' all'inizio di ogni query.
+REGOLA 2: Usa parole chiave ampie in inglese, SENZA usare virgolette.
+Esempio: site:reddit.com indie game marketing zero players advice
+Esempio: site:reddit.com alternative to google ads app developers
+Restituisci SOLO le 4 stringhe, una per riga. Nessun elenco puntato, nessun commento.
+"""
 
 PROMPT_ANALISI = """
 Agisci come un analista di mercato. Leggi il titolo e il contenuto di questo post di Reddit.
@@ -50,34 +50,33 @@ def setup_db():
     conn.commit()
     return conn
 
-def generate_with_retry(client, system_prompt, post_content, max_retries=3, initial_delay=8):
+def generate_with_retry(client, system_prompt, post_content="", max_retries=3, initial_delay=8):
     delay = initial_delay
     for attempt in range(max_retries):
         try:
-            # === LA CORREZIONE È QUI: 3.6-flash ===
+            testo_unito = f"{system_prompt}\n\nTESTO:\n{post_content}" if post_content else system_prompt
             response = client.models.generate_content(
                 model='gemini-3.6-flash', 
-                contents=f"{system_prompt}\n\nTESTO DEL POST:\n{post_content}",
-                config=types.GenerateContentConfig(temperature=0.5)
+                contents=testo_unito,
+                config=types.GenerateContentConfig(temperature=0.7)
             )
             if not response or not response.text:
-                raise ValueError("Risposta vuota dal modello")
+                raise ValueError("Risposta vuota")
             return response.text.strip()
-            
         except Exception as e:
             err_msg = str(e).upper()
-            if any(x in err_msg for x in ["503", "429", "404", "UNAVAILABLE", "EXHAUSTED", "INTERNAL"]):
+            if any(x in err_msg for x in ["503", "429", "404", "UNAVAILABLE"]):
                 if attempt < max_retries - 1:
-                    print(f"      🕒 API Google occupata. Riprovo in {delay}s...")
+                    print(f"      🕒 API occupata. Riprovo in {delay}s...")
                     time.sleep(delay)
                     delay *= 2
                     continue
-            print(f"      [!] Errore irreversibile Gemini: {e}")
             return "ERRORE"
+    return "ERRORE"
 
 def main():
     print("==================================================")
-    print("🥷 AVVIO REDDIT RADAR AI - MODALITÀ STEALTH")
+    print("🧠 AVVIO REDDIT RADAR AI - RICERCA DINAMICA")
     print("==================================================\n")
     
     if not GEMINI_API_KEY:
@@ -89,17 +88,35 @@ def main():
     c = conn.cursor()
     trovati = 0
 
+    print("[*] Chiedo a Gemini di inventare le strategie di ricerca...")
+    query_dinamiche_raw = generate_with_retry(client, PROMPT_GENERAZIONE_QUERY)
+    
+    if query_dinamiche_raw == "ERRORE":
+        print("[!] Impossibile generare query. Chiusura.")
+        return
+
+    # Estrae le query pulendo le righe
+    querie_globali = [q.strip() for q in query_dinamiche_raw.split('\n') if 'site:reddit.com' in q]
+    
+    if not querie_globali:
+        print("[!] Gemini non ha formattato bene le query. Uso quelle di backup.")
+        querie_globali = [
+            'site:reddit.com app marketing no downloads',
+            'site:reddit.com indie game how to get players',
+            'site:reddit.com app store optimization not working'
+        ]
+
     ddgs = DDGS()
 
-    for query in QUERIE_GLOBALI:
-        print(f"[*] Ricerca Stealth in corso: {query}")
+    for query in querie_globali:
+        print(f"\n[*] Caccia in corso: {query}")
         
         try:
-            # timelimit='w' cerca solo risultati dell'ultima settimana (freshness!)
-            risultati = list(ddgs.text(query, max_results=5, timelimit='w'))
+            # timelimit='m' (mese) per garantirci volume, ma ordiniamo per freschezza
+            risultati = list(ddgs.text(query, max_results=6, timelimit='m'))
             
             if not risultati:
-                print(f"    [-] Nessun post recente trovato per questa query.")
+                print(f"    [-] Rete vuota per questa query.")
                 time.sleep(3)
                 continue
                 
@@ -108,7 +125,6 @@ def main():
                 testo_snippet = post.get('body', '')
                 link = post.get('href', '')
                 
-                # Creiamo un ID univoco basato sul link
                 post_id = link.split('comments/')[1].split('/')[0] if 'comments/' in link else link
                 
                 c.execute("SELECT id FROM scanned_posts WHERE id=?", (post_id,))
@@ -120,37 +136,32 @@ def main():
 
                 contesto_troncato = f"TITOLO: {titolo}\nTESTO SINTETICO: {testo_snippet}"
                 
-                # Analisi AI
+                # Gemini valuta
                 risultato_analisi = generate_with_retry(client, PROMPT_ANALISI, contesto_troncato)
                 
                 if "SI" in risultato_analisi.upper():
                     print("\n" + "="*60)
-                    print(f"🎯 BERSAGLIO INTERCETTATO (via Stealth):")
+                    print(f"🎯 BERSAGLIO INTERCETTATO:")
                     print(f"🔗 Link: {link}")
                     print(f"📌 Titolo: {titolo}")
                     
                     time.sleep(3)
                     
-                    # Generazione Gancio AI
                     bozza = generate_with_retry(client, PROMPT_GANCIO, contesto_troncato)
                     
                     print(f"\n🤖 IL GANCIO:\n> {bozza}\n")
                     print("="*60 + "\n")
                     trovati += 1
                     
-                time.sleep(3) # Pausa tra l'analisi di un post e l'altro
+                time.sleep(3) 
                 
         except Exception as e:
-            print(f"    [!] Errore durante la ricerca '{query}': {e}")
+            print(f"    [!] Errore su '{query}': {e}")
             
-        # Pausa molto più breve tra le ricerche: DuckDuckGo è permissivo
-        attesa = random.randint(5, 10)
-        time.sleep(attesa)
+        time.sleep(random.randint(5, 8))
 
-    print(f"\n[*] Scansione terminata. Generati {trovati} ganci.")
+    print(f"\n[*] Scansione terminata a fondo. Generati {trovati} ganci.")
     conn.close()
-    
-    # Spegnimento pulito (ispirato al tuo workflow)
     os._exit(0)
 
 if __name__ == "__main__":
