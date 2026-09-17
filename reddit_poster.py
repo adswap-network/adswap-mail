@@ -13,7 +13,7 @@ def get_db():
 
 def main():
     print("==================================================")
-    print("🔫 AVVIO CECCHINO REDDIT (INIEZIONE JAVASCRIPT 2.3)")
+    print("🔫 AVVIO CECCHINO REDDIT (PUNTAMENTO DI PRECISIONE 2.4)")
     print("==================================================\n")
     
     if not COOKIE_VALUE:
@@ -54,50 +54,61 @@ def main():
         try:
             print("    [>] Caricamento pagina Reddit...")
             page.goto(post_url, wait_until="domcontentloaded", timeout=45000)
-            time.sleep(6)
+            time.sleep(8) # Lasciamo caricare bene l'interfaccia complessa di Reddit
             
-            # 1. INIEZIONE JS: Ordina al browser di portare il box al centro perfetto dello schermo
-            print("    [>] Iniezione JS: Scroll forzato al centro...")
-            try:
-                page.evaluate("document.querySelector('shreddit-composer').scrollIntoView({behavior: 'smooth', block: 'center'});")
-                time.sleep(3)
-            except Exception as e:
-                print("    [!] JS Scroll fallito, il box potrebbe non esistere.")
+            print("    [>] Aggancio mirato al container del testo...")
+            # Playwright penetra in automatico lo Shadow DOM se concateniamo i locator
+            composer = page.locator('shreddit-composer').first
+            composer.scroll_into_view_if_needed()
+            time.sleep(2)
             
-            # 2. INIEZIONE JS: Clicca il box aggirando i controlli di visibilità
-            print("    [>] Iniezione JS: Click forzato...")
-            try:
-                page.evaluate("document.querySelector('shreddit-composer').click();")
-                time.sleep(2)
-            except:
-                pass
+            print("    [>] Ricerca dell'editor interno...")
+            editor = composer.locator('[contenteditable="true"]').first
+            
+            if editor.count() == 0:
+                raise Exception("Box di testo 'contenteditable' non trovato.")
                 
-            # Piano B per il focus: se JS non l'ha attivato, Playwright clicca brutalmente in mezzo allo schermo
-            page.mouse.click(1920 / 2, 1080 / 2)
+            print("    [>] Click dentro l'editor e digitazione...")
+            editor.click(force=True)
             time.sleep(1)
             
-            print("    [>] Digitazione bozza (tastiera virtuale)...")
-            # Usa la tastiera di sistema, scriverà ovunque si trovi il focus in quel momento
-            page.keyboard.type(bozza, delay=35) 
+            # Non usiamo più la tastiera generica, ma scriviamo fisicamente DENTRO l'elemento
+            editor.type(bozza, delay=35)
             time.sleep(3)
             
-            print("    [>] Cerca e clicca il tasto Comment...")
-            # Usa il selettore più generico possibile supportato da Playwright (penetrerà lo Shadow DOM)
-            submit_btn = page.locator('button:has-text("Comment")').last
-            submit_btn.click(force=True, timeout=10000)
+            print("    [>] Ricerca del pulsante Submit...")
+            submit_btn = composer.locator('button[type="submit"], button[slot="submitButton"]').first
+            
+            if submit_btn.count() == 0:
+                raise Exception("Tasto 'Comment' non trovato dentro il composer.")
+                
+            submit_btn.click(force=True)
+            print("    [>] Click effettuato. Attesa per la conferma di rete...")
             time.sleep(6)
+            
+            # FOTOGRAFIA DI CONFERMA
+            page.screenshot(path="conferma_pubblicazione.png")
+            print("    [i] 📸 Screenshot di VITTORIA salvato (conferma_pubblicazione.png). Controlla Artifacts!")
             
             c.execute("UPDATE scanned_posts SET status='POSTED' WHERE id=?", (post_id,))
             conn.commit()
             print("    [✓] Commento pubblicato con successo!")
             
         except Exception as e:
-            print(f"    [!] Errore critico finale: {e}")
+            print(f"    [!] Errore critico: {e}")
             try:
+                # ESTRAZIONE HTML AUTOMATICA
+                html_dump = page.locator('shreddit-composer').first.inner_html()
+                print("\n" + "="*50)
+                print("--- INIZIO DUMP HTML PER L'IA ---")
+                print(html_dump)
+                print("--- FINE DUMP HTML ---")
+                print("="*50 + "\n")
+                
                 page.screenshot(path="errore_reddit.png")
-                print("    [i] 📸 Screenshot salvato.")
+                print("    [i] 📸 Screenshot errore salvato.")
             except:
-                pass
+                print("    [!] Impossibile estrarre l'HTML.")
             
         finally:
             browser.close()
