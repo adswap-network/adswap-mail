@@ -13,7 +13,7 @@ def get_db():
 
 def main():
     print("==================================================")
-    print("🔫 AVVIO CECCHINO REDDIT (PLAYWRIGHT STEALTH 2.2)")
+    print("🔫 AVVIO CECCHINO REDDIT (INIEZIONE JAVASCRIPT 2.3)")
     print("==================================================\n")
     
     if not COOKIE_VALUE:
@@ -56,42 +56,35 @@ def main():
             page.goto(post_url, wait_until="domcontentloaded", timeout=45000)
             time.sleep(6)
             
-            # Chiude eventuali banner se presenti
+            # 1. INIEZIONE JS: Ordina al browser di portare il box al centro perfetto dello schermo
+            print("    [>] Iniezione JS: Scroll forzato al centro...")
             try:
-                cookie_btn = page.locator('button:has-text("Accept all"), button:has-text("Accept")').first
-                if cookie_btn.is_visible(timeout=2000):
-                    cookie_btn.click(force=True)
-                    time.sleep(2)
+                page.evaluate("document.querySelector('shreddit-composer').scrollIntoView({behavior: 'smooth', block: 'center'});")
+                time.sleep(3)
+            except Exception as e:
+                print("    [!] JS Scroll fallito, il box potrebbe non esistere.")
+            
+            # 2. INIEZIONE JS: Clicca il box aggirando i controlli di visibilità
+            print("    [>] Iniezione JS: Click forzato...")
+            try:
+                page.evaluate("document.querySelector('shreddit-composer').click();")
+                time.sleep(2)
             except:
                 pass
+                
+            # Piano B per il focus: se JS non l'ha attivato, Playwright clicca brutalmente in mezzo allo schermo
+            page.mouse.click(1920 / 2, 1080 / 2)
+            time.sleep(1)
             
-            print("    [>] Clicco sul box 'Join the conversation'...")
-            # Miriamo ESATTAMENTE al testo che vediamo nel tuo screenshot
-            trigger = page.locator('text="Join the conversation", text="Add a comment"').first
-            
-            if trigger.count() > 0:
-                trigger.scroll_into_view_if_needed()
-                time.sleep(1)
-                trigger.click(force=True)
-            else:
-                # Se non trova il testo, clicca sul fumetto dei commenti in alto come piano B
-                print("    [>] Box testo non trovato, clicco l'icona del commento...")
-                page.locator('shreddit-post-action-row button[icon-name="comment-outline"], button[aria-label*="Comment"]').first.click(force=True)
-            
-            time.sleep(3)
-            
-            print("    [>] Aggancio l'editor di testo attivato...")
-            editor = page.locator('div[contenteditable="true"]').first
-            editor.wait_for(state="visible", timeout=10000)
-            editor.click(force=True)
-            
-            print("    [>] Digitazione in corso...")
+            print("    [>] Digitazione bozza (tastiera virtuale)...")
+            # Usa la tastiera di sistema, scriverà ovunque si trovi il focus in quel momento
             page.keyboard.type(bozza, delay=35) 
             time.sleep(3)
             
-            print("    [>] Clic su 'Comment'...")
-            # Individua il bottone di invio dentro lo shreddit-composer
-            page.locator('shreddit-composer button[slot="submitButton"], shreddit-composer button[type="submit"]').first.click(force=True)
+            print("    [>] Cerca e clicca il tasto Comment...")
+            # Usa il selettore più generico possibile supportato da Playwright (penetrerà lo Shadow DOM)
+            submit_btn = page.locator('button:has-text("Comment")').last
+            submit_btn.click(force=True, timeout=10000)
             time.sleep(6)
             
             c.execute("UPDATE scanned_posts SET status='POSTED' WHERE id=?", (post_id,))
@@ -99,7 +92,7 @@ def main():
             print("    [✓] Commento pubblicato con successo!")
             
         except Exception as e:
-            print(f"    [!] Errore durante l'interazione Playwright: {e}")
+            print(f"    [!] Errore critico finale: {e}")
             try:
                 page.screenshot(path="errore_reddit.png")
                 print("    [i] 📸 Screenshot salvato.")
