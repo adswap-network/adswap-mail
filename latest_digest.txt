@@ -1,1 +1,91 @@
-Nessun post rilevante trovato nell'ultima scansione.
+Aggiornato il: 2026-09-17 13:35
+
+--- BERSAGLIO 1 (0.6h fa) ---
+Titolo: How would you market a RPG in a saturated market?
+Link: https://www.reddit.com/r/gamedev/comments/1wit7bt/how_would_you_market_a_rpg_in_a_saturated_market/
+
+Bozza di risposta:
+Since you're targeting Steam RPG fans, have you tried reaching out to creators of similar niche titles for direct banner swaps instead of relying only on cold emails? I actually built a free tool for this exact problem called AdSwap where indie devs trade placement without spending a dime on ads, might be worth a look for your next push.
+
+==================================================
+
+--- BERSAGLIO 2 (0.7h fa) ---
+Titolo: I made a Roblox fighting game with a Domination mode I'm genuinely proud of, and almost nobody is playing it
+Link: https://www.reddit.com/r/IndieGaming/comments/1wit5z1/i_made_a_roblox_fighting_game_with_a_domination/
+
+Bozza di risposta:
+That platform fighter concept sounds genuinely fun, but empty lobbies are brutal for multiplayer games like this where you need real players on those capture points. Have you tried organizing regular playtests or community nights in specific Roblox dev discords to get a critical mass of actual humans in there at once? I actually built a free cross-promotion tool for indie devs called AdSwap, and it might be worth a look to get some organic traffic flowing between similar games without blowing a budget.
+
+==================================================
+
+--- BERSAGLIO 3 (0.3h fa) ---
+Titolo: Why is marketing more important than building a fully functional app?
+Link: https://www.reddit.com/r/AppBusiness/comments/1witpfq/why_is_marketing_more_important_than_building_a/
+
+Bozza di risposta:
+It’s brutal out there, especially since standard user acquisition is basically pay-to-play now and camera-shy devs can't easily jump on the TikTok train. 
+
+Since you have a functional app already, have you looked into direct developer-to-developer traffic trades instead of running paid ads? 
+
+I actually built a free tool for this exact problem called AdSwap where indie devs just cross-promote each other's apps, which might be worth a look for your specific situation.
+
+==================================================
+
+--- BERSAGLIO 4 (0.4h fa) ---
+Titolo: Created Glux for shipaton 2026 : But not getting signups because of high app drop rate
+Link: https://www.reddit.com/r/AppBusiness/comments/1witl8z/created_glux_for_shipaton_2026_but_not_getting/
+
+Bozza di risposta:
+That 53% drop on the welcome screen definitely hurts, especially when you're paying for every single click with Google Ads on a fresh indie budget. Simplifying the signup flow is a great first step, but before burning more cash on paid ads, you might want to tap into free developer traffic instead. I actually built a free tool for this exact problem called AdSwap, where indie devs cross-promote each other's apps without spending a dime on ad networks.
+
+==================================================
+
+--- BERSAGLIO 5 (2.0h fa) ---
+Titolo: I built a smart sleep app that masks background noise or snoring, but I've only made 5 sales in 5 months. What am I doing wrong?
+Link: https://www.reddit.com/r/AppBusiness/comments/1wirj93/i_built_a_smart_sleep_app_that_masks_background/
+
+Bozza di risposta:
+That audio processing feature using SoundAnalysis sounds genuinely useful, but the App Store is a graveyard for paid utilities without upfront reach. Have you tested shifting from a paid upfront model to a free download with a trial, since getting people to gamble money on an unknown sleep app is brutal? 
+
+By the way, I actually built a free tool for indie devs stuck in this exact visibility trap called AdSwap, where you trade promo space with other apps instead of burning cash on ads.
+
+==================================================
+
+--- BERSAGLIO 6 (3.2h fa) ---
+Titolo: How did you get downloads to get a proof of concept?
+Link: https://www.reddit.com/r/AppBusiness/comments/1wiq5x1/how_did_you_get_downloads_to_get_a_proof_of/
+
+Bozza di risposta:
+Habit trackers are definitely a bloodbath for organic reach right now, so relying on social content alone is a trap. Since your app has built-in social features and challenges, have you tried targeting users already using adjacent productivity or self-improvement apps? I actually built a free tool for this exact problem called AdSwap where indie devs trade placement with each other to get zero-cost downloads, which might help you bootstrap your initial user base without touching paid ads.
+
+==================================================
+
+--- BERSAGLIO 7 (3.4h fa) ---
+Titolo: App hasn’t converted yet with 1500 downloads
+Link: https://www.reddit.com/r/AppBusiness/comments/1wipxgo/app_hasnt_converted_yet_with_1500_downloads/
+
+Bozza di risposta:
+You hit a classic mismatch between audience attention and monetization, since international students looking for scholarships clearly don't have disposable cash for IAP. Since you already captured 2500 emails, you could pivot the app to a freemium model monetized via B2B partnerships with the schools themselves rather than direct student subscriptions. 
+
+If you decide to stick to a consumer-facing model and need to acquire a different, more solvent user base without spending money on ads, I actually built a free tool for this called AdSwap where indie devs cross-promote each other.
+
+==================================================
+
+--- BERSAGLIO 8 (4.1h fa) ---
+Titolo: I'm creating an app for Apple Store and Samsung. I've heard stories of developers spending $100k with zero users. I'm having beta testers check it, but what do I need to think about before launch? How do I grow an audience for a phone app? There's more than just building something good, right?
+Link: https://www.reddit.com/r/AppBusiness/comments/1wip5m7/im_creating_an_app_for_apple_store_and_samsung/
+
+Bozza di risposta:
+You're totally right, building a good app is only 50% of the battle, and paid UA right now is a total bloodbath for indie devs. Are you planning to rely entirely on organic search, or do you have a growth loop in mind for day one? I actually built a free tool for this exact problem called AdSwap where indie devs trade promo slots directly, if you want to bypass the ad-spend trap entirely.
+
+==================================================
+
+--- BERSAGLIO 9 (4.8h fa) ---
+Titolo: iOS App Store downloads dropped sharply after a 3-day launch spike — what should I check?
+Link: https://www.reddit.com/r/AppBusiness/comments/1wiogkl/ios_app_store_downloads_dropped_sharply_after_a/
+
+Bozza di risposta:
+ERRORE
+
+==================================================
+
