@@ -2,15 +2,13 @@ import os
 import time
 import sqlite3
 import functools
-import random
 import logging
 import warnings
-import re
-from ddgs import DDGS
+from datetime import datetime, timezone
+from playwright.sync_api import sync_playwright
 from google import genai
 from google.genai import types
 
-# Silenzia i log di sistema
 warnings.filterwarnings("ignore")
 logging.getLogger("google").setLevel(logging.ERROR)
 os.environ["GRPC_VERBOSITY"] = "ERROR"
@@ -20,31 +18,21 @@ print = functools.partial(print, flush=True)
 
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 
-PROMPT_GENERAZIONE_QUERY = """
-Sei un SEO esperto. Genera 5 query BREVISSIME per trovare post su Reddit di sviluppatori con zero download o marketing troppo costoso.
-REGOLA 1: Inizia sempre con 'site:reddit.com '
-REGOLA 2: Usa MASSIMO 3 o 4 parole chiave. NIENTE virgolette.
-Esempio 1: site:reddit.com indie game zero downloads
-Esempio 2: site:reddit.com app marketing expensive
-Restituisci SOLO le 5 stringhe, una per riga. Nessun testo aggiuntivo.
-"""
+SUBREDDITS = ["androiddev", "gamedev", "IndieGaming", "AppBusiness", "SaaS"]
 
 PROMPT_ANALISI = """
-Agisci come un analista di mercato. Leggi il titolo e il contenuto di questo post di Reddit.
-Il nostro target: sviluppatori indie, creatori di app/giochi che si lamentano di pochi download, zero visibilità o costi Google Ads troppo alti.
-Se il post parla di problemi di codice, bug, cerco lavoro o argomenti non legati al marketing/downloads, NON è il nostro target.
-Rispondi SOLO con "SI" se è un target perfetto, oppure "NO". Non aggiungere altro.
+Agisci come un analista di mercato. Leggi questo post fresco di Reddit.
+Il nostro target: sviluppatori indie, creatori di app/giochi che si lamentano di NON avere download, zero utenti, o che i costi di marketing/Ads sono impossibili.
+Rispondi SOLO con "SI" se è un target perfetto in cerca di aiuto, oppure "NO".
 """
 
 PROMPT_GANCIO = """
 Sei uno sviluppatore mobile indie. Rispondi in inglese a questo utente che fatica a trovare download o ha problemi di marketing.
-
-REGOLE ASSOLUTE DI STILE (PENA IL FALLIMENTO):
-1. DIVIETO TOTALE DI USARE FRASI FATTE: Non iniziare MAI con "Man", "Bro", "I feel your pain", "Oof", "Been there", "I totally feel you". Se usi una di queste frasi fallisci la missione.
-2. VARIA L'APERTURA: Inizia direttamente con una domanda, oppure un'osservazione pragmatica sul suo post. Sii diretto e asciutto.
-3. TONO: Informale ma professionale. Parla da pari a pari.
-4. CONTENUTO: Non menzionare MAI AdSwap, nessun link, nessuna vendita. Fai una domanda sulle sue metriche o su cosa ha già provato.
-5. LUNGHEZZA: Massimo 2 frasi. Brevissimo.
+REGOLE ASSOLUTE:
+1. DIVIETO TOTALE DI FRASI FATTE: Non usare MAI "Man", "Bro", "I feel your pain". 
+2. VARIA L'APERTURA: Inizia con una domanda diretta o un'osservazione pragmatica.
+3. TONO E CONTENUTO: Informale, da pari a pari. Non menzionare AdSwap o link.
+4. LUNGHEZZA: Massimo 2 frasi.
 """
 
 def setup_db():
@@ -54,37 +42,30 @@ def setup_db():
     conn.commit()
     return conn
 
-def generate_with_retry(client, system_prompt, post_content="", max_retries=3, initial_delay=5):
-    delay = initial_delay
+def generate_with_retry(client, system_prompt, post_content="", max_retries=3):
     for attempt in range(max_retries):
         try:
-            testo_unito = f"{system_prompt}\n\nTESTO:\n{post_content}" if post_content else system_prompt
+            testo = f"{system_prompt}\n\nTESTO:\n{post_content}" if post_content else system_prompt
             chat = client.chats.create(
                 model='gemini-flash-lite-latest', 
-                config=types.GenerateContentConfig(temperature=0.85) # Alta creatività per evitare cliché
+                config=types.GenerateContentConfig(temperature=0.85)
             )
-            response = chat.send_message(testo_unito)
-            
-            if not response or not response.text:
-                raise ValueError("Risposta vuota")
-            return response.text.strip()
-        except Exception as e:
-            err_msg = str(e).upper()
-            if any(x in err_msg for x in ["503", "429", "404", "UNAVAILABLE"]):
-                if attempt < max_retries - 1:
-                    time.sleep(delay)
-                    delay *= 2
-                    continue
-            return "ERRORE"
+            response = chat.send_message(testo)
+            if response and response.text:
+                return response.text.strip()
+        except Exception:
+            if attempt < max_retries - 1:
+                time.sleep(5)
+                continue
     return "ERRORE"
 
 def main():
     print("==================================================")
-    print("🥷 AVVIO REDDIT RADAR AI - STEALTH + REAL-TIME (24h) + ANTI-CLICHÉ")
+    print("🤖 AVVIO REDDIT RADAR AI - MOTORE PLAYWRIGHT (CHROME)")
     print("==================================================\n")
     
     if not GEMINI_API_KEY:
-        print("[!] GEMINI_API_KEY non trovata.")
+        print("[!] GEMINI_API_KEY mancante.")
         return
 
     client = genai.Client(api_key=GEMINI_API_KEY)
@@ -92,71 +73,86 @@ def main():
     c = conn.cursor()
     trovati = 0
 
-    print("[*] Generazione query strategiche...")
-    query_raw = generate_with_retry(client, PROMPT_GENERAZIONE_QUERY)
-    querie_globali = [q.strip() for q in query_raw.split('\n') if 'site:reddit.com' in q]
-    
-    if not querie_globali:
-        querie_globali = [
-            'site:reddit.com app zero downloads',
-            'site:reddit.com indie dev marketing too expensive',
-            'site:reddit.com how to get first users app'
-        ]
+    # Avviamo il browser invisibile
+    with sync_playwright() as p:
+        # Lanciamo Chrome
+        browser = p.chromium.launch(headless=True)
+        context = browser.new_context(
+            user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+        )
+        page = context.new_page()
 
-    ddgs = DDGS()
-
-    for query in querie_globali:
-        print(f"\n[*] Caccia Stealth (ultime 24h): {query}")
-        
-        try:
-            # IL SEGRETO È QUI: timelimit='d' forza DuckDuckGo a cercare SOLO risultati dell'ultimo giorno (24h)
-            risultati = list(ddgs.text(query, max_results=10, timelimit='d'))
-            
-            if not risultati:
-                print(f"    [-] Rete vuota nelle ultime 24 ore.")
-                time.sleep(3)
-                continue
+        for sub in SUBREDDITS:
+            print(f"[*] Navigazione su r/{sub} (Old Reddit)...")
+            try:
+                # Usiamo old.reddit perché è puro HTML, facilissimo da raschiare e veloce
+                page.goto(f"https://old.reddit.com/r/{sub}/new/", timeout=30000)
+                time.sleep(3) # Pausa umana
                 
-            for post in risultati:
-                titolo = post.get('title', '')
-                testo_snippet = post.get('body', '')
-                link = post.get('href', '')
+                # Estraiamo tutti i post visibili nella pagina
+                posts = page.query_selector_all(".thing")
                 
-                post_id = link.split('comments/')[1].split('/')[0] if 'comments/' in link else link
-                
-                c.execute("SELECT id FROM scanned_posts WHERE id=?", (post_id,))
-                if c.fetchone():
+                if not posts:
+                    print("    [-] Nessun post trovato o pagina bloccata.")
                     continue
+                
+                # Analizziamo solo i primi 6 post più recenti per ogni subreddit
+                for post in posts[:6]:
+                    post_id = post.get_attribute("data-fullname")
+                    if not post_id: continue
                     
-                c.execute("INSERT INTO scanned_posts (id) VALUES (?)", (post_id,))
-                conn.commit()
+                    c.execute("SELECT id FROM scanned_posts WHERE id=?", (post_id,))
+                    if c.fetchone(): continue
+                    
+                    c.execute("INSERT INTO scanned_posts (id) VALUES (?)", (post_id,))
+                    conn.commit()
 
-                contesto_troncato = f"TITOLO: {titolo}\nTESTO SINTETICO: {testo_snippet}"
-                risultato_analisi = generate_with_retry(client, PROMPT_ANALISI, contesto_troncato)
-                
-                if "SI" in risultato_analisi.upper():
-                    print("\n" + "="*60)
-                    print(f"🎯 TARGET FRESCHISSIMO (<24h) INTERCETTATO VIA STEALTH:")
-                    print(f"🔗 Link: {link}")
-                    print(f"📌 Titolo: {titolo}")
+                    title_el = post.query_selector("a.title")
+                    time_el = post.query_selector("time")
                     
-                    time.sleep(3)
-                    bozza = generate_with_retry(client, PROMPT_GANCIO, contesto_troncato)
+                    if not title_el or not time_el: continue
                     
-                    print(f"\n🤖 IL GANCIO (Anti-Cliché):\n> {bozza}\n")
-                    print("="*60 + "\n")
-                    trovati += 1
+                    titolo = title_el.inner_text()
+                    link_relativo = post.get_attribute("data-permalink")
+                    data_str = time_el.get_attribute("datetime") # Formato: 2026-09-17T12:00:00+00:00
                     
-                time.sleep(3)
-                
-        except Exception as e:
-            print(f"    [!] Errore DDGS su '{query}': {e}")
+                    # Calcolo freschezza
+                    try:
+                        data_pub = datetime.fromisoformat(data_str.replace('Z', '+00:00'))
+                        ore_fa = int((datetime.now(timezone.utc) - data_pub).total_seconds() / 3600)
+                    except:
+                        continue
+
+                    # Filtro 20 ore
+                    if ore_fa > 20:
+                        continue
+
+                    print(f"    [>] Trovato post fresco ({ore_fa} ore fa). Analisi IA in corso...")
+                    
+                    # Analisi semantica
+                    analisi = generate_with_retry(client, PROMPT_ANALISI, titolo)
+                    
+                    if "SI" in analisi.upper():
+                        link_assoluto = f"https://www.reddit.com{link_relativo}"
+                        print("\n" + "="*60)
+                        print(f"🎯 BERSAGLIO CONFERMATO:")
+                        print(f"🔗 Link: {link_assoluto}")
+                        print(f"📌 Titolo: {titolo}")
+                        
+                        bozza = generate_with_retry(client, PROMPT_GANCIO, titolo)
+                        print(f"\n🤖 IL GANCIO:\n> {bozza}\n")
+                        print("="*60 + "\n")
+                        trovati += 1
+                        
+            except Exception as e:
+                print(f"    [!] Errore navigando r/{sub}: {e}")
             
-        time.sleep(random.randint(5, 8))
+            time.sleep(5) # Pausa tra subreddit
+
+        browser.close()
 
     print(f"\n[*] Scansione completata. Generati {trovati} ganci.")
     conn.close()
-    os._exit(0)
 
 if __name__ == "__main__":
     main()
