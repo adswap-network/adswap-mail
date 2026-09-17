@@ -13,7 +13,7 @@ def get_db():
 
 def main():
     print("==================================================")
-    print("🔫 AVVIO CECCHINO REDDIT (PUNTAMENTO DI PRECISIONE 2.4)")
+    print("🔫 AVVIO CECCHINO REDDIT (HTML INJECTION 2.5)")
     print("==================================================\n")
     
     if not COOKIE_VALUE:
@@ -54,41 +54,35 @@ def main():
         try:
             print("    [>] Caricamento pagina Reddit...")
             page.goto(post_url, wait_until="domcontentloaded", timeout=45000)
-            time.sleep(8) # Lasciamo caricare bene l'interfaccia complessa di Reddit
+            time.sleep(6)
             
-            print("    [>] Aggancio mirato al container del testo...")
-            # Playwright penetra in automatico lo Shadow DOM se concateniamo i locator
-            composer = page.locator('shreddit-composer').first
-            composer.scroll_into_view_if_needed()
+            print("    [>] Estrazione target basata sul tuo HTML...")
+            # Troviamo l'editor usando gli attributi ESATTI del tuo dump
+            editor = page.locator('div[contenteditable="true"][role="textbox"]').first
+            
+            print("    [>] Scroll Javascript forzato...")
+            # Ignoriamo il comando Playwright che va in loop e usiamo Javascript puro per lo scroll
+            editor.evaluate("node => node.scrollIntoView({behavior: 'smooth', block: 'center'})")
             time.sleep(2)
             
-            print("    [>] Ricerca dell'editor interno...")
-            editor = composer.locator('[contenteditable="true"]').first
-            
-            if editor.count() == 0:
-                raise Exception("Box di testo 'contenteditable' non trovato.")
-                
-            print("    [>] Click dentro l'editor e digitazione...")
+            print("    [>] Click forzato sull'editor...")
             editor.click(force=True)
             time.sleep(1)
             
-            # Non usiamo più la tastiera generica, ma scriviamo fisicamente DENTRO l'elemento
-            editor.type(bozza, delay=35)
+            print("    [>] Digitazione della bozza...")
+            editor.type(bozza, delay=25)
             time.sleep(3)
             
             print("    [>] Ricerca del pulsante Submit...")
-            submit_btn = composer.locator('button[type="submit"], button[slot="submitButton"]').first
-            
-            if submit_btn.count() == 0:
-                raise Exception("Tasto 'Comment' non trovato dentro il composer.")
-                
+            # ID esatto estratto dal tuo codice HTML
+            submit_btn = page.locator('button#comment-composer-submit-button').first
             submit_btn.click(force=True)
-            print("    [>] Click effettuato. Attesa per la conferma di rete...")
+            
+            print("    [>] Click effettuato. Attesa conferma di rete...")
             time.sleep(6)
             
-            # FOTOGRAFIA DI CONFERMA
             page.screenshot(path="conferma_pubblicazione.png")
-            print("    [i] 📸 Screenshot di VITTORIA salvato (conferma_pubblicazione.png). Controlla Artifacts!")
+            print("    [i] 📸 Screenshot salvato (conferma_pubblicazione.png). Controlla gli Artifacts!")
             
             c.execute("UPDATE scanned_posts SET status='POSTED' WHERE id=?", (post_id,))
             conn.commit()
@@ -97,18 +91,10 @@ def main():
         except Exception as e:
             print(f"    [!] Errore critico: {e}")
             try:
-                # ESTRAZIONE HTML AUTOMATICA
-                html_dump = page.locator('shreddit-composer').first.inner_html()
-                print("\n" + "="*50)
-                print("--- INIZIO DUMP HTML PER L'IA ---")
-                print(html_dump)
-                print("--- FINE DUMP HTML ---")
-                print("="*50 + "\n")
-                
                 page.screenshot(path="errore_reddit.png")
                 print("    [i] 📸 Screenshot errore salvato.")
             except:
-                print("    [!] Impossibile estrarre l'HTML.")
+                pass
             
         finally:
             browser.close()
