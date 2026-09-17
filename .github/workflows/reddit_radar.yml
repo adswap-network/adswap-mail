@@ -23,7 +23,8 @@ jobs:
 
       - name: Install Dependencies
         run: |
-          pip install ddgs google-genai feedparser
+          pip install playwright google-genai
+          playwright install chromium
 
       - name: Execute Reddit Radar
         env:
