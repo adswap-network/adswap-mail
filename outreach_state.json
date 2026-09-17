@@ -2,7 +2,7 @@
     "config": {
         "start_date": "2026-09-12",
         "last_run_date": "2026-09-17",
-        "sent_today": 11
+        "sent_today": 16
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -645,27 +645,139 @@
         "contact@invitocards.com": {
             "app_name": "spill cards",
             "package": "net.spill.cards",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-17T17:01:07.604977",
             "followup_sent_at": null
         },
         "mail@funcouplegames.com": {
             "app_name": "Couples Trivia & Questions",
             "package": "com.questiongamesforcouples.couplequiz",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-17T17:01:07.604977",
             "followup_sent_at": null
         },
         "contact@savuko.com": {
             "app_name": "Dirty Questions & Dares Game",
             "package": "com.refined.questionsgame",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-17T17:01:07.604977",
             "followup_sent_at": null
         },
         "info@deathofsmalltalk.com": {
             "app_name": "Conversation starters that hit",
             "package": "com.deathofsmalltalk.deathofsmalltalk",
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-17T17:01:07.604977",
+            "followup_sent_at": null
+        },
+        "teamlubble@gmail.com": {
+            "app_name": "Lubble",
+            "package": "com.couple.lubble",
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-17T17:01:07.604977",
+            "followup_sent_at": null
+        },
+        "duet.dev.team@gmail.com": {
+            "app_name": "Duet",
+            "package": "com.duet.duetcouple",
+            "status": "PENDING",
+            "first_sent_at": null,
+            "followup_sent_at": null
+        },
+        "ienon.app1@gmail.com": {
+            "app_name": "futari",
+            "package": "app.futari",
+            "status": "PENDING",
+            "first_sent_at": null,
+            "followup_sent_at": null
+        },
+        "cubbilyhelpcenter@gmail.com": {
+            "app_name": "Cubbily Shared Family Calendar",
+            "package": "com.dbsg.cubbily",
+            "status": "PENDING",
+            "first_sent_at": null,
+            "followup_sent_at": null
+        },
+        "support@ourdayscalendar.com": {
+            "app_name": "Our Days Co-Parenting Calendar",
+            "package": "com.ourdayscalendar.android.app",
+            "status": "PENDING",
+            "first_sent_at": null,
+            "followup_sent_at": null
+        },
+        "support@couplesapp.io": {
+            "app_name": "Couples",
+            "package": "com.couplesapp.application",
+            "status": "PENDING",
+            "first_sent_at": null,
+            "followup_sent_at": null
+        },
+        "juanmadelboca.ch@gmail.com": {
+            "app_name": "Shared Notes",
+            "package": "com.kalantos.password.secure.notes",
+            "status": "PENDING",
+            "first_sent_at": null,
+            "followup_sent_at": null
+        },
+        "contact@togglyapp.com": {
+            "app_name": "Couple&Family Planner",
+            "package": "com.togglyapp",
+            "status": "PENDING",
+            "first_sent_at": null,
+            "followup_sent_at": null
+        },
+        "support@flashcards.gg": {
+            "app_name": "Flashcards.gg",
+            "package": "gg.flashcards",
+            "status": "PENDING",
+            "first_sent_at": null,
+            "followup_sent_at": null
+        },
+        "support@atlasvocabulary.com": {
+            "app_name": "Vocabulary Builder by Atlas",
+            "package": "com.sayan.atlasenglish",
+            "status": "PENDING",
+            "first_sent_at": null,
+            "followup_sent_at": null
+        },
+        "support@learnvocabulary.io": {
+            "app_name": "Vocabulary Builder by Learning",
+            "package": "io.learning.learn.vocabulary",
+            "status": "PENDING",
+            "first_sent_at": null,
+            "followup_sent_at": null
+        },
+        "nam.trankhanh.vn@gmail.com": {
+            "app_name": "Vocadaily",
+            "package": "com.davidtranwd.vocabulary",
+            "status": "PENDING",
+            "first_sent_at": null,
+            "followup_sent_at": null
+        },
+        "petr@vocabuo.com": {
+            "app_name": "Vocabulary flashcards",
+            "package": "world.petr.vokabeln",
+            "status": "PENDING",
+            "first_sent_at": null,
+            "followup_sent_at": null
+        },
+        "stephdevelopment@gmail.com": {
+            "app_name": "Advanced English Words",
+            "package": "com.element.vocabulary",
+            "status": "PENDING",
+            "first_sent_at": null,
+            "followup_sent_at": null
+        },
+        "helpdesk@ereflect.com": {
+            "app_name": "Wordela",
+            "package": "com.ereflect.wordela",
+            "status": "PENDING",
+            "first_sent_at": null,
+            "followup_sent_at": null
+        },
+        "mgp.dev.studio@gmail.com": {
+            "app_name": "FeedFlow",
+            "package": "com.prof18.feedflow",
             "status": "PENDING",
             "first_sent_at": null,
             "followup_sent_at": null
@@ -1762,7 +1874,65 @@
         "com.questiongamesforcouples.couplequiz",
         "com.refined.questionsgame",
         "com.itclimb.truesoulcards",
-        "com.deathofsmalltalk.deathofsmalltalk"
+        "com.deathofsmalltalk.deathofsmalltalk",
+        "app.zyng.app",
+        "net.sevendays.alpaca",
+        "com.ibillstudio.thedaycouple",
+        "com.couple.lubble",
+        "com.vespexx.signal",
+        "com.appxy.famcal",
+        "com.couple360.app",
+        "com.duet.duetcouple",
+        "app.futari",
+        "com.dbsg.cubbily",
+        "com.ourdayscalendar.android.app",
+        "app.groupcal.www",
+        "ltd.love8.couples.relationship",
+        "com.couplesapp.application",
+        "com.lefal.couplePhotoCalendar",
+        "de.sourcedev.lovecounterV2",
+        "com.angcosmin.couple",
+        "com.big_moments_company",
+        "com.kalantos.password.secure.notes",
+        "com.azuremir.android.luvda",
+        "com.cozi.androidfree",
+        "com.togglyapp",
+        "com.ubacoda.fashcards",
+        "com.knowt.app",
+        "ai.saveall.app",
+        "com.ichi2.anki",
+        "com.alpaca.flashcardsmaker",
+        "gg.flashcards",
+        "com.lexilize.fc",
+        "com.hrd.vocabulary",
+        "com.magoosh.gre.quiz.vocabulary",
+        "com.word.vocabulary.vocab",
+        "com.duocards.app",
+        "com.sayan.atlasenglish",
+        "com.funeasylearn.english",
+        "io.learning.learn.vocabulary",
+        "com.knudge.me",
+        "helium.wordoftheday.learnenglish.vocab",
+        "co.wordupapp.app",
+        "com.davidtranwd.vocabulary",
+        "com.magoosh.toefl.flashcards.vocabulary",
+        "com.vividvocab.android",
+        "app.cabuu.vokabeltrainer",
+        "com.blarma",
+        "com.vocabtech.vocab",
+        "kr.co.devstory.vocat",
+        "co.app.langeek",
+        "com.magoosh.flashcards.gre",
+        "world.petr.vokabeln",
+        "com.busuu.android.enc",
+        "com.hellotalk.hellowords",
+        "com.blarma.high5",
+        "com.element.vocabulary",
+        "com.ereflect.wordela",
+        "com.mojayllc.dailychinese",
+        "com.incredum.wrd",
+        "air.ru.uchimslova.words",
+        "com.prof18.feedflow"
     ],
     "used_keywords": [
         "action offline game indie",
@@ -1815,6 +1985,10 @@
         "step counter offline pedometer",
         "home workout no equipment",
         "anonymous chat local",
-        "icebreaker questions app"
+        "icebreaker questions app",
+        "couple calendar shared",
+        "flashcards maker study",
+        "learn vocabulary daily",
+        "rss reader minimalist fast"
     ]
 }
