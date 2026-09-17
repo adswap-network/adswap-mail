@@ -13,7 +13,7 @@ def get_db():
 
 def main():
     print("==================================================")
-    print("🔫 AVVIO CECCHINO REDDIT (MOBILE EMULATOR 5.1)")
+    print("🔫 AVVIO CECCHINO REDDIT (MOBILE BANNER KILLER 5.2)")
     print("==================================================\n")
     
     if not COOKIE_VALUE:
@@ -36,7 +36,6 @@ def main():
     print(f"[*] Obiettivo acquisito: {post_url}")
 
     with sync_playwright() as p:
-        # Carichiamo il profilo iPhone originale senza duplicare l'User Agent
         iphone = p.devices['iPhone 13']
         browser = p.chromium.launch(headless=True)
         context = browser.new_context(**iphone)
@@ -53,32 +52,55 @@ def main():
         try:
             print("    [>] Caricamento pagina Mobile...")
             page.goto(post_url, wait_until="networkidle", timeout=60000)
-            time.sleep(5) 
+            time.sleep(6) 
             
+            print("    [>] Esecuzione Banner Killer (Pulizia Schermo)...")
+            # Questo script distrugge la pubblicità "View in Reddit App" e qualsiasi banner cookie
+            page.evaluate("""() => {
+                document.querySelectorAll('xpromo-app-selector, xpromo-bottom-sheet').forEach(el => el.remove());
+                
+                const elements = document.querySelectorAll('div, section');
+                for (const el of elements) {
+                    const style = window.getComputedStyle(el);
+                    if (style.position === 'fixed' || style.position === 'sticky') {
+                        if (el.textContent.includes('Reddit App') || el.textContent.includes('View in') || el.textContent.includes('Open')) {
+                            el.remove();
+                        }
+                    }
+                }
+                
+                const cookieBtn = document.querySelector('button:has-text("Accept")');
+                if (cookieBtn) cookieBtn.click();
+            }""")
+            time.sleep(2)
+            
+            # Scattiamo una foto a schermo pulito
             page.screenshot(path="debug_mobile_view.png")
 
-            print("    [>] Ricerca dell'editor di commenti...")
-            # Copriamo tutte le varianti mobile di Reddit (textarea classica o div contenteditable)
-            editor_locator = page.locator('div[contenteditable="true"], textarea').first
-            
-            editor_locator.scroll_into_view_if_needed(timeout=10000)
-            time.sleep(1)
-            
-            print("    [>] Click e focus...")
+            print("    [>] Ricerca della barra dei commenti...")
+            # Sulla UI mobile, per aprire la tastiera spesso bisogna prima toccare "Add a comment"
+            add_comment_bar = page.locator('text="Add a comment"').last
+            if add_comment_bar.count() > 0:
+                add_comment_bar.click(force=True)
+                time.sleep(2)
+
+            print("    [>] Aggancio all'editor...")
+            editor_locator = page.locator('div[contenteditable="true"], textarea').last
+            editor_locator.scroll_into_view_if_needed(timeout=5000)
             editor_locator.click(force=True)
             time.sleep(1)
 
             print("    [>] Scrittura del commento...")
-            # Usiamo la tastiera per simulare perfettamente i tap su schermo
+            # Tastiera di sistema, infallibile su emulatore
             page.keyboard.type(bozza, delay=15)
             time.sleep(2)
             
             print("    [>] Pressione tasto Reply...")
-            # Aggancio ampio per coprire i bottoni della UI mobile
-            submit_btn = page.locator('button:has-text("Reply"), button:has-text("Comment"), button:has-text("Add a comment"), button[type="submit"]').first
+            # Il bottone di invio sulla UI mobile può chiamarsi Reply, Comment o avere solo un'icona
+            submit_btn = page.locator('button:has-text("Reply"), button:has-text("Comment"), button[type="submit"]').last
             submit_btn.click(force=True)
             
-            print("    [>] Attesa server...")
+            print("    [>] Attesa elaborazione server Reddit...")
             time.sleep(6) 
             
             page.screenshot(path="conferma_pubblicazione.png")
