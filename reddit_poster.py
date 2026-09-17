@@ -13,7 +13,7 @@ def get_db():
 
 def main():
     print("==================================================")
-    print("🔫 AVVIO CECCHINO REDDIT (DOM BYPASS 2.6)")
+    print("🔫 AVVIO CECCHINO REDDIT (APPROCCIO SEMPLICE 2.8)")
     print("==================================================\n")
     
     if not COOKIE_VALUE:
@@ -52,44 +52,38 @@ def main():
         page = context.new_page()
         
         try:
-            print("    [>] Caricamento pagina Reddit...")
+            print("    [>] Caricamento pagina...")
             page.goto(post_url, wait_until="domcontentloaded", timeout=45000)
-            time.sleep(6)
+            time.sleep(8) # Attendiamo che React carichi tutta la pagina
             
-            print("    [>] Estrazione target basata sul tuo HTML...")
-            editor = page.locator('div[contenteditable="true"][role="textbox"]').first
+            # 1. Clicchiamo ESATTAMENTE la casella di testo usando l'attributo del tuo HTML
+            print("    [>] Clicco su 'Join the conversation'...")
+            editor = page.locator('div[aria-placeholder="Join the conversation"], div[contenteditable="true"]').first
+            editor.scroll_into_view_if_needed()
+            editor.click(force=True, timeout=10000)
+            time.sleep(2)
             
-            print("    [>] Override Javascript: Focus e Click nativo...")
-            # dispatch_event() bypassa tutti i controlli di visibilità di Playwright.
-            # Esegue fisicamente l'azione a livello di codice della pagina.
-            editor.evaluate("node => node.focus()")
-            editor.dispatch_event("click")
-            time.sleep(1)
+            # 2. Inseriamo il testo
+            print("    [>] Inserisco il testo...")
+            editor.type(bozza, delay=15)
+            time.sleep(2)
             
-            print("    [>] Digitazione della bozza...")
-            # Ora che l'elemento ha forzatamente il focus, la tastiera virtuale scriverà lì dentro
-            page.keyboard.type(bozza, delay=25)
-            time.sleep(3)
+            # 3. Clicchiamo ESATTAMENTE il bottone 'Comment' tramite il suo ID univoco
+            print("    [>] Clicco il pulsante Comment...")
+            submit_btn = page.locator('button#comment-composer-submit-button, shreddit-composer button[type="submit"]').first
+            submit_btn.click(force=True, timeout=10000)
+            time.sleep(6) # Tempo per permettere al server di salvare il commento
             
-            print("    [>] Ricerca del pulsante Submit...")
-            submit_btn = page.locator('button#comment-composer-submit-button').first
-            
-            print("    [>] Click nativo sul Submit...")
-            # Usiamo evaluate per innescare la funzione .click() nativa del browser, saltando i blocchi
-            submit_btn.evaluate("node => node.click()")
-            
-            print("    [>] Attesa conferma di rete...")
-            time.sleep(6)
-            
+            # Controllo visivo finale
             page.screenshot(path="conferma_pubblicazione.png")
-            print("    [i] 📸 Screenshot salvato (conferma_pubblicazione.png). Controlla gli Artifacts!")
+            print("    [i] 📸 Screenshot salvato (conferma_pubblicazione.png).")
             
             c.execute("UPDATE scanned_posts SET status='POSTED' WHERE id=?", (post_id,))
             conn.commit()
             print("    [✓] Commento pubblicato con successo!")
             
         except Exception as e:
-            print(f"    [!] Errore critico: {e}")
+            print(f"    [!] Errore: {e}")
             try:
                 page.screenshot(path="errore_reddit.png")
                 print("    [i] 📸 Screenshot errore salvato.")
