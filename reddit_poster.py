@@ -13,7 +13,7 @@ def get_db():
 
 def main():
     print("==================================================")
-    print("🔫 AVVIO CECCHINO REDDIT (CTRL+ENTER BYPASS 3.0)")
+    print("🔫 AVVIO CECCHINO REDDIT (TARGET LOCK ASSOLUTO 3.1)")
     print("==================================================\n")
     
     if not COOKIE_VALUE:
@@ -32,7 +32,8 @@ def main():
         return
         
     post_id, bozza = record
-    post_url = f"https://www.reddit.com/comments/{post_id}"
+    # Usiamo il link ufficiale di reindirizzamento
+    post_url = f"https://redd.it/{post_id}"
     print(f"[*] Obiettivo acquisito: {post_url}")
 
     with sync_playwright() as p:
@@ -56,11 +57,16 @@ def main():
             page.goto(post_url, wait_until="domcontentloaded", timeout=45000)
             time.sleep(8) 
             
-            print("    [>] Focus mirato tramite JS sull'editor corretto...")
-            # Usa gli attributi esatti estratti dal tuo dump HTML (slot="rte")
+            # Controllo anti-disastro: siamo finiti sulla pagina sbagliata?
+            if "/submit" in page.url or "Create Post" in page.title():
+                print("    [!] ALLARME: Reddit ci ha reindirizzato alla pagina Create Post.")
+                raise Exception("Pagina errata. Post rimosso o link non valido.")
+            
+            print("    [>] Ricerca ESATTA del box commenti...")
+            # Peschiamo il box solo ed esclusivamente se ha il placeholder corretto dei commenti
             js_focus = """
             () => {
-                const editor = document.querySelector('shreddit-composer div[contenteditable="true"][slot="rte"]');
+                const editor = document.querySelector('div[aria-placeholder="Join the conversation"], div[aria-placeholder="Add a comment"]');
                 if (editor) {
                     editor.scrollIntoView({behavior: 'instant', block: 'center'});
                     editor.focus();
@@ -73,7 +79,7 @@ def main():
             trovato = page.evaluate(js_focus)
             
             if not trovato:
-                print("    [!] JS non ha trovato l'editor. Potrebbe essere un post rimosso.")
+                raise Exception("Box commenti non trovato. I commenti potrebbero essere bloccati.")
             
             time.sleep(2)
             
@@ -81,32 +87,33 @@ def main():
             page.keyboard.type(bozza, delay=15)
             time.sleep(3)
             
-            print("    [>] Esecuzione shortcut 'Control + Enter' per pubblicazione immediata...")
+            print("    [>] Pubblicazione (CTRL + ENTER)...")
             page.keyboard.press("Control+Enter")
+            
+            # Doppio click di sicurezza sul bottone fisico (dal tuo HTML)
             time.sleep(2)
+            page.evaluate("""() => { 
+                const btn = document.querySelector('button#comment-composer-submit-button'); 
+                if(btn) btn.click(); 
+            }""")
             
-            print("    [>] Tentativo click di sicurezza sul bottone fisico...")
-            # Fallback di sicurezza basato sugli ID esatti del tuo HTML
-            try:
-                submit_btn = page.locator('button#comment-composer-submit-button, button[slot="submit-button"]').first
-                submit_btn.click(force=True, timeout=3000)
-            except:
-                pass # Se Ctrl+Enter ha già inviato il modulo, il bottone sparirà e questo darà un errore innocuo
-            
-            time.sleep(6) # Tempo vitale per permettere la richiesta POST ai server Reddit
+            print("    [>] Attesa conferma server...")
+            time.sleep(6) 
             
             page.screenshot(path="conferma_pubblicazione.png")
-            print("    [i] 📸 Screenshot salvato (scaricalo dagli Artifacts su GitHub!).")
+            print("    [i] 📸 Screenshot salvato.")
             
             c.execute("UPDATE scanned_posts SET status='POSTED' WHERE id=?", (post_id,))
             conn.commit()
             print("    [✓] Commento pubblicato con successo!")
             
         except Exception as e:
-            print(f"    [!] Errore: {e}")
+            print(f"    [!] Errore critico: {e}")
+            # Se fallisce la UI, segnamolo comunque come errore nel DB per non riprovarci all'infinito
+            c.execute("UPDATE scanned_posts SET status='FAILED' WHERE id=?", (post_id,))
+            conn.commit()
             try:
                 page.screenshot(path="errore_reddit.png")
-                print("    [i] 📸 Screenshot di debug salvato.")
             except:
                 pass
             
