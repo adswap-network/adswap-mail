@@ -13,7 +13,7 @@ def get_db():
 
 def main():
     print("==================================================")
-    print("🔫 AVVIO CECCHINO REDDIT (JS BYPASS ASSOLUTO 2.9)")
+    print("🔫 AVVIO CECCHINO REDDIT (SHADOW DOM SUBMIT 2.10)")
     print("==================================================\n")
     
     if not COOKIE_VALUE:
@@ -56,35 +56,40 @@ def main():
             page.goto(post_url, wait_until="domcontentloaded", timeout=45000)
             time.sleep(8) 
             
-            print("    [>] Override totale dei controlli Playwright tramite Javascript...")
-            # Script iniettato: Cerca l'elemento nel DOM e lo forza al centro e a fuoco
-            js_focus = """
-            () => {
+            print("    [>] Focus e scrittura tramite JS...")
+            js_focus_and_type = f"""
+            () => {{
                 const editor = document.querySelector('shreddit-composer div[contenteditable="true"]');
-                if (editor) {
-                    editor.scrollIntoView({behavior: 'instant', block: 'center'});
+                if (editor) {{
+                    editor.scrollIntoView({{behavior: 'instant', block: 'center'}});
                     editor.focus();
                     editor.click();
                     return true;
-                }
+                }}
                 return false;
-            }
+            }}
             """
-            trovato = page.evaluate(js_focus)
+            page.evaluate(js_focus_and_type)
+            time.sleep(1)
             
-            if not trovato:
-                print("    [!] JS non ha trovato l'editor. Verifica link o login.")
-                
-            time.sleep(2)
-            
-            print("    [>] Scrivo con la tastiera di sistema...")
+            print("    [>] Digitazione bozza...")
             page.keyboard.type(bozza, delay=15)
             time.sleep(3)
             
-            print("    [>] Attivo il tasto Comment tramite JS...")
-            js_submit = """
+            print("    [>] Ricerca e attivazione pulsante Submit (anche dentro Shadow DOM)...")
+            # Questo script cerca il bottone sia normalmente che penetrando l'incapsulamento di Reddit
+            js_submit_deep = """
             () => {
-                const btn = document.querySelector('button#comment-composer-submit-button') || document.querySelector('shreddit-composer button[type="submit"]');
+                const composer = document.querySelector('shreddit-composer');
+                let btn = document.querySelector('#comment-composer-submit-button');
+                
+                if (!btn && composer && composer.shadowRoot) {
+                    btn = composer.shadowRoot.querySelector('#comment-composer-submit-button');
+                }
+                if (!btn && composer) {
+                    btn = composer.querySelector('button[type="submit"]');
+                }
+                
                 if (btn) {
                     btn.click();
                     return true;
@@ -92,25 +97,24 @@ def main():
                 return false;
             }
             """
-            inviato = page.evaluate(js_submit)
+            inviato = page.evaluate(js_submit_deep)
             
-            time.sleep(6) # Attesa ricaricamento commento da server
+            time.sleep(6) # Attesa invio dati al server
             
             page.screenshot(path="conferma_pubblicazione.png")
-            print("    [i] 📸 Screenshot di verifica salvato.")
+            print("    [i] 📸 Screenshot salvato localmente.")
             
             if inviato:
                 c.execute("UPDATE scanned_posts SET status='POSTED' WHERE id=?", (post_id,))
                 conn.commit()
                 print("    [✓] Commento pubblicato con successo!")
             else:
-                print("    [!] Non sono riuscito a innescare l'invio via JS.")
+                print("    [!] Impossibile trovare il bottone di invio.")
             
         except Exception as e:
             print(f"    [!] Errore: {e}")
             try:
                 page.screenshot(path="errore_reddit.png")
-                print("    [i] 📸 Screenshot errore salvato.")
             except:
                 pass
             
