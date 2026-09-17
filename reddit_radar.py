@@ -6,10 +6,12 @@ import random
 import logging
 import warnings
 import re
-from ddgs import DDGS
+import requests
+import feedparser
+from email.utils import parsedate_to_datetime
+from datetime import datetime, timezone, timedelta
 from google import genai
 from google.genai import types
-from datetime import datetime, timedelta
 
 warnings.filterwarnings("ignore")
 logging.getLogger("google").setLevel(logging.ERROR)
@@ -20,48 +22,57 @@ print = functools.partial(print, flush=True)
 
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 
-PROMPT_GENERAZIONE_QUERY = """
-Sei un growth hacker per app mobile. Devi generare 4 query di ricerca per trovare post recenti su Reddit di sviluppatori indie disperati perché non hanno download, o perché i costi di Google Ads/marketing sono insostenibili.
-REGOLA 1: Aggiungi sempre 'site:reddit.com' all'inizio di ogni query.
-REGOLA 2: Usa parole chiave ampie in inglese, SENZA usare virgolette.
-Esempio: site:reddit.com indie game marketing zero players advice
-Esempio: site:reddit.com alternative to google ads app developers
-Restituisci SOLO le 4 stringhe, una per riga. Nessun elenco puntato, nessun commento.
-"""
+USER_AGENTS = [
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36"
+]
+
+# Cerchiamo nei Subreddit specifici ordinati per i post più RECENTI in assoluto
+URLS_DA_SCANSIONARE = [
+    "https://www.reddit.com/r/androiddev/new.rss",
+    "https://www.reddit.com/r/gamedev/new.rss",
+    "https://www.reddit.com/r/IndieGaming/new.rss",
+    "https://www.reddit.com/r/AppBusiness/new.rss",
+    "https://www.reddit.com/r/SaaS/new.rss"
+]
 
 PROMPT_ANALISI = """
-Agisci come un analista di mercato. Leggi il titolo e il contenuto di questo post di Reddit.
-Il nostro target: sviluppatori indie, creatori di app/giochi che si lamentano di pochi download, zero visibilità o costi Google Ads troppo alti.
-Se il post parla di problemi di codice, bug, cerco lavoro o argomenti non legati al marketing/downloads, NON è il nostro target.
-Rispondi SOLO con "SI" se è un target perfetto, oppure "NO". Non aggiungere altro.
+Agisci come un analista di mercato. Leggi questo post fresco di Reddit.
+Il nostro target: sviluppatori indie, creatori di app/giochi che si lamentano di NON avere download, zero utenti, o che i costi di marketing/Ads sono impossibili.
+Rispondi SOLO con "SI" se è un target perfetto in cerca di aiuto per acquisire utenti, oppure "NO" per tutto il resto.
 """
 
+# Prompt blindato contro i cliché
 PROMPT_GANCIO = """
-Sei uno sviluppatore mobile indie. Rispondi in inglese (informale, stile Reddit) a questo utente che fatica a trovare download o spendere in Ads.
-Mostra empatia (ci sei passato anche tu).
-Chiedigli come sta cercando di farsi notare al momento o se ha provato alternative.
-REGOLA D'ORO: NON MENZIONARE MAI AdSwap, non inserire alcun link, non vendere nulla. Sii solo un utente che chiacchiera. Massimo 2-3 frasi brevi.
+Sei uno sviluppatore mobile indie. Rispondi in inglese a questo utente che fatica a trovare download o ha problemi di marketing.
+
+REGOLE ASSOLUTE DI STILE (PENA IL FALLIMENTO):
+1. DIVIETO TOTALE DI USARE FRASI FATTE: Non iniziare MAI con "Man", "Bro", "I feel your pain", "Oof", "Been there", "I totally feel you". Se usi una di queste frasi fallisci la missione.
+2. VARIA L'APERTURA: Inizia direttamente con una domanda, oppure un'osservazione pragmatica sul suo post. Sii diretto e asciutto.
+3. TONO: Informale ma professionale. Parla da pari a pari.
+4. CONTENUTO: Non menzionare MAI AdSwap, nessun link, nessuna vendita. Fai una domanda sulle sue metriche o su cosa ha già provato.
+5. LUNGHEZZA: Massimo 2 frasi. Brevissimo.
 """
 
 def setup_db():
     conn = sqlite3.connect("reddit_radar.db")
     c = conn.cursor()
-    # Aggiunto timestamp per permetterci una ricerca accurata 
     c.execute('''CREATE TABLE IF NOT EXISTS scanned_posts (id TEXT PRIMARY KEY, timestamp DATETIME DEFAULT CURRENT_TIMESTAMP)''')
     conn.commit()
     return conn
 
-def generate_with_retry(client, system_prompt, post_content="", max_retries=3, initial_delay=8):
+def generate_with_retry(client, system_prompt, post_content="", max_retries=3, initial_delay=5):
     delay = initial_delay
     for attempt in range(max_retries):
         try:
             testo_unito = f"{system_prompt}\n\nTESTO:\n{post_content}" if post_content else system_prompt
-            # Aggiorniamo a gemini-flash-lite-latest (o l'ultimo disponibile)
-            response = client.models.generate_content(
+            # API Chat senza warning, modello leggero
+            chat = client.chats.create(
                 model='gemini-flash-lite-latest', 
-                contents=testo_unito,
-                config=types.GenerateContentConfig(temperature=0.7)
+                config=types.GenerateContentConfig(temperature=0.85) # Temperatura alzata per non farlo ripetere
             )
+            response = chat.send_message(testo_unito)
+            
             if not response or not response.text:
                 raise ValueError("Risposta vuota")
             return response.text.strip()
@@ -69,7 +80,6 @@ def generate_with_retry(client, system_prompt, post_content="", max_retries=3, i
             err_msg = str(e).upper()
             if any(x in err_msg for x in ["503", "429", "404", "UNAVAILABLE"]):
                 if attempt < max_retries - 1:
-                    print(f"      🕒 API occupata. Riprovo in {delay}s...")
                     time.sleep(delay)
                     delay *= 2
                     continue
@@ -78,11 +88,11 @@ def generate_with_retry(client, system_prompt, post_content="", max_retries=3, i
 
 def main():
     print("==================================================")
-    print("🧠 AVVIO REDDIT RADAR AI - RICERCA DINAMICA + STEALTH (LITE)")
+    print("⏱️ AVVIO REDDIT RADAR AI - REAL-TIME (<20 ORE) + ANTI-CLICHÉ")
     print("==================================================\n")
     
     if not GEMINI_API_KEY:
-        print("[!] GEMINI_API_KEY non trovata. Interruzione.")
+        print("[!] GEMINI_API_KEY non trovata.")
         return
 
     client = genai.Client(api_key=GEMINI_API_KEY)
@@ -90,45 +100,36 @@ def main():
     c = conn.cursor()
     trovati = 0
 
-    print("[*] Chiedo a Gemini di inventare le strategie di ricerca...")
-    query_dinamiche_raw = generate_with_retry(client, PROMPT_GENERAZIONE_QUERY)
-    
-    if query_dinamiche_raw == "ERRORE":
-        print("[!] Impossibile generare query. Chiusura.")
-        return
+    # Calcolo limite temporale: 20 ore fa da questo esatto secondo
+    limite_temporale = datetime.now(timezone.utc) - timedelta(hours=20)
 
-    querie_globali = [q.strip() for q in query_dinamiche_raw.split('\n') if 'site:reddit.com' in q]
-    
-    if not querie_globali:
-        print("[!] Gemini non ha formattato bene. Uso query di backup.")
-        querie_globali = [
-            'site:reddit.com app marketing no downloads',
-            'site:reddit.com indie game how to get players',
-            'site:reddit.com app store optimization not working'
-        ]
-
-    ddgs = DDGS()
-
-    for query in querie_globali:
-        print(f"\n[*] Caccia in corso: {query}")
+    for url in URLS_DA_SCANSIONARE:
+        print(f"[*] Controllo feed in tempo reale: {url}")
+        
+        headers = {"User-Agent": random.choice(USER_AGENTS)}
         
         try:
-            # Ricerca senza timelimit esplicito, per evitare scarti inopportuni di DuckDuckGo.
-            # Richiediamo più risultati, poi filtriamo noi lato Python.
-            risultati_raw = list(ddgs.text(query, max_results=15))
-            
-            if not risultati_raw:
-                print(f"    [-] Rete vuota per questa query.")
-                time.sleep(3)
+            req = requests.get(url, headers=headers, timeout=10)
+            if req.status_code == 429:
+                print("    [!] Reddit IP limit. Pausa 30s...")
+                time.sleep(30)
+                continue
+            elif req.status_code != 200:
                 continue
                 
-            for post in risultati_raw:
-                titolo = post.get('title', '')
-                testo_snippet = post.get('body', '')
-                link = post.get('href', '')
+            feed = feedparser.parse(req.content)
+            
+            for post in feed.entries[:8]: # Primi 8 per freschezza
+                # 1. ESTREMO CONTROLLO TEMPORALE
+                data_pubblicazione = parsedate_to_datetime(post.published)
                 
-                post_id = link.split('comments/')[1].split('/')[0] if 'comments/' in link else link
+                # Se è più vecchio di 20 ore, lo scarta all'istante
+                if data_pubblicazione < limite_temporale:
+                    continue
                 
+                ore_fa = int((datetime.now(timezone.utc) - data_pubblicazione).total_seconds() / 3600)
+                
+                post_id = post.id
                 c.execute("SELECT id FROM scanned_posts WHERE id=?", (post_id,))
                 if c.fetchone():
                     continue
@@ -136,32 +137,31 @@ def main():
                 c.execute("INSERT INTO scanned_posts (id) VALUES (?)", (post_id,))
                 conn.commit()
 
-                contesto_troncato = f"TITOLO: {titolo}\nTESTO SINTETICO: {testo_snippet}"
+                titolo = post.title
+                testo_pulito = re.sub('<[^<]+?>', '', post.summary)
+                contesto_troncato = f"TITOLO: {titolo}\nTESTO: {testo_pulito[:800]}"
                 
                 risultato_analisi = generate_with_retry(client, PROMPT_ANALISI, contesto_troncato)
                 
                 if "SI" in risultato_analisi.upper():
                     print("\n" + "="*60)
-                    print(f"🎯 BERSAGLIO INTERCETTATO:")
-                    print(f"🔗 Link: {link}")
+                    print(f"🎯 TARGET FRESCHISSIMO INTERCETTATO (Pubblicato {ore_fa} ore fa):")
+                    print(f"🔗 Link: {post.link}")
                     print(f"📌 Titolo: {titolo}")
                     
                     time.sleep(3)
-                    
                     bozza = generate_with_retry(client, PROMPT_GANCIO, contesto_troncato)
                     
                     print(f"\n🤖 IL GANCIO:\n> {bozza}\n")
                     print("="*60 + "\n")
                     trovati += 1
                     
-                time.sleep(3) 
-                
         except Exception as e:
-            print(f"    [!] Errore su '{query}': {e}")
+            print(f"    [!] Errore connessione: {e}")
             
-        time.sleep(random.randint(5, 8))
+        time.sleep(random.randint(5, 10))
 
-    print(f"\n[*] Scansione terminata a fondo. Generati {trovati} ganci.")
+    print(f"\n[*] Scansione completata. Trovati {trovati} target super-recenti.")
     conn.close()
     os._exit(0)
 
