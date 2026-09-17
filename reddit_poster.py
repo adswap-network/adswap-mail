@@ -9,12 +9,11 @@ print = functools.partial(print, flush=True)
 COOKIE_VALUE = os.getenv("REDDIT_SESSION_COOKIE")
 
 def get_db():
-    conn = sqlite3.connect("reddit_radar.db")
-    return conn
+    return sqlite3.connect("reddit_radar.db")
 
 def main():
     print("==================================================")
-    print("🔫 AVVIO CECCHINO REDDIT (PLAYWRIGHT STEALTH 2.0)")
+    print("🔫 AVVIO CECCHINO REDDIT (PLAYWRIGHT STEALTH 2.2)")
     print("==================================================\n")
     
     if not COOKIE_VALUE:
@@ -24,7 +23,6 @@ def main():
     conn = get_db()
     c = conn.cursor()
     
-    # Pesca UNA SOLA bozza in sospeso
     c.execute("SELECT id, bozza FROM scanned_posts WHERE status='PENDING' LIMIT 1")
     record = c.fetchone()
     
@@ -36,12 +34,9 @@ def main():
     post_id, bozza = record
     post_url = f"https://www.reddit.com/comments/{post_id}"
     print(f"[*] Obiettivo acquisito: {post_url}")
-    print(f"[*] Testo da pubblicare:\n> {bozza}\n")
 
     with sync_playwright() as p:
         browser = p.chromium.launch(headless=True)
-        
-        # 1. FIX: Impostiamo uno schermo Desktop Full HD per evitare che la UI collassi
         context = browser.new_context(
             viewport={"width": 1920, "height": 1080},
             user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
@@ -59,45 +54,55 @@ def main():
         try:
             print("    [>] Caricamento pagina Reddit...")
             page.goto(post_url, wait_until="domcontentloaded", timeout=45000)
-            time.sleep(6) 
+            time.sleep(6)
             
-            print("    [>] Ricerca del box di testo...")
-            composer = page.locator('shreddit-composer').first
+            # Chiude eventuali banner se presenti
+            try:
+                cookie_btn = page.locator('button:has-text("Accept all"), button:has-text("Accept")').first
+                if cookie_btn.is_visible(timeout=2000):
+                    cookie_btn.click(force=True)
+                    time.sleep(2)
+            except:
+                pass
             
-            # 2. FIX: Scorriamo giù la pagina fino a inquadrare il box (scroll_into_view)
-            composer.scroll_into_view_if_needed()
-            time.sleep(2)
+            print("    [>] Clicco sul box 'Join the conversation'...")
+            # Miriamo ESATTAMENTE al testo che vediamo nel tuo screenshot
+            trigger = page.locator('text="Join the conversation", text="Add a comment"').first
             
-            # 3. FIX: Clicchiamo con force=True per bypassare qualsiasi banner invisibile o pop-up
-            print("    [>] Forzatura del click sul composer...")
-            composer.click(force=True, timeout=5000)
-            time.sleep(2)
+            if trigger.count() > 0:
+                trigger.scroll_into_view_if_needed()
+                time.sleep(1)
+                trigger.click(force=True)
+            else:
+                # Se non trova il testo, clicca sul fumetto dei commenti in alto come piano B
+                print("    [>] Box testo non trovato, clicco l'icona del commento...")
+                page.locator('shreddit-post-action-row button[icon-name="comment-outline"], button[aria-label*="Comment"]').first.click(force=True)
             
-            # 4. FIX: Clicchiamo esattamente dentro l'editor di testo vero e proprio
+            time.sleep(3)
+            
+            print("    [>] Aggancio l'editor di testo attivato...")
             editor = page.locator('div[contenteditable="true"]').first
-            if editor.count() > 0:
-                editor.click(force=True)
+            editor.wait_for(state="visible", timeout=10000)
+            editor.click(force=True)
             
-            print("    [>] Digitazione (simulazione umana)...")
+            print("    [>] Digitazione in corso...")
             page.keyboard.type(bozza, delay=35) 
             time.sleep(3)
             
             print("    [>] Clic su 'Comment'...")
-            page.locator('button[type="submit"], button[slot="submitButton"]').first.click(force=True)
+            # Individua il bottone di invio dentro lo shreddit-composer
+            page.locator('shreddit-composer button[slot="submitButton"], shreddit-composer button[type="submit"]').first.click(force=True)
+            time.sleep(6)
             
-            time.sleep(6) # Attende che la richiesta POST parta al server di Reddit
-            
-            # Segna come pubblicato
             c.execute("UPDATE scanned_posts SET status='POSTED' WHERE id=?", (post_id,))
             conn.commit()
             print("    [✓] Commento pubblicato con successo!")
             
         except Exception as e:
             print(f"    [!] Errore durante l'interazione Playwright: {e}")
-            # SALVATAGGIO SCREENSHOT: Se fallisce scatta una foto per farti vedere il problema
             try:
                 page.screenshot(path="errore_reddit.png")
-                print("    [i] 📸 Screenshot scattato! Scarica 'errore_reddit.png' da GitHub per vedere cosa copriva lo schermo.")
+                print("    [i] 📸 Screenshot salvato.")
             except:
                 pass
             
