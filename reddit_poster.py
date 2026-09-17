@@ -9,243 +9,130 @@ from playwright.sync_api import sync_playwright, TimeoutError as PlaywrightTimeo
 DB_PATH = "reddit_radar.db"
 COOKIE_VALUE = os.getenv("REDDIT_SESSION_COOKIE")
 
-POST_WAIT_SECONDS = 8
 PAGE_TIMEOUT_MS = 45_000
+WAIT_AFTER_LOAD_MS = 8_000
+WAIT_AFTER_CLICK_MS = 8_000
 
 
 def get_db():
     return sqlite3.connect(DB_PATH)
 
 
-def save_debug(page, prefix="debug"):
+def save_debug(page, name):
     """
-    Salva screenshot + HTML per poter capire cosa vede realmente
-    GitHub Actions.
+    Salva screenshot e HTML nella directory corrente.
+    Questi file verranno poi caricati come artifact da GitHub Actions.
     """
-    try:
-        page.screenshot(
-            path=f"{prefix}.png",
-            full_page=True
-        )
-        print(f"[i] Screenshot salvato: {prefix}.png")
-    except Exception as e:
-        print(f"[!] Impossibile salvare screenshot: {e}")
 
     try:
-        Path(f"{prefix}.html").write_text(
+        screenshot_path = f"{name}.png"
+        page.screenshot(
+            path=screenshot_path,
+            full_page=True
+        )
+        print(f"[i] Screenshot salvato: {screenshot_path}")
+    except Exception as e:
+        print(f"[!] Errore salvataggio screenshot: {e}")
+
+    try:
+        html_path = f"{name}.html"
+        Path(html_path).write_text(
             page.content(),
             encoding="utf-8"
         )
-        print(f"[i] HTML salvato: {prefix}.html")
+        print(f"[i] HTML salvato: {html_path}")
     except Exception as e:
-        print(f"[!] Impossibile salvare HTML: {e}")
+        print(f"[!] Errore salvataggio HTML: {e}")
 
 
 def get_pending_post(conn):
     cursor = conn.cursor()
 
-    cursor.execute("""
+    cursor.execute(
+        """
         SELECT id, bozza
         FROM scanned_posts
         WHERE status = 'PENDING'
         ORDER BY id
         LIMIT 1
-    """)
+        """
+    )
 
     return cursor.fetchone()
 
 
-def inspect_reddit_page(page):
-    """
-    Raccoglie informazioni diagnostiche sulla pagina Reddit.
-    Non modifica la pagina.
-    """
-
-    return page.evaluate("""
-    () => {
-        function describeElement(el) {
-            if (!el) return null;
-
-            return {
-                tag: el.tagName,
-                id: el.id || "",
-                className:
-                    typeof el.className === "string"
-                        ? el.className
-                        : "",
-                text: (el.innerText || "").substring(0, 200),
-                contenteditable:
-                    el.getAttribute("contenteditable"),
-                ariaLabel:
-                    el.getAttribute("aria-label"),
-                type:
-                    el.getAttribute("type")
-            };
-        }
-
-        const composers = [
-            ...document.querySelectorAll("shreddit-composer")
-        ];
-
-        const normalEditors = [
-            ...document.querySelectorAll(
-                '[contenteditable="true"]'
-            )
-        ];
-
-        const normalButtons = [
-            ...document.querySelectorAll(
-                'button[type="submit"], button'
-            )
-        ];
-
-        return {
-            url: location.href,
-            title: document.title,
-
-            loggedInHints: {
-                shredditComposer:
-                    !!document.querySelector("shreddit-composer"),
-
-                loginLinks:
-                    [...document.querySelectorAll("a")]
-                        .filter(a =>
-                            (a.innerText || "")
-                                .toLowerCase()
-                                .includes("log in")
-                        )
-                        .length
-            },
-
-            composers: composers.map(c => ({
-                outerHTML: c.outerHTML.substring(0, 1500),
-                hasShadowRoot: !!c.shadowRoot,
-
-                shadowEditors: c.shadowRoot
-                    ? [
-                        ...c.shadowRoot.querySelectorAll(
-                            '[contenteditable="true"]'
-                        )
-                    ].map(describeElement)
-                    : [],
-
-                shadowButtons: c.shadowRoot
-                    ? [
-                        ...c.shadowRoot.querySelectorAll(
-                            "button"
-                        )
-                    ].map(describeElement)
-                    : []
-            })),
-
-            normalEditors:
-                normalEditors.map(describeElement),
-
-            buttons:
-                normalButtons
-                    .slice(0, 30)
-                    .map(describeElement)
-        };
-    }
-    """)
-
-
 def find_editor(page):
     """
-    Cerca l'editor in:
-    1. DOM normale
-    2. Shadow DOM del shreddit-composer
+    Cerca un elemento contenteditable visibile.
+    Playwright attraversa automaticamente gli Shadow DOM aperti.
     """
 
-    # Prima proviamo gli editor normali.
-    normal = page.locator('[contenteditable="true"]')
+    selectors = [
+        'shreddit-composer [contenteditable="true"]',
+        '[contenteditable="true"]'
+    ]
 
-    try:
-        count = normal.count()
+    for selector in selectors:
 
-        for i in range(count):
-            element = normal.nth(i)
+        try:
+            locator = page.locator(selector)
 
-            if element.is_visible():
-                print("[✓] Editor trovato nel DOM normale.")
-                return element
+            count = locator.count()
 
-    except Exception:
-        pass
-
-    # Poi cerchiamo dentro gli shadow root.
-    composers = page.locator("shreddit-composer")
-
-    try:
-        count = composers.count()
-
-        for i in range(count):
-            composer = composers.nth(i)
-
-            # Playwright permette di attraversare lo Shadow DOM
-            # usando locator discendenti.
-            editor = composer.locator(
-                '[contenteditable="true"]'
+            print(
+                f"[i] Selector editor '{selector}': "
+                f"{count} elemento/i"
             )
 
-            if editor.count() > 0:
-                for j in range(editor.count()):
-                    candidate = editor.nth(j)
+            for i in range(count):
 
-                    try:
-                        if candidate.is_visible():
-                            print(
-                                "[✓] Editor trovato dentro "
-                                "shreddit-composer."
-                            )
-                            return candidate
-                    except Exception:
-                        pass
+                candidate = locator.nth(i)
 
-    except Exception as e:
-        print(f"[!] Errore ricerca editor: {e}")
+                try:
+                    if candidate.is_visible():
+                        print(
+                            "[✓] Editor trovato."
+                        )
+                        return candidate
+
+                except Exception:
+                    continue
+
+        except Exception as e:
+            print(
+                f"[i] Errore selector editor "
+                f"'{selector}': {e}"
+            )
 
     return None
 
 
 def find_submit_button(page):
     """
-    Cerca il pulsante Submit/Comment.
+    Cerca il pulsante per pubblicare il commento.
     """
 
-    # Prima: ID specifico, se Reddit lo utilizza.
     selectors = [
         "#comment-composer-submit-button",
-        'button[type="submit"]'
+        'button[type="submit"]',
+        'shreddit-composer button'
     ]
 
     for selector in selectors:
+
         try:
             locator = page.locator(selector)
 
-            for i in range(locator.count()):
-                candidate = locator.nth(i)
+            count = locator.count()
 
-                if candidate.is_visible() and candidate.is_enabled():
-                    print(
-                        f"[✓] Pulsante trovato con selector: {selector}"
-                    )
-                    return candidate
+            print(
+                f"[i] Selector submit '{selector}': "
+                f"{count} elemento/i"
+            )
 
-        except Exception:
-            pass
+            for i in range(count):
 
-    # Cerca dentro shreddit-composer.
-    try:
-        composers = page.locator("shreddit-composer")
-
-        for i in range(composers.count()):
-            composer = composers.nth(i)
-
-            buttons = composer.locator("button")
-
-            for j in range(buttons.count()):
-                button = buttons.nth(j)
+                button = locator.nth(i)
 
                 try:
                     if not button.is_visible():
@@ -274,87 +161,139 @@ def find_submit_button(page):
                         f"{text} {aria} {button_id}"
                     )
 
-                    if any(word in combined for word in [
+                    print(
+                        f"[i] Bottone candidato: "
+                        f"text='{text}', "
+                        f"aria='{aria}', "
+                        f"id='{button_id}'"
+                    )
+
+                    # Se è il bottone con ID specifico,
+                    # lo accettiamo immediatamente.
+                    if button_id == "comment-composer-submit-button":
+                        print(
+                            "[✓] Submit trovato tramite ID."
+                        )
+                        return button
+
+                    # Altrimenti controlliamo il testo/aria-label.
+                    keywords = [
                         "comment",
                         "submit",
                         "reply",
                         "post"
-                    ]):
+                    ]
+
+                    if any(
+                        word in combined
+                        for word in keywords
+                    ):
                         print(
-                            "[✓] Pulsante trovato dentro "
-                            "shreddit-composer."
+                            "[✓] Submit trovato."
                         )
                         return button
 
                 except Exception:
-                    pass
+                    continue
 
-    except Exception as e:
-        print(f"[!] Errore ricerca pulsante: {e}")
+        except Exception as e:
+            print(
+                f"[i] Errore ricerca "
+                f"'{selector}': {e}"
+            )
 
     return None
 
 
-def verify_logged_in(page):
+def is_logged_in(page):
     """
-    Controllo basilare: il composer deve essere presente.
+    Controllo basilare della sessione Reddit.
     """
 
     try:
+        # Se compare il composer, normalmente siamo autenticati.
         composer = page.locator("shreddit-composer")
 
         if composer.count() > 0:
-            print("[✓] Composer Reddit presente.")
+            print("[✓] shreddit-composer presente.")
             return True
+
     except Exception:
         pass
 
-    print("[!] Composer Reddit non trovato.")
+    # Controlliamo anche eventuali segnali di login.
+    try:
+        body = page.locator("body").inner_text().lower()
+
+        login_words = [
+            "log in",
+            "login",
+            "sign in"
+        ]
+
+        for word in login_words:
+            if word in body:
+                print(
+                    f"[!] Trovato possibile "
+                    f"segnale di login: '{word}'"
+                )
+                return False
+
+    except Exception:
+        pass
+
     return False
 
 
-def comment_was_posted(page, original_text):
+def verify_comment_posted(page, comment_text):
     """
-    Controlla se Reddit mostra il testo del commento nella pagina.
-
-    Non consideriamo il semplice click come prova di successo.
+    Verifica che Reddit abbia effettivamente mostrato
+    il commento pubblicato.
     """
 
     normalized = " ".join(
-        original_text.split()
+        comment_text.split()
     ).strip()
 
     if not normalized:
         return False
 
-    # Aspettiamo che Reddit aggiorni il DOM.
-    deadline = time.time() + 15
+    deadline = time.time() + 20
 
     while time.time() < deadline:
 
+        # ---------------------------------------------------------
+        # Metodo 1: ricerca del testo completo
+        # ---------------------------------------------------------
+
         try:
-            # Testo esatto, quando possibile.
+            body_text = page.locator("body").inner_text()
+
+            if normalized in body_text:
+                print(
+                    "[✓] Testo del commento trovato "
+                    "nella pagina."
+                )
+                return True
+
+        except Exception:
+            pass
+
+        # ---------------------------------------------------------
+        # Metodo 2: ricerca get_by_text
+        # ---------------------------------------------------------
+
+        try:
             locator = page.get_by_text(
                 normalized,
                 exact=True
             )
 
             if locator.count() > 0:
-                for i in range(locator.count()):
-                    try:
-                        if locator.nth(i).is_visible():
-                            return True
-                    except Exception:
-                        pass
-
-        except Exception:
-            pass
-
-        # Controllo più permissivo per testi lunghi.
-        try:
-            body_text = page.locator("body").inner_text()
-
-            if normalized in body_text:
+                print(
+                    "[✓] Commento trovato tramite "
+                    "get_by_text()."
+                )
                 return True
 
         except Exception:
@@ -372,16 +311,25 @@ def main():
     print("==================================================")
     print()
 
+    # -------------------------------------------------------------
+    # COOKIE
+    # -------------------------------------------------------------
+
     if not COOKIE_VALUE:
         print(
-            "[!] REDDIT_SESSION_COOKIE non presente "
-            "nei GitHub Secrets."
+            "[!] ERRORE: REDDIT_SESSION_COOKIE "
+            "non presente nei Secrets."
         )
         return 1
+
+    # -------------------------------------------------------------
+    # DATABASE
+    # -------------------------------------------------------------
 
     conn = get_db()
 
     try:
+
         record = get_pending_post(conn)
 
         if not record:
@@ -394,7 +342,7 @@ def main():
 
         if not bozza or not bozza.strip():
             print(
-                f"[!] La bozza per {post_id} è vuota."
+                f"[!] La bozza {post_id} è vuota."
             )
             return 1
 
@@ -402,9 +350,13 @@ def main():
             f"https://www.reddit.com/comments/{post_id}"
         )
 
-        print(f"[*] Obiettivo: {post_url}")
-        print(f"[*] ID database: {post_id}")
-        print()
+        print(
+            f"[*] Obiettivo acquisito: {post_url}"
+        )
+
+        # ---------------------------------------------------------
+        # PLAYWRIGHT
+        # ---------------------------------------------------------
 
         with sync_playwright() as p:
 
@@ -422,25 +374,37 @@ def main():
                     "AppleWebKit/537.36 "
                     "(KHTML, like Gecko) "
                     "Chrome/120.0.0.0 Safari/537.36"
-                }
+                )
             )
 
-            context.add_cookies([
-                {
-                    "name": "reddit_session",
-                    "value": COOKIE_VALUE,
-                    "domain": ".reddit.com",
-                    "path": "/",
-                    "httpOnly": True,
-                    "secure": True
-                }
-            ])
+            # -----------------------------------------------------
+            # COOKIE REDDIT
+            # -----------------------------------------------------
+
+            context.add_cookies(
+                [
+                    {
+                        "name": "reddit_session",
+                        "value": COOKIE_VALUE,
+                        "domain": ".reddit.com",
+                        "path": "/",
+                        "secure": True,
+                        "httpOnly": True
+                    }
+                ]
+            )
 
             page = context.new_page()
 
             try:
 
-                print("[>] Caricamento pagina...")
+                # -------------------------------------------------
+                # APERTURA POST
+                # -------------------------------------------------
+
+                print(
+                    "[>] Caricamento pagina..."
+                )
 
                 page.goto(
                     post_url,
@@ -448,87 +412,79 @@ def main():
                     timeout=PAGE_TIMEOUT_MS
                 )
 
-                # Diamo tempo ai Web Components di Reddit
-                # di essere inizializzati.
                 page.wait_for_timeout(
-                    POST_WAIT_SECONDS * 1000
-                )
-
-                print(f"[i] URL finale: {page.url}")
-                print(f"[i] Titolo: {page.title()}")
-
-                # -------------------------------------------------
-                # DEBUG / DIAGNOSTICA
-                # -------------------------------------------------
-
-                print("[>] Analisi struttura Reddit...")
-
-                diagnostics = inspect_reddit_page(page)
-
-                print(
-                    f"[i] Composer presenti: "
-                    f"{len(diagnostics['composers'])}"
+                    WAIT_AFTER_LOAD_MS
                 )
 
                 print(
-                    f"[i] Editor normali: "
-                    f"{len(diagnostics['normalEditors'])}"
+                    f"[i] URL finale: {page.url}"
                 )
 
-                if diagnostics["loggedInHints"]["loginLinks"]:
+                print(
+                    f"[i] Titolo: {page.title()}"
+                )
+
+                # Screenshot iniziale.
+                save_debug(
+                    page,
+                    "01_pagina_iniziale"
+                )
+
+                # -------------------------------------------------
+                # CONTROLLO LOGIN
+                # -------------------------------------------------
+
+                print(
+                    "[>] Controllo sessione Reddit..."
+                )
+
+                if not is_logged_in(page):
+
                     print(
-                        "[!] La pagina contiene un possibile "
-                        "link di login."
+                        "[!] Sessione Reddit non riconosciuta."
                     )
-
-                # -------------------------------------------------
-                # LOGIN / COMPOSER
-                # -------------------------------------------------
-
-                if not verify_logged_in(page):
 
                     save_debug(
                         page,
-                        "errore_composer"
-                    )
-
-                    print(
-                        "[!] Reddit non mostra il composer."
-                    )
-                    print(
-                        "[!] Il cookie potrebbe essere "
-                        "scaduto/non valido oppure Reddit "
-                        "potrebbe aver cambiato la pagina."
+                        "02_errore_login"
                     )
 
                     return 1
 
+                print(
+                    "[✓] Sessione Reddit apparentemente valida."
+                )
+
                 # -------------------------------------------------
-                # EDITOR
+                # TROVA EDITOR
                 # -------------------------------------------------
 
-                print("[>] Ricerca editor...")
+                print(
+                    "[>] Ricerca editor commento..."
+                )
 
                 editor = find_editor(page)
 
                 if editor is None:
 
-                    save_debug(
-                        page,
-                        "errore_editor"
-                    )
-
                     print(
                         "[!] Editor non trovato."
+                    )
+
+                    save_debug(
+                        page,
+                        "03_errore_editor"
                     )
 
                     return 1
 
                 # -------------------------------------------------
-                # SCRITTURA
+                # FOCUS
                 # -------------------------------------------------
 
-                print("[>] Focus editor...")
+                print(
+                    "[>] Focus editor..."
+                )
 
                 editor.scroll_into_view_if_needed()
 
@@ -536,83 +492,139 @@ def main():
 
                 page.wait_for_timeout(500)
 
-                print("[>] Inserimento bozza...")
+                # -------------------------------------------------
+                # SCRITTURA
+                # -------------------------------------------------
 
-                # fill() è preferibile a keyboard.type()
-                # per contenteditable.
+                print(
+                    "[>] Inserimento bozza..."
+                )
+
                 try:
+
                     editor.fill(bozza)
-                except Exception:
-                    # Fallback nel caso Reddit blocchi fill()
+
+                except Exception as fill_error:
+
                     print(
-                        "[i] fill() non riuscito, "
-                        "uso keyboard.insert_text()."
+                        "[i] fill() non riuscito:"
+                        f" {fill_error}"
+                    )
+
+                    print(
+                        "[i] Provo keyboard.insert_text()..."
                     )
 
                     editor.click()
-                    page.keyboard.insert_text(bozza)
 
-                page.wait_for_timeout(1500)
+                    page.keyboard.insert_text(
+                        bozza
+                    )
 
-                # Verifica che il testo sia effettivamente
-                # entrato nell'editor.
+                page.wait_for_timeout(1_000)
+
+                # -------------------------------------------------
+                # VERIFICA TESTO INSERITO
+                # -------------------------------------------------
+
                 try:
-                    current_text = editor.inner_text()
 
-                    if bozza.strip() not in current_text:
+                    editor_text = editor.inner_text()
+
+                    print(
+                        "[i] Testo presente "
+                        f"nell'editor: {len(editor_text)} caratteri"
+                    )
+
+                    if not editor_text.strip():
+
                         print(
-                            "[!] La bozza non risulta "
-                            "correttamente inserita."
+                            "[!] L'editor è vuoto dopo "
+                            "l'inserimento."
                         )
 
                         save_debug(
                             page,
-                            "errore_scrittura"
+                            "04_errore_scrittura"
                         )
 
                         return 1
 
                 except Exception as e:
+
                     print(
-                        f"[!] Impossibile verificare "
-                        f"il contenuto dell'editor: {e}"
+                        "[!] Non posso verificare "
+                        f"l'editor: {e}"
                     )
 
-                print("[✓] Bozza inserita.")
+                    save_debug(
+                        page,
+                        "04_errore_scrittura"
+                    )
+
+                    return 1
+
+                print(
+                    "[✓] Bozza inserita."
+                )
+
+                save_debug(
+                    page,
+                    "05_prima_del_submit"
+                )
 
                 # -------------------------------------------------
-                # SUBMIT
+                # TROVA SUBMIT
                 # -------------------------------------------------
 
-                print("[>] Ricerca pulsante Submit...")
+                print(
+                    "[>] Ricerca pulsante Submit..."
+                )
 
                 submit = find_submit_button(page)
 
                 if submit is None:
 
-                    save_debug(
-                        page,
-                        "errore_submit"
-                    )
-
                     print(
                         "[!] Pulsante Submit non trovato."
                     )
 
+                    save_debug(
+                        page,
+                        "06_errore_submit"
+                    )
+
                     return 1
 
-                print("[>] Click Submit...")
+                # -------------------------------------------------
+                # CLICK SUBMIT
+                # -------------------------------------------------
+
+                print(
+                    "[>] Click sul pulsante Submit..."
+                )
 
                 submit.scroll_into_view_if_needed()
 
-                submit.click()
+                submit.click(
+                    timeout=10_000
+                )
 
                 print(
-                    "[>] Attesa risposta Reddit..."
+                    "[>] Submit eseguito."
                 )
 
                 page.wait_for_timeout(
-                    POST_WAIT_SECONDS * 1000
+                    WAIT_AFTER_CLICK_MS
+                )
+
+                # -------------------------------------------------
+                # SCREEN DOPO CLICK
+                # -------------------------------------------------
+
+                save_debug(
+                    page,
+                    "07_dopo_submit"
                 )
 
                 # -------------------------------------------------
@@ -623,12 +635,20 @@ def main():
                     "[>] Verifica pubblicazione..."
                 )
 
-                published = comment_was_posted(
+                published = verify_comment_posted(
                     page,
                     bozza
                 )
 
                 if published:
+
+                    print(
+                        "[✓] Commento trovato nella pagina."
+                    )
+
+                    # -------------------------------------------------
+                    # UPDATE DATABASE
+                    # -------------------------------------------------
 
                     cursor = conn.cursor()
 
@@ -643,39 +663,38 @@ def main():
 
                     conn.commit()
 
-                    print()
-                    print(
-                        "[✓] COMMENTO PUBBLICATO."
-                    )
                     print(
                         "[✓] Database aggiornato: POSTED"
                     )
 
                     save_debug(
                         page,
-                        "conferma_pubblicazione"
+                        "08_conferma_pubblicazione"
+                    )
+
+                    print(
+                        "[✓] OPERAZIONE COMPLETATA."
                     )
 
                     return 0
 
                 # -------------------------------------------------
-                # FALLIMENTO
+                # PUBBLICAZIONE NON VERIFICATA
                 # -------------------------------------------------
 
-                print()
                 print(
                     "[!] Il click è stato eseguito, "
-                    "ma non ho potuto verificare "
-                    "la pubblicazione."
+                    "ma il commento non è stato "
+                    "verificato nella pagina."
                 )
 
                 print(
-                    "[!] Il DB NON viene modificato."
+                    "[!] Il record rimane PENDING."
                 )
 
                 save_debug(
                     page,
-                    "errore_verifica"
+                    "09_errore_verifica"
                 )
 
                 return 1
@@ -696,7 +715,7 @@ def main():
             except Exception as e:
 
                 print(
-                    f"[!] Errore: {type(e).__name__}: {e}"
+                    f"[!] Errore {type(e).__name__}: {e}"
                 )
 
                 save_debug(
@@ -711,8 +730,11 @@ def main():
                 browser.close()
 
     finally:
+
         conn.close()
 
 
 if __name__ == "__main__":
-    raise SystemExit(main())
+    raise SystemExit(
+        main()
+    )
