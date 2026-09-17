@@ -2,7 +2,7 @@
     "config": {
         "start_date": "2026-09-12",
         "last_run_date": "2026-09-17",
-        "sent_today": 6
+        "sent_today": 11
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -610,36 +610,36 @@
         "waldigames79@gmail.com": {
             "app_name": "100 Questions",
             "package": "com.Lumicore.hundredquestions",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-17T11:45:05.126288",
             "followup_sent_at": null
         },
         "greenseedapps@gmail.com": {
             "app_name": "Would You Rather Question Game",
             "package": "com.gtm.wouldyourather",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-17T11:45:05.126288",
             "followup_sent_at": null
         },
         "admin@neuregiasolutions.com": {
             "app_name": "Icebreaker-AI",
             "package": "app.ns.icebreakerai",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-17T11:45:05.126288",
             "followup_sent_at": null
         },
         "stathiskarahisaridis444@gmail.com": {
             "app_name": "Get to Know Each Other",
             "package": "com.mycompany.toknoweachother",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-17T11:45:05.126288",
             "followup_sent_at": null
         },
         "balalev14@gmail.com": {
             "app_name": "Connect",
             "package": "com.balalev.connectgame",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-17T11:45:05.126288",
             "followup_sent_at": null
         },
         "contact@invitocards.com": {
