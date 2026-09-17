@@ -6,6 +6,7 @@ import requests
 import logging
 import warnings
 import re
+import random
 import xml.etree.ElementTree as ET
 from datetime import datetime, timezone
 from google import genai
@@ -19,28 +20,34 @@ os.environ["GLOG_minloglevel"] = "2"
 print = functools.partial(print, flush=True)
 
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
-REDDIT_USER_AGENT = "script:adswap-radar:v1.0 (by /u/Ok-Skin-9022)"
+REDDIT_USER_AGENT = "script:adswap-radar:v2.0 (by /u/Similar_Score2904)"
 
-SUBREDDITS = ["androiddev", "gamedev", "IndieGaming", "AppBusiness", "SaaS"]
-MAX_ORE = 20  # scarta post più vecchi di così
+# Subreddit ampliati: un mix di nicchie tecniche e community di founder permissive
+SUBREDDITS = [
+    "androiddev", "gamedev", "IndieGaming", "AppBusiness", "SaaS", 
+    "microsaas", "SideProject", "EntrepreneurRideAlong", "indiehackers",
+    "growmybusiness", "Startup_Ideas", "playmygame", "IndieDev"
+]
+MAX_ORE = 16  # Peschiamo post abbastanza recenti ma con un margine per sembrare naturali
 
 PROMPT_ANALISI = """
 Agisci come un analista di mercato. Leggi questo post fresco di Reddit.
-Il nostro target: sviluppatori indie, creatori di app/giochi che si lamentano di NON avere download, zero utenti, o che i costi di marketing/Ads sono impossibili.
-Rispondi SOLO con "SI" se è un target perfetto in cerca di aiuto, oppure "NO".
+Il nostro target: sviluppatori indie, creatori di app/giochi o founder SaaS che si lamentano di NON avere download, zero utenti, costi Ads troppo alti, o problemi di drop rate/marketing.
+Rispondi SOLO con "SI" se è un target perfetto in cerca di consigli sulla crescita, oppure "NO".
 """
 
 PROMPT_GANCIO = """
-Sei lo sviluppatore che ha creato AdSwap, una rete di cross-promotion gratuita tra app/giochi indie.
-Scrivi una bozza di commento Reddit in inglese per questo post.
+Sei uno sviluppatore indie veterano. Stai rispondendo a un collega su Reddit che ha problemi di crescita o marketing con il suo progetto.
+Scrivi un commento in inglese, breve e colloquiale.
 
-REGOLE:
-1. Rispondi in modo specifico al post.
-2. Sii utile: dai un consiglio o fai una domanda.
-3. Menziona AdSwap in modo naturale e dichiarato (es. "I actually built a free tool for this called AdSwap...").
-4. Tono informale, da sviluppatore a sviluppatore.
-5. Massimo 3 frasi, breve e diretto.
-6. ASSOLUTAMENTE NESSUN LINK.
+REGOLE ANTI-SPAM (CRITICHE PER NON ESSERE BANNATO):
+1. ZERO VENDITA E NESSUN LINK: Non stai promuovendo nulla. Non usare MAI liste puntate o grassetti.
+2. VERO VALORE: Le prime frasi devono mostrare che hai LETTO il post. Dai un vero consiglio pratico, tecnico o di incoraggiamento basato esattamente sul suo problema.
+3. TONO UMANO E STANCO: Usa slang di Reddit (es. "man", "been there", "tbh", "imho", "honestly"). Sii informale e molto umano.
+4. IL "SOFT DROP" (Naturalezza estrema): Verso la fine, infila in modo iper-casuale un riferimento al fatto che per disperazione hai creato "AdSwap" (una rete gratuita di cross-promotion tra sviluppatori indie) per aggirare questo stesso problema. 
+   - Non dirgli MAI "Vai a provarlo" o "Controllalo".
+   - Usa frasi disinteressate tipo: "...ended up coding AdSwap just to trade banner space with other devs. Ads are just burning cash tbh." oppure "...maybe cross-promotion? I made a free network called AdSwap for this, might be worth looking into down the line."
+5. Sii BREVE: Massimo 3-4 frasi in totale.
 """
 
 HEADERS = {"User-Agent": REDDIT_USER_AGENT}
@@ -55,7 +62,6 @@ def strip_html(raw_html):
 def setup_db():
     conn = sqlite3.connect("reddit_radar.db")
     c = conn.cursor()
-    # Modificato per supportare la comunicazione con il Cecchino
     c.execute('''CREATE TABLE IF NOT EXISTS scanned_posts (
                  id TEXT PRIMARY KEY, 
                  bozza TEXT, 
@@ -64,12 +70,15 @@ def setup_db():
     return conn
 
 def generate_with_retry(client, system_prompt, post_content="", max_retries=3):
+    # Il seed casuale costringe l'IA a percorrere alberi neurali diversi ogni volta, evitando la ripetitività
+    seed_variazione = random.randint(1, 99999)
     for attempt in range(max_retries):
         try:
-            testo = f"{system_prompt}\n\nTESTO:\n{post_content}" if post_content else system_prompt
+            testo = f"{system_prompt}\n\n[Seed variazione stile: {seed_variazione}]\n\nTESTO DEL POST:\n{post_content}" if post_content else system_prompt
             chat = client.chats.create(
-                model='gemini-flash-lite-latest',
-                config=types.GenerateContentConfig(temperature=0.85)
+                model='gemini-2.5-flash', 
+                # Temperatura molto alta (0.95) per costringere a usare parole/strutture sempre diverse
+                config=types.GenerateContentConfig(temperature=0.95)
             )
             response = chat.send_message(testo)
             if response and response.text:
@@ -114,7 +123,6 @@ def parse_feed(xml_text):
             continue
         post_id = entry_id_el.text or ""
         
-        # Estraiamo l'ID pulito per il link
         clean_id = post_id
         if "comments/" in link_el.attrib.get("href", ""):
             clean_id = link_el.attrib.get("href", "").split("comments/")[1].split("/")[0]
@@ -137,7 +145,7 @@ def parse_feed(xml_text):
 
 def main():
     print("==================================================")
-    print("🚀 AVVIO REDDIT RADAR (Salvataggio Bozze in DB)")
+    print("🚀 AVVIO REDDIT RADAR V2 (Stealth Mode)")
     print("==================================================\n")
 
     if not GEMINI_API_KEY:
@@ -149,11 +157,14 @@ def main():
     c = conn.cursor()
     risultati = []
 
+    # Mescoliamo i subreddit in modo che non scansioni sempre nello stesso ordine
+    random.shuffle(SUBREDDITS)
+
     for sub in SUBREDDITS:
-        print(f"[*] Estrazione da r/{sub}...")
+        print(f"[*] Scansione invisibile su r/{sub}...")
         xml_text = fetch_subreddit_feed(sub)
         if not xml_text:
-            time.sleep(8)
+            time.sleep(random.randint(5, 12))
             continue
 
         posts = parse_feed(xml_text)
@@ -177,25 +188,24 @@ def main():
             analisi = generate_with_retry(client, PROMPT_ANALISI, contesto_troncato)
 
             if "SI" in analisi.upper():
-                time.sleep(2)
+                time.sleep(random.randint(2, 5))
                 bozza = generate_with_retry(client, PROMPT_GANCIO, contesto_troncato)
 
-                # CONTROLLO DI SICUREZZA: Salta se Gemini fallisce
                 if bozza == "ERRORE" or not bozza:
                     print(f"    [!] Generazione bozza fallita per {post_id}. Salto.")
                     continue
 
-                # Salva la bozza come PENDING per il Cecchino
                 c.execute("UPDATE scanned_posts SET bozza=?, status='PENDING' WHERE id=?", (bozza, post_id))
                 conn.commit()
 
                 risultati.append(post)
-                print(f"    🎯 TARGET TROVATO E SALVATO IN CODA → {post['link']}")
+                print(f"    🎯 BERSAGLIO ACQUISITO E MASCHERATO → {post['link']}")
 
-        time.sleep(8)
+        # Pausa casuale tra un subreddit e l'altro per ingannare i controlli anti-scraping
+        time.sleep(random.randint(8, 20))
 
     conn.close()
-    print(f"\n[*] Scansione completata. {len(risultati)} bersagli aggiunti in coda.\n")
+    print(f"\n[*] Scansione completata in Stealth. {len(risultati)} esche piazzate nel database.\n")
 
 if __name__ == "__main__":
     main()
