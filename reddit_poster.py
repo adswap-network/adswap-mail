@@ -13,7 +13,7 @@ def get_db():
 
 def main():
     print("==================================================")
-    print("🔫 AVVIO CECCHINO REDDIT (CSS NUKE & MOBILE 6.0)")
+    print("🔫 AVVIO CECCHINO REDDIT (OLD REDDIT MASTER BYPASS 7.0)")
     print("==================================================\n")
     
     if not COOKIE_VALUE:
@@ -32,14 +32,20 @@ def main():
         return
         
     post_id, bozza = record
-    post_url = f"https://www.reddit.com/comments/{post_id}"
+    
+    # LA PORTA DI SERVIZIO: Usiamo old.reddit per avere un HTML puro e senza trappole
+    post_url = f"https://old.reddit.com/comments/{post_id}/"
     print(f"[*] Obiettivo acquisito: {post_url}")
 
     with sync_playwright() as p:
-        iphone = p.devices['iPhone 13']
         browser = p.chromium.launch(headless=True)
-        context = browser.new_context(**iphone)
+        # Visuale Desktop normale
+        context = browser.new_context(
+            viewport={"width": 1920, "height": 1080},
+            user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+        )
         
+        # Il cookie vale per tutto il circuito Reddit
         context.add_cookies([{
             "name": "reddit_session",
             "value": COOKIE_VALUE,
@@ -50,63 +56,42 @@ def main():
         page = context.new_page()
         
         try:
-            print("    [>] Caricamento pagina Mobile...")
-            # Iniettiamo il CSS prima ancora che la pagina inizi a caricarsi
-            page.add_init_script("""
-                const style = document.createElement('style');
-                style.innerHTML = `
-                    xpromo-bottom-sheet, 
-                    xpromo-app-selector, 
-                    shreddit-async-loader[bundlename="xpromo_bottom_sheet"],
-                    #credential_picker_container,
-                    iframe {
-                        display: none !important;
-                        opacity: 0 !important;
-                        pointer-events: none !important;
-                        z-index: -9999 !important;
-                        height: 0 !important;
-                    }
-                `;
-                document.head.appendChild(style);
-            """)
-
-            page.goto(post_url, wait_until="networkidle", timeout=60000)
-            time.sleep(5) 
+            print("    [>] Caricamento pagina Old Reddit...")
+            page.goto(post_url, wait_until="domcontentloaded", timeout=60000)
+            time.sleep(4)
             
-            # CSS Nuke 2: Ripetuto a caricamento completato per sicurezza contro React
-            page.add_style_tag(content="xpromo-bottom-sheet, xpromo-app-selector { display: none !important; }")
-            time.sleep(1)
+            # Controllo Login: Su old.reddit il nome utente è sempre in alto a destra
+            user_area = page.locator('span.user').first
+            if user_area.count() == 0 or "login" in user_area.inner_text().lower():
+                print("    [!!!] ALLARME: Reddit ci vede come NON loggati. Il Cookie è scaduto!")
+                page.screenshot(path="errore_login.png")
+                raise Exception("Cookie scaduto o invalido.")
+                
+            print("    [>] Ricerca dell'editor testuale...")
+            # La casella commenti è un comunissimo e infallibile campo <textarea>
+            textarea = page.locator('.commentarea > .usertext textarea[name="text"]').first
             
-            page.screenshot(path="debug_1_pulizia.png")
-            print("    [>] Schermo pulito dai banner. Screenshot salvato.")
+            if textarea.count() == 0:
+                raise Exception("Casella di testo non trovata. Il post potrebbe essere bloccato o archiviato.")
             
-            print("    [>] Tocco la barra 'Add a comment' in basso...")
-            # Sulla UI mobile, in basso c'è un finto input testuale che, se cliccato, apre l'editor vero e proprio
-            add_comment_trigger = page.locator('text="Add a comment", text="Add your thoughts"').last
-            add_comment_trigger.click(force=True, timeout=5000)
-            time.sleep(3)
+            textarea.scroll_into_view_if_needed()
             
-            page.screenshot(path="debug_2_composer_aperto.png")
-
-            print("    [>] Digito il testo...")
-            # Troviamo la vera textarea o il div editabile aperto a tutto schermo
-            editor = page.locator('textarea, div[contenteditable="true"]').last
-            editor.click(force=True)
-            page.keyboard.type(bozza, delay=20)
+            print("    [>] Scrittura del commento...")
+            textarea.fill(bozza)
             time.sleep(2)
             
-            page.screenshot(path="debug_3_testo_inserito.png")
+            page.screenshot(path="debug_prima_dell_invio.png")
             
-            print("    [>] Premo il pulsante Invia...")
-            # Sulla UI mobile di Reddit il tasto di invio in alto a destra di solito è un "Reply" o un "Comment"
-            submit_btn = page.locator('button:has-text("Reply"), button:has-text("Comment"), shreddit-composer button[type="submit"]').last
+            print("    [>] Pressione tasto 'save'...")
+            # Il bottone è un elementare <button class="save">
+            submit_btn = page.locator('.commentarea > .usertext .usertext-buttons button.save').first
             submit_btn.click(force=True)
             
-            print("    [>] Attesa elaborazione server...")
+            print("    [>] Attesa elaborazione server Reddit...")
             time.sleep(6) 
             
             page.screenshot(path="conferma_pubblicazione.png")
-            print("    [i] 📸 Tutte le fasi fotografate e salvate negli Artifacts!")
+            print("    [i] 📸 Screenshot di conferma salvato negli Artifacts!")
             
             c.execute("UPDATE scanned_posts SET status='POSTED' WHERE id=?", (post_id,))
             conn.commit()
@@ -118,6 +103,7 @@ def main():
                 page.screenshot(path="errore_reddit.png")
             except:
                 pass
+                
             c.execute("UPDATE scanned_posts SET status='FAILED' WHERE id=?", (post_id,))
             conn.commit()
             
