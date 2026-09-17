@@ -23,7 +23,7 @@ jobs:
 
       - name: Install Dependencies
         run: |
-          pip install ddgs google-genai
+          pip install ddgs google-genai feedparser
 
       - name: Execute Reddit Radar
         env:
