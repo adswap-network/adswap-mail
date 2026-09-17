@@ -22,13 +22,13 @@ print = functools.partial(print, flush=True)
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 REDDIT_USER_AGENT = "script:adswap-radar:v2.0 (by /u/Similar_Score2904)"
 
-# Subreddit ampliati: un mix di nicchie tecniche e community di founder permissive
+# Subreddit ampliati per stealth e karma
 SUBREDDITS = [
     "androiddev", "gamedev", "IndieGaming", "AppBusiness", "SaaS", 
     "microsaas", "SideProject", "EntrepreneurRideAlong", "indiehackers",
     "growmybusiness", "Startup_Ideas", "playmygame", "IndieDev"
 ]
-MAX_ORE = 16  # Peschiamo post abbastanza recenti ma con un margine per sembrare naturali
+MAX_ORE = 20  # scarta post più vecchi di così
 
 PROMPT_ANALISI = """
 Agisci come un analista di mercato. Leggi questo post fresco di Reddit.
@@ -70,15 +70,14 @@ def setup_db():
     return conn
 
 def generate_with_retry(client, system_prompt, post_content="", max_retries=3):
-    # Il seed casuale costringe l'IA a percorrere alberi neurali diversi ogni volta, evitando la ripetitività
+    # Generazione randomica per variare ulteriormente il testo a parità di prompt
     seed_variazione = random.randint(1, 99999)
     for attempt in range(max_retries):
         try:
-            testo = f"{system_prompt}\n\n[Seed variazione stile: {seed_variazione}]\n\nTESTO DEL POST:\n{post_content}" if post_content else system_prompt
+            testo = f"{system_prompt}\n\n[Seed variazione stile: {seed_variazione}]\n\nTESTO:\n{post_content}" if post_content else system_prompt
             chat = client.chats.create(
-                model='gemini-2.5-flash', 
-                # Temperatura molto alta (0.95) per costringere a usare parole/strutture sempre diverse
-                config=types.GenerateContentConfig(temperature=0.95)
+                model='gemini-flash-lite-latest',
+                config=types.GenerateContentConfig(temperature=0.85)
             )
             response = chat.send_message(testo)
             if response and response.text:
@@ -156,15 +155,14 @@ def main():
     conn = setup_db()
     c = conn.cursor()
     risultati = []
-
-    # Mescoliamo i subreddit in modo che non scansioni sempre nello stesso ordine
+    
     random.shuffle(SUBREDDITS)
 
     for sub in SUBREDDITS:
-        print(f"[*] Scansione invisibile su r/{sub}...")
+        print(f"[*] Estrazione da r/{sub}...")
         xml_text = fetch_subreddit_feed(sub)
         if not xml_text:
-            time.sleep(random.randint(5, 12))
+            time.sleep(random.randint(5, 10))
             continue
 
         posts = parse_feed(xml_text)
@@ -199,13 +197,12 @@ def main():
                 conn.commit()
 
                 risultati.append(post)
-                print(f"    🎯 BERSAGLIO ACQUISITO E MASCHERATO → {post['link']}")
+                print(f"    🎯 TARGET TROVATO E SALVATO IN CODA → {post['link']}")
 
-        # Pausa casuale tra un subreddit e l'altro per ingannare i controlli anti-scraping
-        time.sleep(random.randint(8, 20))
+        time.sleep(random.randint(8, 15))
 
     conn.close()
-    print(f"\n[*] Scansione completata in Stealth. {len(risultati)} esche piazzate nel database.\n")
+    print(f"\n[*] Scansione completata. {len(risultati)} bersagli aggiunti in coda.\n")
 
 if __name__ == "__main__":
     main()
