@@ -8,7 +8,6 @@ import warnings
 import re
 import requests
 import feedparser
-from email.utils import parsedate_to_datetime
 from datetime import datetime, timezone, timedelta
 from google import genai
 from google.genai import types
@@ -27,7 +26,6 @@ USER_AGENTS = [
     "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36"
 ]
 
-# Cerchiamo nei Subreddit specifici ordinati per i post più RECENTI in assoluto
 URLS_DA_SCANSIONARE = [
     "https://www.reddit.com/r/androiddev/new.rss",
     "https://www.reddit.com/r/gamedev/new.rss",
@@ -42,7 +40,6 @@ Il nostro target: sviluppatori indie, creatori di app/giochi che si lamentano di
 Rispondi SOLO con "SI" se è un target perfetto in cerca di aiuto per acquisire utenti, oppure "NO" per tutto il resto.
 """
 
-# Prompt blindato contro i cliché
 PROMPT_GANCIO = """
 Sei uno sviluppatore mobile indie. Rispondi in inglese a questo utente che fatica a trovare download o ha problemi di marketing.
 
@@ -61,15 +58,24 @@ def setup_db():
     conn.commit()
     return conn
 
+def parse_reddit_date(date_str):
+    """Gestisce sia le vecchie date RFC che le nuove date ISO 8601 di Reddit"""
+    try:
+        # Formato ISO (quello che ha causato il crash)
+        return datetime.fromisoformat(date_str.replace('Z', '+00:00'))
+    except ValueError:
+        # Fallback formato classico
+        from email.utils import parsedate_to_datetime
+        return parsedate_to_datetime(date_str)
+
 def generate_with_retry(client, system_prompt, post_content="", max_retries=3, initial_delay=5):
     delay = initial_delay
     for attempt in range(max_retries):
         try:
             testo_unito = f"{system_prompt}\n\nTESTO:\n{post_content}" if post_content else system_prompt
-            # API Chat senza warning, modello leggero
             chat = client.chats.create(
                 model='gemini-flash-lite-latest', 
-                config=types.GenerateContentConfig(temperature=0.85) # Temperatura alzata per non farlo ripetere
+                config=types.GenerateContentConfig(temperature=0.85) # Alta creatività = no ripetizioni
             )
             response = chat.send_message(testo_unito)
             
@@ -88,7 +94,7 @@ def generate_with_retry(client, system_prompt, post_content="", max_retries=3, i
 
 def main():
     print("==================================================")
-    print("⏱️ AVVIO REDDIT RADAR AI - REAL-TIME (<20 ORE) + ANTI-CLICHÉ")
+    print("⏱️ AVVIO REDDIT RADAR AI - FIX DATE ISO E ANTI-CLICHÉ")
     print("==================================================\n")
     
     if not GEMINI_API_KEY:
@@ -100,7 +106,7 @@ def main():
     c = conn.cursor()
     trovati = 0
 
-    # Calcolo limite temporale: 20 ore fa da questo esatto secondo
+    # Kill-switch temporale: ignora tutto ciò che è più vecchio di 20 ore
     limite_temporale = datetime.now(timezone.utc) - timedelta(hours=20)
 
     for url in URLS_DA_SCANSIONARE:
@@ -111,19 +117,22 @@ def main():
         try:
             req = requests.get(url, headers=headers, timeout=10)
             if req.status_code == 429:
-                print("    [!] Reddit IP limit. Pausa 30s...")
-                time.sleep(30)
+                print("    [!] Reddit IP limit (429). Salto al prossimo subreddit per non forzare...")
+                time.sleep(10)
                 continue
             elif req.status_code != 200:
                 continue
                 
             feed = feedparser.parse(req.content)
             
-            for post in feed.entries[:8]: # Primi 8 per freschezza
-                # 1. ESTREMO CONTROLLO TEMPORALE
-                data_pubblicazione = parsedate_to_datetime(post.published)
+            for post in feed.entries[:8]:
+                try:
+                    data_pubblicazione = parse_reddit_date(post.published)
+                except Exception as e:
+                    print(f"    [!] Impossibile parsare la data del post: {post.published}")
+                    continue
                 
-                # Se è più vecchio di 20 ore, lo scarta all'istante
+                # Scarta istantaneamente i post vecchi
                 if data_pubblicazione < limite_temporale:
                     continue
                 
@@ -159,7 +168,8 @@ def main():
         except Exception as e:
             print(f"    [!] Errore connessione: {e}")
             
-        time.sleep(random.randint(5, 10))
+        # Pausa tra i subreddit per ridurre il rischio 429
+        time.sleep(random.randint(15, 25))
 
     print(f"\n[*] Scansione completata. Trovati {trovati} target super-recenti.")
     conn.close()
