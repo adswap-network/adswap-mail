@@ -13,7 +13,7 @@ def get_db():
 
 def main():
     print("==================================================")
-    print("🔫 AVVIO CECCHINO REDDIT (MOBILE BANNER KILLER 5.2)")
+    print("🔫 AVVIO CECCHINO REDDIT (MOBILE BANNER KILLER 5.3)")
     print("==================================================\n")
     
     if not COOKIE_VALUE:
@@ -54,23 +54,30 @@ def main():
             page.goto(post_url, wait_until="networkidle", timeout=60000)
             time.sleep(6) 
             
-            print("    [>] Esecuzione Banner Killer (Pulizia Schermo)...")
-            # Questo script distrugge la pubblicità "View in Reddit App" e qualsiasi banner cookie
+            print("    [>] Esecuzione Banner Killer (Fix Javascript Puro)...")
+            # Usa solo cicli DOM standard, niente selettori Playwright non supportati
             page.evaluate("""() => {
+                // Distrugge i tag custom di Reddit usati per le pubblicità app
                 document.querySelectorAll('xpromo-app-selector, xpromo-bottom-sheet').forEach(el => el.remove());
                 
-                const elements = document.querySelectorAll('div, section');
+                // Cerca tutti gli elementi e i bottoni
+                const elements = document.querySelectorAll('div, section, button, a');
                 for (const el of elements) {
                     const style = window.getComputedStyle(el);
+                    const txt = el.textContent || '';
+                    
+                    // Rimuove banner incollati in fondo allo schermo
                     if (style.position === 'fixed' || style.position === 'sticky') {
-                        if (el.textContent.includes('Reddit App') || el.textContent.includes('View in') || el.textContent.includes('Open')) {
+                        if (txt.includes('Reddit App') || txt.includes('View in') || txt.includes('Open')) {
                             el.remove();
                         }
                     }
+                    
+                    // Clicca eventuali banner cookie 
+                    if (el.tagName.toLowerCase() === 'button' && (txt.includes('Accept') || txt.includes('Agree'))) {
+                        el.click();
+                    }
                 }
-                
-                const cookieBtn = document.querySelector('button:has-text("Accept")');
-                if (cookieBtn) cookieBtn.click();
             }""")
             time.sleep(2)
             
@@ -78,7 +85,7 @@ def main():
             page.screenshot(path="debug_mobile_view.png")
 
             print("    [>] Ricerca della barra dei commenti...")
-            # Sulla UI mobile, per aprire la tastiera spesso bisogna prima toccare "Add a comment"
+            # Sulla UI mobile, spesso bisogna toccare la barra "Add a comment" prima
             add_comment_bar = page.locator('text="Add a comment"').last
             if add_comment_bar.count() > 0:
                 add_comment_bar.click(force=True)
@@ -91,12 +98,11 @@ def main():
             time.sleep(1)
 
             print("    [>] Scrittura del commento...")
-            # Tastiera di sistema, infallibile su emulatore
             page.keyboard.type(bozza, delay=15)
             time.sleep(2)
             
             print("    [>] Pressione tasto Reply...")
-            # Il bottone di invio sulla UI mobile può chiamarsi Reply, Comment o avere solo un'icona
+            # Il bottone di invio mobile può avere nomi diversi
             submit_btn = page.locator('button:has-text("Reply"), button:has-text("Comment"), button[type="submit"]').last
             submit_btn.click(force=True)
             
