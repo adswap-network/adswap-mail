@@ -2,43 +2,97 @@ name: Reddit Cecchino (Playwright)
 
 on:
   schedule:
-    - cron: '15,30,45 * * * *'
+    - cron: "15,30,45 * * * *"
+
   workflow_dispatch:
 
 jobs:
   run-poster:
+
     runs-on: ubuntu-latest
+
     permissions:
       contents: write
+
     steps:
-      - uses: actions/checkout@v4
+
+      # ---------------------------------------------------------
+      # CHECKOUT
+      # ---------------------------------------------------------
+
+      - name: Checkout repository
+        uses: actions/checkout@v4
         with:
-          fetch-depth: 1
-      - uses: actions/setup-python@v5
+          fetch-depth: 0
+
+      # ---------------------------------------------------------
+      # PYTHON
+      # ---------------------------------------------------------
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
         with:
-          python-version: '3.11'
+          python-version: "3.11"
+
+      # ---------------------------------------------------------
+      # PLAYWRIGHT
+      # ---------------------------------------------------------
+
       - name: Installa Playwright
         run: |
+          python -m pip install --upgrade pip
           pip install playwright
-          playwright install chromium
-      - name: Esegui Cecchino
+          playwright install --with-deps chromium
+
+      # ---------------------------------------------------------
+      # ESECUZIONE
+      # ---------------------------------------------------------
+
+      - name: Esegui Reddit Poster
         env:
           REDDIT_SESSION_COOKIE: ${{ secrets.REDDIT_SESSION_COOKIE }}
           PYTHONUNBUFFERED: "1"
-        run: python reddit_poster.py
-      - name: Salva DB
         run: |
-          git config --global user.name "GitHub Actions Bot"
-          git config --global user.email "actions@github.com"
-          git add reddit_radar.db
-          git diff --quiet && git diff --staged --quiet || git commit -m "Cecchino: Commento pubblicato [skip ci]"
-          git pull origin main --rebase || true
-          git push origin main
+          python reddit_poster.py
 
-      - name: Upload Screenshot in caso di errore
-        if: failure() || success()
+      # ---------------------------------------------------------
+      # SALVATAGGIO DATABASE
+      # ---------------------------------------------------------
+
+      - name: Salva DB aggiornato
+        if: success()
+        run: |
+
+          git config user.name "GitHub Actions Bot"
+          git config user.email "actions@github.com"
+
+          # Aggiorna il branch prima del commit.
+          git pull origin main --rebase
+
+          git add reddit_radar.db
+
+          if git diff --cached --quiet; then
+            echo "Nessuna modifica al database."
+          else
+            git commit -m "Cecchino: aggiornamento DB [skip ci]"
+            git push origin main
+          fi
+
+      # ---------------------------------------------------------
+      # DEBUG ARTIFACTS
+      # ---------------------------------------------------------
+
+      - name: Carica screenshot e HTML di debug
+        if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: debug-screenshot
-          path: errore_reddit.png
+          name: reddit-debug
+          path: |
+            errore_*.png
+            errore_*.html
+            conferma_pubblicazione.png
+            conferma_pubblicazione.html
+            debug_*.png
+            debug_*.html
           if-no-files-found: ignore
+          retention-days: 7
