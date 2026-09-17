@@ -24,7 +24,9 @@ REDDIT_USER_AGENT = "script:adswap-radar:v2.0 (by /u/Similar_Score2904)"
 
 # Subreddit ampliati per stealth e karma
 SUBREDDITS = [
-    "androiddev"
+    "androiddev", "gamedev", "IndieGaming", "AppBusiness", "SaaS", 
+    "microsaas", "SideProject", "EntrepreneurRideAlong", "indiehackers",
+    "growmybusiness", "Startup_Ideas", "playmygame", "IndieDev"
 ]
 MAX_ORE = 20  # scarta post più vecchi di così
 
