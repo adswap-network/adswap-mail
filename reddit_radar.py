@@ -19,7 +19,7 @@ os.environ["GLOG_minloglevel"] = "2"
 print = functools.partial(print, flush=True)
 
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
-REDDIT_USER_AGENT = os.getenv("REDDIT_USER_AGENT", "script:adswap-radar:v1.0 (by /u/CHANGE_ME)")
+REDDIT_USER_AGENT = "script:adswap-radar:v1.0 (by /u/Ok-Skin-9022)"
 
 SUBREDDITS = ["androiddev", "gamedev", "IndieGaming", "AppBusiness", "SaaS"]
 MAX_ORE = 20  # scarta post più vecchi di così
