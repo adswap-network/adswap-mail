@@ -13,7 +13,7 @@ def get_db():
 
 def main():
     print("==================================================")
-    print("🔫 AVVIO CECCHINO REDDIT (HTML INJECTION 2.5)")
+    print("🔫 AVVIO CECCHINO REDDIT (DOM BYPASS 2.6)")
     print("==================================================\n")
     
     if not COOKIE_VALUE:
@@ -57,28 +57,28 @@ def main():
             time.sleep(6)
             
             print("    [>] Estrazione target basata sul tuo HTML...")
-            # Troviamo l'editor usando gli attributi ESATTI del tuo dump
             editor = page.locator('div[contenteditable="true"][role="textbox"]').first
             
-            print("    [>] Scroll Javascript forzato...")
-            # Ignoriamo il comando Playwright che va in loop e usiamo Javascript puro per lo scroll
-            editor.evaluate("node => node.scrollIntoView({behavior: 'smooth', block: 'center'})")
-            time.sleep(2)
-            
-            print("    [>] Click forzato sull'editor...")
-            editor.click(force=True)
+            print("    [>] Override Javascript: Focus e Click nativo...")
+            # dispatch_event() bypassa tutti i controlli di visibilità di Playwright.
+            # Esegue fisicamente l'azione a livello di codice della pagina.
+            editor.evaluate("node => node.focus()")
+            editor.dispatch_event("click")
             time.sleep(1)
             
             print("    [>] Digitazione della bozza...")
-            editor.type(bozza, delay=25)
+            # Ora che l'elemento ha forzatamente il focus, la tastiera virtuale scriverà lì dentro
+            page.keyboard.type(bozza, delay=25)
             time.sleep(3)
             
             print("    [>] Ricerca del pulsante Submit...")
-            # ID esatto estratto dal tuo codice HTML
             submit_btn = page.locator('button#comment-composer-submit-button').first
-            submit_btn.click(force=True)
             
-            print("    [>] Click effettuato. Attesa conferma di rete...")
+            print("    [>] Click nativo sul Submit...")
+            # Usiamo evaluate per innescare la funzione .click() nativa del browser, saltando i blocchi
+            submit_btn.evaluate("node => node.click()")
+            
+            print("    [>] Attesa conferma di rete...")
             time.sleep(6)
             
             page.screenshot(path="conferma_pubblicazione.png")
