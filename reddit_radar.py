@@ -2,10 +2,10 @@ import os
 import time
 import sqlite3
 import functools
+import requests
+import urllib.parse
 import logging
 import warnings
-from datetime import datetime, timezone
-from playwright.sync_api import sync_playwright
 from google import genai
 from google.genai import types
 
@@ -28,11 +28,12 @@ Rispondi SOLO con "SI" se è un target perfetto in cerca di aiuto, oppure "NO".
 
 PROMPT_GANCIO = """
 Sei uno sviluppatore mobile indie. Rispondi in inglese a questo utente che fatica a trovare download o ha problemi di marketing.
+
 REGOLE ASSOLUTE:
-1. DIVIETO TOTALE DI FRASI FATTE: Non usare MAI "Man", "Bro", "I feel your pain". 
-2. VARIA L'APERTURA: Inizia con una domanda diretta o un'osservazione pragmatica.
-3. TONO E CONTENUTO: Informale, da pari a pari. Non menzionare AdSwap o link.
-4. LUNGHEZZA: Massimo 2 frasi.
+1. DIVIETO TOTALE DI FRASI FATTE: Non usare MAI "Man", "Bro", "I feel your pain", "Been there", "I totally feel you".
+2. VARIA L'APERTURA: Inizia direttamente con una domanda, oppure un'osservazione pragmatica.
+3. TONO E CONTENUTO: Informale, da pari a pari. Non menzionare AdSwap o link. Chiedi cosa sta facendo per risolvere.
+4. LUNGHEZZA: Massimo 2 frasi. Brevissimo.
 """
 
 def setup_db():
@@ -61,7 +62,7 @@ def generate_with_retry(client, system_prompt, post_content="", max_retries=3):
 
 def main():
     print("==================================================")
-    print("🤖 AVVIO REDDIT RADAR AI - MOTORE PLAYWRIGHT (CHROME)")
+    print("🚀 AVVIO REDDIT RADAR - PROXY BYPASS + JSON (Max 20 ore)")
     print("==================================================\n")
     
     if not GEMINI_API_KEY:
@@ -73,83 +74,80 @@ def main():
     c = conn.cursor()
     trovati = 0
 
-    # Avviamo il browser invisibile
-    with sync_playwright() as p:
-        # Lanciamo Chrome
-        browser = p.chromium.launch(headless=True)
-        context = browser.new_context(
-            user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
-        )
-        page = context.new_page()
+    # Usiamo AllOrigins per mascherare l'IP di GitHub Actions
+    PROXY_BASE_URL = "https://api.allorigins.win/raw?url="
 
-        for sub in SUBREDDITS:
-            print(f"[*] Navigazione su r/{sub} (Old Reddit)...")
-            try:
-                # Usiamo old.reddit perché è puro HTML, facilissimo da raschiare e veloce
-                page.goto(f"https://old.reddit.com/r/{sub}/new/", timeout=30000)
-                time.sleep(3) # Pausa umana
+    for sub in SUBREDDITS:
+        print(f"[*] Estrazione in incognito da r/{sub}...")
+        
+        # Puntiamo al JSON nativo di Reddit (più leggero e preciso)
+        target_url = f"https://www.reddit.com/r/{sub}/new.json?limit=15"
+        safe_url = PROXY_BASE_URL + urllib.parse.quote(target_url)
+        
+        try:
+            req = requests.get(safe_url, timeout=20)
+            
+            if req.status_code != 200:
+                print(f"    [!] Proxy ha fallito il recupero. Status: {req.status_code}")
+                time.sleep(5)
+                continue
                 
-                # Estraiamo tutti i post visibili nella pagina
-                posts = page.query_selector_all(".thing")
+            data = req.json()
+            posts = data.get('data', {}).get('children', [])
+            
+            if not posts:
+                print("    [-] Nessun dato restituito.")
+                continue
+
+            for child in posts:
+                post = child.get('data', {})
+                post_id = post.get('id')
                 
-                if not posts:
-                    print("    [-] Nessun post trovato o pagina bloccata.")
+                if not post_id:
                     continue
                 
-                # Analizziamo solo i primi 6 post più recenti per ogni subreddit
-                for post in posts[:6]:
-                    post_id = post.get_attribute("data-fullname")
-                    if not post_id: continue
+                c.execute("SELECT id FROM scanned_posts WHERE id=?", (post_id,))
+                if c.fetchone():
+                    continue
                     
-                    c.execute("SELECT id FROM scanned_posts WHERE id=?", (post_id,))
-                    if c.fetchone(): continue
-                    
-                    c.execute("INSERT INTO scanned_posts (id) VALUES (?)", (post_id,))
-                    conn.commit()
+                c.execute("INSERT INTO scanned_posts (id) VALUES (?)", (post_id,))
+                conn.commit()
 
-                    title_el = post.query_selector("a.title")
-                    time_el = post.query_selector("time")
-                    
-                    if not title_el or not time_el: continue
-                    
-                    titolo = title_el.inner_text()
-                    link_relativo = post.get_attribute("data-permalink")
-                    data_str = time_el.get_attribute("datetime") # Formato: 2026-09-17T12:00:00+00:00
-                    
-                    # Calcolo freschezza
-                    try:
-                        data_pub = datetime.fromisoformat(data_str.replace('Z', '+00:00'))
-                        ore_fa = int((datetime.now(timezone.utc) - data_pub).total_seconds() / 3600)
-                    except:
-                        continue
+                # Calcolo millimetrico del tempo (Reddit ci dà il timestamp in secondi)
+                created_utc = post.get('created_utc', 0)
+                ore_fa = int((time.time() - created_utc) / 3600)
 
-                    # Filtro 20 ore
-                    if ore_fa > 20:
-                        continue
+                # FILTRO IMPLACABILE: Scarta tutto ciò che ha più di 20 ore
+                if ore_fa > 20:
+                    continue
 
-                    print(f"    [>] Trovato post fresco ({ore_fa} ore fa). Analisi IA in corso...")
+                titolo = post.get('title', '')
+                testo = post.get('selftext', '')
+                permalink = post.get('permalink', '')
+                
+                contesto_troncato = f"TITOLO: {titolo}\nTESTO: {testo[:800]}"
+                
+                print(f"    [>] Trovato post fresco ({ore_fa} ore fa). Analisi IA in corso...")
+                
+                analisi = generate_with_retry(client, PROMPT_ANALISI, contesto_troncato)
+                
+                if "SI" in analisi.upper():
+                    link_assoluto = f"https://www.reddit.com{permalink}"
+                    print("\n" + "="*60)
+                    print(f"🎯 BERSAGLIO FRESCHISSIMO INTERCETTATO:")
+                    print(f"🔗 Link: {link_assoluto}")
+                    print(f"📌 Titolo: {titolo}")
                     
-                    # Analisi semantica
-                    analisi = generate_with_retry(client, PROMPT_ANALISI, titolo)
+                    time.sleep(3)
+                    bozza = generate_with_retry(client, PROMPT_GANCIO, contesto_troncato)
+                    print(f"\n🤖 IL GANCIO:\n> {bozza}\n")
+                    print("="*60 + "\n")
+                    trovati += 1
                     
-                    if "SI" in analisi.upper():
-                        link_assoluto = f"https://www.reddit.com{link_relativo}"
-                        print("\n" + "="*60)
-                        print(f"🎯 BERSAGLIO CONFERMATO:")
-                        print(f"🔗 Link: {link_assoluto}")
-                        print(f"📌 Titolo: {titolo}")
-                        
-                        bozza = generate_with_retry(client, PROMPT_GANCIO, titolo)
-                        print(f"\n🤖 IL GANCIO:\n> {bozza}\n")
-                        print("="*60 + "\n")
-                        trovati += 1
-                        
-            except Exception as e:
-                print(f"    [!] Errore navigando r/{sub}: {e}")
+        except Exception as e:
+            print(f"    [!] Errore su r/{sub}: {e}")
             
-            time.sleep(5) # Pausa tra subreddit
-
-        browser.close()
+        time.sleep(8) # Pausa tra subreddit per non stressare il proxy
 
     print(f"\n[*] Scansione completata. Generati {trovati} ganci.")
     conn.close()
