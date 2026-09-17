@@ -164,7 +164,7 @@ def main():
     print("\n" + "=" * 60)
     print(f"[*] Scansione completata. {len(risultati)} bersagli trovati.\n")
 
-    if non risultati:
+    if not risultati:
         # Pulisce il file digest se non ci sono novità per evitare di leggere roba vecchia
         with open("latest_digest.txt", "w", encoding="utf-8") as f:
             f.write("Nessun post rilevante trovato nell'ultima scansione.\n")
