@@ -14,7 +14,7 @@ def get_db():
 
 def main():
     print("==================================================")
-    print("🔫 AVVIO CECCHINO REDDIT (PLAYWRIGHT STEALTH)")
+    print("🔫 AVVIO CECCHINO REDDIT (PLAYWRIGHT STEALTH 2.0)")
     print("==================================================\n")
     
     if not COOKIE_VALUE:
@@ -40,11 +40,13 @@ def main():
 
     with sync_playwright() as p:
         browser = p.chromium.launch(headless=True)
+        
+        # 1. FIX: Impostiamo uno schermo Desktop Full HD per evitare che la UI collassi
         context = browser.new_context(
+            viewport={"width": 1920, "height": 1080},
             user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
         )
         
-        # Inietta il cookie di sessione
         context.add_cookies([{
             "name": "reddit_session",
             "value": COOKIE_VALUE,
@@ -56,22 +58,34 @@ def main():
         
         try:
             print("    [>] Caricamento pagina Reddit...")
-            page.goto(post_url, wait_until="domcontentloaded", timeout=30000)
-            time.sleep(5) 
+            page.goto(post_url, wait_until="domcontentloaded", timeout=45000)
+            time.sleep(6) 
             
             print("    [>] Ricerca del box di testo...")
-            # L'interfaccia moderna di Reddit usa shreddit-composer
             composer = page.locator('shreddit-composer').first
-            composer.click(timeout=10000)
+            
+            # 2. FIX: Scorriamo giù la pagina fino a inquadrare il box (scroll_into_view)
+            composer.scroll_into_view_if_needed()
             time.sleep(2)
             
+            # 3. FIX: Clicchiamo con force=True per bypassare qualsiasi banner invisibile o pop-up
+            print("    [>] Forzatura del click sul composer...")
+            composer.click(force=True, timeout=5000)
+            time.sleep(2)
+            
+            # 4. FIX: Clicchiamo esattamente dentro l'editor di testo vero e proprio
+            editor = page.locator('div[contenteditable="true"]').first
+            if editor.count() > 0:
+                editor.click(force=True)
+            
             print("    [>] Digitazione (simulazione umana)...")
-            page.keyboard.type(bozza, delay=40) 
+            page.keyboard.type(bozza, delay=35) 
             time.sleep(3)
             
             print("    [>] Clic su 'Comment'...")
-            composer.locator('button[type="submit"], button[slot="submitButton"]').first.click()
-            time.sleep(5) # Attende che la richiesta POST parta
+            page.locator('button[type="submit"], button[slot="submitButton"]').first.click(force=True)
+            
+            time.sleep(6) # Attende che la richiesta POST parta al server di Reddit
             
             # Segna come pubblicato
             c.execute("UPDATE scanned_posts SET status='POSTED' WHERE id=?", (post_id,))
@@ -80,7 +94,12 @@ def main():
             
         except Exception as e:
             print(f"    [!] Errore durante l'interazione Playwright: {e}")
-            # Se fallisce, rimane 'PENDING' e ci riproverà al prossimo giro!
+            # SALVATAGGIO SCREENSHOT: Se fallisce scatta una foto per farti vedere il problema
+            try:
+                page.screenshot(path="errore_reddit.png")
+                print("    [i] 📸 Screenshot scattato! Scarica 'errore_reddit.png' da GitHub per vedere cosa copriva lo schermo.")
+            except:
+                pass
             
         finally:
             browser.close()
