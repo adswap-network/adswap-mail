@@ -62,12 +62,11 @@ jobs:
       - name: Salva DB aggiornato
         if: success()
         run: |
-
           git config user.name "GitHub Actions Bot"
           git config user.email "actions@github.com"
 
-          # Aggiorna il branch prima del commit.
-          git pull origin main --rebase
+          # Aggiorna il branch prima del commit gestendo eventuali conflitti
+          git pull origin main --rebase --no-edit || git rebase --abort
 
           git add reddit_radar.db
 
