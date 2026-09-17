@@ -1,0 +1,36 @@
+name: Reddit Cecchino (Playwright)
+
+on:
+  schedule:
+    - cron: '15,30,45 * * * *'
+  workflow_dispatch:
+
+jobs:
+  run-poster:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Installa Playwright
+        run: |
+          pip install playwright
+          playwright install chromium
+      - name: Esegui Cecchino
+        env:
+          REDDIT_SESSION_COOKIE: ${{ secrets.REDDIT_SESSION_COOKIE }}
+          PYTHONUNBUFFERED: "1"
+        run: python reddit_poster.py
+      - name: Salva DB
+        run: |
+          git config --global user.name "GitHub Actions Bot"
+          git config --global user.email "actions@github.com"
+          git add reddit_radar.db
+          git diff --quiet && git diff --staged --quiet || git commit -m "Cecchino: Commento pubblicato [skip ci]"
+          git pull origin main --rebase || true
+          git push origin main
