@@ -9,8 +9,8 @@ import re
 from ddgs import DDGS
 from google import genai
 from google.genai import types
+from datetime import datetime, timedelta
 
-# Silenzia completamente i log di sistema per un terminale pulito
 warnings.filterwarnings("ignore")
 logging.getLogger("google").setLevel(logging.ERROR)
 os.environ["GRPC_VERBOSITY"] = "ERROR"
@@ -21,12 +21,12 @@ print = functools.partial(print, flush=True)
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 
 PROMPT_GENERAZIONE_QUERY = """
-Sei un SEO esperto. Genera 4 query BREVISSIME per trovare post su Reddit di sviluppatori con zero download o marketing troppo costoso.
-REGOLA 1: Inizia sempre con 'site:reddit.com '
-REGOLA 2: Usa MASSIMO 3 o 4 parole chiave. Sii iper-sintetico. NIENTE virgolette.
-Esempio 1: site:reddit.com indie game zero downloads
-Esempio 2: site:reddit.com app marketing expensive
-Restituisci SOLO le 4 stringhe, una per riga. Nessun testo aggiuntivo.
+Sei un growth hacker per app mobile. Devi generare 4 query di ricerca per trovare post recenti su Reddit di sviluppatori indie disperati perché non hanno download, o perché i costi di Google Ads/marketing sono insostenibili.
+REGOLA 1: Aggiungi sempre 'site:reddit.com' all'inizio di ogni query.
+REGOLA 2: Usa parole chiave ampie in inglese, SENZA usare virgolette.
+Esempio: site:reddit.com indie game marketing zero players advice
+Esempio: site:reddit.com alternative to google ads app developers
+Restituisci SOLO le 4 stringhe, una per riga. Nessun elenco puntato, nessun commento.
 """
 
 PROMPT_ANALISI = """
@@ -46,70 +46,39 @@ REGOLA D'ORO: NON MENZIONARE MAI AdSwap, non inserire alcun link, non vendere nu
 def setup_db():
     conn = sqlite3.connect("reddit_radar.db")
     c = conn.cursor()
-    c.execute('''CREATE TABLE IF NOT EXISTS scanned_posts (id TEXT PRIMARY KEY)''')
+    # Aggiunto timestamp per permetterci una ricerca accurata 
+    c.execute('''CREATE TABLE IF NOT EXISTS scanned_posts (id TEXT PRIMARY KEY, timestamp DATETIME DEFAULT CURRENT_TIMESTAMP)''')
     conn.commit()
     return conn
 
-def seleziona_modello_leggero(client):
-    """
-    Interroga segretamente le API di Google per trovare il modello più veloce e con
-    i rate limits migliori associato a questa specifica API Key, bypassando i modelli intasati.
-    """
-    print("[*] Ricerca del modello AI più leggero e stabile consentito dalla tua API Key...")
-    try:
-        modelli_disponibili = [m.name for m in client.models.list() if "gemini" in m.name]
-        
-        # 1. Cerchiamo modelli High-Speed (8b, lite, nano)
-        for m in modelli_disponibili:
-            if "8b" in m.lower() or "lite" in m.lower() or "nano" in m.lower():
-                print(f"    [✓] Trovato modello Ultra-Leggero (Anti-Blocco): {m}")
-                return m
-                
-        # 2. Se non esistono, prendiamo un flash meno intasato
-        for m in modelli_disponibili:
-            if "flash" in m.lower() and "3.6" not in m.lower():
-                print(f"    [✓] Trovato modello Flash alternativo: {m}")
-                return m
-                
-        print("    [!] Nessuna alternativa trovata. Ripiego su gemini-3.6-flash.")
-        return 'gemini-3.6-flash'
-    except Exception as e:
-        print(f"    [!] Lettura modelli fallita ({e}). Uso gemini-3.6-flash di default.")
-        return 'gemini-3.6-flash'
-
-def generate_with_retry(client, modello, system_prompt, post_content="", max_retries=4, initial_delay=8):
-    """Motore corazzato che usa l'API Chat raccomandata per evitare i warning AFC."""
+def generate_with_retry(client, system_prompt, post_content="", max_retries=3, initial_delay=8):
     delay = initial_delay
     for attempt in range(max_retries):
         try:
             testo_unito = f"{system_prompt}\n\nTESTO:\n{post_content}" if post_content else system_prompt
-            
-            # Usando .chats.create aggiriamo per sempre l'errore del warning "AFC in Models.generate_content"
-            chat = client.chats.create(
-                model=modello,
+            # Aggiorniamo a gemini-flash-lite-latest (o l'ultimo disponibile)
+            response = client.models.generate_content(
+                model='gemini-flash-lite-latest', 
+                contents=testo_unito,
                 config=types.GenerateContentConfig(temperature=0.7)
             )
-            response = chat.send_message(testo_unito)
-            
             if not response or not response.text:
                 raise ValueError("Risposta vuota")
             return response.text.strip()
-            
         except Exception as e:
             err_msg = str(e).upper()
-            if any(x in err_msg for x in ["503", "429", "404", "UNAVAILABLE", "EXHAUSTED", "INTERNAL"]):
+            if any(x in err_msg for x in ["503", "429", "404", "UNAVAILABLE"]):
                 if attempt < max_retries - 1:
-                    print(f"      🕒 API ({modello}) occupata. Riprovo in {delay}s...")
+                    print(f"      🕒 API occupata. Riprovo in {delay}s...")
                     time.sleep(delay)
                     delay *= 2
                     continue
-            print(f"      [!] Errore irreversibile: {e}")
             return "ERRORE"
     return "ERRORE"
 
 def main():
     print("==================================================")
-    print("🧠 AVVIO REDDIT RADAR AI - AUTO-DISCOVERY MODELLO")
+    print("🧠 AVVIO REDDIT RADAR AI - RICERCA DINAMICA + STEALTH (LITE)")
     print("==================================================\n")
     
     if not GEMINI_API_KEY:
@@ -117,16 +86,12 @@ def main():
         return
 
     client = genai.Client(api_key=GEMINI_API_KEY)
-    
-    # Rilevamento dinamico del modello perfetto
-    modello_scelto = seleziona_modello_leggero(client)
-    
     conn = setup_db()
     c = conn.cursor()
     trovati = 0
 
-    print("\n[*] Chiedo a Gemini di inventare le strategie di ricerca...")
-    query_dinamiche_raw = generate_with_retry(client, modello_scelto, PROMPT_GENERAZIONE_QUERY)
+    print("[*] Chiedo a Gemini di inventare le strategie di ricerca...")
+    query_dinamiche_raw = generate_with_retry(client, PROMPT_GENERAZIONE_QUERY)
     
     if query_dinamiche_raw == "ERRORE":
         print("[!] Impossibile generare query. Chiusura.")
@@ -135,28 +100,29 @@ def main():
     querie_globali = [q.strip() for q in query_dinamiche_raw.split('\n') if 'site:reddit.com' in q]
     
     if not querie_globali:
-        print("[!] Gemini non ha formattato bene. Uso query di backup molto ampie.")
+        print("[!] Gemini non ha formattato bene. Uso query di backup.")
         querie_globali = [
-            'site:reddit.com app marketing expensive',
-            'site:reddit.com indie game zero downloads',
-            'site:reddit.com app store optimization failed'
+            'site:reddit.com app marketing no downloads',
+            'site:reddit.com indie game how to get players',
+            'site:reddit.com app store optimization not working'
         ]
 
     ddgs = DDGS()
 
     for query in querie_globali:
-        print(f"\n[*] Caccia Stealth in corso: {query}")
+        print(f"\n[*] Caccia in corso: {query}")
         
         try:
-            # Ricerca di post recenti (ultimo mese) per garantire risultati
-            risultati = list(ddgs.text(query, max_results=6, timelimit='m'))
+            # Ricerca senza timelimit esplicito, per evitare scarti inopportuni di DuckDuckGo.
+            # Richiediamo più risultati, poi filtriamo noi lato Python.
+            risultati_raw = list(ddgs.text(query, max_results=15))
             
-            if not risultati:
+            if not risultati_raw:
                 print(f"    [-] Rete vuota per questa query.")
                 time.sleep(3)
                 continue
                 
-            for post in risultati:
+            for post in risultati_raw:
                 titolo = post.get('title', '')
                 testo_snippet = post.get('body', '')
                 link = post.get('href', '')
@@ -172,7 +138,7 @@ def main():
 
                 contesto_troncato = f"TITOLO: {titolo}\nTESTO SINTETICO: {testo_snippet}"
                 
-                risultato_analisi = generate_with_retry(client, modello_scelto, PROMPT_ANALISI, contesto_troncato)
+                risultato_analisi = generate_with_retry(client, PROMPT_ANALISI, contesto_troncato)
                 
                 if "SI" in risultato_analisi.upper():
                     print("\n" + "="*60)
@@ -180,9 +146,9 @@ def main():
                     print(f"🔗 Link: {link}")
                     print(f"📌 Titolo: {titolo}")
                     
-                    time.sleep(4)
+                    time.sleep(3)
                     
-                    bozza = generate_with_retry(client, modello_scelto, PROMPT_GANCIO, contesto_troncato)
+                    bozza = generate_with_retry(client, PROMPT_GANCIO, contesto_troncato)
                     
                     print(f"\n🤖 IL GANCIO:\n> {bozza}\n")
                     print("="*60 + "\n")
