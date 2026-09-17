@@ -34,3 +34,11 @@ jobs:
           git diff --quiet && git diff --staged --quiet || git commit -m "Cecchino: Commento pubblicato [skip ci]"
           git pull origin main --rebase || true
           git push origin main
+
+      - name: Upload Screenshot in caso di errore
+        if: failure() || success()
+        uses: actions/upload-artifact@v4
+        with:
+          name: debug-screenshot
+          path: errore_reddit.png
+          if-no-files-found: ignore
