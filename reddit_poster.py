@@ -13,7 +13,7 @@ def get_db():
 
 def main():
     print("==================================================")
-    print("🔫 AVVIO CECCHINO REDDIT (MOBILE EMULATOR 5.0)")
+    print("🔫 AVVIO CECCHINO REDDIT (MOBILE EMULATOR 5.1)")
     print("==================================================\n")
     
     if not COOKIE_VALUE:
@@ -32,18 +32,14 @@ def main():
         return
         
     post_id, bozza = record
-    # Usiamo old.reddit per l'affidabilità estrema dell'HTML vecchio stile, o la web app pura
     post_url = f"https://www.reddit.com/comments/{post_id}"
     print(f"[*] Obiettivo acquisito: {post_url}")
 
     with sync_playwright() as p:
-        # 1. EMULATORE IPHONE: Bypassiamo tutta l'interfaccia React per Desktop
+        # Carichiamo il profilo iPhone originale senza duplicare l'User Agent
         iphone = p.devices['iPhone 13']
         browser = p.chromium.launch(headless=True)
-        context = browser.new_context(
-            **iphone,
-            user_agent="Mozilla/5.0 (iPhone; CPU iPhone OS 15_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.0 Mobile/15E148 Safari/604.1"
-        )
+        context = browser.new_context(**iphone)
         
         context.add_cookies([{
             "name": "reddit_session",
@@ -56,18 +52,15 @@ def main():
         
         try:
             print("    [>] Caricamento pagina Mobile...")
-            # Un timeout generoso perché la mobile view a volte è in lazy loading
             page.goto(post_url, wait_until="networkidle", timeout=60000)
             time.sleep(5) 
             
-            # Scattiamo una foto a metà per capire dove siamo finiti
             page.screenshot(path="debug_mobile_view.png")
 
             print("    [>] Ricerca dell'editor di commenti...")
-            # L'editor sulla UI Mobile (o shreddit mobile)
-            editor_locator = page.locator('div[contenteditable="true"]').first
+            # Copriamo tutte le varianti mobile di Reddit (textarea classica o div contenteditable)
+            editor_locator = page.locator('div[contenteditable="true"], textarea').first
             
-            # Scorri fino all'editor
             editor_locator.scroll_into_view_if_needed(timeout=10000)
             time.sleep(1)
             
@@ -76,20 +69,20 @@ def main():
             time.sleep(1)
 
             print("    [>] Scrittura del commento...")
-            # Inseriamo il testo
-            editor_locator.fill(bozza)
+            # Usiamo la tastiera per simulare perfettamente i tap su schermo
+            page.keyboard.type(bozza, delay=15)
             time.sleep(2)
             
             print("    [>] Pressione tasto Reply...")
-            # Cerchiamo il pulsante generico Reply o Submit
-            submit_btn = page.locator('button:has-text("Reply"), button:has-text("Comment"), shreddit-composer button[type="submit"]').first
+            # Aggancio ampio per coprire i bottoni della UI mobile
+            submit_btn = page.locator('button:has-text("Reply"), button:has-text("Comment"), button:has-text("Add a comment"), button[type="submit"]').first
             submit_btn.click(force=True)
             
             print("    [>] Attesa server...")
             time.sleep(6) 
             
             page.screenshot(path="conferma_pubblicazione.png")
-            print("    [i] 📸 Screenshot di conferma salvato!")
+            print("    [i] 📸 Screenshot di conferma salvato negli Artifacts!")
             
             c.execute("UPDATE scanned_posts SET status='POSTED' WHERE id=?", (post_id,))
             conn.commit()
@@ -97,8 +90,6 @@ def main():
             
         except Exception as e:
             print(f"    [!] Errore critico in emulazione Mobile: {e}")
-            
-            # Salva screenshot di errore per capire cosa ha bloccato Playwright
             try:
                 page.screenshot(path="errore_reddit.png")
             except:
