@@ -2,7 +2,7 @@
     "config": {
         "start_date": "2026-09-12",
         "last_run_date": "2026-09-17",
-        "sent_today": 2
+        "sent_today": 6
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -582,29 +582,29 @@
         "meetq.app@gmail.com": {
             "app_name": "MeetQ",
             "package": "com.meetbot_app.meetbot_app",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-17T06:09:49.989900",
             "followup_sent_at": null
         },
         "sharmaga440@gmail.com": {
             "app_name": "Couples Questions Game",
             "package": "com.couplesgames.couplesgames",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-17T06:09:49.989900",
             "followup_sent_at": null
         },
         "support@fundeasy.in": {
             "app_name": "Would You Rather? Icebreaker",
             "package": "com.happyverse.wouldyourather",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-17T06:09:49.989900",
             "followup_sent_at": null
         },
         "knowmebetterapp@gmail.com": {
             "app_name": "KnowMeBetter",
             "package": "com.jadegoescoding.knowmebetter",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-17T06:09:49.989900",
             "followup_sent_at": null
         },
         "waldigames79@gmail.com": {
