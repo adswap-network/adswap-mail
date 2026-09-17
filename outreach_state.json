@@ -1,8 +1,8 @@
 {
     "config": {
         "start_date": "2026-09-12",
-        "last_run_date": "2026-09-16",
-        "sent_today": 35
+        "last_run_date": "2026-09-17",
+        "sent_today": 2
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -568,15 +568,15 @@
         "techpek.contact@gmail.com": {
             "app_name": "Anom",
             "package": "com.techpek.anom",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-17T00:33:26.030594",
             "followup_sent_at": null
         },
         "gaurav.scorpion.developer@gmail.com": {
             "app_name": "Strings",
             "package": "com.strings.app",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-17T00:33:26.030594",
             "followup_sent_at": null
         },
         "meetq.app@gmail.com": {
