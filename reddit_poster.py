@@ -13,7 +13,7 @@ def get_db():
 
 def main():
     print("==================================================")
-    print("🔫 AVVIO CECCHINO REDDIT (APPROCCIO SEMPLICE 2.8)")
+    print("🔫 AVVIO CECCHINO REDDIT (JS BYPASS ASSOLUTO 2.9)")
     print("==================================================\n")
     
     if not COOKIE_VALUE:
@@ -54,33 +54,57 @@ def main():
         try:
             print("    [>] Caricamento pagina...")
             page.goto(post_url, wait_until="domcontentloaded", timeout=45000)
-            time.sleep(8) # Attendiamo che React carichi tutta la pagina
+            time.sleep(8) 
             
-            # 1. Clicchiamo ESATTAMENTE la casella di testo usando l'attributo del tuo HTML
-            print("    [>] Clicco su 'Join the conversation'...")
-            editor = page.locator('div[aria-placeholder="Join the conversation"], div[contenteditable="true"]').first
-            editor.scroll_into_view_if_needed()
-            editor.click(force=True, timeout=10000)
+            print("    [>] Override totale dei controlli Playwright tramite Javascript...")
+            # Script iniettato: Cerca l'elemento nel DOM e lo forza al centro e a fuoco
+            js_focus = """
+            () => {
+                const editor = document.querySelector('shreddit-composer div[contenteditable="true"]');
+                if (editor) {
+                    editor.scrollIntoView({behavior: 'instant', block: 'center'});
+                    editor.focus();
+                    editor.click();
+                    return true;
+                }
+                return false;
+            }
+            """
+            trovato = page.evaluate(js_focus)
+            
+            if not trovato:
+                print("    [!] JS non ha trovato l'editor. Verifica link o login.")
+                
             time.sleep(2)
             
-            # 2. Inseriamo il testo
-            print("    [>] Inserisco il testo...")
-            editor.type(bozza, delay=15)
-            time.sleep(2)
+            print("    [>] Scrivo con la tastiera di sistema...")
+            page.keyboard.type(bozza, delay=15)
+            time.sleep(3)
             
-            # 3. Clicchiamo ESATTAMENTE il bottone 'Comment' tramite il suo ID univoco
-            print("    [>] Clicco il pulsante Comment...")
-            submit_btn = page.locator('button#comment-composer-submit-button, shreddit-composer button[type="submit"]').first
-            submit_btn.click(force=True, timeout=10000)
-            time.sleep(6) # Tempo per permettere al server di salvare il commento
+            print("    [>] Attivo il tasto Comment tramite JS...")
+            js_submit = """
+            () => {
+                const btn = document.querySelector('button#comment-composer-submit-button') || document.querySelector('shreddit-composer button[type="submit"]');
+                if (btn) {
+                    btn.click();
+                    return true;
+                }
+                return false;
+            }
+            """
+            inviato = page.evaluate(js_submit)
             
-            # Controllo visivo finale
+            time.sleep(6) # Attesa ricaricamento commento da server
+            
             page.screenshot(path="conferma_pubblicazione.png")
-            print("    [i] 📸 Screenshot salvato (conferma_pubblicazione.png).")
+            print("    [i] 📸 Screenshot di verifica salvato.")
             
-            c.execute("UPDATE scanned_posts SET status='POSTED' WHERE id=?", (post_id,))
-            conn.commit()
-            print("    [✓] Commento pubblicato con successo!")
+            if inviato:
+                c.execute("UPDATE scanned_posts SET status='POSTED' WHERE id=?", (post_id,))
+                conn.commit()
+                print("    [✓] Commento pubblicato con successo!")
+            else:
+                print("    [!] Non sono riuscito a innescare l'invio via JS.")
             
         except Exception as e:
             print(f"    [!] Errore: {e}")
