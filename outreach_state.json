@@ -2,7 +2,7 @@
     "config": {
         "start_date": "2026-09-12",
         "last_run_date": "2026-09-18",
-        "sent_today": 17
+        "sent_today": 23
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -104,17 +104,17 @@
         "innokenty.longway@gmail.com": {
             "app_name": "Crypto Portfolio Widget",
             "package": "co.ssoul.CryptoC",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-14T14:23:42.569892",
-            "followup_sent_at": null,
+            "followup_sent_at": "2026-09-18T18:30:25.899296",
             "source": "google_play"
         },
         "app@statmetrics.org": {
             "app_name": "Crypto Portfolio Tracker",
             "package": "org.statmetrics.app.cryptocurrency",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-14T14:59:10.708290",
-            "followup_sent_at": null,
+            "followup_sent_at": "2026-09-18T18:30:25.899296",
             "source": "google_play"
         },
         "bitsnapp@gmail.com": {
@@ -1064,26 +1064,154 @@
         "info.materialuiux@gmail.com": {
             "app_name": "Pomodoro & Tasks & LockMode",
             "package": "app.focus.pomodoro",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-18T18:30:25.899296",
             "followup_sent_at": null,
             "source": "google_play"
         },
         "pomodorobuddyapp@gmail.com": {
             "app_name": "Pomodoro",
             "package": "com.nemjava.pomodoroApp",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-18T18:30:25.899296",
             "followup_sent_at": null,
             "source": "google_play"
         },
         "mercansoftware1@gmail.com": {
             "app_name": "Pomodoro Elite",
             "package": "com.mercansoftware.pomodoro_elite",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-18T18:30:25.899296",
             "followup_sent_at": null,
             "source": "google_play"
+        },
+        "mosbar81@proton.me": {
+            "app_name": "Anonymous Chat \u2014 AnonApp",
+            "package": "com.nd.anonappchat",
+            "source": "google_play",
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-18T18:30:25.899296",
+            "followup_sent_at": null
+        },
+        "guoziwei93@gmail.com": {
+            "app_name": "SmartRSS",
+            "package": "com.vinsonguo.flutter_rss_reader",
+            "source": "google_play",
+            "status": "PENDING",
+            "first_sent_at": null,
+            "followup_sent_at": null
+        },
+        "contact@plumareader.com": {
+            "app_name": "Pluma RSS Reader",
+            "package": "qijaz221.android.rss.reader",
+            "source": "google_play",
+            "status": "PENDING",
+            "first_sent_at": null,
+            "followup_sent_at": null
+        },
+        "streamsphere.contact@gmail.com": {
+            "app_name": "StreamSphere",
+            "package": "com.niviva.rssreader.streamsphere",
+            "source": "google_play",
+            "status": "PENDING",
+            "first_sent_at": null,
+            "followup_sent_at": null
+        },
+        "aggregator-news@proton.me": {
+            "app_name": "Aggregator News",
+            "package": "com.and96.aggregator_news",
+            "source": "google_play",
+            "status": "PENDING",
+            "first_sent_at": null,
+            "followup_sent_at": null
+        },
+        "lowae@agrreader.com": {
+            "app_name": "Agr Reader",
+            "package": "com.lowae.agrreader",
+            "source": "google_play",
+            "status": "PENDING",
+            "first_sent_at": null,
+            "followup_sent_at": null
+        },
+        "steintecai@gmail.com": {
+            "app_name": "Simple RSS Reader",
+            "package": "com.steintecai.rssreader",
+            "source": "google_play",
+            "status": "PENDING",
+            "first_sent_at": null,
+            "followup_sent_at": null
+        },
+        "nivagamesapps@gmail.com": {
+            "app_name": "RSS Reader",
+            "package": "com.rss.reader.global",
+            "source": "google_play",
+            "status": "PENDING",
+            "first_sent_at": null,
+            "followup_sent_at": null
+        },
+        "dubbing-support@mobvoi.ai": {
+            "app_name": "TicNote",
+            "package": "com.mobvoi.ainote",
+            "source": "google_play",
+            "status": "PENDING",
+            "first_sent_at": null,
+            "followup_sent_at": null
+        },
+        "app-support@nestrehealthandperformance.com": {
+            "app_name": "NESTRE",
+            "package": "com.nestreapp.prod",
+            "source": "google_play",
+            "status": "PENDING",
+            "first_sent_at": null,
+            "followup_sent_at": null
+        },
+        "cpayne@rea.ch": {
+            "app_name": "myReach",
+            "package": "ch.rea.app",
+            "source": "google_play",
+            "status": "PENDING",
+            "first_sent_at": null,
+            "followup_sent_at": null
+        },
+        "support@newsbang.com": {
+            "app_name": "Zetik",
+            "package": "com.newsbang",
+            "source": "google_play",
+            "status": "PENDING",
+            "first_sent_at": null,
+            "followup_sent_at": null
+        },
+        "team@pathify.com": {
+            "app_name": "My San Jac",
+            "package": "com.ucroo.sanjac",
+            "source": "google_play",
+            "status": "PENDING",
+            "first_sent_at": null,
+            "followup_sent_at": null
+        },
+        "info@hltcorp.com": {
+            "app_name": "NBSTSA CST Exam Prep Mastery",
+            "package": "com.hltcorp.surgicaltech",
+            "source": "google_play",
+            "status": "PENDING",
+            "first_sent_at": null,
+            "followup_sent_at": null
+        },
+        "dl_tu_ipadsupport@hearst.com": {
+            "app_name": "Albany Times Union News",
+            "package": "com.timesunion.newsapp",
+            "source": "google_play",
+            "status": "PENDING",
+            "first_sent_at": null,
+            "followup_sent_at": null
+        },
+        "tech@groundsapp.co": {
+            "app_name": "Grounds",
+            "package": "co.groundsapp.grounds",
+            "source": "google_play",
+            "status": "PENDING",
+            "first_sent_at": null,
+            "followup_sent_at": null
         }
     },
     "scanned_apps": [
@@ -2469,7 +2597,55 @@
         "app.focus.pomodoro",
         "com.nemjava.pomodoroApp",
         "dev.hemanths.pomodoro",
-        "com.mercansoftware.pomodoro_elite"
+        "com.mercansoftware.pomodoro_elite",
+        "com.nd.anonappchat",
+        "allen.town.focus.reader",
+        "com.seazon.feedme",
+        "com.innologica.inoreader",
+        "com.devhd.feedly",
+        "com.vinsonguo.flutter_rss_reader",
+        "qijaz221.android.rss.reader",
+        "com.niviva.rssreader.streamsphere",
+        "com.vanniktech.rssreader",
+        "com.nononsenseapps.feeder.play",
+        "com.and96.aggregator_news",
+        "com.lowae.agrreader",
+        "com.steintecai.rssreader",
+        "com.rss.reader.global",
+        "allen.town.focus.red",
+        "allen.town.focus.twitter.x",
+        "allen.town.focus.mastodon",
+        "allen.town.focus.twitter",
+        "allen.town.focus.podcast",
+        "com.softwareschiek.noteful",
+        "com.readly.client",
+        "com.ef.goaheadtours",
+        "com.innologica.proofy",
+        "so.circle.circle",
+        "com.readermobile",
+        "flipboard.app",
+        "com.economist.lamarr",
+        "com.formagrid.airtable",
+        "com.fandom.app",
+        "co.fable.fable",
+        "com.drakeet.purewriter",
+        "com.vinsonguo.qr_file_sender",
+        "com.vinsonguo.hanzi_learning.hsk",
+        "com.vinsonguo.writetools",
+        "com.vinsonguo.zmsc",
+        "com.mobvoi.ainote",
+        "com.nestreapp.prod",
+        "com.mindfulness.android",
+        "ch.rea.app",
+        "com.newsbang",
+        "qijaz221.github.io.musicplayer.premium",
+        "qijaz221.github.io.musicplayer",
+        "com.zh.musictimetravel",
+        "com.incongruity.swordandscale",
+        "com.ucroo.sanjac",
+        "com.hltcorp.surgicaltech",
+        "com.timesunion.newsapp",
+        "co.groundsapp.grounds"
     ],
     "used_keywords": [
         "finance",
@@ -2515,7 +2691,55 @@
         "expense tracker minimalist",
         "budget planner offline",
         "crypto portfolio widget",
-        "pomodoro timer aesthetic"
+        "pomodoro timer aesthetic",
+        "habit tracker offline",
+        "kanban board personal",
+        "water reminder fasting",
+        "step counter offline pedometer",
+        "home workout no equipment",
+        "anonymous chat local",
+        "icebreaker questions app",
+        "couple calendar shared",
+        "flashcards maker study",
+        "learn vocabulary daily",
+        "rss reader minimalist fast"
     ],
-    "scanned_developers": []
+    "scanned_developers": [
+        "DecusPro",
+        "8458616364286916829",
+        "dataegg",
+        "4712017771738764193",
+        "Feedly+Team",
+        "7269031955117533398",
+        "5826875564085943850",
+        "Martin+Vivian",
+        "Niklas+Baudy",
+        "NoNonsenseApps",
+        "5578181639208826441",
+        "7140216871923876217",
+        "SteinTecDev",
+        "5901800166737600716",
+        "7039963907330752614",
+        "Readly+International",
+        "9190819676400873928",
+        "CircleCo+Inc",
+        "Readwise",
+        "7019463006329470284",
+        "5059535972638766074",
+        "8024614373053231272",
+        "8251921813603442996",
+        "Scribd,+Inc.",
+        "Drakeet,+Ltd.",
+        "8134950304174499531",
+        "6759486717119345838",
+        "Mindfulness.com",
+        "7436527435032349958",
+        "NewsBang",
+        "Z.H.",
+        "Incongruity,+LLC",
+        "Pathify",
+        "6249474150815832810",
+        "Hearst+Newspapers+-+LLC",
+        "Grounds+LLC"
+    ]
 }
