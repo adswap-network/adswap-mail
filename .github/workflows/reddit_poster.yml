@@ -2,7 +2,8 @@ name: Reddit Cecchino (Playwright)
 
 on:
   schedule:
-    - cron: "*/16 * * * *"
+    # Minuti "storti" per ingannare i server GitHub e non finire in coda
+    - cron: "7,22,37,52 * * * *"
   workflow_dispatch:
 
 concurrency:
@@ -40,21 +41,19 @@ jobs:
           python reddit_poster.py
 
       - name: Salva DB aggiornato
-        if: always() # Salva il DB anche se lo script fallisce!
+        if: always()
         run: |
           git config user.name "GitHub Actions Bot"
           git config user.email "actions@github.com"
           
-          # 1. Aggiungiamo le modifiche (il DB aggiornato)
           git add reddit_radar.db
-          
-          # 2. Salviamo (commit) se ci sono modifiche
           git diff --staged --quiet || git commit -m "Cecchino: aggiornamento DB [skip ci]"
           
-          # 3. Tiriamo i cambiamenti remoti in modo sicuro
-          git pull origin main --rebase || true
+          # Strategia anti-conflitto per forzare sempre il salvataggio locale
+          git pull origin main --no-rebase --strategy-option=ours || true
           
-          # 4. Pushiamo tutto
+          git add reddit_radar.db
+          git commit -m "Risoluzione automatica conflitti DB [skip ci]" || true
           git push origin main
 
       - name: Carica screenshot e HTML di debug
