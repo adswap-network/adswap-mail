@@ -2,7 +2,7 @@
     "config": {
         "start_date": "2026-09-12",
         "last_run_date": "2026-09-18",
-        "sent_today": 4
+        "sent_today": 9
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -848,36 +848,36 @@
         "evans@tuagye.com": {
             "app_name": "Tuagye",
             "package": "com.tuagye.app",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-18T09:45:24.244647",
             "followup_sent_at": null
         },
         "support@shopxchange.com": {
             "app_name": "shopXchange",
             "package": "com.shopxchange.mobile",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-18T09:45:24.244647",
             "followup_sent_at": null
         },
         "monstercabinstudio@gmail.com": {
             "app_name": "Daemonia",
             "package": "com.levelance.daemonia",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-18T09:45:24.244647",
             "followup_sent_at": null
         },
         "ictiongames@gmail.com": {
             "app_name": "John Mambo",
             "package": "com.JohnMambo.RetroPixelAction",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-18T09:45:24.244647",
             "followup_sent_at": null
         },
         "info@peralstudio.com": {
             "app_name": "Cookie Empire",
             "package": "com.alfanjorfresco.cookieempire",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-18T09:45:24.244647",
             "followup_sent_at": null
         },
         "hello@blackboxdigital.net": {
@@ -2381,5 +2381,6 @@
         "budget planner offline",
         "crypto portfolio widget",
         "pomodoro timer aesthetic"
-    ]
+    ],
+    "scanned_developers": []
 }
