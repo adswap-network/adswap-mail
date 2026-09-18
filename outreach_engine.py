@@ -23,11 +23,11 @@ PORT = 465
 
 EMAIL_ACCOUNT = os.getenv("GMAIL_ADDRESS")
 APP_PASSWORD = os.getenv("GMAIL_APP_PASSWORD")
-SENDER_NAME = "Matteo"
+SENDER_NAME = "Daniele"
 
 DAYS_BEFORE_FOLLOWUP = 4
-MAX_CAPACITY = 60
-WARMUP_SCHEDULE = [5, 10, 15, 25, 35, 50, 60]
+MAX_CAPACITY = 50
+WARMUP_SCHEDULE = [5, 10, 15, 25, 35, 50]
 
 ADSWAP_KEYWORDS = [
     "finance", "health", "productivity", "social", "dating", 
@@ -51,9 +51,14 @@ def load_state():
     if os.path.exists(STATE_FILE):
         with open(STATE_FILE, "r", encoding="utf-8") as f:
             state = json.load(f)
-            # Aggiunge retrocompatibilità per i nuovi array
             if "scanned_developers" not in state: state["scanned_developers"] = []
+            
+            # Retrocompatibilità: assegna una 'source' ai vecchi lead se manca
+            for email, data in state.get("leads", {}).items():
+                if "source" not in data:
+                    data["source"] = "product_hunt" if data.get("package") == "product_hunt" else "google_play"
             return state
+            
     return {
         "config": {
             "start_date": datetime.utcnow().strftime("%Y-%m-%d"),
@@ -62,7 +67,7 @@ def load_state():
         }, 
         "leads": {}, 
         "scanned_apps": [],
-        "scanned_developers": [], # Tiene traccia degli ID sviluppatori per evitare di prenderne troppi dallo stesso
+        "scanned_developers": [],
         "used_keywords": []
     }
 
@@ -89,6 +94,7 @@ def auto_import_existing_csv(state):
                         state["leads"][email] = {
                             "app_name": clean_title,
                             "package": app_id,
+                            "source": "google_play", # Storici assunti come google_play
                             "status": "FIRST_SENT",
                             "first_sent_at": yesterday,
                             "followup_sent_at": None
@@ -103,7 +109,7 @@ def auto_scrape_new_leads(state, needed_amount):
     added = 0
     headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"}
 
-    # --- 1. PRODUCT HUNT SCRAPING (RSS + Crawler) ---
+    # --- 1. PRODUCT HUNT SCRAPING ---
     try:
         print("    [*] Ricerca nuovi lanci su Product Hunt...")
         res = requests.get("https://www.producthunt.com/feed", timeout=10, headers=headers)
@@ -113,31 +119,23 @@ def auto_scrape_new_leads(state, needed_amount):
             if added >= needed_amount: break
             try:
                 ph_page = requests.get(ph_link, timeout=10, headers=headers)
-                
-                # Cerca i link di uscita di Product Hunt verso il sito del prodotto
                 out_links = set(re.findall(r'href="(https://www\.producthunt\.com/r/p/[^"]+)"', ph_page.text))
                 emails_found = set()
                 play_ids_found = set(re.findall(r'play\.google\.com/store/apps/details\?id=([a-zA-Z0-9._]+)', ph_page.text))
                 
-                # Seguiamo il link di uscita per arrivare al sito web del creatore
                 for out_link in out_links:
                     try:
                         site_page = requests.get(out_link, timeout=8, headers=headers)
-                        # Cerca bottoni 'mailto:'
                         emails_found.update(re.findall(r'mailto:([a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,})', site_page.text))
-                        # Fallback: regex per email in chiaro sul sito
                         raw_emails = re.findall(r'\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b', site_page.text)
                         
-                        # Filtra false positive da template grafici
                         for em in raw_emails:
                             if not any(x in em.lower() for x in ['sentry', 'wix', 'example', '.png', '.jpg', 'domain', 'test']):
                                 emails_found.add(em)
                                 
-                        # Estrae ID del play store se presenti sul sito web
                         play_ids_found.update(re.findall(r'play\.google\.com/store/apps/details\?id=([a-zA-Z0-9._]+)', site_page.text))
                     except: pass
                 
-                # Salva Lead da Web/Email Diretta
                 for email in emails_found:
                     if added >= needed_amount: break
                     clean_email = email.lower().strip()
@@ -146,6 +144,7 @@ def auto_scrape_new_leads(state, needed_amount):
                         state["leads"][clean_email] = {
                             "app_name": clean_title,
                             "package": "product_hunt",
+                            "source": "product_hunt", # TAG: Product Hunt
                             "status": "PENDING",
                             "first_sent_at": None,
                             "followup_sent_at": None
@@ -153,7 +152,6 @@ def auto_scrape_new_leads(state, needed_amount):
                         added += 1
                         print(f"       [+ PH Lead] {clean_title} -> {clean_email}")
                         
-                # Salva Lead collegati al Play Store estratti dal sito
                 for app_id in play_ids_found:
                     if added >= needed_amount: break
                     if app_id in state["scanned_apps"]: continue
@@ -167,13 +165,14 @@ def auto_scrape_new_leads(state, needed_amount):
                         if dev_id in state["scanned_developers"]: continue
                         if dev_id: state["scanned_developers"].append(dev_id)
                         
-                        if dev_email and "@" in dev_email: # Nessun limite downloads per PH, premiamo la novità
+                        if dev_email and "@" in dev_email:
                             clean_email = dev_email.strip().lower()
                             if clean_email not in state["leads"]:
                                 clean_title = details.get('title', title).split(" - ")[0].strip()
                                 state["leads"][clean_email] = {
                                     "app_name": clean_title,
                                     "package": app_id,
+                                    "source": "product_hunt", # TAG: Trovato tramite PH
                                     "status": "PENDING",
                                     "first_sent_at": None,
                                     "followup_sent_at": None
@@ -185,7 +184,7 @@ def auto_scrape_new_leads(state, needed_amount):
     except Exception as e:
         print(f"    [!] Errore modulo Product Hunt: {e}")
 
-    # --- 2. GOOGLE PLAY SCRAPING (Keyword + Cross-Scraping simili) ---
+    # --- 2. GOOGLE PLAY SCRAPING ---
     if added >= needed_amount:
         save_state(state)
         return
@@ -205,7 +204,6 @@ def auto_scrape_new_leads(state, needed_amount):
             response = requests.get(url, headers=headers, timeout=10)
             root_app_ids = list(dict.fromkeys(re.findall(r'href="/store/apps/details\?id=([a-zA-Z0-9._]+)"', response.text)))
             
-            # Coda per esplorazione infinita
             queue = root_app_ids[:15]
             visited_in_session = set()
             
@@ -223,7 +221,6 @@ def auto_scrape_new_leads(state, needed_amount):
                     email = details.get('developerEmail')
                     dev_id = str(details.get('developerId', ''))
                     
-                    # FILTRO CRUCIALE: Evita di contattare mille app dello stesso dev
                     if dev_id in state["scanned_developers"]:
                         continue
                     if dev_id:
@@ -238,6 +235,7 @@ def auto_scrape_new_leads(state, needed_amount):
                             state["leads"][clean_email] = {
                                 "app_name": clean_title,
                                 "package": app_id,
+                                "source": "google_play", # TAG: Google Play Store
                                 "status": "PENDING",
                                 "first_sent_at": None,
                                 "followup_sent_at": None
@@ -246,18 +244,17 @@ def auto_scrape_new_leads(state, needed_amount):
                             print(f"       [+ Store] {clean_title} ({min_installs} DL)")
                             save_state(state)
                             
-                    # CROSS-SCRAPING: Trova e inietta in coda le app simili a questa!
                     try:
                         app_page = requests.get(f"https://play.google.com/store/apps/details?id={app_id}", headers=headers, timeout=5)
                         page_app_ids = re.findall(r'href="/store/apps/details\?id=([a-zA-Z0-9._]+)"', app_page.text)
                         for related_id in dict.fromkeys(page_app_ids):
                             if related_id not in state["scanned_apps"] and related_id not in visited_in_session:
-                                if len(queue) < 60: # Mantieni la coda sotto controllo per non impantanarsi
+                                if len(queue) < 60:
                                     queue.append(related_id)
                     except: pass
                     
                 except: pass
-                time.sleep(0.4) # Pausa anti-ban
+                time.sleep(0.4)
                 
         except Exception as e:
             print(f"    [!] Errore ricerca Play Store per '{kw}': {e}")
@@ -348,6 +345,18 @@ AdSwap
 """
     return (first_subject, first_body), (followup_subject, followup_body)
 
+def get_pending_leads_prioritized(state):
+    """Restituisce le email pendenti dando assoluta precedenza a Product Hunt"""
+    ph_leads = [(e, d["app_name"], d.get("source", "product_hunt")) 
+                for e, d in state["leads"].items() 
+                if d["status"] == "PENDING" and d.get("source") == "product_hunt"]
+                
+    play_leads = [(e, d["app_name"], d.get("source", "google_play")) 
+                  for e, d in state["leads"].items() 
+                  if d["status"] == "PENDING" and d.get("source") != "product_hunt"]
+                  
+    return ph_leads + play_leads # Concatena mettendo Product Hunt in cima
+
 def main():
     if not EMAIL_ACCOUNT or not APP_PASSWORD:
         print("Errore: Credenziali email mancanti nelle variabili d'ambiente.")
@@ -368,16 +377,19 @@ def main():
     for email, data in state["leads"].items():
         if data["status"] == "FIRST_SENT" and data.get("first_sent_at"):
             if datetime.fromisoformat(data["first_sent_at"]) <= cutoff_date:
-                all_followup_candidates.append((email, data["app_name"]))
+                all_followup_candidates.append((email, data["app_name"], data.get("source", "unknown")))
                 
     max_followups = max(1, int(batch_size * 0.4)) if all_followup_candidates else 0
     selected_followups = all_followup_candidates[:max_followups]
     needed_new = batch_size - len(selected_followups)
     
-    pending_leads = [(e, d["app_name"]) for e, d in state["leads"].items() if d["status"] == "PENDING"]
+    # Ottieni i lead pendenti già ordinati (Product Hunt prima)
+    pending_leads = get_pending_leads_prioritized(state)
+    
     if len(pending_leads) < needed_new:
         auto_scrape_new_leads(state, (needed_new - len(pending_leads)) + 15)
-        pending_leads = [(e, d["app_name"]) for e, d in state["leads"].items() if d["status"] == "PENDING"]
+        # Ricalcola dopo lo scraping
+        pending_leads = get_pending_leads_prioritized(state)
         
     selected_new = pending_leads[:needed_new]
     
@@ -404,7 +416,7 @@ def main():
     server.login(EMAIL_ACCOUNT, APP_PASSWORD)
     print(f"\n[*] Esecuzione batch di {len(tasks_to_run)} email ({len(selected_followups)} Follow-up, {len(selected_new)} Nuove)...")
 
-    for (email, app_name), task_type in tasks_to_run:
+    for (email, app_name, source), task_type in tasks_to_run:
         if task_type == "FOLLOWUP" and has_replied(imap_client, email):
             print(f"    [SKIP] {email} ha già risposto via email. Escluso definitivamente.")
             state["leads"][email]["status"] = "REPLIED"
@@ -429,7 +441,8 @@ def main():
                 state["leads"][email]["followup_sent_at"] = now.isoformat()
                 
             state["config"]["sent_today"] = state["config"].get("sent_today", 0) + 1
-            print(f"    [OK - {task_type}] -> {email} ({app_name})")
+            # Ora il log mostra chiaramente la fonte!
+            print(f"    [OK - {task_type}] -> {email} ({app_name}) [Via: {source}]")
             save_state(state)
 
             time.sleep(random.uniform(45, 95))
