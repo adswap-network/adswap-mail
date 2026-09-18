@@ -2,7 +2,7 @@
     "config": {
         "start_date": "2026-09-12",
         "last_run_date": "2026-09-18",
-        "sent_today": 13
+        "sent_today": 17
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -88,7 +88,7 @@
         "support@paybis.com": {
             "app_name": "BTC, ETH Crypto Tracker Widget",
             "package": "com.paybis.androidsatellitewidget",
-            "status": "FIRST_SENT",
+            "status": "REPLIED",
             "first_sent_at": "2026-09-14T14:23:42.569892",
             "followup_sent_at": null,
             "source": "google_play"
@@ -96,9 +96,9 @@
         "support@cryptocoinwidget.com": {
             "app_name": "Crypto Price Widget",
             "package": "com.maksdev.cryptocoinwidget",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-14T14:23:42.569892",
-            "followup_sent_at": null,
+            "followup_sent_at": "2026-09-18T14:32:01.555855",
             "source": "google_play"
         },
         "innokenty.longway@gmail.com": {
@@ -1040,24 +1040,24 @@
         "streamatico+crypto-alerts@gmail.com": {
             "app_name": "Crypto Alerts",
             "package": "com.streamatico.cryptoalert",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-18T14:32:01.555855",
             "followup_sent_at": null,
             "source": "google_play"
         },
         "support@coindisco.com": {
             "app_name": "Coindisco",
             "package": "com.coindisco",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-18T14:32:01.555855",
             "followup_sent_at": null,
             "source": "google_play"
         },
         "glgjingmarvel@gmail.com": {
             "app_name": "Pomodoro Timer Clock",
             "package": "com.glgjing.baymax",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-18T14:32:01.555855",
             "followup_sent_at": null,
             "source": "google_play"
         },
