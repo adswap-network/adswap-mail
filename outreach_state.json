@@ -2,7 +2,7 @@
     "config": {
         "start_date": "2026-09-12",
         "last_run_date": "2026-09-17",
-        "sent_today": 16
+        "sent_today": 40
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -43,37 +43,37 @@
         "rostislav56@gmail.com": {
             "app_name": "Tap Hunter",
             "package": "ua.com.rogames.taphunter",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-13T18:59:10.507340",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-09-17T23:33:45.446147"
         },
         "vinztechnologies@gmail.com": {
             "app_name": "Expense Tracker App",
             "package": "app.vinztech.budgetit",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-13T18:59:10.507340",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-09-17T23:33:45.446147"
         },
         "contactnightowldev@gmail.com": {
             "app_name": "Budget Planner",
             "package": "com.nightowl.spendsmart",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-13T18:59:10.507340",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-09-17T23:33:45.446147"
         },
         "support@changenow.io": {
             "app_name": "Crypto Portfolio",
             "package": "io.changenow.nowtracker",
-            "status": "FIRST_SENT",
+            "status": "REPLIED",
             "first_sent_at": "2026-09-13T18:59:10.507340",
             "followup_sent_at": null
         },
         "crypto.widget.developer@gmail.com": {
             "app_name": "Crypto Widget",
             "package": "com.crypto.widget",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-13T21:25:00.165955",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-09-17T23:33:45.446147"
         },
         "support@paybis.com": {
             "app_name": "BTC, ETH Crypto Tracker Widget",
@@ -680,106 +680,141 @@
         "duet.dev.team@gmail.com": {
             "app_name": "Duet",
             "package": "com.duet.duetcouple",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-17T23:33:45.446147",
             "followup_sent_at": null
         },
         "ienon.app1@gmail.com": {
             "app_name": "futari",
             "package": "app.futari",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-17T23:33:45.446147",
             "followup_sent_at": null
         },
         "cubbilyhelpcenter@gmail.com": {
             "app_name": "Cubbily Shared Family Calendar",
             "package": "com.dbsg.cubbily",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-17T23:33:45.446147",
             "followup_sent_at": null
         },
         "support@ourdayscalendar.com": {
             "app_name": "Our Days Co-Parenting Calendar",
             "package": "com.ourdayscalendar.android.app",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-17T23:33:45.446147",
             "followup_sent_at": null
         },
         "support@couplesapp.io": {
             "app_name": "Couples",
             "package": "com.couplesapp.application",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-17T23:33:45.446147",
             "followup_sent_at": null
         },
         "juanmadelboca.ch@gmail.com": {
             "app_name": "Shared Notes",
             "package": "com.kalantos.password.secure.notes",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-17T23:33:45.446147",
             "followup_sent_at": null
         },
         "contact@togglyapp.com": {
             "app_name": "Couple&Family Planner",
             "package": "com.togglyapp",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-17T23:33:45.446147",
             "followup_sent_at": null
         },
         "support@flashcards.gg": {
             "app_name": "Flashcards.gg",
             "package": "gg.flashcards",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-17T23:33:45.446147",
             "followup_sent_at": null
         },
         "support@atlasvocabulary.com": {
             "app_name": "Vocabulary Builder by Atlas",
             "package": "com.sayan.atlasenglish",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-17T23:33:45.446147",
             "followup_sent_at": null
         },
         "support@learnvocabulary.io": {
             "app_name": "Vocabulary Builder by Learning",
             "package": "io.learning.learn.vocabulary",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-17T23:33:45.446147",
             "followup_sent_at": null
         },
         "nam.trankhanh.vn@gmail.com": {
             "app_name": "Vocadaily",
             "package": "com.davidtranwd.vocabulary",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-17T23:33:45.446147",
             "followup_sent_at": null
         },
         "petr@vocabuo.com": {
             "app_name": "Vocabulary flashcards",
             "package": "world.petr.vokabeln",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-17T23:33:45.446147",
             "followup_sent_at": null
         },
         "stephdevelopment@gmail.com": {
             "app_name": "Advanced English Words",
             "package": "com.element.vocabulary",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-17T23:33:45.446147",
             "followup_sent_at": null
         },
         "helpdesk@ereflect.com": {
             "app_name": "Wordela",
             "package": "com.ereflect.wordela",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-17T23:33:45.446147",
             "followup_sent_at": null
         },
         "mgp.dev.studio@gmail.com": {
             "app_name": "FeedFlow",
             "package": "com.prof18.feedflow",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-17T23:33:45.446147",
+            "followup_sent_at": null
+        },
+        "mthang12vp@gmail.com": {
+            "app_name": "Secret Diary",
+            "package": "com.journal.diary.diarywithlock.diaryjournal.secretdiary",
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-17T23:33:45.446147",
+            "followup_sent_at": null
+        },
+        "support@timefinder.app": {
+            "app_name": "TimeFinder",
+            "package": "app.TimeFinder.TimeFinder",
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-17T23:33:45.446147",
+            "followup_sent_at": null
+        },
+        "dayblocapp@gmail.com": {
+            "app_name": "Time Blocking",
+            "package": "com.daybloc.app",
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-17T23:33:45.446147",
+            "followup_sent_at": null
+        },
+        "usket@icloud.com": {
+            "app_name": "TimeBox Planner",
+            "package": "com.usket.tig",
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-17T23:33:45.446147",
+            "followup_sent_at": null
+        },
+        "jamisays@gmail.com": {
+            "app_name": "Prayer Time App Blocker",
+            "package": "com.born2die49.salatlock",
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-17T23:33:45.446147",
             "followup_sent_at": null
         }
     },
@@ -1932,7 +1967,51 @@
         "com.mojayllc.dailychinese",
         "com.incredum.wrd",
         "air.ru.uchimslova.words",
-        "com.prof18.feedflow"
+        "com.prof18.feedflow",
+        "mydiary.journal.diary.diarywithlock.diaryjournal.secretdiary",
+        "com.dayoneapp.dayone",
+        "com.daily.journal.diary.lock.mood.tracker.free",
+        "diary.journal.lock.mood.daily",
+        "com.journal.diary.diarywithlock.diaryjournal.secretdiary",
+        "com.highsecure.mydiary",
+        "com.lp.diary.time.lock",
+        "com.happyverse.diarywithlock",
+        "com.uwaiz.secretjournal",
+        "com.journey.app",
+        "grateful.gratefulapp.gratitude.happiness.wellbeing.dailyjournal.journal",
+        "com.bigheadtechies.diary",
+        "journal.notebook.memoir.write.diary",
+        "mydiary.diary.journal.lock.mood.tracker.free.secret",
+        "com.github.jamesgay.fitnotes",
+        "sp.repcount",
+        "com.fnp.fithero",
+        "com.lyfta",
+        "io.strongapp.strong",
+        "com.selahsoft.workoutlog",
+        "com.gmail.jmartindev.timetune",
+        "com.albul.timeplanner",
+        "app.TimeFinder.TimeFinder",
+        "com.toggl.giskard",
+        "com.foruslabs.timebloc",
+        "com.soneto.blocos",
+        "com.daybloc.app",
+        "prox.lab.calclock",
+        "com.schezzy.app",
+        "com.aviniti.weeklyplanner",
+        "com.razeeman.util.simpletimetracker",
+        "com.burockgames.timeclocker",
+        "com.usket.tig",
+        "com.hellowo.day2life",
+        "com.stayfocused",
+        "ai.regainapp",
+        "com.screenzen",
+        "com.born2die49.salatlock",
+        "com.mindefy.phoneaddiction.mobilepe",
+        "com.aloggers.atimeloggerapp",
+        "com.machai.shiftcal",
+        "app.web.generatetimeline",
+        "io.timetrack.timetrackapp",
+        "uk.co.mybuzztechnologies.myShiftPlanner"
     ],
     "used_keywords": [
         "action offline game indie",
@@ -1989,6 +2068,9 @@
         "couple calendar shared",
         "flashcards maker study",
         "learn vocabulary daily",
-        "rss reader minimalist fast"
+        "rss reader minimalist fast",
+        "daily journal secret",
+        "workout logger gym",
+        "time blocker schedule"
     ]
 }
