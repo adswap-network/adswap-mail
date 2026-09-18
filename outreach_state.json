@@ -2,7 +2,7 @@
     "config": {
         "start_date": "2026-09-12",
         "last_run_date": "2026-09-18",
-        "sent_today": 9
+        "sent_today": 13
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -10,945 +10,1080 @@
             "package": "com.funnyghost.TheFallZero",
             "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-12T14:07:08.757452",
-            "followup_sent_at": "2026-09-16T18:12:25.983399"
+            "followup_sent_at": "2026-09-16T18:12:25.983399",
+            "source": "google_play"
         },
         "sycamorehillstudios@outlook.com": {
             "app_name": "Idle Orbit",
             "package": "com.idleorbit",
             "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-12T14:07:08.757452",
-            "followup_sent_at": "2026-09-16T18:12:25.983399"
+            "followup_sent_at": "2026-09-16T18:12:25.983399",
+            "source": "google_play"
         },
         "andrejjkoroljov25@gmail.com": {
             "app_name": "I am Rock Star idle clicker",
             "package": "com.VerityGamesStudio.IamRockStaridleclicker",
             "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-12T14:07:08.757452",
-            "followup_sent_at": "2026-09-16T21:22:03.519340"
+            "followup_sent_at": "2026-09-16T21:22:03.519340",
+            "source": "google_play"
         },
         "magikongames@gmail.com": {
             "app_name": "Crystalia Idle Clicker",
             "package": "com.magikongames.crystaliaidleclicker",
             "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-12T14:07:08.757452",
-            "followup_sent_at": "2026-09-16T21:22:03.519340"
+            "followup_sent_at": "2026-09-16T21:22:03.519340",
+            "source": "google_play"
         },
         "support@themachinegg.com": {
             "app_name": "The MachinEGG Idle Clicker",
             "package": "com.jc.themachinegg",
             "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-12T14:07:08.757452",
-            "followup_sent_at": "2026-09-16T21:22:03.519340"
+            "followup_sent_at": "2026-09-16T21:22:03.519340",
+            "source": "google_play"
         },
         "rostislav56@gmail.com": {
             "app_name": "Tap Hunter",
             "package": "ua.com.rogames.taphunter",
             "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-13T18:59:10.507340",
-            "followup_sent_at": "2026-09-17T23:33:45.446147"
+            "followup_sent_at": "2026-09-17T23:33:45.446147",
+            "source": "google_play"
         },
         "vinztechnologies@gmail.com": {
             "app_name": "Expense Tracker App",
             "package": "app.vinztech.budgetit",
             "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-13T18:59:10.507340",
-            "followup_sent_at": "2026-09-17T23:33:45.446147"
+            "followup_sent_at": "2026-09-17T23:33:45.446147",
+            "source": "google_play"
         },
         "contactnightowldev@gmail.com": {
             "app_name": "Budget Planner",
             "package": "com.nightowl.spendsmart",
             "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-13T18:59:10.507340",
-            "followup_sent_at": "2026-09-17T23:33:45.446147"
+            "followup_sent_at": "2026-09-17T23:33:45.446147",
+            "source": "google_play"
         },
         "support@changenow.io": {
             "app_name": "Crypto Portfolio",
             "package": "io.changenow.nowtracker",
             "status": "REPLIED",
             "first_sent_at": "2026-09-13T18:59:10.507340",
-            "followup_sent_at": null
+            "followup_sent_at": null,
+            "source": "google_play"
         },
         "crypto.widget.developer@gmail.com": {
             "app_name": "Crypto Widget",
             "package": "com.crypto.widget",
             "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-13T21:25:00.165955",
-            "followup_sent_at": "2026-09-17T23:33:45.446147"
+            "followup_sent_at": "2026-09-17T23:33:45.446147",
+            "source": "google_play"
         },
         "support@paybis.com": {
             "app_name": "BTC, ETH Crypto Tracker Widget",
             "package": "com.paybis.androidsatellitewidget",
             "status": "FIRST_SENT",
             "first_sent_at": "2026-09-14T14:23:42.569892",
-            "followup_sent_at": null
+            "followup_sent_at": null,
+            "source": "google_play"
         },
         "support@cryptocoinwidget.com": {
             "app_name": "Crypto Price Widget",
             "package": "com.maksdev.cryptocoinwidget",
             "status": "FIRST_SENT",
             "first_sent_at": "2026-09-14T14:23:42.569892",
-            "followup_sent_at": null
+            "followup_sent_at": null,
+            "source": "google_play"
         },
         "innokenty.longway@gmail.com": {
             "app_name": "Crypto Portfolio Widget",
             "package": "co.ssoul.CryptoC",
             "status": "FIRST_SENT",
             "first_sent_at": "2026-09-14T14:23:42.569892",
-            "followup_sent_at": null
+            "followup_sent_at": null,
+            "source": "google_play"
         },
         "app@statmetrics.org": {
             "app_name": "Crypto Portfolio Tracker",
             "package": "org.statmetrics.app.cryptocurrency",
             "status": "FIRST_SENT",
             "first_sent_at": "2026-09-14T14:59:10.708290",
-            "followup_sent_at": null
+            "followup_sent_at": null,
+            "source": "google_play"
         },
         "bitsnapp@gmail.com": {
             "app_name": "Bitsnapp",
             "package": "bitsnapp.com.bitsnapp",
             "status": "FIRST_SENT",
             "first_sent_at": "2026-09-14T14:59:10.708290",
-            "followup_sent_at": null
+            "followup_sent_at": null,
+            "source": "google_play"
         },
         "support@youdailyplan.com": {
             "app_name": "Daily Planner",
             "package": "com.youdailyplan",
             "status": "FIRST_SENT",
             "first_sent_at": "2026-09-14T14:59:10.708290",
-            "followup_sent_at": null
+            "followup_sent_at": null,
+            "source": "google_play"
         },
         "storeino.com@gmail.com": {
             "app_name": "Storeino",
             "package": "com.storeino.app",
             "status": "FIRST_SENT",
             "first_sent_at": "2026-09-14T14:59:10.708290",
-            "followup_sent_at": null
+            "followup_sent_at": null,
+            "source": "google_play"
         },
         "goldtec.marketing@gmail.com": {
             "app_name": "AI Ecommerce Store Builder",
             "package": "com.ai.store.builder.website.creator",
             "status": "FIRST_SENT",
             "first_sent_at": "2026-09-14T14:59:10.708290",
-            "followup_sent_at": null
+            "followup_sent_at": null,
+            "source": "google_play"
         },
         "support@zohocommerce.com": {
             "app_name": "Zoho Commerce",
             "package": "com.zoho.commerce",
             "status": "FIRST_SENT",
             "first_sent_at": "2026-09-14T14:59:10.708290",
-            "followup_sent_at": null
+            "followup_sent_at": null,
+            "source": "google_play"
         },
         "info@eshoppr.nl": {
             "app_name": "United Travel",
             "package": "com.eshoppr.unitedtravel",
             "status": "FIRST_SENT",
             "first_sent_at": "2026-09-14T17:02:58.881404",
-            "followup_sent_at": null
+            "followup_sent_at": null,
+            "source": "google_play"
         },
         "info@travelcompany.nl": {
             "app_name": "The Travel Company",
             "package": "com.eshoppr.thetravelcompany",
             "status": "FIRST_SENT",
             "first_sent_at": "2026-09-14T17:02:58.881404",
-            "followup_sent_at": null
+            "followup_sent_at": null,
+            "source": "google_play"
         },
         "rings.fitness.app@gmail.com": {
             "app_name": "Rings",
             "package": "com.whyyao.rings",
             "status": "FIRST_SENT",
             "first_sent_at": "2026-09-14T17:02:58.881404",
-            "followup_sent_at": null
+            "followup_sent_at": null,
+            "source": "google_play"
         },
         "hello@air.diet": {
             "app_name": "Air Diet",
             "package": "com.tallfive.airdiet",
             "status": "FIRST_SENT",
             "first_sent_at": "2026-09-14T17:02:58.881404",
-            "followup_sent_at": null
+            "followup_sent_at": null,
+            "source": "google_play"
         },
         "hello@last.diet": {
             "app_name": "Last Diet",
             "package": "com.tallfive.lastdiet",
             "status": "FIRST_SENT",
             "first_sent_at": "2026-09-14T17:02:58.881404",
-            "followup_sent_at": null
+            "followup_sent_at": null,
+            "source": "google_play"
         },
         "hello@glp.diet": {
             "app_name": "GLP Diet",
             "package": "com.tallfive.glpdiet",
             "status": "FIRST_SENT",
             "first_sent_at": "2026-09-14T17:02:58.881404",
-            "followup_sent_at": null
+            "followup_sent_at": null,
+            "source": "google_play"
         },
         "smallquest.studio@gmail.com": {
             "app_name": "Habit Tracker & ToDo",
             "package": "com.junhwank.habitjar",
             "status": "FIRST_SENT",
             "first_sent_at": "2026-09-15T13:29:38.327254",
-            "followup_sent_at": null
+            "followup_sent_at": null,
+            "source": "google_play"
         },
         "info@naokiotsu.com": {
             "app_name": "Plan Calendar -Make a Schedule",
             "package": "app.web.thetabcal",
             "status": "FIRST_SENT",
             "first_sent_at": "2026-09-15T13:29:38.327254",
-            "followup_sent_at": null
+            "followup_sent_at": null,
+            "source": "google_play"
         },
         "service@readnews.live": {
             "app_name": "Local News",
             "package": "local.news.app",
             "status": "FIRST_SENT",
             "first_sent_at": "2026-09-15T13:29:38.327254",
-            "followup_sent_at": null
+            "followup_sent_at": null,
+            "source": "google_play"
         },
         "androidappfeedback@newson.us": {
             "app_name": "NewsON",
             "package": "com.newson.vinsonandroidtv",
             "status": "FIRST_SENT",
             "first_sent_at": "2026-09-15T13:29:38.327254",
-            "followup_sent_at": null
+            "followup_sent_at": null,
+            "source": "google_play"
         },
         "support@trendrad.com": {
             "app_name": "News Today",
             "package": "com.breaking.android.newstoday",
             "status": "FIRST_SENT",
             "first_sent_at": "2026-09-15T13:29:38.327254",
-            "followup_sent_at": null
+            "followup_sent_at": null,
+            "source": "google_play"
         },
         "info@scienceshorts.net": {
             "app_name": "Study Shorts GCSE & A-Level",
             "package": "com.maderesponsively.scienceshorts",
             "status": "FIRST_SENT",
             "first_sent_at": "2026-09-15T15:41:16.131424",
-            "followup_sent_at": null
+            "followup_sent_at": null,
+            "source": "google_play"
         },
         "support@feynmanai.net": {
             "app_name": "Feynman AI",
             "package": "com.learning.feynmanai",
             "status": "FIRST_SENT",
             "first_sent_at": "2026-09-15T15:41:16.131424",
-            "followup_sent_at": null
+            "followup_sent_at": null,
+            "source": "google_play"
         },
         "support@study.com": {
             "app_name": "Study.com",
             "package": "com.study.cx2",
             "status": "FIRST_SENT",
             "first_sent_at": "2026-09-15T15:41:16.131424",
-            "followup_sent_at": null
+            "followup_sent_at": null,
+            "source": "google_play"
         },
         "support@flowtaskapp.com": {
             "app_name": "PomoPals",
             "package": "com.keedev.flowtask",
             "status": "FIRST_SENT",
             "first_sent_at": "2026-09-15T15:41:16.131424",
-            "followup_sent_at": null
+            "followup_sent_at": null,
+            "source": "google_play"
         },
         "info@cryptounity.org": {
             "app_name": "CryptoUnity",
             "package": "com.org.cryptounity",
             "status": "FIRST_SENT",
             "first_sent_at": "2026-09-15T18:11:59.689434",
-            "followup_sent_at": null
+            "followup_sent_at": null,
+            "source": "google_play"
         },
         "hello@respira.app": {
             "app_name": "RESPIRA",
             "package": "com.bm.respira",
             "status": "FIRST_SENT",
             "first_sent_at": "2026-09-15T18:11:59.689434",
-            "followup_sent_at": null
+            "followup_sent_at": null,
+            "source": "google_play"
         },
         "contact-us@7mfitness.com": {
             "app_name": "Tai Chi Meditation & Breath",
             "package": "net.workoutinc.tai_chi_meditation",
             "status": "FIRST_SENT",
             "first_sent_at": "2026-09-15T18:11:59.689434",
-            "followup_sent_at": null
+            "followup_sent_at": null,
+            "source": "google_play"
         },
         "apps@univerge.blue": {
             "app_name": "UNIVERGE BLUE\u2122 MEET",
             "package": "com.necam.mobilemeetings",
             "status": "FIRST_SENT",
             "first_sent_at": "2026-09-15T19:35:56.221439",
-            "followup_sent_at": null
+            "followup_sent_at": null,
+            "source": "google_play"
         },
         "ancientsflip@gmail.com": {
             "app_name": "Ancient Meet",
             "package": "com.ancient.meet",
             "status": "FIRST_SENT",
             "first_sent_at": "2026-09-15T19:35:56.221439",
-            "followup_sent_at": null
+            "followup_sent_at": null,
+            "source": "google_play"
         },
         "tech@meetlive.my": {
             "app_name": "Meet Live",
             "package": "com.meetlive.my",
             "status": "FIRST_SENT",
             "first_sent_at": "2026-09-15T19:35:56.221439",
-            "followup_sent_at": null
+            "followup_sent_at": null,
+            "source": "google_play"
         },
         "support@meetoffscreen.com": {
             "app_name": "Meet OffScreen",
             "package": "com.meetoffscreen",
             "status": "FIRST_SENT",
             "first_sent_at": "2026-09-15T19:35:56.221439",
-            "followup_sent_at": null
+            "followup_sent_at": null,
+            "source": "google_play"
         },
         "hello@flipgoo.com": {
             "app_name": "Flipgoo- Buy & Sell",
             "package": "com.flipgoo_app",
             "status": "FIRST_SENT",
             "first_sent_at": "2026-09-15T19:35:56.221439",
-            "followup_sent_at": null
+            "followup_sent_at": null,
+            "source": "google_play"
         },
         "support@ezead.com": {
             "app_name": "EzeAd",
             "package": "com.ezead.app",
             "status": "FIRST_SENT",
             "first_sent_at": "2026-09-15T19:35:56.221439",
-            "followup_sent_at": null
+            "followup_sent_at": null,
+            "source": "google_play"
         },
         "arcplayer.feedback@gmail.com": {
             "app_name": "Music Player",
             "package": "com.musicplayer.arcmusic",
             "status": "FIRST_SENT",
             "first_sent_at": "2026-09-15T19:35:56.221439",
-            "followup_sent_at": null
+            "followup_sent_at": null,
+            "source": "google_play"
         },
         "indieappslab@gmail.com": {
             "app_name": "Pomodoro \u2014 Pomodoro Timer",
             "package": "io.github.indieappslab.pomodoro",
             "status": "FIRST_SENT",
             "first_sent_at": "2026-09-15T19:35:56.221439",
-            "followup_sent_at": null
+            "followup_sent_at": null,
+            "source": "google_play"
         },
         "bobiforge@gmail.com": {
             "app_name": "Pomodoro Timer",
             "package": "com.bobiforge.bobiforge_pomodoro",
             "status": "FIRST_SENT",
             "first_sent_at": "2026-09-15T19:35:56.221439",
-            "followup_sent_at": null
+            "followup_sent_at": null,
+            "source": "google_play"
         },
         "contact@focus-now.app": {
             "app_name": "Focus Now",
             "package": "com.ferdinandobermeier.focusmate",
             "status": "FIRST_SENT",
             "first_sent_at": "2026-09-15T19:35:56.221439",
-            "followup_sent_at": null
+            "followup_sent_at": null,
+            "source": "google_play"
         },
         "wesley@zetabitapps.com": {
             "app_name": "Pomodoro Timer",
             "package": "com.zetabitapps.pomodoro",
             "status": "FIRST_SENT",
             "first_sent_at": "2026-09-15T19:35:56.221439",
-            "followup_sent_at": null
+            "followup_sent_at": null,
+            "source": "google_play"
         },
         "silcongeni@gmail.com": {
             "app_name": "Pomodoro TV",
             "package": "com.vista.frametvweather",
             "status": "FIRST_SENT",
             "first_sent_at": "2026-09-15T19:35:56.221439",
-            "followup_sent_at": null
+            "followup_sent_at": null,
+            "source": "google_play"
         },
         "inovasell.app@gmail.com": {
             "app_name": "Pomodoro",
             "package": "com.inovasell.pomodoro",
             "status": "FIRST_SENT",
             "first_sent_at": "2026-09-15T19:35:56.221439",
-            "followup_sent_at": null
+            "followup_sent_at": null,
+            "source": "google_play"
         },
         "mwangistanley746@gmail.com": {
             "app_name": "FocusFlow Pomodoro Study Timer",
             "package": "com.stanley.focusflow",
             "status": "FIRST_SENT",
             "first_sent_at": "2026-09-16T01:27:08.776243",
-            "followup_sent_at": null
+            "followup_sent_at": null,
+            "source": "google_play"
         },
         "tap4love@gmail.com": {
             "app_name": "Cute Pomodoro",
             "package": "com.just4fun.pomodoro",
             "status": "FIRST_SENT",
             "first_sent_at": "2026-09-16T01:27:08.776243",
-            "followup_sent_at": null
+            "followup_sent_at": null,
+            "source": "google_play"
         },
         "habithook.app@gmail.com": {
             "app_name": "Habit Tracker App",
             "package": "com.metaserve.habithook",
             "status": "FIRST_SENT",
             "first_sent_at": "2026-09-16T07:42:32.783083",
-            "followup_sent_at": null
+            "followup_sent_at": null,
+            "source": "google_play"
         },
         "dev@edvarderos.com": {
             "app_name": "Habit Tracker",
             "package": "edvarderos.habitgrid",
             "status": "FIRST_SENT",
             "first_sent_at": "2026-09-16T13:31:19.426758",
-            "followup_sent_at": null
+            "followup_sent_at": null,
+            "source": "google_play"
         },
         "developer.nativeapps@gmail.com": {
             "app_name": "Habit Tracker",
             "package": "com.ksp.habittracker",
             "status": "FIRST_SENT",
             "first_sent_at": "2026-09-16T13:31:19.426758",
-            "followup_sent_at": null
+            "followup_sent_at": null,
+            "source": "google_play"
         },
         "disonstudio@gmail.com": {
             "app_name": "Habit Tracker Kit",
             "package": "com.dison.HabitDone",
             "status": "FIRST_SENT",
             "first_sent_at": "2026-09-16T18:12:25.983399",
-            "followup_sent_at": null
+            "followup_sent_at": null,
+            "source": "google_play"
         },
         "info@simplyhabits.io": {
             "app_name": "Simple Habit Tracker",
             "package": "com.jlabs.habittracker",
             "status": "FIRST_SENT",
             "first_sent_at": "2026-09-16T18:12:25.983399",
-            "followup_sent_at": null
+            "followup_sent_at": null,
+            "source": "google_play"
         },
         "vanquyetc2vc@gmail.com": {
             "app_name": "Kanban",
             "package": "com.quyetsama.tnotes",
             "status": "FIRST_SENT",
             "first_sent_at": "2026-09-16T18:12:25.983399",
-            "followup_sent_at": null
+            "followup_sent_at": null,
+            "source": "google_play"
         },
         "dev_vlad@outlook.com": {
             "app_name": "Kanban Boards",
             "package": "com.sdr_labs.KanbanBoards",
             "status": "FIRST_SENT",
             "first_sent_at": "2026-09-16T21:22:03.519340",
-            "followup_sent_at": null
+            "followup_sent_at": null,
+            "source": "google_play"
         },
         "admin@kanbana.com": {
             "app_name": "Kanbana",
             "package": "dk.AgileBrains.Kanbana",
             "status": "FIRST_SENT",
             "first_sent_at": "2026-09-16T21:22:03.519340",
-            "followup_sent_at": null
+            "followup_sent_at": null,
+            "source": "google_play"
         },
         "stoneclark28@gmail.com": {
             "app_name": "KanbanFlow",
             "package": "com.kanbanflow.offline",
             "status": "FIRST_SENT",
             "first_sent_at": "2026-09-16T21:22:03.519340",
-            "followup_sent_at": null
+            "followup_sent_at": null,
+            "source": "google_play"
         },
         "buenhijogames@gmail.com": {
             "app_name": "Libre Kanban",
             "package": "com.buenhijogames.mikanban",
             "status": "FIRST_SENT",
             "first_sent_at": "2026-09-16T21:22:03.519340",
-            "followup_sent_at": null
+            "followup_sent_at": null,
+            "source": "google_play"
         },
         "team@kanbanchi.com": {
             "app_name": "Kanbanchi",
             "package": "com.kanbanchi.app.twa",
             "status": "FIRST_SENT",
             "first_sent_at": "2026-09-16T21:22:03.519340",
-            "followup_sent_at": null
+            "followup_sent_at": null,
+            "source": "google_play"
         },
         "support@syedshahbazhussain.com": {
             "app_name": "HydroFast",
             "package": "com.shahbaz.hydrofastfastinghydrationtracker",
             "status": "FIRST_SENT",
             "first_sent_at": "2026-09-16T21:22:03.519340",
-            "followup_sent_at": null
+            "followup_sent_at": null,
+            "source": "google_play"
         },
         "xiaoruo1224@gmail.com": {
             "app_name": "Water Tracker",
             "package": "com.xiaoruo.watertracker",
             "status": "FIRST_SENT",
             "first_sent_at": "2026-09-16T21:22:03.519340",
-            "followup_sent_at": null
+            "followup_sent_at": null,
+            "source": "google_play"
         },
         "system@techkhedut.com": {
             "app_name": "Drink Water Tracker & Reminder",
             "package": "com.h2glow.drinkwater.reminder.daily.tracker",
             "status": "FIRST_SENT",
             "first_sent_at": "2026-09-16T21:22:03.519340",
-            "followup_sent_at": null
+            "followup_sent_at": null,
+            "source": "google_play"
         },
         "info@oriax.io": {
             "app_name": "Hydro",
             "package": "io.oriax.hydro",
             "status": "FIRST_SENT",
             "first_sent_at": "2026-09-16T21:22:03.519340",
-            "followup_sent_at": null
+            "followup_sent_at": null,
+            "source": "google_play"
         },
         "info@artmvstd.com": {
             "app_name": "Fasting Timer & Water Tracker",
             "package": "com.artmvstd.fastingTracker",
             "status": "FIRST_SENT",
             "first_sent_at": "2026-09-16T21:22:03.519340",
-            "followup_sent_at": null
+            "followup_sent_at": null,
+            "source": "google_play"
         },
         "kjm.application@gmail.com": {
             "app_name": "Simple Step Counter",
             "package": "com.kjm.stepcounter",
             "status": "FIRST_SENT",
             "first_sent_at": "2026-09-16T21:22:03.519340",
-            "followup_sent_at": null
+            "followup_sent_at": null,
+            "source": "google_play"
         },
         "support@fitattack.com": {
             "app_name": "Home Workout",
             "package": "home.boxing.workouts",
             "status": "FIRST_SENT",
             "first_sent_at": "2026-09-16T21:22:03.519340",
-            "followup_sent_at": null
+            "followup_sent_at": null,
+            "source": "google_play"
         },
         "premiumqualityapps.com@gmail.com": {
             "app_name": "Home Workout",
             "package": "com.premium.qualityhealth",
             "status": "FIRST_SENT",
             "first_sent_at": "2026-09-16T21:22:03.519340",
-            "followup_sent_at": null
+            "followup_sent_at": null,
+            "source": "google_play"
         },
         "projects@appthena.io": {
             "app_name": "Vanish",
             "package": "appthena.io.vanish",
             "status": "FIRST_SENT",
             "first_sent_at": "2026-09-16T21:22:03.519340",
-            "followup_sent_at": null
+            "followup_sent_at": null,
+            "source": "google_play"
         },
         "nymmate@gmail.com": {
             "app_name": "Anonymous Chat Rooms, Dating",
             "package": "com.anonymate.anonymous",
             "status": "FIRST_SENT",
             "first_sent_at": "2026-09-16T21:22:03.519340",
-            "followup_sent_at": null
+            "followup_sent_at": null,
+            "source": "google_play"
         },
         "info@anonapp.co": {
             "app_name": "Anon",
             "package": "co.anonapp.chat",
             "status": "FIRST_SENT",
             "first_sent_at": "2026-09-16T21:22:03.519340",
-            "followup_sent_at": null
+            "followup_sent_at": null,
+            "source": "google_play"
         },
         "cbyrm9@gmail.com": {
             "app_name": "Anonymous Chat",
             "package": "com.chatalya.app",
             "status": "FIRST_SENT",
             "first_sent_at": "2026-09-16T21:22:03.519340",
-            "followup_sent_at": null
+            "followup_sent_at": null,
+            "source": "google_play"
         },
         "jacomosconi@gmail.com": {
             "app_name": "Anony",
             "package": "ai.semora.anony",
             "status": "FIRST_SENT",
             "first_sent_at": "2026-09-16T21:22:03.519340",
-            "followup_sent_at": null
+            "followup_sent_at": null,
+            "source": "google_play"
         },
         "iperkinz97@gmail.com": {
             "app_name": "Stranger anonymous chat",
             "package": "com.nexora.whispr",
             "status": "FIRST_SENT",
             "first_sent_at": "2026-09-16T21:22:03.519340",
-            "followup_sent_at": null
+            "followup_sent_at": null,
+            "source": "google_play"
         },
         "multicritmedia@gmail.com": {
             "app_name": "Anonymous Random Stranger Chat",
             "package": "com.multicrit.anonymousrandomstrangerchat",
             "status": "FIRST_SENT",
             "first_sent_at": "2026-09-16T21:22:03.519340",
-            "followup_sent_at": null
+            "followup_sent_at": null,
+            "source": "google_play"
         },
         "incoapp1@gmail.com": {
             "app_name": "P2P Messenger",
             "package": "com.navaneethsaj.p2pmessenger",
             "status": "FIRST_SENT",
             "first_sent_at": "2026-09-16T21:22:03.519340",
-            "followup_sent_at": null
+            "followup_sent_at": null,
+            "source": "google_play"
         },
         "support@myvael.app": {
             "app_name": "Vael",
             "package": "com.foundry26.vael",
             "status": "FIRST_SENT",
             "first_sent_at": "2026-09-16T21:22:03.519340",
-            "followup_sent_at": null
+            "followup_sent_at": null,
+            "source": "google_play"
         },
         "techpek.contact@gmail.com": {
             "app_name": "Anom",
             "package": "com.techpek.anom",
             "status": "FIRST_SENT",
             "first_sent_at": "2026-09-17T00:33:26.030594",
-            "followup_sent_at": null
+            "followup_sent_at": null,
+            "source": "google_play"
         },
         "gaurav.scorpion.developer@gmail.com": {
             "app_name": "Strings",
             "package": "com.strings.app",
             "status": "FIRST_SENT",
             "first_sent_at": "2026-09-17T00:33:26.030594",
-            "followup_sent_at": null
+            "followup_sent_at": null,
+            "source": "google_play"
         },
         "meetq.app@gmail.com": {
             "app_name": "MeetQ",
             "package": "com.meetbot_app.meetbot_app",
             "status": "FIRST_SENT",
             "first_sent_at": "2026-09-17T06:09:49.989900",
-            "followup_sent_at": null
+            "followup_sent_at": null,
+            "source": "google_play"
         },
         "sharmaga440@gmail.com": {
             "app_name": "Couples Questions Game",
             "package": "com.couplesgames.couplesgames",
             "status": "FIRST_SENT",
             "first_sent_at": "2026-09-17T06:09:49.989900",
-            "followup_sent_at": null
+            "followup_sent_at": null,
+            "source": "google_play"
         },
         "support@fundeasy.in": {
             "app_name": "Would You Rather? Icebreaker",
             "package": "com.happyverse.wouldyourather",
             "status": "FIRST_SENT",
             "first_sent_at": "2026-09-17T06:09:49.989900",
-            "followup_sent_at": null
+            "followup_sent_at": null,
+            "source": "google_play"
         },
         "knowmebetterapp@gmail.com": {
             "app_name": "KnowMeBetter",
             "package": "com.jadegoescoding.knowmebetter",
             "status": "FIRST_SENT",
             "first_sent_at": "2026-09-17T06:09:49.989900",
-            "followup_sent_at": null
+            "followup_sent_at": null,
+            "source": "google_play"
         },
         "waldigames79@gmail.com": {
             "app_name": "100 Questions",
             "package": "com.Lumicore.hundredquestions",
             "status": "FIRST_SENT",
             "first_sent_at": "2026-09-17T11:45:05.126288",
-            "followup_sent_at": null
+            "followup_sent_at": null,
+            "source": "google_play"
         },
         "greenseedapps@gmail.com": {
             "app_name": "Would You Rather Question Game",
             "package": "com.gtm.wouldyourather",
             "status": "FIRST_SENT",
             "first_sent_at": "2026-09-17T11:45:05.126288",
-            "followup_sent_at": null
+            "followup_sent_at": null,
+            "source": "google_play"
         },
         "admin@neuregiasolutions.com": {
             "app_name": "Icebreaker-AI",
             "package": "app.ns.icebreakerai",
             "status": "FIRST_SENT",
             "first_sent_at": "2026-09-17T11:45:05.126288",
-            "followup_sent_at": null
+            "followup_sent_at": null,
+            "source": "google_play"
         },
         "stathiskarahisaridis444@gmail.com": {
             "app_name": "Get to Know Each Other",
             "package": "com.mycompany.toknoweachother",
             "status": "FIRST_SENT",
             "first_sent_at": "2026-09-17T11:45:05.126288",
-            "followup_sent_at": null
+            "followup_sent_at": null,
+            "source": "google_play"
         },
         "balalev14@gmail.com": {
             "app_name": "Connect",
             "package": "com.balalev.connectgame",
             "status": "FIRST_SENT",
             "first_sent_at": "2026-09-17T11:45:05.126288",
-            "followup_sent_at": null
+            "followup_sent_at": null,
+            "source": "google_play"
         },
         "contact@invitocards.com": {
             "app_name": "spill cards",
             "package": "net.spill.cards",
             "status": "FIRST_SENT",
             "first_sent_at": "2026-09-17T17:01:07.604977",
-            "followup_sent_at": null
+            "followup_sent_at": null,
+            "source": "google_play"
         },
         "mail@funcouplegames.com": {
             "app_name": "Couples Trivia & Questions",
             "package": "com.questiongamesforcouples.couplequiz",
             "status": "FIRST_SENT",
             "first_sent_at": "2026-09-17T17:01:07.604977",
-            "followup_sent_at": null
+            "followup_sent_at": null,
+            "source": "google_play"
         },
         "contact@savuko.com": {
             "app_name": "Dirty Questions & Dares Game",
             "package": "com.refined.questionsgame",
             "status": "FIRST_SENT",
             "first_sent_at": "2026-09-17T17:01:07.604977",
-            "followup_sent_at": null
+            "followup_sent_at": null,
+            "source": "google_play"
         },
         "info@deathofsmalltalk.com": {
             "app_name": "Conversation starters that hit",
             "package": "com.deathofsmalltalk.deathofsmalltalk",
             "status": "FIRST_SENT",
             "first_sent_at": "2026-09-17T17:01:07.604977",
-            "followup_sent_at": null
+            "followup_sent_at": null,
+            "source": "google_play"
         },
         "teamlubble@gmail.com": {
             "app_name": "Lubble",
             "package": "com.couple.lubble",
             "status": "FIRST_SENT",
             "first_sent_at": "2026-09-17T17:01:07.604977",
-            "followup_sent_at": null
+            "followup_sent_at": null,
+            "source": "google_play"
         },
         "duet.dev.team@gmail.com": {
             "app_name": "Duet",
             "package": "com.duet.duetcouple",
             "status": "FIRST_SENT",
             "first_sent_at": "2026-09-17T23:33:45.446147",
-            "followup_sent_at": null
+            "followup_sent_at": null,
+            "source": "google_play"
         },
         "ienon.app1@gmail.com": {
             "app_name": "futari",
             "package": "app.futari",
             "status": "FIRST_SENT",
             "first_sent_at": "2026-09-17T23:33:45.446147",
-            "followup_sent_at": null
+            "followup_sent_at": null,
+            "source": "google_play"
         },
         "cubbilyhelpcenter@gmail.com": {
             "app_name": "Cubbily Shared Family Calendar",
             "package": "com.dbsg.cubbily",
             "status": "FIRST_SENT",
             "first_sent_at": "2026-09-17T23:33:45.446147",
-            "followup_sent_at": null
+            "followup_sent_at": null,
+            "source": "google_play"
         },
         "support@ourdayscalendar.com": {
             "app_name": "Our Days Co-Parenting Calendar",
             "package": "com.ourdayscalendar.android.app",
             "status": "FIRST_SENT",
             "first_sent_at": "2026-09-17T23:33:45.446147",
-            "followup_sent_at": null
+            "followup_sent_at": null,
+            "source": "google_play"
         },
         "support@couplesapp.io": {
             "app_name": "Couples",
             "package": "com.couplesapp.application",
             "status": "FIRST_SENT",
             "first_sent_at": "2026-09-17T23:33:45.446147",
-            "followup_sent_at": null
+            "followup_sent_at": null,
+            "source": "google_play"
         },
         "juanmadelboca.ch@gmail.com": {
             "app_name": "Shared Notes",
             "package": "com.kalantos.password.secure.notes",
             "status": "FIRST_SENT",
             "first_sent_at": "2026-09-17T23:33:45.446147",
-            "followup_sent_at": null
+            "followup_sent_at": null,
+            "source": "google_play"
         },
         "contact@togglyapp.com": {
             "app_name": "Couple&Family Planner",
             "package": "com.togglyapp",
             "status": "FIRST_SENT",
             "first_sent_at": "2026-09-17T23:33:45.446147",
-            "followup_sent_at": null
+            "followup_sent_at": null,
+            "source": "google_play"
         },
         "support@flashcards.gg": {
             "app_name": "Flashcards.gg",
             "package": "gg.flashcards",
             "status": "FIRST_SENT",
             "first_sent_at": "2026-09-17T23:33:45.446147",
-            "followup_sent_at": null
+            "followup_sent_at": null,
+            "source": "google_play"
         },
         "support@atlasvocabulary.com": {
             "app_name": "Vocabulary Builder by Atlas",
             "package": "com.sayan.atlasenglish",
             "status": "FIRST_SENT",
             "first_sent_at": "2026-09-17T23:33:45.446147",
-            "followup_sent_at": null
+            "followup_sent_at": null,
+            "source": "google_play"
         },
         "support@learnvocabulary.io": {
             "app_name": "Vocabulary Builder by Learning",
             "package": "io.learning.learn.vocabulary",
             "status": "FIRST_SENT",
             "first_sent_at": "2026-09-17T23:33:45.446147",
-            "followup_sent_at": null
+            "followup_sent_at": null,
+            "source": "google_play"
         },
         "nam.trankhanh.vn@gmail.com": {
             "app_name": "Vocadaily",
             "package": "com.davidtranwd.vocabulary",
             "status": "FIRST_SENT",
             "first_sent_at": "2026-09-17T23:33:45.446147",
-            "followup_sent_at": null
+            "followup_sent_at": null,
+            "source": "google_play"
         },
         "petr@vocabuo.com": {
             "app_name": "Vocabulary flashcards",
             "package": "world.petr.vokabeln",
             "status": "FIRST_SENT",
             "first_sent_at": "2026-09-17T23:33:45.446147",
-            "followup_sent_at": null
+            "followup_sent_at": null,
+            "source": "google_play"
         },
         "stephdevelopment@gmail.com": {
             "app_name": "Advanced English Words",
             "package": "com.element.vocabulary",
             "status": "FIRST_SENT",
             "first_sent_at": "2026-09-17T23:33:45.446147",
-            "followup_sent_at": null
+            "followup_sent_at": null,
+            "source": "google_play"
         },
         "helpdesk@ereflect.com": {
             "app_name": "Wordela",
             "package": "com.ereflect.wordela",
             "status": "FIRST_SENT",
             "first_sent_at": "2026-09-17T23:33:45.446147",
-            "followup_sent_at": null
+            "followup_sent_at": null,
+            "source": "google_play"
         },
         "mgp.dev.studio@gmail.com": {
             "app_name": "FeedFlow",
             "package": "com.prof18.feedflow",
             "status": "FIRST_SENT",
             "first_sent_at": "2026-09-17T23:33:45.446147",
-            "followup_sent_at": null
+            "followup_sent_at": null,
+            "source": "google_play"
         },
         "mthang12vp@gmail.com": {
             "app_name": "Secret Diary",
             "package": "com.journal.diary.diarywithlock.diaryjournal.secretdiary",
             "status": "FIRST_SENT",
             "first_sent_at": "2026-09-17T23:33:45.446147",
-            "followup_sent_at": null
+            "followup_sent_at": null,
+            "source": "google_play"
         },
         "support@timefinder.app": {
             "app_name": "TimeFinder",
             "package": "app.TimeFinder.TimeFinder",
             "status": "FIRST_SENT",
             "first_sent_at": "2026-09-17T23:33:45.446147",
-            "followup_sent_at": null
+            "followup_sent_at": null,
+            "source": "google_play"
         },
         "dayblocapp@gmail.com": {
             "app_name": "Time Blocking",
             "package": "com.daybloc.app",
             "status": "FIRST_SENT",
             "first_sent_at": "2026-09-17T23:33:45.446147",
-            "followup_sent_at": null
+            "followup_sent_at": null,
+            "source": "google_play"
         },
         "usket@icloud.com": {
             "app_name": "TimeBox Planner",
             "package": "com.usket.tig",
             "status": "FIRST_SENT",
             "first_sent_at": "2026-09-17T23:33:45.446147",
-            "followup_sent_at": null
+            "followup_sent_at": null,
+            "source": "google_play"
         },
         "jamisays@gmail.com": {
             "app_name": "Prayer Time App Blocker",
             "package": "com.born2die49.salatlock",
             "status": "FIRST_SENT",
             "first_sent_at": "2026-09-17T23:33:45.446147",
-            "followup_sent_at": null
+            "followup_sent_at": null,
+            "source": "google_play"
         },
         "info@kitapp.com": {
             "app_name": "E-commerce app",
             "package": "com.kitapp.ecommerce",
             "status": "FIRST_SENT",
             "first_sent_at": "2026-09-18T04:45:58.813926",
-            "followup_sent_at": null
+            "followup_sent_at": null,
+            "source": "google_play"
         },
         "admin@nownews.vip": {
             "app_name": "NOW News",
             "package": "com.cnm.now",
             "status": "FIRST_SENT",
             "first_sent_at": "2026-09-18T04:45:58.813926",
-            "followup_sent_at": null
+            "followup_sent_at": null,
+            "source": "google_play"
         },
         "appfeedback@scripps.com": {
             "app_name": "Q2 News",
             "package": "com.mobdub.channel.KTVQ",
             "status": "FIRST_SENT",
             "first_sent_at": "2026-09-18T04:45:58.813926",
-            "followup_sent_at": null
+            "followup_sent_at": null,
+            "source": "google_play"
         },
         "support@sronu.com": {
             "app_name": "Sronu",
             "package": "io.utopiagroup.sronu",
             "status": "FIRST_SENT",
             "first_sent_at": "2026-09-18T04:45:58.813926",
-            "followup_sent_at": null
+            "followup_sent_at": null,
+            "source": "google_play"
         },
         "evans@tuagye.com": {
             "app_name": "Tuagye",
             "package": "com.tuagye.app",
             "status": "FIRST_SENT",
             "first_sent_at": "2026-09-18T09:45:24.244647",
-            "followup_sent_at": null
+            "followup_sent_at": null,
+            "source": "google_play"
         },
         "support@shopxchange.com": {
             "app_name": "shopXchange",
             "package": "com.shopxchange.mobile",
             "status": "FIRST_SENT",
             "first_sent_at": "2026-09-18T09:45:24.244647",
-            "followup_sent_at": null
+            "followup_sent_at": null,
+            "source": "google_play"
         },
         "monstercabinstudio@gmail.com": {
             "app_name": "Daemonia",
             "package": "com.levelance.daemonia",
             "status": "FIRST_SENT",
             "first_sent_at": "2026-09-18T09:45:24.244647",
-            "followup_sent_at": null
+            "followup_sent_at": null,
+            "source": "google_play"
         },
         "ictiongames@gmail.com": {
             "app_name": "John Mambo",
             "package": "com.JohnMambo.RetroPixelAction",
             "status": "FIRST_SENT",
             "first_sent_at": "2026-09-18T09:45:24.244647",
-            "followup_sent_at": null
+            "followup_sent_at": null,
+            "source": "google_play"
         },
         "info@peralstudio.com": {
             "app_name": "Cookie Empire",
             "package": "com.alfanjorfresco.cookieempire",
             "status": "FIRST_SENT",
             "first_sent_at": "2026-09-18T09:45:24.244647",
-            "followup_sent_at": null
+            "followup_sent_at": null,
+            "source": "google_play"
         },
         "hello@blackboxdigital.net": {
             "app_name": "Keep Mining",
             "package": "com.bbdigital.mining.gold.idle.clicker",
-            "status": "PENDING",
-            "first_sent_at": null,
-            "followup_sent_at": null
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-18T10:03:04.166596",
+            "followup_sent_at": null,
+            "source": "google_play"
         },
         "support@madpixel.dev": {
             "app_name": "Idle Rapper",
             "package": "idle.clicker.rap.beat",
-            "status": "PENDING",
-            "first_sent_at": null,
-            "followup_sent_at": null
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-18T10:03:04.166596",
+            "followup_sent_at": null,
+            "source": "google_play"
         },
         "petrovolyk@gmail.com": {
             "app_name": "Business Clicker",
             "package": "com.tivaniaou.businessclickergame",
-            "status": "PENDING",
-            "first_sent_at": null,
-            "followup_sent_at": null
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-18T10:03:04.166596",
+            "followup_sent_at": null,
+            "source": "google_play"
         },
         "info@coinportfolio.app": {
             "app_name": "Coin Portfolio",
             "package": "app.coinportfolio.coinportfolio",
-            "status": "PENDING",
-            "first_sent_at": null,
-            "followup_sent_at": null
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-18T10:03:04.166596",
+            "followup_sent_at": null,
+            "source": "google_play"
         },
         "streamatico+crypto-alerts@gmail.com": {
             "app_name": "Crypto Alerts",
             "package": "com.streamatico.cryptoalert",
             "status": "PENDING",
             "first_sent_at": null,
-            "followup_sent_at": null
+            "followup_sent_at": null,
+            "source": "google_play"
         },
         "support@coindisco.com": {
             "app_name": "Coindisco",
             "package": "com.coindisco",
             "status": "PENDING",
             "first_sent_at": null,
-            "followup_sent_at": null
+            "followup_sent_at": null,
+            "source": "google_play"
         },
         "glgjingmarvel@gmail.com": {
             "app_name": "Pomodoro Timer Clock",
             "package": "com.glgjing.baymax",
             "status": "PENDING",
             "first_sent_at": null,
-            "followup_sent_at": null
+            "followup_sent_at": null,
+            "source": "google_play"
         },
         "info.materialuiux@gmail.com": {
             "app_name": "Pomodoro & Tasks & LockMode",
             "package": "app.focus.pomodoro",
             "status": "PENDING",
             "first_sent_at": null,
-            "followup_sent_at": null
+            "followup_sent_at": null,
+            "source": "google_play"
         },
         "pomodorobuddyapp@gmail.com": {
             "app_name": "Pomodoro",
             "package": "com.nemjava.pomodoroApp",
             "status": "PENDING",
             "first_sent_at": null,
-            "followup_sent_at": null
+            "followup_sent_at": null,
+            "source": "google_play"
         },
         "mercansoftware1@gmail.com": {
             "app_name": "Pomodoro Elite",
             "package": "com.mercansoftware.pomodoro_elite",
             "status": "PENDING",
             "first_sent_at": null,
-            "followup_sent_at": null
+            "followup_sent_at": null,
+            "source": "google_play"
         }
     },
     "scanned_apps": [
