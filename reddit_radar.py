@@ -20,34 +20,35 @@ os.environ["GLOG_minloglevel"] = "2"
 print = functools.partial(print, flush=True)
 
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
-REDDIT_USER_AGENT = "script:adswap-radar:v2.0 (by /u/Similar_Score2904)"
+REDDIT_USER_AGENT = "script:adswap-radar:v2.2 (by /u/Similar_Score2904)"
 
-# Subreddit ampliati per stealth e karma
 SUBREDDITS = [
     "androiddev", "gamedev", "IndieGaming", "AppBusiness", "SaaS", 
     "microsaas", "SideProject", "EntrepreneurRideAlong", "indiehackers",
     "growmybusiness", "Startup_Ideas", "playmygame", "IndieDev"
 ]
-MAX_ORE = 20  # scarta post più vecchi di così
+MAX_ORE = 24  
 
-PROMPT_ANALISI = """
-Agisci come un analista di mercato. Leggi questo post fresco di Reddit.
-Il nostro target: sviluppatori indie, creatori di app/giochi o founder SaaS che si lamentano di NON avere download, zero utenti, costi Ads troppo alti, o problemi di drop rate/marketing.
-Rispondi SOLO con "SI" se è un target perfetto in cerca di consigli sulla crescita, oppure "NO".
+# PROMPT BATCH: Cerca post dove possiamo essere genuinamente d'aiuto
+PROMPT_ANALISI_BATCH = """
+Agisci come un utente esperto di Reddit. Di seguito troverai una lista di post appena pubblicati in subreddit di sviluppo, SaaS e startup.
+Seleziona SOLO gli ID dei post dove è possibile dare un consiglio utile, un incoraggiamento genuino o rispondere a una domanda tecnica/di business.
+Ignora post di spam, meme o post che non richiedono risposta.
+Restituisci SOLO gli "ID" separati da virgola (es: 1wip5m7,1witl8z).
+Se NESSUN post è adatto, rispondi testualmente: NESSUNO.
+Non aggiungere alcuna spiegazione o testo extra.
 """
 
 PROMPT_GANCIO = """
-Sei uno sviluppatore indie veterano. Stai rispondendo a un collega su Reddit che ha problemi di crescita o marketing con il suo progetto.
-Scrivi un commento in inglese, breve e colloquiale.
+Sei uno sviluppatore e founder appassionato, stai navigando su Reddit.
+Scrivi un commento in inglese per rispondere a questo post.
+OBIETTIVO: Ottenere upvote (karma) essendo estremamente utile e genuino.
 
-REGOLE ANTI-SPAM (CRITICHE PER NON ESSERE BANNATO):
-1. ZERO VENDITA E NESSUN LINK: Non stai promuovendo nulla. Non usare MAI liste puntate o grassetti.
-2. VERO VALORE: Le prime frasi devono mostrare che hai LETTO il post. Dai un vero consiglio pratico, tecnico o di incoraggiamento basato esattamente sul suo problema.
-3. TONO UMANO E STANCO: Usa slang di Reddit (es. "man", "been there", "tbh", "imho", "honestly"). Sii informale e molto umano.
-4. IL "SOFT DROP" (Naturalezza estrema): Verso la fine, infila in modo iper-casuale un riferimento al fatto che per disperazione hai creato "AdSwap" (una rete gratuita di cross-promotion tra sviluppatori indie) per aggirare questo stesso problema. 
-   - Non dirgli MAI "Vai a provarlo" o "Controllalo".
-   - Usa frasi disinteressate tipo: "...ended up coding AdSwap just to trade banner space with other devs. Ads are just burning cash tbh." oppure "...maybe cross-promotion? I made a free network called AdSwap for this, might be worth looking into down the line."
-5. Sii BREVE: Massimo 3-4 frasi in totale.
+REGOLE ASSOLUTE:
+1. NESSUNA PROMOZIONE. Zero assoluto. Non menzionare MAI app, strumenti, cross-promotion, AdSwap o link.
+2. VERO VALORE: Dai un consiglio pratico, un insight o un forte incoraggiamento basato esattamente su ciò che ha scritto l'utente.
+3. TONO DA REDDITOR: Molto informale, umano. Usa slang colloquiale (es. "tbh", "imho", "makes sense", "been there", "man"). Non devi assolutamente sembrare un'AI aziendale. Niente liste puntate, niente introduzioni robotiche ("Here is some advice").
+4. BREVITÀ: 2-3 frasi massimo. Diretto al punto.
 """
 
 HEADERS = {"User-Agent": REDDIT_USER_AGENT}
@@ -69,12 +70,11 @@ def setup_db():
     conn.commit()
     return conn
 
-def generate_with_retry(client, system_prompt, post_content="", max_retries=3):
-    # Generazione randomica per variare ulteriormente il testo a parità di prompt
+def generate_with_retry(client, system_prompt, post_content="", max_retries=5):
     seed_variazione = random.randint(1, 99999)
     for attempt in range(max_retries):
         try:
-            testo = f"{system_prompt}\n\n[Seed variazione stile: {seed_variazione}]\n\nTESTO:\n{post_content}" if post_content else system_prompt
+            testo = f"{system_prompt}\n\n[Seed variazione: {seed_variazione}]\n\n{post_content}" if post_content else system_prompt
             chat = client.chats.create(
                 model='gemini-flash-lite-latest',
                 config=types.GenerateContentConfig(temperature=0.85)
@@ -83,10 +83,30 @@ def generate_with_retry(client, system_prompt, post_content="", max_retries=3):
             if response and response.text:
                 return response.text.strip()
         except Exception as e:
+            error_str = str(e)
+            
+            # 🛡️ BACKOFF DINAMICO ASSOLUTO
+            if "429" in error_str or "RESOURCE_EXHAUSTED" in error_str:
+                delay = 30.0 # Default
+                
+                # Cerca il valore numerico nell'errore (es: "retry in 21.17s" o "'retryDelay': '21s'")
+                match_s = re.search(r"retry in ([\d\.]+)s", error_str)
+                match_delay = re.search(r"'retryDelay':\s*'([\d\.]+)s'", error_str)
+                
+                if match_s:
+                    delay = float(match_s.group(1)) + 2.0
+                elif match_delay:
+                    delay = float(match_delay.group(1)) + 2.0
+                
+                print(f"    [!] Quota API superata! Mi iberno per {delay:.1f} secondi come richiesto da Google...")
+                time.sleep(delay)
+                continue # Riprova dopo la pausa
+            
             if attempt < max_retries - 1:
                 time.sleep(5)
                 continue
-            print(f"    [!] Gemini fallito dopo {max_retries} tentativi: {e}")
+            print(f"    [!] Gemini fallito definitivamente: {e}")
+            
     return "ERRORE"
 
 def fetch_subreddit_feed(sub, limit=15, max_retries=3):
@@ -97,8 +117,7 @@ def fetch_subreddit_feed(sub, limit=15, max_retries=3):
             if resp.status_code == 200:
                 return resp.text
             elif resp.status_code == 429:
-                wait = 20 * (attempt + 1)
-                time.sleep(wait)
+                time.sleep(20 * (attempt + 1))
                 continue
             else:
                 return None
@@ -118,10 +137,11 @@ def parse_feed(xml_text):
         link_el = entry.find("atom:link", ATOM_NS)
         updated_el = entry.find("atom:updated", ATOM_NS)
         content_el = entry.find("atom:content", ATOM_NS)
+        
         if entry_id_el is None or link_el is None:
             continue
+            
         post_id = entry_id_el.text or ""
-        
         clean_id = post_id
         if "comments/" in link_el.attrib.get("href", ""):
             clean_id = link_el.attrib.get("href", "").split("comments/")[1].split("/")[0]
@@ -133,6 +153,7 @@ def parse_feed(xml_text):
                 created_utc = dt.timestamp()
             except ValueError:
                 pass
+                
         posts.append({
             "id": clean_id,
             "titolo": title_el.text if title_el is not None else "",
@@ -144,7 +165,7 @@ def parse_feed(xml_text):
 
 def main():
     print("==================================================")
-    print("🚀 AVVIO REDDIT RADAR V2 (Stealth Mode)")
+    print("🚀 AVVIO REDDIT RADAR V2.2 (Batch Analysis & Backoff)")
     print("==================================================\n")
 
     if not GEMINI_API_KEY:
@@ -162,10 +183,12 @@ def main():
         print(f"[*] Estrazione da r/{sub}...")
         xml_text = fetch_subreddit_feed(sub)
         if not xml_text:
-            time.sleep(random.randint(5, 10))
+            time.sleep(random.randint(3, 7))
             continue
 
         posts = parse_feed(xml_text)
+        batch_da_analizzare = []
+
         for post in posts:
             post_id = post["id"]
             if not post_id: continue
@@ -173,36 +196,53 @@ def main():
             c.execute("SELECT id FROM scanned_posts WHERE id=?", (post_id,))
             if c.fetchone(): continue
             
-            c.execute("INSERT INTO scanned_posts (id) VALUES (?)", (post_id,))
-            conn.commit()
-
             created_utc = post["created_utc"]
             if not created_utc: continue
 
             ore_fa = (time.time() - created_utc) / 3600
             if ore_fa > MAX_ORE or ore_fa < 0: continue
 
-            contesto_troncato = f"TITOLO: {post['titolo']}\nTESTO: {post['testo'][:800]}"
-            analisi = generate_with_retry(client, PROMPT_ANALISI, contesto_troncato)
+            # Lo segniamo nel DB per non scansionarlo mai più
+            c.execute("INSERT INTO scanned_posts (id) VALUES (?)", (post_id,))
+            batch_da_analizzare.append(post)
+        
+        conn.commit()
 
-            if "SI" in analisi.upper():
-                time.sleep(random.randint(2, 5))
-                bozza = generate_with_retry(client, PROMPT_GANCIO, contesto_troncato)
+        if not batch_da_analizzare:
+            continue
 
-                if bozza == "ERRORE" or not bozza:
-                    print(f"    [!] Generazione bozza fallita per {post_id}. Salto.")
-                    continue
+        # COSTRUZIONE MEGA-TESTO: Inviamo tutti i post in un colpo solo
+        testo_batch = "POSTS DA ANALIZZARE:\n\n"
+        for p in batch_da_analizzare:
+            testo_batch += f"ID: {p['id']}\nTITOLO: {p['titolo']}\nTESTO: {p['testo'][:400]}\n---\n"
+        
+        # 1 Singola chiamata API per l'intero subreddit!
+        analisi_ids = generate_with_retry(client, PROMPT_ANALISI_BATCH, testo_batch)
 
-                c.execute("UPDATE scanned_posts SET bozza=?, status='PENDING' WHERE id=?", (bozza, post_id))
-                conn.commit()
+        if analisi_ids and "NESSUNO" not in analisi_ids.upper() and "ERRORE" not in analisi_ids:
+            target_selezionati = [x.strip() for x in analisi_ids.split(",") if x.strip()]
+            
+            for p in batch_da_analizzare:
+                # Generiamo la bozza SOLO per i post che Gemini ha selezionato
+                if any(t_id in p['id'] for t_id in target_selezionati):
+                    time.sleep(random.randint(2, 4))
+                    contesto_singolo = f"TITOLO: {p['titolo']}\nTESTO: {p['testo'][:800]}"
+                    bozza = generate_with_retry(client, PROMPT_GANCIO, contesto_singolo)
 
-                risultati.append(post)
-                print(f"    🎯 TARGET TROVATO E SALVATO IN CODA → {post['link']}")
+                    if bozza == "ERRORE" or not bozza:
+                        print(f"    [!] Generazione bozza fallita per {p['id']}.")
+                        continue
 
-        time.sleep(random.randint(8, 15))
+                    c.execute("UPDATE scanned_posts SET bozza=?, status='PENDING' WHERE id=?", (bozza, p['id']))
+                    conn.commit()
+
+                    risultati.append(p)
+                    print(f"    🎯 BERSAGLIO ACQUISITO E MASCHERATO → {p['link']}")
+
+        time.sleep(random.randint(5, 10))
 
     conn.close()
-    print(f"\n[*] Scansione completata. {len(risultati)} bersagli aggiunti in coda.\n")
+    print(f"\n[*] Scansione completata. {len(risultati)} esche piazzate.\n")
 
 if __name__ == "__main__":
     main()
