@@ -26,8 +26,8 @@ APP_PASSWORD = os.getenv("GMAIL_APP_PASSWORD")
 SENDER_NAME = "Matteo"
 
 DAYS_BEFORE_FOLLOWUP = 4
-MAX_CAPACITY = 50
-WARMUP_SCHEDULE = [5, 10, 15, 25, 35, 50]
+MAX_CAPACITY = 60
+WARMUP_SCHEDULE = [5, 10, 15, 25, 35, 50, 60]
 
 ADSWAP_KEYWORDS = [
     "finance", "health", "productivity", "social", "dating", 
@@ -50,7 +50,10 @@ ADSWAP_KEYWORDS = [
 def load_state():
     if os.path.exists(STATE_FILE):
         with open(STATE_FILE, "r", encoding="utf-8") as f:
-            return json.load(f)
+            state = json.load(f)
+            # Aggiunge retrocompatibilità per i nuovi array
+            if "scanned_developers" not in state: state["scanned_developers"] = []
+            return state
     return {
         "config": {
             "start_date": datetime.utcnow().strftime("%Y-%m-%d"),
@@ -58,7 +61,8 @@ def load_state():
             "sent_today": 0
         }, 
         "leads": {}, 
-        "scanned_apps": [], 
+        "scanned_apps": [],
+        "scanned_developers": [], # Tiene traccia degli ID sviluppatori per evitare di prenderne troppi dallo stesso
         "used_keywords": []
     }
 
@@ -97,28 +101,133 @@ def auto_import_existing_csv(state):
 def auto_scrape_new_leads(state, needed_amount):
     print(f"[*] Coda in esaurimento. Avvio scraping automatico per {needed_amount} nuovi dev...")
     added = 0
+    headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"}
+
+    # --- 1. PRODUCT HUNT SCRAPING (RSS + Crawler) ---
+    try:
+        print("    [*] Ricerca nuovi lanci su Product Hunt...")
+        res = requests.get("https://www.producthunt.com/feed", timeout=10, headers=headers)
+        items = re.findall(r'<item>.*?<title><!\[CDATA\[(.*?)\]\]></title>.*?<link>(.*?)</link>', res.text, re.DOTALL)
+        
+        for title, ph_link in items:
+            if added >= needed_amount: break
+            try:
+                ph_page = requests.get(ph_link, timeout=10, headers=headers)
+                
+                # Cerca i link di uscita di Product Hunt verso il sito del prodotto
+                out_links = set(re.findall(r'href="(https://www\.producthunt\.com/r/p/[^"]+)"', ph_page.text))
+                emails_found = set()
+                play_ids_found = set(re.findall(r'play\.google\.com/store/apps/details\?id=([a-zA-Z0-9._]+)', ph_page.text))
+                
+                # Seguiamo il link di uscita per arrivare al sito web del creatore
+                for out_link in out_links:
+                    try:
+                        site_page = requests.get(out_link, timeout=8, headers=headers)
+                        # Cerca bottoni 'mailto:'
+                        emails_found.update(re.findall(r'mailto:([a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,})', site_page.text))
+                        # Fallback: regex per email in chiaro sul sito
+                        raw_emails = re.findall(r'\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b', site_page.text)
+                        
+                        # Filtra false positive da template grafici
+                        for em in raw_emails:
+                            if not any(x in em.lower() for x in ['sentry', 'wix', 'example', '.png', '.jpg', 'domain', 'test']):
+                                emails_found.add(em)
+                                
+                        # Estrae ID del play store se presenti sul sito web
+                        play_ids_found.update(re.findall(r'play\.google\.com/store/apps/details\?id=([a-zA-Z0-9._]+)', site_page.text))
+                    except: pass
+                
+                # Salva Lead da Web/Email Diretta
+                for email in emails_found:
+                    if added >= needed_amount: break
+                    clean_email = email.lower().strip()
+                    if clean_email not in state["leads"]:
+                        clean_title = title.split(" - ")[0].strip()
+                        state["leads"][clean_email] = {
+                            "app_name": clean_title,
+                            "package": "product_hunt",
+                            "status": "PENDING",
+                            "first_sent_at": None,
+                            "followup_sent_at": None
+                        }
+                        added += 1
+                        print(f"       [+ PH Lead] {clean_title} -> {clean_email}")
+                        
+                # Salva Lead collegati al Play Store estratti dal sito
+                for app_id in play_ids_found:
+                    if added >= needed_amount: break
+                    if app_id in state["scanned_apps"]: continue
+                    state["scanned_apps"].append(app_id)
+                    
+                    try:
+                        details = play_scraper_app(app_id, lang='en', country='us')
+                        dev_email = details.get('developerEmail')
+                        dev_id = str(details.get('developerId', ''))
+                        
+                        if dev_id in state["scanned_developers"]: continue
+                        if dev_id: state["scanned_developers"].append(dev_id)
+                        
+                        if dev_email and "@" in dev_email: # Nessun limite downloads per PH, premiamo la novità
+                            clean_email = dev_email.strip().lower()
+                            if clean_email not in state["leads"]:
+                                clean_title = details.get('title', title).split(" - ")[0].strip()
+                                state["leads"][clean_email] = {
+                                    "app_name": clean_title,
+                                    "package": app_id,
+                                    "status": "PENDING",
+                                    "first_sent_at": None,
+                                    "followup_sent_at": None
+                                }
+                                added += 1
+                                print(f"       [+ PH->Store] {clean_title}")
+                    except: pass
+            except: pass
+    except Exception as e:
+        print(f"    [!] Errore modulo Product Hunt: {e}")
+
+    # --- 2. GOOGLE PLAY SCRAPING (Keyword + Cross-Scraping simili) ---
+    if added >= needed_amount:
+        save_state(state)
+        return
+
+    print("    [*] Ricerca su Google Play Store (Cross-Scraping)...")
     available_kws = [kw for kw in ADSWAP_KEYWORDS if kw not in state["used_keywords"]]
     if not available_kws:
         state["used_keywords"] = []
         available_kws = ADSWAP_KEYWORDS
 
-    headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"}
-    
     for kw in available_kws:
         if added >= needed_amount: break
         state["used_keywords"].append(kw)
+        
         try:
             url = f"https://play.google.com/store/search?q={kw}&c=apps"
             response = requests.get(url, headers=headers, timeout=10)
-            app_ids = list(dict.fromkeys(re.findall(r'href="/store/apps/details\?id=([a-zA-Z0-9._]+)"', response.text)))
+            root_app_ids = list(dict.fromkeys(re.findall(r'href="/store/apps/details\?id=([a-zA-Z0-9._]+)"', response.text)))
             
-            for app_id in app_ids:
-                if app_id in state["scanned_apps"]: continue
+            # Coda per esplorazione infinita
+            queue = root_app_ids[:15]
+            visited_in_session = set()
+            
+            while queue and added < needed_amount:
+                app_id = queue.pop(0)
+                if app_id in state["scanned_apps"] or app_id in visited_in_session:
+                    continue
+                    
                 state["scanned_apps"].append(app_id)
+                visited_in_session.add(app_id)
+                
                 try:
                     details = play_scraper_app(app_id, lang='en', country='us')
                     min_installs = details.get('minInstalls', 0)
                     email = details.get('developerEmail')
+                    dev_id = str(details.get('developerId', ''))
+                    
+                    # FILTRO CRUCIALE: Evita di contattare mille app dello stesso dev
+                    if dev_id in state["scanned_developers"]:
+                        continue
+                    if dev_id:
+                        state["scanned_developers"].append(dev_id)
                     
                     if 500 <= min_installs <= 25000 and email and "@" in email:
                         clean_email = email.strip().lower()
@@ -134,14 +243,26 @@ def auto_scrape_new_leads(state, needed_amount):
                                 "followup_sent_at": None
                             }
                             added += 1
-                            print(f"       [+] Trovato: {clean_title} ({min_installs} DL)")
+                            print(f"       [+ Store] {clean_title} ({min_installs} DL)")
                             save_state(state)
-                            if added >= needed_amount: break
-                except:
-                    pass
-                time.sleep(0.5)
+                            
+                    # CROSS-SCRAPING: Trova e inietta in coda le app simili a questa!
+                    try:
+                        app_page = requests.get(f"https://play.google.com/store/apps/details?id={app_id}", headers=headers, timeout=5)
+                        page_app_ids = re.findall(r'href="/store/apps/details\?id=([a-zA-Z0-9._]+)"', app_page.text)
+                        for related_id in dict.fromkeys(page_app_ids):
+                            if related_id not in state["scanned_apps"] and related_id not in visited_in_session:
+                                if len(queue) < 60: # Mantieni la coda sotto controllo per non impantanarsi
+                                    queue.append(related_id)
+                    except: pass
+                    
+                except: pass
+                time.sleep(0.4) # Pausa anti-ban
+                
         except Exception as e:
-            print(f"    [!] Errore ricerca: {e}")
+            print(f"    [!] Errore ricerca Play Store per '{kw}': {e}")
+            
+    save_state(state)
 
 def get_run_batch_size(state):
     now_utc = datetime.utcnow()
@@ -164,20 +285,13 @@ def get_run_batch_size(state):
         
     hours_left = max(1, 24 - now_utc.hour)
     
-    # Se mancano poche ore a mezzanotte, forza la chiusura della quota
     if hours_left <= 3:
         batch_size = remaining_today
         print(f"[!] Ultime ore del giorno. Recupero finale: {batch_size} email.")
     else:
-        # Calcolo dinamico: spalma in modo perfettamente bilanciato sulle ore rimanenti
         base_rate = remaining_today / hours_left
-        
-        # Aggiunge un tocco di casualità umana (es. se la base è 2, invia tra 2 e 4)
         batch_size = min(remaining_today, random.randint(int(base_rate), int(base_rate) + 2))
-        
-        # Garantisce che il cron non giri a vuoto se c'è ancora quota
         batch_size = max(1, batch_size) if remaining_today > 0 else 0
-        
         print(f"[*] Quota: {sent_today}/{total_daily_limit}. Ore a mezzanotte UTC: {hours_left}. Batch assegnato: {batch_size} email.")
         
     return batch_size
@@ -195,7 +309,7 @@ def get_email_templates(app_name):
     first_subject = f"Quick question regarding {app_name}"
     first_body = f"""Hi there,
 
-I came across {app_name} on Google Play while looking for standout indie projects—really great work on it.
+I came across {app_name} while looking for standout indie projects—really great work on it.
 
 As a fellow independent developer, I know firsthand that building the app is only half the battle. Affording the massive User Acquisition (UA) costs to get it noticed is the real hurdle, and competing with big studios on traditional networks is a losing game.
 
@@ -208,7 +322,7 @@ Zero fiat money required, zero financial risk. The absolute worst-case scenario 
 It takes just a few minutes to generate your SDK snippet. You can check out the dashboard here:
 👉 adswap.netlify.app
 
-Let’s stop paying for traffic and start exchanging it.
+Let's stop paying for traffic and start exchanging it.
 
 Best regards,
 
@@ -279,7 +393,6 @@ def main():
         save_state(state)
         return
 
-    # Inizializza IMAP una sola volta per le performance
     imap_client = None
     try:
         imap_client = imaplib.IMAP4_SSL(IMAP_SERVER)
