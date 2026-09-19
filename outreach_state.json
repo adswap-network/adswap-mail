@@ -2,7 +2,7 @@
     "config": {
         "start_date": "2026-09-12",
         "last_run_date": "2026-09-19",
-        "sent_today": 3
+        "sent_today": 5
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -1241,16 +1241,16 @@
             "app_name": "NEC Electrician Exam Test Prep",
             "package": "com.lumeontech.certifyiq",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-19T05:54:51.904999",
             "followup_sent_at": null
         },
         "contact@yesmaster.pro": {
             "app_name": "Accuplacer Practice Exam 2026",
             "package": "accuplacer.exam.premium",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-19T05:54:51.904999",
             "followup_sent_at": null
         },
         "subscribe@sltrib.com": {
