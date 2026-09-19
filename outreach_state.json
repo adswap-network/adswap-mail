@@ -2,7 +2,7 @@
     "config": {
         "start_date": "2026-09-12",
         "last_run_date": "2026-09-19",
-        "sent_today": 9
+        "sent_today": 15
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -208,17 +208,17 @@
         "smallquest.studio@gmail.com": {
             "app_name": "Habit Tracker & ToDo",
             "package": "com.junhwank.habitjar",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-15T13:29:38.327254",
-            "followup_sent_at": null,
+            "followup_sent_at": "2026-09-19T14:26:43.209061",
             "source": "google_play"
         },
         "info@naokiotsu.com": {
             "app_name": "Plan Calendar -Make a Schedule",
             "package": "app.web.thetabcal",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-15T13:29:38.327254",
-            "followup_sent_at": null,
+            "followup_sent_at": "2026-09-19T14:26:43.209061",
             "source": "google_play"
         },
         "service@readnews.live": {
@@ -1289,32 +1289,32 @@
             "app_name": "UrSpace",
             "package": "com.mhh.survivor",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-19T14:26:43.209061",
             "followup_sent_at": null
         },
         "contact@coffeespace.com": {
             "app_name": "CoffeeSpace",
             "package": "com.coffeespace.cofoundermatch",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-19T14:26:43.209061",
             "followup_sent_at": null
         },
         "info@prosperselfcare.com": {
             "app_name": "Prosper",
             "package": "uneo.prosper",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-19T14:26:43.209061",
             "followup_sent_at": null
         },
         "support@myinnercise.com": {
             "app_name": "NeuroGym\u00ae",
             "package": "com.myneurogym.innercise",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-19T14:26:43.209061",
             "followup_sent_at": null
         },
         "support@sprout-apps.com": {
