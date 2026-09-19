@@ -2,7 +2,7 @@
     "config": {
         "start_date": "2026-09-12",
         "last_run_date": "2026-09-19",
-        "sent_today": 5
+        "sent_today": 9
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -1257,32 +1257,32 @@
             "app_name": "The Salt Lake Tribune",
             "package": "com.saltlaketribune.android.prod",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-19T11:01:40.512446",
             "followup_sent_at": null
         },
         "help@groupspot.app": {
             "app_name": "GroupSpot",
             "package": "com.kohort.app",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-19T11:01:40.512446",
             "followup_sent_at": null
         },
         "support@fourthfrontier.com": {
             "app_name": "Frontier X",
             "package": "com.fourthfrontier.biostrip",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-19T11:01:40.512446",
             "followup_sent_at": null
         },
         "support@pison.com": {
             "app_name": "PISON",
             "package": "com.pison.ready",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-19T11:01:40.512446",
             "followup_sent_at": null
         },
         "apps@mhacc-usa.org": {
