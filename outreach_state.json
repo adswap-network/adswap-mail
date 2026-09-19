@@ -2,7 +2,7 @@
     "config": {
         "start_date": "2026-09-12",
         "last_run_date": "2026-09-19",
-        "sent_today": 30
+        "sent_today": 49
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -264,7 +264,7 @@
         "support@study.com": {
             "app_name": "Study.com",
             "package": "com.study.cx2",
-            "status": "FIRST_SENT",
+            "status": "REPLIED",
             "first_sent_at": "2026-09-15T15:41:16.131424",
             "followup_sent_at": null,
             "source": "google_play"
@@ -272,57 +272,57 @@
         "support@flowtaskapp.com": {
             "app_name": "PomoPals",
             "package": "com.keedev.flowtask",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-15T15:41:16.131424",
-            "followup_sent_at": null,
+            "followup_sent_at": "2026-09-19T23:07:59.317439",
             "source": "google_play"
         },
         "info@cryptounity.org": {
             "app_name": "CryptoUnity",
             "package": "com.org.cryptounity",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-15T18:11:59.689434",
-            "followup_sent_at": null,
+            "followup_sent_at": "2026-09-19T23:07:59.317439",
             "source": "google_play"
         },
         "hello@respira.app": {
             "app_name": "RESPIRA",
             "package": "com.bm.respira",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-15T18:11:59.689434",
-            "followup_sent_at": null,
+            "followup_sent_at": "2026-09-19T23:07:59.317439",
             "source": "google_play"
         },
         "contact-us@7mfitness.com": {
             "app_name": "Tai Chi Meditation & Breath",
             "package": "net.workoutinc.tai_chi_meditation",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-15T18:11:59.689434",
-            "followup_sent_at": null,
+            "followup_sent_at": "2026-09-19T23:07:59.317439",
             "source": "google_play"
         },
         "apps@univerge.blue": {
             "app_name": "UNIVERGE BLUE\u2122 MEET",
             "package": "com.necam.mobilemeetings",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-15T19:35:56.221439",
-            "followup_sent_at": null,
+            "followup_sent_at": "2026-09-19T23:07:59.317439",
             "source": "google_play"
         },
         "ancientsflip@gmail.com": {
             "app_name": "Ancient Meet",
             "package": "com.ancient.meet",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-15T19:35:56.221439",
-            "followup_sent_at": null,
+            "followup_sent_at": "2026-09-19T23:07:59.317439",
             "source": "google_play"
         },
         "tech@meetlive.my": {
             "app_name": "Meet Live",
             "package": "com.meetlive.my",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-15T19:35:56.221439",
-            "followup_sent_at": null,
+            "followup_sent_at": "2026-09-19T23:07:59.317439",
             "source": "google_play"
         },
         "support@meetoffscreen.com": {
@@ -1401,96 +1401,96 @@
             "app_name": "Hybrid Clash",
             "package": "com.KhaiLabs.HybridClash",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-19T23:07:59.317439",
             "followup_sent_at": null
         },
         "adamthemagey@gmail.com": {
             "app_name": "No Way Home",
             "package": "studiowolfire.wolfire.nowayhome",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-19T23:07:59.317439",
             "followup_sent_at": null
         },
         "feedback@zggame.net": {
             "app_name": "Skill Legends Royale",
             "package": "com.zggame.xuanji.google",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-19T23:07:59.317439",
             "followup_sent_at": null
         },
         "support@countinteractive.com": {
             "app_name": "Generals of Legends",
             "package": "com.generalsoflegends.www",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-19T23:07:59.317439",
             "followup_sent_at": null
         },
         "indie@xindong.com": {
             "app_name": "Hero's Adventure",
             "package": "com.xd.dxlzz.global.gp",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-19T23:07:59.317439",
             "followup_sent_at": null
         },
         "elvisbury1@gmail.com": {
             "app_name": "Gears Tower Defense",
             "package": "com.defense.tower.gears.merge",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-19T23:07:59.317439",
             "followup_sent_at": null
         },
         "2885406714@qq.com": {
             "app_name": "Lord And Maiden",
             "package": "com.fyf.newslg",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-19T23:07:59.317439",
             "followup_sent_at": null
         },
         "social@shibamaru.jp": {
             "app_name": "Shiba Wars 2",
             "package": "com.shibamaru.shibawars",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-19T23:07:59.317439",
             "followup_sent_at": null
         },
         "fxwarzone@gmail.com": {
             "app_name": "Magic Cat",
             "package": "com.uone.cat",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-19T23:07:59.317439",
             "followup_sent_at": null
         },
         "support@oykgames.com": {
             "app_name": "Fractal Combat X (Premium)",
             "package": "com.oyatsukai.fractalcombatxpremium",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-19T23:07:59.317439",
             "followup_sent_at": null
         },
         "support@thqnordicmobile.com": {
             "app_name": "1942 Pacific Front Premium",
             "package": "com.hg.pacificfront",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-19T23:07:59.317439",
             "followup_sent_at": null
         },
         "wirraways@gmail.com": {
             "app_name": "Red Fire",
             "package": "com.WirrawaySoftware.RedFire",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-19T23:07:59.317439",
             "followup_sent_at": null
         },
         "tobias@paragonpioneers.com": {
