@@ -2,7 +2,7 @@
     "config": {
         "start_date": "2026-09-12",
         "last_run_date": "2026-09-19",
-        "sent_today": 15
+        "sent_today": 21
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -224,17 +224,17 @@
         "service@readnews.live": {
             "app_name": "Local News",
             "package": "local.news.app",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-15T13:29:38.327254",
-            "followup_sent_at": null,
+            "followup_sent_at": "2026-09-19T18:02:30.789107",
             "source": "google_play"
         },
         "androidappfeedback@newson.us": {
             "app_name": "NewsON",
             "package": "com.newson.vinsonandroidtv",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-15T13:29:38.327254",
-            "followup_sent_at": null,
+            "followup_sent_at": "2026-09-19T18:02:30.789107",
             "source": "google_play"
         },
         "support@trendrad.com": {
@@ -1321,32 +1321,32 @@
             "app_name": "Baby Tracker by Sprout",
             "package": "com.mas.apps.baby",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-19T18:02:30.789107",
             "followup_sent_at": null
         },
         "support@talli.me": {
             "app_name": "Talli Baby",
             "package": "com.mybabylogger.babylogger",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-19T18:02:30.789107",
             "followup_sent_at": null
         },
         "support@soundable.health": {
             "app_name": "proudP",
             "package": "com.soundable.proudp",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-19T18:02:30.789107",
             "followup_sent_at": null
         },
         "support@snugsafety.com": {
             "app_name": "Snug Safety",
             "package": "snugsafety.com.snugsafety",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-19T18:02:30.789107",
             "followup_sent_at": null
         },
         "support@kalda.co": {
