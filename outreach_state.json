@@ -2,7 +2,7 @@
     "config": {
         "start_date": "2026-09-12",
         "last_run_date": "2026-09-20",
-        "sent_today": 17
+        "sent_today": 25
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -368,25 +368,25 @@
         "bobiforge@gmail.com": {
             "app_name": "Pomodoro Timer",
             "package": "com.bobiforge.bobiforge_pomodoro",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-15T19:35:56.221439",
-            "followup_sent_at": null,
+            "followup_sent_at": "2026-09-20T19:27:41.369467",
             "source": "google_play"
         },
         "contact@focus-now.app": {
             "app_name": "Focus Now",
             "package": "com.ferdinandobermeier.focusmate",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-15T19:35:56.221439",
-            "followup_sent_at": null,
+            "followup_sent_at": "2026-09-20T19:27:41.369467",
             "source": "google_play"
         },
         "wesley@zetabitapps.com": {
             "app_name": "Pomodoro Timer",
             "package": "com.zetabitapps.pomodoro",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-15T19:35:56.221439",
-            "followup_sent_at": null,
+            "followup_sent_at": "2026-09-20T19:27:41.369467",
             "source": "google_play"
         },
         "silcongeni@gmail.com": {
@@ -1593,40 +1593,40 @@
             "app_name": "Couple Games",
             "package": "com.soyandmochi",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-20T19:27:41.369467",
             "followup_sent_at": null
         },
         "jwynne@smarteditionmedia.com": {
             "app_name": "SE ATI TEAS & HESI Prep 2025",
             "package": "com.smarteditionacademy.app.release",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-20T19:27:41.369467",
             "followup_sent_at": null
         },
         "support@allo.finance": {
             "app_name": "MoodWallet",
             "package": "co.jomolabs.payday",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-20T19:27:41.369467",
             "followup_sent_at": null
         },
         "ccc_mychart@balladhealth.org": {
             "app_name": "Ballad Health",
             "package": "com.ballad.bha",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-20T19:27:41.369467",
             "followup_sent_at": null
         },
         "info@farmgirlsfancyfrills.com": {
             "app_name": "Farm Girls Fancy Frills",
             "package": "co.app.id_TGy188i9Ie",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-20T19:27:41.369467",
             "followup_sent_at": null
         },
         "help@girlology.com": {
