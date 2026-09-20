@@ -2,7 +2,7 @@
     "config": {
         "start_date": "2026-09-12",
         "last_run_date": "2026-09-20",
-        "sent_today": 7
+        "sent_today": 11
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -344,9 +344,9 @@
         "support@ezead.com": {
             "app_name": "EzeAd",
             "package": "com.ezead.app",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-15T19:35:56.221439",
-            "followup_sent_at": null,
+            "followup_sent_at": "2026-09-20T12:24:03.694318",
             "source": "google_play"
         },
         "arcplayer.feedback@gmail.com": {
@@ -1537,24 +1537,24 @@
             "app_name": "Giftdemy",
             "package": "com.giftdemy.app",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-20T12:24:03.694318",
             "followup_sent_at": null
         },
         "mobilesupport@gannett.com": {
             "app_name": "Ellwood City Ledger",
             "package": "com.ghm.ellwoodcityledger",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-20T12:24:03.694318",
             "followup_sent_at": null
         },
         "hello@roo.vet": {
             "app_name": "Roo Veterinary Relief & Hiring",
             "package": "com.roomobile.prod",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-20T12:24:03.694318",
             "followup_sent_at": null
         },
         "mobile@adtran.com": {
