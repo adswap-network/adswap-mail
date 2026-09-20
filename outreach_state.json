@@ -2,7 +2,7 @@
     "config": {
         "start_date": "2026-09-12",
         "last_run_date": "2026-09-20",
-        "sent_today": 11
+        "sent_today": 17
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -352,17 +352,17 @@
         "arcplayer.feedback@gmail.com": {
             "app_name": "Music Player",
             "package": "com.musicplayer.arcmusic",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-15T19:35:56.221439",
-            "followup_sent_at": null,
+            "followup_sent_at": "2026-09-20T16:49:19.122374",
             "source": "google_play"
         },
         "indieappslab@gmail.com": {
             "app_name": "Pomodoro \u2014 Pomodoro Timer",
             "package": "io.github.indieappslab.pomodoro",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-15T19:35:56.221439",
-            "followup_sent_at": null,
+            "followup_sent_at": "2026-09-20T16:49:19.122374",
             "source": "google_play"
         },
         "bobiforge@gmail.com": {
@@ -1561,32 +1561,32 @@
             "app_name": "Intellifi by Adtran\u00ae",
             "package": "com.adtran.intellifi",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-20T16:49:19.122374",
             "followup_sent_at": null
         },
         "contact@halter.co.nz": {
             "app_name": "Halter",
             "package": "io.halter.mobile",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-20T16:49:19.122374",
             "followup_sent_at": null
         },
         "info@themoneytool.com": {
             "app_name": "MoneyTool",
             "package": "com.themoneytool.app",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-20T16:49:19.122374",
             "followup_sent_at": null
         },
         "cevallosgiovanny7@gmail.com": {
             "app_name": "Discover Me",
             "package": "com.fongchon.tenninerec",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-20T16:49:19.122374",
             "followup_sent_at": null
         },
         "hello@lovelane.co": {
