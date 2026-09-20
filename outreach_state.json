@@ -1,8 +1,8 @@
 {
     "config": {
         "start_date": "2026-09-12",
-        "last_run_date": "2026-09-19",
-        "sent_today": 49
+        "last_run_date": "2026-09-20",
+        "sent_today": 4
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -328,9 +328,9 @@
         "support@meetoffscreen.com": {
             "app_name": "Meet OffScreen",
             "package": "com.meetoffscreen",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-15T19:35:56.221439",
-            "followup_sent_at": null,
+            "followup_sent_at": "2026-09-20T01:11:19.535917",
             "source": "google_play"
         },
         "hello@flipgoo.com": {
@@ -1497,24 +1497,24 @@
             "app_name": "Paragon Pioneers 2 Demo",
             "package": "com.GniGames.ParagonPioneers2Demo",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-20T01:11:19.535917",
             "followup_sent_at": null
         },
         "antonskv@gmail.com": {
             "app_name": "Galaxy Genome [Space Sim]",
             "package": "com.skvgames.GalaxyGenome",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-20T01:11:19.535917",
             "followup_sent_at": null
         },
         "gpsupport@appybear.com": {
             "app_name": "SENTINEL 519",
             "package": "com.AppyBearStudio.SENTINEL519",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-20T01:11:19.535917",
             "followup_sent_at": null
         }
     },
