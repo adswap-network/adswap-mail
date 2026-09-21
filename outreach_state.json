@@ -2,7 +2,7 @@
     "config": {
         "start_date": "2026-09-12",
         "last_run_date": "2026-09-21",
-        "sent_today": 4
+        "sent_today": 6
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -480,9 +480,9 @@
         "admin@kanbana.com": {
             "app_name": "Kanbana",
             "package": "dk.AgileBrains.Kanbana",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-16T21:22:03.519340",
-            "followup_sent_at": null,
+            "followup_sent_at": "2026-09-21T06:23:06.725095",
             "source": "google_play"
         },
         "stoneclark28@gmail.com": {
@@ -1777,8 +1777,8 @@
             "app_name": "RPG Diary",
             "package": "com.mysterylog.rpglog",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-21T06:23:06.725095",
             "followup_sent_at": null
         },
         "hello@varannanvecka.app": {
