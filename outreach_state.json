@@ -2,7 +2,7 @@
     "config": {
         "start_date": "2026-09-12",
         "last_run_date": "2026-09-21",
-        "sent_today": 11
+        "sent_today": 20
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -504,25 +504,25 @@
         "team@kanbanchi.com": {
             "app_name": "Kanbanchi",
             "package": "com.kanbanchi.app.twa",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-16T21:22:03.519340",
-            "followup_sent_at": null,
+            "followup_sent_at": "2026-09-21T19:31:04.913397",
             "source": "google_play"
         },
         "support@syedshahbazhussain.com": {
             "app_name": "HydroFast",
             "package": "com.shahbaz.hydrofastfastinghydrationtracker",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-16T21:22:03.519340",
-            "followup_sent_at": null,
+            "followup_sent_at": "2026-09-21T19:31:04.913397",
             "source": "google_play"
         },
         "xiaoruo1224@gmail.com": {
             "app_name": "Water Tracker",
             "package": "com.xiaoruo.watertracker",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-16T21:22:03.519340",
-            "followup_sent_at": null,
+            "followup_sent_at": "2026-09-21T19:31:04.913397",
             "source": "google_play"
         },
         "system@techkhedut.com": {
@@ -1809,48 +1809,48 @@
             "app_name": "Thermomix Cookidoo App",
             "package": "com.vorwerk.cookidoo.us",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-21T19:31:04.913397",
             "followup_sent_at": null
         },
         "team@tryletthemgo.com": {
             "app_name": "No Contact",
             "package": "com.honeywolf.letthemgo",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-21T19:31:04.913397",
             "followup_sent_at": null
         },
         "orders@littlewordsproject.com": {
             "app_name": "Little Words Project",
             "package": "co.tapcart.app.id_Mv9y7dtOJG",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-21T19:31:04.913397",
             "followup_sent_at": null
         },
         "info@hamperapp.com": {
             "app_name": "Hamperapp",
             "package": "com.hamperapp.hamperapp",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-21T19:31:04.913397",
             "followup_sent_at": null
         },
         "support@incentivio.com": {
             "app_name": "Barrel House",
             "package": "com.ce.android.brand.barrelhouse",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-21T19:31:04.913397",
             "followup_sent_at": null
         },
         "admin@kronickel.com": {
             "app_name": "Family Chore Manager",
             "package": "com.kronickel.choreman.app",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-21T19:31:04.913397",
             "followup_sent_at": null
         },
         "support@playcus.com": {
