@@ -2,7 +2,7 @@
     "config": {
         "start_date": "2026-09-12",
         "last_run_date": "2026-09-21",
-        "sent_today": 6
+        "sent_today": 11
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -488,17 +488,17 @@
         "stoneclark28@gmail.com": {
             "app_name": "KanbanFlow",
             "package": "com.kanbanflow.offline",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-16T21:22:03.519340",
-            "followup_sent_at": null,
+            "followup_sent_at": "2026-09-21T14:11:17.950172",
             "source": "google_play"
         },
         "buenhijogames@gmail.com": {
             "app_name": "Libre Kanban",
             "package": "com.buenhijogames.mikanban",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-16T21:22:03.519340",
-            "followup_sent_at": null,
+            "followup_sent_at": "2026-09-21T14:11:17.950172",
             "source": "google_play"
         },
         "team@kanbanchi.com": {
@@ -1785,24 +1785,24 @@
             "app_name": "Co-parenting",
             "package": "app.varannanvecka",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-21T14:11:17.950172",
             "followup_sent_at": null
         },
         "info@miltrade.com": {
             "app_name": "Miltrade -Military Marketplace",
             "package": "com.miltrade.app",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-21T14:11:17.950172",
             "followup_sent_at": null
         },
         "iana@ianacare.com": {
             "app_name": "iana\u2122",
             "package": "com.ianacare.ianacare",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-21T14:11:17.950172",
             "followup_sent_at": null
         },
         "cookidoo-android@tmecosys.net": {
