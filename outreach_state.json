@@ -1,8 +1,8 @@
 {
     "config": {
         "start_date": "2026-09-12",
-        "last_run_date": "2026-09-20",
-        "sent_today": 50
+        "last_run_date": "2026-09-21",
+        "sent_today": 4
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -472,9 +472,9 @@
         "dev_vlad@outlook.com": {
             "app_name": "Kanban Boards",
             "package": "com.sdr_labs.KanbanBoards",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-16T21:22:03.519340",
-            "followup_sent_at": null,
+            "followup_sent_at": "2026-09-21T01:07:29.455206",
             "source": "google_play"
         },
         "admin@kanbana.com": {
@@ -1753,24 +1753,24 @@
             "app_name": "The RockED App",
             "package": "us.rocked.rockedapp",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-21T01:07:29.455206",
             "followup_sent_at": null
         },
         "developers@buildingtools.co": {
             "app_name": "Building Tools",
             "package": "co.tools",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-21T01:07:29.455206",
             "followup_sent_at": null
         },
         "contactus+radiome@kalagato.co": {
             "app_name": "Radio Me",
             "package": "com.radiome.radio_me",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-21T01:07:29.455206",
             "followup_sent_at": null
         },
         "yokko.dev@gmail.com": {
