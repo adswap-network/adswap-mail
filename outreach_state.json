@@ -2,7 +2,7 @@
     "config": {
         "start_date": "2026-09-12",
         "last_run_date": "2026-09-22",
-        "sent_today": 12
+        "sent_today": 19
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -568,17 +568,17 @@
         "premiumqualityapps.com@gmail.com": {
             "app_name": "Home Workout",
             "package": "com.premium.qualityhealth",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-16T21:22:03.519340",
-            "followup_sent_at": null,
+            "followup_sent_at": "2026-09-22T18:56:03.284623",
             "source": "google_play"
         },
         "projects@appthena.io": {
             "app_name": "Vanish",
             "package": "appthena.io.vanish",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-16T21:22:03.519340",
-            "followup_sent_at": null,
+            "followup_sent_at": "2026-09-22T18:56:03.284623",
             "source": "google_play"
         },
         "nymmate@gmail.com": {
@@ -1913,40 +1913,40 @@
             "app_name": "ISOLAND",
             "package": "com.cottongame.isoland0",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-22T18:56:03.284623",
             "followup_sent_at": null
         },
         "info@gamebra.in": {
             "app_name": "hocus 2",
             "package": "com.gamebrain.hocus2",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-22T18:56:03.284623",
             "followup_sent_at": null
         },
         "hi@triomatica.games": {
             "app_name": "Boxville 2",
             "package": "com.TriomaticaGames.Boxville2",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-22T18:56:03.284623",
             "followup_sent_at": null
         },
         "info@warmkitten.com": {
             "app_name": "Justin Wack's Big Time Hack",
             "package": "com.WarmKitten.JustinWackandtheBigTimeHack",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-22T18:56:03.284623",
             "followup_sent_at": null
         },
         "whitewindentertainment@gmail.com": {
             "app_name": "[365fun] Bullet Hell",
             "package": "com.whitewind.bullethell",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-22T18:56:03.284623",
             "followup_sent_at": null
         },
         "support@voodoodetective.com": {
