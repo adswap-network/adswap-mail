@@ -2,7 +2,7 @@
     "config": {
         "start_date": "2026-09-12",
         "last_run_date": "2026-09-22",
-        "sent_today": 7
+        "sent_today": 12
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -552,17 +552,17 @@
         "kjm.application@gmail.com": {
             "app_name": "Simple Step Counter",
             "package": "com.kjm.stepcounter",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-16T21:22:03.519340",
-            "followup_sent_at": null,
+            "followup_sent_at": "2026-09-22T14:56:06.488551",
             "source": "google_play"
         },
         "support@fitattack.com": {
             "app_name": "Home Workout",
             "package": "home.boxing.workouts",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-16T21:22:03.519340",
-            "followup_sent_at": null,
+            "followup_sent_at": "2026-09-22T14:56:06.488551",
             "source": "google_play"
         },
         "premiumqualityapps.com@gmail.com": {
@@ -1889,24 +1889,24 @@
             "app_name": "Auto Pirates",
             "package": "com.featherweightgames.piratecards",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-22T14:56:06.488551",
             "followup_sent_at": null
         },
         "mati.krawczyk1@gmail.com": {
             "app_name": "Guardians of the Kingdom TD",
             "package": "com.MattArtevate.FirstTD",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-22T14:56:06.488551",
             "followup_sent_at": null
         },
         "hi@tortugateam.com": {
             "app_name": "Braveland Pirate",
             "package": "com.tortugateam.bravelandpirate",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-22T14:56:06.488551",
             "followup_sent_at": null
         },
         "contact@cottongame.com": {
