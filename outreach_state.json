@@ -1,8 +1,8 @@
 {
     "config": {
         "start_date": "2026-09-12",
-        "last_run_date": "2026-09-21",
-        "sent_today": 20
+        "last_run_date": "2026-09-22",
+        "sent_today": 2
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -528,9 +528,9 @@
         "system@techkhedut.com": {
             "app_name": "Drink Water Tracker & Reminder",
             "package": "com.h2glow.drinkwater.reminder.daily.tracker",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-16T21:22:03.519340",
-            "followup_sent_at": null,
+            "followup_sent_at": "2026-09-22T04:58:41.490874",
             "source": "google_play"
         },
         "info@oriax.io": {
@@ -1857,8 +1857,8 @@
             "app_name": "Tabby",
             "package": "com.playcus.BuddyAi.selfcarepet",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-22T04:58:41.490874",
             "followup_sent_at": null
         },
         "tech@hustleup-app.com": {
