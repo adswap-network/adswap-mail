@@ -2,7 +2,7 @@
     "config": {
         "start_date": "2026-09-12",
         "last_run_date": "2026-09-23",
-        "sent_today": 6
+        "sent_today": 9
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -696,9 +696,9 @@
         "waldigames79@gmail.com": {
             "app_name": "100 Questions",
             "package": "com.Lumicore.hundredquestions",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-17T11:45:05.126288",
-            "followup_sent_at": null,
+            "followup_sent_at": "2026-09-23T11:39:44.862594",
             "source": "google_play"
         },
         "greenseedapps@gmail.com": {
@@ -2137,16 +2137,16 @@
             "app_name": "Yummy Town",
             "package": "com.yummytown.cookingfrenzy",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-23T11:39:44.862594",
             "followup_sent_at": null
         },
         "breakinsoft.com@gmail.com": {
             "app_name": "Study With Me",
             "package": "com.bis.studywithme.pomodoro",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-23T11:39:44.862594",
             "followup_sent_at": null
         },
         "brainfit@wbhi.org": {
