@@ -2,7 +2,7 @@
     "config": {
         "start_date": "2026-09-12",
         "last_run_date": "2026-09-23",
-        "sent_today": 3
+        "sent_today": 6
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -688,9 +688,9 @@
         "knowmebetterapp@gmail.com": {
             "app_name": "KnowMeBetter",
             "package": "com.jadegoescoding.knowmebetter",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-17T06:09:49.989900",
-            "followup_sent_at": null,
+            "followup_sent_at": "2026-09-23T05:59:57.271572",
             "source": "google_play"
         },
         "waldigames79@gmail.com": {
@@ -2121,16 +2121,16 @@
             "app_name": "Astral Survivor",
             "package": "com.firedogstudio.astralsurvivor",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-23T05:59:57.271572",
             "followup_sent_at": null
         },
         "hello@nijigames.com": {
             "app_name": "Chef Story",
             "package": "com.nijigames.chefstorys",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-23T05:59:57.271572",
             "followup_sent_at": null
         },
         "gloryelitegame@gmail.com": {
