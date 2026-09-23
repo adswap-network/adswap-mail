@@ -1,8 +1,8 @@
 {
     "config": {
         "start_date": "2026-09-12",
-        "last_run_date": "2026-09-22",
-        "sent_today": 50
+        "last_run_date": "2026-09-23",
+        "sent_today": 3
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -680,9 +680,9 @@
         "support@fundeasy.in": {
             "app_name": "Would You Rather? Icebreaker",
             "package": "com.happyverse.wouldyourather",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-17T06:09:49.989900",
-            "followup_sent_at": null,
+            "followup_sent_at": "2026-09-23T00:36:32.332427",
             "source": "google_play"
         },
         "knowmebetterapp@gmail.com": {
@@ -2105,16 +2105,16 @@
             "app_name": "Pixel Knights VIP",
             "package": "com.gdx.dh.game.asmg",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-23T00:36:32.332427",
             "followup_sent_at": null
         },
         "info@primegames.biz": {
             "app_name": "Dust and Salt",
             "package": "com.PrimeGames.DustAndSaltGamebook",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-23T00:36:32.332427",
             "followup_sent_at": null
         },
         "webmaster@firedogstudio.com": {
