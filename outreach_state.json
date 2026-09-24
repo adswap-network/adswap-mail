@@ -2,7 +2,7 @@
     "config": {
         "start_date": "2026-09-12",
         "last_run_date": "2026-09-24",
-        "sent_today": 15
+        "sent_today": 23
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -792,15 +792,15 @@
         "cubbilyhelpcenter@gmail.com": {
             "app_name": "Cubbily Shared Family Calendar",
             "package": "com.dbsg.cubbily",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-17T23:33:45.446147",
-            "followup_sent_at": null,
+            "followup_sent_at": "2026-09-24T19:11:36.301028",
             "source": "google_play"
         },
         "support@ourdayscalendar.com": {
             "app_name": "Our Days Co-Parenting Calendar",
             "package": "com.ourdayscalendar.android.app",
-            "status": "FIRST_SENT",
+            "status": "REPLIED",
             "first_sent_at": "2026-09-17T23:33:45.446147",
             "followup_sent_at": null,
             "source": "google_play"
@@ -808,9 +808,9 @@
         "support@couplesapp.io": {
             "app_name": "Couples",
             "package": "com.couplesapp.application",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-17T23:33:45.446147",
-            "followup_sent_at": null,
+            "followup_sent_at": "2026-09-24T19:11:36.301028",
             "source": "google_play"
         },
         "juanmadelboca.ch@gmail.com": {
@@ -2313,37 +2313,165 @@
             "app_name": "Fay Nutrition Dietitians",
             "package": "com.faynutrition.android",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-24T19:11:36.301028",
             "followup_sent_at": null
         },
         "support@hava.co": {
             "app_name": "Hava",
             "package": "com.hava.android",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-24T19:11:36.301028",
             "followup_sent_at": null
         },
         "info@hexisapp.com": {
             "app_name": "Hexis",
             "package": "live.hexis.app",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-24T19:11:36.301028",
             "followup_sent_at": null
         },
         "info@meruhealth.com": {
             "app_name": "Meru Health",
             "package": "com.meruhealth.app",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-24T19:11:36.301028",
             "followup_sent_at": null
         },
         "firstvideocn@gmail.com": {
             "app_name": "Binaural Beats",
             "package": "com.yiqi.binaural.beats",
+            "source": "google_play",
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-24T19:11:36.301028",
+            "followup_sent_at": null
+        },
+        "stranger2tk@gmail.com": {
+            "app_name": "Anonymous Chat no Login",
+            "package": "com.nologin.anonymouschat",
+            "source": "google_play",
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-24T19:11:36.301028",
+            "followup_sent_at": null
+        },
+        "einar@icebreakerapp.is": {
+            "app_name": "Icebreaker",
+            "package": "com.thetouristtrapp.icebreaker",
+            "source": "google_play",
+            "status": "PENDING",
+            "first_sent_at": null,
+            "followup_sent_at": null
+        },
+        "techsupport@ascentfunding.com": {
+            "app_name": "AscentConnect",
+            "package": "com.ascentfundingmobile",
+            "source": "google_play",
+            "status": "PENDING",
+            "first_sent_at": null,
+            "followup_sent_at": null
+        },
+        "customerservice@snarkytea.com": {
+            "app_name": "Snarky Tea",
+            "package": "co.tapcart.app.id_buiBMGWcVc",
+            "source": "google_play",
+            "status": "PENDING",
+            "first_sent_at": null,
+            "followup_sent_at": null
+        },
+        "m.advisor@edelmanfinancialengines.com": {
+            "app_name": "EFE",
+            "package": "com.efe.user",
+            "source": "google_play",
+            "status": "PENDING",
+            "first_sent_at": null,
+            "followup_sent_at": null
+        },
+        "help@vestwell.com": {
+            "app_name": "Vestwell",
+            "package": "com.vestwell.app",
+            "source": "google_play",
+            "status": "PENDING",
+            "first_sent_at": null,
+            "followup_sent_at": null
+        },
+        "clientsupport@turnbulllawgroup.com": {
+            "app_name": "Turnbull Law Group",
+            "package": "com.turnbulldashboard",
+            "source": "google_play",
+            "status": "PENDING",
+            "first_sent_at": null,
+            "followup_sent_at": null
+        },
+        "hello@pitch15.solutions": {
+            "app_name": "My Tenth Step",
+            "package": "com.pitch_15.my_tenth_step",
+            "source": "google_play",
+            "status": "PENDING",
+            "first_sent_at": null,
+            "followup_sent_at": null
+        },
+        "support@realbricks.com": {
+            "app_name": "Realbricks",
+            "package": "com.realbricks",
+            "source": "google_play",
+            "status": "PENDING",
+            "first_sent_at": null,
+            "followup_sent_at": null
+        },
+        "orders@jamiekay.co.nz": {
+            "app_name": "Jamie Kay USA",
+            "package": "co.tapcart.app.id_KCI9elLqNV",
+            "source": "google_play",
+            "status": "PENDING",
+            "first_sent_at": null,
+            "followup_sent_at": null
+        },
+        "customerservice@skinnymixes.com": {
+            "app_name": "Skinny Mixes",
+            "package": "co.tapcart.app.id_E30aUmZnzE",
+            "source": "google_play",
+            "status": "PENDING",
+            "first_sent_at": null,
+            "followup_sent_at": null
+        },
+        "support@kulturecity.org": {
+            "app_name": "KultureCity",
+            "package": "org.kulturecity.app",
+            "source": "google_play",
+            "status": "PENDING",
+            "first_sent_at": null,
+            "followup_sent_at": null
+        },
+        "support@uda1.com": {
+            "app_name": "ConstructionOnline",
+            "package": "onsiteplanroom.uda.hybrid",
+            "source": "google_play",
+            "status": "PENDING",
+            "first_sent_at": null,
+            "followup_sent_at": null
+        },
+        "support@jobnimbus.com": {
+            "app_name": "JobNimbus",
+            "package": "com.jobnimbus.leadssalesprojects",
+            "source": "google_play",
+            "status": "PENDING",
+            "first_sent_at": null,
+            "followup_sent_at": null
+        },
+        "support@brainfitlife.com": {
+            "app_name": "Brain Fit Life",
+            "package": "com.amensclinic.brainfitlife.mobileapplication",
+            "source": "google_play",
+            "status": "PENDING",
+            "first_sent_at": null,
+            "followup_sent_at": null
+        },
+        "hello@chappapp.com": {
+            "app_name": "Chapp",
+            "package": "com.chapp",
             "source": "google_play",
             "status": "PENDING",
             "first_sent_at": null,
@@ -8680,7 +8808,64 @@
         "com.meruhealth.app",
         "co.digithera.v2.quitgenius",
         "com.innertune.app",
-        "com.yiqi.binaural.beats"
+        "com.yiqi.binaural.beats",
+        "com.nologin.anonymouschat",
+        "com.pdftoexcel.bankstatementconverter",
+        "com.sharephotos.galleryview",
+        "com.followertrack.report",
+        "com.downloader.spdyplayer",
+        "com.talktostrangers.randomchat",
+        "com.matrissoftware.IcebreakerApp",
+        "com.dafegen.icebreaker",
+        "com.thetouristtrapp.icebreaker",
+        "com.matrissoftware.Airlume",
+        "com.matrissoftware.Rotamate",
+        "com.matrissoftware.Tapewise",
+        "com.matrissoftware.ContractionTimer",
+        "com.matrissoftware.Sift",
+        "com.matrissoftware.Paylendar",
+        "com.ascentfundingmobile",
+        "com.foxhallwythe.docket.mobile",
+        "com.arkansasfcu.arkansasfcu",
+        "co.tapcart.app.id_buiBMGWcVc",
+        "com.dotloop.mobile",
+        "com.collectivehealth.member",
+        "com.loopnet.android",
+        "com.thehutgroup.ecommerce.dermstore",
+        "com.medco.medcopharmacy",
+        "com.efe.user",
+        "com.pocketsuite",
+        "com.vestwell.app",
+        "com.turnbulldashboard",
+        "com.fullscript.mobile",
+        "com.avibra",
+        "com.pitch_15.my_tenth_step",
+        "com.rocketlawyer.mobile.android",
+        "com.realbricks",
+        "co.tapcart.app.id_KCI9elLqNV",
+        "com.finhabits.finhabitsapp",
+        "co.tapcart.app.id_E30aUmZnzE",
+        "com.zillow.android.zillowmap",
+        "com.zillow.android.rentals",
+        "com.zillow.postlet",
+        "com.followupboss.fubandroidclient",
+        "com.zillowgroup.capture3d",
+        "com.trulia.android.agent",
+        "org.kulturecity.app",
+        "com.bluestem.fingerhut.android",
+        "com.woot.android.main",
+        "onsiteplanroom.uda.hybrid",
+        "com.jobnimbus.leadssalesprojects",
+        "io.gophergoapp.requester",
+        "com.thehutgroup.ecommerce.myprotein",
+        "com.thehutgroup.ecommerce.biossance",
+        "com.cityam.uk.news",
+        "com.thehutgroup.ecommerce.idealfit",
+        "com.thehutgroup.ecommerce.zavvi",
+        "com.thehutgroup.ecommerce.ameliorate",
+        "co.grove.android",
+        "com.amensclinic.brainfitlife.mobileapplication",
+        "com.chapp"
     ],
     "used_keywords": [
         "finance",
@@ -8730,7 +8915,10 @@
         "habit tracker offline",
         "kanban board personal",
         "water reminder fasting",
-        "step counter offline pedometer"
+        "step counter offline pedometer",
+        "home workout no equipment",
+        "anonymous chat local",
+        "icebreaker questions app"
     ],
     "scanned_developers": [
         "DecusPro",
@@ -10639,6 +10827,40 @@
         "Meru+Health",
         "Digital+Therapeutics",
         "6642695536373235279",
-        "7846899302410101015"
+        "7846899302410101015",
+        "Talk+to+Stranger",
+        "6928159982647150366",
+        "Dafegen",
+        "Nennessekki+ehf.",
+        "Ascent+Funding",
+        "Docket+Health,+Inc.",
+        "Arkansas+Federal",
+        "Snarky+Tea",
+        "Zillow+Group",
+        "CollectiveHealth,+Inc.",
+        "LoopNet.com",
+        "THG+(The+Hut+Group)",
+        "Express+Scripts,+Inc.",
+        "Edelman+Financial+Engines+LLC",
+        "PocketSuite,+Inc",
+        "Vestwell+Holdings+Inc.",
+        "Turnbull+Law+Group",
+        "Fullscript",
+        "Avibra+Inc",
+        "4850610169444880596",
+        "Rocket+Lawyer",
+        "Realbricks",
+        "Jamie+Kay+Official",
+        "Finhabits+Inc.",
+        "Skinny+Mixes",
+        "KultureCity",
+        "Bluestem+Mobile+Apps",
+        "Woot.com",
+        "UDA+Technologies.",
+        "JobNimbus,+LLC",
+        "Gopher,+LLC",
+        "Grove+Co",
+        "Amen+Clinics,+Inc.,+A+Medical+Corporation",
+        "Chapp+App"
     ]
 }
