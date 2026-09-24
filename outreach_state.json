@@ -2,7 +2,7 @@
     "config": {
         "start_date": "2026-09-12",
         "last_run_date": "2026-09-24",
-        "sent_today": 4
+        "sent_today": 9
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -760,17 +760,17 @@
         "info@deathofsmalltalk.com": {
             "app_name": "Conversation starters that hit",
             "package": "com.deathofsmalltalk.deathofsmalltalk",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-17T17:01:07.604977",
-            "followup_sent_at": null,
+            "followup_sent_at": "2026-09-24T10:03:02.285281",
             "source": "google_play"
         },
         "teamlubble@gmail.com": {
             "app_name": "Lubble",
             "package": "com.couple.lubble",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-17T17:01:07.604977",
-            "followup_sent_at": null,
+            "followup_sent_at": "2026-09-24T10:03:02.285281",
             "source": "google_play"
         },
         "duet.dev.team@gmail.com": {
@@ -2257,24 +2257,24 @@
             "app_name": "Intensity",
             "package": "com.intensity.app",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-24T10:03:02.285281",
             "followup_sent_at": null
         },
         "gab@strongpigeon.dev": {
             "app_name": "Five/Three/One",
             "package": "dev.strongpigeon.fivethreeone",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-24T10:03:02.285281",
             "followup_sent_at": null
         },
         "support@breakthroughapps.io": {
             "app_name": "Flow Queen",
             "package": "breakthroughapps.com.emiliehallgard",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-24T10:03:02.285281",
             "followup_sent_at": null
         },
         "growth@supafit.ai": {
