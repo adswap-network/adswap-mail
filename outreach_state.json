@@ -2,7 +2,7 @@
     "config": {
         "start_date": "2026-09-12",
         "last_run_date": "2026-09-24",
-        "sent_today": 9
+        "sent_today": 15
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -776,17 +776,17 @@
         "duet.dev.team@gmail.com": {
             "app_name": "Duet",
             "package": "com.duet.duetcouple",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-17T23:33:45.446147",
-            "followup_sent_at": null,
+            "followup_sent_at": "2026-09-24T15:08:08.461578",
             "source": "google_play"
         },
         "ienon.app1@gmail.com": {
             "app_name": "futari",
             "package": "app.futari",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-17T23:33:45.446147",
-            "followup_sent_at": null,
+            "followup_sent_at": "2026-09-24T15:08:08.461578",
             "source": "google_play"
         },
         "cubbilyhelpcenter@gmail.com": {
@@ -2281,32 +2281,32 @@
             "app_name": "Supafit",
             "package": "fit.slated",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-24T15:08:08.461578",
             "followup_sent_at": null
         },
         "deejayapplications@gmail.com": {
             "app_name": "Workout Quest",
             "package": "fitness.tracker",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-24T15:08:08.461578",
             "followup_sent_at": null
         },
         "marketing@uprisehealth.com": {
             "app_name": "Uprise Health",
             "package": "com.ibh.uprise.prod",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-24T15:08:08.461578",
             "followup_sent_at": null
         },
         "info@brandonblackwood.com": {
             "app_name": "Brandon Blackwood",
             "package": "co.tapcart.app.id_B1GlOriIqL",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-24T15:08:08.461578",
             "followup_sent_at": null
         },
         "appfeedback@faynutrition.com": {
