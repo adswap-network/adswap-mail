@@ -1,8 +1,8 @@
 {
     "config": {
         "start_date": "2026-09-12",
-        "last_run_date": "2026-09-24",
-        "sent_today": 49
+        "last_run_date": "2026-09-25",
+        "sent_today": 4
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -896,9 +896,9 @@
         "mthang12vp@gmail.com": {
             "app_name": "Secret Diary",
             "package": "com.journal.diary.diarywithlock.diaryjournal.secretdiary",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-17T23:33:45.446147",
-            "followup_sent_at": null,
+            "followup_sent_at": "2026-09-25T01:32:09.039622",
             "source": "google_play"
         },
         "support@timefinder.app": {
@@ -2497,24 +2497,24 @@
             "app_name": "Visual Verbs",
             "package": "com.abunge.SpanishVV",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-25T01:32:09.039622",
             "followup_sent_at": null
         },
         "sparkedtech2021@gmail.com": {
             "app_name": "LingoSpark",
             "package": "com.vispark.chinese",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-25T01:32:09.039622",
             "followup_sent_at": null
         },
         "nhang.tini@gmail.com": {
             "app_name": "Estonian",
             "package": "io.ivoca.conversationestonian",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-25T01:32:09.039622",
             "followup_sent_at": null
         },
         "sh@yehuda.com": {
