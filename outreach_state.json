@@ -2,7 +2,7 @@
     "config": {
         "start_date": "2026-09-12",
         "last_run_date": "2026-09-25",
-        "sent_today": 9
+        "sent_today": 15
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -920,17 +920,17 @@
         "usket@icloud.com": {
             "app_name": "TimeBox Planner",
             "package": "com.usket.tig",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-17T23:33:45.446147",
-            "followup_sent_at": null,
+            "followup_sent_at": "2026-09-25T18:38:21.882010",
             "source": "google_play"
         },
         "jamisays@gmail.com": {
             "app_name": "Prayer Time App Blocker",
             "package": "com.born2die49.salatlock",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-17T23:33:45.446147",
-            "followup_sent_at": null,
+            "followup_sent_at": "2026-09-25T18:38:21.882010",
             "source": "google_play"
         },
         "info@kitapp.com": {
@@ -2553,32 +2553,32 @@
             "app_name": "Maneno",
             "package": "com.maneno.manenouk",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-25T18:38:21.882010",
             "followup_sent_at": null
         },
         "ihumanpwrd@gmail.com": {
             "app_name": "iHuman Books",
             "package": "com.ihuman.book",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-25T18:38:21.882010",
             "followup_sent_at": null
         },
         "help@tinytap.it": {
             "app_name": "Math Lingo",
             "package": "mathlingo.kids.math.games",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-25T18:38:21.882010",
             "followup_sent_at": null
         },
         "hello@playpixo.com": {
             "app_name": "Play zeta",
             "package": "com.app.zeta",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-25T18:38:21.882010",
             "followup_sent_at": null
         },
         "solraknes@gmail.com": {
