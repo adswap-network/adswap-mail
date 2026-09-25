@@ -2,7 +2,7 @@
     "config": {
         "start_date": "2026-09-12",
         "last_run_date": "2026-09-25",
-        "sent_today": 7
+        "sent_today": 9
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -912,7 +912,7 @@
         "dayblocapp@gmail.com": {
             "app_name": "Time Blocking",
             "package": "com.daybloc.app",
-            "status": "FIRST_SENT",
+            "status": "REPLIED",
             "first_sent_at": "2026-09-17T23:33:45.446147",
             "followup_sent_at": null,
             "source": "google_play"
@@ -2537,16 +2537,16 @@
             "app_name": "Natulang",
             "package": "com.mokus.natulang.prod",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-25T13:49:30.417188",
             "followup_sent_at": null
         },
         "ngocdieu121504@gmail.com": {
             "app_name": "Master TOEIC\u00ae Vocabulary",
             "package": "com.bean.edu.toeic.words.basic",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-25T13:49:30.417188",
             "followup_sent_at": null
         },
         "hello@maneno.co.uk": {
