@@ -2,7 +2,7 @@
     "config": {
         "start_date": "2026-09-12",
         "last_run_date": "2026-09-26",
-        "sent_today": 5
+        "sent_today": 10
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -952,17 +952,17 @@
         "appfeedback@scripps.com": {
             "app_name": "Q2 News",
             "package": "com.mobdub.channel.KTVQ",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-18T04:45:58.813926",
-            "followup_sent_at": null,
+            "followup_sent_at": "2026-09-26T13:07:35.437951",
             "source": "google_play"
         },
         "support@sronu.com": {
             "app_name": "Sronu",
             "package": "io.utopiagroup.sronu",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-18T04:45:58.813926",
-            "followup_sent_at": null,
+            "followup_sent_at": "2026-09-26T13:07:35.437951",
             "source": "google_play"
         },
         "evans@tuagye.com": {
@@ -2608,6 +2608,142 @@
         "support@storynest.ca": {
             "app_name": "StoryNest",
             "package": "ca.storynest.storynestapp",
+            "source": "google_play",
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-26T13:07:35.437951",
+            "followup_sent_at": null
+        },
+        "plenarytheapp@gmail.com": {
+            "app_name": "Plenary",
+            "package": "com.spians.plenary",
+            "source": "google_play",
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-26T13:07:35.437951",
+            "followup_sent_at": null
+        },
+        "hello@sasikanth.dev": {
+            "app_name": "Twine",
+            "package": "dev.sasikanth.rss.reader",
+            "source": "google_play",
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-26T13:07:35.437951",
+            "followup_sent_at": null
+        },
+        "contact@alphacore-consulting.com": {
+            "app_name": "Simple RSS Reader",
+            "package": "com.alphacoreconsulting.simplerssreader",
+            "source": "google_play",
+            "status": "PENDING",
+            "first_sent_at": null,
+            "followup_sent_at": null
+        },
+        "android-support@sitiouno.com": {
+            "app_name": "Be Soul",
+            "package": "com.sitiouno.mytestament.prod",
+            "source": "google_play",
+            "status": "PENDING",
+            "first_sent_at": null,
+            "followup_sent_at": null
+        },
+        "info@vagustim.io": {
+            "app_name": "Vagustim",
+            "package": "com.vagustim.vagustimpro",
+            "source": "google_play",
+            "status": "PENDING",
+            "first_sent_at": null,
+            "followup_sent_at": null
+        },
+        "info@aardvarkbookclub.com": {
+            "app_name": "Aardvark Book Club",
+            "package": "com.aardvark.app",
+            "source": "google_play",
+            "status": "PENDING",
+            "first_sent_at": null,
+            "followup_sent_at": null
+        },
+        "lakeshore@lakeshorelearning.com": {
+            "app_name": "Lakeshore Learning Materials",
+            "package": "com.lakeshorelearning.mobileapp",
+            "source": "google_play",
+            "status": "PENDING",
+            "first_sent_at": null,
+            "followup_sent_at": null
+        },
+        "hey@joincrowdhealth.com": {
+            "app_name": "CrowdHealth",
+            "package": "com.cratebind.crowdhealth",
+            "source": "google_play",
+            "status": "PENDING",
+            "first_sent_at": null,
+            "followup_sent_at": null
+        },
+        "qasem@joylux.com": {
+            "app_name": "Joylux Menopausal Health App",
+            "package": "com.joylux.app",
+            "source": "google_play",
+            "status": "PENDING",
+            "first_sent_at": null,
+            "followup_sent_at": null
+        },
+        "info@growlink.com": {
+            "app_name": "Growlink",
+            "package": "com.hydropods.mobileapp",
+            "source": "google_play",
+            "status": "PENDING",
+            "first_sent_at": null,
+            "followup_sent_at": null
+        },
+        "support@tapmango.com": {
+            "app_name": "Area 51 Fireworks",
+            "package": "com.tapmango.area51fireworks",
+            "source": "google_play",
+            "status": "PENDING",
+            "first_sent_at": null,
+            "followup_sent_at": null
+        },
+        "support@onepagecrm.com": {
+            "app_name": "OnePageCRM",
+            "package": "com.onepagecrm",
+            "source": "google_play",
+            "status": "PENDING",
+            "first_sent_at": null,
+            "followup_sent_at": null
+        },
+        "wequil.app@gmail.com": {
+            "app_name": "WEquil App",
+            "package": "app.wequil.wequilmobile",
+            "source": "google_play",
+            "status": "PENDING",
+            "first_sent_at": null,
+            "followup_sent_at": null
+        },
+        "hello@canopie.app": {
+            "app_name": "Canopie for Parents",
+            "package": "com.goodbarber.canopie",
+            "source": "google_play",
+            "status": "PENDING",
+            "first_sent_at": null,
+            "followup_sent_at": null
+        },
+        "info@tridentmindset.com": {
+            "app_name": "Trident Mindset",
+            "package": "com.pikwxwpq5b1i.plgj6rakapp",
+            "source": "google_play",
+            "status": "PENDING",
+            "first_sent_at": null,
+            "followup_sent_at": null
+        },
+        "support@mindfulnessapps.com": {
+            "app_name": "Jon Kabat-Zinn Meditations",
+            "package": "com.mindfulnessapps.jkz",
+            "source": "google_play",
+            "status": "PENDING",
+            "first_sent_at": null,
+            "followup_sent_at": null
+        },
+        "info@roomvu.com": {
+            "app_name": "Roomvu",
+            "package": "com.roomvu.newapp",
             "source": "google_play",
             "status": "PENDING",
             "first_sent_at": null,
@@ -9098,7 +9234,62 @@
         "com.bean.edu.ielts.words.basic",
         "com.pronunciatorllc.bluebird",
         "bunpro.jp.bunpro_srs",
-        "ca.storynest.storynestapp"
+        "ca.storynest.storynestapp",
+        "com.spians.plenary",
+        "dev.sasikanth.rss.reader",
+        "com.alphacoreconsulting.simplerssreader",
+        "dev.sasikanth.basil",
+        "dev.sasikanth.pinnit2",
+        "com.sitiouno.mytestament.prod",
+        "com.vagustim.vagustimpro",
+        "com.houstonchronicle.newsapp",
+        "com.aardvark.app",
+        "com.alphacore_consulting.lightwork",
+        "com.alphacore_consulting.todoit",
+        "com.alphacore_consulting.myshoppinglists",
+        "com.lakeshorelearning.mobileapp",
+        "net.hookle",
+        "com.sitiouno.apprecios",
+        "com.sitiouno.pumacontigo",
+        "com.sitiouno.dscustommotors",
+        "com.sitiouno.cloudjukebox.prod",
+        "com.vagustim.professional",
+        "com.cratebind.crowdhealth",
+        "com.gravitywell.adhdlove",
+        "com.joylux.app",
+        "com.hydropods.mobileapp",
+        "com.LeagueofComicGeeks.app2",
+        "com.pocketprep.android.fitness",
+        "com.tapmango.area51fireworks",
+        "com.miiriya.app",
+        "com.ripl.android",
+        "com.constantcontact.toolkit",
+        "com.pipedrive",
+        "com.onepagecrm",
+        "app.wequil.wequilmobile",
+        "co.mangotechnologies.clickup",
+        "com.aceable.aceablere_android",
+        "com.goodbarber.canopie",
+        "com.pikwxwpq5b1i.plgj6rakapp",
+        "com.empathy.companion",
+        "com.cube.arc.fa",
+        "com.nb.benefitspro",
+        "com.pocketprep.android.behavioralhealth",
+        "com.remente.app",
+        "com.talkspace.talkspaceapp",
+        "com.harmonsgrocery.harmons",
+        "com.ginger",
+        "com.wb.goog.dcuniverse",
+        "com.mindfulnessapps.jkz",
+        "com.tapmango.playabowlsrewards",
+        "com.tapmango.hokkaidoramensantouka",
+        "com.tapmango.rockysburgersfrankandfries",
+        "com.tapmango.nazshalal",
+        "com.tapmango.arteabubbletea",
+        "com.tapmango.amazinggrapeswine",
+        "com.zogo.child",
+        "com.rljentertainment.umc.android",
+        "com.roomvu.newapp"
     ],
     "used_keywords": [
         "finance",
@@ -9154,7 +9345,8 @@
         "icebreaker questions app",
         "couple calendar shared",
         "flashcards maker study",
-        "learn vocabulary daily"
+        "learn vocabulary daily",
+        "rss reader minimalist fast"
     ],
     "scanned_developers": [
         "DecusPro",
@@ -11145,6 +11337,41 @@
         "WordWeb+Software",
         "6972297686594967503",
         "Bunpro+SRS",
-        "New+Earth+Media"
+        "New+Earth+Media",
+        "Plenary+app",
+        "6976826426067681015",
+        "6194953355333570503",
+        "5974558358999722047",
+        "5815309895256613371",
+        "8605851081893094071",
+        "Lakeshore+Learning",
+        "6536165328366526192",
+        "CrowdHealth",
+        "ADHD+Love",
+        "JoyluxDev",
+        "Growlink",
+        "League+of+Comic+Geeks",
+        "TapMango+Inc.",
+        "Lamine+Loco",
+        "5979242633604160560",
+        "7706117439891973447",
+        "Pipedrive+Inc.",
+        "5683528365967526508",
+        "WEquil+app",
+        "ClickUp",
+        "Aceable,+Inc.",
+        "Canopie",
+        "Trident+Mindset",
+        "7573398188169424467",
+        "American+Red+Cross",
+        "NationsBenefits,+LLC",
+        "5827152673441848804",
+        "7862836077515386868",
+        "Harmons+Grocery",
+        "Headspace+Care+(formerly+Ginger.io,+Inc.)",
+        "5569114044003297671",
+        "Zogo+Inc",
+        "RLJ+Entertainment",
+        "Roomview+Technologies+Inc+(roomvu)"
     ]
 }
