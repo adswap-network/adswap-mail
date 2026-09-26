@@ -2,7 +2,7 @@
     "config": {
         "start_date": "2026-09-12",
         "last_run_date": "2026-09-26",
-        "sent_today": 17
+        "sent_today": 24
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -984,7 +984,7 @@
         "monstercabinstudio@gmail.com": {
             "app_name": "Daemonia",
             "package": "com.levelance.daemonia",
-            "status": "FIRST_SENT",
+            "status": "REPLIED",
             "first_sent_at": "2026-09-18T09:45:24.244647",
             "followup_sent_at": null,
             "source": "google_play"
@@ -992,17 +992,17 @@
         "ictiongames@gmail.com": {
             "app_name": "John Mambo",
             "package": "com.JohnMambo.RetroPixelAction",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-18T09:45:24.244647",
-            "followup_sent_at": null,
+            "followup_sent_at": "2026-09-26T19:54:30.127770",
             "source": "google_play"
         },
         "info@peralstudio.com": {
             "app_name": "Cookie Empire",
             "package": "com.alfanjorfresco.cookieempire",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-18T09:45:24.244647",
-            "followup_sent_at": null,
+            "followup_sent_at": "2026-09-26T19:54:30.127770",
             "source": "google_play"
         },
         "hello@blackboxdigital.net": {
@@ -2673,40 +2673,40 @@
             "app_name": "CrowdHealth",
             "package": "com.cratebind.crowdhealth",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-26T19:54:30.127770",
             "followup_sent_at": null
         },
         "qasem@joylux.com": {
             "app_name": "Joylux Menopausal Health App",
             "package": "com.joylux.app",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-26T19:54:30.127770",
             "followup_sent_at": null
         },
         "info@growlink.com": {
             "app_name": "Growlink",
             "package": "com.hydropods.mobileapp",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-26T19:54:30.127770",
             "followup_sent_at": null
         },
         "support@tapmango.com": {
             "app_name": "Area 51 Fireworks",
             "package": "com.tapmango.area51fireworks",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-26T19:54:30.127770",
             "followup_sent_at": null
         },
         "support@onepagecrm.com": {
             "app_name": "OnePageCRM",
             "package": "com.onepagecrm",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-26T19:54:30.127770",
             "followup_sent_at": null
         },
         "wequil.app@gmail.com": {
