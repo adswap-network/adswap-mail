@@ -2,7 +2,7 @@
     "config": {
         "start_date": "2026-09-12",
         "last_run_date": "2026-09-26",
-        "sent_today": 10
+        "sent_today": 17
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -968,17 +968,17 @@
         "evans@tuagye.com": {
             "app_name": "Tuagye",
             "package": "com.tuagye.app",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-18T09:45:24.244647",
-            "followup_sent_at": null,
+            "followup_sent_at": "2026-09-26T17:11:58.289279",
             "source": "google_play"
         },
         "support@shopxchange.com": {
             "app_name": "shopXchange",
             "package": "com.shopxchange.mobile",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-18T09:45:24.244647",
-            "followup_sent_at": null,
+            "followup_sent_at": "2026-09-26T17:11:58.289279",
             "source": "google_play"
         },
         "monstercabinstudio@gmail.com": {
@@ -2633,40 +2633,40 @@
             "app_name": "Simple RSS Reader",
             "package": "com.alphacoreconsulting.simplerssreader",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-26T17:11:58.289279",
             "followup_sent_at": null
         },
         "android-support@sitiouno.com": {
             "app_name": "Be Soul",
             "package": "com.sitiouno.mytestament.prod",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-26T17:11:58.289279",
             "followup_sent_at": null
         },
         "info@vagustim.io": {
             "app_name": "Vagustim",
             "package": "com.vagustim.vagustimpro",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-26T17:11:58.289279",
             "followup_sent_at": null
         },
         "info@aardvarkbookclub.com": {
             "app_name": "Aardvark Book Club",
             "package": "com.aardvark.app",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-26T17:11:58.289279",
             "followup_sent_at": null
         },
         "lakeshore@lakeshorelearning.com": {
             "app_name": "Lakeshore Learning Materials",
             "package": "com.lakeshorelearning.mobileapp",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-26T17:11:58.289279",
             "followup_sent_at": null
         },
         "hey@joincrowdhealth.com": {
