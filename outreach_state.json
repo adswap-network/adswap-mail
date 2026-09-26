@@ -1,8 +1,8 @@
 {
     "config": {
         "start_date": "2026-09-12",
-        "last_run_date": "2026-09-25",
-        "sent_today": 15
+        "last_run_date": "2026-09-26",
+        "sent_today": 2
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -936,9 +936,9 @@
         "info@kitapp.com": {
             "app_name": "E-commerce app",
             "package": "com.kitapp.ecommerce",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-18T04:45:58.813926",
-            "followup_sent_at": null,
+            "followup_sent_at": "2026-09-26T01:35:41.913854",
             "source": "google_play"
         },
         "admin@nownews.vip": {
@@ -2585,8 +2585,8 @@
             "app_name": "Magic Mitten",
             "package": "org.magicmitten.app",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-26T01:35:41.913854",
             "followup_sent_at": null
         },
         "tech@e-limu.org": {
