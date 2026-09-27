@@ -1,8 +1,8 @@
 {
     "config": {
         "start_date": "2026-09-12",
-        "last_run_date": "2026-09-26",
-        "sent_today": 49
+        "last_run_date": "2026-09-27",
+        "sent_today": 3
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -1089,9 +1089,9 @@
             "app_name": "Anonymous Chat \u2014 AnonApp",
             "package": "com.nd.anonappchat",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-18T18:30:25.899296",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-09-27T01:28:39.897820"
         },
         "guoziwei93@gmail.com": {
             "app_name": "SmartRSS",
@@ -2841,16 +2841,16 @@
             "app_name": "MJ",
             "package": "com.marcusxtechnologies.mj",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-27T01:28:39.897820",
             "followup_sent_at": null
         },
         "support@storypop.games": {
             "app_name": "StoryPop",
             "package": "games.storypop.app",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-27T01:28:39.897820",
             "followup_sent_at": null
         },
         "support@shelog.ai": {
