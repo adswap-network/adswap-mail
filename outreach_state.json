@@ -2,7 +2,7 @@
     "config": {
         "start_date": "2026-09-12",
         "last_run_date": "2026-09-27",
-        "sent_today": 11
+        "sent_today": 19
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -1113,25 +1113,25 @@
             "app_name": "StreamSphere",
             "package": "com.niviva.rssreader.streamsphere",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-18T21:42:20.810556",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-09-27T18:25:54.406899"
         },
         "aggregator-news@proton.me": {
             "app_name": "Aggregator News",
             "package": "com.and96.aggregator_news",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-18T21:42:20.810556",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-09-27T18:25:54.406899"
         },
         "lowae@agrreader.com": {
             "app_name": "Agr Reader",
             "package": "com.lowae.agrreader",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-18T21:42:20.810556",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-09-27T18:25:54.406899"
         },
         "steintecai@gmail.com": {
             "app_name": "Simple RSS Reader",
@@ -2905,40 +2905,40 @@
             "app_name": "KodeKloud",
             "package": "com.kodekloud.learn",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-27T18:25:54.406899",
             "followup_sent_at": null
         },
         "ourmediaapps@ourmediashop.com": {
             "app_name": "Who Do You Think You Are?",
             "package": "com.immediatemedia.wdytyamag",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-27T18:25:54.406899",
             "followup_sent_at": null
         },
         "info@ismart.edu.vn": {
             "app_name": "iSMART Touch",
             "package": "ismart.edu.vn.ito",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-27T18:25:54.406899",
             "followup_sent_at": null
         },
         "dev.wolfgang@haszler.eu": {
             "app_name": "Nap & Recharge Power Nap Timer",
             "package": "at.napandrecharge.app",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-27T18:25:54.406899",
             "followup_sent_at": null
         },
         "dev@motion-app.com": {
             "app_name": "Motion",
             "package": "com.motionapp.motionapp",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-27T18:25:54.406899",
             "followup_sent_at": null
         },
         "info@rayoga.com": {
