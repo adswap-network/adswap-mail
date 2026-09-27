@@ -2,7 +2,7 @@
     "config": {
         "start_date": "2026-09-12",
         "last_run_date": "2026-09-27",
-        "sent_today": 7
+        "sent_today": 11
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -1105,9 +1105,9 @@
             "app_name": "Pluma RSS Reader",
             "package": "qijaz221.android.rss.reader",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-18T21:42:20.810556",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-09-27T14:02:27.663308"
         },
         "streamsphere.contact@gmail.com": {
             "app_name": "StreamSphere",
@@ -2881,24 +2881,24 @@
             "app_name": "Modern Buddhism",
             "package": "org.kadampa.modernbuddhism",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-27T14:02:27.663308",
             "followup_sent_at": null
         },
         "support@temenosdream.com": {
             "app_name": "Temenos Dream",
             "package": "com.temenosDream.temenosDream",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-27T14:02:27.663308",
             "followup_sent_at": null
         },
         "ops@theappforge.co.in": {
             "app_name": "AI Calorie Counter",
             "package": "com.sheikhpublishinginc.calfinity",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-27T14:02:27.663308",
             "followup_sent_at": null
         },
         "support@kodekloud.com": {
