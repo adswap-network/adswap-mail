@@ -1,8 +1,8 @@
 {
     "config": {
         "start_date": "2026-09-12",
-        "last_run_date": "2026-09-27",
-        "sent_today": 50
+        "last_run_date": "2026-09-28",
+        "sent_today": 4
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -1233,9 +1233,9 @@
             "app_name": "Grade Corner",
             "package": "com.romandc.gradecorner",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-19T00:22:37.012480",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-09-28T00:51:54.965898"
         },
         "hello@certifyiq.com": {
             "app_name": "NEC Electrician Exam Test Prep",
@@ -3097,24 +3097,24 @@
             "app_name": "Victra",
             "package": "com.womensgame",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-28T00:51:54.965898",
             "followup_sent_at": null
         },
         "support@gravy.co": {
             "app_name": "Gravy",
             "package": "com.gravy",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-28T00:51:54.965898",
             "followup_sent_at": null
         },
         "appsupport@fuse.tv": {
             "app_name": "Fuse+",
             "package": "com.twentyfouri.tvbridge.fuse",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-28T00:51:54.965898",
             "followup_sent_at": null
         },
         "contact@foxandsheep.com": {
