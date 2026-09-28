@@ -2,7 +2,7 @@
     "config": {
         "start_date": "2026-09-12",
         "last_run_date": "2026-09-28",
-        "sent_today": 4
+        "sent_today": 7
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -1241,9 +1241,9 @@
             "app_name": "NEC Electrician Exam Test Prep",
             "package": "com.lumeontech.certifyiq",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-19T05:54:51.904999",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-09-28T06:56:20.280516"
         },
         "contact@yesmaster.pro": {
             "app_name": "Accuplacer Practice Exam 2026",
@@ -3121,16 +3121,16 @@
             "app_name": "Rudi Rainbow",
             "package": "com.hello_november.rudirainbow",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-28T06:56:20.280516",
             "followup_sent_at": null
         },
         "support@ifsta.org": {
             "app_name": "IFSTA Essentials 8",
             "package": "org.ifsta.e8",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-28T06:56:20.280516",
             "followup_sent_at": null
         },
         "contact-us@foodycraft.com": {
