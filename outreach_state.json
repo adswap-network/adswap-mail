@@ -2,7 +2,7 @@
     "config": {
         "start_date": "2026-09-12",
         "last_run_date": "2026-09-29",
-        "sent_today": 4
+        "sent_today": 6
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -1393,9 +1393,9 @@
             "app_name": "Elementra",
             "package": "com.longgammagames.elementra.pvp.rpg",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-19T20:43:03.823276",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-09-29T08:33:16.456698"
         },
         "dev@khailabs.com": {
             "app_name": "Hybrid Clash",
@@ -3369,8 +3369,8 @@
             "app_name": "Sentry Pro for Tesla",
             "package": "eu.nlogn.sentrypro",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-29T08:33:16.456698",
             "followup_sent_at": null
         },
         "info@atplquestions.com": {
