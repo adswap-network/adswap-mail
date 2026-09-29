@@ -2,7 +2,7 @@
     "config": {
         "start_date": "2026-09-12",
         "last_run_date": "2026-09-29",
-        "sent_today": 6
+        "sent_today": 11
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -1401,17 +1401,17 @@
             "app_name": "Hybrid Clash",
             "package": "com.KhaiLabs.HybridClash",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-19T23:07:59.317439",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-09-29T15:53:56.591528"
         },
         "adamthemagey@gmail.com": {
             "app_name": "No Way Home",
             "package": "studiowolfire.wolfire.nowayhome",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-19T23:07:59.317439",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-09-29T15:53:56.591528"
         },
         "feedback@zggame.net": {
             "app_name": "Skill Legends Royale",
@@ -3377,24 +3377,24 @@
             "app_name": "ATPL Questions",
             "package": "com.atplquestions.app",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-29T15:53:56.591528",
             "followup_sent_at": null
         },
         "socialmedia@sportvibez.io": {
             "app_name": "Sportvibez",
             "package": "io.sportvibez.trainee",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-29T15:53:56.591528",
             "followup_sent_at": null
         },
         "contact@wanderz.co": {
             "app_name": "Wanderz",
             "package": "com.travelapp.wanderz",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-29T15:53:56.591528",
             "followup_sent_at": null
         },
         "gs-ayco-mobile-support-ext@gs.com": {
