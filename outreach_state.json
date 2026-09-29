@@ -1,8 +1,8 @@
 {
     "config": {
         "start_date": "2026-09-12",
-        "last_run_date": "2026-09-28",
-        "sent_today": 47
+        "last_run_date": "2026-09-29",
+        "sent_today": 4
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -1385,9 +1385,9 @@
             "app_name": "Gilgalon",
             "package": "com.lionmoon.gilgalon",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-19T20:43:03.823276",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-09-29T01:59:05.217417"
         },
         "info@madpixel.dev": {
             "app_name": "Elementra",
@@ -3345,24 +3345,24 @@
             "app_name": "Airlyn, the asthma app",
             "package": "com.airlyn.app",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-29T01:59:05.217417",
             "followup_sent_at": null
         },
         "contact@etips.com": {
             "app_name": "Rome Travel Guide",
             "package": "com.etips.rome.travel.guide",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-29T01:59:05.217417",
             "followup_sent_at": null
         },
         "support@wigstudio1.com": {
             "app_name": "Wig Studio 1",
             "package": "co.tapcart.app.id_ATJlBhVSXM",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-29T01:59:05.217417",
             "followup_sent_at": null
         },
         "support@sentrypro.app": {
