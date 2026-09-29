@@ -2,7 +2,7 @@
     "config": {
         "start_date": "2026-09-12",
         "last_run_date": "2026-09-29",
-        "sent_today": 11
+        "sent_today": 21
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -1417,33 +1417,33 @@
             "app_name": "Skill Legends Royale",
             "package": "com.zggame.xuanji.google",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-19T23:07:59.317439",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-09-29T20:48:31.287074"
         },
         "support@countinteractive.com": {
             "app_name": "Generals of Legends",
             "package": "com.generalsoflegends.www",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-19T23:07:59.317439",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-09-29T20:48:31.287074"
         },
         "indie@xindong.com": {
             "app_name": "Hero's Adventure",
             "package": "com.xd.dxlzz.global.gp",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-19T23:07:59.317439",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-09-29T20:48:31.287074"
         },
         "elvisbury1@gmail.com": {
             "app_name": "Gears Tower Defense",
             "package": "com.defense.tower.gears.merge",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-19T23:07:59.317439",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-09-29T20:48:31.287074"
         },
         "2885406714@qq.com": {
             "app_name": "Lord And Maiden",
@@ -3401,48 +3401,48 @@
             "app_name": "Goldman Sachs Wellness",
             "package": "com.gs.pfmg.wellness",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-29T20:48:31.287074",
             "followup_sent_at": null
         },
         "support@chargeway.net": {
             "app_name": "Chargeway",
             "package": "net.chargeway.chargeway",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-29T20:48:31.287074",
             "followup_sent_at": null
         },
         "hello@doclyssfitness.com": {
             "app_name": "The Lyss Method V2",
             "package": "io.everfit.wlthelyssmethod",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-29T20:48:31.287074",
             "followup_sent_at": null
         },
         "mark.mcnamara@teamrwb.org": {
             "app_name": "Team RWB",
             "package": "com.teamrwb",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-29T20:48:31.287074",
             "followup_sent_at": null
         },
         "sdfcu@sdfcu.org": {
             "app_name": "SDFCU Digital Banking",
             "package": "org.sdfcu.banking",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-29T20:48:31.287074",
             "followup_sent_at": null
         },
         "support@bluente.com": {
             "app_name": "Bluente",
             "package": "com.bluente.bluente",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-29T20:48:31.287074",
             "followup_sent_at": null
         },
         "support@travelfika.com": {
