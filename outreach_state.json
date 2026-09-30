@@ -2,7 +2,7 @@
     "config": {
         "start_date": "2026-09-12",
         "last_run_date": "2026-09-30",
-        "sent_today": 13
+        "sent_today": 21
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -1481,25 +1481,25 @@
             "app_name": "1942 Pacific Front Premium",
             "package": "com.hg.pacificfront",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-19T23:07:59.317439",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-09-30T19:22:05.469354"
         },
         "wirraways@gmail.com": {
             "app_name": "Red Fire",
             "package": "com.WirrawaySoftware.RedFire",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-19T23:07:59.317439",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-09-30T19:22:05.469354"
         },
         "tobias@paragonpioneers.com": {
             "app_name": "Paragon Pioneers 2 Demo",
             "package": "com.GniGames.ParagonPioneers2Demo",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-20T01:11:19.535917",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-09-30T19:22:05.469354"
         },
         "antonskv@gmail.com": {
             "app_name": "Galaxy Genome [Space Sim]",
@@ -3521,40 +3521,40 @@
             "app_name": "DanceBody Workout",
             "package": "com.tealth.fundance",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-30T19:22:05.469354",
             "followup_sent_at": null
         },
         "info@mastered.it": {
             "app_name": "Mastered.It",
             "package": "com.mastered",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-30T19:22:05.469354",
             "followup_sent_at": null
         },
         "support@yourcoach.health": {
             "app_name": "YourCoach",
             "package": "com.coloreight.yourcoach",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-30T19:22:05.469354",
             "followup_sent_at": null
         },
         "app@claudiadeanworld.com": {
             "app_name": "Claudia Dean World",
             "package": "com.claudiadeanworld",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-30T19:22:05.469354",
             "followup_sent_at": null
         },
         "helpdesk@hamstudy.org": {
             "app_name": "HamStudy.org",
             "package": "org.hamstudy.mobile",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-30T19:22:05.469354",
             "followup_sent_at": null
         },
         "help.wellbeing@vc.telushealth.com": {
