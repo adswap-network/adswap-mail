@@ -2,7 +2,7 @@
     "config": {
         "start_date": "2026-09-12",
         "last_run_date": "2026-09-30",
-        "sent_today": 8
+        "sent_today": 13
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -1465,17 +1465,17 @@
             "app_name": "Magic Cat",
             "package": "com.uone.cat",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-19T23:07:59.317439",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-09-30T13:45:40.393278"
         },
         "support@oykgames.com": {
             "app_name": "Fractal Combat X (Premium)",
             "package": "com.oyatsukai.fractalcombatxpremium",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-19T23:07:59.317439",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-09-30T13:45:40.393278"
         },
         "support@thqnordicmobile.com": {
             "app_name": "1942 Pacific Front Premium",
@@ -3497,24 +3497,24 @@
             "app_name": "Sunsational Swim Instructor",
             "package": "com.sunsationalswimschool.instructorhq",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-30T13:45:40.393278",
             "followup_sent_at": null
         },
         "vip@obefitness.com": {
             "app_name": "ob\u00e9",
             "package": "com.studio.obe",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-30T13:45:40.393278",
             "followup_sent_at": null
         },
         "help@guidedchoice.com": {
             "app_name": "3Nickels",
             "package": "com.guidedchoice.iiinickels",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-30T13:45:40.393278",
             "followup_sent_at": null
         },
         "fititdm123@gmail.com": {
