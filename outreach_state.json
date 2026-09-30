@@ -2,7 +2,7 @@
     "config": {
         "start_date": "2026-09-12",
         "last_run_date": "2026-09-30",
-        "sent_today": 4
+        "sent_today": 8
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -1457,9 +1457,9 @@
             "app_name": "Shiba Wars 2",
             "package": "com.shibamaru.shibawars",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-19T23:07:59.317439",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-09-30T06:45:06.012614"
         },
         "fxwarzone@gmail.com": {
             "app_name": "Magic Cat",
@@ -3473,24 +3473,24 @@
             "app_name": "ASWB Exam Test Prep 2026",
             "package": "com.keepprep.aswb",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-30T06:45:06.012614",
             "followup_sent_at": null
         },
         "support@dakotaprep.com": {
             "app_name": "NEC Electrical Exam by Dakota",
             "package": "com.bluecollarapp.android_us",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-30T06:45:06.012614",
             "followup_sent_at": null
         },
         "engineering@headlamp.com": {
             "app_name": "Headlamp Health",
             "package": "com.headlamp.uno",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-09-30T06:45:06.012614",
             "followup_sent_at": null
         },
         "office@sunsationalswimschool.com": {
