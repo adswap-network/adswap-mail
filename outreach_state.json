@@ -2,7 +2,7 @@
     "config": {
         "start_date": "2026-09-12",
         "last_run_date": "2026-10-01",
-        "sent_today": 4
+        "sent_today": 8
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -1601,9 +1601,9 @@
             "app_name": "SE ATI TEAS & HESI Prep 2025",
             "package": "com.smarteditionacademy.app.release",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-20T19:27:41.369467",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-01T13:18:47.071325"
         },
         "support@allo.finance": {
             "app_name": "MoodWallet",
@@ -3729,24 +3729,24 @@
             "app_name": "Wondaer Interactive Kids Books",
             "package": "com.wondaer.infinityollie",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-01T13:18:47.071325",
             "followup_sent_at": null
         },
         "info@playsongs.co.kr": {
             "app_name": "PlaySongsParty",
             "package": "com.playsongs.mobilereader",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-01T13:18:47.071325",
             "followup_sent_at": null
         },
         "motionlightlab@gallaudet.edu": {
             "app_name": "Bilingual Bookshelf",
             "package": "edu.gallaudet.aslbookshelf",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-01T13:18:47.071325",
             "followup_sent_at": null
         },
         "tesar.cze@gmail.com": {
