@@ -2,7 +2,7 @@
     "config": {
         "start_date": "2026-09-12",
         "last_run_date": "2026-10-01",
-        "sent_today": 8
+        "sent_today": 18
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -1609,33 +1609,33 @@
             "app_name": "MoodWallet",
             "package": "co.jomolabs.payday",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-20T19:27:41.369467",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-01T19:32:49.161177"
         },
         "ccc_mychart@balladhealth.org": {
             "app_name": "Ballad Health",
             "package": "com.ballad.bha",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-20T19:27:41.369467",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-01T19:32:49.161177"
         },
         "info@farmgirlsfancyfrills.com": {
             "app_name": "Farm Girls Fancy Frills",
             "package": "co.app.id_TGy188i9Ie",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-20T19:27:41.369467",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-01T19:32:49.161177"
         },
         "help@girlology.com": {
             "app_name": "Girlology",
             "package": "tv.uscreen.girlology",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-20T22:27:36.175073",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-01T19:32:49.161177"
         },
         "emily@clubworx.com": {
             "app_name": "Clubworx",
@@ -3753,48 +3753,48 @@
             "app_name": "TappyBooks",
             "package": "com.tappybooks.app",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-01T19:32:49.161177",
             "followup_sent_at": null
         },
         "contact@bekids.com": {
             "app_name": "bekids Coding",
             "package": "com.bekids.kaka",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-01T19:32:49.161177",
             "followup_sent_at": null
         },
         "support@pixkidapp.com": {
             "app_name": "PixKid AI for Kids & Education",
             "package": "com.pixery.pixkid",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-01T19:32:49.161177",
             "followup_sent_at": null
         },
         "info@thealphanova.com": {
             "app_name": "Animal Facts",
             "package": "com.ezotic.amimalfacts",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-01T19:32:49.161177",
             "followup_sent_at": null
         },
         "huiben_guojiban@ipalfish.com": {
             "app_name": "PalFish Chinese",
             "package": "com.palfish.icpb",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-01T19:32:49.161177",
             "followup_sent_at": null
         },
         "sirlinkalot@sirlinkalot.org": {
             "app_name": "Sir Linkalot Spelling",
             "package": "com.sirlinkalot.kaldor",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-01T19:32:49.161177",
             "followup_sent_at": null
         },
         "support@benciti.com": {
