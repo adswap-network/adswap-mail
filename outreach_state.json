@@ -1,8 +1,8 @@
 {
     "config": {
         "start_date": "2026-09-12",
-        "last_run_date": "2026-09-30",
-        "sent_today": 49
+        "last_run_date": "2026-10-01",
+        "sent_today": 4
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -1593,9 +1593,9 @@
             "app_name": "Couple Games",
             "package": "com.soyandmochi",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-20T19:27:41.369467",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-01T05:57:41.584260"
         },
         "jwynne@smarteditionmedia.com": {
             "app_name": "SE ATI TEAS & HESI Prep 2025",
@@ -3705,24 +3705,24 @@
             "app_name": "Surgery Hero",
             "package": "com.surgeryhero.surgeryhero",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-01T05:57:41.584260",
             "followup_sent_at": null
         },
         "phil@philvischer.com": {
             "app_name": "Mr. Phil TV",
             "package": "tv.uscreen.mrphiltv",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-01T05:57:41.584260",
             "followup_sent_at": null
         },
         "hello@bedtimestoryco.com": {
             "app_name": "Tap to Sleep",
             "package": "com.bedtimestory.android",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-01T05:57:41.584260",
             "followup_sent_at": null
         },
         "hello@wondaer.com": {
