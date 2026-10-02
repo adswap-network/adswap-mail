@@ -2,7 +2,7 @@
     "config": {
         "start_date": "2026-09-12",
         "last_run_date": "2026-10-02",
-        "sent_today": 4
+        "sent_today": 9
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -1745,17 +1745,17 @@
             "app_name": "Alerts for eBay",
             "package": "com.baylert",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-20T22:27:36.175073",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-02T12:38:15.851225"
         },
         "support@rocked.us": {
             "app_name": "The RockED App",
             "package": "us.rocked.rockedapp",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-21T01:07:29.455206",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-02T12:38:15.851225"
         },
         "developers@buildingtools.co": {
             "app_name": "Building Tools",
@@ -3985,24 +3985,24 @@
             "app_name": "Little Kitty Town",
             "package": "com.tutotoons.app.littlekittytownfull",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-02T12:38:15.851225",
             "followup_sent_at": null
         },
         "support@cleverbit.net": {
             "app_name": "Puzzles for Kids",
             "package": "net.cleverbit.PuzzlesForKidsFull",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-02T12:38:15.851225",
             "followup_sent_at": null
         },
         "info@playandlearn.games": {
             "app_name": "Coloring games for kids age 5",
             "package": "com.playandlearn.kids.games.boys.girls.coloring",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-02T12:38:15.851225",
             "followup_sent_at": null
         },
         "rubyboogames@gmail.com": {
