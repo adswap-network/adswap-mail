@@ -2,7 +2,7 @@
     "config": {
         "start_date": "2026-09-12",
         "last_run_date": "2026-10-02",
-        "sent_today": 9
+        "sent_today": 15
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -1761,17 +1761,17 @@
             "app_name": "Building Tools",
             "package": "co.tools",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-21T01:07:29.455206",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-02T18:26:07.110801"
         },
         "contactus+radiome@kalagato.co": {
             "app_name": "Radio Me",
             "package": "com.radiome.radio_me",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-21T01:07:29.455206",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-02T18:26:07.110801"
         },
         "yokko.dev@gmail.com": {
             "app_name": "RPG Diary",
@@ -4009,32 +4009,32 @@
             "app_name": "Puzzle for Toddlers",
             "package": "com.RubyBoo.PuzzleToddlers",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-02T18:26:07.110801",
             "followup_sent_at": null
         },
         "flatstone_info@spongehammergames.com": {
             "app_name": "Flatstone Grove",
             "package": "com.spongehammergames.games.flatstonegrove",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-02T18:26:07.110801",
             "followup_sent_at": null
         },
         "support.brume@tralalere.com": {
             "app_name": "Brume",
             "package": "com.Tralalere.Brume2",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-02T18:26:07.110801",
             "followup_sent_at": null
         },
         "contact@mythicowl.com": {
             "app_name": "Lineverse",
             "package": "com.mythicowl.asmr.oneline.color.puzzle.shapes",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-02T18:26:07.110801",
             "followup_sent_at": null
         },
         "support@albertgamesstudio.com": {
