@@ -1,8 +1,8 @@
 {
     "config": {
         "start_date": "2026-09-12",
-        "last_run_date": "2026-10-01",
-        "sent_today": 50
+        "last_run_date": "2026-10-02",
+        "sent_today": 4
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -1737,9 +1737,9 @@
             "app_name": "GOGH",
             "package": "com.picasso21",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-20T22:27:36.175073",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-02T05:40:07.005690"
         },
         "contact@dealerts.io": {
             "app_name": "Alerts for eBay",
@@ -3961,24 +3961,24 @@
             "app_name": "Lanternium",
             "package": "com.BlazingPlanetStudio.Lanternium",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-02T05:40:07.005690",
             "followup_sent_at": null
         },
         "unity@service.kalam.tech": {
             "app_name": "Human Heroes Atom Blast",
             "package": "kalam.tech.curie.atoms",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-02T05:40:07.005690",
             "followup_sent_at": null
         },
         "kids@iabuzz.com": {
             "app_name": "Animal Puzzle PRO",
             "package": "com.iabuzz.animalpuzzle.kidsgames",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-02T05:40:07.005690",
             "followup_sent_at": null
         },
         "support@tutotoons.com": {
