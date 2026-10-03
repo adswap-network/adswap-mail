@@ -2,7 +2,7 @@
     "config": {
         "start_date": "2026-09-12",
         "last_run_date": "2026-10-03",
-        "sent_today": 4
+        "sent_today": 8
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -1897,9 +1897,9 @@
             "app_name": "Guardians of the Kingdom TD",
             "package": "com.MattArtevate.FirstTD",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-22T14:56:06.488551",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-03T08:08:32.018979"
         },
         "hi@tortugateam.com": {
             "app_name": "Braveland Pirate",
@@ -4233,24 +4233,24 @@
             "app_name": "VoC",
             "package": "com.square_enix.android_googleplay.VoiceofCardsTheBeastsofBurden",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-03T08:08:32.018979",
             "followup_sent_at": null
         },
         "contact@littleleogames.com": {
             "app_name": "Astrea",
             "package": "com.littleleogames.astreasixsidedoracles",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-03T08:08:32.018979",
             "followup_sent_at": null
         },
         "cavesoflore@gmail.com": {
             "app_name": "Caves of Lore",
             "package": "com.RedPlumeLLC.CoL",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-03T08:08:32.018979",
             "followup_sent_at": null
         },
         "jellylab08@gmail.com": {
