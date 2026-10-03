@@ -2,7 +2,7 @@
     "config": {
         "start_date": "2026-09-12",
         "last_run_date": "2026-10-03",
-        "sent_today": 13
+        "sent_today": 19
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -1921,17 +1921,17 @@
             "app_name": "hocus 2",
             "package": "com.gamebrain.hocus2",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-22T18:56:03.284623",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-03T17:57:43.228659"
         },
         "hi@triomatica.games": {
             "app_name": "Boxville 2",
             "package": "com.TriomaticaGames.Boxville2",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-22T18:56:03.284623",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-03T17:57:43.228659"
         },
         "info@warmkitten.com": {
             "app_name": "Justin Wack's Big Time Hack",
@@ -4281,32 +4281,32 @@
             "app_name": "Lunar Silver Star Story Touch",
             "package": "com.somoga.lunar1android",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-03T17:57:43.228659",
             "followup_sent_at": null
         },
         "powerslashstudios@gmail.com": {
             "app_name": "Super Onion Boy 2",
             "package": "com.onionboy2.app",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-03T17:57:43.228659",
             "followup_sent_at": null
         },
         "info@selvainteractive.com": {
             "app_name": "Nanuleu",
             "package": "com.selvaInteractive.nanuleu",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-03T17:57:43.228659",
             "followup_sent_at": null
         },
         "unknownprojectx@outlook.com": {
             "app_name": "Sliding Puzzle",
             "package": "com.unknownprojectx.sliding.puzzle",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-03T17:57:43.228659",
             "followup_sent_at": null
         },
         "megisadventurecontact@gmail.com": {
