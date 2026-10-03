@@ -2,7 +2,7 @@
     "config": {
         "start_date": "2026-09-12",
         "last_run_date": "2026-10-03",
-        "sent_today": 8
+        "sent_today": 13
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -1905,17 +1905,17 @@
             "app_name": "Braveland Pirate",
             "package": "com.tortugateam.bravelandpirate",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-22T14:56:06.488551",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-03T13:24:39.438301"
         },
         "contact@cottongame.com": {
             "app_name": "ISOLAND",
             "package": "com.cottongame.isoland0",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-22T18:56:03.284623",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-03T13:24:39.438301"
         },
         "info@gamebra.in": {
             "app_name": "hocus 2",
@@ -4257,24 +4257,24 @@
             "app_name": "Exolotl",
             "package": "com.JellyLab.ExolotlZian",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-03T13:24:39.438301",
             "followup_sent_at": null
         },
         "robert@protopop.com": {
             "app_name": "Nimian Legends",
             "package": "com.protopop.vandgels",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-03T13:24:39.438301",
             "followup_sent_at": null
         },
         "tom@thomasbowker.com": {
             "app_name": "LYNE",
             "package": "com.thomasbowker.lynerelease",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-03T13:24:39.438301",
             "followup_sent_at": null
         },
         "info@somoga.com": {
