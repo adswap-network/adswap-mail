@@ -2,7 +2,7 @@
     "config": {
         "start_date": "2026-09-12",
         "last_run_date": "2026-10-04",
-        "sent_today": 12
+        "sent_today": 17
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -2065,17 +2065,17 @@
             "app_name": "Eternal Sin",
             "package": "com.tlive.onepiece",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-22T22:10:42.478944",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-04T17:37:24.060870"
         },
         "help@funshine-game.com": {
             "app_name": "ROTK",
             "package": "com.ascthcl.android.ltk",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-22T22:10:42.478944",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-04T17:37:24.060870"
         },
         "info@wl-kz.com": {
             "app_name": "Dungeon and Gravestone",
@@ -4529,24 +4529,24 @@
             "app_name": "334's Adventures",
             "package": "com.baby334.adventures",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-04T17:37:24.060870",
             "followup_sent_at": null
         },
         "andy@gaussian.games": {
             "app_name": "Tomb Trek",
             "package": "com.GaussianGamesLtd.TombTrek",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-04T17:37:24.060870",
             "followup_sent_at": null
         },
         "yaskravi.content@gmail.com": {
             "app_name": "Cat Journey",
             "package": "com.yaskravicontent.catjourney",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-04T17:37:24.060870",
             "followup_sent_at": null
         },
         "support@jasonholtdigital.com": {
