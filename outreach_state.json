@@ -1,8 +1,8 @@
 {
     "config": {
         "start_date": "2026-09-12",
-        "last_run_date": "2026-10-03",
-        "sent_today": 49
+        "last_run_date": "2026-10-04",
+        "sent_today": 3
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -2033,9 +2033,9 @@
             "app_name": "SunnyMatch",
             "package": "com.nstage.sunnymatch",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-22T22:10:42.478944",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-04T00:39:15.823619"
         },
         "n2games@n2games.com": {
             "app_name": "Gem Secret",
@@ -4465,16 +4465,16 @@
             "app_name": "unmemory",
             "package": "com.pid.unmemory",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-04T00:39:15.823619",
             "followup_sent_at": null
         },
         "hi@listub.com": {
             "app_name": "Listub",
             "package": "com.listub.app",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-04T00:39:15.823619",
             "followup_sent_at": null
         },
         "tinylabapps@gmail.com": {
