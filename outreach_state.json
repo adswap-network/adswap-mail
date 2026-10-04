@@ -2,7 +2,7 @@
     "config": {
         "start_date": "2026-09-12",
         "last_run_date": "2026-10-04",
-        "sent_today": 6
+        "sent_today": 12
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -2049,17 +2049,17 @@
             "app_name": "Merge Chef",
             "package": "com.usxxehcbt.google",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-22T22:10:42.478944",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-04T13:12:29.720675"
         },
         "game-support@orange-cube.jp": {
             "app_name": "Labyrinth of the Witch DX",
             "package": "jp.orangecube.dotrikepaid",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-22T22:10:42.478944",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-04T13:12:29.720675"
         },
         "tuqbasic@gmail.com": {
             "app_name": "Eternal Sin",
@@ -4497,32 +4497,32 @@
             "app_name": "JAMMATES",
             "package": "com.adup.jammates",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-04T13:12:29.720675",
             "followup_sent_at": null
         },
         "contact@cadenceguitar.com": {
             "app_name": "Cadence",
             "package": "com.apizon.cadence.android",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-04T13:12:29.720675",
             "followup_sent_at": null
         },
         "main@wallstream.com": {
             "app_name": "WallStream",
             "package": "com.wallstream.player",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-04T13:12:29.720675",
             "followup_sent_at": null
         },
         "contacts@conus.vision": {
             "app_name": "Luniant",
             "package": "com.conus.vision.luniant1",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-04T13:12:29.720675",
             "followup_sent_at": null
         },
         "support@studioamk.com": {
