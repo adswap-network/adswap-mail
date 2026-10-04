@@ -2,7 +2,7 @@
     "config": {
         "start_date": "2026-09-12",
         "last_run_date": "2026-10-04",
-        "sent_today": 3
+        "sent_today": 6
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -2041,9 +2041,9 @@
             "app_name": "Gem Secret",
             "package": "com.nominox.bfmerge.gp",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-22T22:10:42.478944",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-04T06:50:27.867179"
         },
         "playgameforjoe@gmail.com": {
             "app_name": "Merge Chef",
@@ -4481,16 +4481,16 @@
             "app_name": "Yondo Todo List on Lock Screen",
             "package": "com.tinylab.yondo",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-04T06:50:27.867179",
             "followup_sent_at": null
         },
         "hello@subdial.dev": {
             "app_name": "eXpend",
             "package": "com.subdial.expend",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-04T06:50:27.867179",
             "followup_sent_at": null
         },
         "eve@adup.kr": {
