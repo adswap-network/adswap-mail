@@ -2,7 +2,7 @@
     "config": {
         "start_date": "2026-09-12",
         "last_run_date": "2026-10-05",
-        "sent_today": 5
+        "sent_today": 10
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -2201,17 +2201,17 @@
             "app_name": "Zen Educate",
             "package": "com.zeneducate_native_v1",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-23T20:23:56.246015",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-05T16:02:29.189239"
         },
         "elisa@soulku.com": {
             "app_name": "SoulKu",
             "package": "soulku.android.app",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-23T20:23:56.246015",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-05T16:02:29.189239"
         },
         "app.resimpli@gmail.com": {
             "app_name": "REsimpli",
@@ -4737,24 +4737,24 @@
             "app_name": "Afterplace",
             "package": "com.kice.afterplace",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-05T16:02:29.189239",
             "followup_sent_at": null
         },
         "support@wingplay.co": {
             "app_name": "Block Bounty",
             "package": "com.wingplay.blocks",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-05T16:02:29.189239",
             "followup_sent_at": null
         },
         "pauloondra.lgopt@gmail.com": {
             "app_name": "Zero Stress King",
             "package": "com.pauloondra.zerostressking",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-05T16:02:29.189239",
             "followup_sent_at": null
         },
         "oranginalplan@gmail.com": {
