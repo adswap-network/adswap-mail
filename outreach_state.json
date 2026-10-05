@@ -1,8 +1,8 @@
 {
     "config": {
         "start_date": "2026-09-12",
-        "last_run_date": "2026-10-04",
-        "sent_today": 50
+        "last_run_date": "2026-10-05",
+        "sent_today": 2
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -2185,9 +2185,9 @@
             "app_name": "YogaRenew",
             "package": "com.peliexpo.pelimobile",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-23T20:23:56.246015",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-05T00:56:56.887866"
         },
         "customersupport@blueskyvitamin.com": {
             "app_name": "Blue Sky Vitamin",
@@ -4713,8 +4713,8 @@
             "app_name": "FreeCell Solitaire Premium",
             "package": "com.card.freecell.solitaire.pro",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-05T00:56:56.887866",
             "followup_sent_at": null
         },
         "jaguarstudios1@gmail.com": {
