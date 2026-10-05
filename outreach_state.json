@@ -2,7 +2,7 @@
     "config": {
         "start_date": "2026-09-12",
         "last_run_date": "2026-10-05",
-        "sent_today": 2
+        "sent_today": 5
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -2193,9 +2193,9 @@
             "app_name": "Blue Sky Vitamin",
             "package": "co.tapcart.app.id_zBJRpvxJfW",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-23T20:23:56.246015",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-05T07:04:34.718274"
         },
         "support@zeneducate.com": {
             "app_name": "Zen Educate",
@@ -4721,16 +4721,16 @@
             "app_name": "Word Master",
             "package": "jaguargames.wordmasterpro",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-05T07:04:34.718274",
             "followup_sent_at": null
         },
         "lxneng01@gmail.com": {
             "app_name": "Miyaelf Marble Shoot2",
             "package": "com.starmove.game.marbleshoot",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-05T07:04:34.718274",
             "followup_sent_at": null
         },
         "somebody@afterplace.com": {
