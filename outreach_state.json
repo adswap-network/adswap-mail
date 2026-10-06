@@ -2,7 +2,7 @@
     "config": {
         "start_date": "2026-09-12",
         "last_run_date": "2026-10-06",
-        "sent_today": 12
+        "sent_today": 47
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -2377,23 +2377,23 @@
             "app_name": "Snarky Tea",
             "package": "co.tapcart.app.id_buiBMGWcVc",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-24T22:27:08.560750",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-06T21:40:08.855793"
         },
         "m.advisor@edelmanfinancialengines.com": {
             "app_name": "EFE",
             "package": "com.efe.user",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-24T22:27:08.560750",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-06T21:40:08.855793"
         },
         "help@vestwell.com": {
             "app_name": "Vestwell",
             "package": "com.vestwell.app",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "REPLIED",
             "first_sent_at": "2026-09-24T22:27:08.560750",
             "followup_sent_at": null
         },
@@ -2401,135 +2401,135 @@
             "app_name": "Turnbull Law Group",
             "package": "com.turnbulldashboard",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-24T22:27:08.560750",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-06T21:40:08.855793"
         },
         "hello@pitch15.solutions": {
             "app_name": "My Tenth Step",
             "package": "com.pitch_15.my_tenth_step",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-24T22:27:08.560750",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-06T21:40:08.855793"
         },
         "support@realbricks.com": {
             "app_name": "Realbricks",
             "package": "com.realbricks",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-24T22:27:08.560750",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-06T21:40:08.855793"
         },
         "orders@jamiekay.co.nz": {
             "app_name": "Jamie Kay USA",
             "package": "co.tapcart.app.id_KCI9elLqNV",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-24T22:27:08.560750",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-06T21:40:08.855793"
         },
         "customerservice@skinnymixes.com": {
             "app_name": "Skinny Mixes",
             "package": "co.tapcart.app.id_E30aUmZnzE",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-24T22:27:08.560750",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-06T21:40:08.855793"
         },
         "support@kulturecity.org": {
             "app_name": "KultureCity",
             "package": "org.kulturecity.app",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-24T22:27:08.560750",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-06T21:40:08.855793"
         },
         "support@uda1.com": {
             "app_name": "ConstructionOnline",
             "package": "onsiteplanroom.uda.hybrid",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-24T22:27:08.560750",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-06T21:40:08.855793"
         },
         "support@jobnimbus.com": {
             "app_name": "JobNimbus",
             "package": "com.jobnimbus.leadssalesprojects",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-24T22:27:08.560750",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-06T21:40:08.855793"
         },
         "support@brainfitlife.com": {
             "app_name": "Brain Fit Life",
             "package": "com.amensclinic.brainfitlife.mobileapplication",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-24T22:27:08.560750",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-06T21:40:08.855793"
         },
         "hello@chappapp.com": {
             "app_name": "Chapp",
             "package": "com.chapp",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-24T22:27:08.560750",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-06T21:40:08.855793"
         },
         "hello@useofenglishpro.com": {
             "app_name": "English Vocabulary PRO",
             "package": "com.uoe.vocabularypro",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-24T22:27:08.560750",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-06T21:40:08.855793"
         },
         "info.woorapp@gmail.com": {
             "app_name": "Woor. English vocabulary",
             "package": "app.woor",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-24T22:27:08.560750",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-06T21:40:08.855793"
         },
         "hello@visualverbs.app": {
             "app_name": "Visual Verbs",
             "package": "com.abunge.SpanishVV",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-25T01:32:09.039622",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-06T21:40:08.855793"
         },
         "sparkedtech2021@gmail.com": {
             "app_name": "LingoSpark",
             "package": "com.vispark.chinese",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-25T01:32:09.039622",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-06T21:40:08.855793"
         },
         "nhang.tini@gmail.com": {
             "app_name": "Estonian",
             "package": "io.ivoca.conversationestonian",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-25T01:32:09.039622",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-06T21:40:08.855793"
         },
         "sh@yehuda.com": {
             "app_name": "Sherlock Holmes Detect",
             "package": "com.yehudaapp",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-25T07:50:56.858407",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-06T21:40:08.855793"
         },
         "support@gabbybernstein.com": {
             "app_name": "Gabby",
             "package": "com.gabbybernstein.app",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "REPLIED",
             "first_sent_at": "2026-09-25T07:50:56.858407",
             "followup_sent_at": null
         },
@@ -2537,39 +2537,39 @@
             "app_name": "Natulang",
             "package": "com.mokus.natulang.prod",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-25T13:49:30.417188",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-06T21:40:08.855793"
         },
         "ngocdieu121504@gmail.com": {
             "app_name": "Master TOEIC\u00ae Vocabulary",
             "package": "com.bean.edu.toeic.words.basic",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-25T13:49:30.417188",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-06T21:40:08.855793"
         },
         "hello@maneno.co.uk": {
             "app_name": "Maneno",
             "package": "com.maneno.manenouk",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-25T18:38:21.882010",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-06T21:40:08.855793"
         },
         "ihumanpwrd@gmail.com": {
             "app_name": "iHuman Books",
             "package": "com.ihuman.book",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-25T18:38:21.882010",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-06T21:40:08.855793"
         },
         "help@tinytap.it": {
             "app_name": "Math Lingo",
             "package": "mathlingo.kids.math.games",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "REPLIED",
             "first_sent_at": "2026-09-25T18:38:21.882010",
             "followup_sent_at": null
         },
@@ -2577,25 +2577,25 @@
             "app_name": "Play zeta",
             "package": "com.app.zeta",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-25T18:38:21.882010",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-06T21:40:08.855793"
         },
         "solraknes@gmail.com": {
             "app_name": "Magic Mitten",
             "package": "org.magicmitten.app",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-26T01:35:41.913854",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-06T21:40:08.855793"
         },
         "tech@e-limu.org": {
             "app_name": "eLimu World",
             "package": "com.elimu.elimu",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-26T07:44:19.158444",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-06T21:40:08.855793"
         },
         "contact@rockethen.com": {
             "app_name": "Zori Affirmations & Self Love",
@@ -5017,24 +5017,80 @@
             "app_name": "RSS Reader (Simple)",
             "package": "com.milktea.garakuta.rssreader",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-06T21:40:08.855793",
             "followup_sent_at": null
         },
         "app.customers@jpimedia.co.uk": {
             "app_name": "National World News",
             "package": "com.nationalworld.nw",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-06T21:40:08.855793",
             "followup_sent_at": null
         },
         "support@workoutwise.app": {
             "app_name": "Gym Workout Tracker & Log",
             "package": "com.yurikoshiishi.workoutwise",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-06T21:40:08.855793",
+            "followup_sent_at": null
+        },
+        "support@nimblebit.com": {
+            "app_name": "Pixel Shelter",
+            "package": "com.nimblebit.pixelshelter",
+            "source": "google_play",
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-06T21:40:08.855793",
+            "followup_sent_at": null
+        },
+        "platinumboy786@gmail.com": {
+            "app_name": "Sea Pop Match 3",
+            "package": "com.BoyBoxStudio.SeaPopSaga",
+            "source": "google_play",
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-06T21:40:08.855793",
+            "followup_sent_at": null
+        },
+        "veerdevstudio@gmail.com": {
+            "app_name": "Expense Tracker Offline",
+            "package": "studio.veerdev.offlineexpensetracker",
+            "source": "google_play",
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-06T21:40:08.855793",
+            "followup_sent_at": null
+        },
+        "support@spentrip.app": {
+            "app_name": "Travel Expense Budget Tracker",
+            "package": "com.reciptix.spentrip",
+            "source": "google_play",
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-06T21:40:08.855793",
+            "followup_sent_at": null
+        },
+        "support@zerokb.co": {
+            "app_name": "Vento Expense & Budget Tracker",
+            "package": "money.vento.expense.tracker",
+            "source": "google_play",
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-06T21:40:08.855793",
+            "followup_sent_at": null
+        },
+        "mobile-dev@vantix.law": {
+            "app_name": "Vantix Law",
+            "package": "com.vantixlaw.services",
+            "source": "google_play",
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-06T21:40:08.855793",
+            "followup_sent_at": null
+        },
+        "service@thehydrojug.com": {
+            "app_name": "HydroJug",
+            "package": "co.tapcart.app.id_AEFqMfFqTm",
+            "source": "google_play",
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-06T21:40:08.855793",
             "followup_sent_at": null
         }
     },
@@ -18716,7 +18772,67 @@
         "com.umberlab.language.speaking.corrector.ai",
         "com.umberlab.simple.easy.minimal.todoapp",
         "com.umberlablimited.encrypt.secureqrcodescanner",
-        "com.umberlablimited.myandro.updatechecke"
+        "com.umberlablimited.myandro.updatechecke",
+        "com.navitime.inbound.walk",
+        "com.navitime.local.navitime",
+        "jp.co.navitime.rentalcar",
+        "com.navitime.taiwan.walk",
+        "com.navitime.drive_license_app",
+        "com.navitime.local.speedometer",
+        "com.navitime.local.trafficmap",
+        "jp.tokyodisneyresort.portalapp",
+        "com.dena.automotive.taxibell",
+        "sc.luup.luup",
+        "com.disney.wdpro.dlr",
+        "com.xiaojukeji.didi.global.customer",
+        "com.cabify.rider",
+        "jp.co.ana.android.tabidachi",
+        "com.airasia.mobile",
+        "com.didiglobal.cashloan",
+        "aero.sita.lab.resmobileweb.android.mh",
+        "com.malaysiaairlines.amal",
+        "com.smartlab.magV4",
+        "com.malaysiaairlines.enrichprepaidcard",
+        "com.mh.journify.android",
+        "com.metech.firefly",
+        "com.rentalcars.handset",
+        "com.avis.androidapp",
+        "com.rentals.caronline",
+        "com.relayrides.android.relayrides",
+        "OCTech.Mobile.Applications.TouchScan",
+        "ag.app.android",
+        "com.flightina.flights",
+        "com.lastairfare.lastminuteflights",
+        "lastminute.hoteldealo.lastminutehotels",
+        "net.bloomz",
+        "com.nimblebit.pixelshelter",
+        "com.nimblebit.legotower",
+        "com.nimblebit.pocketfrogs",
+        "com.nimblebit.tinytower",
+        "com.nimblebit.pocketplanes",
+        "com.nimblebit.pockettrains",
+        "com.nimblebit.tinytowerclassic",
+        "com.BoyBoxStudio.SeaPopSaga",
+        "com.BoyBoxStudio.EdgeBrainPuzzle",
+        "com.BoyBoxStudio.OfflineEmojiSlide",
+        "com.BoyBoxStudio.EggBoy",
+        "air.com.remivision.DreamlandStory",
+        "com.remivision.HexaDiamonds",
+        "com.remivision.wordsjungle",
+        "com.remivision.DonutPack",
+        "com.remivision.royalpuzzle",
+        "home.match3.matching.puzzle.relaxing.brain.fun.lockdown.calm.forest.nature.stress.relief.games",
+        "studio.veerdev.offlineexpensetracker",
+        "com.reciptix.spentrip",
+        "money.vento.expense.tracker",
+        "com.reciptix.keeplea",
+        "com.receipticus.receiptix",
+        "com.vantixlaw.services",
+        "co.tapcart.app.id_AEFqMfFqTm",
+        "com.quickenloans.myql",
+        "com.creditsesame",
+        "com.beyond",
+        "info.intrasoft.habitgoaltracker"
     ],
     "used_keywords": [
         "finance",
@@ -23330,6 +23446,34 @@
         "Yuri+Koshiishi",
         "6138357244014414387",
         "BPM+Health+Co.",
-        "4865585492721581756"
+        "4865585492721581756",
+        "6832600765041977582",
+        "Oriental+Land+Co.,Ltd.",
+        "GO+Inc.",
+        "7873987219758880714",
+        "6381455972553483049",
+        "Cabify+Technology",
+        "All+Nippon+Airways",
+        "Move+Travel+Sdn.+Bhd.",
+        "9175869323303769606",
+        "rentalcars.com",
+        "Avis+Budget+Car+Rental+LLC",
+        "5918606176431327836",
+        "Turo+Inc.",
+        "OCTech,+LLC",
+        "AeroGuest+Aps",
+        "Bloomz",
+        "6980083735741436533",
+        "BoyBoxStudio",
+        "7251908987540126951",
+        "Veer+Dev+Studio",
+        "7033231288871983175",
+        "zerokb",
+        "Vantix+Law",
+        "HydroJug+Apps",
+        "Rocket+Mortgage",
+        "Credit+Sesame,+Inc.",
+        "Beyond+Finance,+LLC",
+        "Intrasoft"
     ]
 }
