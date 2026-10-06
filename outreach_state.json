@@ -1,8 +1,8 @@
 {
     "config": {
         "start_date": "2026-09-12",
-        "last_run_date": "2026-10-05",
-        "sent_today": 49
+        "last_run_date": "2026-10-06",
+        "sent_today": 4
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -2345,9 +2345,9 @@
             "app_name": "Binaural Beats",
             "package": "com.yiqi.binaural.beats",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-24T19:11:36.301028",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-06T10:20:46.931188"
         },
         "stranger2tk@gmail.com": {
             "app_name": "Anonymous Chat no Login",
@@ -4953,24 +4953,24 @@
             "app_name": "Mr Pumpkin 2",
             "package": "com.lilithgames.mrpumpkin2.gp",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-06T10:20:46.931188",
             "followup_sent_at": null
         },
         "contact@madheadgames.com": {
             "app_name": "Rite of Passage",
             "package": "com.madheadgames.rite.passage.embrace.ember.lake.android.uni.free",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-06T10:20:46.931188",
             "followup_sent_at": null
         },
         "hello@skstudios.dev": {
             "app_name": "Flippables Flashcards",
             "package": "dev.skstudios.flippables",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-06T10:20:46.931188",
             "followup_sent_at": null
         },
         "info@tcksystems.com": {
