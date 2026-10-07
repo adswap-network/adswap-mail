@@ -2,7 +2,7 @@
     "config": {
         "start_date": "2026-09-12",
         "last_run_date": "2026-10-07",
-        "sent_today": 11
+        "sent_today": 50
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -2633,161 +2633,161 @@
             "app_name": "Simple RSS Reader",
             "package": "com.alphacoreconsulting.simplerssreader",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-26T17:11:58.289279",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-07T21:59:30.875740"
         },
         "android-support@sitiouno.com": {
             "app_name": "Be Soul",
             "package": "com.sitiouno.mytestament.prod",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-26T17:11:58.289279",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-07T21:59:30.875740"
         },
         "info@vagustim.io": {
             "app_name": "Vagustim",
             "package": "com.vagustim.vagustimpro",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-26T17:11:58.289279",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-07T21:59:30.875740"
         },
         "info@aardvarkbookclub.com": {
             "app_name": "Aardvark Book Club",
             "package": "com.aardvark.app",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-26T17:11:58.289279",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-07T21:59:30.875740"
         },
         "lakeshore@lakeshorelearning.com": {
             "app_name": "Lakeshore Learning Materials",
             "package": "com.lakeshorelearning.mobileapp",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-26T17:11:58.289279",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-07T21:59:30.875740"
         },
         "hey@joincrowdhealth.com": {
             "app_name": "CrowdHealth",
             "package": "com.cratebind.crowdhealth",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-26T19:54:30.127770",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-07T21:59:30.875740"
         },
         "qasem@joylux.com": {
             "app_name": "Joylux Menopausal Health App",
             "package": "com.joylux.app",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-26T19:54:30.127770",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-07T21:59:30.875740"
         },
         "info@growlink.com": {
             "app_name": "Growlink",
             "package": "com.hydropods.mobileapp",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-26T19:54:30.127770",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-07T21:59:30.875740"
         },
         "support@tapmango.com": {
             "app_name": "Area 51 Fireworks",
             "package": "com.tapmango.area51fireworks",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-26T19:54:30.127770",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-07T21:59:30.875740"
         },
         "support@onepagecrm.com": {
             "app_name": "OnePageCRM",
             "package": "com.onepagecrm",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-26T19:54:30.127770",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-07T21:59:30.875740"
         },
         "wequil.app@gmail.com": {
             "app_name": "WEquil App",
             "package": "app.wequil.wequilmobile",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-26T22:53:08.676774",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-07T21:59:30.875740"
         },
         "hello@canopie.app": {
             "app_name": "Canopie for Parents",
             "package": "com.goodbarber.canopie",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-26T22:53:08.676774",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-07T21:59:30.875740"
         },
         "info@tridentmindset.com": {
             "app_name": "Trident Mindset",
             "package": "com.pikwxwpq5b1i.plgj6rakapp",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-26T22:53:08.676774",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-07T21:59:30.875740"
         },
         "support@mindfulnessapps.com": {
             "app_name": "Jon Kabat-Zinn Meditations",
             "package": "com.mindfulnessapps.jkz",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-26T22:53:08.676774",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-07T21:59:30.875740"
         },
         "info@roomvu.com": {
             "app_name": "Roomvu",
             "package": "com.roomvu.newapp",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-26T22:53:08.676774",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-07T21:59:30.875740"
         },
         "nascentra@gmail.com": {
             "app_name": "KiWi Vault",
             "package": "com.raymond.kiwi_vault",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-26T22:53:08.676774",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-07T21:59:30.875740"
         },
         "support@crimsonlabs.dev": {
             "app_name": "DayDew",
             "package": "com.crimson.daydew",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-26T22:53:08.676774",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-07T21:59:30.875740"
         },
         "support@controlplus.app": {
             "app_name": "Control+",
             "package": "app.controlplus",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-26T22:53:08.676774",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-07T21:59:30.875740"
         },
         "support@airheadatpl.com": {
             "app_name": "Airhead ATPL",
             "package": "com.airheadmobile.app",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-26T22:53:08.676774",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-07T21:59:30.875740"
         },
         "support@petersonacademy.com": {
             "app_name": "Peterson Academy",
             "package": "com.petersonacademy.android",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-26T22:53:08.676774",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-07T21:59:30.875740"
         },
         "stickerland.app@gmail.com": {
             "app_name": "Limitless AI\u30fbChatBot Assistant",
@@ -5153,96 +5153,152 @@
             "app_name": "Grocery AI",
             "package": "com.pocketlabs.groceryking2",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-07T21:59:30.875740",
             "followup_sent_at": null
         },
         "jamie@highdiveapparel.com": {
             "app_name": "High Dive Apparel",
             "package": "co.shopney.highdiveapparel",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-07T21:59:30.875740",
             "followup_sent_at": null
         },
         "ahmad@nominalx.com": {
             "app_name": "Nominalx",
             "package": "co.tapcart.app.id_M7pcNt95TK",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-07T21:59:30.875740",
             "followup_sent_at": null
         },
         "info@inheritco.com": {
             "app_name": "Inherit Clothing Co",
             "package": "co.tapcart.app.id_2U2Exx5lnC",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-07T21:59:30.875740",
             "followup_sent_at": null
         },
         "info@americantall.com": {
             "app_name": "American Tall",
             "package": "co.tapcart.app.id_BrDtBG7PIX",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-07T21:59:30.875740",
             "followup_sent_at": null
         },
         "tarik@firststopfashion.com": {
             "app_name": "FSF NYC",
             "package": "co.shopney.fsfnyc.com",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-07T21:59:30.875740",
             "followup_sent_at": null
         },
         "napoly@aol.com": {
             "app_name": "Napoly Menswear",
             "package": "co.shopney.napolymenswear",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-07T21:59:30.875740",
             "followup_sent_at": null
         },
         "hello@kollectin.com": {
             "app_name": "KOL Kollectin Shopping",
             "package": "net.lateralview.kollectin",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-07T21:59:30.875740",
             "followup_sent_at": null
         },
         "customerservice@lotusandluna.com": {
             "app_name": "Lotus and Luna",
             "package": "com.vennapps.lotusandluna",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-07T21:59:30.875740",
             "followup_sent_at": null
         },
         "support@likcut.com": {
             "app_name": "Likcut",
             "package": "com.bl.likcut",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-07T21:59:30.875740",
             "followup_sent_at": null
         },
         "support@peblla.com": {
             "app_name": "Sushi Oishii",
             "package": "com.alaeat.customer.android.sushioihii",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-07T21:59:30.875740",
             "followup_sent_at": null
         },
         "feedback@mrcook.app": {
             "app_name": "Save Recipes",
             "package": "app.mrcook.twa",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-07T21:59:30.875740",
+            "followup_sent_at": null
+        },
+        "info@sunnaentertainment.com": {
+            "app_name": "Planet Cube",
+            "package": "com.sunnaentertainment.planetcubeedge",
+            "source": "google_play",
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-07T21:59:30.875740",
+            "followup_sent_at": null
+        },
+        "qookieg@gmail.com": {
+            "app_name": "OrbaDrone",
+            "package": "com.qookie.orbadrone2",
+            "source": "google_play",
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-07T21:59:30.875740",
+            "followup_sent_at": null
+        },
+        "support-robots-gps@choiceofgames.com": {
+            "app_name": "Choice of Robots",
+            "package": "com.choiceofgames.robots",
+            "source": "google_play",
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-07T21:59:30.875740",
+            "followup_sent_at": null
+        },
+        "vishgamestudio+support@gmail.com": {
+            "app_name": "Just King",
+            "package": "com.vishgamestudio.king",
+            "source": "google_play",
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-07T21:59:30.875740",
+            "followup_sent_at": null
+        },
+        "support@kurechii.com": {
+            "app_name": "King's League II",
+            "package": "com.kurechii.kingsleagueii",
+            "source": "google_play",
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-07T21:59:30.875740",
+            "followup_sent_at": null
+        },
+        "feedback@coinpanda.io": {
+            "app_name": "Coinpanda",
+            "package": "com.coinpanda.app",
+            "source": "google_play",
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-07T21:59:30.875740",
+            "followup_sent_at": null
+        },
+        "akhil.coding.dev@gmail.com": {
+            "app_name": "StepGo",
+            "package": "in.codingvalue.stepgo",
+            "source": "google_play",
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-07T21:59:30.875740",
             "followup_sent_at": null
         }
     },
@@ -19067,7 +19123,88 @@
         "com.brinker.chilis",
         "com.dillons.mobile",
         "com.petsmart.consumermobile",
-        "app.mrcook.twa"
+        "app.mrcook.twa",
+        "com.jbgames.eightbitjump4",
+        "com.jbgames.wakeisland",
+        "com.jbgames.eightbitjump2",
+        "com.jbgames.eightbitslide",
+        "com.jbgames.cavemanwar2",
+        "com.jbgames.sfrk",
+        "com.jbgames.bitebitemosquito",
+        "com.sunnaentertainment.planetcubeedge",
+        "ai.agent1c.flipside",
+        "com.qookie.orbadrone2",
+        "com.lojugames.android.Ordia",
+        "com.northn.infinitemuseum",
+        "com.Qookie.BallsBattle",
+        "com.Qookie.LastPlantOnEarth",
+        "com.Qookie.BlastingMarbles",
+        "com.Qookie.RollingInGears",
+        "com.qookie.nullify",
+        "com.Qookie.PercentageCalculator",
+        "com.okshur.JetscoutValunians",
+        "com.choiceofgames.robots",
+        "com.selvaInteractive.highwind",
+        "com.neutronized.dropwizard",
+        "com.lojugames.android.Causality",
+        "net.spacecan.juicyrealm.android",
+        "com.Devolver.ExittheGungeon",
+        "com.northn.sneak",
+        "com.onetwostudio",
+        "com.choiceofgames.omnibus",
+        "com.choiceofgames.dayfornight",
+        "com.choiceofgames.godofchaos",
+        "com.choiceofgames.wizardconfidential",
+        "com.choiceofgames.posthuman",
+        "com.choiceofgames.heroesoftomorrow",
+        "com.choiceofgames.herofall",
+        "com.hg.spellforce",
+        "com.vishgamestudio.king",
+        "com.kurechii.kingsleagueii",
+        "com.kurechii.tinyguardians",
+        "com.kurechii.postknight2",
+        "com.kurechii.postknight",
+        "com.gamenauts.klo",
+        "com.resestudio.jewelcastle.jewelslegend",
+        "com.superbox.aos.kitaepop",
+        "com.coinpanda.app",
+        "com.alpaca.step_counter",
+        "in.codingvalue.stepgo",
+        "com.alpaca.android.readout",
+        "com.alpaca.photo_mosaic",
+        "com.alpaca.blur_video",
+        "com.alpaca.speed_pitch_player",
+        "com.alpaca.softfocus",
+        "com.zeopoxa.fitness.running",
+        "home.fitness.challenge",
+        "in.codingvalue.progressshot",
+        "in.codingvalue.emicalculator",
+        "in.codingvalue.qrcodescanner",
+        "com.webaddicted.widepixel",
+        "com.zeopoxa.fitness.cycling.bike",
+        "com.zeopoxa.fitness.weightloss.loseweight",
+        "com.zeopoxa.fitness.bmicalculator",
+        "com.zeopoxa.fitness.homeworkout",
+        "com.zeopoxa.pullups",
+        "com.zeopoxa.squats",
+        "running.tracker.gps.map",
+        "com.extramile.mygrowth",
+        "com.brain.training.testora",
+        "com.ai.personal.stylist.outfit.maker.femi",
+        "com.social.communication.skills",
+        "com.daily.buddhism.buddha.quotes",
+        "com.stepcounter.walkingtracker.pedometer",
+        "uk.co.olsonapps.fiveMinYoga",
+        "com.tooltoolnam.icebreaker_question_wheel",
+        "com.tooltoolnam.motorcycle_rev_simulator",
+        "com.tooltoolnam.thunder_lightning_storm",
+        "com.tooltoolnam.generator_load_planner",
+        "com.tooltoolnam.air_horn_pro",
+        "com.tooltoolnam.fireworks_tap_show",
+        "com.tooltoolnam.landscape_yardage_calculator",
+        "com.ither.vocably",
+        "com.ither.curiosity",
+        "com.hello.spanish"
     ],
     "used_keywords": [
         "finance",
@@ -19102,7 +19239,32 @@
         "notes",
         "chat",
         "meet",
-        "buy and sell"
+        "buy and sell",
+        "music",
+        "action offline game indie",
+        "zombie survival game 2d",
+        "retro platformer action",
+        "match 3 puzzle free offline",
+        "color sort puzzle hard",
+        "idle clicker simulator",
+        "expense tracker minimalist",
+        "budget planner offline",
+        "crypto portfolio widget",
+        "pomodoro timer aesthetic",
+        "habit tracker offline",
+        "kanban board personal",
+        "water reminder fasting",
+        "step counter offline pedometer",
+        "home workout no equipment",
+        "anonymous chat local",
+        "icebreaker questions app",
+        "couple calendar shared",
+        "flashcards maker study",
+        "learn vocabulary daily",
+        "rss reader minimalist fast",
+        "daily journal secret",
+        "workout logger gym",
+        "time blocker schedule"
     ],
     "scanned_developers": [
         "DecusPro",
@@ -23751,6 +23913,23 @@
         "e.l.f.+Cosmetics",
         "Brinker+International",
         "PetSmart+LLC",
-        "Flowsen+Software+UG+(haftungsbeschr%C3%A4nkt)"
+        "Flowsen+Software+UG+(haftungsbeschr%C3%A4nkt)",
+        "6319282674360041421",
+        "Sunna+Entertainment",
+        "Agent1c.ai",
+        "7555693575114781431",
+        "7097437340895268905",
+        "7971676100273674068",
+        "6019444844429698128",
+        "SpaceCan+Games",
+        "VISH",
+        "5438434099680543384",
+        "6325595250602597858",
+        "5079075030887447313",
+        "CodingValue",
+        "Zeopoxa",
+        "Extramile+Limited",
+        "ToolToolNam",
+        "7592383084338969904"
     ]
 }
