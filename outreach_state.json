@@ -1,8 +1,8 @@
 {
     "config": {
         "start_date": "2026-09-12",
-        "last_run_date": "2026-10-07",
-        "sent_today": 50
+        "last_run_date": "2026-10-08",
+        "sent_today": 4
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -2793,25 +2793,25 @@
             "app_name": "Limitless AI\u30fbChatBot Assistant",
             "package": "app.smartfox.lab.limitless.ai.chatgpt.gpt4",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-26T22:53:08.676774",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-08T01:57:11.323962"
         },
         "hi@sleekflow.io": {
             "app_name": "SleekFlow",
             "package": "io.sleekflow.sleekflow",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-26T22:53:08.676774",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-08T01:57:11.323962"
         },
         "support@quitch.com": {
             "app_name": "Quitch",
             "package": "com.quitch",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-26T22:53:08.676774",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-08T01:57:11.323962"
         },
         "inquire@ciee.org": {
             "app_name": "CIEE Study Abroad",
@@ -5299,6 +5299,14 @@
             "source": "google_play",
             "status": "FIRST_SENT",
             "first_sent_at": "2026-10-07T21:59:30.875740",
+            "followup_sent_at": null
+        },
+        "support@rift.co": {
+            "app_name": "Soar",
+            "package": "ai.flysoar.android",
+            "source": "google_play",
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-08T01:57:11.323962",
             "followup_sent_at": null
         }
     },
@@ -19204,7 +19212,8 @@
         "com.tooltoolnam.landscape_yardage_calculator",
         "com.ither.vocably",
         "com.ither.curiosity",
-        "com.hello.spanish"
+        "com.hello.spanish",
+        "ai.flysoar.android"
     ],
     "used_keywords": [
         "finance",
@@ -23930,6 +23939,7 @@
         "Zeopoxa",
         "Extramile+Limited",
         "ToolToolNam",
-        "7592383084338969904"
+        "7592383084338969904",
+        "Soar+Flights+Inc."
     ]
 }
