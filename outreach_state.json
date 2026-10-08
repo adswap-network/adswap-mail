@@ -2,7 +2,7 @@
     "config": {
         "start_date": "2026-09-12",
         "last_run_date": "2026-10-08",
-        "sent_today": 7
+        "sent_today": 14
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -2825,17 +2825,17 @@
             "app_name": "CircuitMess Playground",
             "package": "com.circuitmess.playground",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-26T22:53:08.676774",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-08T16:30:16.616597"
         },
         "info@tenmeya.com": {
             "app_name": "Tenmeya",
             "package": "com.tenmeya.tenmeyamobile",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-26T22:53:08.676774",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-08T16:30:16.616597"
         },
         "marcusjacob5963@gmail.com": {
             "app_name": "MJ",
@@ -5329,40 +5329,40 @@
             "app_name": "LetsUpDoc",
             "package": "com.letsupdoc.mobile",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-08T16:30:16.616597",
             "followup_sent_at": null
         },
         "support@petme.social": {
             "app_name": "Petme",
             "package": "com.zerosgroup.petme",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-08T16:30:16.616597",
             "followup_sent_at": null
         },
         "hello@waha.app": {
             "app_name": "Waha",
             "package": "com.kingdomstrategies.waha",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-08T16:30:16.616597",
             "followup_sent_at": null
         },
         "legal@mentalfuture.com": {
             "app_name": "MentalFuture",
             "package": "com.mental.future.meditation.cbt",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-08T16:30:16.616597",
             "followup_sent_at": null
         },
         "support@floramaternity.com": {
             "app_name": "Moonly",
             "package": "flora.period.tracker.fertility.female.health.calendar.ai.app",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-08T16:30:16.616597",
             "followup_sent_at": null
         },
         "keltycentre@cw.bc.ca": {
