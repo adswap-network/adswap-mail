@@ -2,7 +2,7 @@
     "config": {
         "start_date": "2026-09-12",
         "last_run_date": "2026-10-08",
-        "sent_today": 14
+        "sent_today": 47
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -2841,79 +2841,79 @@
             "app_name": "MJ",
             "package": "com.marcusxtechnologies.mj",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-27T01:28:39.897820",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-08T22:05:39.171880"
         },
         "support@storypop.games": {
             "app_name": "StoryPop",
             "package": "games.storypop.app",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-27T01:28:39.897820",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-08T22:05:39.171880"
         },
         "support@shelog.ai": {
             "app_name": "Shelog",
             "package": "com.lighterlife.shelog",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-27T08:12:44.214190",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-08T22:05:39.171880"
         },
         "info@layla-network.ai": {
             "app_name": "Layla",
             "package": "com.layla",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-27T08:12:44.214190",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-08T22:05:39.171880"
         },
         "info@lucachat.ai": {
             "app_name": "Luca AI",
             "package": "com.tradinos.luca",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-27T08:12:44.214190",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-08T22:05:39.171880"
         },
         "app.dev@kadampa.net": {
             "app_name": "Modern Buddhism",
             "package": "org.kadampa.modernbuddhism",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-27T14:02:27.663308",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-08T22:05:39.171880"
         },
         "support@temenosdream.com": {
             "app_name": "Temenos Dream",
             "package": "com.temenosDream.temenosDream",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-27T14:02:27.663308",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-08T22:05:39.171880"
         },
         "ops@theappforge.co.in": {
             "app_name": "AI Calorie Counter",
             "package": "com.sheikhpublishinginc.calfinity",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-27T14:02:27.663308",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-08T22:05:39.171880"
         },
         "support@kodekloud.com": {
             "app_name": "KodeKloud",
             "package": "com.kodekloud.learn",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-27T18:25:54.406899",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-08T22:05:39.171880"
         },
         "ourmediaapps@ourmediashop.com": {
             "app_name": "Who Do You Think You Are?",
             "package": "com.immediatemedia.wdytyamag",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "REPLIED",
             "first_sent_at": "2026-09-27T18:25:54.406899",
             "followup_sent_at": null
         },
@@ -2921,39 +2921,39 @@
             "app_name": "iSMART Touch",
             "package": "ismart.edu.vn.ito",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-27T18:25:54.406899",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-08T22:05:39.171880"
         },
         "dev.wolfgang@haszler.eu": {
             "app_name": "Nap & Recharge Power Nap Timer",
             "package": "at.napandrecharge.app",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-27T18:25:54.406899",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-08T22:05:39.171880"
         },
         "dev@motion-app.com": {
             "app_name": "Motion",
             "package": "com.motionapp.motionapp",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-27T18:25:54.406899",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-08T22:05:39.171880"
         },
         "info@rayoga.com": {
             "app_name": "Ra Yoga",
             "package": "com.marianatek.rayoga",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-27T22:13:34.625611",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-08T22:05:39.171880"
         },
         "customerservice@nutrisystem.com": {
             "app_name": "Nutrisystem",
             "package": "com.wellful.nutrisystem",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "REPLIED",
             "first_sent_at": "2026-09-27T22:13:34.625611",
             "followup_sent_at": null
         },
@@ -2961,47 +2961,47 @@
             "app_name": "Most Common Russian Words",
             "package": "com.chillnstudy.enru",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-27T22:13:34.625611",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-08T22:05:39.171880"
         },
         "support@fortect.com": {
             "app_name": "Fortect Mobile Security",
             "package": "com.fortect.mobilesecurity",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-27T22:13:34.625611",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-08T22:05:39.171880"
         },
         "hi@getply.com": {
             "app_name": "Ply",
             "package": "com.dotcode.marble",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-27T22:13:34.625611",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-08T22:05:39.171880"
         },
         "manoja@cisco.com": {
             "app_name": "Webex Canary",
             "package": "com.cisco.wx2.android.test.canary",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-27T22:13:34.625611",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-08T22:05:39.171880"
         },
         "hello@wonderschool.com": {
             "app_name": "Wonderschool",
             "package": "com.wonderschool.mobile",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-27T22:13:34.625611",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-08T22:05:39.171880"
         },
         "support@eloomi.com": {
             "app_name": "eloomi",
             "package": "com.eloomi.infinite",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "REPLIED",
             "first_sent_at": "2026-09-27T22:13:34.625611",
             "followup_sent_at": null
         },
@@ -5369,80 +5369,120 @@
             "app_name": "Breathr",
             "package": "ca.phsa.breathrapp",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-08T22:05:39.171880",
             "followup_sent_at": null
         },
         "audioappsupport@penguinrandomhouse.com": {
             "app_name": "Penguin Random House Audio",
             "package": "com.prhad.volumes",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-08T22:05:39.171880",
             "followup_sent_at": null
         },
         "hello@dbt-mind.com": {
             "app_name": "DBT-Mind",
             "package": "com.mindcrafts.DBTMind",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-08T22:05:39.171880",
             "followup_sent_at": null
         },
         "support@prepia.com": {
             "app_name": "Prepia Medical Exam Prep 2026",
             "package": "com.aleosapps.QuizzAppMedical",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-08T22:05:39.171880",
             "followup_sent_at": null
         },
         "support@olivetree.com": {
             "app_name": "NLT Bible App by Olive Tree",
             "package": "nlt.biblereader.olivetree",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-08T22:05:39.171880",
             "followup_sent_at": null
         },
         "support@bellehealth.co": {
             "app_name": "Belle Period & PMDD Tracker",
             "package": "co.bellehealth.bellehealth",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-08T22:05:39.171880",
             "followup_sent_at": null
         },
         "arpit@simpletherapy.com": {
             "app_name": "SimpleTherapy",
             "package": "com.simpletherapy.android.mhealth",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-08T22:05:39.171880",
             "followup_sent_at": null
         },
         "info.calmdeen@gmail.com": {
             "app_name": "Calm Deen",
             "package": "com.pacehut.CalmDeen",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-08T22:05:39.171880",
             "followup_sent_at": null
         },
         "contact@joonapp.io": {
             "app_name": "Joon",
             "package": "com.joon.android",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-08T22:05:39.171880",
             "followup_sent_at": null
         },
         "support@sidekickhealth.com": {
             "app_name": "Sidekick Health",
             "package": "com.goodlifeme.sidekick",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-08T22:05:39.171880",
+            "followup_sent_at": null
+        },
+        "cs@detailgames.ai": {
+            "app_name": "Meowchant",
+            "package": "com.nerdnavis.meowchant",
+            "source": "google_play",
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-08T22:05:39.171880",
+            "followup_sent_at": null
+        },
+        "support@mindzeit.app": {
+            "app_name": "MINDZEIT",
+            "package": "app.mindzeit",
+            "source": "google_play",
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-08T22:05:39.171880",
+            "followup_sent_at": null
+        },
+        "takeonekyuu@gmail.com": {
+            "app_name": "Touhou Incident Idle Clicker",
+            "package": "jp.pluszero.ihen",
+            "source": "google_play",
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-08T22:05:39.171880",
+            "followup_sent_at": null
+        },
+        "help@game2gather.com": {
+            "app_name": "DragonSpear",
+            "package": "com.game2gather.dragonspearex",
+            "source": "google_play",
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-08T22:05:39.171880",
+            "followup_sent_at": null
+        },
+        "widstudiogames@gmail.com": {
+            "app_name": "Fairy Knights -Story based RPG",
+            "package": "widstudio.games.pipes",
+            "source": "google_play",
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-08T22:05:39.171880",
             "followup_sent_at": null
         }
     },
@@ -19590,11 +19630,97 @@
         "com.subsplashconsulting.s_52BMMD",
         "bzn.intermittent.fasting.app",
         "bzn.pregnancy.period.tracker",
-        "com.goodlifeme.sidekick"
+        "com.goodlifeme.sidekick",
+        "com.nerdnavis.meowchant",
+        "com.magicfind.infinity",
+        "com.magicfind.chronoa",
+        "com.magicfind.infinityfree",
+        "app.mindzeit",
+        "jp.pluszero.ihen",
+        "jp.pluszero.merge",
+        "jp.pluszero.dungeon",
+        "jp.pluszero.clicker",
+        "jp.pluszero.line",
+        "kemco.wws.ixtna",
+        "com.ssicosm.dungeon_princess",
+        "com.game2gather.dragonspearex",
+        "com.ltgames.elona",
+        "com.ssicosm.dungeon_princess_3_pay",
+        "com.ssicosm.dungeon_princess_3_free",
+        "com.ssicosm.dungeon_princess_2",
+        "com.ssicosm.slime_great_war_pay",
+        "com.ssicosm.slime_great_war",
+        "com.ltgames.android.m71.us",
+        "com.ltgames.android.oil",
+        "com.mrxw.android.ltgames",
+        "widstudio.games.pipes",
+        "widstudio.games.lastescape",
+        "com.nickdegs.hush",
+        "app.realvirtuality.blockings",
+        "app.realvirtuality.landlord",
+        "com.nickdegs.realvirtualityai",
+        "com.nickdegs.movelog",
+        "com.rockethen.vocab"
     ],
     "used_keywords": [
         "finance",
-        "health"
+        "health",
+        "productivity",
+        "social",
+        "dating",
+        "ecommerce",
+        "entertainment",
+        "travel",
+        "news",
+        "education",
+        "action games",
+        "casual games",
+        "rpg games",
+        "casino games",
+        "money",
+        "fitness",
+        "diet",
+        "to do list",
+        "calendar",
+        "shopping",
+        "movies",
+        "flights",
+        "local news",
+        "study",
+        "budget",
+        "crypto",
+        "investing",
+        "meditation",
+        "workout",
+        "notes",
+        "chat",
+        "meet",
+        "buy and sell",
+        "music",
+        "action offline game indie",
+        "zombie survival game 2d",
+        "retro platformer action",
+        "match 3 puzzle free offline",
+        "color sort puzzle hard",
+        "idle clicker simulator",
+        "expense tracker minimalist",
+        "budget planner offline",
+        "crypto portfolio widget",
+        "pomodoro timer aesthetic",
+        "habit tracker offline",
+        "kanban board personal",
+        "water reminder fasting",
+        "step counter offline pedometer",
+        "home workout no equipment",
+        "anonymous chat local",
+        "icebreaker questions app",
+        "couple calendar shared",
+        "flashcards maker study",
+        "learn vocabulary daily",
+        "rss reader minimalist fast",
+        "daily journal secret",
+        "workout logger gym",
+        "time blocker schedule"
     ],
     "scanned_developers": [
         "DecusPro",
@@ -24375,6 +24501,15 @@
         "7379544105730907437",
         "5654446551223153024",
         "Hulls+Grove+Baptist+Church",
-        "Sidekick+Health"
+        "Sidekick+Health",
+        "Detailgames",
+        "9004221372327451754",
+        "4917423682061673043",
+        "6056546155271062161",
+        "7134204144878147170",
+        "8025383843641929009",
+        "LTGAMES+GLOBAL",
+        "7968303396938453859",
+        "NickDegs"
     ]
 }
