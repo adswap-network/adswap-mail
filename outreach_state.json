@@ -1,8 +1,8 @@
 {
     "config": {
         "start_date": "2026-09-12",
-        "last_run_date": "2026-10-08",
-        "sent_today": 47
+        "last_run_date": "2026-10-09",
+        "sent_today": 3
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -3009,9 +3009,9 @@
             "app_name": "Snaphouss",
             "package": "com.snaphouss",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-27T22:13:34.625611",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-09T02:11:30.160348"
         },
         "support@bundeling.com": {
             "app_name": "Bundeling",
@@ -5483,6 +5483,30 @@
             "source": "google_play",
             "status": "FIRST_SENT",
             "first_sent_at": "2026-10-08T22:05:39.171880",
+            "followup_sent_at": null
+        },
+        "support@sharesight.com": {
+            "app_name": "Sharesight",
+            "package": "com.sharesight.app",
+            "source": "google_play",
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-09T02:11:30.160348",
+            "followup_sent_at": null
+        },
+        "support.devduos@thetrishulgroup.com": {
+            "app_name": "Tymio",
+            "package": "com.DevDuos.animatedclock",
+            "source": "google_play",
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-09T02:11:30.160348",
+            "followup_sent_at": null
+        },
+        "suporteinterativeappssolutions@gmail.com": {
+            "app_name": "Simple Kanban",
+            "package": "com.sg.simplekanban",
+            "source": "google_play",
+            "status": "PENDING",
+            "first_sent_at": null,
             "followup_sent_at": null
         }
     },
@@ -19660,7 +19684,30 @@
         "app.realvirtuality.landlord",
         "com.nickdegs.realvirtualityai",
         "com.nickdegs.movelog",
-        "com.rockethen.vocab"
+        "com.rockethen.vocab",
+        "com.kingsgroup.sos",
+        "com.sharesight.app",
+        "com.marketwatch",
+        "wsj.reader_sp",
+        "com.investors.business.daily",
+        "com.investors.marketsurge",
+        "com.barrons.us",
+        "com.dowjones.wsj.androidtv",
+        "com.investors.leaderboard.android",
+        "com.DevDuos.animatedclock",
+        "com.devduo.train_driver_india",
+        "com.devduo.indian_rail_shunter",
+        "com.devduo.american_rail_empire",
+        "com.devduo.train_traffic_manager",
+        "com.devduo.railjunction",
+        "com.devduo.all_in_one_tracker",
+        "com.sg.simplekanban",
+        "com.henckel.sorteiatimes",
+        "com.henckel.carteiradeclientes",
+        "br.com.henckel.tournament.manager",
+        "br.com.henckel.myplanner",
+        "com.silashenckel.aplicativosilasfullversion",
+        "com.gerenciador.de.torneios.aplicativosilas"
     ],
     "used_keywords": [
         "finance",
@@ -24510,6 +24557,10 @@
         "8025383843641929009",
         "LTGAMES+GLOBAL",
         "7968303396938453859",
-        "NickDegs"
+        "NickDegs",
+        "Sharesight+Mobile",
+        "Dow+Jones+%26+Company,+Inc.",
+        "4747892129266629665",
+        "Interactive+Apps+Solutions"
     ]
 }
