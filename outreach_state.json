@@ -2,7 +2,7 @@
     "config": {
         "start_date": "2026-09-12",
         "last_run_date": "2026-10-09",
-        "sent_today": 3
+        "sent_today": 7
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -3017,25 +3017,25 @@
             "app_name": "Bundeling",
             "package": "com.bundeling",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-27T22:13:34.625611",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-09T09:09:41.775497"
         },
         "support@firsties.com": {
             "app_name": "Storylines",
             "package": "com.firsties.app",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-27T22:13:34.625611",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-09T09:09:41.775497"
         },
         "app.development@justdiggit.org": {
             "app_name": "Kijani",
             "package": "org.justdiggit.kijani",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-27T22:13:34.625611",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-09T09:09:41.775497"
         },
         "hello@mahaana.com": {
             "app_name": "Mahaana",
@@ -5505,8 +5505,8 @@
             "app_name": "Simple Kanban",
             "package": "com.sg.simplekanban",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-09T09:09:41.775497",
             "followup_sent_at": null
         }
     },
@@ -19707,7 +19707,17 @@
         "br.com.henckel.tournament.manager",
         "br.com.henckel.myplanner",
         "com.silashenckel.aplicativosilasfullversion",
-        "com.gerenciador.de.torneios.aplicativosilas"
+        "com.gerenciador.de.torneios.aplicativosilas",
+        "com.cookingo.perfect.meal",
+        "com.tricky.dramas.shortstories",
+        "com.hi.horror.story.tricky.quest",
+        "com.beat.the.monster.toss.punch",
+        "com.ember.meowmatch",
+        "com.jollyco.jollybattlematch3",
+        "com.jollyco.baronmatch3",
+        "com.jollyco.jbpuzzleadventure",
+        "com.jollyco.jollybattlegame",
+        "com.nexbytetech.stepcounter.pedometerapp"
     ],
     "used_keywords": [
         "finance",
@@ -24561,6 +24571,10 @@
         "Sharesight+Mobile",
         "Dow+Jones+%26+Company,+Inc.",
         "4747892129266629665",
-        "Interactive+Apps+Solutions"
+        "Interactive+Apps+Solutions",
+        "6092492816236569434",
+        "Blockchain+Game+Partners,+Inc.",
+        "6415133549160784844",
+        "Nexbyte+Tech"
     ]
 }
