@@ -2,7 +2,7 @@
     "config": {
         "start_date": "2026-09-12",
         "last_run_date": "2026-10-09",
-        "sent_today": 12
+        "sent_today": 23
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -3081,89 +3081,89 @@
             "app_name": "NCMHCE Exam Prep 2026",
             "package": "pp.ncmhce",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-27T22:13:34.625611",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-09T20:59:44.887126"
         },
         "support@cricclubs.com": {
             "app_name": "Spirit Of Cricket",
             "package": "com.cricclubs.mccc",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-27T22:13:34.625611",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-09T20:59:44.887126"
         },
         "team@victrasports.com": {
             "app_name": "Victra",
             "package": "com.womensgame",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-28T00:51:54.965898",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-09T20:59:44.887126"
         },
         "support@gravy.co": {
             "app_name": "Gravy",
             "package": "com.gravy",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-28T00:51:54.965898",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-09T20:59:44.887126"
         },
         "appsupport@fuse.tv": {
             "app_name": "Fuse+",
             "package": "com.twentyfouri.tvbridge.fuse",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-28T00:51:54.965898",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-09T20:59:44.887126"
         },
         "contact@foxandsheep.com": {
             "app_name": "Rudi Rainbow",
             "package": "com.hello_november.rudirainbow",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-28T06:56:20.280516",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-09T20:59:44.887126"
         },
         "support@ifsta.org": {
             "app_name": "IFSTA Essentials 8",
             "package": "org.ifsta.e8",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-28T06:56:20.280516",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-09T20:59:44.887126"
         },
         "contact-us@foodycraft.com": {
             "app_name": "Nurish Life",
             "package": "com.foodycraft.mobile",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-28T22:02:50.212751",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-09T20:59:44.887126"
         },
         "cattlytics@folio3.com": {
             "app_name": "Cattlytics Beef",
             "package": "com.folio3.cattlytics",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-28T22:02:50.212751",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-09T20:59:44.887126"
         },
         "sajjadalis@gmail.com": {
             "app_name": "DigiBudget",
             "package": "app.digibudget.app",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-28T22:02:50.212751",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-09T20:59:44.887126"
         },
         "travis@tryknowhow.com": {
             "app_name": "KnowHow",
             "package": "com.knowhow.knowhow",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-28T22:02:50.212751",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-09T20:59:44.887126"
         },
         "hello@zoala.co": {
             "app_name": "Zoala",
@@ -19798,7 +19798,16 @@
         "com.huntington.m",
         "com.hastik.money_manager",
         "com.hastik.tempmailerx",
-        "com.hastik.clipsync"
+        "com.hastik.clipsync",
+        "com.oehmeet",
+        "com.sohi.tileland.gp",
+        "com.sohi.zenarrow.gp",
+        "com.sohi.sptilehome.gp",
+        "com.sohi.mahjongtile.gp",
+        "com.sohi.woodgrid.gp",
+        "com.sohi.screw.gp",
+        "com.sohi.rainbowarrow.gp",
+        "in.playsimple.triple.tile.matchgame.pair.three.puzzle.object.royale"
     ],
     "used_keywords": [
         "finance",
@@ -24686,6 +24695,8 @@
         "6238639102452991335",
         "6189030005660874061",
         "Huntington+National+Bank",
-        "4830979456153911060"
+        "4830979456153911060",
+        "Umair+Younas",
+        "7582214897333225707"
     ]
 }
