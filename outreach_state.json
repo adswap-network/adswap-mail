@@ -1,8 +1,8 @@
 {
     "config": {
         "start_date": "2026-09-12",
-        "last_run_date": "2026-10-09",
-        "sent_today": 23
+        "last_run_date": "2026-10-10",
+        "sent_today": 2
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -3169,9 +3169,9 @@
             "app_name": "Zoala",
             "package": "co.zoala.app",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-28T22:02:50.212751",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-10T00:53:11.736022"
         },
         "support@waiverforever.com": {
             "app_name": "WaiverForever",
@@ -5507,6 +5507,14 @@
             "source": "google_play",
             "status": "FIRST_SENT",
             "first_sent_at": "2026-10-09T09:09:41.775497",
+            "followup_sent_at": null
+        },
+        "support@gymconnect.club": {
+            "app_name": "Gym Notes",
+            "package": "app.rork.gymnotes_workout_tracker",
+            "source": "google_play",
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-10T00:53:11.736022",
             "followup_sent_at": null
         }
     },
@@ -19807,7 +19815,8 @@
         "com.sohi.woodgrid.gp",
         "com.sohi.screw.gp",
         "com.sohi.rainbowarrow.gp",
-        "in.playsimple.triple.tile.matchgame.pair.three.puzzle.object.royale"
+        "in.playsimple.triple.tile.matchgame.pair.three.puzzle.object.royale",
+        "app.rork.gymnotes_workout_tracker"
     ],
     "used_keywords": [
         "finance",
@@ -24697,6 +24706,7 @@
         "Huntington+National+Bank",
         "4830979456153911060",
         "Umair+Younas",
-        "7582214897333225707"
+        "7582214897333225707",
+        "MartaAZP3"
     ]
 }
