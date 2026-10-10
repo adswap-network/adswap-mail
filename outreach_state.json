@@ -2,7 +2,7 @@
     "config": {
         "start_date": "2026-09-12",
         "last_run_date": "2026-10-10",
-        "sent_today": 6
+        "sent_today": 12
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -3185,17 +3185,17 @@
             "app_name": "Campfire",
             "package": "com.campfirewriting.campfireapp",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-28T22:02:50.212751",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-10T13:45:01.675803"
         },
         "contact@movafit.com": {
             "app_name": "Movafit \u2014 Workout Plans & AI",
             "package": "com.movafit.app",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-28T22:02:50.212751",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-10T13:45:01.675803"
         },
         "riafytechnologies@gmail.com": {
             "app_name": "DASH Diet Meal Planner",
@@ -5545,32 +5545,32 @@
             "app_name": "Cool & Fun Math Games for Kids",
             "package": "com.witplex.preschoolmathgame",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-10T13:45:01.675803",
             "followup_sent_at": null
         },
         "nori@norwex.com": {
             "app_name": "Norwex Consultant App",
             "package": "com.norwex.noriapp",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-10T13:45:01.675803",
             "followup_sent_at": null
         },
         "support@faxdesk.app": {
             "app_name": "FAX Desk",
             "package": "com.circuitid.fax",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-10T13:45:01.675803",
             "followup_sent_at": null
         },
         "hello@zendora.sg": {
             "app_name": "Zendora",
             "package": "com.zenithmobile",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-10T13:45:01.675803",
             "followup_sent_at": null
         },
         "abacusnumbersense@gmail.com": {
