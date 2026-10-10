@@ -2,7 +2,7 @@
     "config": {
         "start_date": "2026-09-12",
         "last_run_date": "2026-10-10",
-        "sent_today": 12
+        "sent_today": 18
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -3201,17 +3201,17 @@
             "app_name": "DASH Diet Meal Planner",
             "package": "dash.diet.meal.plan",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-28T22:02:50.212751",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-10T18:37:37.993368"
         },
         "developer@blockpit.io": {
             "app_name": "Blockpit",
             "package": "io.blockpit.mobile",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-28T22:02:50.212751",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-10T18:37:37.993368"
         },
         "ottsupport@vimeo.com": {
             "app_name": "GAME Network",
@@ -5577,32 +5577,32 @@
             "app_name": "Abacus",
             "package": "app.abacuslearning.abacus",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-10T18:37:37.993368",
             "followup_sent_at": null
         },
         "ti@360e1.com": {
             "app_name": "MPI Educational",
             "package": "com.kidsa.english",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-10T18:37:37.993368",
             "followup_sent_at": null
         },
         "yon@nooksy.co": {
             "app_name": "Nooksy",
             "package": "com.empowr.monkeychat",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-10T18:37:37.993368",
             "followup_sent_at": null
         },
         "treetoptunes.bonnie@gmail.com": {
             "app_name": "Treetop Tunes",
             "package": "com.healtheti.treetoptunes2",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-10T18:37:37.993368",
             "followup_sent_at": null
         },
         "support@getmanatee.com": {
