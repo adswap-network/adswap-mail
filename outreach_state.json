@@ -1,8 +1,8 @@
 {
     "config": {
         "start_date": "2026-09-12",
-        "last_run_date": "2026-10-10",
-        "sent_today": 48
+        "last_run_date": "2026-10-11",
+        "sent_today": 3
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -3313,9 +3313,9 @@
             "app_name": "Orchard Church",
             "package": "com.subsplashconsulting.s_R6P47Q",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-28T22:02:50.212751",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-11T01:55:27.760347"
         },
         "customercare@tyfoom.com": {
             "app_name": "Tyfoom",
@@ -5769,16 +5769,16 @@
             "app_name": "Relay",
             "package": "com.relaypro.app",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-11T01:55:27.760347",
             "followup_sent_at": null
         },
         "developer@gov.kn": {
             "app_name": "e-Border",
             "package": "kn.eborder.app",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-11T01:55:27.760347",
             "followup_sent_at": null
         },
         "apps@ihealthlabs.com": {
