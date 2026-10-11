@@ -2,7 +2,7 @@
     "config": {
         "start_date": "2026-09-12",
         "last_run_date": "2026-10-11",
-        "sent_today": 12
+        "sent_today": 22
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -3345,33 +3345,33 @@
             "app_name": "Airlyn, the asthma app",
             "package": "com.airlyn.app",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-29T01:59:05.217417",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-11T20:18:31.697336"
         },
         "contact@etips.com": {
             "app_name": "Rome Travel Guide",
             "package": "com.etips.rome.travel.guide",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-29T01:59:05.217417",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-11T20:18:31.697336"
         },
         "support@wigstudio1.com": {
             "app_name": "Wig Studio 1",
             "package": "co.tapcart.app.id_ATJlBhVSXM",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-29T01:59:05.217417",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-11T20:18:31.697336"
         },
         "support@sentrypro.app": {
             "app_name": "Sentry Pro for Tesla",
             "package": "eu.nlogn.sentrypro",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-29T08:33:16.456698",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-11T20:18:31.697336"
         },
         "info@atplquestions.com": {
             "app_name": "ATPL Questions",
@@ -5833,48 +5833,48 @@
             "app_name": "DAMAC 360",
             "package": "com.damacproperties.damacagentsapp.android",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-11T20:18:31.697336",
             "followup_sent_at": null
         },
         "support@braive.com": {
             "app_name": "Braive",
             "package": "com.braive",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-11T20:18:31.697336",
             "followup_sent_at": null
         },
         "help@trainerize.com": {
             "app_name": "Committed Coaches",
             "package": "com.trainerize.committedcoaches",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-11T20:18:31.697336",
             "followup_sent_at": null
         },
         "support@milacares.com": {
             "app_name": "Mila Air",
             "package": "com.mila.androidv2",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-11T20:18:31.697336",
             "followup_sent_at": null
         },
         "hello.us@thecollagen.co": {
             "app_name": "The Collagen Co. US",
             "package": "co.app.id_836ht8b6n8",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-11T20:18:31.697336",
             "followup_sent_at": null
         },
         "info@solink.com": {
             "app_name": "Solink (legacy)",
             "package": "com.solinkcorp.solink",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-11T20:18:31.697336",
             "followup_sent_at": null
         },
         "support@freedomstreetgarage.com": {
