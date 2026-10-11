@@ -2,7 +2,7 @@
     "config": {
         "start_date": "2026-09-12",
         "last_run_date": "2026-10-11",
-        "sent_today": 6
+        "sent_today": 12
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -3329,17 +3329,17 @@
             "app_name": "sidelineHD",
             "package": "com.sidelinehd.app",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-28T22:02:50.212751",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-11T15:42:57.898352"
         },
         "apps@railmonsters.com": {
             "app_name": "Rail Monsters",
             "package": "com.railmonsters",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-28T22:02:50.212751",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-11T15:42:57.898352"
         },
         "contact@voicemed.io": {
             "app_name": "Airlyn, the asthma app",
@@ -5801,32 +5801,32 @@
             "app_name": "RAYNET CRM",
             "package": "cz.raynet.raynetcrm",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-11T15:42:57.898352",
             "followup_sent_at": null
         },
         "dev@avantstay.com": {
             "app_name": "AvantStay Vacation Rentals",
             "package": "com.avantstay.avantstay",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-11T15:42:57.898352",
             "followup_sent_at": null
         },
         "touch@continuum.social": {
             "app_name": "CyberTrophy",
             "package": "social.continuum.artravel",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-11T15:42:57.898352",
             "followup_sent_at": null
         },
         "office@otasync.me": {
             "app_name": "Mobile Hotel PMS by Hotel Sync",
             "package": "com.otasync.bookers",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-11T15:42:57.898352",
             "followup_sent_at": null
         },
         "agent@damacgroup.com": {
