@@ -2,7 +2,7 @@
     "config": {
         "start_date": "2026-09-12",
         "last_run_date": "2026-10-11",
-        "sent_today": 3
+        "sent_today": 6
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -3321,9 +3321,9 @@
             "app_name": "Tyfoom",
             "package": "com.tyfoom.android.tyfoom",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-28T22:02:50.212751",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-11T08:54:12.078789"
         },
         "support@sidelinehd.com": {
             "app_name": "sidelineHD",
@@ -5785,16 +5785,16 @@
             "app_name": "Unika Health",
             "package": "com.ihealthlabs.unifiedcare",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-11T08:54:12.078789",
             "followup_sent_at": null
         },
         "hello@dimebeautyco.com": {
             "app_name": "DIME\u00ae",
             "package": "com.fuego.dimebeauty",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-11T08:54:12.078789",
             "followup_sent_at": null
         },
         "support@raynetcrm.com": {
