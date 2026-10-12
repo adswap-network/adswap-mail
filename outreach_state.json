@@ -2,7 +2,7 @@
     "config": {
         "start_date": "2026-09-12",
         "last_run_date": "2026-10-12",
-        "sent_today": 6
+        "sent_today": 13
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -3393,17 +3393,17 @@
             "app_name": "Wanderz",
             "package": "com.travelapp.wanderz",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-29T15:53:56.591528",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-12T17:57:10.679239"
         },
         "gs-ayco-mobile-support-ext@gs.com": {
             "app_name": "Goldman Sachs Wellness",
             "package": "com.gs.pfmg.wellness",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-29T20:48:31.287074",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-12T17:57:10.679239"
         },
         "support@chargeway.net": {
             "app_name": "Chargeway",
@@ -5913,40 +5913,40 @@
             "app_name": "TAF Disability Hub",
             "package": "com.tafafrica.mobile",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-12T17:57:10.679239",
             "followup_sent_at": null
         },
         "support@lumetest.com": {
             "app_name": "Lume Test",
             "package": "lume.test",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-12T17:57:10.679239",
             "followup_sent_at": null
         },
         "info@skincareroutine.app": {
             "app_name": "Skincare Routine",
             "package": "com.theordinaryguide.app",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-12T17:57:10.679239",
             "followup_sent_at": null
         },
         "contact@examprep.site": {
             "app_name": "Cosmetology Exam Prep & Test",
             "package": "pro.iprep.cosm",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-12T17:57:10.679239",
             "followup_sent_at": null
         },
         "info@playpausebe.com": {
             "app_name": "Floga",
             "package": "io.floga.app",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-12T17:57:10.679239",
             "followup_sent_at": null
         },
         "pavel.rekun.development@gmail.com": {
