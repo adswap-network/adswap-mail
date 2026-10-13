@@ -2,7 +2,7 @@
     "config": {
         "start_date": "2026-09-12",
         "last_run_date": "2026-10-13",
-        "sent_today": 4
+        "sent_today": 6
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -3417,9 +3417,9 @@
             "app_name": "The Lyss Method V2",
             "package": "io.everfit.wlthelyssmethod",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-29T20:48:31.287074",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-13T07:44:17.496798"
         },
         "mark.mcnamara@teamrwb.org": {
             "app_name": "Team RWB",
@@ -5977,8 +5977,8 @@
             "app_name": "Lifeboost Coffee",
             "package": "co.tapcart.app.id_e5Q9v2F7v4",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-13T07:44:17.496798",
             "followup_sent_at": null
         },
         "hello@walkboxapp.com": {
