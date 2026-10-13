@@ -2,7 +2,7 @@
     "config": {
         "start_date": "2026-09-12",
         "last_run_date": "2026-10-13",
-        "sent_today": 6
+        "sent_today": 10
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -3425,15 +3425,15 @@
             "app_name": "Team RWB",
             "package": "com.teamrwb",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-29T20:48:31.287074",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-13T16:00:59.771243"
         },
         "sdfcu@sdfcu.org": {
             "app_name": "SDFCU Digital Banking",
             "package": "org.sdfcu.banking",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "REPLIED",
             "first_sent_at": "2026-09-29T20:48:31.287074",
             "followup_sent_at": null
         },
@@ -5985,24 +5985,24 @@
             "app_name": "Walkbox Self-Guided Tours",
             "package": "com.walkboxapp.Walkbox",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-13T16:00:59.771243",
             "followup_sent_at": null
         },
         "support@autio.com": {
             "app_name": "Autio",
             "package": "autio.audio.travel.guide.stories",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-13T16:00:59.771243",
             "followup_sent_at": null
         },
         "labs-music-support@google.com": {
             "app_name": "Google Flow Music",
             "package": "com.google.android.apps.labs.reuben",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-13T16:00:59.771243",
             "followup_sent_at": null
         },
         "support@setlistmaker.com": {
