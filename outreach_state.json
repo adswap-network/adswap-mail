@@ -1,8 +1,8 @@
 {
     "config": {
         "start_date": "2026-09-12",
-        "last_run_date": "2026-10-12",
-        "sent_today": 13
+        "last_run_date": "2026-10-13",
+        "sent_today": 4
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -3409,9 +3409,9 @@
             "app_name": "Chargeway",
             "package": "net.chargeway.chargeway",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-29T20:48:31.287074",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-13T00:42:26.013600"
         },
         "hello@doclyssfitness.com": {
             "app_name": "The Lyss Method V2",
@@ -5953,24 +5953,24 @@
             "app_name": "Castro Premium",
             "package": "com.itemstudio.castro.pro",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-13T00:42:26.013600",
             "followup_sent_at": null
         },
         "alex@prattsoftware.com": {
             "app_name": "SnapDiet",
             "package": "com.snapdiet",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-13T00:42:26.013600",
             "followup_sent_at": null
         },
         "hello@pilatesflo.com": {
             "app_name": "Flo Pilates",
             "package": "com.flopilates",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-13T00:42:26.013600",
             "followup_sent_at": null
         },
         "support@lifeboostcoffee.com": {
