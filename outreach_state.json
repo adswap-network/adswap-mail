@@ -2,7 +2,7 @@
     "config": {
         "start_date": "2026-09-12",
         "last_run_date": "2026-10-13",
-        "sent_today": 10
+        "sent_today": 48
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -3441,127 +3441,127 @@
             "app_name": "Bluente",
             "package": "com.bluente.bluente",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-29T20:48:31.287074",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-13T21:16:19.494608"
         },
         "support@travelfika.com": {
             "app_name": "Travelfika",
             "package": "com.travelfikaiosapp",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-30T00:28:56.687424",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-13T21:16:19.494608"
         },
         "linn@linnlowes.com": {
             "app_name": "Athli By Linn Lowes",
             "package": "store.athli.train.own",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-30T00:28:56.687424",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-13T21:16:19.494608"
         },
         "support@pinwheel.com": {
             "app_name": "Pinwheel Caregiver",
             "package": "com.pinwheel.caregiver",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-30T00:28:56.687424",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-13T21:16:19.494608"
         },
         "contact@keepprep.com": {
             "app_name": "ASWB Exam Test Prep 2026",
             "package": "com.keepprep.aswb",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-30T06:45:06.012614",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-13T21:16:19.494608"
         },
         "support@dakotaprep.com": {
             "app_name": "NEC Electrical Exam by Dakota",
             "package": "com.bluecollarapp.android_us",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-30T06:45:06.012614",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-13T21:16:19.494608"
         },
         "engineering@headlamp.com": {
             "app_name": "Headlamp Health",
             "package": "com.headlamp.uno",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-30T06:45:06.012614",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-13T21:16:19.494608"
         },
         "office@sunsationalswimschool.com": {
             "app_name": "Sunsational Swim Instructor",
             "package": "com.sunsationalswimschool.instructorhq",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-30T13:45:40.393278",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-13T21:16:19.494608"
         },
         "vip@obefitness.com": {
             "app_name": "ob\u00e9",
             "package": "com.studio.obe",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-30T13:45:40.393278",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-13T21:16:19.494608"
         },
         "help@guidedchoice.com": {
             "app_name": "3Nickels",
             "package": "com.guidedchoice.iiinickels",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-30T13:45:40.393278",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-13T21:16:19.494608"
         },
         "fititdm123@gmail.com": {
             "app_name": "DanceBody Workout",
             "package": "com.tealth.fundance",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-30T19:22:05.469354",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-13T21:16:19.494608"
         },
         "info@mastered.it": {
             "app_name": "Mastered.It",
             "package": "com.mastered",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-30T19:22:05.469354",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-13T21:16:19.494608"
         },
         "support@yourcoach.health": {
             "app_name": "YourCoach",
             "package": "com.coloreight.yourcoach",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-30T19:22:05.469354",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-13T21:16:19.494608"
         },
         "app@claudiadeanworld.com": {
             "app_name": "Claudia Dean World",
             "package": "com.claudiadeanworld",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-30T19:22:05.469354",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-13T21:16:19.494608"
         },
         "helpdesk@hamstudy.org": {
             "app_name": "HamStudy.org",
             "package": "org.hamstudy.mobile",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-30T19:22:05.469354",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-13T21:16:19.494608"
         },
         "help.wellbeing@vc.telushealth.com": {
             "app_name": "TELUS Health Wellbeing",
             "package": "com.telus.health.wellbeing",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "REPLIED",
             "first_sent_at": "2026-09-30T23:51:49.402061",
             "followup_sent_at": null
         },
@@ -3569,87 +3569,87 @@
             "app_name": "KeepStrong Gym Workout Tracker",
             "package": "com.gzyunke.lianlian",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-30T23:51:49.402061",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-13T21:16:19.494608"
         },
         "service@speediance.com": {
             "app_name": "Speediance",
             "package": "com.speediance.speediance_mobile",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-30T23:51:49.402061",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-13T21:16:19.494608"
         },
         "kindcraftapps@gmail.com": {
             "app_name": "My Feelings Wheel",
             "package": "com.kindcraft_apps.my_feelings_wheel",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-30T23:51:49.402061",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-13T21:16:19.494608"
         },
         "info@choiceqr.com": {
             "app_name": "Choice Business",
             "package": "app.chooice.business",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-30T23:51:49.402061",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-13T21:16:19.494608"
         },
         "frank@forkranger.com": {
             "app_name": "Fork Ranger",
             "package": "com.ForkRanger",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-30T23:51:49.402061",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-13T21:16:19.494608"
         },
         "justnewdesigns@gmail.com": {
             "app_name": "PurpleLine Icon Pack",
             "package": "com.jndapp.purpleline.linex.iconpack",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-30T23:51:49.402061",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-13T21:16:19.494608"
         },
         "anmolsoftwaredeveloper@gmail.com": {
             "app_name": "calorie tracker",
             "package": "com.shapeupmefoodtracker.shapeupmefoodtracker",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-30T23:51:49.402061",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-13T21:16:19.494608"
         },
         "customercare@dubairesidential.ae": {
             "app_name": "Dubai Residential",
             "package": "com.residents.dubaiassetmanagement",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-30T23:51:49.402061",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-13T21:16:19.494608"
         },
         "support@liftlog.online": {
             "app_name": "LiftLog",
             "package": "com.limajuice.liftlog",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-30T23:51:49.402061",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-13T21:16:19.494608"
         },
         "hello@solavieve.com": {
             "app_name": "SolaVieve",
             "package": "com.holisticly.app",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-30T23:51:49.402061",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-13T21:16:19.494608"
         },
         "support@croux.co": {
             "app_name": "Croux",
             "package": "com.croux",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "REPLIED",
             "first_sent_at": "2026-09-30T23:51:49.402061",
             "followup_sent_at": null
         },
@@ -3657,81 +3657,81 @@
             "app_name": "Ling Learn Mongolian Language",
             "package": "com.simyasolutions.ling.mn",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-30T23:51:49.402061",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-13T21:16:19.494608"
         },
         "support@embody.space": {
             "app_name": "Embody",
             "package": "com.embody.space",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-30T23:51:49.402061",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-13T21:16:19.494608"
         },
         "chiloonge@gmail.com": {
             "app_name": "StoryJourney",
             "package": "com.caldron.storyteller",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-30T23:51:49.402061",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-13T21:16:19.494608"
         },
         "partifyaillc@gmail.com": {
             "app_name": "Partify",
             "package": "ai.partify.app",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-30T23:51:49.402061",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-13T21:16:19.494608"
         },
         "eric.abecassis@humango.ai": {
             "app_name": "HumanGO",
             "package": "com.humango.humangoandriod",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-30T23:51:49.402061",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-13T21:16:19.494608"
         },
         "info@catuny.com": {
             "app_name": "Smarty Kids",
             "package": "com.catuny.smarty_kids",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-09-30T23:51:49.402061",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-13T21:16:19.494608"
         },
         "android@surgeryhero.com": {
             "app_name": "Surgery Hero",
             "package": "com.surgeryhero.surgeryhero",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-01T05:57:41.584260",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-13T21:16:19.494608"
         },
         "phil@philvischer.com": {
             "app_name": "Mr. Phil TV",
             "package": "tv.uscreen.mrphiltv",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-01T05:57:41.584260",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-13T21:16:19.494608"
         },
         "hello@bedtimestoryco.com": {
             "app_name": "Tap to Sleep",
             "package": "com.bedtimestory.android",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-01T05:57:41.584260",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-13T21:16:19.494608"
         },
         "hello@wondaer.com": {
             "app_name": "Wondaer Interactive Kids Books",
             "package": "com.wondaer.infinityollie",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-01T13:18:47.071325",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-13T21:16:19.494608"
         },
         "info@playsongs.co.kr": {
             "app_name": "PlaySongsParty",
@@ -6009,24 +6009,24 @@
             "app_name": "Set List Maker",
             "package": "com.arlomedia.setlistmaker",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-13T21:16:19.494608",
             "followup_sent_at": null
         },
         "saifullahsail874@gmail.com": {
             "app_name": "Secret Diary",
             "package": "com.ziksol.secretdiary.dailynotes",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-13T21:16:19.494608",
             "followup_sent_at": null
         },
         "contact@crxapplications.com": {
             "app_name": "Mood Journal",
             "package": "ro.crxapps.seedling",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-13T21:16:19.494608",
             "followup_sent_at": null
         }
     },
@@ -21620,7 +21620,9 @@
         "flashcards maker study",
         "learn vocabulary daily",
         "rss reader minimalist fast",
-        "daily journal secret"
+        "daily journal secret",
+        "workout logger gym",
+        "time blocker schedule"
     ],
     "scanned_developers": [
         "DecusPro",
