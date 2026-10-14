@@ -2,7 +2,7 @@
     "config": {
         "start_date": "2026-09-12",
         "last_run_date": "2026-10-14",
-        "sent_today": 10
+        "sent_today": 16
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -3761,17 +3761,17 @@
             "app_name": "bekids Coding",
             "package": "com.bekids.kaka",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-01T19:32:49.161177",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-14T17:12:29.040745"
         },
         "support@pixkidapp.com": {
             "app_name": "PixKid AI for Kids & Education",
             "package": "com.pixery.pixkid",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-01T19:32:49.161177",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-14T17:12:29.040745"
         },
         "info@thealphanova.com": {
             "app_name": "Animal Facts",
@@ -6089,32 +6089,32 @@
             "app_name": "Leap",
             "package": "com.curemd.leap",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-14T17:12:29.040745",
             "followup_sent_at": null
         },
         "kontakt@quizacademy.de": {
             "app_name": "PRINCE2\u00ae Foundation Trainer",
             "package": "de.lecommsulting.prince2",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-14T17:12:29.040745",
             "followup_sent_at": null
         },
         "support@actuvi.com": {
             "app_name": "Actuvi",
             "package": "com.actuvi",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-14T17:12:29.040745",
             "followup_sent_at": null
         },
         "support@codexhealth.com": {
             "app_name": "Allie",
             "package": "com.codexhealth.allie",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-14T17:12:29.040745",
             "followup_sent_at": null
         },
         "support@medely.com": {
