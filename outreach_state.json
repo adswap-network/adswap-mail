@@ -2,7 +2,7 @@
     "config": {
         "start_date": "2026-09-12",
         "last_run_date": "2026-10-14",
-        "sent_today": 6
+        "sent_today": 10
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -3753,9 +3753,9 @@
             "app_name": "TappyBooks",
             "package": "com.tappybooks.app",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-01T19:32:49.161177",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-14T12:02:52.526459"
         },
         "contact@bekids.com": {
             "app_name": "bekids Coding",
@@ -6065,24 +6065,24 @@
             "app_name": "CareMobi \u2014 Caregiver App",
             "package": "com.nyu.caremobi",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-14T12:02:52.526459",
             "followup_sent_at": null
         },
         "support@bonescoffee.com": {
             "app_name": "Bones Coffee",
             "package": "com.bonescoffee.app",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-14T12:02:52.526459",
             "followup_sent_at": null
         },
         "admin@cibahealth.com": {
             "app_name": "Ciba Health",
             "package": "com.cibahealth.ciba_patient_health",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-14T12:02:52.526459",
             "followup_sent_at": null
         },
         "support@leaphealth.ai": {
