@@ -2,7 +2,7 @@
     "config": {
         "start_date": "2026-09-12",
         "last_run_date": "2026-10-14",
-        "sent_today": 3
+        "sent_today": 6
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -3745,9 +3745,9 @@
             "app_name": "Bilingual Bookshelf",
             "package": "edu.gallaudet.aslbookshelf",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-01T13:18:47.071325",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-14T06:13:20.138001"
         },
         "tesar.cze@gmail.com": {
             "app_name": "TappyBooks",
@@ -6049,16 +6049,16 @@
             "app_name": "Bully Bunches US",
             "package": "co.tapcart.app.id_n06PA1ylPa",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-14T06:13:20.138001",
             "followup_sent_at": null
         },
         "myecp@exactcarepharmacy.com": {
             "app_name": "ExactCare Pharmacy",
             "package": "com.anewhealthrx.my",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-14T06:13:20.138001",
             "followup_sent_at": null
         },
         "nursing.caremobi@nyu.edu": {
