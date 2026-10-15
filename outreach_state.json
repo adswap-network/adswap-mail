@@ -2,7 +2,7 @@
     "config": {
         "start_date": "2026-09-12",
         "last_run_date": "2026-10-15",
-        "sent_today": 9
+        "sent_today": 14
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -3961,17 +3961,17 @@
             "app_name": "Lanternium",
             "package": "com.BlazingPlanetStudio.Lanternium",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-02T05:40:07.005690",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-15T15:02:45.722641"
         },
         "unity@service.kalam.tech": {
             "app_name": "Human Heroes Atom Blast",
             "package": "kalam.tech.curie.atoms",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-02T05:40:07.005690",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-15T15:02:45.722641"
         },
         "kids@iabuzz.com": {
             "app_name": "Animal Puzzle PRO",
@@ -6281,16 +6281,24 @@
             "app_name": "Ailment",
             "package": "com.BeardyBird.AilmentPremium",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-15T15:02:45.722641",
             "followup_sent_at": null
         },
         "morhendos@gmail.com": {
             "app_name": "3-Day Fast",
             "package": "site.dayfast3.app",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-15T15:02:45.722641",
+            "followup_sent_at": null
+        },
+        "developer@frolicadvisory.in": {
+            "app_name": "Bazaar Bandhu",
+            "package": "com.frolic.bazaar_bandhu",
+            "source": "google_play",
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-15T15:02:45.722641",
             "followup_sent_at": null
         }
     },
@@ -22225,7 +22233,9 @@
         "com.aplogon.doodlewheels",
         "dinith.zipextractor.zip_extractor",
         "dinith.deviceinfo.device_info",
-        "site.dayfast3.app"
+        "site.dayfast3.app",
+        "com.frolic.bazaar_bandhu",
+        "com.fraydio.chatterpillar"
     ],
     "used_keywords": [
         "finance",
@@ -27788,6 +27798,8 @@
         "5100232410553863425",
         "Duoyi+Hong+Kong+Interactive+Entertainment+Limited",
         "8281094309474545825",
-        "MindfulApps.dev"
+        "MindfulApps.dev",
+        "Frolic+Advisory+Pvt+Ltd",
+        "Chaterpilar+Tech+LLP"
     ]
 }
