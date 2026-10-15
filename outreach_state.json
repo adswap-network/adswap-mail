@@ -2,7 +2,7 @@
     "config": {
         "start_date": "2026-09-12",
         "last_run_date": "2026-10-15",
-        "sent_today": 26
+        "sent_today": 50
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -4065,193 +4065,193 @@
             "app_name": "Mobeybou in Cape Verde",
             "package": "com.MobeyBou.MobeyBouCapeVerde",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-02T22:58:40.728223",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-15T22:20:57.434861"
         },
         "hello@speaxel.com": {
             "app_name": "Der Die Das Rockets!",
             "package": "com.Speaxel.Rockets",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-02T22:58:40.728223",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-15T22:20:57.434861"
         },
         "contact@glowstickentertainment.com": {
             "app_name": "Super Dark Deception",
             "package": "com.GlowstickEntertainment.SuperDD",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-02T22:58:40.728223",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-15T22:20:57.434861"
         },
         "support@amanita-design.net": {
             "app_name": "Happy Game",
             "package": "com.amanitadesign.happygame",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-02T22:58:40.728223",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-15T22:20:57.434861"
         },
         "euphoricbrosgames@gmail.com": {
             "app_name": "Missing Banban",
             "package": "com.euphoricbrothersgames.missingbanban",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-02T22:58:40.728223",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-15T22:20:57.434861"
         },
         "forgottenhill@fm-studio.net": {
             "app_name": "Forgotten Hill Disillusion",
             "package": "net.fmstudio.forgottenhilldisillusion",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-02T22:58:40.728223",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-15T22:20:57.434861"
         },
         "contact@manarocks.com": {
             "app_name": "ManaRocks",
             "package": "com.rockgames.manarocks",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-02T22:58:40.728223",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-15T22:20:57.434861"
         },
         "info@navegante.studio": {
             "app_name": "Greak",
             "package": "com.navegante.greak",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-02T22:58:40.728223",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-15T22:20:57.434861"
         },
         "infoexpertgames@gmail.com": {
             "app_name": "Imperial Miners",
             "package": "pl.com.ix.ImperialMiners",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-02T22:58:40.728223",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-15T22:20:57.434861"
         },
         "team@akuparagames.com": {
             "app_name": "Zoeti",
             "package": "com.dusklight.zoeti",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-02T22:58:40.728223",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-15T22:20:57.434861"
         },
         "customerservice@interplay.com": {
             "app_name": "Baldur's Gate",
             "package": "com.interplay.baldursgate.darkalliance",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-02T22:58:40.728223",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-15T22:20:57.434861"
         },
         "support@chorrusgames.com": {
             "app_name": "Radiant",
             "package": "com.Chorrus.Radiant",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-02T22:58:40.728223",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-15T22:20:57.434861"
         },
         "simblend@outlook.com": {
             "app_name": "Crystal Journey",
             "package": "com.Simblend.CrystalJourney",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-02T22:58:40.728223",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-15T22:20:57.434861"
         },
         "support@lonelytroops.com": {
             "app_name": "Hero of the Kingdom",
             "package": "com.LonelyTroops.HerooftheKingdom",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-02T22:58:40.728223",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-15T22:20:57.434861"
         },
         "adam@bunkworks.net": {
             "app_name": "The Biggleboss Incident",
             "package": "com.BUNKWORKS.TheBigglebossIncident",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-02T22:58:40.728223",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-15T22:20:57.434861"
         },
         "kintogames@gmail.com": {
             "app_name": "bit Dungeon II",
             "package": "air.com.kintogames.bitDungeonIII",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-02T22:58:40.728223",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-15T22:20:57.434861"
         },
         "contact@mojo-touch.com": {
             "app_name": "The 7th Guest",
             "package": "com.mojotouch.t7g",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-02T22:58:40.728223",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-15T22:20:57.434861"
         },
         "supernature.game@gmail.com": {
             "app_name": "Lost in Fantaland",
             "package": "studio.supernature.lostinfantaland",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-02T22:58:40.728223",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-15T22:20:57.434861"
         },
         "quanticbitoficial@gmail.com": {
             "app_name": "Monster Siege Tactics",
             "package": "com.QuanticBit.MonsterSiegeTactics",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-03T01:59:32.982745",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-15T22:20:57.434861"
         },
         "support@pm-studios.com": {
             "app_name": "Bladed Fury",
             "package": "com.NEXTStudio.BladedFury",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-03T01:59:32.982745",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-15T22:20:57.434861"
         },
         "smilejsu82@gmail.com": {
             "app_name": "Dungeon Tracer",
             "package": "com.rootgames.dungeonraid",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-03T01:59:32.982745",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-15T22:20:57.434861"
         },
         "android_support@square-enix.com": {
             "app_name": "VoC",
             "package": "com.square_enix.android_googleplay.VoiceofCardsTheBeastsofBurden",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-03T08:08:32.018979",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-15T22:20:57.434861"
         },
         "contact@littleleogames.com": {
             "app_name": "Astrea",
             "package": "com.littleleogames.astreasixsidedoracles",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-03T08:08:32.018979",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-15T22:20:57.434861"
         },
         "cavesoflore@gmail.com": {
             "app_name": "Caves of Lore",
             "package": "com.RedPlumeLLC.CoL",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-03T08:08:32.018979",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-15T22:20:57.434861"
         },
         "jellylab08@gmail.com": {
             "app_name": "Exolotl",
