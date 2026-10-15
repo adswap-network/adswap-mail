@@ -2,7 +2,7 @@
     "config": {
         "start_date": "2026-09-12",
         "last_run_date": "2026-10-15",
-        "sent_today": 20
+        "sent_today": 26
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -4025,41 +4025,41 @@
             "app_name": "Brume",
             "package": "com.Tralalere.Brume2",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-02T18:26:07.110801",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-15T19:10:13.364992"
         },
         "contact@mythicowl.com": {
             "app_name": "Lineverse",
             "package": "com.mythicowl.asmr.oneline.color.puzzle.shapes",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-02T18:26:07.110801",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-15T19:10:13.364992"
         },
         "support@albertgamesstudio.com": {
             "app_name": "Creative Building Blocks",
             "package": "com.albertgamesstudio.cbb",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-02T22:58:40.728223",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-15T19:10:13.364992"
         },
         "bittypaw@gmail.com": {
             "app_name": "Jigsaw Puzzle",
             "package": "com.BittyPaw.Jigsaw.Puzzle.Magic.Kitty.Art.Relax.Free.Games.Offline",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-02T22:58:40.728223",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-15T19:10:13.364992"
         },
         "rougihm@gmail.com": {
             "app_name": "Chloe",
             "package": "com.rmstudios.chloee",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-02T22:58:40.728223",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-15T19:10:13.364992"
         },
         "mobeybouproject@gmail.com": {
             "app_name": "Mobeybou in Cape Verde",
@@ -6299,6 +6299,14 @@
             "source": "google_play",
             "status": "FIRST_SENT",
             "first_sent_at": "2026-10-15T15:02:45.722641",
+            "followup_sent_at": null
+        },
+        "yuichi0301@gmail.com": {
+            "app_name": "Shared Calendar",
+            "package": "app.housetodo",
+            "source": "google_play",
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-15T19:10:13.364992",
             "followup_sent_at": null
         }
     },
@@ -22235,7 +22243,8 @@
         "dinith.deviceinfo.device_info",
         "site.dayfast3.app",
         "com.frolic.bazaar_bandhu",
-        "com.fraydio.chatterpillar"
+        "com.fraydio.chatterpillar",
+        "app.housetodo"
     ],
     "used_keywords": [
         "finance",
@@ -27800,6 +27809,7 @@
         "8281094309474545825",
         "MindfulApps.dev",
         "Frolic+Advisory+Pvt+Ltd",
-        "Chaterpilar+Tech+LLP"
+        "Chaterpilar+Tech+LLP",
+        "Yuichi+Uchida"
     ]
 }
