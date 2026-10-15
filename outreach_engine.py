@@ -310,14 +310,14 @@ I came across {app_name} while looking for standout indie projects—really grea
 
 As a fellow independent developer, I know firsthand that building the app is only half the battle. Affording the massive User Acquisition (UA) costs to get it noticed is the real hurdle, and competing with big studios on traditional networks is a losing game.
 
-To solve this, I built AdSwap (adswap.netlify.app). 
+To solve this, I built AdSwap (adswap.dev). 
 
 It is a completely free, transparent cross-promotion network. You integrate a lightweight SDK, show native ads for other indie apps to earn Credits, and spend those exact Credits to get {app_name} promoted across the network. 
 
 Zero fiat money required, zero financial risk. The absolute worst-case scenario is that your campaigns don't get enough traction, but you lose absolutely nothing. (I cover the server and infrastructure costs myself to help bootstrap the ecosystem).
 
 It takes just a few minutes to generate your SDK snippet. You can check out the dashboard here:
-👉 adswap.netlify.app
+👉 adswap.dev
 
 Let's stop paying for traffic and start exchanging it.
 
