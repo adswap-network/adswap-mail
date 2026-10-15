@@ -1,8 +1,8 @@
 {
     "config": {
         "start_date": "2026-09-12",
-        "last_run_date": "2026-10-14",
-        "sent_today": 50
+        "last_run_date": "2026-10-15",
+        "sent_today": 4
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -3937,9 +3937,9 @@
             "app_name": "My Town",
             "package": "mytown.amusementpark",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-01T23:53:44.288808",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-15T04:42:09.474311"
         },
         "mypretty.kid@gmail.com": {
             "app_name": "BAT VET",
@@ -6227,6 +6227,70 @@
             "source": "google_play",
             "status": "FIRST_SENT",
             "first_sent_at": "2026-10-14T23:56:00.572882",
+            "followup_sent_at": null
+        },
+        "info@dunkingdoggames.com": {
+            "app_name": "Blobby's Quest",
+            "package": "com.dunkingdoggames.blobby",
+            "source": "google_play",
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-15T04:42:09.474311",
+            "followup_sent_at": null
+        },
+        "support@untoldtales.games": {
+            "app_name": "Flame Keeper",
+            "package": "com.UntoldTalesSA.FlameKeeper",
+            "source": "google_play",
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-15T04:42:09.474311",
+            "followup_sent_at": null
+        },
+        "contact@longhathouse.com": {
+            "app_name": "Magenta Arcade II",
+            "package": "com.longhathouse.MagentaArcadeII.Premium",
+            "source": "google_play",
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-15T04:42:09.474311",
+            "followup_sent_at": null
+        },
+        "eggggg@hypergames.no": {
+            "app_name": "Eggggg",
+            "package": "no.hypergames.eggggg",
+            "source": "google_play",
+            "status": "PENDING",
+            "first_sent_at": null,
+            "followup_sent_at": null
+        },
+        "contact@babyloniantwins.com": {
+            "app_name": "Babylonian Twins Platformer",
+            "package": "com.cosmos.babyloniantwins.premium",
+            "source": "google_play",
+            "status": "PENDING",
+            "first_sent_at": null,
+            "followup_sent_at": null
+        },
+        "thelastgame@icloud.com": {
+            "app_name": "The Last Game",
+            "package": "com.frju.thelastgame",
+            "source": "google_play",
+            "status": "PENDING",
+            "first_sent_at": null,
+            "followup_sent_at": null
+        },
+        "ivan@creauctopus.com": {
+            "app_name": "Ailment",
+            "package": "com.BeardyBird.AilmentPremium",
+            "source": "google_play",
+            "status": "PENDING",
+            "first_sent_at": null,
+            "followup_sent_at": null
+        },
+        "morhendos@gmail.com": {
+            "app_name": "3-Day Fast",
+            "package": "site.dayfast3.app",
+            "source": "google_play",
+            "status": "PENDING",
+            "first_sent_at": null,
             "followup_sent_at": null
         }
     },
@@ -22128,7 +22192,40 @@
         "com.anthonyng.workoutapp",
         "com.homechores.task",
         "com.transform75.challenge",
-        "com.ano.ngl"
+        "com.ano.ngl",
+        "com.dunkingdoggames.blobby",
+        "net.polybench.voidbroker",
+        "com.polybench.mysticalblocks",
+        "com.dunkingdoggames.toddleranimalpuzzle",
+        "com.UntoldTalesSA.FlameKeeper",
+        "com.longhathouse.MagentaArcadeII.Premium",
+        "com.tiltgolf",
+        "com.TsunoaGames.KatanaDragonFull",
+        "no.hypergames.eggggg",
+        "com.dionous.mamc",
+        "com.cosmos.babyloniantwins.premium",
+        "com.xd.tothemoon",
+        "com.frju.thelastgame",
+        "no.hypergames.alfiestore",
+        "no.hypergames.kalasalfons",
+        "no.hypergames.byen",
+        "no.hypergames.hokuspokuspremium",
+        "com.BeardyBird.AilmentPremium",
+        "com.Creauctopus.KingsLanding",
+        "com.Creauctopus.Racing.Idle.Tycoon",
+        "com.IvanPanasenko.RocketRush",
+        "com.IvanPanasenko.ResourceWar",
+        "com.IvanPanasenko.EndurancePremium",
+        "com.IvanPanasenko.Endurance",
+        "com.duoyihk.m2m1",
+        "com.applogon.kanbo",
+        "com.aplogon.snowsurvival",
+        "com.applogon.tacho",
+        "com.applogon.textscanner",
+        "com.aplogon.doodlewheels",
+        "dinith.zipextractor.zip_extractor",
+        "dinith.deviceinfo.device_info",
+        "site.dayfast3.app"
     ],
     "used_keywords": [
         "finance",
@@ -27680,6 +27777,17 @@
         "5496968181477865133",
         "7042991348138971937",
         "6135463779244622958",
-        "Daily+Strength"
+        "Daily+Strength",
+        "5550923675505927745",
+        "6275499642222093548",
+        "9001918913140276325",
+        "Tsunoa+Games",
+        "8677389860329318310",
+        "BitHunch+LLC",
+        "Fr%C3%A9d%C3%A9ric+Julian",
+        "5100232410553863425",
+        "Duoyi+Hong+Kong+Interactive+Entertainment+Limited",
+        "8281094309474545825",
+        "MindfulApps.dev"
     ]
 }
