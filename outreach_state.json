@@ -2,7 +2,7 @@
     "config": {
         "start_date": "2026-09-12",
         "last_run_date": "2026-10-15",
-        "sent_today": 4
+        "sent_today": 9
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -3945,17 +3945,17 @@
             "app_name": "BAT VET",
             "package": "com.vertovov.batadventures.full",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-01T23:53:44.288808",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-15T09:57:01.525212"
         },
         "alan@draknek.org": {
             "app_name": "A Good Snowman",
             "package": "com.agoodsnowman",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-01T23:53:44.288808",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-15T09:57:01.525212"
         },
         "blazingplanetstudio@gmail.com": {
             "app_name": "Lanternium",
@@ -6257,24 +6257,24 @@
             "app_name": "Eggggg",
             "package": "no.hypergames.eggggg",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-15T09:57:01.525212",
             "followup_sent_at": null
         },
         "contact@babyloniantwins.com": {
             "app_name": "Babylonian Twins Platformer",
             "package": "com.cosmos.babyloniantwins.premium",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-15T09:57:01.525212",
             "followup_sent_at": null
         },
         "thelastgame@icloud.com": {
             "app_name": "The Last Game",
             "package": "com.frju.thelastgame",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-15T09:57:01.525212",
             "followup_sent_at": null
         },
         "ivan@creauctopus.com": {
