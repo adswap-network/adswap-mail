@@ -2,7 +2,7 @@
     "config": {
         "start_date": "2026-09-12",
         "last_run_date": "2026-10-16",
-        "sent_today": 8
+        "sent_today": 15
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -4321,49 +4321,49 @@
             "app_name": "METAL SLUG ACA NEOGEO",
             "package": "com.snk.acams1",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-03T21:17:46.415482",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-16T17:25:54.215829"
         },
         "support@harmonygames.co": {
             "app_name": "Domino Delights",
             "package": "com.harmonygames.dominodelights",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-03T21:17:46.415482",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-16T17:25:54.215829"
         },
         "contact@burny.games": {
             "app_name": "Sortica",
             "package": "games.burny.sortica.card.sort.solitaire",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-03T21:17:46.415482",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-16T17:25:54.215829"
         },
         "help@playbonkers.com": {
             "app_name": "Bingo Paradise!",
             "package": "com.playbonkers.bingo",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-03T21:17:46.415482",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-16T17:25:54.215829"
         },
         "info@yookugame.com": {
             "app_name": "Poker Dreams",
             "package": "com.yookugame.pokerdreams",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-03T21:17:46.415482",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-16T17:25:54.215829"
         },
         "iq.puzzlesgames@gmail.com": {
             "app_name": "Match 3 Jewel Crush & Smash",
             "package": "com.iqpuzzlesgames.jewelcrushmatch3puzzle",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-03T21:17:46.415482",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-16T17:25:54.215829"
         },
         "appjoygames@gmail.com": {
             "app_name": "Cherry Blossom",
@@ -6307,6 +6307,14 @@
             "source": "google_play",
             "status": "FIRST_SENT",
             "first_sent_at": "2026-10-15T19:10:13.364992",
+            "followup_sent_at": null
+        },
+        "ossaili.apps@gmail.com": {
+            "app_name": "BuzzChat",
+            "package": "app.buzzchat.play",
+            "source": "google_play",
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-16T17:25:54.215829",
             "followup_sent_at": null
         }
     },
@@ -22298,7 +22306,17 @@
         "com.gymdone.gymworkouttrainer",
         "macros.am.calories.calorie.calculator.kkal.ai.tracker",
         "br.com.gerenciadorfinanceiro.controller",
-        "app.befit"
+        "app.befit",
+        "com.welltory.client.android",
+        "com.h2sync.android.h2syncapp",
+        "com.reflectio.io",
+        "com.sofish.tilepuzzle.gp",
+        "app.buzzchat.play",
+        "com.ossaili.nami",
+        "com.ossaili.pins",
+        "com.ossaili.hours_tracker",
+        "com.ossaili.liedetector",
+        "com.ossaili.blackscreen2"
     ],
     "used_keywords": [
         "finance",
@@ -27877,6 +27895,9 @@
         "8807964577953961147",
         "5paisa+-+Stock+Market,+Demat+Account,+Mutual+Fund",
         "7142667146095962168",
-        "7252924227463130226"
+        "7252924227463130226",
+        "7795433772313255980",
+        "H2+Inc.",
+        "Ossaili.Apps"
     ]
 }
