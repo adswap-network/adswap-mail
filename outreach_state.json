@@ -2,7 +2,7 @@
     "config": {
         "start_date": "2026-09-12",
         "last_run_date": "2026-10-16",
-        "sent_today": 48
+        "sent_today": 50
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -4649,17 +4649,17 @@
             "app_name": "Quell Zen",
             "package": "com.fallentreegames.google.quellzen",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-04T21:27:56.150433",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-16T23:38:12.951268"
         },
         "info@dutchblitz.com": {
             "app_name": "Dutch Blitz",
             "package": "com.dutchblitz",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-04T21:27:56.150433",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-16T23:38:12.951268"
         },
         "info@giftbox.games": {
             "app_name": "Blast & Smash",
@@ -22317,7 +22317,8 @@
         "com.ossaili.hours_tracker",
         "com.ossaili.liedetector",
         "com.ossaili.blackscreen2",
-        "com.newsblur"
+        "com.newsblur",
+        "app.clanplan.prod"
     ],
     "used_keywords": [
         "finance",
@@ -27900,6 +27901,7 @@
         "7795433772313255980",
         "H2+Inc.",
         "Ossaili.Apps",
-        "NewsBlur,+Inc."
+        "NewsBlur,+Inc.",
+        "ClanPlan"
     ]
 }
