@@ -2,7 +2,7 @@
     "config": {
         "start_date": "2026-09-12",
         "last_run_date": "2026-10-16",
-        "sent_today": 2
+        "sent_today": 4
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -4273,17 +4273,17 @@
             "app_name": "LYNE",
             "package": "com.thomasbowker.lynerelease",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-03T13:24:39.438301",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-16T07:11:53.779858"
         },
         "info@somoga.com": {
             "app_name": "Lunar Silver Star Story Touch",
             "package": "com.somoga.lunar1android",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-03T17:57:43.228659",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-16T07:11:53.779858"
         },
         "powerslashstudios@gmail.com": {
             "app_name": "Super Onion Boy 2",
