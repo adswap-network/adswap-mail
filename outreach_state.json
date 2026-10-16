@@ -2,7 +2,7 @@
     "config": {
         "start_date": "2026-09-12",
         "last_run_date": "2026-10-16",
-        "sent_today": 4
+        "sent_today": 8
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -4289,33 +4289,33 @@
             "app_name": "Super Onion Boy 2",
             "package": "com.onionboy2.app",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-03T17:57:43.228659",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-16T12:28:49.777695"
         },
         "info@selvainteractive.com": {
             "app_name": "Nanuleu",
             "package": "com.selvaInteractive.nanuleu",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-03T17:57:43.228659",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-16T12:28:49.777695"
         },
         "unknownprojectx@outlook.com": {
             "app_name": "Sliding Puzzle",
             "package": "com.unknownprojectx.sliding.puzzle",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-03T17:57:43.228659",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-16T12:28:49.777695"
         },
         "megisadventurecontact@gmail.com": {
             "app_name": "Megis Adventure",
             "package": "com.megischest.megisadventure",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-03T21:17:46.415482",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-16T12:28:49.777695"
         },
         "info@snk-corp.co.jp": {
             "app_name": "METAL SLUG ACA NEOGEO",
@@ -22293,7 +22293,12 @@
         "com.unimob.idle.fishing.charter",
         "com.unimob.idle.army",
         "com.unimob.goblin.idlelife",
-        "com.fct.global"
+        "com.fct.global",
+        "com.fivepaisa.trade",
+        "com.gymdone.gymworkouttrainer",
+        "macros.am.calories.calorie.calculator.kkal.ai.tracker",
+        "br.com.gerenciadorfinanceiro.controller",
+        "app.befit"
     ],
     "used_keywords": [
         "finance",
@@ -27869,6 +27874,9 @@
         "6513514954662648970",
         "8616993530275938448",
         "7568925114702873818",
-        "8807964577953961147"
+        "8807964577953961147",
+        "5paisa+-+Stock+Market,+Demat+Account,+Mutual+Fund",
+        "7142667146095962168",
+        "7252924227463130226"
     ]
 }
