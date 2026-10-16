@@ -2,7 +2,7 @@
     "config": {
         "start_date": "2026-09-12",
         "last_run_date": "2026-10-16",
-        "sent_today": 15
+        "sent_today": 48
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -4369,103 +4369,103 @@
             "app_name": "Cherry Blossom",
             "package": "com.gamezilla.cherryblossom.flowertiles",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-03T21:17:46.415482",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-16T21:11:21.279586"
         },
         "support@hyperfun.com": {
             "app_name": "Bible Jigsaw Puzzles",
             "package": "com.hyperfun.jigsaw.bible",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-03T21:17:46.415482",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-16T21:11:21.279586"
         },
         "cs@pondstudio.tv": {
             "app_name": "Idle",
             "package": "com.POND.MoldFarm",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-03T21:17:46.415482",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-16T21:11:21.279586"
         },
         "florisium.feedback@gmail.com": {
             "app_name": "Florisium",
             "package": "com.BywayGames.Florisium",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-03T21:17:46.415482",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-16T21:11:21.279586"
         },
         "tushupublish@gmail.com": {
             "app_name": "Immortal Academy",
             "package": "com.Fdux.AcademyOverseas",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-03T21:17:46.415482",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-16T21:11:21.279586"
         },
         "nick@studiogoya.co": {
             "app_name": "Killer Sudoku",
             "package": "com.StudioGoya.KillerSudoku",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-03T21:17:46.415482",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-16T21:11:21.279586"
         },
         "contact@shobhitsamaria.com": {
             "app_name": "Color Fliplomacy",
             "package": "com.samaria.fliplomacy.p",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-03T21:17:46.415482",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-16T21:11:21.279586"
         },
         "onecoinclear.cs@gmail.com": {
             "app_name": "LIGHT UP 7",
             "package": "com.OnecoinClear.LightUp7",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-03T21:17:46.415482",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-16T21:11:21.279586"
         },
         "info@funflavorgames.com": {
             "app_name": "Alien Food Invasion Premium",
             "package": "com.FunFlavorGames.AlienFoodInvasionPremium",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-03T21:17:46.415482",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-16T21:11:21.279586"
         },
         "ian@ianmaclarty.com": {
             "app_name": "Dissembler",
             "package": "com.ianmaclarty.dissembler",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-03T21:17:46.415482",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-16T21:11:21.279586"
         },
         "hello@ogrepixel.com": {
             "app_name": "A Tiny Sticker Tale",
             "package": "com.ogrepixel.atinystickertale",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-03T21:17:46.415482",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-16T21:11:21.279586"
         },
         "press@rogueside.com": {
             "app_name": "Hidden Through Time",
             "package": "com.Rogueside.HTT3",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-03T21:17:46.415482",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-16T21:11:21.279586"
         },
         "contact@peworks.info": {
             "app_name": "unmemory",
             "package": "com.pid.unmemory",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "REPLIED",
             "first_sent_at": "2026-10-04T00:39:15.823619",
             "followup_sent_at": null
         },
@@ -4473,159 +4473,159 @@
             "app_name": "Listub",
             "package": "com.listub.app",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-04T00:39:15.823619",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-16T21:11:21.279586"
         },
         "tinylabapps@gmail.com": {
             "app_name": "Yondo Todo List on Lock Screen",
             "package": "com.tinylab.yondo",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-04T06:50:27.867179",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-16T21:11:21.279586"
         },
         "hello@subdial.dev": {
             "app_name": "eXpend",
             "package": "com.subdial.expend",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-04T06:50:27.867179",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-16T21:11:21.279586"
         },
         "eve@adup.kr": {
             "app_name": "JAMMATES",
             "package": "com.adup.jammates",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-04T13:12:29.720675",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-16T21:11:21.279586"
         },
         "contact@cadenceguitar.com": {
             "app_name": "Cadence",
             "package": "com.apizon.cadence.android",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-04T13:12:29.720675",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-16T21:11:21.279586"
         },
         "main@wallstream.com": {
             "app_name": "WallStream",
             "package": "com.wallstream.player",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-04T13:12:29.720675",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-16T21:11:21.279586"
         },
         "contacts@conus.vision": {
             "app_name": "Luniant",
             "package": "com.conus.vision.luniant1",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-04T13:12:29.720675",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-16T21:11:21.279586"
         },
         "support@studioamk.com": {
             "app_name": "334's Adventures",
             "package": "com.baby334.adventures",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-04T17:37:24.060870",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-16T21:11:21.279586"
         },
         "andy@gaussian.games": {
             "app_name": "Tomb Trek",
             "package": "com.GaussianGamesLtd.TombTrek",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-04T17:37:24.060870",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-16T21:11:21.279586"
         },
         "yaskravi.content@gmail.com": {
             "app_name": "Cat Journey",
             "package": "com.yaskravicontent.catjourney",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-04T17:37:24.060870",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-16T21:11:21.279586"
         },
         "support@jasonholtdigital.com": {
             "app_name": "Mythic GME 2e",
             "package": "com.jasonholtdigital.mythicgme2e",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-04T21:27:56.150433",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-16T21:11:21.279586"
         },
         "contact@somberpixel.com": {
             "app_name": "Night Reverie",
             "package": "com.somberpixel.nightreverie",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-04T21:27:56.150433",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-16T21:11:21.279586"
         },
         "zack@thylacinestudios.com": {
             "app_name": "Siralim Ultimate",
             "package": "com.thylacinestudios.siralimultimate",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-04T21:27:56.150433",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-16T21:11:21.279586"
         },
         "contact@acram.eu": {
             "app_name": "Concordia",
             "package": "com.acram.Concordia",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-04T21:27:56.150433",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-16T21:11:21.279586"
         },
         "support@computertimeco.com": {
             "app_name": "Mini Shot Basketball",
             "package": "com.computertimeco.minishot.android",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-04T21:27:56.150433",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-16T21:11:21.279586"
         },
         "support@leaguetycoon.com": {
             "app_name": "League Tycoon Fantasy Football",
             "package": "io.figmentlabs.leaguetycoon",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-04T21:27:56.150433",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-16T21:11:21.279586"
         },
         "anandathareqhm@gmail.com": {
             "app_name": "Football Legacy",
             "package": "com.footballstar.football_star",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-04T21:27:56.150433",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-16T21:11:21.279586"
         },
         "info@chobin.net": {
             "app_name": "PORTABLE SOCCER DX",
             "package": "net.chobin.android.psdx",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-04T21:27:56.150433",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-16T21:11:21.279586"
         },
         "kicks.support@inlogic.sk": {
             "app_name": "Soccer Kicks Pro",
             "package": "sk.inlogic.footballkicksprosoccer",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-04T21:27:56.150433",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-16T21:11:21.279586"
         },
         "info@thunderboxentertainment.com": {
             "app_name": "Tsuro",
             "package": "com.Thunderbox.Tsuro",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "REPLIED",
             "first_sent_at": "2026-10-04T21:27:56.150433",
             "followup_sent_at": null
         },
@@ -4633,17 +4633,17 @@
             "app_name": "SparkChess Pro",
             "package": "air.com.mediadivision.sparkchessphone",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-04T21:27:56.150433",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-16T21:11:21.279586"
         },
         "support@danijmn.com": {
             "app_name": "Cardinal Chains",
             "package": "com.danijmn.cardinalchains",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-04T21:27:56.150433",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-16T21:11:21.279586"
         },
         "support@fallentreegames.com": {
             "app_name": "Quell Zen",
@@ -22316,7 +22316,8 @@
         "com.ossaili.pins",
         "com.ossaili.hours_tracker",
         "com.ossaili.liedetector",
-        "com.ossaili.blackscreen2"
+        "com.ossaili.blackscreen2",
+        "com.newsblur"
     ],
     "used_keywords": [
         "finance",
@@ -27898,6 +27899,7 @@
         "7252924227463130226",
         "7795433772313255980",
         "H2+Inc.",
-        "Ossaili.Apps"
+        "Ossaili.Apps",
+        "NewsBlur,+Inc."
     ]
 }
