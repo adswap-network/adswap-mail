@@ -1,8 +1,8 @@
 {
     "config": {
         "start_date": "2026-09-12",
-        "last_run_date": "2026-10-15",
-        "sent_today": 50
+        "last_run_date": "2026-10-16",
+        "sent_today": 2
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -4257,17 +4257,17 @@
             "app_name": "Exolotl",
             "package": "com.JellyLab.ExolotlZian",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-03T13:24:39.438301",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-16T01:22:31.370846"
         },
         "robert@protopop.com": {
             "app_name": "Nimian Legends",
             "package": "com.protopop.vandgels",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-03T13:24:39.438301",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-16T01:22:31.370846"
         },
         "tom@thomasbowker.com": {
             "app_name": "LYNE",
@@ -22244,7 +22244,56 @@
         "site.dayfast3.app",
         "com.frolic.bazaar_bandhu",
         "com.fraydio.chatterpillar",
-        "app.housetodo"
+        "app.housetodo",
+        "war.clash.survival.hero",
+        "com.Ccentury.DeadTownSurvival",
+        "wildfiregames.zwg",
+        "com.pixelstar.GrowZombiesVIP",
+        "com.wildfiregames.orbitdrift",
+        "com.wildfiregames.overrun",
+        "hotsiberians.idle.zombie.hospital.empire.manager.tycoon",
+        "com.hnugzgamez.NozieTDXL",
+        "com.evsita.mywar.global",
+        "com.pixelstar.PixelFBladeVIP",
+        "com.pixelstar.GrowSpaceshipVIP",
+        "com.pixelstar.gtk",
+        "com.pixelstar.gmp",
+        "com.pixelstar.pzb",
+        "com.pixelstar.gtm",
+        "com.pixelstar.DNPHVIP",
+        "com.pixelstar.GrowHerosVIP",
+        "com.bpgames.hph.a.g2",
+        "hotsiberians.idle.military.operation.army.mission.tycoon",
+        "com.hotsiberians.rewild.tycoon.restore.ecosystems",
+        "burning.city.mad.survivors.idle.simulator.tycoon",
+        "hotsiberians.idle.anomalies.research.station.building.tycoon.simulator",
+        "police.department.tycoon",
+        "com.dawngathering.android",
+        "com.rebirthofglory.android",
+        "com.igg.android.gameofsky",
+        "com.unimob.icy.village",
+        "com.bpgames.bs2.and",
+        "org.BlackPearl.BrustalStreet",
+        "com.gemjam.police.department.tycoon.pro.idle.prison.cops.station.officer.simulator.games",
+        "com.pgstudio.bowmasters.rpg.shooting.monster",
+        "com.gemjam.slash.arena.pro.online.pvp.games.survivor.io.fighting.battle.royale.competitive",
+        "com.pgstudio.exile.survival",
+        "com.cobragames.subway",
+        "com.codigames.idle.police.department.tycoon.cop",
+        "com.medu.military.tycoon.idle.gun.shop",
+        "com.arcanerealms.android",
+        "com.elementsadventurer.android",
+        "com.mergeprincess.android",
+        "com.lordsglory.android",
+        "com.sunspelltown.android",
+        "com.timetravel.android",
+        "com.unimob.goblin.idlelife.premium",
+        "com.unimob.idle.axolotl",
+        "com.unimob.icy.village.premium",
+        "com.unimob.idle.fishing.charter",
+        "com.unimob.idle.army",
+        "com.unimob.goblin.idlelife",
+        "com.fct.global"
     ],
     "used_keywords": [
         "finance",
@@ -27810,6 +27859,16 @@
         "MindfulApps.dev",
         "Frolic+Advisory+Pvt+Ltd",
         "Chaterpilar+Tech+LLP",
-        "Yuichi+Uchida"
+        "Yuichi+Uchida",
+        "Ccentury",
+        "5380111779574433130",
+        "4684520990643024417",
+        "7652119778447481454",
+        "hnugz+gamez",
+        "EVISTA+PTE.+LTD.",
+        "6513514954662648970",
+        "8616993530275938448",
+        "7568925114702873818",
+        "8807964577953961147"
     ]
 }
