@@ -1,8 +1,8 @@
 {
     "config": {
         "start_date": "2026-09-12",
-        "last_run_date": "2026-10-16",
-        "sent_today": 50
+        "last_run_date": "2026-10-17",
+        "sent_today": 4
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -4665,9 +4665,9 @@
             "app_name": "Blast & Smash",
             "package": "com.giftboxgames.blastandsmash",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-04T21:27:56.150433",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-17T04:29:26.364667"
         },
         "support@dinobytestudios.com": {
             "app_name": "Solitaire Pro",
@@ -6315,6 +6315,30 @@
             "source": "google_play",
             "status": "FIRST_SENT",
             "first_sent_at": "2026-10-16T17:25:54.215829",
+            "followup_sent_at": null
+        },
+        "lumynouslabs@gmail.com": {
+            "app_name": "Idle Money Clicker Tycoon",
+            "package": "com.businessempire.clicker",
+            "source": "google_play",
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-17T04:29:26.364667",
+            "followup_sent_at": null
+        },
+        "funcheergame@gmail.com": {
+            "app_name": "Idle Military School Tycoon 2",
+            "package": "com.idlem.android.schty",
+            "source": "google_play",
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-17T04:29:26.364667",
+            "followup_sent_at": null
+        },
+        "support@maskedtalk.live": {
+            "app_name": "MaskedTalk",
+            "package": "com.caly.maskedtalk",
+            "source": "google_play",
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-17T04:29:26.364667",
             "followup_sent_at": null
         }
     },
@@ -22318,7 +22342,37 @@
         "com.ossaili.liedetector",
         "com.ossaili.blackscreen2",
         "com.newsblur",
-        "app.clanplan.prod"
+        "app.clanplan.prod",
+        "com.businessempire.clicker",
+        "com.Smasher.VolleyballTileSmash",
+        "com.idle.vegas.resort.casino.tycoon.empire.slot",
+        "com.singletonfoundation.venturevalley",
+        "com.idlem.android.schty",
+        "com.Seeker.FunVolleyball",
+        "org.groovemoney.groove",
+        "com.excitedowlarts.idlehighschooltycoon",
+        "com.fortnite.android.warzone",
+        "com.rescue.android.princess",
+        "com.capybaratraffic.android.match",
+        "com.savethedog.android.dog",
+        "com.mobileball.android.sorting",
+        "com.colorhexa.android.slide",
+        "com.hello.idlegymsports",
+        "com.rockydessert.robot",
+        "com.revenue.avenue",
+        "com.on.raft",
+        "com.brobuddy.game",
+        "com.murder.hill",
+        "com.rat.raid",
+        "com.skull.burn",
+        "com.game.primatus",
+        "com.mysterytag.cityrestart",
+        "com.loststarfish.idletrash",
+        "com.caly.maskedtalk",
+        "com.caly.pipzi",
+        "com.caly.promptmaster",
+        "com.caly.basso",
+        "com.caly.vitola"
     ],
     "used_keywords": [
         "finance",
@@ -27902,6 +27956,13 @@
         "H2+Inc.",
         "Ossaili.Apps",
         "NewsBlur,+Inc.",
-        "ClanPlan"
+        "ClanPlan",
+        "GoldFiSh",
+        "OLIMP+TOV",
+        "7926058068000375208",
+        "5221933213843920586",
+        "CHICKEN+HUB+LLC",
+        "24+HIT+Riga+SIA",
+        "Tiki+Labs"
     ]
 }
