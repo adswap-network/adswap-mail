@@ -2,7 +2,7 @@
     "config": {
         "start_date": "2026-09-12",
         "last_run_date": "2026-10-17",
-        "sent_today": 16
+        "sent_today": 23
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -4745,47 +4745,47 @@
             "app_name": "Block Bounty",
             "package": "com.wingplay.blocks",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-05T16:02:29.189239",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-17T19:26:52.970464"
         },
         "pauloondra.lgopt@gmail.com": {
             "app_name": "Zero Stress King",
             "package": "com.pauloondra.zerostressking",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-05T16:02:29.189239",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-17T19:26:52.970464"
         },
         "oranginalplan@gmail.com": {
             "app_name": "Weaphones Firearms Simulator",
             "package": "air.com.oranginalplan.weaphones2020",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-05T22:38:55.700416",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-17T19:26:52.970464"
         },
         "rolf@support.mediaheads.nl": {
             "app_name": "Rolf Connect",
             "package": "nl.mediaheads.connectedplay.coding",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-05T22:38:55.700416",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-17T19:26:52.970464"
         },
         "contact@tellusgames.com": {
             "app_name": "Outhold",
             "package": "com.tellusgames.outhold",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-05T22:38:55.700416",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-17T19:26:52.970464"
         },
         "support@mografi.com": {
             "app_name": "Jenny LeClue",
             "package": "com.mografi.jennyleclue",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "REPLIED",
             "first_sent_at": "2026-10-05T22:38:55.700416",
             "followup_sent_at": null
         },
@@ -4793,17 +4793,17 @@
             "app_name": "Enchanted Worlds 2",
             "package": "com.syntaxity.enchantedworlds2",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-05T22:38:55.700416",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-17T19:26:52.970464"
         },
         "consideracore@gmail.com": {
             "app_name": "Rule1A Incremental",
             "package": "com.ConsideraGames.Rule1A",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-05T22:38:55.700416",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-17T19:26:52.970464"
         },
         "joe@firemaplegames.com": {
             "app_name": "Thickety Creek",
@@ -22431,7 +22431,12 @@
         "com.pzizz.android",
         "com.tsua.my.secret.diary.lock.photo",
         "adam.exercisedictionary",
-        "adam.glutenfreeforme"
+        "adam.glutenfreeforme",
+        "com.artifactquestgame.aq2free",
+        "com.bestfriendgames.wonderful.jigsaw.puzzle.game",
+        "com.artifactquestgame.artifactfree",
+        "com.broccoligames.vegamixadventure",
+        "com.zymobile.candy.island.sweet"
     ],
     "used_keywords": [
         "finance",
@@ -28036,6 +28041,8 @@
         "FitNow,+Inc.",
         "6613127161442662182",
         "Pzizz,+Inc.",
-        "9043097161363683288"
+        "9043097161363683288",
+        "4701377273968073520",
+        "FULIDI+TATYANA+VLADIMIROVNA"
     ]
 }
