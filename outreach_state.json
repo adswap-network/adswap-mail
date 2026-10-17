@@ -2,7 +2,7 @@
     "config": {
         "start_date": "2026-09-12",
         "last_run_date": "2026-10-17",
-        "sent_today": 23
+        "sent_today": 49
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -4809,71 +4809,71 @@
             "app_name": "Thickety Creek",
             "package": "com.firemaplegames.Thickety_Creek",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-05T22:38:55.700416",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-17T22:20:36.921083"
         },
         "tech-help@firemaplegames.com": {
             "app_name": "Return to Grisly Manor",
             "package": "com.firemaplegames.returntogrislymanor",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-05T22:38:55.700416",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-17T22:20:36.921083"
         },
         "daigo@odencat.com": {
             "app_name": "Zelle -Occult Adventure-",
             "package": "com.odencat.zelle",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-05T22:38:55.700416",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-17T22:20:36.921083"
         },
         "icu.app.development@gmail.com": {
             "app_name": "Luck Architect",
             "package": "tech.lausiv.luckarchitect",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-05T22:38:55.700416",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-17T22:20:36.921083"
         },
         "potionplayer.dev@gmail.com": {
             "app_name": "Idle clicker rpg",
             "package": "com.PotionPlayer.Lets.Journey.Lite.Clicker.Dungeon",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-05T22:38:55.700416",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-17T22:20:36.921083"
         },
         "fayzullayev.rasulbek.dev@gmail.com": {
             "app_name": "Money Manager Expense Tracker",
             "package": "com.frmobile.moneymanager",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-05T22:38:55.700416",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-17T22:20:36.921083"
         },
         "danrud.dev@gmail.com": {
             "app_name": "Budgetum",
             "package": "com.danruddev.budgetum",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-05T22:38:55.700416",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-17T22:20:36.921083"
         },
         "developer@taskity.ai": {
             "app_name": "Taskity",
             "package": "com.tvisha.kanbantodo",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-05T22:38:55.700416",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-17T22:20:36.921083"
         },
         "help@kanbanbox.com": {
             "app_name": "KanbanBOX",
             "package": "com.sintesia.kanbanbox",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "REPLIED",
             "first_sent_at": "2026-10-05T22:38:55.700416",
             "followup_sent_at": null
         },
@@ -4881,145 +4881,145 @@
             "app_name": "Heroic",
             "package": "com.heroic.mobile",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-05T22:38:55.700416",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-17T22:20:36.921083"
         },
         "contact@incit.org": {
             "app_name": "OPERI",
             "package": "com.operi",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-05T22:38:55.700416",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-17T22:20:36.921083"
         },
         "support@momentumbysohee.com": {
             "app_name": "Momentum by Sohee",
             "package": "com.momentumby.sohee",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-05T22:38:55.700416",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-17T22:20:36.921083"
         },
         "hi@fredie.com": {
             "app_name": "fredie",
             "package": "com.charisme.app",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-05T22:38:55.700416",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-17T22:20:36.921083"
         },
         "coconut@coconutgame.com": {
             "app_name": "Coconut Games",
             "package": "com.coconutgame.platform.app",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-05T22:38:55.700416",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-17T22:20:36.921083"
         },
         "support@nochistudios.com": {
             "app_name": "Sifting Thyme",
             "package": "com.nochistudios.siftingthyme",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-05T22:38:55.700416",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-17T22:20:36.921083"
         },
         "hello@npckc.net": {
             "app_name": "A Year of Springs",
             "package": "com.npckc.ayos",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-05T22:38:55.700416",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-17T22:20:36.921083"
         },
         "mvizlab@gmail.com": {
             "app_name": "Lucy -TheEternitySheWishedFor-",
             "package": "com.mvizlab.lucy.android.en",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-05T22:38:55.700416",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-17T22:20:36.921083"
         },
         "info@mangoprotocol.com": {
             "app_name": "Agatha Knife",
             "package": "com.mangoprotocol.psychotic.agatha",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-05T22:38:55.700416",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-17T22:20:36.921083"
         },
         "pumpkin2service@lilithgames.com": {
             "app_name": "Mr Pumpkin 2",
             "package": "com.lilithgames.mrpumpkin2.gp",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-06T10:20:46.931188",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-17T22:20:36.921083"
         },
         "contact@madheadgames.com": {
             "app_name": "Rite of Passage",
             "package": "com.madheadgames.rite.passage.embrace.ember.lake.android.uni.free",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-06T10:20:46.931188",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-17T22:20:36.921083"
         },
         "hello@skstudios.dev": {
             "app_name": "Flippables Flashcards",
             "package": "dev.skstudios.flippables",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-06T10:20:46.931188",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-17T22:20:36.921083"
         },
         "info@tcksystems.com": {
             "app_name": "Cambridge C1 Exam Simulator",
             "package": "com.tck.cambridge.exam.c1",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-06T17:12:21.011853",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-17T22:20:36.921083"
         },
         "herman@nordicsocialmedia.com": {
             "app_name": "ISA Flashcards",
             "package": "com.isa.flashcards",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-06T17:12:21.011853",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-17T22:20:36.921083"
         },
         "explore@districtrace.com": {
             "app_name": "District",
             "package": "com.exploredistrict.app",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-06T17:12:21.011853",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-17T22:20:36.921083"
         },
         "info@bigcityvolleyball.com": {
             "app_name": "Big City Volleyball",
             "package": "com.bigcitysports",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-06T17:12:21.011853",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-17T22:20:36.921083"
         },
         "archboxsrl@gmail.com": {
             "app_name": "Tessera News",
             "package": "app.tessera.news",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-06T17:12:21.011853",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-17T22:20:36.921083"
         },
         "garakutatoys@gmail.com": {
             "app_name": "RSS Reader (Simple)",
             "package": "com.milktea.garakuta.rssreader",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-06T21:40:08.855793",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-17T22:20:36.921083"
         },
         "app.customers@jpimedia.co.uk": {
             "app_name": "National World News",
