@@ -2,7 +2,7 @@
     "config": {
         "start_date": "2026-09-12",
         "last_run_date": "2026-10-17",
-        "sent_today": 7
+        "sent_today": 11
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -4705,9 +4705,9 @@
             "app_name": "Nubby's Number Factory",
             "package": "com.mogdogblog.nnf",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-04T21:27:56.150433",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-17T13:44:19.551980"
         },
         "serj@ardovic.com": {
             "app_name": "FreeCell Solitaire Premium",
@@ -6339,6 +6339,38 @@
             "source": "google_play",
             "status": "FIRST_SENT",
             "first_sent_at": "2026-10-17T04:29:26.364667",
+            "followup_sent_at": null
+        },
+        "help@westrive.com": {
+            "app_name": "WeStrive",
+            "package": "com.perfict.perfict",
+            "source": "google_play",
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-17T13:44:19.551980",
+            "followup_sent_at": null
+        },
+        "support@amtrav.com": {
+            "app_name": "AmTrav Business Travel",
+            "package": "com.amtrav.a2b",
+            "source": "google_play",
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-17T13:44:19.551980",
+            "followup_sent_at": null
+        },
+        "courses@dailyom.com": {
+            "app_name": "DailyOM",
+            "package": "com.fitnow.ehgroup.DailyOM",
+            "source": "google_play",
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-17T13:44:19.551980",
+            "followup_sent_at": null
+        },
+        "contact@hypnu-app.com": {
+            "app_name": "hypnu\u2122",
+            "package": "com.koala.hypnostories",
+            "source": "google_play",
+            "status": "PENDING",
+            "first_sent_at": null,
             "followup_sent_at": null
         }
     },
@@ -22372,7 +22404,31 @@
         "com.caly.pipzi",
         "com.caly.promptmaster",
         "com.caly.basso",
-        "com.caly.vitola"
+        "com.caly.vitola",
+        "com.pixsterstudio.dietplans",
+        "com.capvicarini.declic",
+        "com.vikingtech.gymtrack",
+        "com.voltathletics.NativeApplication",
+        "com.muzudre.dumbbell.training.workout.app",
+        "com.perfict.perfict",
+        "io.playbookapp.android",
+        "com.spartan.plus",
+        "com.coaching.myhfit",
+        "com.coaching.rtp",
+        "com.coaching.tightenupfitness",
+        "com.coaching.fitwithkelly",
+        "com.coaching.ignitefItness",
+        "com.coaching.madfItness",
+        "com.heiaheia",
+        "com.amtrav.a2b",
+        "com.voidsoftware.outfitter",
+        "com.habito.edf",
+        "com.southstatebank3667.mobile.preproduction",
+        "com.fitnow.ehgroup.DailyOM",
+        "com.fitnow.euclid",
+        "com.fitnow.challenges",
+        "com.koala.hypnostories",
+        "com.pzizz.android"
     ],
     "used_keywords": [
         "finance",
@@ -27963,6 +28019,19 @@
         "5221933213843920586",
         "CHICKEN+HUB+LLC",
         "24+HIT+Riga+SIA",
-        "Tiki+Labs"
+        "Tiki+Labs",
+        "6864031428560431036",
+        "Viking+Tech+Pty+Ltd",
+        "Volt+Athletics",
+        "7177090961551477096",
+        "Playbook+Technologies+Inc",
+        "Spartan+Race+Inc",
+        "7114727157796251591",
+        "American+Travel+Solutions,+LLC",
+        "Spartan+Forge+LLC",
+        "SouthState+Bank",
+        "FitNow,+Inc.",
+        "6613127161442662182",
+        "Pzizz,+Inc."
     ]
 }
