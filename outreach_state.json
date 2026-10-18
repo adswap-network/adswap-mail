@@ -1,8 +1,8 @@
 {
     "config": {
         "start_date": "2026-09-12",
-        "last_run_date": "2026-10-17",
-        "sent_today": 49
+        "last_run_date": "2026-10-18",
+        "sent_today": 2
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -5025,17 +5025,17 @@
             "app_name": "National World News",
             "package": "com.nationalworld.nw",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-06T21:40:08.855793",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-18T01:03:59.620346"
         },
         "support@workoutwise.app": {
             "app_name": "Gym Workout Tracker & Log",
             "package": "com.yurikoshiishi.workoutwise",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-06T21:40:08.855793",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-18T01:03:59.620346"
         },
         "support@nimblebit.com": {
             "app_name": "Pixel Shelter",
