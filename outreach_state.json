@@ -2,7 +2,7 @@
     "config": {
         "start_date": "2026-09-12",
         "last_run_date": "2026-10-18",
-        "sent_today": 14
+        "sent_today": 20
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -5129,49 +5129,49 @@
             "app_name": "Tottini",
             "package": "co.tapcart.app.id_YGdztzQyQB",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-07T16:30:41.555208",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-18T18:07:03.393463"
         },
         "support@adamansjewellery.com": {
             "app_name": "Adamans",
             "package": "co.tapcart.app.id_rRsMFv8V5A",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-07T16:30:41.555208",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-18T18:07:03.393463"
         },
         "hello@beistravel.com": {
             "app_name": "B\u00c9IS",
             "package": "co.tapcart.app.id_K2rIHcCiT9",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-07T16:30:41.555208",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-18T18:07:03.393463"
         },
         "support@groceryking.com": {
             "app_name": "Grocery AI",
             "package": "com.pocketlabs.groceryking2",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-07T21:59:30.875740",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-18T18:07:03.393463"
         },
         "jamie@highdiveapparel.com": {
             "app_name": "High Dive Apparel",
             "package": "co.shopney.highdiveapparel",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-07T21:59:30.875740",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-18T18:07:03.393463"
         },
         "ahmad@nominalx.com": {
             "app_name": "Nominalx",
             "package": "co.tapcart.app.id_M7pcNt95TK",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-07T21:59:30.875740",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-18T18:07:03.393463"
         },
         "info@inheritco.com": {
             "app_name": "Inherit Clothing Co",
