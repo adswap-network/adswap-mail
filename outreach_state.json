@@ -2,7 +2,7 @@
     "config": {
         "start_date": "2026-09-12",
         "last_run_date": "2026-10-18",
-        "sent_today": 27
+        "sent_today": 48
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -5233,111 +5233,111 @@
             "app_name": "Sushi Oishii",
             "package": "com.alaeat.customer.android.sushioihii",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-07T21:59:30.875740",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-18T23:14:32.497107"
         },
         "feedback@mrcook.app": {
             "app_name": "Save Recipes",
             "package": "app.mrcook.twa",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-07T21:59:30.875740",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-18T23:14:32.497107"
         },
         "info@sunnaentertainment.com": {
             "app_name": "Planet Cube",
             "package": "com.sunnaentertainment.planetcubeedge",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-07T21:59:30.875740",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-18T23:14:32.497107"
         },
         "qookieg@gmail.com": {
             "app_name": "OrbaDrone",
             "package": "com.qookie.orbadrone2",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-07T21:59:30.875740",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-18T23:14:32.497107"
         },
         "support-robots-gps@choiceofgames.com": {
             "app_name": "Choice of Robots",
             "package": "com.choiceofgames.robots",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-07T21:59:30.875740",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-18T23:14:32.497107"
         },
         "vishgamestudio+support@gmail.com": {
             "app_name": "Just King",
             "package": "com.vishgamestudio.king",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-07T21:59:30.875740",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-18T23:14:32.497107"
         },
         "support@kurechii.com": {
             "app_name": "King's League II",
             "package": "com.kurechii.kingsleagueii",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-07T21:59:30.875740",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-18T23:14:32.497107"
         },
         "feedback@coinpanda.io": {
             "app_name": "Coinpanda",
             "package": "com.coinpanda.app",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-07T21:59:30.875740",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-18T23:14:32.497107"
         },
         "akhil.coding.dev@gmail.com": {
             "app_name": "StepGo",
             "package": "in.codingvalue.stepgo",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-07T21:59:30.875740",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-18T23:14:32.497107"
         },
         "support@rift.co": {
             "app_name": "Soar",
             "package": "ai.flysoar.android",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-08T01:57:11.323962",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-18T23:14:32.497107"
         },
         "info@wiserapps.co": {
             "app_name": "Glycemic Index Guide",
             "package": "co.wiserapps.glycemicindex",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-08T08:59:58.856218",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-18T23:14:32.497107"
         },
         "hello@hormona.io": {
             "app_name": "Hormona",
             "package": "com.hormona.hormonaapp",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-08T08:59:58.856218",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-18T23:14:32.497107"
         },
         "lets-up@outlook.com": {
             "app_name": "LetsUpDoc",
             "package": "com.letsupdoc.mobile",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-08T16:30:16.616597",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-18T23:14:32.497107"
         },
         "support@petme.social": {
             "app_name": "Petme",
             "package": "com.zerosgroup.petme",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "REPLIED",
             "first_sent_at": "2026-10-08T16:30:16.616597",
             "followup_sent_at": null
         },
@@ -5345,63 +5345,63 @@
             "app_name": "Waha",
             "package": "com.kingdomstrategies.waha",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-08T16:30:16.616597",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-18T23:14:32.497107"
         },
         "legal@mentalfuture.com": {
             "app_name": "MentalFuture",
             "package": "com.mental.future.meditation.cbt",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-08T16:30:16.616597",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-18T23:14:32.497107"
         },
         "support@floramaternity.com": {
             "app_name": "Moonly",
             "package": "flora.period.tracker.fertility.female.health.calendar.ai.app",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-08T16:30:16.616597",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-18T23:14:32.497107"
         },
         "keltycentre@cw.bc.ca": {
             "app_name": "Breathr",
             "package": "ca.phsa.breathrapp",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-08T22:05:39.171880",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-18T23:14:32.497107"
         },
         "audioappsupport@penguinrandomhouse.com": {
             "app_name": "Penguin Random House Audio",
             "package": "com.prhad.volumes",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-08T22:05:39.171880",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-18T23:14:32.497107"
         },
         "hello@dbt-mind.com": {
             "app_name": "DBT-Mind",
             "package": "com.mindcrafts.DBTMind",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-08T22:05:39.171880",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-18T23:14:32.497107"
         },
         "support@prepia.com": {
             "app_name": "Prepia Medical Exam Prep 2026",
             "package": "com.aleosapps.QuizzAppMedical",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-08T22:05:39.171880",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-18T23:14:32.497107"
         },
         "support@olivetree.com": {
             "app_name": "NLT Bible App by Olive Tree",
             "package": "nlt.biblereader.olivetree",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "REPLIED",
             "first_sent_at": "2026-10-08T22:05:39.171880",
             "followup_sent_at": null
         },
@@ -5409,9 +5409,9 @@
             "app_name": "Belle Period & PMDD Tracker",
             "package": "co.bellehealth.bellehealth",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-08T22:05:39.171880",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-18T23:14:32.497107"
         },
         "arpit@simpletherapy.com": {
             "app_name": "SimpleTherapy",
