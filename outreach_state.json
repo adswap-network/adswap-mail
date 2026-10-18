@@ -2,7 +2,7 @@
     "config": {
         "start_date": "2026-09-12",
         "last_run_date": "2026-10-18",
-        "sent_today": 9
+        "sent_today": 14
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -5089,41 +5089,41 @@
             "app_name": "HydroJug",
             "package": "co.tapcart.app.id_AEFqMfFqTm",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-06T21:40:08.855793",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-18T14:36:11.813985"
         },
         "contact@wearticker.com": {
             "app_name": "WearTicker",
             "package": "com.wearticker.live",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-07T01:33:40.222283",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-18T14:36:11.813985"
         },
         "support@owee.world": {
             "app_name": "Owee",
             "package": "com.realtimetech.owee",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-07T08:41:27.910358",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-18T14:36:11.813985"
         },
         "support@getrensa.com": {
             "app_name": "Rensa Marketplace",
             "package": "com.rensa.app",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-07T08:41:27.910358",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-18T14:36:11.813985"
         },
         "contact@savingpaige.com": {
             "app_name": "FEHRNVI",
             "package": "co.tapcart.app.id_HH8jhmQCOd",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-07T08:41:27.910358",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-18T14:36:11.813985"
         },
         "info@tottini.com": {
             "app_name": "Tottini",
