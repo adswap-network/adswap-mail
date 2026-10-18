@@ -2,7 +2,7 @@
     "config": {
         "start_date": "2026-09-12",
         "last_run_date": "2026-10-18",
-        "sent_today": 4
+        "sent_today": 9
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -5049,41 +5049,41 @@
             "app_name": "Sea Pop Match 3",
             "package": "com.BoyBoxStudio.SeaPopSaga",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-06T21:40:08.855793",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-18T11:08:34.859407"
         },
         "veerdevstudio@gmail.com": {
             "app_name": "Expense Tracker Offline",
             "package": "studio.veerdev.offlineexpensetracker",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-06T21:40:08.855793",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-18T11:08:34.859407"
         },
         "support@spentrip.app": {
             "app_name": "Travel Expense Budget Tracker",
             "package": "com.reciptix.spentrip",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-06T21:40:08.855793",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-18T11:08:34.859407"
         },
         "support@zerokb.co": {
             "app_name": "Vento Expense & Budget Tracker",
             "package": "money.vento.expense.tracker",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-06T21:40:08.855793",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-18T11:08:34.859407"
         },
         "mobile-dev@vantix.law": {
             "app_name": "Vantix Law",
             "package": "com.vantixlaw.services",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-06T21:40:08.855793",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-18T11:08:34.859407"
         },
         "service@thehydrojug.com": {
             "app_name": "HydroJug",
