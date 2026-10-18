@@ -2,7 +2,7 @@
     "config": {
         "start_date": "2026-09-12",
         "last_run_date": "2026-10-18",
-        "sent_today": 20
+        "sent_today": 27
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -5177,57 +5177,57 @@
             "app_name": "Inherit Clothing Co",
             "package": "co.tapcart.app.id_2U2Exx5lnC",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-07T21:59:30.875740",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-18T20:46:09.004719"
         },
         "info@americantall.com": {
             "app_name": "American Tall",
             "package": "co.tapcart.app.id_BrDtBG7PIX",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-07T21:59:30.875740",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-18T20:46:09.004719"
         },
         "tarik@firststopfashion.com": {
             "app_name": "FSF NYC",
             "package": "co.shopney.fsfnyc.com",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-07T21:59:30.875740",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-18T20:46:09.004719"
         },
         "napoly@aol.com": {
             "app_name": "Napoly Menswear",
             "package": "co.shopney.napolymenswear",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-07T21:59:30.875740",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-18T20:46:09.004719"
         },
         "hello@kollectin.com": {
             "app_name": "KOL Kollectin Shopping",
             "package": "net.lateralview.kollectin",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-07T21:59:30.875740",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-18T20:46:09.004719"
         },
         "customerservice@lotusandluna.com": {
             "app_name": "Lotus and Luna",
             "package": "com.vennapps.lotusandluna",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-07T21:59:30.875740",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-18T20:46:09.004719"
         },
         "support@likcut.com": {
             "app_name": "Likcut",
             "package": "com.bl.likcut",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-07T21:59:30.875740",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-18T20:46:09.004719"
         },
         "support@peblla.com": {
             "app_name": "Sushi Oishii",
