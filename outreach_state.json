@@ -1,8 +1,8 @@
 {
     "config": {
         "start_date": "2026-09-12",
-        "last_run_date": "2026-10-18",
-        "sent_today": 48
+        "last_run_date": "2026-10-19",
+        "sent_today": 4
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -5417,33 +5417,33 @@
             "app_name": "SimpleTherapy",
             "package": "com.simpletherapy.android.mhealth",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-08T22:05:39.171880",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-19T01:21:39.942994"
         },
         "info.calmdeen@gmail.com": {
             "app_name": "Calm Deen",
             "package": "com.pacehut.CalmDeen",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-08T22:05:39.171880",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-19T01:21:39.942994"
         },
         "contact@joonapp.io": {
             "app_name": "Joon",
             "package": "com.joon.android",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-08T22:05:39.171880",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-19T01:21:39.942994"
         },
         "support@sidekickhealth.com": {
             "app_name": "Sidekick Health",
             "package": "com.goodlifeme.sidekick",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-08T22:05:39.171880",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-19T01:21:39.942994"
         },
         "cs@detailgames.ai": {
             "app_name": "Meowchant",
