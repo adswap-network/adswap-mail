@@ -2,7 +2,7 @@
     "config": {
         "start_date": "2026-09-12",
         "last_run_date": "2026-10-19",
-        "sent_today": 6
+        "sent_today": 11
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -5465,41 +5465,41 @@
             "app_name": "Touhou Incident Idle Clicker",
             "package": "jp.pluszero.ihen",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-08T22:05:39.171880",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-19T15:37:46.058548"
         },
         "help@game2gather.com": {
             "app_name": "DragonSpear",
             "package": "com.game2gather.dragonspearex",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-08T22:05:39.171880",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-19T15:37:46.058548"
         },
         "widstudiogames@gmail.com": {
             "app_name": "Fairy Knights -Story based RPG",
             "package": "widstudio.games.pipes",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-08T22:05:39.171880",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-19T15:37:46.058548"
         },
         "support@sharesight.com": {
             "app_name": "Sharesight",
             "package": "com.sharesight.app",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-09T02:11:30.160348",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-19T15:37:46.058548"
         },
         "support.devduos@thetrishulgroup.com": {
             "app_name": "Tymio",
             "package": "com.DevDuos.animatedclock",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-09T02:11:30.160348",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-19T15:37:46.058548"
         },
         "suporteinterativeappssolutions@gmail.com": {
             "app_name": "Simple Kanban",
