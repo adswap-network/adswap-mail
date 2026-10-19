@@ -2,7 +2,7 @@
     "config": {
         "start_date": "2026-09-12",
         "last_run_date": "2026-10-19",
-        "sent_today": 4
+        "sent_today": 6
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -5449,17 +5449,17 @@
             "app_name": "Meowchant",
             "package": "com.nerdnavis.meowchant",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-08T22:05:39.171880",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-19T07:48:36.616927"
         },
         "support@mindzeit.app": {
             "app_name": "MINDZEIT",
             "package": "app.mindzeit",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-08T22:05:39.171880",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-19T07:48:36.616927"
         },
         "takeonekyuu@gmail.com": {
             "app_name": "Touhou Incident Idle Clicker",
