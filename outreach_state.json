@@ -2,7 +2,7 @@
     "config": {
         "start_date": "2026-09-12",
         "last_run_date": "2026-10-19",
-        "sent_today": 11
+        "sent_today": 48
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -5505,159 +5505,159 @@
             "app_name": "Simple Kanban",
             "package": "com.sg.simplekanban",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-09T09:09:41.775497",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-19T21:04:35.273364"
         },
         "support@gymconnect.club": {
             "app_name": "Gym Notes",
             "package": "app.rork.gymnotes_workout_tracker",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-10T00:53:11.736022",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-19T21:04:35.273364"
         },
         "contact@elefantia.com": {
             "app_name": "Elefantia",
             "package": "com.elefantia.biography",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-10T07:10:31.692492",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-19T21:04:35.273364"
         },
         "techinfornity@gmail.com": {
             "app_name": "EMI Calculator Premium",
             "package": "com.finance.emi.calculate.paid",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-10T07:10:31.692492",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-19T21:04:35.273364"
         },
         "support@handoff.ai": {
             "app_name": "Handoff Construction Estimator",
             "package": "com.onebuild.handoff",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-10T07:10:31.692492",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-19T21:04:35.273364"
         },
         "premathgame@witplex.com": {
             "app_name": "Cool & Fun Math Games for Kids",
             "package": "com.witplex.preschoolmathgame",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-10T13:45:01.675803",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-19T21:04:35.273364"
         },
         "nori@norwex.com": {
             "app_name": "Norwex Consultant App",
             "package": "com.norwex.noriapp",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-10T13:45:01.675803",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-19T21:04:35.273364"
         },
         "support@faxdesk.app": {
             "app_name": "FAX Desk",
             "package": "com.circuitid.fax",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-10T13:45:01.675803",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-19T21:04:35.273364"
         },
         "hello@zendora.sg": {
             "app_name": "Zendora",
             "package": "com.zenithmobile",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-10T13:45:01.675803",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-19T21:04:35.273364"
         },
         "abacusnumbersense@gmail.com": {
             "app_name": "Abacus",
             "package": "app.abacuslearning.abacus",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-10T18:37:37.993368",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-19T21:04:35.273364"
         },
         "ti@360e1.com": {
             "app_name": "MPI Educational",
             "package": "com.kidsa.english",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-10T18:37:37.993368",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-19T21:04:35.273364"
         },
         "yon@nooksy.co": {
             "app_name": "Nooksy",
             "package": "com.empowr.monkeychat",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-10T18:37:37.993368",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-19T21:04:35.273364"
         },
         "treetoptunes.bonnie@gmail.com": {
             "app_name": "Treetop Tunes",
             "package": "com.healtheti.treetoptunes2",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-10T18:37:37.993368",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-19T21:04:35.273364"
         },
         "support@getmanatee.com": {
             "app_name": "Manatee",
             "package": "com.manateeandme.app",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-10T22:34:05.302531",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-19T21:04:35.273364"
         },
         "business@hellobard.com": {
             "app_name": "Jack & Joe World",
             "package": "com.hellobard.jackandjoe",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-10T22:34:05.302531",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-19T21:04:35.273364"
         },
         "ask@lunabisleep.com": {
             "app_name": "Lunabi",
             "package": "com.lunabi.app.lunabi",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-10T22:34:05.302531",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-19T21:04:35.273364"
         },
         "hairykowdesign@gmail.com": {
             "app_name": "Read & Play",
             "package": "com.HairyKow.DinosaurCountingNumbers",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-10T22:34:05.302531",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-19T21:04:35.273364"
         },
         "yaoleg312@gmail.com": {
             "app_name": "Speech Start",
             "package": "com.gpoy.speechstart.android",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-10T22:34:05.302531",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-19T21:04:35.273364"
         },
         "info@polearena.be": {
             "app_name": "Pole Arena",
             "package": "com.bsport_768",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-10T22:34:05.302531",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-19T21:04:35.273364"
         },
         "choolaah@thanx.com": {
             "app_name": "Choolaah Ordering",
             "package": "com.thanx.choolaah",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "REPLIED",
             "first_sent_at": "2026-10-10T22:34:05.302531",
             "followup_sent_at": null
         },
@@ -5665,95 +5665,95 @@
             "app_name": "Book summaries",
             "package": "com.podurama.books",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-10T22:34:05.302531",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-19T21:04:35.273364"
         },
         "ai.translators.info@gmail.com": {
             "app_name": "English-Dutch translator",
             "package": "ai.translator.english_dutch",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-10T22:34:05.302531",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-19T21:04:35.273364"
         },
         "khan.bismillah222@gmail.com": {
             "app_name": "PicMaster",
             "package": "com.pic.master",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-10T22:34:05.302531",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-19T21:04:35.273364"
         },
         "android@swapcard.com": {
             "app_name": "Terrapinn Events",
             "package": "com.swapcard.apps.android.terrapinnevents",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-10T22:34:05.302531",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-19T21:04:35.273364"
         },
         "hello@oddysee.co": {
             "app_name": "Oddysee",
             "package": "co.oddysee.android.app",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-10T22:34:05.302531",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-19T21:04:35.273364"
         },
         "contact@jollytango.com": {
             "app_name": "JollyTango",
             "package": "com.jollytango.jollytango",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-10T22:34:05.302531",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-19T21:04:35.273364"
         },
         "support@tern.travel": {
             "app_name": "Tern for Travelers",
             "package": "com.tern.travel",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-10T22:34:05.302531",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-19T21:04:35.273364"
         },
         "support@bbbus.com": {
             "app_name": "BBBUS COM",
             "package": "com.bbbus.bbbus",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-10T22:34:05.302531",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-19T21:04:35.273364"
         },
         "david@traum.me": {
             "app_name": "TrekSpots",
             "package": "com.traummedia.wildcamp",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-10T22:34:05.302531",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-19T21:04:35.273364"
         },
         "contact@mygemma.com": {
             "app_name": "myGemma",
             "package": "co.tapcart.app.id_lUcG4G1Dgv",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-10T22:34:05.302531",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-19T21:04:35.273364"
         },
         "community@nampharm.com.na": {
             "app_name": "My Pharmacy",
             "package": "na.com.nampharmcommunity",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-10T22:34:05.302531",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-19T21:04:35.273364"
         },
         "customerservice@trendytransfers.com": {
             "app_name": "Trendy Transfers",
             "package": "trendytransfers.android.app",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "REPLIED",
             "first_sent_at": "2026-10-10T22:34:05.302531",
             "followup_sent_at": null
         },
@@ -5761,49 +5761,49 @@
             "app_name": "Business Texting with Salesmsg",
             "package": "com.salesmessage.arcadia.app",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-10T22:34:05.302531",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-19T21:04:35.273364"
         },
         "google-play-console@relaypro.com": {
             "app_name": "Relay",
             "package": "com.relaypro.app",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-11T01:55:27.760347",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-19T21:04:35.273364"
         },
         "developer@gov.kn": {
             "app_name": "e-Border",
             "package": "kn.eborder.app",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-11T01:55:27.760347",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-19T21:04:35.273364"
         },
         "apps@ihealthlabs.com": {
             "app_name": "Unika Health",
             "package": "com.ihealthlabs.unifiedcare",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-11T08:54:12.078789",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-19T21:04:35.273364"
         },
         "hello@dimebeautyco.com": {
             "app_name": "DIME\u00ae",
             "package": "com.fuego.dimebeauty",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-11T08:54:12.078789",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-19T21:04:35.273364"
         },
         "support@raynetcrm.com": {
             "app_name": "RAYNET CRM",
             "package": "cz.raynet.raynetcrm",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-11T15:42:57.898352",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-19T21:04:35.273364"
         },
         "dev@avantstay.com": {
             "app_name": "AvantStay Vacation Rentals",
@@ -6379,6 +6379,14 @@
             "source": "google_play",
             "status": "FIRST_SENT",
             "first_sent_at": "2026-10-18T05:55:57.718871",
+            "followup_sent_at": null
+        },
+        "sleepingmuseum@gmail.com": {
+            "app_name": "Death Antique",
+            "package": "com.SleepingMuseum.DeathAntique",
+            "source": "google_play",
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-19T21:04:35.273364",
             "followup_sent_at": null
         }
     },
@@ -22618,7 +22626,13 @@
         "com.asmallgame.pearlgem",
         "flower.games.Bubble.Pop",
         "com.asg.towerbuster",
-        "com.zeykit.dev.cryptomarketcap"
+        "com.zeykit.dev.cryptomarketcap",
+        "com.SleepingMuseum.DeathAntique",
+        "jp.co.muse.matsuro",
+        "jp.co.muse.android.sunflare",
+        "kemco.hitpoint.tactica",
+        "kemco.execreate.nroguepremium",
+        "kemco.execreate.dimensioncross"
     ],
     "used_keywords": [
         "finance",
@@ -28253,6 +28267,7 @@
         "5526698883932361425",
         "7470976223170164167",
         "6913737875745913179",
-        "6806198870613114063"
+        "6806198870613114063",
+        "7529922139576845446"
     ]
 }
