@@ -2,7 +2,7 @@
     "config": {
         "start_date": "2026-09-12",
         "last_run_date": "2026-10-20",
-        "sent_today": 14
+        "sent_today": 25
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -5873,33 +5873,33 @@
             "app_name": "Solink (legacy)",
             "package": "com.solinkcorp.solink",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-11T20:18:31.697336",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-20T20:36:45.882411"
         },
         "support@freedomstreetgarage.com": {
             "app_name": "Freedom Street Garage",
             "package": "co.shopney.freedomstreetgarage",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-12T00:33:51.661848",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-20T20:36:45.882411"
         },
         "support@mindrazr.com": {
             "app_name": "MindRazr",
             "package": "com.mindrazr",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-12T07:22:52.372235",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-20T20:36:45.882411"
         },
         "support@psi.memorang.com": {
             "app_name": "PSI Test Prep",
             "package": "com.memorang.psi.insurance.testprep",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-12T07:22:52.372235",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-20T20:36:45.882411"
         },
         "support@tetraom.com": {
             "app_name": "Tetraom",
@@ -6457,56 +6457,56 @@
             "app_name": "Catatku",
             "package": "com.simpletechno.catatku",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-20T20:36:45.882411",
             "followup_sent_at": null
         },
         "support@slonoise.com": {
             "app_name": "Slo",
             "package": "com.sleep.sounds.noise.rain",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-20T20:36:45.882411",
             "followup_sent_at": null
         },
         "nixgames44@gmail.com": {
             "app_name": "Alti",
             "package": "com.nixstudio.antistress.alti",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-20T20:36:45.882411",
             "followup_sent_at": null
         },
         "customer@entertech.cn": {
             "app_name": "Flowtime",
             "package": "cn.entertech.flowtime",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-20T20:36:45.882411",
             "followup_sent_at": null
         },
         "service1@fedkeepfit.com": {
             "app_name": "FED Fitness",
             "package": "com.fed.smart.oversea",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-20T20:36:45.882411",
             "followup_sent_at": null
         },
         "help@vidapp.com": {
             "app_name": "Get Fit With Rick",
             "package": "com.VidApp.GetFitWithRick",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-20T20:36:45.882411",
             "followup_sent_at": null
         },
         "dev.modle.io@gmail.com": {
             "app_name": "Match Mart",
             "package": "com.gamepia.matchmart",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-20T20:36:45.882411",
             "followup_sent_at": null
         },
         "cs@kcmtrade.com": {
