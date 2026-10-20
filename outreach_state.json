@@ -2,7 +2,7 @@
     "config": {
         "start_date": "2026-09-12",
         "last_run_date": "2026-10-20",
-        "sent_today": 7
+        "sent_today": 9
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -5849,7 +5849,7 @@
             "app_name": "Committed Coaches",
             "package": "com.trainerize.committedcoaches",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "REPLIED",
             "first_sent_at": "2026-10-11T20:18:31.697336",
             "followup_sent_at": null
         },
@@ -6409,16 +6409,16 @@
             "app_name": "Flashcard Maker",
             "package": "com.flutterflow.kards",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-20T11:40:22.638843",
             "followup_sent_at": null
         },
         "dev1@trafficheroes.agency": {
             "app_name": "EmoSea",
             "package": "com.emosea.mentalhealth",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-20T11:40:22.638843",
             "followup_sent_at": null
         }
     },
