@@ -2,7 +2,7 @@
     "config": {
         "start_date": "2026-09-12",
         "last_run_date": "2026-10-21",
-        "sent_today": 5
+        "sent_today": 10
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -6065,15 +6065,15 @@
             "app_name": "CareMobi \u2014 Caregiver App",
             "package": "com.nyu.caremobi",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-14T12:02:52.526459",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-21T15:18:43.441654"
         },
         "support@bonescoffee.com": {
             "app_name": "Bones Coffee",
             "package": "com.bonescoffee.app",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "REPLIED",
             "first_sent_at": "2026-10-14T12:02:52.526459",
             "followup_sent_at": null
         },
@@ -6593,32 +6593,32 @@
             "app_name": "Fergus Go",
             "package": "com.fergus.app",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-21T15:18:43.441654",
             "followup_sent_at": null
         },
         "appsupport@tworawsisters.com": {
             "app_name": "Two Raw Sisters Recipes",
             "package": "com.tworawsisters.app",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-21T15:18:43.441654",
             "followup_sent_at": null
         },
         "mobileapp@microhealth.org": {
             "app_name": "Microhealth Bleeding Disorders",
             "package": "com.microhealth.hemophilia",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-21T15:18:43.441654",
             "followup_sent_at": null
         },
         "support@secanda.app": {
             "app_name": "SECANDA",
             "package": "app.secanda.www",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-21T15:18:43.441654",
             "followup_sent_at": null
         },
         "mobileapp@callhub.io": {
