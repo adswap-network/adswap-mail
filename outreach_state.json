@@ -2,7 +2,7 @@
     "config": {
         "start_date": "2026-09-12",
         "last_run_date": "2026-10-21",
-        "sent_today": 22
+        "sent_today": 48
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -6113,15 +6113,15 @@
             "app_name": "Allie",
             "package": "com.codexhealth.allie",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-14T17:12:29.040745",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-21T23:23:14.279207"
         },
         "support@medely.com": {
             "app_name": "Medely",
             "package": "com.medely.proclient",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "REPLIED",
             "first_sent_at": "2026-10-14T20:44:20.673008",
             "followup_sent_at": null
         },
@@ -6129,7 +6129,7 @@
             "app_name": "Digbi Health",
             "package": "com.digbihealth",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "REPLIED",
             "first_sent_at": "2026-10-14T20:44:20.673008",
             "followup_sent_at": null
         },
@@ -6137,177 +6137,177 @@
             "app_name": "Barbell Medicine",
             "package": "com.barbellmedicine.android_app",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-14T20:44:20.673008",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-21T23:23:14.279207"
         },
         "contact@managinglife.com": {
             "app_name": "Manage My Pain Pro",
             "package": "com.lcs.mmp.full",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-14T20:44:20.673008",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-21T23:23:14.279207"
         },
         "support@huskwellness.com": {
             "app_name": "HUSK Mental Health",
             "package": "com.husk.mentalhealth",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-14T20:44:20.673008",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-21T23:23:14.279207"
         },
         "service@mediark.io": {
             "app_name": "SIMTOMI",
             "package": "com.mediark.symptommy1",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-14T20:44:20.673008",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-21T23:23:14.279207"
         },
         "info@tripwoa.com": {
             "app_name": "Tripwoa",
             "package": "com.usnoow.tripwoa",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-14T23:56:00.572882",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-21T23:23:14.279207"
         },
         "support.one4studio@gmail.com": {
             "app_name": "Ares Dark Icon Pack",
             "package": "one4studio.iconpack.aresdark",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-14T23:56:00.572882",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-21T23:23:14.279207"
         },
         "logicmiracle@gmail.com": {
             "app_name": "OffRoad Drive Pro",
             "package": "com.logicmiracle.offroaddrivepro",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-14T23:56:00.572882",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-21T23:23:14.279207"
         },
         "contato.noguiin@gmail.com": {
             "app_name": "My Car My Life",
             "package": "com.noguiin.mycarmylife",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-14T23:56:00.572882",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-21T23:23:14.279207"
         },
         "hittitegames@gmail.com": {
             "app_name": "Car Crash Simulator 7",
             "package": "com.HittiteGames.CarCrashSimulator7",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-14T23:56:00.572882",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-21T23:23:14.279207"
         },
         "info@adobixtech.in": {
             "app_name": "HabitLoop",
             "package": "com.tools.habitloop.app",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-14T23:56:00.572882",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-21T23:23:14.279207"
         },
         "support@toastmobile.com": {
             "app_name": "Bible Vocabulary",
             "package": "com.toastmobile.biblevocabulary",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-14T23:56:00.572882",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-21T23:23:14.279207"
         },
         "funforest.co@gmail.com": {
             "app_name": "HVY",
             "package": "com.hvy.gymlog",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-14T23:56:00.572882",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-21T23:23:14.279207"
         },
         "info@dunkingdoggames.com": {
             "app_name": "Blobby's Quest",
             "package": "com.dunkingdoggames.blobby",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-15T04:42:09.474311",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-21T23:23:14.279207"
         },
         "support@untoldtales.games": {
             "app_name": "Flame Keeper",
             "package": "com.UntoldTalesSA.FlameKeeper",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-15T04:42:09.474311",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-21T23:23:14.279207"
         },
         "contact@longhathouse.com": {
             "app_name": "Magenta Arcade II",
             "package": "com.longhathouse.MagentaArcadeII.Premium",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-15T04:42:09.474311",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-21T23:23:14.279207"
         },
         "eggggg@hypergames.no": {
             "app_name": "Eggggg",
             "package": "no.hypergames.eggggg",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-15T09:57:01.525212",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-21T23:23:14.279207"
         },
         "contact@babyloniantwins.com": {
             "app_name": "Babylonian Twins Platformer",
             "package": "com.cosmos.babyloniantwins.premium",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-15T09:57:01.525212",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-21T23:23:14.279207"
         },
         "thelastgame@icloud.com": {
             "app_name": "The Last Game",
             "package": "com.frju.thelastgame",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-15T09:57:01.525212",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-21T23:23:14.279207"
         },
         "ivan@creauctopus.com": {
             "app_name": "Ailment",
             "package": "com.BeardyBird.AilmentPremium",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-15T15:02:45.722641",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-21T23:23:14.279207"
         },
         "morhendos@gmail.com": {
             "app_name": "3-Day Fast",
             "package": "site.dayfast3.app",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-15T15:02:45.722641",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-21T23:23:14.279207"
         },
         "developer@frolicadvisory.in": {
             "app_name": "Bazaar Bandhu",
             "package": "com.frolic.bazaar_bandhu",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-15T15:02:45.722641",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-21T23:23:14.279207"
         },
         "yuichi0301@gmail.com": {
             "app_name": "Shared Calendar",
             "package": "app.housetodo",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-15T19:10:13.364992",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-21T23:23:14.279207"
         },
         "ossaili.apps@gmail.com": {
             "app_name": "BuzzChat",
@@ -6689,24 +6689,24 @@
             "app_name": "ROAR Beauty Parlor",
             "package": "com.phorest.roarbeautyparlor",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-21T23:23:14.279207",
             "followup_sent_at": null
         },
         "hello@mindsync.app": {
             "app_name": "MindSync",
             "package": "com.mindsync.app",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-21T23:23:14.279207",
             "followup_sent_at": null
         },
         "team@shiftflow.app": {
             "app_name": "ShiftFlow",
             "package": "app.shiftflow",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-21T23:23:14.279207",
             "followup_sent_at": null
         }
     },
@@ -23971,7 +23971,8 @@
         "org.mozilla.firefox_beta",
         "app.intra",
         "com.joyark.cloudgames.community",
-        "app.shiftflow"
+        "app.shiftflow",
+        "com.ig.mahjong.jam"
     ],
     "used_keywords": [
         "finance",
@@ -23982,7 +23983,56 @@
         "ecommerce",
         "entertainment",
         "travel",
-        "news"
+        "news",
+        "education",
+        "action games",
+        "casual games",
+        "rpg games",
+        "casino games",
+        "money",
+        "fitness",
+        "diet",
+        "to do list",
+        "calendar",
+        "shopping",
+        "movies",
+        "flights",
+        "local news",
+        "study",
+        "budget",
+        "crypto",
+        "investing",
+        "meditation",
+        "workout",
+        "notes",
+        "chat",
+        "meet",
+        "buy and sell",
+        "music",
+        "action offline game indie",
+        "zombie survival game 2d",
+        "retro platformer action",
+        "match 3 puzzle free offline",
+        "color sort puzzle hard",
+        "idle clicker simulator",
+        "expense tracker minimalist",
+        "budget planner offline",
+        "crypto portfolio widget",
+        "pomodoro timer aesthetic",
+        "habit tracker offline",
+        "kanban board personal",
+        "water reminder fasting",
+        "step counter offline pedometer",
+        "home workout no equipment",
+        "anonymous chat local",
+        "icebreaker questions app",
+        "couple calendar shared",
+        "flashcards maker study",
+        "learn vocabulary daily",
+        "rss reader minimalist fast",
+        "daily journal secret",
+        "workout logger gym",
+        "time blocker schedule"
     ],
     "scanned_developers": [
         "DecusPro",
