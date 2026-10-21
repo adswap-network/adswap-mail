@@ -2,7 +2,7 @@
     "config": {
         "start_date": "2026-09-12",
         "last_run_date": "2026-10-21",
-        "sent_today": 10
+        "sent_today": 22
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -6081,33 +6081,33 @@
             "app_name": "Ciba Health",
             "package": "com.cibahealth.ciba_patient_health",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-14T12:02:52.526459",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-21T20:10:54.632712"
         },
         "support@leaphealth.ai": {
             "app_name": "Leap",
             "package": "com.curemd.leap",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-14T17:12:29.040745",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-21T20:10:54.632712"
         },
         "kontakt@quizacademy.de": {
             "app_name": "PRINCE2\u00ae Foundation Trainer",
             "package": "de.lecommsulting.prince2",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-14T17:12:29.040745",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-21T20:10:54.632712"
         },
         "support@actuvi.com": {
             "app_name": "Actuvi",
             "package": "com.actuvi",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-14T17:12:29.040745",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-21T20:10:54.632712"
         },
         "support@codexhealth.com": {
             "app_name": "Allie",
@@ -6625,64 +6625,64 @@
             "app_name": "CallHub",
             "package": "io.callhub.agentConsole.mobile",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-21T20:10:54.632712",
             "followup_sent_at": null
         },
         "info@contou.rs": {
             "app_name": "Contours",
             "package": "rs.contou.contours",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-21T20:10:54.632712",
             "followup_sent_at": null
         },
         "support@connectplayers.ca": {
             "app_name": "ConnectPlayers",
             "package": "com.connectplayers",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-21T20:10:54.632712",
             "followup_sent_at": null
         },
         "ogr.sup@gmail.com": {
             "app_name": "VIP Notes",
             "package": "com.OGR.vipnotesfull",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-21T20:10:54.632712",
             "followup_sent_at": null
         },
         "support@cactusoft.ca": {
             "app_name": "Cactusoft Construction",
             "package": "construction.cactusoft",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-21T20:10:54.632712",
             "followup_sent_at": null
         },
         "support@skywalkgames.com": {
             "app_name": "Cozy Social World",
             "package": "com.skywalkgames.cocomine",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-21T20:10:54.632712",
             "followup_sent_at": null
         },
         "support@newsepick.com": {
             "app_name": "Newsepick",
             "package": "com.wse.newsepick",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-21T20:10:54.632712",
             "followup_sent_at": null
         },
         "cr@moverepublic.com": {
             "app_name": "Move Republic",
             "package": "com.mysports.teams",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-21T20:10:54.632712",
             "followup_sent_at": null
         },
         "deploy@phorest.com": {
