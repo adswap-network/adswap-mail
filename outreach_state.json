@@ -1,8 +1,8 @@
 {
     "config": {
         "start_date": "2026-09-12",
-        "last_run_date": "2026-10-20",
-        "sent_today": 50
+        "last_run_date": "2026-10-21",
+        "sent_today": 2
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -6041,17 +6041,17 @@
             "app_name": "Brello",
             "package": "co.alliahealth.brello",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-14T01:13:55.014375",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-21T04:51:09.540367"
         },
         "woof@bullybunches.com": {
             "app_name": "Bully Bunches US",
             "package": "co.tapcart.app.id_n06PA1ylPa",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-14T06:13:20.138001",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-21T04:51:09.540367"
         },
         "myecp@exactcarepharmacy.com": {
             "app_name": "ExactCare Pharmacy",
@@ -23400,7 +23400,14 @@
         "com.eshoppr.mytravelmoments",
         "com.eshoppr.srcreizen",
         "com.eshoppr.holidayplanners",
-        "com.tactilegames.simonscatmatch"
+        "com.tactilegames.simonscatmatch",
+        "com.fish.master.playgame",
+        "zen.mind.tiny.offline.games",
+        "games.flower.match.puzzle.joy.queen",
+        "com.animal.match.link.combo",
+        "com.rush.screw.puzzle.game",
+        "com.sort.fruit.puzzle.classic.crush.toy",
+        "com.flow.arrow.paint.game"
     ],
     "used_keywords": [
         "finance",
@@ -29244,6 +29251,7 @@
         "Flow+Productivity",
         "Copur",
         "8772686331899797546",
-        "Travelia"
+        "Travelia",
+        "BIGJOYSTUDIO"
     ]
 }
