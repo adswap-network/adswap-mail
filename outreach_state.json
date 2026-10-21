@@ -2,7 +2,7 @@
     "config": {
         "start_date": "2026-09-12",
         "last_run_date": "2026-10-20",
-        "sent_today": 25
+        "sent_today": 50
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -5905,137 +5905,137 @@
             "app_name": "Tetraom",
             "package": "com.tetraom.tetraom",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-12T07:22:52.372235",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-20T23:54:06.418758"
         },
         "info@tafafrica.co": {
             "app_name": "TAF Disability Hub",
             "package": "com.tafafrica.mobile",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-12T17:57:10.679239",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-20T23:54:06.418758"
         },
         "support@lumetest.com": {
             "app_name": "Lume Test",
             "package": "lume.test",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-12T17:57:10.679239",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-20T23:54:06.418758"
         },
         "info@skincareroutine.app": {
             "app_name": "Skincare Routine",
             "package": "com.theordinaryguide.app",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-12T17:57:10.679239",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-20T23:54:06.418758"
         },
         "contact@examprep.site": {
             "app_name": "Cosmetology Exam Prep & Test",
             "package": "pro.iprep.cosm",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-12T17:57:10.679239",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-20T23:54:06.418758"
         },
         "info@playpausebe.com": {
             "app_name": "Floga",
             "package": "io.floga.app",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-12T17:57:10.679239",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-20T23:54:06.418758"
         },
         "pavel.rekun.development@gmail.com": {
             "app_name": "Castro Premium",
             "package": "com.itemstudio.castro.pro",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-13T00:42:26.013600",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-20T23:54:06.418758"
         },
         "alex@prattsoftware.com": {
             "app_name": "SnapDiet",
             "package": "com.snapdiet",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-13T00:42:26.013600",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-20T23:54:06.418758"
         },
         "hello@pilatesflo.com": {
             "app_name": "Flo Pilates",
             "package": "com.flopilates",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-13T00:42:26.013600",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-20T23:54:06.418758"
         },
         "support@lifeboostcoffee.com": {
             "app_name": "Lifeboost Coffee",
             "package": "co.tapcart.app.id_e5Q9v2F7v4",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-13T07:44:17.496798",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-20T23:54:06.418758"
         },
         "hello@walkboxapp.com": {
             "app_name": "Walkbox Self-Guided Tours",
             "package": "com.walkboxapp.Walkbox",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-13T16:00:59.771243",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-20T23:54:06.418758"
         },
         "support@autio.com": {
             "app_name": "Autio",
             "package": "autio.audio.travel.guide.stories",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-13T16:00:59.771243",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-20T23:54:06.418758"
         },
         "labs-music-support@google.com": {
             "app_name": "Google Flow Music",
             "package": "com.google.android.apps.labs.reuben",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-13T16:00:59.771243",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-20T23:54:06.418758"
         },
         "support@setlistmaker.com": {
             "app_name": "Set List Maker",
             "package": "com.arlomedia.setlistmaker",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-13T21:16:19.494608",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-20T23:54:06.418758"
         },
         "saifullahsail874@gmail.com": {
             "app_name": "Secret Diary",
             "package": "com.ziksol.secretdiary.dailynotes",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-13T21:16:19.494608",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-20T23:54:06.418758"
         },
         "contact@crxapplications.com": {
             "app_name": "Mood Journal",
             "package": "ro.crxapps.seedling",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-13T21:16:19.494608",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-20T23:54:06.418758"
         },
         "mobile-app@sesamecare.com": {
             "app_name": "Sesame",
             "package": "com.sesamecare.patient",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-14T01:13:55.014375",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-20T23:54:06.418758"
         },
         "info@brellohealth.com": {
             "app_name": "Brello",
@@ -6513,64 +6513,64 @@
             "app_name": "KCM PRO",
             "package": "com.kcmtrade.app",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-20T23:54:06.418758",
             "followup_sent_at": null
         },
         "iamyiam@iamyiam.com": {
             "app_name": "Syd",
             "package": "com.iamyiam.iamyiam",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-20T23:54:06.418758",
             "followup_sent_at": null
         },
         "support@sitemate.com": {
             "app_name": "Dashpivot",
             "package": "io.constructioncloud",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-20T23:54:06.418758",
             "followup_sent_at": null
         },
         "info@maritime-zone.com": {
             "app_name": "Maritime Zone",
             "package": "com.maritime.app",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-20T23:54:06.418758",
             "followup_sent_at": null
         },
         "info@gymlogtrack.com": {
             "app_name": "Gym Log Track",
             "package": "com.bluelotus.gym_log_track",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-20T23:54:06.418758",
             "followup_sent_at": null
         },
         "flowproductivityapp@gmail.com": {
             "app_name": "Time Blocking Planner",
             "package": "com.flowproductivity.app",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-20T23:54:06.418758",
             "followup_sent_at": null
         },
         "copur2020@gmail.com": {
             "app_name": "Time Since",
             "package": "com.copur.dayssince",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-20T23:54:06.418758",
             "followup_sent_at": null
         },
         "support@lilplanner.com": {
             "app_name": "Lil Planner",
             "package": "app.littleplanner",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-20T23:54:06.418758",
             "followup_sent_at": null
         }
     },
@@ -23393,7 +23393,14 @@
         "com.bluelotus.gym_log_track",
         "com.flowproductivity.app",
         "com.copur.dayssince",
-        "app.littleplanner"
+        "app.littleplanner",
+        "com.eshoppr.yourtravel",
+        "com.eshoppr.sawadee",
+        "com.eshoppr.myitaly",
+        "com.eshoppr.mytravelmoments",
+        "com.eshoppr.srcreizen",
+        "com.eshoppr.holidayplanners",
+        "com.tactilegames.simonscatmatch"
     ],
     "used_keywords": [
         "finance",
@@ -29236,6 +29243,7 @@
         "1872520+Ontario+INC",
         "Flow+Productivity",
         "Copur",
-        "8772686331899797546"
+        "8772686331899797546",
+        "Travelia"
     ]
 }
