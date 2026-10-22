@@ -2,7 +2,7 @@
     "config": {
         "start_date": "2026-09-12",
         "last_run_date": "2026-10-22",
-        "sent_today": 3
+        "sent_today": 6
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -6337,23 +6337,23 @@
             "app_name": "MaskedTalk",
             "package": "com.caly.maskedtalk",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-17T04:29:26.364667",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-22T10:13:01.311913"
         },
         "help@westrive.com": {
             "app_name": "WeStrive",
             "package": "com.perfict.perfict",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-17T13:44:19.551980",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-22T10:13:01.311913"
         },
         "support@amtrav.com": {
             "app_name": "AmTrav Business Travel",
             "package": "com.amtrav.a2b",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "REPLIED",
             "first_sent_at": "2026-10-17T13:44:19.551980",
             "followup_sent_at": null
         },
@@ -6361,7 +6361,7 @@
             "app_name": "DailyOM",
             "package": "com.fitnow.ehgroup.DailyOM",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "REPLIED",
             "first_sent_at": "2026-10-17T13:44:19.551980",
             "followup_sent_at": null
         },
@@ -6369,9 +6369,9 @@
             "app_name": "hypnu\u2122",
             "package": "com.koala.hypnostories",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-17T17:12:09.626947",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-22T10:13:01.311913"
         },
         "rabbitgamestudiox@gmail.com": {
             "app_name": "Hexa Slide Away",
