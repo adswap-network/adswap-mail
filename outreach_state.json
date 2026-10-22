@@ -1,8 +1,8 @@
 {
     "config": {
         "start_date": "2026-09-12",
-        "last_run_date": "2026-10-21",
-        "sent_today": 48
+        "last_run_date": "2026-10-22",
+        "sent_today": 3
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -6313,25 +6313,25 @@
             "app_name": "BuzzChat",
             "package": "app.buzzchat.play",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-16T17:25:54.215829",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-22T04:50:04.880013"
         },
         "lumynouslabs@gmail.com": {
             "app_name": "Idle Money Clicker Tycoon",
             "package": "com.businessempire.clicker",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-17T04:29:26.364667",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-22T04:50:04.880013"
         },
         "funcheergame@gmail.com": {
             "app_name": "Idle Military School Tycoon 2",
             "package": "com.idlem.android.schty",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-17T04:29:26.364667",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-22T04:50:04.880013"
         },
         "support@maskedtalk.live": {
             "app_name": "MaskedTalk",
@@ -23972,7 +23972,16 @@
         "app.intra",
         "com.joyark.cloudgames.community",
         "app.shiftflow",
-        "com.ig.mahjong.jam"
+        "com.ig.mahjong.jam",
+        "com.elink.fittrackhealth.pro",
+        "com.noisefit",
+        "com.noise.audio",
+        "com.noise.kids",
+        "com.noisefit.luna",
+        "com.noisefit.prime",
+        "com.zjw.noisefitsync",
+        "com.noise.fit.ace",
+        "cloud.blynk"
     ],
     "used_keywords": [
         "finance",
@@ -29996,6 +30005,9 @@
         "Spliiit",
         "Jigsaw+Operations+LLC",
         "JOLLYSTART+GLOBAL+PTE.+LTD.",
-        "8759545397692650645"
+        "8759545397692650645",
+        "Hume+Health+Corp",
+        "Noise",
+        "5899909700044739859"
     ]
 }
