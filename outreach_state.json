@@ -2,7 +2,7 @@
     "config": {
         "start_date": "2026-09-12",
         "last_run_date": "2026-10-22",
-        "sent_today": 6
+        "sent_today": 9
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -6377,9 +6377,9 @@
             "app_name": "Hexa Slide Away",
             "package": "com.rabbit.hexa.slide.away.tap",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-18T05:55:57.718871",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-22T15:20:46.324754"
         },
         "sleepingmuseum@gmail.com": {
             "app_name": "Death Antique",
@@ -6707,6 +6707,22 @@
             "source": "google_play",
             "status": "FIRST_SENT",
             "first_sent_at": "2026-10-21T23:23:14.279207",
+            "followup_sent_at": null
+        },
+        "contact@convertill.com": {
+            "app_name": "Travel Currency Converter",
+            "package": "com.aistudio.convertly.fkwp",
+            "source": "google_play",
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-22T15:20:46.324754",
+            "followup_sent_at": null
+        },
+        "songflip@goork.de": {
+            "app_name": "SongFlip",
+            "package": "de.goork.songflip",
+            "source": "google_play",
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-22T15:20:46.324754",
             "followup_sent_at": null
         }
     },
@@ -23981,7 +23997,45 @@
         "com.noisefit.prime",
         "com.zjw.noisefitsync",
         "com.noise.fit.ace",
-        "cloud.blynk"
+        "cloud.blynk",
+        "com.aistudio.convertly.fkwp",
+        "com.aistudio.celebritynews.xrpdwb",
+        "com.x.aniimos",
+        "com.nintendo.zaha",
+        "com.game.tombbusters",
+        "com.nintendo.zasa",
+        "com.Puzzlespace.Frankenstein",
+        "tser.omolgame.free",
+        "com.Games751.LifeGallery",
+        "com.PuzzleSpace.HiddenRoomGame",
+        "com.happybroccoligames.duckdetective2",
+        "com.CAYN.TowerOfHellObby",
+        "com.nipogames.noob.playground.human.ragdoll.peaple.melon",
+        "animal.hospital.escape",
+        "ragdoll.hit.stickman",
+        "obby.walker.escape",
+        "obby.prison",
+        "com.hiddenlayergames.inmost",
+        "com.snapbreak.lip",
+        "com.snapbreak.dexterstardust",
+        "com.DeadpanGames.Wildfrost",
+        "org.chucklefish.wargroove",
+        "de.goork.songflip",
+        "de.goork.mapflip",
+        "de.familienwecker.famwake",
+        "com.awaytix.anonim.chat.anon.dating.acquaintance",
+        "net.exam.pdd",
+        "net.anonim.chat.absolute",
+        "com.chat.two.user.dating",
+        "com.zyl.away.player.iptv",
+        "com.pdd.exam.drive.auto.zylonix",
+        "com.secretflirt.anonymous.away",
+        "com.grude.lernkartenapp",
+        "com.rishabhk.vocabbuilder",
+        "com.rishabhk.notificationhistorylog.savemynoti",
+        "com.rishabhk.countries",
+        "com.rishabhk.idiomsandphrases",
+        "com.rishabhkh.batchalarm"
     ],
     "used_keywords": [
         "finance",
@@ -30008,6 +30062,17 @@
         "8759545397692650645",
         "Hume+Health+Corp",
         "Noise",
-        "5899909700044739859"
+        "5899909700044739859",
+        "5075006309955456838",
+        "Pawprint+Studio",
+        "Giant+Game",
+        "7539442544745743672",
+        "6566434917716295659",
+        "6748600611004416635",
+        "7107975034578576294",
+        "5421184564271330188",
+        "Ser+P",
+        "Edward+Grude",
+        "7606677356484597883"
     ]
 }
