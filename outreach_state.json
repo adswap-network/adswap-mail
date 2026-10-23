@@ -1,8 +1,8 @@
 {
     "config": {
         "start_date": "2026-09-12",
-        "last_run_date": "2026-10-22",
-        "sent_today": 9
+        "last_run_date": "2026-10-23",
+        "sent_today": 1
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -6723,6 +6723,14 @@
             "source": "google_play",
             "status": "FIRST_SENT",
             "first_sent_at": "2026-10-22T15:20:46.324754",
+            "followup_sent_at": null
+        },
+        "omer05530589895@gmail.com": {
+            "app_name": "Reef Trio",
+            "package": "com.reeftrio.unity",
+            "source": "google_play",
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-23T04:52:36.354819",
             "followup_sent_at": null
         }
     },
@@ -24047,7 +24055,15 @@
         "com.ustbscbt.google",
         "com.outfit7neo.onehelsing",
         "com.lapilab.slingshotride",
-        "com.outfit7neo.poolside"
+        "com.outfit7neo.poolside",
+        "com.dietdoctor.EatApp",
+        "com.reeftrio.unity",
+        "com.elite.cathouse",
+        "com.ayoubgames.farmempire",
+        "com.ayoubgames.restaurantempire",
+        "com.azurecoast.tile_voyage",
+        "com.aagm.learngerman",
+        "com.learnfr.mosilo"
     ],
     "used_keywords": [
         "finance",
@@ -30089,6 +30105,7 @@
         "9168787147399849874",
         "6696902999973248536",
         "Rhinos",
-        "5444875702010643398"
+        "5444875702010643398",
+        "8687079627018058651"
     ]
 }
