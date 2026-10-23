@@ -2,7 +2,7 @@
     "config": {
         "start_date": "2026-09-12",
         "last_run_date": "2026-10-23",
-        "sent_today": 6
+        "sent_today": 7
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -6385,9 +6385,9 @@
             "app_name": "Death Antique",
             "package": "com.SleepingMuseum.DeathAntique",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-19T21:04:35.273364",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-23T23:09:58.706334"
         },
         "delta.pubg.2@gmail.com": {
             "app_name": "Nearby",
@@ -24146,7 +24146,14 @@
         "au.com.btoj.estimatemakerflex",
         "au.com.btoj.invoicemakerflex",
         "au.com.btoj.workordermaker",
-        "au.com.btoj.purchaseorderpro"
+        "au.com.btoj.purchaseorderpro",
+        "com.lunavo.app.timeblockingplanner",
+        "com.lunavo.app.quicklyfindoutpregnantornot",
+        "com.lunavo.app.binaryconverterhexcalc",
+        "com.lunavo.app.wakeupalarmchallenge",
+        "com.learnenglish.grammargames",
+        "com.lunavo.app.fastsweeper",
+        "com.lunavo.app.lovecounteranniversaryday"
     ],
     "used_keywords": [
         "finance",
@@ -30206,6 +30213,7 @@
         "5289177449608163073",
         "Artem+Chakhouski",
         "8706013814418052590",
-        "GlossGenius"
+        "GlossGenius",
+        "AnyAppsCompany"
     ]
 }
