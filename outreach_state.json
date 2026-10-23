@@ -2,7 +2,7 @@
     "config": {
         "start_date": "2026-09-12",
         "last_run_date": "2026-10-23",
-        "sent_today": 1
+        "sent_today": 3
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -6731,6 +6731,22 @@
             "source": "google_play",
             "status": "FIRST_SENT",
             "first_sent_at": "2026-10-23T04:52:36.354819",
+            "followup_sent_at": null
+        },
+        "kanbani@pdapps.org": {
+            "app_name": "Kanbani",
+            "package": "org.pdapps.kanbani",
+            "source": "google_play",
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-23T15:06:04.709716",
+            "followup_sent_at": null
+        },
+        "support@squint.ai": {
+            "app_name": "Squint",
+            "package": "com.squint.mobile.ar.prod",
+            "source": "google_play",
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-23T15:06:04.709716",
             "followup_sent_at": null
         }
     },
@@ -24074,7 +24090,9 @@
         "com.sevegame.calorie",
         "com.rungo",
         "com.nautilus.bowflex",
-        "health.fjor.carnivore"
+        "health.fjor.carnivore",
+        "org.pdapps.kanbani",
+        "com.squint.mobile.ar.prod"
     ],
     "used_keywords": [
         "finance",
@@ -30121,6 +30139,8 @@
         "7718505716877378031",
         "Leaping+Coyote+Interactive",
         "Johnson+Health+Tech+Trading+inc.",
-        "Fjor+Nutrition+Inc"
+        "Fjor+Nutrition+Inc",
+        "PDApps.org",
+        "Squint,+Inc"
     ]
 }
