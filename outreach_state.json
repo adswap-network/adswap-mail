@@ -2,7 +2,7 @@
     "config": {
         "start_date": "2026-09-12",
         "last_run_date": "2026-10-23",
-        "sent_today": 3
+        "sent_today": 6
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -6747,6 +6747,30 @@
             "source": "google_play",
             "status": "FIRST_SENT",
             "first_sent_at": "2026-10-23T15:06:04.709716",
+            "followup_sent_at": null
+        },
+        "contact@focaccia.co.jp": {
+            "app_name": "Aesthetic Timer",
+            "package": "jp.co.focaccia.aesthetic_timer",
+            "source": "google_play",
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-23T19:15:11.489809",
+            "followup_sent_at": null
+        },
+        "graspery@gmail.com": {
+            "app_name": "Daypad",
+            "package": "com.graspery.www.sink_timer.sink_timer",
+            "source": "google_play",
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-23T19:15:11.489809",
+            "followup_sent_at": null
+        },
+        "support@my-kaizen.com": {
+            "app_name": "Kaizen",
+            "package": "com.maxkruiswegt.kaizen",
+            "source": "google_play",
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-23T19:15:11.489809",
             "followup_sent_at": null
         }
     },
@@ -24092,7 +24116,37 @@
         "com.nautilus.bowflex",
         "health.fjor.carnivore",
         "org.pdapps.kanbani",
-        "com.squint.mobile.ar.prod"
+        "com.squint.mobile.ar.prod",
+        "jp.co.focaccia.aesthetic_timer",
+        "jp.co.focaccia.visual_timer",
+        "jp.co.focaccia.Kitchen_Timer",
+        "jp.co.focaccia.Hourglass_Timer",
+        "com.graspery.www.sink_timer.sink_timer",
+        "com.maxkruiswegt.kaizen",
+        "com.graspery.first_principle",
+        "com.graspery.www.text_analysis",
+        "com.graspery.www.spicemeup",
+        "com.graspery.www.elementstocompound",
+        "com.nirvanahq.n3android",
+        "com.mindweaver.pocketcrm",
+        "org.miracle.morning",
+        "org.maysnow.gratitudediary",
+        "io.vividsphere.primebase",
+        "com.godaddy.gx.go",
+        "com.cklab.cleaning",
+        "com.godaddy.conversations",
+        "com.FreedomVoice.MobileApp",
+        "com.godaddy.gdm.smartline",
+        "com.reamaze.farstar",
+        "com.godaddy.gdm.investorapp",
+        "au.com.btoj.paystub",
+        "com.glossgenius.GlossGeniusSaaS",
+        "au.com.btoj.receiptmaker",
+        "au.com.btoj.workorderflex",
+        "au.com.btoj.estimatemakerflex",
+        "au.com.btoj.invoicemakerflex",
+        "au.com.btoj.workordermaker",
+        "au.com.btoj.purchaseorderpro"
     ],
     "used_keywords": [
         "finance",
@@ -30141,6 +30195,17 @@
         "Johnson+Health+Tech+Trading+inc.",
         "Fjor+Nutrition+Inc",
         "PDApps.org",
-        "Squint,+Inc"
+        "Squint,+Inc",
+        "Focaccia,+Inc.",
+        "8637816620025557781",
+        "7473488512999647147",
+        "8929210078847720067",
+        "6508342135721080782",
+        "5530707233028438439",
+        "Maysnow",
+        "5289177449608163073",
+        "Artem+Chakhouski",
+        "8706013814418052590",
+        "GlossGenius"
     ]
 }
