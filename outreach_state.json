@@ -2,7 +2,7 @@
     "config": {
         "start_date": "2026-09-12",
         "last_run_date": "2026-10-24",
-        "sent_today": 4
+        "sent_today": 8
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -6425,33 +6425,33 @@
             "app_name": "Join Up! travel universe",
             "package": "travel.joinup.universe",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-20T17:09:58.263533",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-24T19:29:40.168069"
         },
         "support@resuscitech.io": {
             "app_name": "SMART Certification",
             "package": "com.ResusciTech.SMARTCertification",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-20T17:09:58.263533",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-24T19:29:40.168069"
         },
         "bunglyboo.app@bunglyboo.ru": {
             "app_name": "BUNGLY",
             "package": "com.bunglyboo.app",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-20T17:09:58.263533",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-24T19:29:40.168069"
         },
         "hello@fleurbudget.com": {
             "app_name": "Fleur",
             "package": "com.fleurbudget",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-20T17:09:58.263533",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-24T19:29:40.168069"
         },
         "support@catatku.com": {
             "app_name": "Catatku",
