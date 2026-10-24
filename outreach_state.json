@@ -2,7 +2,7 @@
     "config": {
         "start_date": "2026-09-12",
         "last_run_date": "2026-10-24",
-        "sent_today": 8
+        "sent_today": 14
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -6457,47 +6457,47 @@
             "app_name": "Catatku",
             "package": "com.simpletechno.catatku",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-20T20:36:45.882411",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-24T22:29:19.287534"
         },
         "support@slonoise.com": {
             "app_name": "Slo",
             "package": "com.sleep.sounds.noise.rain",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-20T20:36:45.882411",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-24T22:29:19.287534"
         },
         "nixgames44@gmail.com": {
             "app_name": "Alti",
             "package": "com.nixstudio.antistress.alti",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-20T20:36:45.882411",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-24T22:29:19.287534"
         },
         "customer@entertech.cn": {
             "app_name": "Flowtime",
             "package": "cn.entertech.flowtime",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-20T20:36:45.882411",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-24T22:29:19.287534"
         },
         "service1@fedkeepfit.com": {
             "app_name": "FED Fitness",
             "package": "com.fed.smart.oversea",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-20T20:36:45.882411",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-24T22:29:19.287534"
         },
         "help@vidapp.com": {
             "app_name": "Get Fit With Rick",
             "package": "com.VidApp.GetFitWithRick",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "REPLIED",
             "first_sent_at": "2026-10-20T20:36:45.882411",
             "followup_sent_at": null
         },
@@ -6505,9 +6505,9 @@
             "app_name": "Match Mart",
             "package": "com.gamepia.matchmart",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-20T20:36:45.882411",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-24T22:29:19.287534"
         },
         "cs@kcmtrade.com": {
             "app_name": "KCM PRO",
