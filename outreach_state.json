@@ -2,7 +2,7 @@
     "config": {
         "start_date": "2026-09-12",
         "last_run_date": "2026-10-24",
-        "sent_today": 2
+        "sent_today": 4
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -6409,17 +6409,17 @@
             "app_name": "Flashcard Maker",
             "package": "com.flutterflow.kards",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-20T11:40:22.638843",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-24T12:41:24.584521"
         },
         "dev1@trafficheroes.agency": {
             "app_name": "EmoSea",
             "package": "com.emosea.mentalhealth",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-20T11:40:22.638843",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-24T12:41:24.584521"
         },
         "community.joinup@gmail.com": {
             "app_name": "Join Up! travel universe",
