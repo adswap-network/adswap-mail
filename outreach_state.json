@@ -2,7 +2,7 @@
     "config": {
         "start_date": "2026-09-12",
         "last_run_date": "2026-10-24",
-        "sent_today": 0
+        "sent_today": 2
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -6393,17 +6393,17 @@
             "app_name": "Nearby",
             "package": "com.securenearby.app",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-20T06:02:58.927743",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-24T07:18:47.672901"
         },
         "info@humdov.com": {
             "app_name": "HumDov",
             "package": "com.humdov",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-20T06:02:58.927743",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-24T07:18:47.672901"
         },
         "support@kardsai.com": {
             "app_name": "Flashcard Maker",
