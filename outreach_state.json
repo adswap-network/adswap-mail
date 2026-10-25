@@ -2,7 +2,7 @@
     "config": {
         "start_date": "2026-09-12",
         "last_run_date": "2026-10-25",
-        "sent_today": 4
+        "sent_today": 6
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -6529,17 +6529,17 @@
             "app_name": "Dashpivot",
             "package": "io.constructioncloud",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-20T23:54:06.418758",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-25T06:11:43.350331"
         },
         "info@maritime-zone.com": {
             "app_name": "Maritime Zone",
             "package": "com.maritime.app",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-20T23:54:06.418758",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-25T06:11:43.350331"
         },
         "info@gymlogtrack.com": {
             "app_name": "Gym Log Track",
