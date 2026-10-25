@@ -2,7 +2,7 @@
     "config": {
         "start_date": "2026-09-12",
         "last_run_date": "2026-10-25",
-        "sent_today": 16
+        "sent_today": 19
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -6601,25 +6601,25 @@
             "app_name": "Two Raw Sisters Recipes",
             "package": "com.tworawsisters.app",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-21T15:18:43.441654",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-25T19:39:00.335488"
         },
         "mobileapp@microhealth.org": {
             "app_name": "Microhealth Bleeding Disorders",
             "package": "com.microhealth.hemophilia",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-21T15:18:43.441654",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-25T19:39:00.335488"
         },
         "support@secanda.app": {
             "app_name": "SECANDA",
             "package": "app.secanda.www",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-21T15:18:43.441654",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-25T19:39:00.335488"
         },
         "mobileapp@callhub.io": {
             "app_name": "CallHub",
@@ -24318,7 +24318,8 @@
         "com.casualpuzzlegames.mergeaquarium.gp",
         "com.mergegames.witchandcatstory.gp",
         "com.actionfit.merge.supermarket",
-        "com.apnaprogrammer.financeplanner"
+        "com.apnaprogrammer.financeplanner",
+        "com.zynga.ozmatch"
     ],
     "used_keywords": [
         "finance",
