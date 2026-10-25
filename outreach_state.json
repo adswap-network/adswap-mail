@@ -2,7 +2,7 @@
     "config": {
         "start_date": "2026-09-12",
         "last_run_date": "2026-10-25",
-        "sent_today": 6
+        "sent_today": 11
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -6545,25 +6545,25 @@
             "app_name": "Gym Log Track",
             "package": "com.bluelotus.gym_log_track",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-20T23:54:06.418758",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-25T11:37:48.868492"
         },
         "flowproductivityapp@gmail.com": {
             "app_name": "Time Blocking Planner",
             "package": "com.flowproductivity.app",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-20T23:54:06.418758",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-25T11:37:48.868492"
         },
         "copur2020@gmail.com": {
             "app_name": "Time Since",
             "package": "com.copur.dayssince",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-20T23:54:06.418758",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-25T11:37:48.868492"
         },
         "support@lilplanner.com": {
             "app_name": "Lil Planner",
@@ -6787,6 +6787,22 @@
             "source": "google_play",
             "status": "FIRST_SENT",
             "first_sent_at": "2026-10-25T01:11:42.767195",
+            "followup_sent_at": null
+        },
+        "hello@high.diet": {
+            "app_name": "High Diet",
+            "package": "com.tallfive.highdiet",
+            "source": "google_play",
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-25T11:37:48.868492",
+            "followup_sent_at": null
+        },
+        "hello@youaligned.com": {
+            "app_name": "YouAligned",
+            "package": "com.yaclasses.app",
+            "source": "google_play",
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-25T11:37:48.868492",
             "followup_sent_at": null
         }
     },
@@ -24248,7 +24264,37 @@
         "com.zeppelinapps.moonphasecalendar",
         "com.zeppelinapps.savingsgoalstracker",
         "com.zeppelinapps.breathingcoachcustombreathworktimer",
-        "com.zeppelinapps.privateperiodcycletracker"
+        "com.zeppelinapps.privateperiodcycletracker",
+        "com.tallfive.highdiet",
+        "com.tallfive.cortisoldetox",
+        "com.tallfive.menletics",
+        "com.tallfive.taioga",
+        "com.tallfive.harmonydiet",
+        "com.apzumi.mobile.dietlabs.dietByAnn",
+        "com.dietbet.app",
+        "com.wowbody.production",
+        "com.riatech.crockpotrecipes",
+        "app.resilient.diet.fitness",
+        "fit.raize.fitness.workout",
+        "com.shestrong.fitness.workout",
+        "com.maxxnation.workout_for_men",
+        "app.growwithjo.diet.fitness",
+        "pl.com.ewadabrowska.post.dieta.odchudzanie",
+        "com.labmobil.lotusyoga",
+        "com.yaclasses.app",
+        "com.lekfit",
+        "com.app.timelesstoday",
+        "de.klassikradio.app",
+        "com.recisio.jamzone",
+        "com.zenofm.player",
+        "equalizer.bassbooster.pay",
+        "com.pomorix.app",
+        "com.sensitune.app",
+        "com.untepp.app",
+        "com.bubble.shooter.ocean.glow.game",
+        "com.mg.word.search.game.jumble.wordgame.wordjumble",
+        "com.mrityonjayagames.tample.sunvala.brahmanimaa.mandir",
+        "com.mrityonjayagames.wordtap"
     ],
     "used_keywords": [
         "finance",
@@ -30335,6 +30381,16 @@
         "6317377084266172840",
         "5606559936693337132",
         "web+wise+house",
-        "4861341790454931777"
+        "4861341790454931777",
+        "Tall+5",
+        "5374386074687764961",
+        "7880345319519965186",
+        "5335842664232741675",
+        "LEKFIT",
+        "TimelessToday,+LLC",
+        "Klassik+Radio+AG",
+        "Recisio",
+        "7452658057704514170",
+        "4899698950871405953"
     ]
 }
