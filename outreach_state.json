@@ -2,7 +2,7 @@
     "config": {
         "start_date": "2026-09-12",
         "last_run_date": "2026-10-25",
-        "sent_today": 11
+        "sent_today": 16
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -6569,33 +6569,33 @@
             "app_name": "Lil Planner",
             "package": "app.littleplanner",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-20T23:54:06.418758",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-25T16:23:39.980522"
         },
         "hello@costpal.app": {
             "app_name": "CostPal",
             "package": "app.costcocompanion.dev",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-21T10:11:41.694484",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-25T16:23:39.980522"
         },
         "jordan@vincentdesign.ca": {
             "app_name": "Inineemowin",
             "package": "com.vincentdesign.yffncreelanguageapp",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-21T10:11:41.694484",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-25T16:23:39.980522"
         },
         "support@fergus.com": {
             "app_name": "Fergus Go",
             "package": "com.fergus.app",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-21T15:18:43.441654",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-25T16:23:39.980522"
         },
         "appsupport@tworawsisters.com": {
             "app_name": "Two Raw Sisters Recipes",
@@ -6803,6 +6803,14 @@
             "source": "google_play",
             "status": "FIRST_SENT",
             "first_sent_at": "2026-10-25T11:37:48.868492",
+            "followup_sent_at": null
+        },
+        "help@spcomes.com": {
+            "app_name": "Meow's Garden",
+            "package": "com.spcomes.meowsgarden",
+            "source": "google_play",
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-25T16:23:39.980522",
             "followup_sent_at": null
         }
     },
@@ -24294,7 +24302,23 @@
         "com.bubble.shooter.ocean.glow.game",
         "com.mg.word.search.game.jumble.wordgame.wordjumble",
         "com.mrityonjayagames.tample.sunvala.brahmanimaa.mandir",
-        "com.mrityonjayagames.wordtap"
+        "com.mrityonjayagames.wordtap",
+        "com.spcomes.meowsgarden",
+        "com.spcomes.emerge",
+        "com.spcomes.mergepeko",
+        "com.spcomes.hellotown",
+        "com.spcomes.jeweltemple",
+        "com.spcomes.kw2",
+        "com.spcomes.fdropaway",
+        "com.mergegames.cookieisland.gp",
+        "com.pivotgames.idlegame.okikifriends.gp",
+        "com.casualpuzzlegames.mergeskyisland.gp",
+        "com.merge.dream.home.puzzle.games.gp",
+        "com.mergegames.monsterandstory.gp",
+        "com.casualpuzzlegames.mergeaquarium.gp",
+        "com.mergegames.witchandcatstory.gp",
+        "com.actionfit.merge.supermarket",
+        "com.apnaprogrammer.financeplanner"
     ],
     "used_keywords": [
         "finance",
@@ -30391,6 +30415,9 @@
         "Klassik+Radio+AG",
         "Recisio",
         "7452658057704514170",
-        "4899698950871405953"
+        "4899698950871405953",
+        "4931745640662708567",
+        "5784793758652161969",
+        "Apna+Programmer"
     ]
 }
