@@ -2,7 +2,7 @@
     "config": {
         "start_date": "2026-09-12",
         "last_run_date": "2026-10-26",
-        "sent_today": 6
+        "sent_today": 10
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -6705,9 +6705,9 @@
             "app_name": "ShiftFlow",
             "package": "app.shiftflow",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-21T23:23:14.279207",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-26T14:17:41.227431"
         },
         "contact@convertill.com": {
             "app_name": "Travel Currency Converter",
@@ -6849,24 +6849,24 @@
             "app_name": "Coin Miner",
             "package": "com.coinminerp.app",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-26T14:17:41.227431",
             "followup_sent_at": null
         },
         "support@echobit.com": {
             "app_name": "Echobit",
             "package": "com.ebit.trade.globalecho",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-26T14:17:41.227431",
             "followup_sent_at": null
         },
         "support@savvytrader.com": {
             "app_name": "Savvy Trader",
             "package": "com.savvytrader.savvytradermobile",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-26T14:17:41.227431",
             "followup_sent_at": null
         },
         "hello@investnao.com": {
