@@ -2,7 +2,7 @@
     "config": {
         "start_date": "2026-09-12",
         "last_run_date": "2026-10-26",
-        "sent_today": 10
+        "sent_today": 21
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -6713,17 +6713,17 @@
             "app_name": "Travel Currency Converter",
             "package": "com.aistudio.convertly.fkwp",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-22T15:20:46.324754",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-26T20:29:55.590173"
         },
         "songflip@goork.de": {
             "app_name": "SongFlip",
             "package": "de.goork.songflip",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-22T15:20:46.324754",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-26T20:29:55.590173"
         },
         "omer05530589895@gmail.com": {
             "app_name": "Reef Trio",
@@ -6873,72 +6873,72 @@
             "app_name": "NAO Co-Investment",
             "package": "com.investnao.android",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-26T20:29:55.590173",
             "followup_sent_at": null
         },
         "finance.app.soporte@gmail.com": {
             "app_name": "Finance Pro",
             "package": "com.financepro",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-26T20:29:55.590173",
             "followup_sent_at": null
         },
         "info@moorr.com.au": {
             "app_name": "Moorr",
             "package": "com.moorr.android",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-26T20:29:55.590173",
             "followup_sent_at": null
         },
         "contact@susgain.com": {
             "app_name": "susGain",
             "package": "com.susgain.impactapp",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-26T20:29:55.590173",
             "followup_sent_at": null
         },
         "support@getapron.com": {
             "app_name": "Apron",
             "package": "com.apron.prod",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-26T20:29:55.590173",
             "followup_sent_at": null
         },
         "support@pb.vision": {
             "app_name": "PB Vision",
             "package": "com.pb.vision.app",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-26T20:29:55.590173",
             "followup_sent_at": null
         },
         "launch@apptile.com": {
             "app_name": "Sun Kissed Tanning & Boutique",
             "package": "com.sunkissedtanningbotique.app",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-26T20:29:55.590173",
             "followup_sent_at": null
         },
         "doyufguest@gmail.com": {
             "app_name": "Doyuf",
             "package": "com.doyuf",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-26T20:29:55.590173",
             "followup_sent_at": null
         },
         "app@ultimatebudapest.com": {
             "app_name": "Ultimate Budapest",
             "package": "com.amigo.ultimatebudapest",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-26T20:29:55.590173",
             "followup_sent_at": null
         },
         "support@onesimplicity.com": {
