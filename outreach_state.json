@@ -2,7 +2,7 @@
     "config": {
         "start_date": "2026-09-12",
         "last_run_date": "2026-10-26",
-        "sent_today": 4
+        "sent_today": 6
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -6697,9 +6697,9 @@
             "app_name": "MindSync",
             "package": "com.mindsync.app",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-21T23:23:14.279207",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-26T06:20:19.787636"
         },
         "team@shiftflow.app": {
             "app_name": "ShiftFlow",
@@ -6841,8 +6841,8 @@
             "app_name": "Tasks",
             "package": "com.bob.tasks",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-26T06:20:19.787636",
             "followup_sent_at": null
         },
         "drinvest.official@gmail.com": {
