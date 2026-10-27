@@ -2,7 +2,7 @@
     "config": {
         "start_date": "2026-09-12",
         "last_run_date": "2026-10-27",
-        "sent_today": 3
+        "sent_today": 5
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -6737,17 +6737,17 @@
             "app_name": "Kanbani",
             "package": "org.pdapps.kanbani",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-23T15:06:04.709716",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-27T18:44:22.948103"
         },
         "support@squint.ai": {
             "app_name": "Squint",
             "package": "com.squint.mobile.ar.prod",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-23T15:06:04.709716",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-27T18:44:22.948103"
         },
         "contact@focaccia.co.jp": {
             "app_name": "Aesthetic Timer",
@@ -24635,7 +24635,8 @@
         "com.veltislabs.weddingseating",
         "com.veltislabs.boardgames",
         "com.veltislabs.meterreadings",
-        "com.veltislabs.golfscorecard"
+        "com.veltislabs.golfscorecard",
+        "com.ea.gp.bej3"
     ],
     "used_keywords": [
         "finance",
