@@ -24628,7 +24628,14 @@
         "com.socialoop.whitenoise",
         "com.socialloop.motivation",
         "com.socialloop.breathing",
-        "com.aistudio.snaptax.x9kp"
+        "com.aistudio.snaptax.x9kp",
+        "com.veltislabs.kanban",
+        "com.veltislabs.homeinventory",
+        "com.veltislabs.canninglog",
+        "com.veltislabs.weddingseating",
+        "com.veltislabs.boardgames",
+        "com.veltislabs.meterreadings",
+        "com.veltislabs.golfscorecard"
     ],
     "used_keywords": [
         "finance",
@@ -30813,6 +30820,7 @@
         "5661635653703449253",
         "8867587039640883958",
         "4814624746720599325",
-        "4856804551588808883"
+        "4856804551588808883",
+        "Veltis+Labs"
     ]
 }
