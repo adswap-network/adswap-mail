@@ -2,7 +2,7 @@
     "config": {
         "start_date": "2026-09-12",
         "last_run_date": "2026-10-27",
-        "sent_today": 2
+        "sent_today": 3
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -6729,9 +6729,9 @@
             "app_name": "Reef Trio",
             "package": "com.reeftrio.unity",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-23T04:52:36.354819",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-27T06:18:11.035515"
         },
         "kanbani@pdapps.org": {
             "app_name": "Kanbani",
@@ -24620,7 +24620,15 @@
         "com.fsecure.ms.nju",
         "com.orange.cybertarczago",
         "pl.psotnik23.mobile",
-        "com.fourofdiamonds.maltatransporttheory"
+        "com.fourofdiamonds.maltatransporttheory",
+        "com.eureka.android",
+        "com.socialloop.surveyspin",
+        "com.socialloop.surveypop",
+        "com.socialloop.randomfacts",
+        "com.socialoop.whitenoise",
+        "com.socialloop.motivation",
+        "com.socialloop.breathing",
+        "com.aistudio.snaptax.x9kp"
     ],
     "used_keywords": [
         "finance",
@@ -30803,6 +30811,8 @@
         "Parkl+Digital+Technologies+Kft.",
         "Free2move+SAS",
         "5661635653703449253",
-        "8867587039640883958"
+        "8867587039640883958",
+        "4814624746720599325",
+        "4856804551588808883"
     ]
 }
