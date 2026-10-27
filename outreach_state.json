@@ -1,8 +1,8 @@
 {
     "config": {
         "start_date": "2026-09-12",
-        "last_run_date": "2026-10-26",
-        "sent_today": 21
+        "last_run_date": "2026-10-27",
+        "sent_today": 2
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -6945,16 +6945,16 @@
             "app_name": "Trophy House Concierge",
             "package": "com.onesimplicity.trophyhouse",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-27T00:26:53.972436",
             "followup_sent_at": null
         },
         "maltadrivingtheorytest@hotmail.com": {
             "app_name": "Malta Driving Theory Test",
             "package": "com.fourofdiamonds.maltatransporttheory",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-27T00:26:53.972436",
             "followup_sent_at": null
         }
     },
@@ -24648,7 +24648,39 @@
         "local news",
         "study",
         "budget",
-        "crypto"
+        "crypto",
+        "investing",
+        "meditation",
+        "workout",
+        "notes",
+        "chat",
+        "meet",
+        "buy and sell",
+        "music",
+        "action offline game indie",
+        "zombie survival game 2d",
+        "retro platformer action",
+        "match 3 puzzle free offline",
+        "color sort puzzle hard",
+        "idle clicker simulator",
+        "expense tracker minimalist",
+        "budget planner offline",
+        "crypto portfolio widget",
+        "pomodoro timer aesthetic",
+        "habit tracker offline",
+        "kanban board personal",
+        "water reminder fasting",
+        "step counter offline pedometer",
+        "home workout no equipment",
+        "anonymous chat local",
+        "icebreaker questions app",
+        "couple calendar shared",
+        "flashcards maker study",
+        "learn vocabulary daily",
+        "rss reader minimalist fast",
+        "daily journal secret",
+        "workout logger gym",
+        "time blocker schedule"
     ],
     "scanned_developers": [
         "DecusPro",
