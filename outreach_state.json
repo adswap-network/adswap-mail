@@ -2,7 +2,7 @@
     "config": {
         "start_date": "2026-09-12",
         "last_run_date": "2026-10-28",
-        "sent_today": 3
+        "sent_today": 6
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -6979,6 +6979,30 @@
             "source": "google_play",
             "status": "FIRST_SENT",
             "first_sent_at": "2026-10-28T09:41:36.340209",
+            "followup_sent_at": null
+        },
+        "bhfirebase74@gmail.com": {
+            "app_name": "Xpense",
+            "package": "com.xpensepro.app",
+            "source": "google_play",
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-28T16:38:47.546745",
+            "followup_sent_at": null
+        },
+        "info.mbpsoftwares@gmail.com": {
+            "app_name": "Untap",
+            "package": "com.unrotapp.screencontrol",
+            "source": "google_play",
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-28T16:38:47.546745",
+            "followup_sent_at": null
+        },
+        "appsupport@taggr.com": {
+            "app_name": "Paul McKenna Change Your Life",
+            "package": "com.paulmckenna.pmk3",
+            "source": "google_play",
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-28T16:38:47.546745",
             "followup_sent_at": null
         }
     },
@@ -24875,7 +24899,26 @@
         "com.aatmik.calculator",
         "com.aatmik.ai",
         "com.aatmik.wallpapersapp",
-        "me.audiodiary.audiodiary"
+        "me.audiodiary.audiodiary",
+        "ai.x.grok.bot",
+        "com.turbofasttools.geniusai",
+        "ai.mainfunc.genspark",
+        "chatgpt.ai.chatbot.open.chat.gpt.bot.writer.assistant",
+        "ai.mainfunc.genmail",
+        "ai.mainfunc.genspark.terminal_mobile",
+        "ai.mainfunc.genteams",
+        "ai.mainfunc.speakly",
+        "io.elevenlabs.coreapp",
+        "com.chatbot.ai.aichat.openaibot.chat",
+        "com.ig.skewer.jam.food.sort",
+        "com.xpensepro.app",
+        "com.unrotapp.screencontrol",
+        "com.kidzen.app",
+        "com.vishalpawar048.cleaningGame",
+        "mbp.monthlybudgetplanner.rn",
+        "com.monthlyBudgetPlanner",
+        "com.peoplesproblems",
+        "com.paulmckenna.pmk3"
     ],
     "used_keywords": [
         "finance",
@@ -31111,6 +31154,13 @@
         "6272168671645242436",
         "5010739459190333122",
         "Moodworks+Inc",
-        "Soliloquy+Apps+Limited"
+        "Soliloquy+Apps+Limited",
+        "5392143132830904595",
+        "Neurolify",
+        "Genspark",
+        "FLORATE+LIMITED",
+        "7App+lab",
+        "@Untap",
+        "Taggr+Ltd"
     ]
 }
