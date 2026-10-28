@@ -2,7 +2,7 @@
     "config": {
         "start_date": "2026-09-12",
         "last_run_date": "2026-10-28",
-        "sent_today": 2
+        "sent_today": 3
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -6971,6 +6971,14 @@
             "source": "google_play",
             "status": "FIRST_SENT",
             "first_sent_at": "2026-10-28T02:17:28.608076",
+            "followup_sent_at": null
+        },
+        "aatmikarm@gmail.com": {
+            "app_name": "Secret Diary with Lock",
+            "package": "com.aatmik.mydiary",
+            "source": "google_play",
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-28T09:41:36.340209",
             "followup_sent_at": null
         }
     },
@@ -24853,7 +24861,21 @@
         "launcher.productivity.minilauncher",
         "com.sharein.filetransfer",
         "pro.mynotes",
-        "com.habittime.app"
+        "com.habittime.app",
+        "ball.ballsort.watersort.color.colorsort.watercolor.puzzle",
+        "com.crystal.zenvault",
+        "com.aatmik.mydiary",
+        "com.crystal.financialmanager",
+        "com.crystal.docencrypt",
+        "com.crystal.whatsappchatanalysis",
+        "com.crystal.whitenoise.pro",
+        "com.crystal.aidietregulator",
+        "com.crystal.habitroutineplanner",
+        "com.yc14ec100daa.www",
+        "com.aatmik.calculator",
+        "com.aatmik.ai",
+        "com.aatmik.wallpapersapp",
+        "me.audiodiary.audiodiary"
     ],
     "used_keywords": [
         "finance",
@@ -31085,6 +31107,10 @@
         "6245625286771940019",
         "Pasupula+Banu+Prakash",
         "Phi+Wallet",
-        "Mui+Studio+Ltd"
+        "Mui+Studio+Ltd",
+        "6272168671645242436",
+        "5010739459190333122",
+        "Moodworks+Inc",
+        "Soliloquy+Apps+Limited"
     ]
 }
