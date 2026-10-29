@@ -1,8 +1,8 @@
 {
     "config": {
         "start_date": "2026-09-12",
-        "last_run_date": "2026-10-28",
-        "sent_today": 6
+        "last_run_date": "2026-10-29",
+        "sent_today": 2
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -6777,9 +6777,9 @@
             "app_name": "Scientific Calculator Pro",
             "package": "stephenssoftware.scientificcalculatorprofadfree",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-25T01:11:42.767195",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-29T01:48:36.204194"
         },
         "contact@scopex.money": {
             "app_name": "Scopex",
@@ -7003,6 +7003,14 @@
             "source": "google_play",
             "status": "FIRST_SENT",
             "first_sent_at": "2026-10-28T16:38:47.546745",
+            "followup_sent_at": null
+        },
+        "dev@indieway.xyz": {
+            "app_name": "Pomodak",
+            "package": "xyz.indieway.pomodak",
+            "source": "google_play",
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-29T01:48:36.204194",
             "followup_sent_at": null
         }
     },
@@ -24919,7 +24927,14 @@
         "com.monthlyBudgetPlanner",
         "com.peoplesproblems",
         "com.paulmckenna.pmk3",
-        "com.netmarble.thered"
+        "com.netmarble.thered",
+        "xyz.indieway.pomodak",
+        "com.lifeworkmore.dbviewer",
+        "com.lifeworkmore.vcfviewer",
+        "com.lifeworkmore.tiffviewer",
+        "com.lifeworkmore.textviewer",
+        "com.lifeworkmore.harmonica",
+        "com.lifeworkmore.ocarina"
     ],
     "used_keywords": [
         "finance",
@@ -31162,6 +31177,7 @@
         "FLORATE+LIMITED",
         "7App+lab",
         "@Untap",
-        "Taggr+Ltd"
+        "Taggr+Ltd",
+        "IndieWay"
     ]
 }
