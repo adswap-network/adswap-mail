@@ -2,7 +2,7 @@
     "config": {
         "start_date": "2026-09-12",
         "last_run_date": "2026-10-29",
-        "sent_today": 3
+        "sent_today": 5
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -6793,17 +6793,17 @@
             "app_name": "High Diet",
             "package": "com.tallfive.highdiet",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-25T11:37:48.868492",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-29T16:08:44.252851"
         },
         "hello@youaligned.com": {
             "app_name": "YouAligned",
             "package": "com.yaclasses.app",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-25T11:37:48.868492",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-29T16:08:44.252851"
         },
         "help@spcomes.com": {
             "app_name": "Meow's Garden",
@@ -24935,7 +24935,8 @@
         "com.lifeworkmore.textviewer",
         "com.lifeworkmore.harmonica",
         "com.lifeworkmore.ocarina",
-        "com.JournalWithLock.SecretDiary.DreamDiary"
+        "com.JournalWithLock.SecretDiary.DreamDiary",
+        "com.medm.app.health"
     ],
     "used_keywords": [
         "finance",
