@@ -1,8 +1,8 @@
 {
     "config": {
         "start_date": "2026-09-12",
-        "last_run_date": "2026-10-29",
-        "sent_today": 5
+        "last_run_date": "2026-10-30",
+        "sent_today": 1
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -6809,9 +6809,9 @@
             "app_name": "Meow's Garden",
             "package": "com.spcomes.meowsgarden",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-25T16:23:39.980522",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-30T01:01:42.930996"
         },
         "camiloalejandrolagosmalaver@gmail.com": {
             "app_name": "Ecommerce",
@@ -24936,7 +24936,25 @@
         "com.lifeworkmore.harmonica",
         "com.lifeworkmore.ocarina",
         "com.JournalWithLock.SecretDiary.DreamDiary",
-        "com.medm.app.health"
+        "com.medm.app.health",
+        "triple.sorting.bubble.fish.match",
+        "com.arrow.tap.maze.cube.puzzle.escape",
+        "com.ant.pixel.hunt.color.puzzle",
+        "line.tangle.twist.away.puzzle",
+        "game.lantern.thiefcat",
+        "food.order.sort.brain.puzzle",
+        "pair.matching.fruit.match.jam",
+        "com.triple.match.fish.sort.puzzle.game",
+        "com.carefree.game.merge.animals",
+        "com.neongame.puzzlewings",
+        "com.neongame.bubblewings",
+        "com.neongame.marble.orb.shooter",
+        "com.neongame.blockflow",
+        "com.neongame.dominowings",
+        "com.neongame.triplewings",
+        "com.neongame.choosepuzzle",
+        "dk.tactile.cookiecatspop",
+        "com.king.farmheroessupersaga"
     ],
     "used_keywords": [
         "finance",
@@ -31181,6 +31199,8 @@
         "@Untap",
         "Taggr+Ltd",
         "IndieWay",
-        "Apps+for+Photo+Editing"
+        "Apps+for+Photo+Editing",
+        "5997762656272250366",
+        "6713406806947914827"
     ]
 }
