@@ -2,7 +2,7 @@
     "config": {
         "start_date": "2026-09-12",
         "last_run_date": "2026-10-30",
-        "sent_today": 8
+        "sent_today": 10
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -6849,15 +6849,15 @@
             "app_name": "Coin Miner",
             "package": "com.coinminerp.app",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-26T14:17:41.227431",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-30T19:25:42.785325"
         },
         "support@echobit.com": {
             "app_name": "Echobit",
             "package": "com.ebit.trade.globalecho",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "REPLIED",
             "first_sent_at": "2026-10-26T14:17:41.227431",
             "followup_sent_at": null
         },
@@ -6865,9 +6865,9 @@
             "app_name": "Savvy Trader",
             "package": "com.savvytrader.savvytradermobile",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-26T14:17:41.227431",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-30T19:25:42.785325"
         },
         "hello@investnao.com": {
             "app_name": "NAO Co-Investment",
@@ -25003,7 +25003,9 @@
         "com.halfbrick.aeroracer",
         "com.idiocracy.macaroni",
         "com.idiocracy.rottenescape",
-        "com.gethabitbook.app"
+        "com.gethabitbook.app",
+        "com.kraken.pay.app",
+        "com.kraken.tv.app"
     ],
     "used_keywords": [
         "finance",
@@ -31259,6 +31261,7 @@
         "8645290608649850542",
         "7546301337522361795",
         "8641037089639483796",
-        "REFBUCKS+MEDIA+LLP"
+        "REFBUCKS+MEDIA+LLP",
+        "6617703629368569644"
     ]
 }
