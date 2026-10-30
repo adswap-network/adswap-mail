@@ -2,7 +2,7 @@
     "config": {
         "start_date": "2026-09-12",
         "last_run_date": "2026-10-30",
-        "sent_today": 1
+        "sent_today": 3
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -6817,9 +6817,9 @@
             "app_name": "Ecommerce",
             "package": "com.itscamilo.ecommerce",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-26T01:12:24.260927",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-30T07:08:37.435717"
         },
         "labs@inn3.com": {
             "app_name": "StayNow",
@@ -7011,6 +7011,22 @@
             "source": "google_play",
             "status": "FIRST_SENT",
             "first_sent_at": "2026-10-29T01:48:36.204194",
+            "followup_sent_at": null
+        },
+        "genesyseast@gmail.com": {
+            "app_name": "ShiboriLand",
+            "package": "com.genesyseast.shiboriland",
+            "source": "google_play",
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-30T07:08:37.435717",
+            "followup_sent_at": null
+        },
+        "contact@idiocracy.co.kr": {
+            "app_name": "Rotten Royale",
+            "package": "com.idiocracy.rt2",
+            "source": "google_play",
+            "status": "PENDING",
+            "first_sent_at": null,
             "followup_sent_at": null
         }
     },
@@ -24954,7 +24970,31 @@
         "com.neongame.triplewings",
         "com.neongame.choosepuzzle",
         "dk.tactile.cookiecatspop",
-        "com.king.farmheroessupersaga"
+        "com.king.farmheroessupersaga",
+        "com.vanguard",
+        "com.freedom.mobile",
+        "musclemonster.fitness.workout.home.gym.planner",
+        "dance.fit.zumba.weightloss.danceburn",
+        "wellme.health.fitness.workout.weightloss.yoga.pilates.dance",
+        "com.walkup.weightloss.stepttrackerapp.pedometer",
+        "dailybend.bend.stretch.flexibility.fitness.exercise.back",
+        "games.alternativa.projectv.test",
+        "com.ragequitgames.evillands",
+        "lets.survive.apocalypse.survival",
+        "com.gemjam.last.survivor.zombie.survival.games.apocalypse.rpg.open.world.adventure.action.shooting.pro",
+        "com.ragequitgames.tomorrow",
+        "com.swiftappskom.thewolfrpg",
+        "com.swiftappskom.thetigerrpg",
+        "com.genesyseast.shiboriland",
+        "com.GenesysEast.windhex",
+        "com.rockhead.starlit",
+        "com.idiocracy.rt2",
+        "com.rockhead.starlit.kartracing",
+        "com.rockhead.starlit.onwheels",
+        "com.rockhead.starlit.archery",
+        "com.halfbrick.aeroracer",
+        "com.idiocracy.macaroni",
+        "com.idiocracy.rottenescape"
     ],
     "used_keywords": [
         "finance",
@@ -31201,6 +31241,14 @@
         "IndieWay",
         "Apps+for+Photo+Editing",
         "5997762656272250366",
-        "6713406806947914827"
+        "6713406806947914827",
+        "The+Vanguard+Group,+Inc.",
+        "Freedom+Mortgage+Corporation",
+        "8429985153700026319",
+        "7738736587389118714",
+        "5708320000453751402",
+        "8645290608649850542",
+        "7546301337522361795",
+        "8641037089639483796"
     ]
 }
