@@ -1,8 +1,8 @@
 {
     "config": {
         "start_date": "2026-09-12",
-        "last_run_date": "2026-10-30",
-        "sent_today": 19
+        "last_run_date": "2026-10-31",
+        "sent_today": 2
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -6945,17 +6945,17 @@
             "app_name": "Trophy House Concierge",
             "package": "com.onesimplicity.trophyhouse",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-27T00:26:53.972436",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-31T05:44:30.327349"
         },
         "maltadrivingtheorytest@hotmail.com": {
             "app_name": "Malta Driving Theory Test",
             "package": "com.fourofdiamonds.maltatransporttheory",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-27T00:26:53.972436",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-10-31T05:44:30.327349"
         },
         "pasupula1995@gmail.com": {
             "app_name": "Daily Expense Tracker & Budget",
