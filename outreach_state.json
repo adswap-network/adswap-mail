@@ -2,7 +2,7 @@
     "config": {
         "start_date": "2026-09-12",
         "last_run_date": "2026-10-31",
-        "sent_today": 7
+        "sent_today": 14
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -7081,40 +7081,56 @@
             "app_name": "Pedometer Offline",
             "package": "com.pedometer.offline",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-31T17:45:02.659751",
             "followup_sent_at": null
         },
         "maliha.danish615@gmail.com": {
             "app_name": "Step Counter",
             "package": "com.hamdaanstudio.stepcounter",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-31T17:45:02.659751",
             "followup_sent_at": null
         },
         "support@hubfit.com": {
             "app_name": "HubFit",
             "package": "com.hubfitapp",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-31T17:45:02.659751",
             "followup_sent_at": null
         },
         "info@studyflashcards.app": {
             "app_name": "Flash Cards",
             "package": "dev.cwolf.flashcards",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-31T17:45:02.659751",
             "followup_sent_at": null
         },
         "support@urban-vpn.com": {
             "app_name": "TimeBack",
             "package": "com.urbantimeback.app",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-31T17:45:02.659751",
+            "followup_sent_at": null
+        },
+        "dmitriy.kukhta01@gmail.com": {
+            "app_name": "Casherwise",
+            "package": "com.dimakukhta.diploma",
+            "source": "google_play",
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-31T17:45:02.659751",
+            "followup_sent_at": null
+        },
+        "veevapps@gmail.com": {
+            "app_name": "Water Drink Reminder",
+            "package": "com.veevapps.waterdrink",
+            "source": "google_play",
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-10-31T17:45:02.659751",
             "followup_sent_at": null
         }
     },
@@ -25222,7 +25238,26 @@
         "com.urbantimeback.app",
         "com.urbanvpn.android",
         "com.urbanvpn.premium.android",
-        "com.urbansocial.app"
+        "com.urbansocial.app",
+        "com.creamsoft.whereismymoney",
+        "com.creamsoft.fodmap.diet.ibs.sibo.ag",
+        "com.creamsoft.rain.notification.weather",
+        "com.creamsoft.burnthemdown",
+        "com.creamsoft.swirly",
+        "com.creamsoft.mycholesterol",
+        "com.creamsoft.myvatcalc",
+        "com.dimakukhta.diploma",
+        "com.purposelab.waterwise",
+        "com.veevapps.waterdrink",
+        "com.purposelab.folio",
+        "com.purposelab.bplog",
+        "com.purposelab.hushly",
+        "com.veevapps.cardioworkout",
+        "com.veevapps.losebellyfat",
+        "com.veevapps.thirtydayupperbody",
+        "com.veevapps.warmup",
+        "com.veevapps.womanfitness",
+        "com.veevapps.periodcalendar"
     ],
     "used_keywords": [
         "finance",
@@ -31505,6 +31540,10 @@
         "5811640475859049846",
         "4990701971334561293",
         "Blackdot+Soultion",
-        "Urban+VPN"
+        "Urban+VPN",
+        "5111681870028343903",
+        "D.K.+Studio",
+        "PurposeLab+Studio",
+        "8717100886643009180"
     ]
 }
