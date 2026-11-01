@@ -2,7 +2,7 @@
     "config": {
         "start_date": "2026-09-12",
         "last_run_date": "2026-11-01",
-        "sent_today": 3
+        "sent_today": 5
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -6969,17 +6969,17 @@
             "app_name": "Phi",
             "package": "com.phiwallet.app",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-28T02:17:28.608076",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-11-01T15:11:59.235017"
         },
         "aatmikarm@gmail.com": {
             "app_name": "Secret Diary with Lock",
             "package": "com.aatmik.mydiary",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-28T09:41:36.340209",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-11-01T15:11:59.235017"
         },
         "bhfirebase74@gmail.com": {
             "app_name": "Xpense",
@@ -25289,7 +25289,13 @@
         "com.pts.killerattitudestatus.hindishayari.loveshayari.allinoneshayari.attitudestatushindi",
         "com.pts.childrenday.stickers.status.greetingcard.childrenswishes.children.photoeditor",
         "com.pts.photobaby.babypics.babyphotoframe.babyphotoeditor.babystory.cutebaby.babyphotomontage",
-        "com.pts.colorsplash.color.splash.effect.partialcolormaster.magiccolor.photoeffect"
+        "com.pts.colorsplash.color.splash.effect.partialcolormaster.magiccolor.photoeffect",
+        "com.Seriously.BestFiends",
+        "com.playtika.wsop.gp",
+        "com.jellybtn.boardkings",
+        "com.youdagames.gop3multiplayer",
+        "com.bigblueparrot.pokerfriends",
+        "com.diary.notepad.journey.mydiary.easynote"
     ],
     "used_keywords": [
         "finance",
@@ -31582,6 +31588,7 @@
         "7389764806112516599",
         "Lenme:+Borrow+and+Lend",
         "7660024738152489019",
-        "Photo+Tools+Studio"
+        "Photo+Tools+Studio",
+        "8370476508159322879"
     ]
 }
