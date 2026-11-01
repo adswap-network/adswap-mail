@@ -1,8 +1,8 @@
 {
     "config": {
         "start_date": "2026-09-12",
-        "last_run_date": "2026-10-31",
-        "sent_today": 14
+        "last_run_date": "2026-11-01",
+        "sent_today": 0
     },
     "leads": {
         "funnyghostgames@gmail.com": {
