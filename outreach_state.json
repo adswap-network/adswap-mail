@@ -2,7 +2,7 @@
     "config": {
         "start_date": "2026-09-12",
         "last_run_date": "2026-11-01",
-        "sent_today": 0
+        "sent_today": 3
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -6961,9 +6961,9 @@
             "app_name": "Daily Expense Tracker & Budget",
             "package": "com.expense.moneymanager.expensetracker",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-28T02:17:28.608076",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-11-01T07:36:37.884005"
         },
         "support@phiwallet.com": {
             "app_name": "Phi",
@@ -7131,6 +7131,22 @@
             "source": "google_play",
             "status": "FIRST_SENT",
             "first_sent_at": "2026-10-31T17:45:02.659751",
+            "followup_sent_at": null
+        },
+        "info@bizaway.com": {
+            "app_name": "BizAway Travel",
+            "package": "com.bizaway.flow",
+            "source": "google_play",
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-11-01T07:36:37.884005",
+            "followup_sent_at": null
+        },
+        "rahulsorathiya9835@gmail.com": {
+            "app_name": "My Secret Diary",
+            "package": "com.pts.diaryfree.securevault.diarywithlock.diaryjournal.secretdiary.offlinediary.daynote",
+            "source": "google_play",
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-11-01T07:36:37.884005",
             "followup_sent_at": null
         }
     },
@@ -25257,7 +25273,23 @@
         "com.veevapps.thirtydayupperbody",
         "com.veevapps.warmup",
         "com.veevapps.womanfitness",
-        "com.veevapps.periodcalendar"
+        "com.veevapps.periodcalendar",
+        "com.bizaway.flow",
+        "com.kinetic.payme.app",
+        "com.kineticproof.app",
+        "com.getnori.app",
+        "com.kinetic.lucid",
+        "com.prove_it.app",
+        "com.sweatwallet",
+        "com.lenmoinc.lenmo",
+        "app.indie.my",
+        "com.pts.diaryfree.securevault.diarywithlock.diaryjournal.secretdiary.offlinediary.daynote",
+        "com.pts.romantic.videocollage.love.photo.video.collagemaker.videoeditorcollage.photocollage",
+        "com.pts.remote.control.universal.foralltv.screen.mirroring.universalremote.remoteforalltv",
+        "com.pts.killerattitudestatus.hindishayari.loveshayari.allinoneshayari.attitudestatushindi",
+        "com.pts.childrenday.stickers.status.greetingcard.childrenswishes.children.photoeditor",
+        "com.pts.photobaby.babypics.babyphotoframe.babyphotoeditor.babystory.cutebaby.babyphotomontage",
+        "com.pts.colorsplash.color.splash.effect.partialcolormaster.magiccolor.photoeffect"
     ],
     "used_keywords": [
         "finance",
@@ -31544,6 +31576,12 @@
         "5111681870028343903",
         "D.K.+Studio",
         "PurposeLab+Studio",
-        "8717100886643009180"
+        "8717100886643009180",
+        "BizAway+S.r.l.+SB",
+        "Prove+It",
+        "7389764806112516599",
+        "Lenme:+Borrow+and+Lend",
+        "7660024738152489019",
+        "Photo+Tools+Studio"
     ]
 }
