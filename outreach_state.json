@@ -2,7 +2,7 @@
     "config": {
         "start_date": "2026-09-12",
         "last_run_date": "2026-11-02",
-        "sent_today": 4
+        "sent_today": 6
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -7171,6 +7171,22 @@
             "source": "google_play",
             "status": "FIRST_SENT",
             "first_sent_at": "2026-11-02T15:57:36.653929",
+            "followup_sent_at": null
+        },
+        "support@skooldio.com": {
+            "app_name": "Skooldio",
+            "package": "com.skooldio.app",
+            "source": "google_play",
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-11-02T23:32:24.654390",
+            "followup_sent_at": null
+        },
+        "contato@umdesenvolvedor.com.br": {
+            "app_name": "Easy Kanban",
+            "package": "br.com.umdesenvolvedor.easy_kanban",
+            "source": "google_play",
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-11-02T23:32:24.654390",
             "followup_sent_at": null
         }
     },
@@ -25394,7 +25410,37 @@
         "com.aquila.ai.chat.gpt.chatbot.assistant",
         "com.aquila.healthyrecipes.healthy.food.cooking",
         "com.aquila.tasty.recipes",
-        "com.aquila.weight.loss.recipes.diet.app"
+        "com.aquila.weight.loss.recipes.diet.app",
+        "com.skooldio.app",
+        "com.skooldio.tcaster",
+        "com.hexa.sort.color.blast.puzzle",
+        "com.ig.ball.sort.color.puzzle",
+        "block.puzzle.challenge.gem.stack",
+        "com.tilematch.cat",
+        "com.sora.mahjong.solitaire.game",
+        "wood.block.puzzle.blast",
+        "waterflow.color.sort.puzzle",
+        "com.number.merge2248.tiles",
+        "color.bolts.sorting.nuts.sort",
+        "ball.loop.puzzle.color.sort.jam",
+        "paper.puzzle.fold.fun.play",
+        "word.bubble.association.category.jam.puzzle",
+        "stickman.word.trivial.games",
+        "color.sort.jam.loop.logic.puzzle",
+        "com.higgs.cubemaster3d",
+        "com.moneytrack.android",
+        "cc.underthehood.lutin.app",
+        "cc.underthehood.puddinglab",
+        "cc.underthehood.tabii",
+        "cc.underthehood.quotely",
+        "cc.underthehood.hyde.app",
+        "cc.underthehood.idea.app",
+        "br.com.umdesenvolvedor.easy_kanban",
+        "com.drinkwater.hydration.tracker",
+        "com.smart.message.archive",
+        "com.calculator.loan.emi.finance",
+        "com.clone.multiple.accounts",
+        "com.mp4.mp3.converter.audio"
     ],
     "used_keywords": [
         "finance",
@@ -31705,6 +31751,13 @@
         "SNBR+Inc.",
         "Gibsonmery",
         "Pawe%C5%82+%C5%81awi%C5%84ski",
-        "4869334065903272285"
+        "4869334065903272285",
+        "8982377851493251464",
+        "8042803995385038491",
+        "5632050817364565364",
+        "N+Tech",
+        "Hood+Co.",
+        "4818590135985291837",
+        "Nexorapp+Studio"
     ]
 }
