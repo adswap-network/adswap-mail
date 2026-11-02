@@ -2,7 +2,7 @@
     "config": {
         "start_date": "2026-09-12",
         "last_run_date": "2026-11-02",
-        "sent_today": 2
+        "sent_today": 4
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -7161,8 +7161,16 @@
             "app_name": "My Secret Diary",
             "package": "com.secretdiary.mood.journal.lock",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-11-02T15:57:36.653929",
+            "followup_sent_at": null
+        },
+        "support@waltermelon.app": {
+            "app_name": "Water Tracker",
+            "package": "app.waltermelon.mobile",
+            "source": "google_play",
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-11-02T15:57:36.653929",
             "followup_sent_at": null
         }
     },
@@ -25378,7 +25386,15 @@
         "com.ultrazoom.camerafilter",
         "com.drama.hotmini.watch.reels",
         "com.palmreader.horoscope.facereader.compatibility.astrology",
-        "com.prank.filter.buginsectfilter"
+        "com.prank.filter.buginsectfilter",
+        "app.waltermelon.mobile",
+        "com.aquila.ketodiet.ketogenicdiet.lowcarbrecipes",
+        "com.smartsummary.notes",
+        "com.aquila.calorie.counter.macro.tracker",
+        "com.aquila.ai.chat.gpt.chatbot.assistant",
+        "com.aquila.healthyrecipes.healthy.food.cooking",
+        "com.aquila.tasty.recipes",
+        "com.aquila.weight.loss.recipes.diet.app"
     ],
     "used_keywords": [
         "finance",
@@ -31687,6 +31703,8 @@
         "FITNESS+BROADCASTING+COMPANY+LLC",
         "Loona+Inc",
         "SNBR+Inc.",
-        "Gibsonmery"
+        "Gibsonmery",
+        "Pawe%C5%82+%C5%81awi%C5%84ski",
+        "4869334065903272285"
     ]
 }
