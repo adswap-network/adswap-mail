@@ -2,7 +2,7 @@
     "config": {
         "start_date": "2026-09-12",
         "last_run_date": "2026-11-03",
-        "sent_today": 0
+        "sent_today": 5
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -7017,25 +7017,25 @@
             "app_name": "ShiboriLand",
             "package": "com.genesyseast.shiboriland",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-30T07:08:37.435717",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-11-03T21:00:30.992151"
         },
         "contact@idiocracy.co.kr": {
             "app_name": "Rotten Royale",
             "package": "com.idiocracy.rt2",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-30T14:11:15.705594",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-11-03T21:00:30.992151"
         },
         "support@gethabitbook.com": {
             "app_name": "Habit Tracker",
             "package": "com.gethabitbook.app",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-30T14:11:15.705594",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-11-03T21:00:30.992151"
         },
         "zekiyenurkilic@gmail.com": {
             "app_name": "Dotie",
@@ -7187,6 +7187,22 @@
             "source": "google_play",
             "status": "FIRST_SENT",
             "first_sent_at": "2026-11-02T23:32:24.654390",
+            "followup_sent_at": null
+        },
+        "support@contentrap.com": {
+            "app_name": "Catnip Word Wishes",
+            "package": "com.www.pumigames.Catnip",
+            "source": "google_play",
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-11-03T21:00:30.992151",
+            "followup_sent_at": null
+        },
+        "jackie@squidgames.com": {
+            "app_name": "Jellyvale",
+            "package": "com.squidgames.jellyvale",
+            "source": "google_play",
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-11-03T21:00:30.992151",
             "followup_sent_at": null
         }
     },
@@ -25460,7 +25476,70 @@
         "com.igen.solarmanpro",
         "com.watchic.app",
         "com.wverlaek.block",
-        "co.au.goalhero"
+        "co.au.goalhero",
+        "com.enp.tears.google",
+        "com.enp.jewel3.google",
+        "com.enp.abyss.google",
+        "com.enp.museum.google",
+        "com.enp.sortballgarden.google",
+        "com.enp.soho.google",
+        "com.enp.moonlight.google",
+        "com.www.pumigames.Catnip",
+        "in.crossword.wordplanet",
+        "com.famobi.zooboom",
+        "com.famobi.lovetest",
+        "com.vp.games.basketballsuperstars",
+        "com.famobi.gunspin",
+        "com.famobi.templeblocks",
+        "com.famobi.piratesofislets",
+        "com.famobi.slope",
+        "com.retrostylegames.kidstheaterzoo",
+        "com.v2r.CatHomeMatch",
+        "com.crazypanda.mysteryfarm",
+        "com.yfactorysoft.chefmatch",
+        "com.RetrostyleGames.LastPirate.deadthieves",
+        "com.LynnykOles.UnchartedIsland",
+        "com.RetrostyleGames.slayzombie.waves",
+        "com.RetrostyleGames.Vikings.valheim.survival",
+        "com.RetrostyleGames.LastFisherman.sea.pirate",
+        "com.popcorn.burst.tap.puzzle.io",
+        "com.retrostylegames.kidstheatercarsshow",
+        "com.retrostylegames.creatureseekers",
+        "com.drpanda.trucks",
+        "com.papoworld.apps.forestfriends2020",
+        "com.salixova.puzzlefarm_free",
+        "com.v2r.AbyssWorld",
+        "com.v2r.JewelAncientLegacy",
+        "com.v2r.NeonPinball",
+        "com.v2r.jeweltempleisland",
+        "com.v2r.HamsterGarden",
+        "com.v2r.jewelvampire",
+        "dk.tactile.cookiecats",
+        "com.squidgames.jellyvale",
+        "com.averina.puzzlefish_free",
+        "com.averina.puzzleanimals_free",
+        "com.averina.child_album2_free",
+        "com.averina.unnecessary_picture_proj2_lite",
+        "com.averina.unnecessary_picture_lite",
+        "com.averina.find_picture_proj2_lite",
+        "gokids.animal.farm",
+        "curiousfingers.android.buzzle",
+        "com.jellyblast.cmcm",
+        "com.paperboatapps.google.kiddopia",
+        "com.paperboatapps.jrchef",
+        "com.kiddopia.coloringpad",
+        "com.paperboatapps.fta",
+        "com.kiddopia.google.fashionapp",
+        "com.paperboatapps.salon",
+        "com.paperboatapps.alex",
+        "com.bekids.gogotown.pizzashop",
+        "now.safemeet.app",
+        "com.getuptimely.twa",
+        "com.devino.marka",
+        "com.devino.superbooks",
+        "com.nowgetitdone.app",
+        "com.trycaly",
+        "com.usepostify.app"
     ],
     "used_keywords": [
         "finance",
@@ -31789,6 +31868,15 @@
         "PlugShare+LLC",
         "Creek+Wearable",
         "8264103738866486176",
-        "Active+User+Studio"
+        "Active+User+Studio",
+        "4919269069898699747",
+        "Contentrap",
+        "8307833684075724322",
+        "8127130148333466418",
+        "8214038667755736960",
+        "DOG%26FROG+Educational+preschool+kids+games",
+        "7902568566695607821",
+        "8363066653715655455",
+        "7759952709745299293"
     ]
 }
