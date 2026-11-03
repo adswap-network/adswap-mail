@@ -1,8 +1,8 @@
 {
     "config": {
         "start_date": "2026-09-12",
-        "last_run_date": "2026-11-02",
-        "sent_today": 6
+        "last_run_date": "2026-11-03",
+        "sent_today": 0
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -25440,7 +25440,27 @@
         "com.smart.message.archive",
         "com.calculator.loan.emi.finance",
         "com.clone.multiple.accounts",
-        "com.mp4.mp3.converter.audio"
+        "com.mp4.mp3.converter.audio",
+        "com.zomunk.application",
+        "com.buuuk.globalblue",
+        "com.meross.meross",
+        "de.miele.infocontrol",
+        "com.fronius.solarweb",
+        "com.dyson.mobile.android",
+        "com.fronius.tagidconfig",
+        "co.goe.iot.app.fronius",
+        "com.fronius.sos",
+        "com.fronius.solarstart",
+        "com.Fronius.WelducationBasic",
+        "com.fronius.weldconnect",
+        "com.igen.xiaomaizhidian",
+        "com.xatori.Plugshare",
+        "com.hienergy.solar",
+        "com.igen.solarmanbusiness",
+        "com.igen.solarmanpro",
+        "com.watchic.app",
+        "com.wverlaek.block",
+        "co.au.goalhero"
     ],
     "used_keywords": [
         "finance",
@@ -31758,6 +31778,17 @@
         "N+Tech",
         "Hood+Co.",
         "4818590135985291837",
-        "Nexorapp+Studio"
+        "Nexorapp+Studio",
+        "Zomunk+Tech",
+        "Global+Blue+SA",
+        "Meross+Technology+Limited",
+        "Miele+%26+Cie.+KG",
+        "Fronius+International+GmbH",
+        "Dyson+Ltd",
+        "IGEN+Tech+Co.,+Ltd.",
+        "PlugShare+LLC",
+        "Creek+Wearable",
+        "8264103738866486176",
+        "Active+User+Studio"
     ]
 }
