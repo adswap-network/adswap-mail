@@ -2,7 +2,7 @@
     "config": {
         "start_date": "2026-09-12",
         "last_run_date": "2026-11-04",
-        "sent_today": 4
+        "sent_today": 8
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -7241,32 +7241,32 @@
             "app_name": "Calistack",
             "package": "com.cali.stack",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-11-04T09:16:06.591842",
             "followup_sent_at": null
         },
         "support@calimove.com": {
             "app_name": "Cali Move Workouts",
             "package": "com.calimove.player",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-11-04T09:16:06.591842",
             "followup_sent_at": null
         },
         "support@champadev.com": {
             "app_name": "NeuroStrike",
             "package": "com.neurostrikereflexpro.com",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-11-04T09:16:06.591842",
             "followup_sent_at": null
         },
         "help@fascatcoaching.com": {
             "app_name": "CoachCat",
             "package": "com.fascat.fascat",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-11-04T09:16:06.591842",
             "followup_sent_at": null
         },
         "contact@everfit.io": {
