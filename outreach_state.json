@@ -1,8 +1,8 @@
 {
     "config": {
         "start_date": "2026-09-12",
-        "last_run_date": "2026-11-03",
-        "sent_today": 5
+        "last_run_date": "2026-11-04",
+        "sent_today": 4
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -7203,6 +7203,86 @@
             "source": "google_play",
             "status": "FIRST_SENT",
             "first_sent_at": "2026-11-03T21:00:30.992151",
+            "followup_sent_at": null
+        },
+        "support@icebreaker.events": {
+            "app_name": "IceBreaker Events & Networking",
+            "package": "events.icebreaker.blazar",
+            "source": "google_play",
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-11-04T01:23:53.887154",
+            "followup_sent_at": null
+        },
+        "support@simplycouples.app": {
+            "app_name": "SimplyCouples",
+            "package": "com.simplycouples.app",
+            "source": "google_play",
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-11-04T01:23:53.887154",
+            "followup_sent_at": null
+        },
+        "support@jocmp.com": {
+            "app_name": "Capy Reader",
+            "package": "com.capyreader.app",
+            "source": "google_play",
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-11-04T01:23:53.887154",
+            "followup_sent_at": null
+        },
+        "info@gymlogai.de": {
+            "app_name": "GymLog AI",
+            "package": "com.gymlogai.app",
+            "source": "google_play",
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-11-04T01:23:53.887154",
+            "followup_sent_at": null
+        },
+        "calistack.app@gmail.com": {
+            "app_name": "Calistack",
+            "package": "com.cali.stack",
+            "source": "google_play",
+            "status": "PENDING",
+            "first_sent_at": null,
+            "followup_sent_at": null
+        },
+        "support@calimove.com": {
+            "app_name": "Cali Move Workouts",
+            "package": "com.calimove.player",
+            "source": "google_play",
+            "status": "PENDING",
+            "first_sent_at": null,
+            "followup_sent_at": null
+        },
+        "support@champadev.com": {
+            "app_name": "NeuroStrike",
+            "package": "com.neurostrikereflexpro.com",
+            "source": "google_play",
+            "status": "PENDING",
+            "first_sent_at": null,
+            "followup_sent_at": null
+        },
+        "help@fascatcoaching.com": {
+            "app_name": "CoachCat",
+            "package": "com.fascat.fascat",
+            "source": "google_play",
+            "status": "PENDING",
+            "first_sent_at": null,
+            "followup_sent_at": null
+        },
+        "contact@everfit.io": {
+            "app_name": "Everfit for Coach",
+            "package": "com.everfit.coach",
+            "source": "google_play",
+            "status": "PENDING",
+            "first_sent_at": null,
+            "followup_sent_at": null
+        },
+        "thetimeblockingapp@outlook.com": {
+            "app_name": "Time blocking",
+            "package": "com.lailanabil.thetimeblockingapp",
+            "source": "google_play",
+            "status": "PENDING",
+            "first_sent_at": null,
             "followup_sent_at": null
         }
     },
@@ -25539,7 +25619,51 @@
         "com.devino.superbooks",
         "com.nowgetitdone.app",
         "com.trycaly",
-        "com.usepostify.app"
+        "com.usepostify.app",
+        "app.vinztech.trackit",
+        "app.vinztech.hush",
+        "app.vinztech.diaryit",
+        "app.vinztech.wordplus",
+        "com.Chorrus.SuperOscarRemastered",
+        "events.icebreaker.blazar",
+        "net.metromarket.mobile",
+        "com.simplycouples.app",
+        "ai.flashka.android.dev",
+        "com.capyreader.app",
+        "com.atlassmarttech.stronger",
+        "com.gymlogai.app",
+        "com.madmustachecompany.workoutapp",
+        "com.madmustachecompany.comic.book.manga.reader",
+        "com.madmustachecompany.guitar.tabs.chords.songbook",
+        "com.madmustachecompany.memoryquest.iap",
+        "com.madmustachecompany.memoryquest",
+        "com.madmustachecompany.gamebook",
+        "com.cali.stack",
+        "com.calimove.player",
+        "app.foxyfitness.pushups",
+        "com.neurostrikereflexpro.com",
+        "com.fascat.fascat",
+        "com.toneitup.android",
+        "com.walkingyoga.app",
+        "app.foxyfitness.android.zone5",
+        "app.foxyfitness.android.worldkick",
+        "app.foxyfitness.squats",
+        "app.foxyfitness.situps",
+        "app.foxyfitness.planks",
+        "com.vgfit.timerplus",
+        "com.auros.thermomaven",
+        "com.datechnologies.tappingsolution",
+        "com.palmatech.kettlebells_client",
+        "my.googlemusic.play",
+        "ru.cherrydesign.ringsizer",
+        "com.crashinvaders.jollypet",
+        "uniqo.imposter",
+        "relationship.app",
+        "toktalk.filter",
+        "com.everfit.coach",
+        "com.rp.rpdiet",
+        "com.dieringe.workout",
+        "com.lailanabil.thetimeblockingapp"
     ],
     "used_keywords": [
         "finance",
@@ -31877,6 +32001,29 @@
         "DOG%26FROG+Educational+preschool+kids+games",
         "7902568566695607821",
         "8363066653715655455",
-        "7759952709745299293"
+        "7759952709745299293",
+        "8051186449961241115",
+        "6181569725894451162",
+        "Simply+Couples",
+        "Flashka",
+        "jocmp",
+        "6379186968387191863",
+        "Portionscore+UG+(haftungsbeschr%C3%A4nkt)",
+        "8343519839166602658",
+        "rishad+n",
+        "Cali+Move",
+        "Foxyfitness+GmbH",
+        "ChampaDev",
+        "9092497612907536983",
+        "Tone+it+Up",
+        "Uniqo+Lab.",
+        "8150031977226865028",
+        "5653686616996620988",
+        "palmatech+ltd.",
+        "My+Mixtapez:+Rap+%26+Hip+Hop",
+        "Everfit+Technologies+Inc.",
+        "RP+Strength,+LLC",
+        "4888916542506743118",
+        "Laila+Nabil"
     ]
 }
