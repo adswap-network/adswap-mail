@@ -2,7 +2,7 @@
     "config": {
         "start_date": "2026-09-12",
         "last_run_date": "2026-11-04",
-        "sent_today": 8
+        "sent_today": 14
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -7041,17 +7041,17 @@
             "app_name": "Dotie",
             "package": "com.dotie.journal.app",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-31T12:34:15.596334",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-11-04T17:59:22.185557"
         },
         "support@typexai.dev": {
             "app_name": "Bardo",
             "package": "com.bardo.typexai",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-31T12:34:15.596334",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-11-04T17:59:22.185557"
         },
         "support@yellowbird.games": {
             "app_name": "Witch\u2019s Journey",
@@ -7273,16 +7273,32 @@
             "app_name": "Everfit for Coach",
             "package": "com.everfit.coach",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-11-04T17:59:22.185557",
             "followup_sent_at": null
         },
         "thetimeblockingapp@outlook.com": {
             "app_name": "Time blocking",
             "package": "com.lailanabil.thetimeblockingapp",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-11-04T17:59:22.185557",
+            "followup_sent_at": null
+        },
+        "tylor.bartlettman@gmail.com": {
+            "app_name": "Bartlett Arborist Supply",
+            "package": "co.shopney.bartlettarboristsupply",
+            "source": "google_play",
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-11-04T17:59:22.185557",
+            "followup_sent_at": null
+        },
+        "help@aescape.com": {
+            "app_name": "Aescape",
+            "package": "com.aescape.app",
+            "source": "google_play",
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-11-04T17:59:22.185557",
             "followup_sent_at": null
         }
     },
@@ -25663,7 +25679,20 @@
         "com.everfit.coach",
         "com.rp.rpdiet",
         "com.dieringe.workout",
-        "com.lailanabil.thetimeblockingapp"
+        "com.lailanabil.thetimeblockingapp",
+        "com.tencent.mhadv",
+        "com.inshirahtech.simple_expense_tracker",
+        "com.neslit.budgettrackerapp",
+        "com.durood.competition.inshirah",
+        "com.arabee.inshirah",
+        "com.easy.english.learning.inshirah",
+        "com.quranic.grammar.inshirah",
+        "com.floating.tasbih.counter.app",
+        "com.easy.quran.learning.inshirah",
+        "com.nesl.visionart",
+        "co.shopney.bartlettarboristsupply",
+        "com.ollie.mobile_app",
+        "com.aescape.app"
     ],
     "used_keywords": [
         "finance",
@@ -32024,6 +32053,11 @@
         "Everfit+Technologies+Inc.",
         "RP+Strength,+LLC",
         "4888916542506743118",
-        "Laila+Nabil"
+        "Laila+Nabil",
+        "6484057817938966744",
+        "6630655012314751497",
+        "Bartlett+Arborist+Supply",
+        "Ollie+Pets",
+        "Aescape"
     ]
 }
