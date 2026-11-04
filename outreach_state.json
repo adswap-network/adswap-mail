@@ -2,7 +2,7 @@
     "config": {
         "start_date": "2026-09-12",
         "last_run_date": "2026-11-04",
-        "sent_today": 14
+        "sent_today": 24
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -7057,81 +7057,81 @@
             "app_name": "Witch\u2019s Journey",
             "package": "com.murava.hidden.object.game.witch.journey",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-31T12:34:15.596334",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-11-04T23:40:57.911048"
         },
         "help@kiglestudio.com": {
             "app_name": "Find It Out",
             "package": "com.kigle.scavengerhunt",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-31T12:34:15.596334",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-11-04T23:40:57.911048"
         },
         "mchdevteam@gmail.com": {
             "app_name": "Nicklaus Children's GameWorld",
             "package": "com.nchs.gameworld",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-31T12:34:15.596334",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-11-04T23:40:57.911048"
         },
         "cs@aldaygroup.biz.id": {
             "app_name": "Pedometer Offline",
             "package": "com.pedometer.offline",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-31T17:45:02.659751",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-11-04T23:40:57.911048"
         },
         "maliha.danish615@gmail.com": {
             "app_name": "Step Counter",
             "package": "com.hamdaanstudio.stepcounter",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-31T17:45:02.659751",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-11-04T23:40:57.911048"
         },
         "support@hubfit.com": {
             "app_name": "HubFit",
             "package": "com.hubfitapp",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-31T17:45:02.659751",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-11-04T23:40:57.911048"
         },
         "info@studyflashcards.app": {
             "app_name": "Flash Cards",
             "package": "dev.cwolf.flashcards",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-31T17:45:02.659751",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-11-04T23:40:57.911048"
         },
         "support@urban-vpn.com": {
             "app_name": "TimeBack",
             "package": "com.urbantimeback.app",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-31T17:45:02.659751",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-11-04T23:40:57.911048"
         },
         "dmitriy.kukhta01@gmail.com": {
             "app_name": "Casherwise",
             "package": "com.dimakukhta.diploma",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-31T17:45:02.659751",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-11-04T23:40:57.911048"
         },
         "veevapps@gmail.com": {
             "app_name": "Water Drink Reminder",
             "package": "com.veevapps.waterdrink",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-10-31T17:45:02.659751",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-11-04T23:40:57.911048"
         },
         "info@bizaway.com": {
             "app_name": "BizAway Travel",
@@ -25692,7 +25692,12 @@
         "com.nesl.visionart",
         "co.shopney.bartlettarboristsupply",
         "com.ollie.mobile_app",
-        "com.aescape.app"
+        "com.aescape.app",
+        "com.katinkadigital.app.lovetracker",
+        "daily.motivation.inspiration.quotes",
+        "draw.along",
+        "babybloom.ultrasound.to.portrait",
+        "valuemakers.yesterday_weather"
     ],
     "used_keywords": [
         "finance",
@@ -32058,6 +32063,8 @@
         "6630655012314751497",
         "Bartlett+Arborist+Supply",
         "Ollie+Pets",
-        "Aescape"
+        "Aescape",
+        "Katinka+Digital+Ltd",
+        "9044452255776130103"
     ]
 }
