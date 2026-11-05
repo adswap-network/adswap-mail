@@ -1,8 +1,8 @@
 {
     "config": {
         "start_date": "2026-09-12",
-        "last_run_date": "2026-11-04",
-        "sent_today": 24
+        "last_run_date": "2026-11-05",
+        "sent_today": 2
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -7299,6 +7299,22 @@
             "source": "google_play",
             "status": "FIRST_SENT",
             "first_sent_at": "2026-11-04T17:59:22.185557",
+            "followup_sent_at": null
+        },
+        "support@moneyjournal.app": {
+            "app_name": "Money Journal",
+            "package": "dimmple.bud",
+            "source": "google_play",
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-11-05T06:49:56.337042",
+            "followup_sent_at": null
+        },
+        "workouttracker.support@ascendik.com": {
+            "app_name": "Workout Tracker & Gym Routine",
+            "package": "workoutplanner.trainingtracker.gymlog",
+            "source": "google_play",
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-11-05T06:49:56.337042",
             "followup_sent_at": null
         }
     },
@@ -25697,7 +25713,12 @@
         "daily.motivation.inspiration.quotes",
         "draw.along",
         "babybloom.ultrasound.to.portrait",
-        "valuemakers.yesterday_weather"
+        "valuemakers.yesterday_weather",
+        "com.colpit.diamondcoming.isavemoney",
+        "dimmple.bud",
+        "com.dimmple.benv",
+        "workoutplanner.trainingtracker.gymlog",
+        "mynotes.notebook.notepad.memo.note.checklist"
     ],
     "used_keywords": [
         "finance",
@@ -32065,6 +32086,8 @@
         "Ollie+Pets",
         "Aescape",
         "Katinka+Digital+Ltd",
-        "9044452255776130103"
+        "9044452255776130103",
+        "8196866606829401946",
+        "5915495938830603329"
     ]
 }
