@@ -2,7 +2,7 @@
     "config": {
         "start_date": "2026-09-12",
         "last_run_date": "2026-11-05",
-        "sent_today": 2
+        "sent_today": 5
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -7137,17 +7137,17 @@
             "app_name": "BizAway Travel",
             "package": "com.bizaway.flow",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-11-01T07:36:37.884005",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-11-05T15:28:41.899301"
         },
         "rahulsorathiya9835@gmail.com": {
             "app_name": "My Secret Diary",
             "package": "com.pts.diaryfree.securevault.diarywithlock.diaryjournal.secretdiary.offlinediary.daynote",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-11-01T07:36:37.884005",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-11-05T15:28:41.899301"
         },
         "rjshchauhan71@gmail.com": {
             "app_name": "Drink Water Reminder (Wear OS)",
@@ -7315,6 +7315,14 @@
             "source": "google_play",
             "status": "FIRST_SENT",
             "first_sent_at": "2026-11-05T06:49:56.337042",
+            "followup_sent_at": null
+        },
+        "aaron@hidock.com": {
+            "app_name": "HiNotes by HiDock",
+            "package": "com.hidock.hinotes",
+            "source": "google_play",
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-11-05T15:28:41.899301",
             "followup_sent_at": null
         }
     },
@@ -25718,7 +25726,9 @@
         "dimmple.bud",
         "com.dimmple.benv",
         "workoutplanner.trainingtracker.gymlog",
-        "mynotes.notebook.notepad.memo.note.checklist"
+        "mynotes.notebook.notepad.memo.note.checklist",
+        "com.studyfi.studyfimobile",
+        "com.hidock.hinotes"
     ],
     "used_keywords": [
         "finance",
@@ -32088,6 +32098,8 @@
         "Katinka+Digital+Ltd",
         "9044452255776130103",
         "8196866606829401946",
-        "5915495938830603329"
+        "5915495938830603329",
+        "StudyFi",
+        "HiDock+LLC"
     ]
 }
