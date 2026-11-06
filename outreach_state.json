@@ -2,7 +2,7 @@
     "config": {
         "start_date": "2026-09-12",
         "last_run_date": "2026-11-06",
-        "sent_today": 2
+        "sent_today": 5
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -7153,9 +7153,9 @@
             "app_name": "Drink Water Reminder (Wear OS)",
             "package": "drinkwaterreminder.dailydrinktrackerwearosapp.drinkwaterwatchface",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-11-02T06:08:13.422571",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-11-06T10:55:39.719168"
         },
         "ellissamboro@gmail.com": {
             "app_name": "My Secret Diary",
@@ -7339,6 +7339,22 @@
             "source": "google_play",
             "status": "FIRST_SENT",
             "first_sent_at": "2026-11-06T02:28:33.397591",
+            "followup_sent_at": null
+        },
+        "support@travelbyelectric.com": {
+            "app_name": "Travel by electric",
+            "package": "com.travelbyelectric.hub",
+            "source": "google_play",
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-11-06T10:55:39.719168",
+            "followup_sent_at": null
+        },
+        "info@ihateironing.com": {
+            "app_name": "ihateironing",
+            "package": "com.app.ihateironing",
+            "source": "google_play",
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-11-06T10:55:39.719168",
             "followup_sent_at": null
         }
     },
@@ -25768,7 +25784,20 @@
         "com.cardinalblue.onbeat",
         "com.cardinalblue.aimeme",
         "com.cardinalblue.aisticker",
-        "com.cardinalblue.wowshi"
+        "com.cardinalblue.wowshi",
+        "com.travelbyelectric.hub",
+        "com.westernunion.android.mtapp",
+        "com.pickuplimes.pulapp",
+        "com.kode.tbi.release",
+        "com.app.ihateironing",
+        "com.sixt.reservation",
+        "com.westernunion.oneapp.us",
+        "com.westernunion.cpayapp",
+        "com.westernunion.stablecard",
+        "com.SingTel.mWallet",
+        "com.encureit.laundryheap",
+        "com.sixt.mobile.vt",
+        "com.fresha.Fresha"
     ],
     "used_keywords": [
         "finance",
@@ -32153,6 +32182,14 @@
         "5164337428081395139",
         "7179991391382879295",
         "Shining+Ai+Inc.",
-        "9190674693874246066"
+        "9190674693874246066",
+        "Travel+by+electric",
+        "5572761626263751591",
+        "9218438763873474593",
+        "tbi+bank",
+        "IHATEIRONING",
+        "6218065248943483332",
+        "Laundryheap",
+        "Fresha.com"
     ]
 }
