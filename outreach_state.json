@@ -2,7 +2,7 @@
     "config": {
         "start_date": "2026-09-12",
         "last_run_date": "2026-11-06",
-        "sent_today": 7
+        "sent_today": 10
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -7355,6 +7355,30 @@
             "source": "google_play",
             "status": "FIRST_SENT",
             "first_sent_at": "2026-11-06T10:55:39.719168",
+            "followup_sent_at": null
+        },
+        "nexperlabmedia@gmail.com": {
+            "app_name": "Simple Expense Book",
+            "package": "com.middark.expense_book",
+            "source": "google_play",
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-11-06T23:10:55.706408",
+            "followup_sent_at": null
+        },
+        "jtnrdev@gmail.com": {
+            "app_name": "Expense Tracker and Budget",
+            "package": "com.jtnrdev.expensetrackerapp",
+            "source": "google_play",
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-11-06T23:10:55.706408",
+            "followup_sent_at": null
+        },
+        "hello@pefi.app": {
+            "app_name": "Pefi",
+            "package": "app.pefi",
+            "source": "google_play",
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-11-06T23:10:55.706408",
             "followup_sent_at": null
         }
     },
@@ -25806,7 +25830,19 @@
         "com.block.clash.puzzle.blast.blockclash.game",
         "com.kelime.oyunu.kelimeoyunu.wordgame.word.bulmaca.puzzle",
         "com.lagfix.gamebooster.speed.ram.cpu",
-        "com.appfinca.flora.android"
+        "com.appfinca.flora.android",
+        "com.middark.expense_book",
+        "com.jtnrdev.expensetrackerapp",
+        "com.nexperlabmedia.bookshelf",
+        "com.nexperlabmedia.lostitemtag",
+        "com.nexperlabmedia.deliveryrun",
+        "com.nexperlabmedia.utilitybill",
+        "com.nexperlabmedia.usedprice",
+        "com.nexperlabmedia.content",
+        "com.jtnrdev.vehiclemaintenance",
+        "com.jtnrdev.dailyactivitytracker",
+        "com.jtnrdev.homeinventory",
+        "app.pefi"
     ],
     "used_keywords": [
         "finance",
@@ -32205,6 +32241,9 @@
         "CookUnity+Inc.",
         "Ben's+Soft+Pretzels",
         "Knudar+Studio",
-        "AppFinca+Inc."
+        "AppFinca+Inc.",
+        "5454651079690017595",
+        "JtnrDev",
+        "Appok"
     ]
 }
