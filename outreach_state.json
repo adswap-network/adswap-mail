@@ -1,8 +1,8 @@
 {
     "config": {
         "start_date": "2026-09-12",
-        "last_run_date": "2026-11-05",
-        "sent_today": 5
+        "last_run_date": "2026-11-06",
+        "sent_today": 2
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -7323,6 +7323,22 @@
             "source": "google_play",
             "status": "FIRST_SENT",
             "first_sent_at": "2026-11-05T15:28:41.899301",
+            "followup_sent_at": null
+        },
+        "choiktlabs@gmail.com": {
+            "app_name": "Quiet Journal",
+            "package": "com.pureuntreelabs.simple_notes",
+            "source": "google_play",
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-11-06T02:28:33.397591",
+            "followup_sent_at": null
+        },
+        "wellnote@maxeye.com": {
+            "app_name": "Wellnote",
+            "package": "com.maxeye.wellnote",
+            "source": "google_play",
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-11-06T02:28:33.397591",
             "followup_sent_at": null
         }
     },
@@ -25729,7 +25745,30 @@
         "mynotes.notebook.notepad.memo.note.checklist",
         "com.studyfi.studyfimobile",
         "com.hidock.hinotes",
-        "wesh.apps.focustown"
+        "wesh.apps.focustown",
+        "com.easybrain.jigsaw.puzzles",
+        "com.pureuntreelabs.simple_notes",
+        "com.maxeye.wellnote",
+        "tidynotes.notepad.notes.notebook.note.checklist.todolist",
+        "com.withwho.gulgram",
+        "diary.journal.mood.tracker.diarywithlock",
+        "core.writer",
+        "com.photobook.android",
+        "com.gelato.Optimalprint",
+        "com.bo.fotoo",
+        "com.benqu.wuta",
+        "com.photogrid.collage.videomaker",
+        "com.benqu.paji",
+        "com.benqu.aipet",
+        "com.piccollage.photo.editor.livewallpaper.layout.sticker.grid.licowa",
+        "com.collagefoto.orchid.cherrytomato",
+        "com.cardinalblue.piccollage.google",
+        "com.cardinalblue.happiness",
+        "com.cardinalblue.buzz",
+        "com.cardinalblue.onbeat",
+        "com.cardinalblue.aimeme",
+        "com.cardinalblue.aisticker",
+        "com.cardinalblue.wowshi"
     ],
     "used_keywords": [
         "finance",
@@ -32102,6 +32141,18 @@
         "5915495938830603329",
         "StudyFi",
         "HiDock+LLC",
-        "Second+Round+Inc"
+        "Second+Round+Inc",
+        "Pureun+Tree+Labs",
+        "MAXEYE+US+INC",
+        "5779939356739500612",
+        "withwho",
+        "OneLiteCore",
+        "Photobook+Worldwide+Sdn+Bhd",
+        "Gelato",
+        "7556390786149373785",
+        "5164337428081395139",
+        "7179991391382879295",
+        "Shining+Ai+Inc.",
+        "9190674693874246066"
     ]
 }
