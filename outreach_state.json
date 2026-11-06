@@ -2,7 +2,7 @@
     "config": {
         "start_date": "2026-09-12",
         "last_run_date": "2026-11-06",
-        "sent_today": 5
+        "sent_today": 7
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -7161,17 +7161,17 @@
             "app_name": "My Secret Diary",
             "package": "com.secretdiary.mood.journal.lock",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-11-02T15:57:36.653929",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-11-06T17:59:05.984689"
         },
         "support@waltermelon.app": {
             "app_name": "Water Tracker",
             "package": "app.waltermelon.mobile",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-11-02T15:57:36.653929",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-11-06T17:59:05.984689"
         },
         "support@skooldio.com": {
             "app_name": "Skooldio",
@@ -25797,7 +25797,16 @@
         "com.SingTel.mWallet",
         "com.encureit.laundryheap",
         "com.sixt.mobile.vt",
-        "com.fresha.Fresha"
+        "com.fresha.Fresha",
+        "com.ubuy",
+        "com.yamibuy.yamiapp",
+        "com.cookunity.android.app",
+        "com.rt7mobilereward.app.benspretzel",
+        "com.focusflow.tasks.pomodoro",
+        "com.block.clash.puzzle.blast.blockclash.game",
+        "com.kelime.oyunu.kelimeoyunu.wordgame.word.bulmaca.puzzle",
+        "com.lagfix.gamebooster.speed.ram.cpu",
+        "com.appfinca.flora.android"
     ],
     "used_keywords": [
         "finance",
@@ -32190,6 +32199,12 @@
         "IHATEIRONING",
         "6218065248943483332",
         "Laundryheap",
-        "Fresha.com"
+        "Fresha.com",
+        "8281888799085952021",
+        "Yamibuy",
+        "CookUnity+Inc.",
+        "Ben's+Soft+Pretzels",
+        "Knudar+Studio",
+        "AppFinca+Inc."
     ]
 }
