@@ -1,8 +1,8 @@
 {
     "config": {
         "start_date": "2026-09-12",
-        "last_run_date": "2026-11-06",
-        "sent_today": 10
+        "last_run_date": "2026-11-07",
+        "sent_today": 1
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -7177,7 +7177,7 @@
             "app_name": "Skooldio",
             "package": "com.skooldio.app",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "REPLIED",
             "first_sent_at": "2026-11-02T23:32:24.654390",
             "followup_sent_at": null
         },
@@ -7185,9 +7185,9 @@
             "app_name": "Easy Kanban",
             "package": "br.com.umdesenvolvedor.easy_kanban",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-11-02T23:32:24.654390",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-11-07T02:50:35.544891"
         },
         "support@contentrap.com": {
             "app_name": "Catnip Word Wishes",
@@ -25842,7 +25842,8 @@
         "com.jtnrdev.vehiclemaintenance",
         "com.jtnrdev.dailyactivitytracker",
         "com.jtnrdev.homeinventory",
-        "app.pefi"
+        "app.pefi",
+        "com.onlyalt.altapp"
     ],
     "used_keywords": [
         "finance",
@@ -32244,6 +32245,7 @@
         "AppFinca+Inc.",
         "5454651079690017595",
         "JtnrDev",
-        "Appok"
+        "Appok",
+        "4991259034158088094"
     ]
 }
