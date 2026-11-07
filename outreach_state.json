@@ -2,7 +2,7 @@
     "config": {
         "start_date": "2026-09-12",
         "last_run_date": "2026-11-07",
-        "sent_today": 1
+        "sent_today": 6
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -7379,6 +7379,54 @@
             "source": "google_play",
             "status": "FIRST_SENT",
             "first_sent_at": "2026-11-06T23:10:55.706408",
+            "followup_sent_at": null
+        },
+        "support@infithra.com": {
+            "app_name": "infithra",
+            "package": "com.kpi.infithraESS",
+            "source": "google_play",
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-11-07T10:13:24.296601",
+            "followup_sent_at": null
+        },
+        "care@octopus-apps.com": {
+            "app_name": "Octopus",
+            "package": "app.octopoos.coach",
+            "source": "google_play",
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-11-07T10:13:24.296601",
+            "followup_sent_at": null
+        },
+        "office@be-light.app": {
+            "app_name": "BE LIGHT",
+            "package": "com.app.BELIGHT",
+            "source": "google_play",
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-11-07T10:13:24.296601",
+            "followup_sent_at": null
+        },
+        "contact@haaaaaaappy.com": {
+            "app_name": "Hapday",
+            "package": "com.hapday.healthy.solutions.hapday",
+            "source": "google_play",
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-11-07T10:13:24.296601",
+            "followup_sent_at": null
+        },
+        "hello@moovetogether.com": {
+            "app_name": "Moove",
+            "package": "com.moovetogether.mobile",
+            "source": "google_play",
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-11-07T10:13:24.296601",
+            "followup_sent_at": null
+        },
+        "team@gocarma.com": {
+            "app_name": "GoCarma",
+            "package": "com.gocarma.tolling",
+            "source": "google_play",
+            "status": "PENDING",
+            "first_sent_at": null,
             "followup_sent_at": null
         }
     },
@@ -25843,7 +25891,31 @@
         "com.jtnrdev.dailyactivitytracker",
         "com.jtnrdev.homeinventory",
         "app.pefi",
-        "com.onlyalt.altapp"
+        "com.onlyalt.altapp",
+        "com.dayripple.app",
+        "com.clauderipple.remote",
+        "com.resetripple.app",
+        "com.bodyripple.app",
+        "com.henry.trakmiles",
+        "com.kpi.infithraESS",
+        "tech.zetta.atto",
+        "app.octopoos.coach",
+        "com.spectalabs.attokiosk",
+        "app.octopoos.streaks",
+        "app.octopoos.lifebook",
+        "app.octopoos.budget",
+        "com.app.BELIGHT",
+        "com.hapday.healthy.solutions.hapday",
+        "com.sweetss.timetopet",
+        "com.happyapps.heartheal",
+        "com.vibly.couple",
+        "com.f5type.android.app",
+        "com.prayer.lift",
+        "com.moovetogether.mobile",
+        "com.ionicframework.eatokra167593",
+        "com.gopetplan.petplanclaims",
+        "com.gocarma.tolling",
+        "com.heathrowexpress"
     ],
     "used_keywords": [
         "finance",
@@ -32246,6 +32318,19 @@
         "5454651079690017595",
         "JtnrDev",
         "Appok",
-        "4991259034158088094"
+        "4991259034158088094",
+        "RippleWorks",
+        "TrakMiles",
+        "KPI+SUITETECH+DMCC",
+        "8963201835086609908",
+        "4809383671530952686",
+        "BE+LIGHT+Now+GmbH",
+        "HAPDAY",
+        "Time+To+Pet",
+        "8745147223150379056",
+        "Anthony+Edwards+Jr",
+        "Fetch+Inc.",
+        "Carma",
+        "Heathrow+Express+-+Developer+Account"
     ]
 }
