@@ -2,7 +2,7 @@
     "config": {
         "start_date": "2026-09-12",
         "last_run_date": "2026-11-07",
-        "sent_today": 6
+        "sent_today": 8
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -7425,8 +7425,16 @@
             "app_name": "GoCarma",
             "package": "com.gocarma.tolling",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-11-07T16:30:02.619609",
+            "followup_sent_at": null
+        },
+        "omnidevcreators@gmail.com": {
+            "app_name": "Your Vocabulary Notebook",
+            "package": "com.ecoFree.education.your_vocabulary_notebook",
+            "source": "google_play",
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-11-07T16:30:02.619609",
             "followup_sent_at": null
         }
     },
@@ -25915,7 +25923,20 @@
         "com.ionicframework.eatokra167593",
         "com.gopetplan.petplanclaims",
         "com.gocarma.tolling",
-        "com.heathrowexpress"
+        "com.heathrowexpress",
+        "com.nextgames.android.twd",
+        "com.expensenote.orca.expensenote",
+        "com.bhautik.offlineexpensetracker",
+        "com.ecoFree.education.your_vocabulary_notebook",
+        "com.ecoFree.SehirHatti",
+        "com.ecoFree.YourDigitalBookshelf",
+        "com.ecoFree.ColorfulSudoku",
+        "com.omnidevcreators.yourQRAndBarcodeScannerLite",
+        "com.omnidevcreators.yourJournalNotebook",
+        "com.omnidevcreators.isparkNoktalari",
+        "com.buffdudes.android",
+        "com.trainerize.chelsealabadini",
+        "com.mavdsoft.TapBlock"
     ],
     "used_keywords": [
         "finance",
@@ -32331,6 +32352,11 @@
         "Anthony+Edwards+Jr",
         "Fetch+Inc.",
         "Carma",
-        "Heathrow+Express+-+Developer+Account"
+        "Heathrow+Express+-+Developer+Account",
+        "FireWood",
+        "Madhav+Developers",
+        "8539997518604797518",
+        "B.U.F.F.+Dudes",
+        "Mavdsoft"
     ]
 }
