@@ -2,7 +2,7 @@
     "config": {
         "start_date": "2026-09-12",
         "last_run_date": "2026-11-07",
-        "sent_today": 8
+        "sent_today": 13
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -7435,6 +7435,46 @@
             "source": "google_play",
             "status": "FIRST_SENT",
             "first_sent_at": "2026-11-07T16:30:02.619609",
+            "followup_sent_at": null
+        },
+        "info@investtech.com": {
+            "app_name": "Investtech Technical Analysis",
+            "package": "com.investtech.investtechapp",
+            "source": "google_play",
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-11-07T20:54:00.244552",
+            "followup_sent_at": null
+        },
+        "support@tykr.com": {
+            "app_name": "Tykr",
+            "package": "com.tykr",
+            "source": "google_play",
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-11-07T20:54:00.244552",
+            "followup_sent_at": null
+        },
+        "sarasoftapps@gmail.com": {
+            "app_name": "Wendler log 531 Pro",
+            "package": "com.sarasoft.es.fivethreeone",
+            "source": "google_play",
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-11-07T20:54:00.244552",
+            "followup_sent_at": null
+        },
+        "support@truelearn.com": {
+            "app_name": "TrueLearn SmartBanks",
+            "package": "com.truelearn.org",
+            "source": "google_play",
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-11-07T20:54:00.244552",
+            "followup_sent_at": null
+        },
+        "tmsaeapp@gmail.com": {
+            "app_name": "Expense Note",
+            "package": "com.tmsae.simpleSpend",
+            "source": "google_play",
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-11-07T20:54:00.244552",
             "followup_sent_at": null
         }
     },
@@ -25936,7 +25976,38 @@
         "com.omnidevcreators.isparkNoktalari",
         "com.buffdudes.android",
         "com.trainerize.chelsealabadini",
-        "com.mavdsoft.TapBlock"
+        "com.mavdsoft.TapBlock",
+        "com.crypter.cryptocyrrency",
+        "com.investtech.investtechapp",
+        "com.tykr",
+        "com.sarasoft.es.fivethreeone",
+        "com.sarasoft.es.madcow_5x5",
+        "com.sarasoftapps.com.pushup",
+        "com.sarasoftapps.com.workoutlogger",
+        "com.sarasoft.es.fivebyfive",
+        "com.sarasoft.es.fivethreeonebasic",
+        "com.weproov",
+        "app.altegio.erp",
+        "com.proovgroup.diot_lsn",
+        "com.proovgroup.weproovfleet",
+        "com.proovgroup.seguros_alianza_proovapp",
+        "com.proovgroup.weproov_go",
+        "com.altegio.mobile.s1169928",
+        "client.booking.g757711",
+        "com.altegio.mobile.s956789",
+        "com.altegio.mobile.g1270454",
+        "com.altegio.mobile.demo.g33360",
+        "com.altegio.mobile.s877257",
+        "com.amb.ambassadorcruiseline",
+        "com.truelearn.org",
+        "com.tmsae.simpleSpend",
+        "com.tmsae.barcodewallet",
+        "com.tmsae.baroquote",
+        "com.tmsae.pinshift",
+        "com.tmsae.stampcam",
+        "com.tmsae.ssok",
+        "com.tmsae.autosync",
+        "com.familywall"
     ],
     "used_keywords": [
         "finance",
@@ -32357,6 +32428,16 @@
         "Madhav+Developers",
         "8539997518604797518",
         "B.U.F.F.+Dudes",
-        "Mavdsoft"
+        "Mavdsoft",
+        "5521384074317931400",
+        "Investtech.com+AS",
+        "Tykr+LLC",
+        "6151970013896210158",
+        "Proov+Group",
+        "Altegio+Europe",
+        "Ambassador+Cruise+Line",
+        "TrueLearn",
+        "Techin+Park",
+        "family+%26+Co"
     ]
 }
