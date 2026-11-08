@@ -2,7 +2,7 @@
     "config": {
         "start_date": "2026-09-12",
         "last_run_date": "2026-11-08",
-        "sent_today": 17
+        "sent_today": 19
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -7499,6 +7499,22 @@
             "source": "google_play",
             "status": "FIRST_SENT",
             "first_sent_at": "2026-11-08T19:45:22.637917",
+            "followup_sent_at": null
+        },
+        "support@ichime.dev": {
+            "app_name": "PCOS Pal",
+            "package": "com.ichime.pcospal",
+            "source": "google_play",
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-11-08T23:44:09.026380",
+            "followup_sent_at": null
+        },
+        "contact@diat.app": {
+            "app_name": "Diat",
+            "package": "com.diat.caloriecounter.tracker",
+            "source": "google_play",
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-11-08T23:44:09.026380",
             "followup_sent_at": null
         }
     },
@@ -26065,7 +26081,15 @@
         "com.inspectorstudios.lx031ravenhybridwatchface",
         "com.inspectorstudios.portsolanocitygangsterwar",
         "com.inspectorstudios.lx030sportultrawatchface",
-        "com.himanshu.lilhore.wispmobile"
+        "com.himanshu.lilhore.wispmobile",
+        "com.ichime.pcospal",
+        "com.diat.caloriecounter.tracker",
+        "com.ichime.contraction_timer",
+        "com.ichime.pumping_log",
+        "com.ichime.symptom_journal",
+        "com.ichime.baby_tracker",
+        "com.ichime.pcosweight",
+        "com.ichime.dharmasleep.buddhastory"
     ],
     "used_keywords": [
         "finance",
@@ -32508,6 +32532,8 @@
         "B2B+eCommerce+Association",
         "Einlabs",
         "4870480458318379753",
-        "Veridian+Studio"
+        "Veridian+Studio",
+        "7506893028647791454",
+        "Diat+Labs"
     ]
 }
