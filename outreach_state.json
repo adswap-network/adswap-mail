@@ -2,7 +2,7 @@
     "config": {
         "start_date": "2026-09-12",
         "last_run_date": "2026-11-08",
-        "sent_today": 9
+        "sent_today": 17
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -7257,49 +7257,49 @@
             "app_name": "NeuroStrike",
             "package": "com.neurostrikereflexpro.com",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-11-04T09:16:06.591842",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-11-08T19:45:22.637917"
         },
         "help@fascatcoaching.com": {
             "app_name": "CoachCat",
             "package": "com.fascat.fascat",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-11-04T09:16:06.591842",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-11-08T19:45:22.637917"
         },
         "contact@everfit.io": {
             "app_name": "Everfit for Coach",
             "package": "com.everfit.coach",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-11-04T17:59:22.185557",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-11-08T19:45:22.637917"
         },
         "thetimeblockingapp@outlook.com": {
             "app_name": "Time blocking",
             "package": "com.lailanabil.thetimeblockingapp",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-11-04T17:59:22.185557",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-11-08T19:45:22.637917"
         },
         "tylor.bartlettman@gmail.com": {
             "app_name": "Bartlett Arborist Supply",
             "package": "co.shopney.bartlettarboristsupply",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-11-04T17:59:22.185557",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-11-08T19:45:22.637917"
         },
         "help@aescape.com": {
             "app_name": "Aescape",
             "package": "com.aescape.app",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-11-04T17:59:22.185557",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-11-08T19:45:22.637917"
         },
         "support@moneyjournal.app": {
             "app_name": "Money Journal",
@@ -7483,6 +7483,22 @@
             "source": "google_play",
             "status": "FIRST_SENT",
             "first_sent_at": "2026-11-08T15:14:08.993524",
+            "followup_sent_at": null
+        },
+        "inspectorstudioscompany@gmail.com": {
+            "app_name": "Pomodoro Timer",
+            "package": "com.inspectorstudios.pomodorotimerfocushabit",
+            "source": "google_play",
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-11-08T19:45:22.637917",
+            "followup_sent_at": null
+        },
+        "hello@veridianstudio.in": {
+            "app_name": "Wisp",
+            "package": "com.himanshu.lilhore.wispmobile",
+            "source": "google_play",
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-11-08T19:45:22.637917",
             "followup_sent_at": null
         }
     },
@@ -26038,7 +26054,18 @@
         "io.ablespace.androidapp",
         "com.stoicroutine.stoic",
         "com.voidpet",
-        "com.voidpet.dungeon"
+        "com.voidpet.dungeon",
+        "events.grip.b2bworld1162",
+        "jp.co.gagex.ankaa",
+        "in.einlabs.simpleexpensetracker",
+        "com.inspectorstudios.pomodorotimerfocushabit",
+        "com.inspectorstudios.lx036witcherluxwatchface",
+        "com.inspectorstudios.lx035tokyoneonwatchface",
+        "com.inspectorstudios.lx034planetanalogwatchface",
+        "com.inspectorstudios.lx031ravenhybridwatchface",
+        "com.inspectorstudios.portsolanocitygangsterwar",
+        "com.inspectorstudios.lx030sportultrawatchface",
+        "com.himanshu.lilhore.wispmobile"
     ],
     "used_keywords": [
         "finance",
@@ -32477,6 +32504,10 @@
         "Nam+Tran+Khanh",
         "Stamurai+Speech+Therapy",
         "Stoic+app+inc.",
-        "7471031256965837982"
+        "7471031256965837982",
+        "B2B+eCommerce+Association",
+        "Einlabs",
+        "4870480458318379753",
+        "Veridian+Studio"
     ]
 }
