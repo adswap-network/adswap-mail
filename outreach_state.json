@@ -1,8 +1,8 @@
 {
     "config": {
         "start_date": "2026-09-12",
-        "last_run_date": "2026-11-07",
-        "sent_today": 13
+        "last_run_date": "2026-11-08",
+        "sent_today": 2
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -7193,17 +7193,17 @@
             "app_name": "Catnip Word Wishes",
             "package": "com.www.pumigames.Catnip",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-11-03T21:00:30.992151",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-11-08T00:38:27.722431"
         },
         "jackie@squidgames.com": {
             "app_name": "Jellyvale",
             "package": "com.squidgames.jellyvale",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-11-03T21:00:30.992151",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-11-08T00:38:27.722431"
         },
         "support@icebreaker.events": {
             "app_name": "IceBreaker Events & Networking",
@@ -26007,7 +26007,8 @@
         "com.tmsae.stampcam",
         "com.tmsae.ssok",
         "com.tmsae.autosync",
-        "com.familywall"
+        "com.familywall",
+        "com.zynga.pottermatch"
     ],
     "used_keywords": [
         "finance",
