@@ -2,7 +2,7 @@
     "config": {
         "start_date": "2026-09-12",
         "last_run_date": "2026-11-08",
-        "sent_today": 4
+        "sent_today": 9
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -7225,33 +7225,33 @@
             "app_name": "Capy Reader",
             "package": "com.capyreader.app",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-11-04T01:23:53.887154",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-11-08T15:14:08.993524"
         },
         "info@gymlogai.de": {
             "app_name": "GymLog AI",
             "package": "com.gymlogai.app",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-11-04T01:23:53.887154",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-11-08T15:14:08.993524"
         },
         "calistack.app@gmail.com": {
             "app_name": "Calistack",
             "package": "com.cali.stack",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-11-04T09:16:06.591842",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-11-08T15:14:08.993524"
         },
         "support@calimove.com": {
             "app_name": "Cali Move Workouts",
             "package": "com.calimove.player",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-11-04T09:16:06.591842",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-11-08T15:14:08.993524"
         },
         "support@champadev.com": {
             "app_name": "NeuroStrike",
@@ -7475,6 +7475,14 @@
             "source": "google_play",
             "status": "FIRST_SENT",
             "first_sent_at": "2026-11-07T20:54:00.244552",
+            "followup_sent_at": null
+        },
+        "support@flashia.app": {
+            "app_name": "Flashia",
+            "package": "app.flashia.ai",
+            "source": "google_play",
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-11-08T15:14:08.993524",
             "followup_sent_at": null
         }
     },
@@ -26015,7 +26023,22 @@
         "com.hongmoe.tapstar",
         "com.slots.fruit.match.puzzle",
         "com.hongmoe.popstar",
-        "com.puzzle.lovecandy"
+        "com.puzzle.lovecandy",
+        "us.nobarriers.elsa",
+        "app.flashia.ai",
+        "com.wellocution.androidapp",
+        "com.fluentai",
+        "com.stamurai.stamurai",
+        "com.davidtranwd.studyfocus",
+        "com.davidtran.restorephoto",
+        "com.davidtranwd.ProfessorAI",
+        "com.davidtranwd.NoRelapse",
+        "com.dashtrial.app",
+        "com.soniculate.android",
+        "io.ablespace.androidapp",
+        "com.stoicroutine.stoic",
+        "com.voidpet",
+        "com.voidpet.dungeon"
     ],
     "used_keywords": [
         "finance",
@@ -32447,6 +32470,13 @@
         "TrueLearn",
         "Techin+Park",
         "family+%26+Co",
-        "7091170516322605215"
+        "7091170516322605215",
+        "ELSA+Speak",
+        "Flashia",
+        "5731531035248648549",
+        "Nam+Tran+Khanh",
+        "Stamurai+Speech+Therapy",
+        "Stoic+app+inc.",
+        "7471031256965837982"
     ]
 }
