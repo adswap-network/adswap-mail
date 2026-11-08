@@ -2,7 +2,7 @@
     "config": {
         "start_date": "2026-09-12",
         "last_run_date": "2026-11-08",
-        "sent_today": 2
+        "sent_today": 4
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -7209,17 +7209,17 @@
             "app_name": "IceBreaker Events & Networking",
             "package": "events.icebreaker.blazar",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-11-04T01:23:53.887154",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-11-08T07:23:45.010737"
         },
         "support@simplycouples.app": {
             "app_name": "SimplyCouples",
             "package": "com.simplycouples.app",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-11-04T01:23:53.887154",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-11-08T07:23:45.010737"
         },
         "support@jocmp.com": {
             "app_name": "Capy Reader",
@@ -26008,7 +26008,14 @@
         "com.tmsae.ssok",
         "com.tmsae.autosync",
         "com.familywall",
-        "com.zynga.pottermatch"
+        "com.zynga.pottermatch",
+        "com.puzzle.cakecrush",
+        "com.match.three.cake.crush",
+        "com.hongmoe.colornova",
+        "com.hongmoe.tapstar",
+        "com.slots.fruit.match.puzzle",
+        "com.hongmoe.popstar",
+        "com.puzzle.lovecandy"
     ],
     "used_keywords": [
         "finance",
@@ -32439,6 +32446,7 @@
         "Ambassador+Cruise+Line",
         "TrueLearn",
         "Techin+Park",
-        "family+%26+Co"
+        "family+%26+Co",
+        "7091170516322605215"
     ]
 }
