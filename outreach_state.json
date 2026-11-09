@@ -2,7 +2,7 @@
     "config": {
         "start_date": "2026-09-12",
         "last_run_date": "2026-11-09",
-        "sent_today": 0
+        "sent_today": 5
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -7305,25 +7305,25 @@
             "app_name": "Money Journal",
             "package": "dimmple.bud",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-11-05T06:49:56.337042",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-11-09T17:31:38.310546"
         },
         "workouttracker.support@ascendik.com": {
             "app_name": "Workout Tracker & Gym Routine",
             "package": "workoutplanner.trainingtracker.gymlog",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-11-05T06:49:56.337042",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-11-09T17:31:38.310546"
         },
         "aaron@hidock.com": {
             "app_name": "HiNotes by HiDock",
             "package": "com.hidock.hinotes",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-11-05T15:28:41.899301",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-11-09T17:31:38.310546"
         },
         "choiktlabs@gmail.com": {
             "app_name": "Quiet Journal",
@@ -7515,6 +7515,22 @@
             "source": "google_play",
             "status": "FIRST_SENT",
             "first_sent_at": "2026-11-08T23:44:09.026380",
+            "followup_sent_at": null
+        },
+        "support@ideil.com": {
+            "app_name": "Redminer",
+            "package": "com.ideil.redmine",
+            "source": "google_play",
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-11-09T17:31:38.310546",
+            "followup_sent_at": null
+        },
+        "support@getresq.com": {
+            "app_name": "ResQ for Techs",
+            "package": "com.getresq.resqvm",
+            "source": "google_play",
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-11-09T17:31:38.310546",
             "followup_sent_at": null
         }
     },
@@ -26104,7 +26120,18 @@
         "com.ooma.smartsecurity",
         "com.onsip.OnSIP",
         "com.ooma.hm",
-        "com.partyup.blockjam"
+        "com.partyup.blockjam",
+        "com.evilclicker.evilclicker",
+        "xyz.klevel.noise37",
+        "com.ideil.redmine",
+        "com.ucroo.ccis",
+        "com.getresq.resqvm",
+        "com.aditum.guest",
+        "com.aditum.guard",
+        "com.vdalo.tms",
+        "com.kidruk",
+        "com.ideil.rates",
+        "com.myworkoutplan.myworkoutplan"
     ],
     "used_keywords": [
         "finance",
@@ -32551,6 +32578,10 @@
         "7506893028647791454",
         "Diat+Labs",
         "4764055831646586618",
-        "6413798372383645260"
+        "6413798372383645260",
+        "k-level",
+        "7310741991206486084",
+        "GetResQ+Ltd.",
+        "MyWorkoutPlan+LLC"
     ]
 }
