@@ -1,8 +1,8 @@
 {
     "config": {
         "start_date": "2026-09-12",
-        "last_run_date": "2026-11-08",
-        "sent_today": 19
+        "last_run_date": "2026-11-09",
+        "sent_today": 0
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -26089,7 +26089,22 @@
         "com.ichime.symptom_journal",
         "com.ichime.baby_tracker",
         "com.ichime.pcosweight",
-        "com.ichime.dharmasleep.buddhastory"
+        "com.ichime.dharmasleep.buddhastory",
+        "go.meethour.io",
+        "v.ochenta20.com",
+        "omnimeet.eproz.business",
+        "route.meethour.io",
+        "rancarney.meethour.io",
+        "go.meethour.io.yanairapp",
+        "com.capitolstrategies",
+        "com.ooma.office2",
+        "com.ooma.mobile2",
+        "com.ooma.TeloSetup",
+        "com.ooma.meetings.mobile",
+        "com.ooma.smartsecurity",
+        "com.onsip.OnSIP",
+        "com.ooma.hm",
+        "com.partyup.blockjam"
     ],
     "used_keywords": [
         "finance",
@@ -32534,6 +32549,8 @@
         "4870480458318379753",
         "Veridian+Studio",
         "7506893028647791454",
-        "Diat+Labs"
+        "Diat+Labs",
+        "4764055831646586618",
+        "6413798372383645260"
     ]
 }
