@@ -2,7 +2,7 @@
     "config": {
         "start_date": "2026-09-12",
         "last_run_date": "2026-11-10",
-        "sent_today": 0
+        "sent_today": 3
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -7329,17 +7329,17 @@
             "app_name": "Quiet Journal",
             "package": "com.pureuntreelabs.simple_notes",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-11-06T02:28:33.397591",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-11-10T09:52:48.888252"
         },
         "wellnote@maxeye.com": {
             "app_name": "Wellnote",
             "package": "com.maxeye.wellnote",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-11-06T02:28:33.397591",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-11-10T09:52:48.888252"
         },
         "support@travelbyelectric.com": {
             "app_name": "Travel by electric",
@@ -7531,6 +7531,14 @@
             "source": "google_play",
             "status": "FIRST_SENT",
             "first_sent_at": "2026-11-09T17:31:38.310546",
+            "followup_sent_at": null
+        },
+        "support@memorize.app": {
+            "app_name": "Memorize",
+            "package": "com.memorize.study",
+            "source": "google_play",
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-11-10T09:52:48.888252",
             "followup_sent_at": null
         }
     },
@@ -26131,7 +26139,14 @@
         "com.vdalo.tms",
         "com.kidruk",
         "com.ideil.rates",
-        "com.myworkoutplan.myworkoutplan"
+        "com.myworkoutplan.myworkoutplan",
+        "com.memorize.study",
+        "com.respectmashego.donn",
+        "com.freedomgrid.app",
+        "com.zelmi.app",
+        "com.respectt.chartai",
+        "com.respectt.EAmaker",
+        "esthetician.exam"
     ],
     "used_keywords": [
         "finance",
@@ -32582,6 +32597,7 @@
         "k-level",
         "7310741991206486084",
         "GetResQ+Ltd.",
-        "MyWorkoutPlan+LLC"
+        "MyWorkoutPlan+LLC",
+        "TechHobby"
     ]
 }
