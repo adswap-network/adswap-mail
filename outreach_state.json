@@ -2,7 +2,7 @@
     "config": {
         "start_date": "2026-09-12",
         "last_run_date": "2026-11-10",
-        "sent_today": 6
+        "sent_today": 9
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -7361,25 +7361,25 @@
             "app_name": "Simple Expense Book",
             "package": "com.middark.expense_book",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-11-06T23:10:55.706408",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-11-10T23:24:16.098377"
         },
         "jtnrdev@gmail.com": {
             "app_name": "Expense Tracker and Budget",
             "package": "com.jtnrdev.expensetrackerapp",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-11-06T23:10:55.706408",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-11-10T23:24:16.098377"
         },
         "hello@pefi.app": {
             "app_name": "Pefi",
             "package": "app.pefi",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-11-06T23:10:55.706408",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-11-10T23:24:16.098377"
         },
         "support@infithra.com": {
             "app_name": "infithra",
