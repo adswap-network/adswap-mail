@@ -2,7 +2,7 @@
     "config": {
         "start_date": "2026-09-12",
         "last_run_date": "2026-11-10",
-        "sent_today": 3
+        "sent_today": 6
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -7345,17 +7345,17 @@
             "app_name": "Travel by electric",
             "package": "com.travelbyelectric.hub",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-11-06T10:55:39.719168",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-11-10T17:51:55.700659"
         },
         "info@ihateironing.com": {
             "app_name": "ihateironing",
             "package": "com.app.ihateironing",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-11-06T10:55:39.719168",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-11-10T17:51:55.700659"
         },
         "nexperlabmedia@gmail.com": {
             "app_name": "Simple Expense Book",
@@ -7539,6 +7539,14 @@
             "source": "google_play",
             "status": "FIRST_SENT",
             "first_sent_at": "2026-11-10T09:52:48.888252",
+            "followup_sent_at": null
+        },
+        "support@moldero.com": {
+            "app_name": "MinimalSpend",
+            "package": "com.minimalspend.app",
+            "source": "google_play",
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-11-10T17:51:55.700659",
             "followup_sent_at": null
         }
     },
@@ -26146,7 +26154,34 @@
         "com.zelmi.app",
         "com.respectt.chartai",
         "com.respectt.EAmaker",
-        "esthetician.exam"
+        "esthetician.exam",
+        "com.grandgames.catblockjam",
+        "com.grandgames.carmatch",
+        "com.grandgames.arrowjam",
+        "com.bigjam.pixaw",
+        "com.colornuts.screwart",
+        "com.bigjam.kimmanager.spelling",
+        "com.bigjam.yumtube",
+        "com.magiccubegames.LON",
+        "com.bigjam.pupapo",
+        "com.bigjam.polyline",
+        "com.bigjam.spaceQuiz",
+        "com.domobile.pixelfunv2",
+        "com.easybrain.nonogram.color",
+        "com.makeoverstory.makeupasmr",
+        "com.satispuzzlegame.perfectday",
+        "com.stellajoy.fruitdrop",
+        "com.jigsawgame.biblestyle",
+        "com.stellajoy.solitairepuzzle",
+        "com.roomdecor.myperfectroom",
+        "mobi.byss.voxelator",
+        "com.domobile.messenger",
+        "losebellyfat.absworkout.bellyfatburn",
+        "cloudslim.loseweight.womenfitness.homeworkout",
+        "com.domobile.cloudtaichi",
+        "mind.brain.relax.sleep",
+        "com.domobile.nonogramnew",
+        "com.minimalspend.app"
     ],
     "used_keywords": [
         "finance",
@@ -32598,6 +32633,11 @@
         "7310741991206486084",
         "GetResQ+Ltd.",
         "MyWorkoutPlan+LLC",
-        "TechHobby"
+        "TechHobby",
+        "6430038787206489041",
+        "9054631880229193802",
+        "4779319804133121045",
+        "8497046676851103000",
+        "Moldero+Studios"
     ]
 }
