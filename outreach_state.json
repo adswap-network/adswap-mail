@@ -2,7 +2,7 @@
     "config": {
         "start_date": "2026-09-12",
         "last_run_date": "2026-11-11",
-        "sent_today": 7
+        "sent_today": 17
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -7417,65 +7417,65 @@
             "app_name": "Moove",
             "package": "com.moovetogether.mobile",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-11-07T10:13:24.296601",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-11-11T22:01:33.867572"
         },
         "team@gocarma.com": {
             "app_name": "GoCarma",
             "package": "com.gocarma.tolling",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-11-07T16:30:02.619609",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-11-11T22:01:33.867572"
         },
         "omnidevcreators@gmail.com": {
             "app_name": "Your Vocabulary Notebook",
             "package": "com.ecoFree.education.your_vocabulary_notebook",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-11-07T16:30:02.619609",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-11-11T22:01:33.867572"
         },
         "info@investtech.com": {
             "app_name": "Investtech Technical Analysis",
             "package": "com.investtech.investtechapp",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-11-07T20:54:00.244552",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-11-11T22:01:33.867572"
         },
         "support@tykr.com": {
             "app_name": "Tykr",
             "package": "com.tykr",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-11-07T20:54:00.244552",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-11-11T22:01:33.867572"
         },
         "sarasoftapps@gmail.com": {
             "app_name": "Wendler log 531 Pro",
             "package": "com.sarasoft.es.fivethreeone",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-11-07T20:54:00.244552",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-11-11T22:01:33.867572"
         },
         "support@truelearn.com": {
             "app_name": "TrueLearn SmartBanks",
             "package": "com.truelearn.org",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-11-07T20:54:00.244552",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-11-11T22:01:33.867572"
         },
         "tmsaeapp@gmail.com": {
             "app_name": "Expense Note",
             "package": "com.tmsae.simpleSpend",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-11-07T20:54:00.244552",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-11-11T22:01:33.867572"
         },
         "support@flashia.app": {
             "app_name": "Flashia",
@@ -7571,6 +7571,22 @@
             "source": "google_play",
             "status": "FIRST_SENT",
             "first_sent_at": "2026-11-11T15:14:27.583675",
+            "followup_sent_at": null
+        },
+        "sales@cmcmotorsports.com": {
+            "app_name": "CMC Motorsports\u00ae",
+            "package": "co.tapcart.app.id_twdM1Csk1t",
+            "source": "google_play",
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-11-11T22:01:33.867572",
+            "followup_sent_at": null
+        },
+        "info@datatruck.io": {
+            "app_name": "DT Driver",
+            "package": "com.novalab.data_truck",
+            "source": "google_play",
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-11-11T22:01:33.867572",
             "followup_sent_at": null
         }
     },
@@ -26216,7 +26232,19 @@
         "io.paraga.note",
         "com.anotherwhy.zero",
         "com.aravindsrinivas.pocketclear",
-        "com.ffm.global"
+        "com.ffm.global",
+        "com.logmein.joinme",
+        "com.logmein.gotoconnect",
+        "com.logmein.rescuemobile",
+        "com.logmein.rescuelens",
+        "com.goto.resolve.customer",
+        "com.logmein.rescueassist",
+        "com.logmein.ignitionpro.android",
+        "atiteas.exam",
+        "app.lense.lense",
+        "co.tapcart.app.id_twdM1Csk1t",
+        "com.novalab.data_truck",
+        "inc.zerofinancial.level"
     ],
     "used_keywords": [
         "finance",
@@ -32676,6 +32704,11 @@
         "Moldero+Studios",
         "5076703042154466763",
         "Lossless+Protocols",
-        "Aravind+Srinivas"
+        "Aravind+Srinivas",
+        "GoTo+Group,+Inc.",
+        "Rewaive+B.V.",
+        "CMC+Motorsports",
+        "DataTruck,+Inc.",
+        "Avant,+LLC"
     ]
 }
