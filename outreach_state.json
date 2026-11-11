@@ -1,8 +1,8 @@
 {
     "config": {
         "start_date": "2026-09-12",
-        "last_run_date": "2026-11-10",
-        "sent_today": 9
+        "last_run_date": "2026-11-11",
+        "sent_today": 2
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -7547,6 +7547,30 @@
             "source": "google_play",
             "status": "FIRST_SENT",
             "first_sent_at": "2026-11-10T17:51:55.700659",
+            "followup_sent_at": null
+        },
+        "paraga.info@gmail.com": {
+            "app_name": "Rosie Match 3",
+            "package": "io.paraga.RosieMatch",
+            "source": "google_play",
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-11-11T06:25:32.287988",
+            "followup_sent_at": null
+        },
+        "developer@lossless.dev": {
+            "app_name": "zero",
+            "package": "com.anotherwhy.zero",
+            "source": "google_play",
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-11-11T06:25:32.287988",
+            "followup_sent_at": null
+        },
+        "hello@pocketclear.app": {
+            "app_name": "Pocket Clear",
+            "package": "com.aravindsrinivas.pocketclear",
+            "source": "google_play",
+            "status": "PENDING",
+            "first_sent_at": null,
             "followup_sent_at": null
         }
     },
@@ -26181,7 +26205,17 @@
         "com.domobile.cloudtaichi",
         "mind.brain.relax.sleep",
         "com.domobile.nonogramnew",
-        "com.minimalspend.app"
+        "com.minimalspend.app",
+        "com.bigcool.puzzle.homematch",
+        "io.paraga.RosieMatch",
+        "com.angkorworld.note",
+        "io.paraga.moneymate",
+        "io.paraga.freshdo",
+        "io.paraga.currency_converter",
+        "io.paraga.loan_calculator",
+        "io.paraga.note",
+        "com.anotherwhy.zero",
+        "com.aravindsrinivas.pocketclear"
     ],
     "used_keywords": [
         "finance",
@@ -32638,6 +32672,9 @@
         "9054631880229193802",
         "4779319804133121045",
         "8497046676851103000",
-        "Moldero+Studios"
+        "Moldero+Studios",
+        "5076703042154466763",
+        "Lossless+Protocols",
+        "Aravind+Srinivas"
     ]
 }
