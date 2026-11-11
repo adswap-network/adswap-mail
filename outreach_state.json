@@ -2,7 +2,7 @@
     "config": {
         "start_date": "2026-09-12",
         "last_run_date": "2026-11-11",
-        "sent_today": 2
+        "sent_today": 7
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -7385,33 +7385,33 @@
             "app_name": "infithra",
             "package": "com.kpi.infithraESS",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-11-07T10:13:24.296601",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-11-11T15:14:27.583675"
         },
         "care@octopus-apps.com": {
             "app_name": "Octopus",
             "package": "app.octopoos.coach",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-11-07T10:13:24.296601",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-11-11T15:14:27.583675"
         },
         "office@be-light.app": {
             "app_name": "BE LIGHT",
             "package": "com.app.BELIGHT",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-11-07T10:13:24.296601",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-11-11T15:14:27.583675"
         },
         "contact@haaaaaaappy.com": {
             "app_name": "Hapday",
             "package": "com.hapday.healthy.solutions.hapday",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-11-07T10:13:24.296601",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-11-11T15:14:27.583675"
         },
         "hello@moovetogether.com": {
             "app_name": "Moove",
@@ -7569,8 +7569,8 @@
             "app_name": "Pocket Clear",
             "package": "com.aravindsrinivas.pocketclear",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-11-11T15:14:27.583675",
             "followup_sent_at": null
         }
     },
@@ -26215,7 +26215,8 @@
         "io.paraga.loan_calculator",
         "io.paraga.note",
         "com.anotherwhy.zero",
-        "com.aravindsrinivas.pocketclear"
+        "com.aravindsrinivas.pocketclear",
+        "com.ffm.global"
     ],
     "used_keywords": [
         "finance",
