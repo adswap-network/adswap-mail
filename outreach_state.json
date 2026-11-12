@@ -1,8 +1,8 @@
 {
     "config": {
         "start_date": "2026-09-12",
-        "last_run_date": "2026-11-11",
-        "sent_today": 17
+        "last_run_date": "2026-11-12",
+        "sent_today": 0
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -26244,7 +26244,8 @@
         "app.lense.lense",
         "co.tapcart.app.id_twdM1Csk1t",
         "com.novalab.data_truck",
-        "inc.zerofinancial.level"
+        "inc.zerofinancial.level",
+        "com.zynga.wonkamatch"
     ],
     "used_keywords": [
         "finance",
