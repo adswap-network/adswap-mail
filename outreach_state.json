@@ -2,7 +2,7 @@
     "config": {
         "start_date": "2026-09-12",
         "last_run_date": "2026-11-12",
-        "sent_today": 0
+        "sent_today": 4
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -7481,25 +7481,25 @@
             "app_name": "Flashia",
             "package": "app.flashia.ai",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-11-08T15:14:08.993524",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-11-12T19:55:56.292376"
         },
         "inspectorstudioscompany@gmail.com": {
             "app_name": "Pomodoro Timer",
             "package": "com.inspectorstudios.pomodorotimerfocushabit",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-11-08T19:45:22.637917",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-11-12T19:55:56.292376"
         },
         "hello@veridianstudio.in": {
             "app_name": "Wisp",
             "package": "com.himanshu.lilhore.wispmobile",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-11-08T19:45:22.637917",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-11-12T19:55:56.292376"
         },
         "support@ichime.dev": {
             "app_name": "PCOS Pal",
@@ -7587,6 +7587,14 @@
             "source": "google_play",
             "status": "FIRST_SENT",
             "first_sent_at": "2026-11-11T22:01:33.867572",
+            "followup_sent_at": null
+        },
+        "datfam05@gmail.com": {
+            "app_name": "LockDay",
+            "package": "xyz.lockday",
+            "source": "google_play",
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-11-12T19:55:56.292376",
             "followup_sent_at": null
         }
     },
@@ -26248,7 +26256,8 @@
         "com.zynga.wonkamatch",
         "com.spocky.projengmenu",
         "tv.projectivy.plugin.wallpaperprovider.overflight",
-        "com.spocky.galaxsimunlock"
+        "com.spocky.galaxsimunlock",
+        "xyz.lockday"
     ],
     "used_keywords": [
         "finance",
@@ -32714,6 +32723,7 @@
         "CMC+Motorsports",
         "DataTruck,+Inc.",
         "Avant,+LLC",
-        "5663696244314674745"
+        "5663696244314674745",
+        "LockWaves+Limited"
     ]
 }
