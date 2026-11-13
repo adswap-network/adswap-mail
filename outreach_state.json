@@ -2,7 +2,7 @@
     "config": {
         "start_date": "2026-09-12",
         "last_run_date": "2026-11-13",
-        "sent_today": 2
+        "sent_today": 3
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -7513,9 +7513,9 @@
             "app_name": "Diat",
             "package": "com.diat.caloriecounter.tracker",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-11-08T23:44:09.026380",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-11-13T07:59:57.856091"
         },
         "support@ideil.com": {
             "app_name": "Redminer",
