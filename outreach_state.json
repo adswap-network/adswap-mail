@@ -2,7 +2,7 @@
     "config": {
         "start_date": "2026-09-12",
         "last_run_date": "2026-11-13",
-        "sent_today": 3
+        "sent_today": 9
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -7521,17 +7521,17 @@
             "app_name": "Redminer",
             "package": "com.ideil.redmine",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-11-09T17:31:38.310546",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-11-13T22:39:12.571990"
         },
         "support@getresq.com": {
             "app_name": "ResQ for Techs",
             "package": "com.getresq.resqvm",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-11-09T17:31:38.310546",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-11-13T22:39:12.571990"
         },
         "support@memorize.app": {
             "app_name": "Memorize",
@@ -7603,6 +7603,38 @@
             "source": "google_play",
             "status": "FIRST_SENT",
             "first_sent_at": "2026-11-13T01:05:48.151065",
+            "followup_sent_at": null
+        },
+        "peace@spiritualme.com": {
+            "app_name": "Spiritual Me\u00ae",
+            "package": "com.spiritualmeapp.masters",
+            "source": "google_play",
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-11-13T22:39:12.571990",
+            "followup_sent_at": null
+        },
+        "zhangchaojie2008@gmail.com": {
+            "app_name": "MODU-Anonymous chat",
+            "package": "com.modu.freechat",
+            "source": "google_play",
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-11-13T22:39:12.571990",
+            "followup_sent_at": null
+        },
+        "hi@ourcal.com": {
+            "app_name": "OurCal",
+            "package": "com.ourcal.rn.production",
+            "source": "google_play",
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-11-13T22:39:12.571990",
+            "followup_sent_at": null
+        },
+        "hello@riparide.com": {
+            "app_name": "Riparide",
+            "package": "com.riparide.android",
+            "source": "google_play",
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-11-13T22:39:12.571990",
             "followup_sent_at": null
         }
     },
@@ -26270,7 +26302,25 @@
         "com.repsi.heartrate",
         "com.oxfordfitness.cardiocare",
         "com.bp.bloodpressure",
-        "com.twoplus.unomi"
+        "com.twoplus.unomi",
+        "com.tribab.tricount.android",
+        "com.spiritualmeapp.masters",
+        "com.Gimzat.ColorsSorting",
+        "com.color.sort.hidden.layer.puzzle",
+        "com.tarahonich.bewet",
+        "com.tarahonich.relaxsleepsounds",
+        "com.modu.freechat",
+        "com.vmos.google",
+        "com.realgamesrealfun.couplelife",
+        "com.twoshare.app",
+        "com.ourcal.rn.production",
+        "com.realgamesrealfun.couplegames",
+        "com.realgamesrealfun.picnic_panic",
+        "com.realgamesrealfun.stone_skipping",
+        "com.realgamesrealfun.mergelings",
+        "com.realgamesrealfun.zombiesmash",
+        "com.realgamesrealfun.justthecrumbs",
+        "com.riparide.android"
     ],
     "used_keywords": [
         "finance",
@@ -32739,6 +32789,13 @@
         "5663696244314674745",
         "LockWaves+Limited",
         "REPS",
-        "TwoPlus%2B"
+        "TwoPlus%2B",
+        "5077889280570332038",
+        "7055938877478399452",
+        "5547606357393537399",
+        "realgamesrealfun",
+        "L%C3%A9o+Idir",
+        "OurCal",
+        "6417926210768074182"
     ]
 }
