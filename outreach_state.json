@@ -1,8 +1,8 @@
 {
     "config": {
         "start_date": "2026-09-12",
-        "last_run_date": "2026-11-12",
-        "sent_today": 4
+        "last_run_date": "2026-11-13",
+        "sent_today": 2
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -7505,9 +7505,9 @@
             "app_name": "PCOS Pal",
             "package": "com.ichime.pcospal",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-11-08T23:44:09.026380",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-11-13T01:05:48.151065"
         },
         "contact@diat.app": {
             "app_name": "Diat",
@@ -7595,6 +7595,14 @@
             "source": "google_play",
             "status": "FIRST_SENT",
             "first_sent_at": "2026-11-12T19:55:56.292376",
+            "followup_sent_at": null
+        },
+        "info@tpl-s.com": {
+            "app_name": "Unomi",
+            "package": "com.twoplus.unomi",
+            "source": "google_play",
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-11-13T01:05:48.151065",
             "followup_sent_at": null
         }
     },
@@ -26257,7 +26265,12 @@
         "com.spocky.projengmenu",
         "tv.projectivy.plugin.wallpaperprovider.overflight",
         "com.spocky.galaxsimunlock",
-        "xyz.lockday"
+        "xyz.lockday",
+        "it.crossband.pedometer",
+        "com.repsi.heartrate",
+        "com.oxfordfitness.cardiocare",
+        "com.bp.bloodpressure",
+        "com.twoplus.unomi"
     ],
     "used_keywords": [
         "finance",
@@ -32724,6 +32737,8 @@
         "DataTruck,+Inc.",
         "Avant,+LLC",
         "5663696244314674745",
-        "LockWaves+Limited"
+        "LockWaves+Limited",
+        "REPS",
+        "TwoPlus%2B"
     ]
 }
