@@ -2,7 +2,7 @@
     "config": {
         "start_date": "2026-09-12",
         "last_run_date": "2026-11-14",
-        "sent_today": 0
+        "sent_today": 1
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -7537,9 +7537,9 @@
             "app_name": "Memorize",
             "package": "com.memorize.study",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-11-10T09:52:48.888252",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-11-14T11:29:44.394694"
         },
         "support@moldero.com": {
             "app_name": "MinimalSpend",
