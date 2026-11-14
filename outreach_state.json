@@ -2,7 +2,7 @@
     "config": {
         "start_date": "2026-09-12",
         "last_run_date": "2026-11-14",
-        "sent_today": 1
+        "sent_today": 2
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -7545,9 +7545,9 @@
             "app_name": "MinimalSpend",
             "package": "com.minimalspend.app",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-11-10T17:51:55.700659",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-11-14T18:05:14.007586"
         },
         "paraga.info@gmail.com": {
             "app_name": "Rosie Match 3",
@@ -26325,7 +26325,19 @@
         "com.techprojects.water_reminder_app",
         "com.techprojects.notificationhistoryapp",
         "com.techprojects.flashalertpro",
-        "com.techprojects.flashlightapp"
+        "com.techprojects.flashlightapp",
+        "dk.tactile.lilysgarden",
+        "com.eva.funnyfarm",
+        "com.evastudio.Mermaid",
+        "air.com.qublix.penguincubes",
+        "com.tactilegames.piratematch",
+        "com.promineo.seasurvivor",
+        "com.promineo.smashmarket",
+        "com.promineo.doorindoor",
+        "com.promineo.mergesiege",
+        "com.promineo.bototo",
+        "com.promineo.flushpoint",
+        "com.uc.gym.clicker"
     ],
     "used_keywords": [
         "finance",
@@ -32803,6 +32815,8 @@
         "OurCal",
         "6417926210768074182",
         "BLOXY+B.V.",
-        "nDroids"
+        "nDroids",
+        "6054273398406172785",
+        "Grupo+Promineo+S.L.U."
     ]
 }
