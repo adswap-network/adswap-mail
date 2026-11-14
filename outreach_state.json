@@ -1,8 +1,8 @@
 {
     "config": {
         "start_date": "2026-09-12",
-        "last_run_date": "2026-11-13",
-        "sent_today": 9
+        "last_run_date": "2026-11-14",
+        "sent_today": 0
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -26320,7 +26320,12 @@
         "com.realgamesrealfun.mergelings",
         "com.realgamesrealfun.zombiesmash",
         "com.realgamesrealfun.justthecrumbs",
-        "com.riparide.android"
+        "com.riparide.android",
+        "io.bloxy.planka",
+        "com.techprojects.water_reminder_app",
+        "com.techprojects.notificationhistoryapp",
+        "com.techprojects.flashalertpro",
+        "com.techprojects.flashlightapp"
     ],
     "used_keywords": [
         "finance",
@@ -32796,6 +32801,8 @@
         "realgamesrealfun",
         "L%C3%A9o+Idir",
         "OurCal",
-        "6417926210768074182"
+        "6417926210768074182",
+        "BLOXY+B.V.",
+        "nDroids"
     ]
 }
