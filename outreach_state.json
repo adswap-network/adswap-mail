@@ -1,8 +1,8 @@
 {
     "config": {
         "start_date": "2026-09-12",
-        "last_run_date": "2026-11-14",
-        "sent_today": 2
+        "last_run_date": "2026-11-15",
+        "sent_today": 1
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -7635,6 +7635,14 @@
             "source": "google_play",
             "status": "FIRST_SENT",
             "first_sent_at": "2026-11-13T22:39:12.571990",
+            "followup_sent_at": null
+        },
+        "sultonuzdev@gmail.com": {
+            "app_name": "Pomodoro Timer",
+            "package": "com.sultonuzdev.pft",
+            "source": "google_play",
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-11-15T02:40:51.810057",
             "followup_sent_at": null
         }
     },
@@ -26337,7 +26345,18 @@
         "com.promineo.mergesiege",
         "com.promineo.bototo",
         "com.promineo.flushpoint",
-        "com.uc.gym.clicker"
+        "com.uc.gym.clicker",
+        "com.sultonuzdev.pft",
+        "com.migrely.app",
+        "com.sultonuzdev.centercross",
+        "com.sultonuzdev.netspeed",
+        "com.sultonuzdev.mathrid",
+        "com.sultonuzdev.mathify",
+        "com.sultonuzdev.mbt",
+        "com.ckfeed.rss",
+        "com.ck.moodping",
+        "com.ck.ruledetective",
+        "com.ck.prismion"
     ],
     "used_keywords": [
         "finance",
@@ -32817,6 +32836,8 @@
         "BLOXY+B.V.",
         "nDroids",
         "6054273398406172785",
-        "Grupo+Promineo+S.L.U."
+        "Grupo+Promineo+S.L.U.",
+        "7717715535656358924",
+        "CKmedia"
     ]
 }
