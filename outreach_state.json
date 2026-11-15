@@ -2,7 +2,7 @@
     "config": {
         "start_date": "2026-09-12",
         "last_run_date": "2026-11-15",
-        "sent_today": 3
+        "sent_today": 4
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -7569,9 +7569,9 @@
             "app_name": "Pocket Clear",
             "package": "com.aravindsrinivas.pocketclear",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-11-11T15:14:27.583675",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-11-15T17:43:40.554425"
         },
         "sales@cmcmotorsports.com": {
             "app_name": "CMC Motorsports\u00ae",
@@ -26356,7 +26356,21 @@
         "com.ckfeed.rss",
         "com.ck.moodping",
         "com.ck.ruledetective",
-        "com.ck.prismion"
+        "com.ck.prismion",
+        "com.nex.xquestarpg1",
+        "com.nex.xquestarpg2",
+        "com.nex.squest1",
+        "com.nex.xquest1",
+        "com.nex.xquest3",
+        "com.nex.xquest2",
+        "com.nex.xquestlite",
+        "com.dawn.x1.gp.hd",
+        "com.alienzoneplus",
+        "com.alienzoneplus.hd",
+        "com.az2.gp",
+        "com.az2.gp.hd",
+        "com.dw.x2.gp.hd",
+        "com.gp.d.x2"
     ],
     "used_keywords": [
         "finance",
@@ -32838,6 +32852,8 @@
         "6054273398406172785",
         "Grupo+Promineo+S.L.U.",
         "7717715535656358924",
-        "CKmedia"
+        "CKmedia",
+        "5456329342212868254",
+        "Hummingbird+Mobile+Games"
     ]
 }
