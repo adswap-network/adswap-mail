@@ -2,7 +2,7 @@
     "config": {
         "start_date": "2026-09-12",
         "last_run_date": "2026-11-15",
-        "sent_today": 1
+        "sent_today": 3
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -7553,17 +7553,17 @@
             "app_name": "Rosie Match 3",
             "package": "io.paraga.RosieMatch",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-11-11T06:25:32.287988",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-11-15T10:56:36.927120"
         },
         "developer@lossless.dev": {
             "app_name": "zero",
             "package": "com.anotherwhy.zero",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-11-11T06:25:32.287988",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-11-15T10:56:36.927120"
         },
         "hello@pocketclear.app": {
             "app_name": "Pocket Clear",
