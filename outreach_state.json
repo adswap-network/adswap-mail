@@ -2,7 +2,7 @@
     "config": {
         "start_date": "2026-09-12",
         "last_run_date": "2026-11-15",
-        "sent_today": 4
+        "sent_today": 6
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -7577,17 +7577,17 @@
             "app_name": "CMC Motorsports\u00ae",
             "package": "co.tapcart.app.id_twdM1Csk1t",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-11-11T22:01:33.867572",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-11-15T22:50:05.334230"
         },
         "info@datatruck.io": {
             "app_name": "DT Driver",
             "package": "com.novalab.data_truck",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-11-11T22:01:33.867572",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-11-15T22:50:05.334230"
         },
         "datfam05@gmail.com": {
             "app_name": "LockDay",
@@ -26370,7 +26370,8 @@
         "com.az2.gp",
         "com.az2.gp.hd",
         "com.dw.x2.gp.hd",
-        "com.gp.d.x2"
+        "com.gp.d.x2",
+        "com.netmarble.tskgb"
     ],
     "used_keywords": [
         "finance",
