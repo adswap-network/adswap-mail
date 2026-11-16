@@ -2,7 +2,7 @@
     "config": {
         "start_date": "2026-09-12",
         "last_run_date": "2026-11-16",
-        "sent_today": 2
+        "sent_today": 5
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -7665,24 +7665,24 @@
             "app_name": "FlaiChat",
             "package": "chat.glib.groupchat",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-11-16T11:23:19.673224",
             "followup_sent_at": null
         },
         "info@millions.co": {
             "app_name": "MILLIONS",
             "package": "com.millions.store.prod",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-11-16T11:23:19.673224",
             "followup_sent_at": null
         },
         "tech-admin@republic.co": {
             "app_name": "Republic",
             "package": "com.republicmobile",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-11-16T11:23:19.673224",
             "followup_sent_at": null
         }
     },
