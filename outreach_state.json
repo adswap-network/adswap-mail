@@ -1,8 +1,8 @@
 {
     "config": {
         "start_date": "2026-09-12",
-        "last_run_date": "2026-11-15",
-        "sent_today": 6
+        "last_run_date": "2026-11-16",
+        "sent_today": 2
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -7643,6 +7643,46 @@
             "source": "google_play",
             "status": "FIRST_SENT",
             "first_sent_at": "2026-11-15T02:40:51.810057",
+            "followup_sent_at": null
+        },
+        "huyentran2772nd@gmail.com": {
+            "app_name": "Ink",
+            "package": "com.silverai.calendar.lockscreen.ink",
+            "source": "google_play",
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-11-16T02:44:34.615094",
+            "followup_sent_at": null
+        },
+        "info@drkellyann.com": {
+            "app_name": "Dr. Kellyann",
+            "package": "co.tapcart.app.id_ORpBIICPEu",
+            "source": "google_play",
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-11-16T02:44:34.615094",
+            "followup_sent_at": null
+        },
+        "support@flai.chat": {
+            "app_name": "FlaiChat",
+            "package": "chat.glib.groupchat",
+            "source": "google_play",
+            "status": "PENDING",
+            "first_sent_at": null,
+            "followup_sent_at": null
+        },
+        "info@millions.co": {
+            "app_name": "MILLIONS",
+            "package": "com.millions.store.prod",
+            "source": "google_play",
+            "status": "PENDING",
+            "first_sent_at": null,
+            "followup_sent_at": null
+        },
+        "tech-admin@republic.co": {
+            "app_name": "Republic",
+            "package": "com.republicmobile",
+            "source": "google_play",
+            "status": "PENDING",
+            "first_sent_at": null,
             "followup_sent_at": null
         }
     },
@@ -26371,7 +26411,56 @@
         "com.az2.gp.hd",
         "com.dw.x2.gp.hd",
         "com.gp.d.x2",
-        "com.netmarble.tskgb"
+        "com.netmarble.tskgb",
+        "com.silverai.calendar.lockscreen.ink",
+        "co.tapcart.app.id_ORpBIICPEu",
+        "snapedit.app.remove",
+        "com.silverai.fitroom.virtualtryon",
+        "com.apptulip.app",
+        "com.usly.couple.widget",
+        "com.kibori.stickers",
+        "com.silverai.snapcare.aicamera",
+        "com.impact.ribony",
+        "com.axolis.seatime",
+        "com.axolis.aicalculator",
+        "com.swot.swotanalysis",
+        "com.axolis.monkeyguide",
+        "com.axolis.running",
+        "com.seatimes.seatime",
+        "com.entiendochat.app",
+        "com.cenkle.chat.elele",
+        "cz.dactylgroup.smartsupp.android",
+        "com.live.honeylite",
+        "chat.glib.groupchat",
+        "com.p1.chompsms",
+        "com.live.honey",
+        "com.live.honeyoclite",
+        "com.live.honeychat",
+        "com.quyue.ttchat",
+        "chat.glib.voxwiz",
+        "com.textra",
+        "video.tiki",
+        "hashtagmanager.app",
+        "com.free.freeshort",
+        "cartoon.anime.maker.ai.avatar.image.generator.app",
+        "com.hkyoyo.novel",
+        "com.millions.store.prod",
+        "com.hotdrama.android",
+        "com.hkyy.dramapro",
+        "com.vbnovel.read",
+        "com.wall.infinity",
+        "com.hkyy.vibedrama",
+        "com.idiom.story",
+        "com.hwshibei.read",
+        "net.novelfox.freenovel",
+        "com.kw.fournovel",
+        "com.republicmobile",
+        "com.lemonovel.app",
+        "com.tibok.app",
+        "com.opomah.app",
+        "com.ficcaopop.com",
+        "com.joynovel.app",
+        "net.novelfox.foxnovel"
     ],
     "used_keywords": [
         "finance",
@@ -32855,6 +32944,23 @@
         "7717715535656358924",
         "CKmedia",
         "5456329342212868254",
-        "Hummingbird+Mobile+Games"
+        "Hummingbird+Mobile+Games",
+        "SilverAI+Inc",
+        "Wellness+Works",
+        "6080386585229464372",
+        "Wenection",
+        "Cenkle+Digital",
+        "Smartsupp.com",
+        "BIG+GAME+HUNTERS+LIMITED",
+        "5483858101581167963",
+        "5377844287042136718",
+        "SahiParty",
+        "DOL+Technology+PTE.LTD.",
+        "7783126385864278688",
+        "7039822819024093063",
+        "HK+Yueyou+Technology+Limited",
+        "Millions.co+Inc",
+        "Novel+Studio",
+        "Republic.com"
     ]
 }
