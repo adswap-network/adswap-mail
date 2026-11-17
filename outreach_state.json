@@ -2,7 +2,7 @@
     "config": {
         "start_date": "2026-09-12",
         "last_run_date": "2026-11-17",
-        "sent_today": 1
+        "sent_today": 5
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -7609,33 +7609,33 @@
             "app_name": "Spiritual Me\u00ae",
             "package": "com.spiritualmeapp.masters",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-11-13T22:39:12.571990",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-11-17T22:53:29.717065"
         },
         "zhangchaojie2008@gmail.com": {
             "app_name": "MODU-Anonymous chat",
             "package": "com.modu.freechat",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-11-13T22:39:12.571990",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-11-17T22:53:29.717065"
         },
         "hi@ourcal.com": {
             "app_name": "OurCal",
             "package": "com.ourcal.rn.production",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-11-13T22:39:12.571990",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-11-17T22:53:29.717065"
         },
         "hello@riparide.com": {
             "app_name": "Riparide",
             "package": "com.riparide.android",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-11-13T22:39:12.571990",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-11-17T22:53:29.717065"
         },
         "sultonuzdev@gmail.com": {
             "app_name": "Pomodoro Timer",
