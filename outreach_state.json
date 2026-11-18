@@ -2,7 +2,7 @@
     "config": {
         "start_date": "2026-09-12",
         "last_run_date": "2026-11-18",
-        "sent_today": 0
+        "sent_today": 1
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -7819,6 +7819,14 @@
             "source": "google_play",
             "status": "FIRST_SENT",
             "first_sent_at": "2026-11-16T22:05:22.211734",
+            "followup_sent_at": null
+        },
+        "info@zeteonews.com": {
+            "app_name": "Zeteo News",
+            "package": "com.zeteo.app",
+            "source": "google_play",
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-11-18T14:01:11.235391",
             "followup_sent_at": null
         }
     },
@@ -26758,7 +26766,18 @@
         "br.com.movenext.zen",
         "com.movenext.liturgia",
         "br.com.zenwellness",
-        "tech.neyber.mshop.seller"
+        "tech.neyber.mshop.seller",
+        "com.zeteo.app",
+        "com.QotoQot.ConjuGato",
+        "uk.co.thetimes",
+        "org.dhammabytes.palipractice",
+        "com.chillnstudy.enno",
+        "com.simyasolutions.ling.bg",
+        "com.timespuzzles",
+        "com.times.radio",
+        "com.nuk.tls.android",
+        "uk.co.ni.times",
+        "com.bskyb.skynews.android"
     ],
     "used_keywords": [
         "finance",
@@ -33301,6 +33320,10 @@
         "5648227434881341997",
         "6521194991337560158",
         "6381444652133527630",
-        "8827332194749251006"
+        "8827332194749251006",
+        "Zeteo",
+        "6065043137817305363",
+        "Times+Media+Limited",
+        "Sky+UK+Limited"
     ]
 }
