@@ -2,7 +2,7 @@
     "config": {
         "start_date": "2026-09-12",
         "last_run_date": "2026-11-19",
-        "sent_today": 2
+        "sent_today": 4
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -7835,6 +7835,22 @@
             "source": "google_play",
             "status": "FIRST_SENT",
             "first_sent_at": "2026-11-19T13:12:10.983505",
+            "followup_sent_at": null
+        },
+        "aldhairvera15@gmail.com": {
+            "app_name": "Cozy Pomodoro",
+            "package": "com.fatcatgamestudio.cozypomodoro",
+            "source": "google_play",
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-11-19T21:38:11.258296",
+            "followup_sent_at": null
+        },
+        "app@netzverb.de": {
+            "app_name": "German Dictionary Pro",
+            "package": "de.verbformen.app.pro",
+            "source": "google_play",
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-11-19T21:38:11.258296",
             "followup_sent_at": null
         }
     },
@@ -26793,7 +26809,36 @@
         "com.aipalmistry.palmreader.tarot.horoscope",
         "com.quotecraft.greetly.dailyverse",
         "com.slowdownplay.dnptnstudiohub",
-        "com.blossom.wp.banking"
+        "com.blossom.wp.banking",
+        "com.garden.design.match3.makeover.renovate.dream.home.decor",
+        "com.fatcatgamestudio.cozypomodoro",
+        "com.fatcatgamestudio.noxnotes",
+        "com.FatCatGameStudio.SafeBite",
+        "com.FatCatGame.Mix2Word",
+        "com.FatCatGameStudio.SlothysCafe",
+        "com.FatCatGameStudio.PizzaMaster",
+        "com.FatCatGameStudio.SlothysBakery",
+        "com.mochimochi.android.an",
+        "com.urbandroid.lux.donate",
+        "com.mochidemy.mochi_kaiwa",
+        "com.mochimochi.kana",
+        "com.mochimochi.ielts",
+        "com.mochi_chinese_flutter",
+        "com.mochimochi.mochivideo",
+        "com.mochimochi.android.en",
+        "com.gofluent.mobile",
+        "com.drpanda.town.pet",
+        "com.simyasolutions.ling.km",
+        "com.chinesegrammar",
+        "com.keepprep.aba",
+        "com.atistudios.italk.nl",
+        "de.verbformen.app.pro",
+        "de.verbformen.app.top",
+        "de.verbformen.app",
+        "com.verbformen.app",
+        "de.verbformen.substantive.app",
+        "de.verbformen.verben.app",
+        "club.symmetry.application"
     ],
     "used_keywords": [
         "finance",
@@ -33342,6 +33387,12 @@
         "Times+Media+Limited",
         "Sky+UK+Limited",
         "SLOW+DOWN+APP+GAMES",
-        "WasatchPeaksAndroid"
+        "WasatchPeaksAndroid",
+        "FatCat+Game+Studio",
+        "6867929775994626112",
+        "goFLUENT+Group+SA",
+        "Nincha+Languages",
+        "7636822661918744310",
+        "Symmetry+Dev"
     ]
 }
