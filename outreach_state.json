@@ -1,7 +1,7 @@
 {
     "config": {
         "start_date": "2026-09-12",
-        "last_run_date": "2026-11-18",
+        "last_run_date": "2026-11-19",
         "sent_today": 1
     },
     "leads": {
@@ -7641,9 +7641,9 @@
             "app_name": "Pomodoro Timer",
             "package": "com.sultonuzdev.pft",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-11-15T02:40:51.810057",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-11-19T03:31:12.946367"
         },
         "huyentran2772nd@gmail.com": {
             "app_name": "Ink",
