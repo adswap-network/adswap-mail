@@ -2,7 +2,7 @@
     "config": {
         "start_date": "2026-09-12",
         "last_run_date": "2026-11-19",
-        "sent_today": 1
+        "sent_today": 2
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -7827,6 +7827,14 @@
             "source": "google_play",
             "status": "FIRST_SENT",
             "first_sent_at": "2026-11-18T14:01:11.235391",
+            "followup_sent_at": null
+        },
+        "info@wasatchpeaks.com": {
+            "app_name": "Wasatch Peaks Credit Union",
+            "package": "com.blossom.wp.banking",
+            "source": "google_play",
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-11-19T13:12:10.983505",
             "followup_sent_at": null
         }
     },
@@ -26777,7 +26785,15 @@
         "com.times.radio",
         "com.nuk.tls.android",
         "uk.co.ni.times",
-        "com.bskyb.skynews.android"
+        "com.bskyb.skynews.android",
+        "com.money.tracker.budget.planner.expense.manager.saver",
+        "com.pdf.editor.reader.viewer.word.excel.ppt.office",
+        "com.fitness.walktracker.stepcount.healthmonitor.dailywellness.app",
+        "com.romantic.stickers.whatsapp.lovestickers.expressionpacks.chat",
+        "com.aipalmistry.palmreader.tarot.horoscope",
+        "com.quotecraft.greetly.dailyverse",
+        "com.slowdownplay.dnptnstudiohub",
+        "com.blossom.wp.banking"
     ],
     "used_keywords": [
         "finance",
@@ -33324,6 +33340,8 @@
         "Zeteo",
         "6065043137817305363",
         "Times+Media+Limited",
-        "Sky+UK+Limited"
+        "Sky+UK+Limited",
+        "SLOW+DOWN+APP+GAMES",
+        "WasatchPeaksAndroid"
     ]
 }
