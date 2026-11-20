@@ -1,8 +1,8 @@
 {
     "config": {
         "start_date": "2026-09-12",
-        "last_run_date": "2026-11-19",
-        "sent_today": 4
+        "last_run_date": "2026-11-20",
+        "sent_today": 2
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -7649,9 +7649,9 @@
             "app_name": "Ink",
             "package": "com.silverai.calendar.lockscreen.ink",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-11-16T02:44:34.615094",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-11-20T03:18:43.068872"
         },
         "info@drkellyann.com": {
             "app_name": "Dr. Kellyann",
@@ -7851,6 +7851,38 @@
             "source": "google_play",
             "status": "FIRST_SENT",
             "first_sent_at": "2026-11-19T21:38:11.258296",
+            "followup_sent_at": null
+        },
+        "support@pauser.health": {
+            "app_name": "Pauser POTS Heart Rate Monitor",
+            "package": "health.pauser.android",
+            "source": "google_play",
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-11-20T03:18:43.068872",
+            "followup_sent_at": null
+        },
+        "info@leadgogo.com": {
+            "app_name": "Leadgogo",
+            "package": "com.leadgogo.mainapp",
+            "source": "google_play",
+            "status": "PENDING",
+            "first_sent_at": null,
+            "followup_sent_at": null
+        },
+        "support@ourritual.com": {
+            "app_name": "OurRitual",
+            "package": "com.ritualnativeapp",
+            "source": "google_play",
+            "status": "PENDING",
+            "first_sent_at": null,
+            "followup_sent_at": null
+        },
+        "marketing@lollicup.com": {
+            "app_name": "LollicupStore",
+            "package": "com.lollicupstore.app",
+            "source": "google_play",
+            "status": "PENDING",
+            "first_sent_at": null,
             "followup_sent_at": null
         }
     },
@@ -26838,7 +26870,22 @@
         "com.verbformen.app",
         "de.verbformen.substantive.app",
         "de.verbformen.verben.app",
-        "club.symmetry.application"
+        "club.symmetry.application",
+        "health.pauser.android",
+        "com.thermesallevard.respi_relax",
+        "com.leadgogo.mainapp",
+        "com.ritualnativeapp",
+        "com.lollicupstore.app",
+        "com.somashare",
+        "com.havabee.breathe",
+        "ai.momental",
+        "com.inhealth4change.IIinHealth",
+        "com.havabee.sounds",
+        "com.havabee.sip",
+        "com.havabee.pocket",
+        "com.havabee.nosmoke",
+        "com.havabee.time_travel",
+        "com.apptreak.calcus"
     ],
     "used_keywords": [
         "finance",
@@ -33393,6 +33440,14 @@
         "goFLUENT+Group+SA",
         "Nincha+Languages",
         "7636822661918744310",
-        "Symmetry+Dev"
+        "Symmetry+Dev",
+        "Heart+Rate+alerts,+stress+triggers+and+wellbeing",
+        "THERMES+D'ALLEVARD",
+        "Leadgogo",
+        "OurRitual",
+        "Lollicup",
+        "SomaShare+LLC",
+        "8510239694441730926",
+        "inHealth+Strategies"
     ]
 }
