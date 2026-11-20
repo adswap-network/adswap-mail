@@ -2,7 +2,7 @@
     "config": {
         "start_date": "2026-09-12",
         "last_run_date": "2026-11-20",
-        "sent_today": 2
+        "sent_today": 7
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -7657,17 +7657,17 @@
             "app_name": "Dr. Kellyann",
             "package": "co.tapcart.app.id_ORpBIICPEu",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-11-16T02:44:34.615094",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-11-20T12:55:35.225693"
         },
         "support@flai.chat": {
             "app_name": "FlaiChat",
             "package": "chat.glib.groupchat",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-11-16T11:23:19.673224",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-11-20T12:55:35.225693"
         },
         "info@millions.co": {
             "app_name": "MILLIONS",
@@ -7865,24 +7865,24 @@
             "app_name": "Leadgogo",
             "package": "com.leadgogo.mainapp",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-11-20T12:55:35.225693",
             "followup_sent_at": null
         },
         "support@ourritual.com": {
             "app_name": "OurRitual",
             "package": "com.ritualnativeapp",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-11-20T12:55:35.225693",
             "followup_sent_at": null
         },
         "marketing@lollicup.com": {
             "app_name": "LollicupStore",
             "package": "com.lollicupstore.app",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-11-20T12:55:35.225693",
             "followup_sent_at": null
         }
     },
