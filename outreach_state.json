@@ -2,7 +2,7 @@
     "config": {
         "start_date": "2026-09-12",
         "last_run_date": "2026-11-21",
-        "sent_today": 5
+        "sent_today": 12
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -7713,49 +7713,49 @@
             "app_name": "Cuebids",
             "package": "com.unge.cuebids",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-11-16T22:05:22.211734",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-11-21T17:58:39.139932"
         },
         "contact@zhengdegames.com": {
             "app_name": "Battle Heroes",
             "package": "com.zhengdegames.wow",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-11-16T22:05:22.211734",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-11-21T17:58:39.139932"
         },
         "support@8floor.net": {
             "app_name": "Gnomes Garden Chapter 11",
             "package": "com.eighthfloor.gnomesgarden11.f2p",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-11-16T22:05:22.211734",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-11-21T17:58:39.139932"
         },
         "support@neskingames.com": {
             "app_name": "Lost Candies",
             "package": "com.neskingames.hanselandgretel_sweetadventures",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-11-16T22:05:22.211734",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-11-21T17:58:39.139932"
         },
         "support@kestrelgames.com": {
             "app_name": "Rule with an Iron Fish",
             "package": "com.kestrelgames.rulewithanironfish",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-11-16T22:05:22.211734",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-11-21T17:58:39.139932"
         },
         "contact@nanoreality.com": {
             "app_name": "My Nano World",
             "package": "com.nanorealitygames.mnw",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-11-16T22:05:22.211734",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-11-21T17:58:39.139932"
         },
         "smstoolapps@gmail.com": {
             "app_name": "Step Counter",
@@ -7907,6 +7907,14 @@
             "source": "google_play",
             "status": "FIRST_SENT",
             "first_sent_at": "2026-11-21T11:05:23.887947",
+            "followup_sent_at": null
+        },
+        "hello@apparence.io": {
+            "app_name": "Kubbo",
+            "package": "io.apparence.dailywin",
+            "source": "google_play",
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-11-21T17:58:39.139932",
             "followup_sent_at": null
         }
     },
@@ -26936,7 +26944,34 @@
         "com.casparhealth.android.patient.johannesbad",
         "com.casparhealth.android.patient.johanniter",
         "com.casparhealth.android.patient.oberberg",
-        "com.adpog.diary"
+        "com.adpog.diary",
+        "info.vazquezsoftware.tasks",
+        "info.vazquezsoftware.tarot",
+        "info.vazquezsoftware.pasito",
+        "info.vazquezsoftware.numerology",
+        "info.vazquezsoftware.blurbackground",
+        "info.vazquezsoftware.backgroundremover",
+        "info.vazquezsoftware.remotemouse",
+        "at.techbee.jtx",
+        "com.dejiapps.a4do",
+        "at.techbee.babysafe",
+        "at.techbee.spectacled.tasks",
+        "at.techbee.spectacled.notes",
+        "at.techbee.spectacled.journals",
+        "com.dejiapps.fireshiftcalendar",
+        "io.apparence.dailywin",
+        "abs.challenge.tracker",
+        "io.apparence",
+        "app.sbookmark",
+        "babyname.app.matcher",
+        "uly.vlog.diary",
+        "io.mcflydev.shootnkill",
+        "com.wonderapps.ATracker",
+        "app.routineflow.routineflow",
+        "com.holyminutes.holyminutes",
+        "com.chorefriend.chorefriend",
+        "neurolist.app.neurolist",
+        "com.gnresound.tinnitus"
     ],
     "used_keywords": [
         "finance",
@@ -33508,6 +33543,12 @@
         "MGKANE",
         "Xolv",
         "GOREHA+GmbH",
-        "7566409909712617197"
+        "7566409909712617197",
+        "6957082210472356318",
+        "Techbee+e.U.",
+        "8167315840869389138",
+        "6128931221549786518",
+        "5207120848651743105",
+        "7576897339766317392"
     ]
 }
