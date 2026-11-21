@@ -2,7 +2,7 @@
     "config": {
         "start_date": "2026-09-12",
         "last_run_date": "2026-11-21",
-        "sent_today": 2
+        "sent_today": 5
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -7705,9 +7705,9 @@
             "app_name": "Dominion of Three Kingdoms",
             "package": "com.qtz.game.jltx.Ggen",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-11-16T22:05:22.211734",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-11-21T11:05:23.887947"
         },
         "support@cuebids.com": {
             "app_name": "Cuebids",
@@ -7891,6 +7891,22 @@
             "source": "google_play",
             "status": "FIRST_SENT",
             "first_sent_at": "2026-11-20T21:07:08.650372",
+            "followup_sent_at": null
+        },
+        "support@mybrightlink.org": {
+            "app_name": "myBrightlink",
+            "package": "org.xolv.mybrightlink",
+            "source": "google_play",
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-11-21T11:05:23.887947",
+            "followup_sent_at": null
+        },
+        "support@caspar-health.com": {
+            "app_name": "Ebelkliniken App",
+            "package": "com.casparhealth.android.patient.ebel",
+            "source": "google_play",
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-11-21T11:05:23.887947",
             "followup_sent_at": null
         }
     },
@@ -26907,7 +26923,20 @@
         "com.saltycrackers.tablesplanner",
         "com.kongregate.mobile.thetrail.google",
         "com.tile.trip.triple.match.connect.puzzle",
-        "com.tripledot.tile.blossom"
+        "com.tripledot.tile.blossom",
+        "com.wb.goog.injustice.brawler2017",
+        "com.dailyburn.fasting.tracker",
+        "com.mgkanellc.dryfastingcompanionpro",
+        "org.xolv.mybrightlink",
+        "com.casparhealth.android.patient.ebel",
+        "shrm.exam",
+        "com.casparhealth.android.patient.meinrkbs",
+        "com.casparhealth.android.patient.sonnenblick",
+        "com.casparhealth.android.patient.rehaneo",
+        "com.casparhealth.android.patient.johannesbad",
+        "com.casparhealth.android.patient.johanniter",
+        "com.casparhealth.android.patient.oberberg",
+        "com.adpog.diary"
     ],
     "used_keywords": [
         "finance",
@@ -33475,6 +33504,10 @@
         "Basic-Fit",
         "Keeprapid+Dev",
         "Abhisoft+Tech",
-        "Branches"
+        "Branches",
+        "MGKANE",
+        "Xolv",
+        "GOREHA+GmbH",
+        "7566409909712617197"
     ]
 }
