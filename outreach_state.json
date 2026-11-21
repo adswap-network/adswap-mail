@@ -2,7 +2,7 @@
     "config": {
         "start_date": "2026-09-12",
         "last_run_date": "2026-11-21",
-        "sent_today": 12
+        "sent_today": 20
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -7761,65 +7761,65 @@
             "app_name": "Step Counter",
             "package": "com.daily.stepcounter.stepstracker",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-11-16T22:05:22.211734",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-11-21T23:19:02.461707"
         },
         "contact@onenergy.institute": {
             "app_name": "Onenergy Qigong and Meditation",
             "package": "institute.onenergy.app",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-11-16T22:05:22.211734",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-11-21T23:19:02.461707"
         },
         "info@edusyntech.com": {
             "app_name": "Dystherapy",
             "package": "com.arda.dystherapy",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-11-16T22:05:22.211734",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-11-21T23:19:02.461707"
         },
         "englishstories@hellotalk.com": {
             "app_name": "English Stories Weekly",
             "package": "com.hellotalk.englishstories",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-11-16T22:05:22.211734",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-11-21T23:19:02.461707"
         },
         "studio.matsur@gmail.com": {
             "app_name": "Mika Book",
             "package": "com.matsur.mikabook",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-11-16T22:05:22.211734",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-11-21T23:19:02.461707"
         },
         "support@lemonadeday.org": {
             "app_name": "My Lemonade Day",
             "package": "org.lemonadeday.mylemonadeday",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-11-16T22:05:22.211734",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-11-21T23:19:02.461707"
         },
         "info@project-c.org": {
             "app_name": "JOJO Math and Reading",
             "package": "jomath.chicken.global",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-11-16T22:05:22.211734",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-11-21T23:19:02.461707"
         },
         "info@twobirdstalk.com": {
             "app_name": "Skrynia",
             "package": "com.t.book.skrynia",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-11-16T22:05:22.211734",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-11-21T23:19:02.461707"
         },
         "info@zeteonews.com": {
             "app_name": "Zeteo News",
@@ -26971,7 +26971,17 @@
         "com.holyminutes.holyminutes",
         "com.chorefriend.chorefriend",
         "neurolist.app.neurolist",
-        "com.gnresound.tinnitus"
+        "com.gnresound.tinnitus",
+        "com.pgstudio.survival",
+        "com.dbSoftware.siepro",
+        "com.dbSoftware.sievolve",
+        "com.gemjem.fps.shooter.games.gun.shooting.tactical.strike.csgo.pistol.zombie.firing.action.ops",
+        "com.gemjem.survival.island.games.dinosaur.stranded.deep.jurassic.world.far.cry.green.hell",
+        "com.gemjem.gun.games.shooting.shooter.strike.fps.csgo.combat.sniper.zombie.modern.action.ops",
+        "com.ws.shooting.games",
+        "com.pgstudio.survivalpro",
+        "com.more.lastfortress.gp",
+        "com.gemjam.exile.survival.pro.god.of.war.rpg.games.conan.exiles.last.nomad.barbarian.desert"
     ],
     "used_keywords": [
         "finance",
@@ -33549,6 +33559,8 @@
         "8167315840869389138",
         "6128931221549786518",
         "5207120848651743105",
-        "7576897339766317392"
+        "7576897339766317392",
+        "7869316656814556884",
+        "LIFE+GAME+PTE.+LTD."
     ]
 }
