@@ -2,7 +2,7 @@
     "config": {
         "start_date": "2026-09-12",
         "last_run_date": "2026-11-22",
-        "sent_today": 0
+        "sent_today": 7
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -7825,9 +7825,9 @@
             "app_name": "Zeteo News",
             "package": "com.zeteo.app",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-11-18T14:01:11.235391",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-11-22T15:19:44.075923"
         },
         "info@wasatchpeaks.com": {
             "app_name": "Wasatch Peaks Credit Union",
@@ -7915,6 +7915,54 @@
             "source": "google_play",
             "status": "FIRST_SENT",
             "first_sent_at": "2026-11-21T17:58:39.139932",
+            "followup_sent_at": null
+        },
+        "growdailyinfo@gmail.com": {
+            "app_name": "Doum",
+            "package": "com.growdaily.v2",
+            "source": "google_play",
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-11-22T15:19:44.075923",
+            "followup_sent_at": null
+        },
+        "me@reinierhernandez.com": {
+            "app_name": "Lotus Chant",
+            "package": "com.ragnarokreinier.lotuschant",
+            "source": "google_play",
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-11-22T15:19:44.075923",
+            "followup_sent_at": null
+        },
+        "hello@caloriecam.ai": {
+            "app_name": "Healthier",
+            "package": "com.Wisery.CalorieCam",
+            "source": "google_play",
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-11-22T15:19:44.075923",
+            "followup_sent_at": null
+        },
+        "support@expenseai.com": {
+            "app_name": "Expense AI",
+            "package": "ai.myexpense.app",
+            "source": "google_play",
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-11-22T15:19:44.075923",
+            "followup_sent_at": null
+        },
+        "andrea@deliciouslyfitnhealthy.com": {
+            "app_name": "Make Fit Simple",
+            "package": "com.deliciouslyfitnhealthy.makefitsimple",
+            "source": "google_play",
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-11-22T15:19:44.075923",
+            "followup_sent_at": null
+        },
+        "hello@emilyskyefit.com": {
+            "app_name": "Emily Skye FIT",
+            "package": "com.emilyskyefit.app",
+            "source": "google_play",
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-11-22T15:19:44.075923",
             "followup_sent_at": null
         }
     },
@@ -26988,7 +27036,27 @@
         "com.minimalscratchpad",
         "io.github.johannesjo.imperialbattleground",
         "io.github.johannesjo.sevenseconds",
-        "com.minded.minded"
+        "com.minded.minded",
+        "com.growdaily.v2",
+        "com.ragnarokreinier.lotuschant",
+        "com.Wisery.CalorieCam",
+        "ai.myexpense.app",
+        "com.limbatus.caproqr",
+        "com.joincarbon.nutrition",
+        "com.deliciouslyfitnhealthy.makefitsimple",
+        "com.emilyskyefit.app",
+        "com.tile.match.puzzle.casual.game",
+        "com.puzzle.pool.android",
+        "com.sportbrain.jewelpuzzle",
+        "com.free.gem.block.puzzle",
+        "tile.master.free.fun.match.puzzle.rescuestory",
+        "barcelona.wonder.tilestories",
+        "com.game.suf_android",
+        "com.game.goodstory_android",
+        "com.braintrain.jigsawmania.story",
+        "com.game.jifa_android",
+        "com.game.zush_android",
+        "com.game.b108p_android"
     ],
     "used_keywords": [
         "finance",
@@ -33569,6 +33637,15 @@
         "7576897339766317392",
         "7869316656814556884",
         "LIFE+GAME+PTE.+LTD.",
-        "Johannes+Millan"
+        "Johannes+Millan",
+        "Bu+Saud",
+        "8213231432204083830",
+        "6559711897193764064",
+        "6590881034191923395",
+        "Reform+LLC",
+        "Deliciously+Fit+n+Healthy",
+        "Emily+Skye+FIT",
+        "Grandfalls+Limited",
+        "T.Societe"
     ]
 }
