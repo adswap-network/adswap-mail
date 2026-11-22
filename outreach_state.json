@@ -1,8 +1,8 @@
 {
     "config": {
         "start_date": "2026-09-12",
-        "last_run_date": "2026-11-21",
-        "sent_today": 20
+        "last_run_date": "2026-11-22",
+        "sent_today": 0
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -26981,7 +26981,14 @@
         "com.ws.shooting.games",
         "com.pgstudio.survivalpro",
         "com.more.lastfortress.gp",
-        "com.gemjam.exile.survival.pro.god.of.war.rpg.games.conan.exiles.last.nomad.barbarian.desert"
+        "com.gemjam.exile.survival.pro.god.of.war.rpg.games.conan.exiles.last.nomad.barbarian.desert",
+        "com.superproductivity.superproductivity",
+        "de.thefrontend.lancesdown",
+        "com.parallelcode.phone",
+        "com.minimalscratchpad",
+        "io.github.johannesjo.imperialbattleground",
+        "io.github.johannesjo.sevenseconds",
+        "com.minded.minded"
     ],
     "used_keywords": [
         "finance",
@@ -33561,6 +33568,7 @@
         "5207120848651743105",
         "7576897339766317392",
         "7869316656814556884",
-        "LIFE+GAME+PTE.+LTD."
+        "LIFE+GAME+PTE.+LTD.",
+        "Johannes+Millan"
     ]
 }
