@@ -2,7 +2,7 @@
     "config": {
         "start_date": "2026-09-12",
         "last_run_date": "2026-11-24",
-        "sent_today": 6
+        "sent_today": 23
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -7857,23 +7857,23 @@
             "app_name": "Pauser POTS Heart Rate Monitor",
             "package": "health.pauser.android",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-11-20T03:18:43.068872",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-11-24T21:13:06.947019"
         },
         "info@leadgogo.com": {
             "app_name": "Leadgogo",
             "package": "com.leadgogo.mainapp",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-11-20T12:55:35.225693",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-11-24T21:13:06.947019"
         },
         "support@ourritual.com": {
             "app_name": "OurRitual",
             "package": "com.ritualnativeapp",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "REPLIED",
             "first_sent_at": "2026-11-20T12:55:35.225693",
             "followup_sent_at": null
         },
@@ -7881,17 +7881,17 @@
             "app_name": "LollicupStore",
             "package": "com.lollicupstore.app",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-11-20T12:55:35.225693",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-11-24T21:13:06.947019"
         },
         "bestphoneapps@outlook.com": {
             "app_name": "Kanban Board 360",
             "package": "com.at.kanban.todo",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-11-20T21:07:08.650372",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-11-24T21:13:06.947019"
         },
         "support@mybrightlink.org": {
             "app_name": "myBrightlink",
@@ -8001,96 +8001,104 @@
             "app_name": "WATERROWER Connect",
             "package": "com.label305.waterrower",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-11-24T21:13:06.947019",
             "followup_sent_at": null
         },
         "okukulele01@gmail.com": {
             "app_name": "OKMusician",
             "package": "com.okukulele.android",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-11-24T21:13:06.947019",
             "followup_sent_at": null
         },
         "support@dwellspring.io": {
             "app_name": "Dwellspring",
             "package": "com.dwell_spring.client",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-11-24T21:13:06.947019",
             "followup_sent_at": null
         },
         "mentalsegment@gmail.com": {
             "app_name": "Talkido",
             "package": "com.mentalsegment.tolkido",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-11-24T21:13:06.947019",
             "followup_sent_at": null
         },
         "info@funetix.org": {
             "app_name": "FUNetix 12 Hour Reading App",
             "package": "com.funetix.live",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-11-24T21:13:06.947019",
             "followup_sent_at": null
         },
         "support@gridio.io": {
             "app_name": "Gridio",
             "package": "com.gridioapp",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-11-24T21:13:06.947019",
             "followup_sent_at": null
         },
         "hello@themeekboutique.co.uk": {
             "app_name": "The Meek Boutique",
             "package": "co.shopney.themeekboutique",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-11-24T21:13:06.947019",
             "followup_sent_at": null
         },
         "hello@numeo.ai": {
             "app_name": "Numeo AI Dispatch",
             "package": "com.numeo.spot.staging",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-11-24T21:13:06.947019",
             "followup_sent_at": null
         },
         "info@cantaconjess.tv": {
             "app_name": "Canta Con Jess",
             "package": "com.cantaconjess",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-11-24T21:13:06.947019",
             "followup_sent_at": null
         },
         "help@abcfitness.com": {
             "app_name": "MPower Fit",
             "package": "com.trainerize.mpowerfitness01",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-11-24T21:13:06.947019",
             "followup_sent_at": null
         },
         "support@myclim8.com": {
             "app_name": "Clim8",
             "package": "com.myclim8.clim8",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-11-24T21:13:06.947019",
             "followup_sent_at": null
         },
         "support@infobric.se": {
             "app_name": "Infobric Field",
             "package": "com.buildsafe.app",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-11-24T21:13:06.947019",
+            "followup_sent_at": null
+        },
+        "hello@studypod.app": {
+            "app_name": "StudyPod",
+            "package": "app.myflashcards.myflashcards",
+            "source": "google_play",
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-11-24T21:13:06.947019",
             "followup_sent_at": null
         }
     },
@@ -27347,7 +27355,10 @@
         "com.myclim8.clim8",
         "com.synovus.mobilebanking",
         "com.stationdm.bluelink",
-        "com.buildsafe.app"
+        "com.buildsafe.app",
+        "com.app.jungleai",
+        "app.myflashcards.myflashcards",
+        "com.imperon.android.gymapp"
     ],
     "used_keywords": [
         "finance",
@@ -27401,7 +27412,13 @@
         "home workout no equipment",
         "anonymous chat local",
         "icebreaker questions app",
-        "couple calendar shared"
+        "couple calendar shared",
+        "flashcards maker study",
+        "learn vocabulary daily",
+        "rss reader minimalist fast",
+        "daily journal secret",
+        "workout logger gym",
+        "time blocker schedule"
     ],
     "scanned_developers": [
         "DecusPro",
@@ -34025,6 +34042,9 @@
         "4866938256966934360",
         "Synovus+Bank",
         "Hyundai+Motor+America",
-        "Infobric+AB"
+        "Infobric+AB",
+        "Jungle+AI",
+        "6755877487897755609",
+        "GymRun+Team"
     ]
 }
