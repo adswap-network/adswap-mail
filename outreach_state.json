@@ -2,7 +2,7 @@
     "config": {
         "start_date": "2026-09-12",
         "last_run_date": "2026-11-24",
-        "sent_today": 2
+        "sent_today": 6
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -7841,7 +7841,7 @@
             "app_name": "Cozy Pomodoro",
             "package": "com.fatcatgamestudio.cozypomodoro",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "REPLIED",
             "first_sent_at": "2026-11-19T21:38:11.258296",
             "followup_sent_at": null
         },
@@ -7849,9 +7849,9 @@
             "app_name": "German Dictionary Pro",
             "package": "de.verbformen.app.pro",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-11-19T21:38:11.258296",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-11-24T10:57:05.640026"
         },
         "support@pauser.health": {
             "app_name": "Pauser POTS Heart Rate Monitor",
@@ -7977,24 +7977,24 @@
             "app_name": "Sea Trials",
             "package": "com.MarinerLicensePrep.MLP",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-11-24T10:57:05.640026",
             "followup_sent_at": null
         },
         "support@my-cpe.com": {
             "app_name": "MYCPE ONE",
             "package": "com.my_cpe",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-11-24T10:57:05.640026",
             "followup_sent_at": null
         },
         "contact@salesrabbit.com": {
             "app_name": "SalesRabbit+",
             "package": "com.salesrabbit.flutter",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-11-24T10:57:05.640026",
             "followup_sent_at": null
         },
         "info@waterrower.co.uk": {
