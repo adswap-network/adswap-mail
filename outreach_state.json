@@ -2,7 +2,7 @@
     "config": {
         "start_date": "2026-09-12",
         "last_run_date": "2026-11-25",
-        "sent_today": 2
+        "sent_today": 8
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -7897,17 +7897,17 @@
             "app_name": "myBrightlink",
             "package": "org.xolv.mybrightlink",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-11-21T11:05:23.887947",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-11-25T15:37:43.016585"
         },
         "support@caspar-health.com": {
             "app_name": "Ebelkliniken App",
             "package": "com.casparhealth.android.patient.ebel",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-11-21T11:05:23.887947",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-11-25T15:37:43.016585"
         },
         "hello@apparence.io": {
             "app_name": "Kubbo",
@@ -8121,32 +8121,32 @@
             "app_name": "Levels",
             "package": "com.levelshealth",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-11-25T15:37:43.016585",
             "followup_sent_at": null
         },
         "languageclubforkids@gmail.com": {
             "app_name": "FlashCards for kids",
             "package": "com.kidslanguageclub.flashcardsforkids",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-11-25T15:37:43.016585",
             "followup_sent_at": null
         },
         "readaboo@uova.fi": {
             "app_name": "Readaboo",
             "package": "com.uova.readaboo",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-11-25T15:37:43.016585",
             "followup_sent_at": null
         },
         "support@quilia.com": {
             "app_name": "Quilia",
             "package": "com.recordsystem.app",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-11-25T15:37:43.016585",
             "followup_sent_at": null
         },
         "dev@kokotree.com": {
