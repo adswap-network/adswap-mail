@@ -2,7 +2,7 @@
     "config": {
         "start_date": "2026-09-12",
         "last_run_date": "2026-11-26",
-        "sent_today": 2
+        "sent_today": 6
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -8161,32 +8161,32 @@
             "app_name": "Lulosaurio",
             "package": "com.lulosauriocol.app",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-11-26T09:32:24.540920",
             "followup_sent_at": null
         },
         "support@wonderkind.de": {
             "app_name": "EASY peasy",
             "package": "de.wonderkind.school.dictate",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-11-26T09:32:24.540920",
             "followup_sent_at": null
         },
         "hallo@ottonova.de": {
             "app_name": "ottonova",
             "package": "de.ottonova.mobile",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-11-26T09:32:24.540920",
             "followup_sent_at": null
         },
         "support@platoshealth.com": {
             "app_name": "Platos Health",
             "package": "com.platoshealth.zest",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-11-26T09:32:24.540920",
             "followup_sent_at": null
         },
         "info@pixikidzone.com": {
