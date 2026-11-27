@@ -2,7 +2,7 @@
     "config": {
         "start_date": "2026-09-12",
         "last_run_date": "2026-11-27",
-        "sent_today": 7
+        "sent_today": 21
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -7961,9 +7961,9 @@
             "app_name": "Emily Skye FIT",
             "package": "com.emilyskyefit.app",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-11-22T15:19:44.075923",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-11-27T21:58:26.663929"
         },
         "magennis.weate@gmail.com": {
             "app_name": "Ant News",
@@ -8281,80 +8281,104 @@
             "app_name": "Hyper Light Drifter",
             "package": "com.abylight.HyperLightDrifter",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-11-27T21:58:26.663929",
             "followup_sent_at": null
         },
         "sean@windowsgames.co.uk": {
             "app_name": "Slay",
             "package": "com.windowsgames.slay",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-11-27T21:58:26.663929",
             "followup_sent_at": null
         },
         "support@headupgames.com": {
             "app_name": "The Inner World",
             "package": "com.headupgames.theinnerworld2",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-11-27T21:58:26.663929",
             "followup_sent_at": null
         },
         "info@untame.com": {
             "app_name": "Mushroom 11",
             "package": "com.untame.mushroom11",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-11-27T21:58:26.663929",
             "followup_sent_at": null
         },
         "contact@mumpitzgames.com": {
             "app_name": "Tiny Auto Knights",
             "package": "com.mumpitzgames.tinyautoknights",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-11-27T21:58:26.663929",
             "followup_sent_at": null
         },
         "customercare.digital@horribleguild.com": {
             "app_name": "Railroad Ink Challenge",
             "package": "com.horriblegames.railroadink",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-11-27T21:58:26.663929",
             "followup_sent_at": null
         },
         "contact@2dboy.com": {
             "app_name": "World of Goo 2",
             "package": "com.twodboy.wog2",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-11-27T21:58:26.663929",
             "followup_sent_at": null
         },
         "peacedeath.cc@gmail.com": {
             "app_name": "WHO IS AWESOME",
             "package": "com.azamatika.whoisawesome",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-11-27T21:58:26.663929",
             "followup_sent_at": null
         },
         "info@mokamera.com": {
             "app_name": "Moka Mera Lingua",
             "package": "com.mokamera.mokameralingua",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-11-27T21:58:26.663929",
             "followup_sent_at": null
         },
         "support@potipoti.studio": {
             "app_name": "Is This Seat Taken?",
             "package": "com.PotiPoti.IsThisSeatTaken",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-11-27T21:58:26.663929",
+            "followup_sent_at": null
+        },
+        "beke.p.pb@gmail.com": {
+            "app_name": "Trillionaire",
+            "package": "com.bekpagames.trillionaire",
+            "source": "google_play",
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-11-27T21:58:26.663929",
+            "followup_sent_at": null
+        },
+        "support@zachtronics.com": {
+            "app_name": "Zachtronics Solitaire",
+            "package": "com.zachtronics.solitaire",
+            "source": "google_play",
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-11-27T21:58:26.663929",
+            "followup_sent_at": null
+        },
+        "aimtapp@gmail.com": {
+            "app_name": "Secret Daily Diary",
+            "package": "com.secretdiary.journal",
+            "source": "google_play",
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-11-27T21:58:26.663929",
             "followup_sent_at": null
         }
     },
@@ -27856,7 +27880,32 @@
         "jp.co.spoke.dinosaur",
         "com.mokamera.mokameralingua",
         "com.headstartint.publishing.zoodio.stars",
-        "com.PotiPoti.IsThisSeatTaken"
+        "com.PotiPoti.IsThisSeatTaken",
+        "com.bekpagames.trillionaire",
+        "com.bekpagames.digger3d",
+        "com.bekpagames.crash3d",
+        "com.bekpagames.cakesort",
+        "com.bekpagames.gasstation",
+        "com.bekpagames.exitly",
+        "com.bekpagames.crane3d",
+        "com.zachtronics.solitaire",
+        "kemco.wws.magus",
+        "com.zachtronics.ironcladtactics",
+        "com.zachtronicsindustries.android.spacechem.demo",
+        "com.zachtronicsindustries.android.spacechem",
+        "com.moodapp.fitness.steptracker",
+        "com.moodapp.bubblelevel",
+        "com.moodapp.soundmeter",
+        "com.moodapp.photocollage",
+        "com.moodapp.freezetime",
+        "marcostudios.yesorno",
+        "com.secretdiary.journal",
+        "com.aimtapp.expensemanager",
+        "com.motivational.quotes.images",
+        "com.aimtapp.hdwallpaper",
+        "com.status.jokes.shayari.inone",
+        "com.aimtshayari",
+        "com.aimt.healthtips"
     ],
     "used_keywords": [
         "finance",
@@ -27893,7 +27942,30 @@
         "meet",
         "buy and sell",
         "music",
-        "action offline game indie"
+        "action offline game indie",
+        "zombie survival game 2d",
+        "retro platformer action",
+        "match 3 puzzle free offline",
+        "color sort puzzle hard",
+        "idle clicker simulator",
+        "expense tracker minimalist",
+        "budget planner offline",
+        "crypto portfolio widget",
+        "pomodoro timer aesthetic",
+        "habit tracker offline",
+        "kanban board personal",
+        "water reminder fasting",
+        "step counter offline pedometer",
+        "home workout no equipment",
+        "anonymous chat local",
+        "icebreaker questions app",
+        "couple calendar shared",
+        "flashcards maker study",
+        "learn vocabulary daily",
+        "rss reader minimalist fast",
+        "daily journal secret",
+        "workout logger gym",
+        "time blocker schedule"
     ],
     "scanned_developers": [
         "DecusPro",
@@ -34604,6 +34676,10 @@
         "6892101730633402149",
         "5379741222452478141",
         "6223991632239264535",
-        "4955724970121455333"
+        "4955724970121455333",
+        "Bekpa",
+        "Zachtronics",
+        "5938466032752510906",
+        "Aimt+Apps"
     ]
 }
