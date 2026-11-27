@@ -2,7 +2,7 @@
     "config": {
         "start_date": "2026-09-12",
         "last_run_date": "2026-11-27",
-        "sent_today": 4
+        "sent_today": 7
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -7953,9 +7953,9 @@
             "app_name": "Make Fit Simple",
             "package": "com.deliciouslyfitnhealthy.makefitsimple",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-11-22T15:19:44.075923",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-11-27T12:24:39.923064"
         },
         "hello@emilyskyefit.com": {
             "app_name": "Emily Skye FIT",
@@ -8265,16 +8265,16 @@
             "app_name": "Battlevoid",
             "package": "fi.bugbyte.battlevoid",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-11-27T12:24:39.923064",
             "followup_sent_at": null
         },
         "info@unhatched-game.com": {
             "app_name": "Unhatched",
             "package": "pl.loster.filip.unhatched",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-11-27T12:24:39.923064",
             "followup_sent_at": null
         },
         "bugs@abylight.com": {
