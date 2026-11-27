@@ -1,8 +1,8 @@
 {
     "config": {
         "start_date": "2026-09-12",
-        "last_run_date": "2026-11-26",
-        "sent_today": 15
+        "last_run_date": "2026-11-27",
+        "sent_today": 4
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -7945,9 +7945,9 @@
             "app_name": "Expense AI",
             "package": "ai.myexpense.app",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-11-22T15:19:44.075923",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-11-27T02:51:50.941566"
         },
         "andrea@deliciouslyfitnhealthy.com": {
             "app_name": "Make Fit Simple",
@@ -8241,24 +8241,24 @@
             "app_name": "Stella Voyager",
             "package": "com.kesoftgames.sv",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-11-27T02:51:50.941566",
             "followup_sent_at": null
         },
         "bennettracingsim@gmail.com": {
             "app_name": "Dirt Trackin 3",
             "package": "com.fsg.dt3",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-11-27T02:51:50.941566",
             "followup_sent_at": null
         },
         "tommy.soereide@gmail.com": {
             "app_name": "Psychofunk",
             "package": "com.tommysoereide.psychofunk",
             "source": "google_play",
-            "status": "PENDING",
-            "first_sent_at": null,
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-11-27T02:51:50.941566",
             "followup_sent_at": null
         },
         "support@bugbyte.fi": {
