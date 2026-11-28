@@ -2,7 +2,7 @@
     "config": {
         "start_date": "2026-09-12",
         "last_run_date": "2026-11-28",
-        "sent_today": 1
+        "sent_today": 5
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -7977,25 +7977,25 @@
             "app_name": "Sea Trials",
             "package": "com.MarinerLicensePrep.MLP",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-11-24T10:57:05.640026",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-11-28T13:00:30.681753"
         },
         "support@my-cpe.com": {
             "app_name": "MYCPE ONE",
             "package": "com.my_cpe",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-11-24T10:57:05.640026",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-11-28T13:00:30.681753"
         },
         "contact@salesrabbit.com": {
             "app_name": "SalesRabbit+",
             "package": "com.salesrabbit.flutter",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-11-24T10:57:05.640026",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-11-28T13:00:30.681753"
         },
         "info@waterrower.co.uk": {
             "app_name": "WATERROWER Connect",
@@ -8379,6 +8379,14 @@
             "source": "google_play",
             "status": "FIRST_SENT",
             "first_sent_at": "2026-11-27T21:58:26.663929",
+            "followup_sent_at": null
+        },
+        "info@meermin.es": {
+            "app_name": "Meermin Shoes US",
+            "package": "co.tapcart.app.id_TxHsJ1GA0B",
+            "source": "google_play",
+            "status": "FIRST_SENT",
+            "first_sent_at": "2026-11-28T13:00:30.681753",
             "followup_sent_at": null
         }
     },
@@ -27909,7 +27917,19 @@
         "com.helferleinsoftware.expenses",
         "com.zoho.expense",
         "site.glidely.app",
-        "com.waterfaster.app"
+        "com.waterfaster.app",
+        "com.affinityapps.blk",
+        "com.affinityapps.twozerofour",
+        "com.peoplemedia.ourtime",
+        "com.besalt.app",
+        "com.cougardating.cougard",
+        "com.locals.localsapp",
+        "com.hiand.app",
+        "com.feels",
+        "com.yooppe.app",
+        "com.blapp.blapp",
+        "co.tapcart.app.id_TxHsJ1GA0B",
+        "com.bestfungames.shrm"
     ],
     "used_keywords": [
         "finance",
@@ -34687,6 +34707,15 @@
         "Aimt+Apps",
         "Helferlein+Software",
         "5042136433877925117",
-        "AMIT+Solutions"
+        "AMIT+Solutions",
+        "6150832974034049823",
+        "SALT+Group+Ltd",
+        "XFun+LTD",
+        "LOCALS",
+        "HIAND",
+        "7565830968288782685",
+        "IUMOB",
+        "Blapp+App",
+        "Meermin"
     ]
 }
