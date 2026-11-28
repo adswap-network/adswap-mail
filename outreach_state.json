@@ -1,8 +1,8 @@
 {
     "config": {
         "start_date": "2026-09-12",
-        "last_run_date": "2026-11-27",
-        "sent_today": 21
+        "last_run_date": "2026-11-28",
+        "sent_today": 1
     },
     "leads": {
         "funnyghostgames@gmail.com": {
@@ -7969,9 +7969,9 @@
             "app_name": "Ant News",
             "package": "com.cloudburst.antnews",
             "source": "google_play",
-            "status": "FIRST_SENT",
+            "status": "FOLLOWUP_SENT",
             "first_sent_at": "2026-11-24T00:53:00.238145",
-            "followup_sent_at": null
+            "followup_sent_at": "2026-11-28T03:54:30.221414"
         },
         "support@seatrials.net": {
             "app_name": "Sea Trials",
@@ -27905,7 +27905,11 @@
         "com.aimtapp.hdwallpaper",
         "com.status.jokes.shayari.inone",
         "com.aimtshayari",
-        "com.aimt.healthtips"
+        "com.aimt.healthtips",
+        "com.helferleinsoftware.expenses",
+        "com.zoho.expense",
+        "site.glidely.app",
+        "com.waterfaster.app"
     ],
     "used_keywords": [
         "finance",
@@ -34680,6 +34684,9 @@
         "Bekpa",
         "Zachtronics",
         "5938466032752510906",
-        "Aimt+Apps"
+        "Aimt+Apps",
+        "Helferlein+Software",
+        "5042136433877925117",
+        "AMIT+Solutions"
     ]
 }
